@@ -22,7 +22,7 @@
   
  The <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method is called by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure each time an attempt to access a resource is made. The method returns `true` or `false` to allow or deny access, respectively.  
   
- The <xref:System.ServiceModel.ServiceAuthorizationManager> is part of the [!INCLUDE[indigo2](~/includes/indigo2-md.md)]*Identity Model* infrastructure. The Identity Model enables you to create custom authorization policies and custom authorization schemes. [!INCLUDE[crabout](~/includes/crabout-md.md)] how the Identity Model works, see [Managing Claims and Authorization with the Identity Model](~/docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
+ The <xref:System.ServiceModel.ServiceAuthorizationManager> is part of the WCF*Identity Model* infrastructure. The Identity Model enables you to create custom authorization policies and custom authorization schemes. For more information about how the Identity Model works, see [Managing Claims and Authorization with the Identity Model](~/docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
   
 ## Custom Authorization  
  This class does not perform any authorization and allows users to access all service operations. To provide more restrictive authorization, you must create a custom authorization manager that checks custom policies. To do this, inherit from this class and override the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method. Specify the instance of the derived class through the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationManager%2A> property.  
@@ -39,7 +39,7 @@
   
  To create a custom claim, use the <xref:System.IdentityModel.Claims.Claim> class.  For an example, see [How to: Create a Custom Claim](~/docs/framework/wcf/extending/how-to-create-a-custom-claim.md). To compare custom claims, you must compare claims, as shown in [How to: Compare Claims](~/docs/framework/wcf/extending/how-to-compare-claims.md).  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Custom Authorization](~/docs/framework/wcf/extending/custom-authorization.md).  
+ For more information, see [Custom Authorization](~/docs/framework/wcf/extending/custom-authorization.md).  
   
  You can set the type of a custom authorization manager using the [&lt;serviceAuthorization&gt;](~/docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) in a client application configuration file.  
   
