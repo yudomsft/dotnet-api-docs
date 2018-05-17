@@ -193,7 +193,7 @@
 ## Remarks  
  `Note to Inheritors` If you overload this function, it cannot be used for extensibility. Instead, you can return an element created by the base class, in this case, `XmlDataDocument`. See the following example.  
   
-```  
+```csharp  
 class MyXmlDataDocument : XmlDataDocument {  
  public override XmlElement CreateElement(string prefix, string localName, string nsURI) {  
    //Ensure we are returning the base class implementation of element.  
@@ -640,13 +640,13 @@ class MyXmlDataDocument : XmlDataDocument {
   
  If the current node and its following siblings look similar to the following:  
   
-```  
+```xml  
 <!--comment--><element1>one</element1><element2>two</element2>  
 ```  
   
  `Load` throws an exception, because a document cannot have two root-level elements. If the current node and its following siblings look similar to the following:  
   
-```  
+```xml  
 <!--comment--><?process  
     instruction?><!--comment--></endtag>  
 ```  
