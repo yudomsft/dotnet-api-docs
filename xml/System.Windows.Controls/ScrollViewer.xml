@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollViewer" />
   <TypeSignature Language="VB.NET" Value="Public Class ScrollViewer&#xA;Inherits ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollViewer : System::Windows::Controls::ContentControl" />
+  <TypeSignature Language="F#" Value="type ScrollViewer = class&#xA;    inherit ContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,19 +15,19 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("ScrollChangedEvent")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Ignore)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="PART_HorizontalScrollBar", Type=typeof(System.Windows.Controls.Primitives.ScrollBar))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="PART_VerticalScrollBar", Type=typeof(System.Windows.Controls.Primitives.ScrollBar))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.TemplatePart(Name="PART_ScrollContentPresenter", Type=typeof(System.Windows.Controls.ScrollContentPresenter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -74,6 +76,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="scrollViewer.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,9 +119,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.CanContentScroll" />
       <MemberSignature Language="VB.NET" Value="Public Property CanContentScroll As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanContentScroll { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CanContentScroll : bool with get, set" Usage="System.Windows.Controls.ScrollViewer.CanContentScroll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,9 +167,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.CanContentScrollProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanContentScrollProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanContentScrollProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CanContentScrollProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.CanContentScrollProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,11 +189,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibility" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComputedHorizontalScrollBarVisibility As Visibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility ComputedHorizontalScrollBarVisibility { System::Windows::Visibility get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComputedHorizontalScrollBarVisibility : System.Windows.Visibility" Usage="System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
@@ -216,9 +231,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ComputedHorizontalScrollBarVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ComputedHorizontalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ComputedHorizontalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibilityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,11 +253,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibility" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComputedVerticalScrollBarVisibility As Visibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility ComputedVerticalScrollBarVisibility { System::Windows::Visibility get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComputedVerticalScrollBarVisibility : System.Windows.Visibility" Usage="System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
@@ -271,9 +295,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ComputedVerticalScrollBarVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ComputedVerticalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ComputedVerticalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibilityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,9 +317,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ContentHorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentHorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ContentHorizontalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentHorizontalOffset : double" Usage="System.Windows.Controls.ScrollViewer.ContentHorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -320,9 +348,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ContentHorizontalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentHorizontalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentHorizontalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentHorizontalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ContentHorizontalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,9 +369,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ContentVerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentVerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ContentVerticalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentVerticalOffset : double" Usage="System.Windows.Controls.ScrollViewer.ContentVerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,9 +400,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ContentVerticalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentVerticalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentVerticalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentVerticalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ContentVerticalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,14 +421,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ExtentHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Windows.Controls.ScrollViewer.ExtentHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Layout")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -429,9 +468,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ExtentHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExtentHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExtentHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExtentHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ExtentHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -449,14 +490,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ExtentWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Windows.Controls.ScrollViewer.ExtentWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Layout")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -491,9 +537,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ExtentWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExtentWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExtentWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ExtentWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ExtentWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -511,9 +559,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.GetCanContentScroll(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCanContentScroll (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetCanContentScroll(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetCanContentScroll : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ScrollViewer.GetCanContentScroll element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -543,9 +593,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.GetHorizontalScrollBarVisibility(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetHorizontalScrollBarVisibility (element As DependencyObject) As ScrollBarVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::ScrollBarVisibility GetHorizontalScrollBarVisibility(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetHorizontalScrollBarVisibility : System.Windows.DependencyObject -&gt; System.Windows.Controls.ScrollBarVisibility" Usage="System.Windows.Controls.ScrollViewer.GetHorizontalScrollBarVisibility element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -567,9 +619,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.GetIsDeferredScrollingEnabled(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsDeferredScrollingEnabled (element As DependencyObject) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsDeferredScrollingEnabled(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetIsDeferredScrollingEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ScrollViewer.GetIsDeferredScrollingEnabled element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -592,6 +646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.GetPanningDeceleration(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPanningDeceleration (element As DependencyObject) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetPanningDeceleration(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPanningDeceleration : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Controls.ScrollViewer.GetPanningDeceleration element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -616,6 +671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.GetPanningMode(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPanningMode (element As DependencyObject) As PanningMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::PanningMode GetPanningMode(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPanningMode : System.Windows.DependencyObject -&gt; System.Windows.Controls.PanningMode" Usage="System.Windows.Controls.ScrollViewer.GetPanningMode element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -640,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.GetPanningRatio(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPanningRatio (element As DependencyObject) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetPanningRatio(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetPanningRatio : System.Windows.DependencyObject -&gt; double" Usage="System.Windows.Controls.ScrollViewer.GetPanningRatio element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -664,9 +721,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.GetVerticalScrollBarVisibility(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVerticalScrollBarVisibility (element As DependencyObject) As ScrollBarVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::ScrollBarVisibility GetVerticalScrollBarVisibility(System::Windows::DependencyObject ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetVerticalScrollBarVisibility : System.Windows.DependencyObject -&gt; System.Windows.Controls.ScrollBarVisibility" Usage="System.Windows.Controls.ScrollViewer.GetVerticalScrollBarVisibility element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -688,9 +747,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.HandlesScrolling" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HandlesScrolling As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HandlesScrolling { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HandlesScrolling : bool" Usage="System.Windows.Controls.ScrollViewer.HandlesScrolling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -716,9 +777,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.HitTestCore(System.Windows.Media.PointHitTestParameters)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HitTestCore (hitTestParameters As PointHitTestParameters) As HitTestResult" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::HitTestResult ^ HitTestCore(System::Windows::Media::PointHitTestParameters ^ hitTestParameters);" />
+      <MemberSignature Language="F#" Value="override this.HitTestCore : System.Windows.Media.PointHitTestParameters -&gt; System.Windows.Media.HitTestResult" Usage="scrollViewer.HitTestCore hitTestParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -740,11 +803,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.HorizontalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="System.Windows.Controls.ScrollViewer.HorizontalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -781,9 +851,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.HorizontalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.HorizontalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -801,16 +873,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalScrollBarVisibility As ScrollBarVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollBarVisibility HorizontalScrollBarVisibility { System::Windows::Controls::ScrollBarVisibility get(); void set(System::Windows::Controls::ScrollBarVisibility value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarVisibility : System.Windows.Controls.ScrollBarVisibility with get, set" Usage="System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
         </Attribute>
       </Attributes>
@@ -844,9 +918,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalScrollBarVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -864,9 +940,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.InvalidateScrollInfo" />
       <MemberSignature Language="VB.NET" Value="Public Sub InvalidateScrollInfo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateScrollInfo();" />
+      <MemberSignature Language="F#" Value="member this.InvalidateScrollInfo : unit -&gt; unit" Usage="scrollViewer.InvalidateScrollInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -892,9 +970,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDeferredScrollingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeferredScrollingEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDeferredScrollingEnabled : bool with get, set" Usage="System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -929,9 +1009,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDeferredScrollingEnabledProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDeferredScrollingEnabledProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDeferredScrollingEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -948,11 +1030,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.LineDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineDown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineDown();" />
+      <MemberSignature Language="F#" Value="member this.LineDown : unit -&gt; unit" Usage="scrollViewer.LineDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -977,11 +1066,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.LineLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineLeft ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineLeft();" />
+      <MemberSignature Language="F#" Value="member this.LineLeft : unit -&gt; unit" Usage="scrollViewer.LineLeft " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1006,11 +1102,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.LineRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineRight ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineRight();" />
+      <MemberSignature Language="F#" Value="member this.LineRight : unit -&gt; unit" Usage="scrollViewer.LineRight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1035,11 +1138,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.LineUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub LineUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LineUp();" />
+      <MemberSignature Language="F#" Value="member this.LineUp : unit -&gt; unit" Usage="scrollViewer.LineUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1064,9 +1174,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="scrollViewer.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1088,9 +1200,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="scrollViewer.OnApplyTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1109,9 +1223,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="scrollViewer.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1131,9 +1247,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="scrollViewer.OnKeyDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1178,6 +1296,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnManipulationCompleted(System.Windows.Input.ManipulationCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnManipulationCompleted (e As ManipulationCompletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnManipulationCompleted(System::Windows::Input::ManipulationCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnManipulationCompleted : System.Windows.Input.ManipulationCompletedEventArgs -&gt; unit" Usage="scrollViewer.OnManipulationCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1208,6 +1327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnManipulationDelta (e As ManipulationDeltaEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnManipulationDelta(System::Windows::Input::ManipulationDeltaEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnManipulationDelta : System.Windows.Input.ManipulationDeltaEventArgs -&gt; unit" Usage="scrollViewer.OnManipulationDelta e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1238,6 +1358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnManipulationInertiaStarting(System.Windows.Input.ManipulationInertiaStartingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnManipulationInertiaStarting (e As ManipulationInertiaStartingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnManipulationInertiaStarting(System::Windows::Input::ManipulationInertiaStartingEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnManipulationInertiaStarting : System.Windows.Input.ManipulationInertiaStartingEventArgs -&gt; unit" Usage="scrollViewer.OnManipulationInertiaStarting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1268,6 +1389,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnManipulationStarting(System.Windows.Input.ManipulationStartingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnManipulationStarting (e As ManipulationStartingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnManipulationStarting(System::Windows::Input::ManipulationStartingEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnManipulationStarting : System.Windows.Input.ManipulationStartingEventArgs -&gt; unit" Usage="scrollViewer.OnManipulationStarting e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1298,9 +1420,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="scrollViewer.OnMouseLeftButtonDown e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1321,9 +1445,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseWheelEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Input::MouseWheelEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Input.MouseWheelEventArgs -&gt; unit" Usage="scrollViewer.OnMouseWheel e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1344,9 +1470,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnScrollChanged(System.Windows.Controls.ScrollChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnScrollChanged (e As ScrollChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnScrollChanged(System::Windows::Controls::ScrollChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnScrollChanged : System.Windows.Controls.ScrollChangedEventArgs -&gt; unit&#xA;override this.OnScrollChanged : System.Windows.Controls.ScrollChangedEventArgs -&gt; unit" Usage="scrollViewer.OnScrollChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1374,6 +1502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.OnStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStylusSystemGesture (e As StylusSystemGestureEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStylusSystemGesture(System::Windows::Input::StylusSystemGestureEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnStylusSystemGesture : System.Windows.Input.StylusSystemGestureEventArgs -&gt; unit" Usage="scrollViewer.OnStylusSystemGesture e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1404,11 +1533,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.PageDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageDown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageDown();" />
+      <MemberSignature Language="F#" Value="member this.PageDown : unit -&gt; unit" Usage="scrollViewer.PageDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1433,11 +1569,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.PageLeft" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageLeft ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageLeft();" />
+      <MemberSignature Language="F#" Value="member this.PageLeft : unit -&gt; unit" Usage="scrollViewer.PageLeft " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1462,11 +1605,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.PageRight" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageRight ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageRight();" />
+      <MemberSignature Language="F#" Value="member this.PageRight : unit -&gt; unit" Usage="scrollViewer.PageRight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1491,11 +1641,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.PageUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PageUp();" />
+      <MemberSignature Language="F#" Value="member this.PageUp : unit -&gt; unit" Usage="scrollViewer.PageUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1518,6 +1675,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.PanningDeceleration" />
       <MemberSignature Language="VB.NET" Value="Public Property PanningDeceleration As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PanningDeceleration { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PanningDeceleration : double with get, set" Usage="System.Windows.Controls.ScrollViewer.PanningDeceleration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1545,6 +1703,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.PanningDecelerationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PanningDecelerationProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PanningDecelerationProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PanningDecelerationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.PanningDecelerationProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1564,6 +1723,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.PanningMode" />
       <MemberSignature Language="VB.NET" Value="Public Property PanningMode As PanningMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::PanningMode PanningMode { System::Windows::Controls::PanningMode get(); void set(System::Windows::Controls::PanningMode value); };" />
+      <MemberSignature Language="F#" Value="member this.PanningMode : System.Windows.Controls.PanningMode with get, set" Usage="System.Windows.Controls.ScrollViewer.PanningMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1604,6 +1764,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.PanningModeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PanningModeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PanningModeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PanningModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.PanningModeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1623,6 +1784,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.PanningRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property PanningRatio As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PanningRatio { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PanningRatio : double with get, set" Usage="System.Windows.Controls.ScrollViewer.PanningRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1650,6 +1812,7 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.PanningRatioProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PanningRatioProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PanningRatioProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PanningRatioProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.PanningRatioProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1669,9 +1832,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ScrollableHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScrollableHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ScrollableHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollableHeight : double" Usage="System.Windows.Controls.ScrollViewer.ScrollableHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1704,9 +1869,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ScrollableHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrollableHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ScrollableHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScrollableHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ScrollableHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1724,9 +1891,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ScrollableWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScrollableWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ScrollableWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollableWidth : double" Usage="System.Windows.Controls.ScrollViewer.ScrollableWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1758,9 +1927,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ScrollableWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrollableWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ScrollableWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScrollableWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ScrollableWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1778,13 +1949,15 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.ScrollViewer.ScrollChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ScrollChanged As ScrollChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::ScrollChangedEventHandler ^ ScrollChanged;" />
+      <MemberSignature Language="F#" Value="member this.ScrollChanged : System.Windows.Controls.ScrollChangedEventHandler " Usage="member this.ScrollChanged : System.Windows.Controls.ScrollChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Action")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1818,9 +1991,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ScrollChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrollChangedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ScrollChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScrollChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.ScrollViewer.ScrollChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1838,11 +2013,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ScrollInfo" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property ScrollInfo As IScrollInfo" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Controls::Primitives::IScrollInfo ^ ScrollInfo { System::Windows::Controls::Primitives::IScrollInfo ^ get(); void set(System::Windows::Controls::Primitives::IScrollInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScrollInfo : System.Windows.Controls.Primitives.IScrollInfo with get, set" Usage="System.Windows.Controls.ScrollViewer.ScrollInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.IScrollInfo</ReturnType>
       </ReturnValue>
@@ -1858,11 +2040,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToBottom" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToBottom ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToBottom();" />
+      <MemberSignature Language="F#" Value="member this.ScrollToBottom : unit -&gt; unit" Usage="scrollViewer.ScrollToBottom " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1887,9 +2076,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToEnd ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToEnd();" />
+      <MemberSignature Language="F#" Value="member this.ScrollToEnd : unit -&gt; unit" Usage="scrollViewer.ScrollToEnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1918,9 +2109,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToHome" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToHome ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToHome();" />
+      <MemberSignature Language="F#" Value="member this.ScrollToHome : unit -&gt; unit" Usage="scrollViewer.ScrollToHome " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1947,9 +2140,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToHorizontalOffset(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToHorizontalOffset (offset As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToHorizontalOffset(double offset);" />
+      <MemberSignature Language="F#" Value="member this.ScrollToHorizontalOffset : double -&gt; unit" Usage="scrollViewer.ScrollToHorizontalOffset offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1970,11 +2165,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToLeftEnd" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToLeftEnd ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToLeftEnd();" />
+      <MemberSignature Language="F#" Value="member this.ScrollToLeftEnd : unit -&gt; unit" Usage="scrollViewer.ScrollToLeftEnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1999,11 +2201,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToRightEnd" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToRightEnd ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToRightEnd();" />
+      <MemberSignature Language="F#" Value="member this.ScrollToRightEnd : unit -&gt; unit" Usage="scrollViewer.ScrollToRightEnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2028,11 +2237,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToTop" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToTop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToTop();" />
+      <MemberSignature Language="F#" Value="member this.ScrollToTop : unit -&gt; unit" Usage="scrollViewer.ScrollToTop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2057,9 +2273,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.ScrollToVerticalOffset(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollToVerticalOffset (offset As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollToVerticalOffset(double offset);" />
+      <MemberSignature Language="F#" Value="member this.ScrollToVerticalOffset : double -&gt; unit" Usage="scrollViewer.ScrollToVerticalOffset offset" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2080,9 +2298,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.SetCanContentScroll(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCanContentScroll (element As DependencyObject, canContentScroll As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCanContentScroll(System::Windows::DependencyObject ^ element, bool canContentScroll);" />
+      <MemberSignature Language="F#" Value="static member SetCanContentScroll : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ScrollViewer.SetCanContentScroll (element, canContentScroll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2105,9 +2325,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.SetHorizontalScrollBarVisibility(System.Windows.DependencyObject,System.Windows.Controls.ScrollBarVisibility)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHorizontalScrollBarVisibility (element As DependencyObject, horizontalScrollBarVisibility As ScrollBarVisibility)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHorizontalScrollBarVisibility(System::Windows::DependencyObject ^ element, System::Windows::Controls::ScrollBarVisibility horizontalScrollBarVisibility);" />
+      <MemberSignature Language="F#" Value="static member SetHorizontalScrollBarVisibility : System.Windows.DependencyObject * System.Windows.Controls.ScrollBarVisibility -&gt; unit" Usage="System.Windows.Controls.ScrollViewer.SetHorizontalScrollBarVisibility (element, horizontalScrollBarVisibility)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2130,9 +2352,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.SetIsDeferredScrollingEnabled(System.Windows.DependencyObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsDeferredScrollingEnabled (element As DependencyObject, value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsDeferredScrollingEnabled(System::Windows::DependencyObject ^ element, bool value);" />
+      <MemberSignature Language="F#" Value="static member SetIsDeferredScrollingEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.ScrollViewer.SetIsDeferredScrollingEnabled (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2163,6 +2387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.SetPanningDeceleration(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPanningDeceleration (element As DependencyObject, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPanningDeceleration(System::Windows::DependencyObject ^ element, double value);" />
+      <MemberSignature Language="F#" Value="static member SetPanningDeceleration : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Controls.ScrollViewer.SetPanningDeceleration (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2187,6 +2412,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPanningMode(class System.Windows.DependencyObject element, valuetype System.Windows.Controls.PanningMode panningMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.SetPanningMode(System.Windows.DependencyObject,System.Windows.Controls.PanningMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPanningMode(System::Windows::DependencyObject ^ element, System::Windows::Controls::PanningMode panningMode);" />
+      <MemberSignature Language="F#" Value="static member SetPanningMode : System.Windows.DependencyObject * System.Windows.Controls.PanningMode -&gt; unit" Usage="System.Windows.Controls.ScrollViewer.SetPanningMode (element, panningMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2212,6 +2438,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.SetPanningRatio(System.Windows.DependencyObject,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPanningRatio (element As DependencyObject, value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPanningRatio(System::Windows::DependencyObject ^ element, double value);" />
+      <MemberSignature Language="F#" Value="static member SetPanningRatio : System.Windows.DependencyObject * double -&gt; unit" Usage="System.Windows.Controls.ScrollViewer.SetPanningRatio (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2237,9 +2464,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollViewer.SetVerticalScrollBarVisibility(System.Windows.DependencyObject,System.Windows.Controls.ScrollBarVisibility)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetVerticalScrollBarVisibility (element As DependencyObject, verticalScrollBarVisibility As ScrollBarVisibility)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetVerticalScrollBarVisibility(System::Windows::DependencyObject ^ element, System::Windows::Controls::ScrollBarVisibility verticalScrollBarVisibility);" />
+      <MemberSignature Language="F#" Value="static member SetVerticalScrollBarVisibility : System.Windows.DependencyObject * System.Windows.Controls.ScrollBarVisibility -&gt; unit" Usage="System.Windows.Controls.ScrollViewer.SetVerticalScrollBarVisibility (element, verticalScrollBarVisibility)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2262,11 +2491,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.VerticalOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="System.Windows.Controls.ScrollViewer.VerticalOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -2303,9 +2539,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.VerticalOffsetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalOffsetProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalOffsetProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalOffsetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.VerticalOffsetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2323,16 +2561,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibility" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalScrollBarVisibility As ScrollBarVisibility" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollBarVisibility VerticalScrollBarVisibility { System::Windows::Controls::ScrollBarVisibility get(); void set(System::Windows::Controls::ScrollBarVisibility value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarVisibility : System.Windows.Controls.ScrollBarVisibility with get, set" Usage="System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2366,9 +2606,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalScrollBarVisibilityProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2386,14 +2628,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ViewportHeight" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeight { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportHeight : double" Usage="System.Windows.Controls.ScrollViewer.ViewportHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Layout")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2430,9 +2677,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ViewportHeightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewportHeightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewportHeightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewportHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ViewportHeightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2450,14 +2699,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollViewer.ViewportWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidth { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewportWidth : double" Usage="System.Windows.Controls.ScrollViewer.ViewportWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Layout")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2490,9 +2744,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollViewer.ViewportWidthProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewportWidthProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewportWidthProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewportWidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollViewer.ViewportWidthProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

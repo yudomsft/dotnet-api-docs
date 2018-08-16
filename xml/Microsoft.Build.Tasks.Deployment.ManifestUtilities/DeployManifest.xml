@@ -4,19 +4,24 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeployManifest&#xA;Inherits Manifest" />
   <TypeSignature Language="C++ CLI" Value="public ref class DeployManifest sealed : Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest" />
+  <TypeSignature Language="F#" Value="type DeployManifest = class&#xA;    inherit Manifest" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Xml.Serialization.XmlRoot("DeployManifest")</AttributeName>
     </Attribute>
   </Attributes>
@@ -45,6 +50,10 @@
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> class.</summary>
@@ -57,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetFrameworkMoniker As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DeployManifest(System::String ^ targetFrameworkMoniker);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest targetFrameworkMoniker" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -77,13 +87,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CompatibleFrameworks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompatibleFrameworks As CompatibleFrameworkCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFrameworkCollection ^ CompatibleFrameworks { Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFrameworkCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompatibleFrameworks : Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CompatibleFrameworks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -102,13 +113,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CreateDesktopShortcut" />
       <MemberSignature Language="VB.NET" Value="Public Property CreateDesktopShortcut As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateDesktopShortcut { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CreateDesktopShortcut : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CreateDesktopShortcut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -127,14 +139,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DeploymentUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property DeploymentUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeploymentUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeploymentUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DeploymentUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -159,13 +182,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DisallowUrlActivation" />
       <MemberSignature Language="VB.NET" Value="Public Property DisallowUrlActivation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisallowUrlActivation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisallowUrlActivation : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DisallowUrlActivation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -192,14 +220,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.EntryPoint" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EntryPoint As AssemblyReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ EntryPoint { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EntryPoint : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.EntryPoint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,14 +256,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.ErrorReportUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorReportUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorReportUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.ErrorReportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -242,13 +288,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install" />
       <MemberSignature Language="VB.NET" Value="Public Property Install As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Install { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Install : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -279,13 +330,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MapFileExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property MapFileExtensions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MapFileExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MapFileExtensions : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MapFileExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -312,14 +368,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MinimumRequiredVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumRequiredVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinimumRequiredVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumRequiredVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MinimumRequiredVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -344,14 +411,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Product" />
       <MemberSignature Language="VB.NET" Value="Public Property Product As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Product { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Product : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Product" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -376,14 +454,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Publisher" />
       <MemberSignature Language="VB.NET" Value="Public Property Publisher As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Publisher { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Publisher : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Publisher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -408,14 +497,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SuiteName" />
       <MemberSignature Language="VB.NET" Value="Public Property SuiteName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuiteName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SuiteName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SuiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -433,14 +529,25 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SupportUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SupportUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -465,14 +572,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TargetFrameworkMoniker" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMoniker As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TargetFrameworkMoniker" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -490,13 +601,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TrustUrlParameters" />
       <MemberSignature Language="VB.NET" Value="Public Property TrustUrlParameters As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrustUrlParameters { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TrustUrlParameters : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TrustUrlParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -523,13 +639,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UpdateEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateEnabled : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -556,13 +677,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateInterval As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int UpdateInterval { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateInterval : int with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -588,13 +714,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateMode" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateMode As UpdateMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateMode UpdateMode { Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateMode get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateMode value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateMode : Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateMode with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -622,13 +753,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateUnit As UpdateUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateUnit UpdateUnit { Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateUnit get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateUnit value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateUnit : Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateUnit with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -656,10 +792,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="deployManifest.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -676,19 +817,20 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCompatibleFrameworks" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlCompatibleFrameworks As CompatibleFramework()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFramework ^&gt; ^ XmlCompatibleFrameworks { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFramework ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFramework ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlCompatibleFrameworks : Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework[] with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCompatibleFrameworks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlArray("CompatibleFrameworks")</AttributeName>
         </Attribute>
       </Attributes>
@@ -707,20 +849,24 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCreateDesktopShortcut" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlCreateDesktopShortcut As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlCreateDesktopShortcut { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlCreateDesktopShortcut : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCreateDesktopShortcut" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlAttribute("CreateDesktopShortcut")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -738,20 +884,34 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDeploymentUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlDeploymentUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDeploymentUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlDeploymentUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDeploymentUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("DeploymentUrl")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("DeploymentUrl")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -769,20 +929,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDisallowUrlActivation" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlDisallowUrlActivation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDisallowUrlActivation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlDisallowUrlActivation : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDisallowUrlActivation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("DisallowUrlActivation")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("DisallowUrlActivation")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -800,20 +971,27 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlErrorReportUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlErrorReportUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlErrorReportUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlErrorReportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlAttribute("ErrorReportUrl")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -831,20 +1009,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlInstall" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlInstall As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlInstall { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlInstall : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlInstall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("Install")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("Install")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -862,20 +1051,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMapFileExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlMapFileExtensions As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlMapFileExtensions { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlMapFileExtensions : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMapFileExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("MapFileExtensions")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("MapFileExtensions")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -893,20 +1093,34 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMinimumRequiredVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlMinimumRequiredVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlMinimumRequiredVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlMinimumRequiredVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMinimumRequiredVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("MinimumRequiredVersion")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("MinimumRequiredVersion")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -924,20 +1138,34 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlProduct" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlProduct As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlProduct { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlProduct : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlProduct" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("Product")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("Product")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -955,20 +1183,34 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlPublisher" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlPublisher As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlPublisher { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlPublisher : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlPublisher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("Publisher")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("Publisher")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -986,20 +1228,27 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSuiteName" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlSuiteName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSuiteName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSuiteName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSuiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlAttribute("SuiteName")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1017,20 +1266,34 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSupportUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlSupportUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSupportUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSupportUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("SupportUrl")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("SupportUrl")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1048,20 +1311,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlTrustUrlParameters" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlTrustUrlParameters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlTrustUrlParameters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlTrustUrlParameters : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlTrustUrlParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("TrustUrlParameters")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("TrustUrlParameters")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1079,20 +1353,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateEnabled As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateEnabled { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateEnabled : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateEnabled")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateEnabled")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1110,20 +1395,34 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateInterval As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateInterval { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateInterval : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateInterval")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateInterval")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1141,20 +1440,34 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateMode" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateMode As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateMode { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateMode : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateMode")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateMode")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1172,20 +1485,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateUnit As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateUnit { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateUnit : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateUnit")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute("UpdateUnit")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

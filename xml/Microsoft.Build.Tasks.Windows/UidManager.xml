@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.UidManager" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UidManager&#xA;Inherits Task" />
   <TypeSignature Language="C++ CLI" Value="public ref class UidManager sealed : Microsoft::Build::Utilities::Task" />
+  <TypeSignature Language="F#" Value="type UidManager = class&#xA;    inherit Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,6 +29,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -42,9 +45,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.UidManager.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="uidManager.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,11 +70,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UidManager.IntermediateDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property IntermediateDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IntermediateDirectory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IntermediateDirectory : string with get, set" Usage="Microsoft.Build.Tasks.Windows.UidManager.IntermediateDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -86,14 +98,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UidManager.MarkupFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkupFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ MarkupFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkupFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.UidManager.MarkupFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,14 +132,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UidManager.Task" />
       <MemberSignature Language="VB.NET" Value="Public Property Task As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Task { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Task : string with get, set" Usage="Microsoft.Build.Tasks.Windows.UidManager.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataRowComparer`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataRowComparer(Of TRow)&#xA;Implements IEqualityComparer(Of TRow)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TRow&gt;&#xA; where TRow : DataRowpublic ref class DataRowComparer sealed : System::Collections::Generic::IEqualityComparer&lt;TRow&gt;" />
+  <TypeSignature Language="F#" Value="type DataRowComparer&lt;'Row (requires 'Row :&gt; DataRow)&gt; = class&#xA;    interface IEqualityComparer&lt;'Row (requires 'Row :&gt; DataRow)&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -48,11 +50,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataRowComparer`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As DataRowComparer(Of TRow)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::DataRowComparer&lt;TRow&gt; ^ Default { System::Data::DataRowComparer&lt;TRow&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Data.DataRowComparer&lt;'Row (requires 'Row :&gt; System.Data.DataRow)&gt;" Usage="System.Data.DataRowComparer&lt;'Row (requires 'Row :&gt; System.Data.DataRow)&gt;.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.DataRowComparer&lt;TRow&gt;</ReturnType>
       </ReturnValue>
@@ -75,12 +84,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowComparer`1.Equals(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (leftRow As TRow, rightRow As TRow) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(TRow leftRow, TRow rightRow);" />
+      <MemberSignature Language="F#" Value="override this.Equals : 'Row * 'Row -&gt; bool" Usage="dataRowComparer.Equals (leftRow, rightRow)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,12 +128,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataRowComparer`1.GetHashCode(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (row As TRow) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(TRow row);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : 'Row -&gt; int" Usage="dataRowComparer.GetHashCode row" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

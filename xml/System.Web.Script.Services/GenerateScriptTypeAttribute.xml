@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.GenerateScriptTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GenerateScriptTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class GenerateScriptTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type GenerateScriptTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -52,9 +57,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Services.GenerateScriptTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GenerateScriptTypeAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.Script.Services.GenerateScriptTypeAttribute : Type -&gt; System.Web.Script.Services.GenerateScriptTypeAttribute" Usage="new System.Web.Script.Services.GenerateScriptTypeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -88,11 +95,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.GenerateScriptTypeAttribute.ScriptTypeId" />
       <MemberSignature Language="VB.NET" Value="Public Property ScriptTypeId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScriptTypeId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScriptTypeId : string with get, set" Usage="System.Web.Script.Services.GenerateScriptTypeAttribute.ScriptTypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -115,11 +129,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.GenerateScriptTypeAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Web.Script.Services.GenerateScriptTypeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>

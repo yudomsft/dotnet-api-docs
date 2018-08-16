@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.AnonymousPipeClientStream" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnonymousPipeClientStream&#xA;Inherits PipeStream" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnonymousPipeClientStream sealed : System::IO::Pipes::PipeStream" />
+  <TypeSignature Language="F#" Value="type AnonymousPipeClientStream = class&#xA;    inherit PipeStream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pipeHandleAsString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::String ^ pipeHandleAsString);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.AnonymousPipeClientStream : string -&gt; System.IO.Pipes.AnonymousPipeClientStream" Usage="new System.IO.Pipes.AnonymousPipeClientStream pipeHandleAsString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -81,12 +84,21 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="pipeHandleAsString" Type="System.String" />
       </Parameters>
@@ -119,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, class Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::IO::Pipes::PipeDirection direction, Microsoft::Win32::SafeHandles::SafePipeHandle ^ safePipeHandle);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.AnonymousPipeClientStream : System.IO.Pipes.PipeDirection * Microsoft.Win32.SafeHandles.SafePipeHandle -&gt; System.IO.Pipes.AnonymousPipeClientStream" Usage="new System.IO.Pipes.AnonymousPipeClientStream (direction, safePipeHandle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -129,12 +142,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="direction" Type="System.IO.Pipes.PipeDirection" />
         <Parameter Name="safePipeHandle" Type="Microsoft.Win32.SafeHandles.SafePipeHandle" />
@@ -181,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (direction As PipeDirection, pipeHandleAsString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnonymousPipeClientStream(System::IO::Pipes::PipeDirection direction, System::String ^ pipeHandleAsString);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.AnonymousPipeClientStream : System.IO.Pipes.PipeDirection * string -&gt; System.IO.Pipes.AnonymousPipeClientStream" Usage="new System.IO.Pipes.AnonymousPipeClientStream (direction, pipeHandleAsString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -191,12 +211,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="direction" Type="System.IO.Pipes.PipeDirection" />
         <Parameter Name="pipeHandleAsString" Type="System.String" />
@@ -239,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.AnonymousPipeClientStream.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!AnonymousPipeClientStream ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="anonymousPipeClientStream.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -249,6 +276,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.AnonymousPipeClientStream.ReadMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadMode As PipeTransmissionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode ReadMode {  void set(System::IO::Pipes::PipeTransmissionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadMode : System.IO.Pipes.PipeTransmissionMode" Usage="System.IO.Pipes.AnonymousPipeClientStream.ReadMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -276,12 +305,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeTransmissionMode</ReturnType>
       </ReturnValue>
@@ -317,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TransmissionMode As PipeTransmissionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode TransmissionMode { System::IO::Pipes::PipeTransmissionMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransmissionMode : System.IO.Pipes.PipeTransmissionMode" Usage="System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -327,12 +363,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeTransmissionMode</ReturnType>
       </ReturnValue>

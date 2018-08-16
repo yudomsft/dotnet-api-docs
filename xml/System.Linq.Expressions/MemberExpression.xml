@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.MemberExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class MemberExpression&#xA;Inherits Expression" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberExpression : System::Linq::Expressions::Expression" />
+  <TypeSignature Language="F#" Value="type MemberExpression = class&#xA;    inherit Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -26,7 +28,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Linq.Expressions.Expression/MemberExpressionProxy))</AttributeName>
     </Attribute>
   </Attributes>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="memberExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberExpression.Expression" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.MemberExpression.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -114,12 +118,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>
       </ReturnValue>
@@ -135,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberExpression.Member" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Member As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ Member { System::Reflection::MemberInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Member : System.Reflection.MemberInfo" Usage="System.Linq.Expressions.MemberExpression.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -147,12 +158,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.MemberInfo</ReturnType>
       </ReturnValue>
@@ -168,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.MemberExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.MemberExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -200,6 +218,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.MemberExpression Update(class System.Linq.Expressions.Expression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.MemberExpression.Update(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::MemberExpression ^ Update(System::Linq::Expressions::Expression ^ expression);" />
+      <MemberSignature Language="F#" Value="member this.Update : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.MemberExpression" Usage="memberExpression.Update expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

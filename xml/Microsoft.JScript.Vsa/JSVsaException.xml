@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JSVsaException&#xA;Inherits ExternalException" />
   <TypeSignature Language="C++ CLI" Value="public ref class JSVsaException sealed : System::Runtime::InteropServices::ExternalException" />
+  <TypeSignature Language="F#" Value="type JSVsaException = class&#xA;    inherit ExternalException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -13,13 +14,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("064C47AC-C9DF-4FCD-9009-E9299D620018")</AttributeName>
     </Attribute>
   </Attributes>
@@ -48,6 +49,11 @@
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Vsa.JSVsaException" /> class with a system-supplied message that describes the error. This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
@@ -60,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : Microsoft.JScript.Vsa.JSVsaError -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException error" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -80,11 +87,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : string -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
@@ -100,11 +113,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : Microsoft.JScript.Vsa.JSVsaError * string -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (error, message)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="error" Type="Microsoft.JScript.Vsa.JSVsaError" />
         <Parameter Name="message" Type="System.String" />
@@ -122,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -144,11 +164,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : string * Exception -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="innerException" Type="System.Exception" />
@@ -166,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError,System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (error As JSVsaError, message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JSVsaException(Microsoft::JScript::Vsa::JSVsaError error, System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.JSVsaException : Microsoft.JScript.Vsa.JSVsaError * string * Exception -&gt; Microsoft.JScript.Vsa.JSVsaException" Usage="new Microsoft.JScript.Vsa.JSVsaException (error, message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -190,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.JSVsaException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As JSVsaError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::Vsa::JSVsaError ErrorCode { Microsoft::JScript::Vsa::JSVsaError get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : Microsoft.JScript.Vsa.JSVsaError" Usage="Microsoft.JScript.Vsa.JSVsaException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -210,13 +238,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="jSVsaException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -240,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.JSVsaException.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="jSVsaException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

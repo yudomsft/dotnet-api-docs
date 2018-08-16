@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.ForeignKeyConstraint" />
   <TypeSignature Language="VB.NET" Value="Public Class ForeignKeyConstraint&#xA;Inherits Constraint" />
   <TypeSignature Language="C++ CLI" Value="public ref class ForeignKeyConstraint : System::Data::Constraint" />
+  <TypeSignature Language="F#" Value="type ForeignKeyConstraint = class&#xA;    inherit Constraint" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,11 +26,23 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.ComponentModel.DefaultProperty("ConstraintName")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ForeignKeyConstraintEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ForeignKeyConstraintEditor, Microsoft.VSDesigner, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ForeignKeyConstraintEditor, Microsoft.VSDesigner, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ForeignKeyConstraintEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ForeignKeyConstraintEditor, Microsoft.VSDesigner, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=2.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -84,9 +99,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.#ctor(System.Data.DataColumn,System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parentColumn As DataColumn, childColumn As DataColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyConstraint(System::Data::DataColumn ^ parentColumn, System::Data::DataColumn ^ childColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.ForeignKeyConstraint : System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.ForeignKeyConstraint" Usage="new System.Data.ForeignKeyConstraint (parentColumn, childColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -131,9 +149,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.#ctor(System.Data.DataColumn[],System.Data.DataColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parentColumns As DataColumn(), childColumns As DataColumn())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyConstraint(cli::array &lt;System::Data::DataColumn ^&gt; ^ parentColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ childColumns);" />
+      <MemberSignature Language="F#" Value="new System.Data.ForeignKeyConstraint : System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.ForeignKeyConstraint" Usage="new System.Data.ForeignKeyConstraint (parentColumns, childColumns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -178,9 +199,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.#ctor(System.String,System.Data.DataColumn,System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (constraintName As String, parentColumn As DataColumn, childColumn As DataColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyConstraint(System::String ^ constraintName, System::Data::DataColumn ^ parentColumn, System::Data::DataColumn ^ childColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.ForeignKeyConstraint : string * System.Data.DataColumn * System.Data.DataColumn -&gt; System.Data.ForeignKeyConstraint" Usage="new System.Data.ForeignKeyConstraint (constraintName, parentColumn, childColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -227,9 +251,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.#ctor(System.String,System.Data.DataColumn[],System.Data.DataColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (constraintName As String, parentColumns As DataColumn(), childColumns As DataColumn())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyConstraint(System::String ^ constraintName, cli::array &lt;System::Data::DataColumn ^&gt; ^ parentColumns, cli::array &lt;System::Data::DataColumn ^&gt; ^ childColumns);" />
+      <MemberSignature Language="F#" Value="new System.Data.ForeignKeyConstraint : string * System.Data.DataColumn[] * System.Data.DataColumn[] -&gt; System.Data.ForeignKeyConstraint" Usage="new System.Data.ForeignKeyConstraint (constraintName, parentColumns, childColumns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -275,9 +302,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string constraintName, string parentTableName, string[] parentColumnNames, string[] childColumnNames, valuetype System.Data.AcceptRejectRule acceptRejectRule, valuetype System.Data.Rule deleteRule, valuetype System.Data.Rule updateRule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.#ctor(System.String,System.String,System.String[],System.String[],System.Data.AcceptRejectRule,System.Data.Rule,System.Data.Rule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyConstraint(System::String ^ constraintName, System::String ^ parentTableName, cli::array &lt;System::String ^&gt; ^ parentColumnNames, cli::array &lt;System::String ^&gt; ^ childColumnNames, System::Data::AcceptRejectRule acceptRejectRule, System::Data::Rule deleteRule, System::Data::Rule updateRule);" />
+      <MemberSignature Language="F#" Value="new System.Data.ForeignKeyConstraint : string * string * string[] * string[] * System.Data.AcceptRejectRule * System.Data.Rule * System.Data.Rule -&gt; System.Data.ForeignKeyConstraint" Usage="new System.Data.ForeignKeyConstraint (constraintName, parentTableName, parentColumnNames, childColumnNames, acceptRejectRule, deleteRule, updateRule)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -291,7 +321,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -327,9 +357,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string constraintName, string parentTableName, string parentTableNamespace, string[] parentColumnNames, string[] childColumnNames, valuetype System.Data.AcceptRejectRule acceptRejectRule, valuetype System.Data.Rule deleteRule, valuetype System.Data.Rule updateRule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.#ctor(System.String,System.String,System.String,System.String[],System.String[],System.Data.AcceptRejectRule,System.Data.Rule,System.Data.Rule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyConstraint(System::String ^ constraintName, System::String ^ parentTableName, System::String ^ parentTableNamespace, cli::array &lt;System::String ^&gt; ^ parentColumnNames, cli::array &lt;System::String ^&gt; ^ childColumnNames, System::Data::AcceptRejectRule acceptRejectRule, System::Data::Rule deleteRule, System::Data::Rule updateRule);" />
+      <MemberSignature Language="F#" Value="new System.Data.ForeignKeyConstraint : string * string * string * string[] * string[] * System.Data.AcceptRejectRule * System.Data.Rule * System.Data.Rule -&gt; System.Data.ForeignKeyConstraint" Usage="new System.Data.ForeignKeyConstraint (constraintName, parentTableName, parentTableNamespace, parentColumnNames, childColumnNames, acceptRejectRule, deleteRule, updateRule)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -343,7 +375,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -382,9 +414,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ForeignKeyConstraint.AcceptRejectRule" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AcceptRejectRule As AcceptRejectRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::AcceptRejectRule AcceptRejectRule { System::Data::AcceptRejectRule get(); void set(System::Data::AcceptRejectRule value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptRejectRule : System.Data.AcceptRejectRule with get, set" Usage="System.Data.ForeignKeyConstraint.AcceptRejectRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -398,8 +433,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("ForeignKeyConstraintAcceptRejectRuleDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -432,9 +470,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ForeignKeyConstraint.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Columns As DataColumn()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Data::DataColumn ^&gt; ^ Columns { cli::array &lt;System::Data::DataColumn ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Data.DataColumn[]" Usage="System.Data.ForeignKeyConstraint.Columns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -448,8 +489,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("ForeignKeyConstraintChildColumnsDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -480,9 +524,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ForeignKeyConstraint.DeleteRule" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DeleteRule As Rule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Rule DeleteRule { System::Data::Rule get(); void set(System::Data::Rule value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteRule : System.Data.Rule with get, set" Usage="System.Data.ForeignKeyConstraint.DeleteRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -496,8 +543,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("ForeignKeyConstraintDeleteRuleDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -533,9 +583,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (key As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="foreignKeyConstraint.Equals key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -578,9 +631,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.ForeignKeyConstraint.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="foreignKeyConstraint.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -609,9 +665,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ForeignKeyConstraint.RelatedColumns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RelatedColumns As DataColumn()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Data::DataColumn ^&gt; ^ RelatedColumns { cli::array &lt;System::Data::DataColumn ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedColumns : System.Data.DataColumn[]" Usage="System.Data.ForeignKeyConstraint.RelatedColumns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -625,8 +684,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("ForeignKeyConstraintParentColumnsDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -649,9 +711,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ForeignKeyConstraint.RelatedTable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RelatedTable As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataTable ^ RelatedTable { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedTable : System.Data.DataTable" Usage="System.Data.ForeignKeyConstraint.RelatedTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -665,8 +730,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("ForeignKeyRelatedTableDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -688,9 +756,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ForeignKeyConstraint.Table" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Table As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Data.DataTable" Usage="System.Data.ForeignKeyConstraint.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -704,8 +775,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("ConstraintTableDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -734,9 +808,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.ForeignKeyConstraint.UpdateRule" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateRule As Rule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Rule UpdateRule { System::Data::Rule get(); void set(System::Data::Rule value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateRule : System.Data.Rule with get, set" Usage="System.Data.ForeignKeyConstraint.UpdateRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -750,8 +827,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("ForeignKeyConstraintUpdateRuleDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageEncodingBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageEncodingBindingElement&#xA;Inherits BindingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageEncodingBindingElement abstract : System::ServiceModel::Channels::BindingElement" />
+  <TypeSignature Language="F#" Value="type MessageEncodingBindingElement = class&#xA;    inherit BindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -78,6 +80,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -86,6 +89,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageEncodingBindingElement" /> class.</summary>
@@ -98,10 +106,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor(System.ServiceModel.Channels.MessageEncodingBindingElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elementToBeCloned As MessageEncodingBindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEncodingBindingElement(System::ServiceModel::Channels::MessageEncodingBindingElement ^ elementToBeCloned);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.MessageEncodingBindingElement : System.ServiceModel.Channels.MessageEncodingBindingElement -&gt; System.ServiceModel.Channels.MessageEncodingBindingElement" Usage="new System.ServiceModel.Channels.MessageEncodingBindingElement elementToBeCloned" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -110,6 +120,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="elementToBeCloned" Type="System.ServiceModel.Channels.MessageEncodingBindingElement" />
       </Parameters>
@@ -134,10 +149,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateMessageEncoderFactory () As MessageEncoderFactory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::MessageEncoderFactory ^ CreateMessageEncoderFactory();" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageEncoderFactory : unit -&gt; System.ServiceModel.Channels.MessageEncoderFactory" Usage="messageEncodingBindingElement.CreateMessageEncoderFactory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -171,10 +188,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncodingBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="messageEncodingBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -226,10 +245,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property MessageVersion As MessageVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); void set(System::ServiceModel::Channels::MessageVersion ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion with get, set" Usage="System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

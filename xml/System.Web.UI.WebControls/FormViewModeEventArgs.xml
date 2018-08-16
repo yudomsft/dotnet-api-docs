@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewModeEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FormViewModeEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormViewModeEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type FormViewModeEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -54,9 +56,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewModeEventArgs.#ctor(System.Web.UI.WebControls.FormViewMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mode As FormViewMode, cancelingEdit As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormViewModeEventArgs(System::Web::UI::WebControls::FormViewMode mode, bool cancelingEdit);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.FormViewModeEventArgs : System.Web.UI.WebControls.FormViewMode * bool -&gt; System.Web.UI.WebControls.FormViewModeEventArgs" Usage="new System.Web.UI.WebControls.FormViewModeEventArgs (mode, cancelingEdit)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -99,11 +103,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancelingEdit As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CancelingEdit { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CancelingEdit : bool" Usage="System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -141,11 +152,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode" />
       <MemberSignature Language="VB.NET" Value="Public Property NewMode As FormViewMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::FormViewMode NewMode { System::Web::UI::WebControls::FormViewMode get(); void set(System::Web::UI::WebControls::FormViewMode value); };" />
+      <MemberSignature Language="F#" Value="member this.NewMode : System.Web.UI.WebControls.FormViewMode with get, set" Usage="System.Web.UI.WebControls.FormViewModeEventArgs.NewMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FormViewMode</ReturnType>
       </ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringSettingsCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionStringSettingsCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringSettingsCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type ConnectionStringSettingsCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -17,8 +19,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Configuration.ConnectionStringSettings), CollectionType=System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Configuration.ConnectionStringSettings))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,7 +44,7 @@
   
  The following example is an excerpt from the configuration file used by the previous example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <connectionStrings>  
@@ -64,6 +69,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -82,9 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Add(System.Configuration.ConnectionStringSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (settings As ConnectionStringSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Configuration::ConnectionStringSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Configuration.ConnectionStringSettings -&gt; unit" Usage="connectionStringSettingsCollection.Add settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -120,9 +128,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.BaseAdd(System.Int32,System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (index As Integer, element As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(int index, System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.BaseAdd : int * System.Configuration.ConfigurationElement -&gt; unit" Usage="connectionStringSettingsCollection.BaseAdd (index, element)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -149,9 +159,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="connectionStringSettingsCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -189,9 +201,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="connectionStringSettingsCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -214,9 +228,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="connectionStringSettingsCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -242,9 +258,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.IndexOf(System.Configuration.ConnectionStringSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (settings As ConnectionStringSettings) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Configuration::ConnectionStringSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Configuration.ConnectionStringSettings -&gt; int" Usage="connectionStringSettingsCollection.IndexOf settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -291,9 +309,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ConnectionStringSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringSettings ^ default[int] { System::Configuration::ConnectionStringSettings ^ get(int index); void set(int index, System::Configuration::ConnectionStringSettings ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.ConnectionStringSettings with get, set" Usage="System.Configuration.ConnectionStringSettingsCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -330,17 +350,19 @@
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringSettings this[string name] { get; }" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ConnectionStringSettings" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringSettings ^ default[System::String ^] { System::Configuration::ConnectionStringSettings ^ get(System::String ^ name); };" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringSettings this[string name] { get; }" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ConnectionStringSettings" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringSettings ^ default[System::String ^] { System::Configuration::ConnectionStringSettings ^ get(System::String ^ name); };" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringSettings this[string Name] { get; }" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConnectionStringSettings Item(string)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConnectionStringSettings Item(string)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Name As String) As ConnectionStringSettings" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConnectionStringSettings ^ default[System::String ^] { System::Configuration::ConnectionStringSettings ^ get(System::String ^ Name); };" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.ConnectionStringSettings" Usage="System.Configuration.ConnectionStringSettingsCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -351,7 +373,7 @@
         <ReturnType>System.Configuration.ConnectionStringSettings</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="Name" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -383,9 +405,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ConnectionStringSettingsCollection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -417,9 +441,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Remove(System.Configuration.ConnectionStringSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (settings As ConnectionStringSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Configuration::ConnectionStringSettings ^ settings);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Configuration.ConnectionStringSettings -&gt; unit" Usage="connectionStringSettingsCollection.Remove settings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -455,9 +481,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="connectionStringSettingsCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -493,9 +521,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="connectionStringSettingsCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

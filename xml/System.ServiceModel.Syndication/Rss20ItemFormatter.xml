@@ -4,12 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Rss20ItemFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class Rss20ItemFormatter&#xA;Inherits SyndicationItemFormatter&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Rss20ItemFormatter : System::ServiceModel::Syndication::SyndicationItemFormatter, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type Rss20ItemFormatter = class&#xA;    inherit SyndicationItemFormatter&#xA;    interface IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -21,8 +23,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Xml.Serialization.XmlRoot("item", Namespace="")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="item", Namespace="")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -67,6 +75,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -81,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As SyndicationItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(System::ServiceModel::Syndication::SyndicationItem ^ itemToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter : System.ServiceModel.Syndication.SyndicationItem -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter itemToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,8 +98,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="itemToWrite" Type="System.ServiceModel.Syndication.SyndicationItem" />
       </Parameters>
@@ -115,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemTypeToCreate As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(Type ^ itemTypeToCreate);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter : Type -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter itemTypeToCreate" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +139,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -153,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor(System.ServiceModel.Syndication.SyndicationItem,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As SyndicationItem, serializeExtensionsAsAtom As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(System::ServiceModel::Syndication::SyndicationItem ^ itemToWrite, bool serializeExtensionsAsAtom);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter : System.ServiceModel.Syndication.SyndicationItem * bool -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter (itemToWrite, serializeExtensionsAsAtom)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -160,6 +179,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -194,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.CanRead(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRead (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRead(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.CanRead : System.Xml.XmlReader -&gt; bool" Usage="rss20ItemFormatter.CanRead reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -201,6 +222,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.CreateItemInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="rss20ItemFormatter.CreateItemInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,6 +261,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,6 +287,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.ItemType" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,8 +295,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -287,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveAttributeExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveAttributeExtensions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveAttributeExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreserveAttributeExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveAttributeExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -294,8 +326,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -318,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveElementExtensions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveElementExtensions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreserveElementExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveElementExtensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -325,8 +364,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -349,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReadFrom (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadFrom(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="override this.ReadFrom : System.Xml.XmlReader -&gt; unit" Usage="rss20ItemFormatter.ReadFrom reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -356,6 +402,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -385,6 +432,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.SerializeExtensionsAsAtom" />
       <MemberSignature Language="VB.NET" Value="Public Property SerializeExtensionsAsAtom As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeExtensionsAsAtom { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SerializeExtensionsAsAtom : bool with get, set" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.SerializeExtensionsAsAtom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,8 +440,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -426,6 +480,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,6 +517,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -492,6 +548,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -512,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -519,6 +577,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -543,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="rss20ItemFormatter.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -550,6 +610,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

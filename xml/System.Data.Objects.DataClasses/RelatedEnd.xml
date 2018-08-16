@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.RelatedEnd" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RelatedEnd&#xA;Implements IRelatedEnd" />
   <TypeSignature Language="C++ CLI" Value="public ref class RelatedEnd abstract : System::Data::Objects::DataClasses::IRelatedEnd" />
+  <TypeSignature Language="F#" Value="type RelatedEnd = class&#xA;    interface IRelatedEnd" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
     </Attribute>
   </Attributes>
@@ -43,9 +45,11 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.DataClasses.RelatedEnd.AssociationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AssociationChanged As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ AssociationChanged;" />
+      <MemberSignature Language="F#" Value="member this.AssociationChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.AssociationChanged : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,18 +81,50 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Attach&lt;TEntity&gt;">
+      <MemberSignature Language="C#" Value="protected internal void Attach&lt;TEntity&gt; (System.Collections.Generic.IEnumerable&lt;TEntity&gt; entities, bool allowCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Attach&lt;TEntity&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TEntity&gt; entities, bool allowCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.Attach``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Attach(Of TEntity) (entities As IEnumerable(Of TEntity), allowCollection As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename TEntity&gt;&#xA; void Attach(System::Collections::Generic::IEnumerable&lt;TEntity&gt; ^ entities, bool allowCollection);" />
+      <MemberSignature Language="F#" Value="member this.Attach : seq&lt;'Entity&gt; * bool -&gt; unit" Usage="relatedEnd.Attach (entities, allowCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TEntity" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="entities" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
+        <Parameter Name="allowCollection" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TEntity">To be added.</typeparam>
+        <param name="entities">To be added.</param>
+        <param name="allowCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="relatedEnd.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Objects.DataClasses.IRelatedEnd.GetEnumerator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,19 +143,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoaded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoaded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLoaded : bool" Usage="System.Data.Objects.DataClasses.RelatedEnd.IsLoaded" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IRelatedEnd.IsLoaded</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -165,12 +203,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.Load" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Load();" />
+      <MemberSignature Language="F#" Value="abstract member Load : unit -&gt; unit&#xA;override this.Load : unit -&gt; unit" Usage="relatedEnd.Load " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Objects.DataClasses.IRelatedEnd.Load</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -207,12 +247,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.Load(System.Data.Objects.MergeOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Load(System::Data::Objects::MergeOption mergeOption);" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Data.Objects.MergeOption -&gt; unit" Usage="relatedEnd.Load mergeOption" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Objects.DataClasses.IRelatedEnd.Load(System.Data.Objects.MergeOption)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,25 +291,57 @@
  When the source object is being tracked but is in the <see cref="F:System.Data.EntityState.Added" /> or <see cref="F:System.Data.EntityState.Deleted" /> state or the <see cref="T:System.Data.Objects.MergeOption" /> used for <see cref="M:System.Data.Objects.DataClasses.RelatedEnd.Load" /> is <see cref="F:System.Data.Objects.MergeOption.NoTracking" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Merge&lt;TEntity&gt;">
+      <MemberSignature Language="C#" Value="protected void Merge&lt;TEntity&gt; (System.Collections.Generic.IEnumerable&lt;TEntity&gt; collection, System.Data.Objects.MergeOption mergeOption, bool setIsLoaded);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Merge&lt;TEntity&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TEntity&gt; collection, valuetype System.Data.Objects.MergeOption mergeOption, bool setIsLoaded) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.Merge``1(System.Collections.Generic.IEnumerable{``0},System.Data.Objects.MergeOption,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename TEntity&gt;&#xA; void Merge(System::Collections::Generic::IEnumerable&lt;TEntity&gt; ^ collection, System::Data::Objects::MergeOption mergeOption, bool setIsLoaded);" />
+      <MemberSignature Language="F#" Value="member this.Merge : seq&lt;'Entity&gt; * System.Data.Objects.MergeOption * bool -&gt; unit" Usage="relatedEnd.Merge (collection, mergeOption, setIsLoaded)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TEntity" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;TEntity&gt;" />
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
+        <Parameter Name="setIsLoaded" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TEntity">To be added.</typeparam>
+        <param name="collection">To be added.</param>
+        <param name="mergeOption">To be added.</param>
+        <param name="setIsLoaded">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnDeserialized">
       <MemberSignature Language="C#" Value="public void OnDeserialized (System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnDeserialized(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.OnDeserialized(System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnDeserialized (context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDeserialized(System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="member this.OnDeserialized : System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="relatedEnd.OnDeserialized context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.Serialization.OnDeserialized</AttributeName>
         </Attribute>
       </Attributes>
@@ -289,19 +363,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.RelationshipName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelationshipName : string" Usage="System.Data.Objects.DataClasses.RelatedEnd.RelationshipName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IRelatedEnd.RelationshipName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -320,19 +396,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.RelationshipSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipSet As RelationshipSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::RelationshipSet ^ RelationshipSet { System::Data::Metadata::Edm::RelationshipSet ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelationshipSet : System.Data.Metadata.Edm.RelationshipSet" Usage="System.Data.Objects.DataClasses.RelatedEnd.RelationshipSet" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IRelatedEnd.RelationshipSet</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -351,19 +429,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.SourceRoleName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceRoleName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceRoleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SourceRoleName : string" Usage="System.Data.Objects.DataClasses.RelatedEnd.SourceRoleName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IRelatedEnd.SourceRoleName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -415,6 +495,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -492,6 +573,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -562,6 +644,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,6 +687,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -669,19 +753,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.TargetRoleName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetRoleName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetRoleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetRoleName : string" Usage="System.Data.Objects.DataClasses.RelatedEnd.TargetRoleName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Objects.DataClasses.IRelatedEnd.TargetRoleName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
         </Attribute>
       </Attributes>
@@ -708,6 +794,89 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Data.Objects.DataClasses.IRelatedEnd.SourceRoleName" />
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateEntityForAttach&lt;TEntity&gt;">
+      <MemberSignature Language="C#" Value="protected internal void ValidateEntityForAttach&lt;TEntity&gt; (TEntity entity, int index, bool allowCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void ValidateEntityForAttach&lt;TEntity&gt;(!!TEntity entity, int32 index, bool allowCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.ValidateEntityForAttach``1(``0,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub ValidateEntityForAttach(Of TEntity) (entity As TEntity, index As Integer, allowCollection As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename TEntity&gt;&#xA; void ValidateEntityForAttach(TEntity entity, int index, bool allowCollection);" />
+      <MemberSignature Language="F#" Value="member this.ValidateEntityForAttach : 'Entity * int * bool -&gt; unit" Usage="relatedEnd.ValidateEntityForAttach (entity, index, allowCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TEntity" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="entity" Type="TEntity" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="allowCollection" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TEntity">To be added.</typeparam>
+        <param name="entity">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="allowCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateLoad&lt;TEntity&gt;">
+      <MemberSignature Language="C#" Value="protected System.Data.Objects.ObjectQuery&lt;TEntity&gt; ValidateLoad&lt;TEntity&gt; (System.Data.Objects.MergeOption mergeOption, string relatedEndName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!!TEntity&gt; ValidateLoad&lt;TEntity&gt;(valuetype System.Data.Objects.MergeOption mergeOption, string relatedEndName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.ValidateLoad``1(System.Data.Objects.MergeOption,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename TEntity&gt;&#xA; System::Data::Objects::ObjectQuery&lt;TEntity&gt; ^ ValidateLoad(System::Data::Objects::MergeOption mergeOption, System::String ^ relatedEndName);" />
+      <MemberSignature Language="F#" Value="member this.ValidateLoad : System.Data.Objects.MergeOption * string -&gt; System.Data.Objects.ObjectQuery&lt;'Entity&gt;" Usage="relatedEnd.ValidateLoad (mergeOption, relatedEndName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Objects.ObjectQuery&lt;TEntity&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TEntity" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
+        <Parameter Name="relatedEndName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TEntity">To be added.</typeparam>
+        <param name="mergeOption">To be added.</param>
+        <param name="relatedEndName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateOwnerForAttach">
+      <MemberSignature Language="C#" Value="protected internal void ValidateOwnerForAttach ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void ValidateOwnerForAttach() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.ValidateOwnerForAttach" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub ValidateOwnerForAttach ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void ValidateOwnerForAttach();" />
+      <MemberSignature Language="F#" Value="member this.ValidateOwnerForAttach : unit -&gt; unit" Usage="relatedEnd.ValidateOwnerForAttach " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,12 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class TreeViewItemAutomationPeer&#xA;Inherits ItemsControlAutomationPeer&#xA;Implements IExpandCollapseProvider, IScrollItemProvider, ISelectionItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeViewItemAutomationPeer : System::Windows::Automation::Peers::ItemsControlAutomationPeer, System::Windows::Automation::Provider::IExpandCollapseProvider, System::Windows::Automation::Provider::IScrollItemProvider, System::Windows::Automation::Provider::ISelectionItemProvider" />
+  <TypeSignature Language="F#" Value="type TreeViewItemAutomationPeer = class&#xA;    inherit ItemsControlAutomationPeer&#xA;    interface IExpandCollapseProvider&#xA;    interface ISelectionItemProvider&#xA;    interface IScrollItemProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Automation.Peers.ItemsControlAutomationPeer</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-3.0">System.Windows.Automation.Peers.FrameworkElementAutomationPeer</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -33,11 +36,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.#ctor(System.Windows.Controls.TreeViewItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As TreeViewItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeViewItemAutomationPeer(System::Windows::Controls::TreeViewItem ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.TreeViewItemAutomationPeer : System.Windows.Controls.TreeViewItem -&gt; System.Windows.Automation.Peers.TreeViewItemAutomationPeer" Usage="new System.Windows.Automation.Peers.TreeViewItemAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.TreeViewItem" />
       </Parameters>
@@ -53,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.CreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="treeViewItemAutomationPeer.CreateItemAutomationPeer item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,16 +88,17 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.FindOrCreateItemAutomationPeer(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function FindOrCreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ FindOrCreateItemAutomationPeer(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="override this.FindOrCreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="treeViewItemAutomationPeer.FindOrCreateItemAutomationPeer item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
@@ -109,9 +121,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="treeViewItemAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="treeViewItemAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,9 +173,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="treeViewItemAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,9 +195,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="treeViewItemAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,6 +215,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOffscreenCore">
+      <MemberSignature Language="C#" Value="protected override bool IsOffscreenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsOffscreenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.IsOffscreenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsOffscreenCore () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsOffscreenCore();" />
+      <MemberSignature Language="F#" Value="override this.IsOffscreenCore : unit -&gt; bool" Usage="treeViewItemAutomationPeer.IsOffscreenCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.TreeViewItem" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.TreeViewItemAutomationPeer" /> object is off the screen. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" />.</summary>
+        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method does not indicate whether the element is visible.
+In some circumstances, the element can be on the screen but still not be visible (for example, an element that is obscured by other elements).
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse">
       <MemberSignature Language="C#" Value="void IExpandCollapseProvider.Collapse ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse() cil managed" />
@@ -208,6 +258,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,6 +282,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,13 +299,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandCollapseState As ExpandCollapseState Implements IExpandCollapseProvider.ExpandCollapseState" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System::Windows::Automation::Provider::IExpandCollapseProvider::ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,6 +331,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,6 +355,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,13 +372,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#IsSelected" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSelected As Boolean Implements ISelectionItemProvider.IsSelected" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ISelectionItemProvider::IsSelected { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -347,6 +405,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,6 +429,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,13 +446,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TreeViewItemAutomationPeer.System#Windows#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SelectionContainer As IRawElementProviderSimple Implements ISelectionItemProvider.SelectionContainer" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System::Windows::Automation::Provider::ISelectionItemProvider::SelectionContainer { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

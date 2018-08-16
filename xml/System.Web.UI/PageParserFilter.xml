@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageParserFilter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageParserFilter" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageParserFilter abstract" />
+  <TypeSignature Language="F#" Value="type PageParserFilter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -55,8 +57,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PageParserFilter" /> class.</summary>
@@ -68,9 +76,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddControl(class System.Type type, class System.Collections.IDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AddControl(System.Type,System.Collections.IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddControl(Type ^ type, System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="member this.AddControl : Type * System.Collections.IDictionary -&gt; unit" Usage="pageParserFilter.AddControl (type, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowBaseType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowBaseType (baseType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowBaseType(Type ^ baseType);" />
+      <MemberSignature Language="F#" Value="abstract member AllowBaseType : Type -&gt; bool&#xA;override this.AllowBaseType : Type -&gt; bool" Usage="pageParserFilter.AllowBaseType baseType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,9 +144,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.AllowCode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowCode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowCode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowCode : bool" Usage="System.Web.UI.PageParserFilter.AllowCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,9 +174,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowControl(System.Type,System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowControl (controlType As Type, builder As ControlBuilder) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowControl(Type ^ controlType, System::Web::UI::ControlBuilder ^ builder);" />
+      <MemberSignature Language="F#" Value="abstract member AllowControl : Type * System.Web.UI.ControlBuilder -&gt; bool&#xA;override this.AllowControl : Type * System.Web.UI.ControlBuilder -&gt; bool" Usage="pageParserFilter.AllowControl (controlType, builder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,9 +210,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowServerSideInclude(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowServerSideInclude (includeVirtualPath As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowServerSideInclude(System::String ^ includeVirtualPath);" />
+      <MemberSignature Language="F#" Value="abstract member AllowServerSideInclude : string -&gt; bool&#xA;override this.AllowServerSideInclude : string -&gt; bool" Usage="pageParserFilter.AllowServerSideInclude includeVirtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,9 +244,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowVirtualReference(System.String,System.Web.UI.VirtualReferenceType)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowVirtualReference (referenceVirtualPath As String, referenceType As VirtualReferenceType) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowVirtualReference(System::String ^ referenceVirtualPath, System::Web::UI::VirtualReferenceType referenceType);" />
+      <MemberSignature Language="F#" Value="abstract member AllowVirtualReference : string * System.Web.UI.VirtualReferenceType -&gt; bool&#xA;override this.AllowVirtualReference : string * System.Web.UI.VirtualReferenceType -&gt; bool" Usage="pageParserFilter.AllowVirtualReference (referenceVirtualPath, referenceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,11 +281,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.CalledFromParseControl" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CalledFromParseControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool CalledFromParseControl { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CalledFromParseControl : bool" Usage="System.Web.UI.PageParserFilter.CalledFromParseControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -289,9 +315,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.GetCompilationMode(System.Web.UI.CompilationMode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCompilationMode (current As CompilationMode) As CompilationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::CompilationMode GetCompilationMode(System::Web::UI::CompilationMode current);" />
+      <MemberSignature Language="F#" Value="abstract member GetCompilationMode : System.Web.UI.CompilationMode -&gt; System.Web.UI.CompilationMode&#xA;override this.GetCompilationMode : System.Web.UI.CompilationMode -&gt; System.Web.UI.CompilationMode" Usage="pageParserFilter.GetCompilationMode current" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -321,9 +349,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.GetNoCompileUserControlType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNoCompileUserControlType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetNoCompileUserControlType();" />
+      <MemberSignature Language="F#" Value="abstract member GetNoCompileUserControlType : unit -&gt; Type&#xA;override this.GetNoCompileUserControlType : unit -&gt; Type" Usage="pageParserFilter.GetNoCompileUserControlType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -352,9 +382,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.Initialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="pageParserFilter.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -379,9 +411,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.Line" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Line As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Line { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="System.Web.UI.PageParserFilter.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,9 +442,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.NumberOfControlsAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NumberOfControlsAllowed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int NumberOfControlsAllowed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberOfControlsAllowed : int" Usage="System.Web.UI.PageParserFilter.NumberOfControlsAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -435,9 +471,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.NumberOfDirectDependenciesAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NumberOfDirectDependenciesAllowed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int NumberOfDirectDependenciesAllowed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberOfDirectDependenciesAllowed : int" Usage="System.Web.UI.PageParserFilter.NumberOfDirectDependenciesAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -463,9 +501,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ParseComplete(System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ParseComplete (rootBuilder As ControlBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ParseComplete(System::Web::UI::ControlBuilder ^ rootBuilder);" />
+      <MemberSignature Language="F#" Value="abstract member ParseComplete : System.Web.UI.ControlBuilder -&gt; unit&#xA;override this.ParseComplete : System.Web.UI.ControlBuilder -&gt; unit" Usage="pageParserFilter.ParseComplete rootBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -486,9 +526,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.PreprocessDirective(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub PreprocessDirective (directiveName As String, attributes As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PreprocessDirective(System::String ^ directiveName, System::Collections::IDictionary ^ attributes);" />
+      <MemberSignature Language="F#" Value="abstract member PreprocessDirective : string * System.Collections.IDictionary -&gt; unit&#xA;override this.PreprocessDirective : string * System.Collections.IDictionary -&gt; unit" Usage="pageParserFilter.PreprocessDirective (directiveName, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -518,9 +560,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessCodeConstruct(System.Web.UI.CodeConstructType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessCodeConstruct (codeType As CodeConstructType, code As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ProcessCodeConstruct(System::Web::UI::CodeConstructType codeType, System::String ^ code);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCodeConstruct : System.Web.UI.CodeConstructType * string -&gt; bool&#xA;override this.ProcessCodeConstruct : System.Web.UI.CodeConstructType * string -&gt; bool" Usage="pageParserFilter.ProcessCodeConstruct (codeType, code)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -557,9 +601,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessDataBindingAttribute (controlId As String, name As String, value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ProcessDataBindingAttribute(System::String ^ controlId, System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessDataBindingAttribute : string * string * string -&gt; bool&#xA;override this.ProcessDataBindingAttribute : string * string * string -&gt; bool" Usage="pageParserFilter.ProcessDataBindingAttribute (controlId, name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -595,9 +641,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessEventHookup(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessEventHookup (controlId As String, eventName As String, handlerName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ProcessEventHookup(System::String ^ controlId, System::String ^ eventName, System::String ^ handlerName);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessEventHookup : string * string * string -&gt; bool&#xA;override this.ProcessEventHookup : string * string * string -&gt; bool" Usage="pageParserFilter.ProcessEventHookup (controlId, eventName, handlerName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -633,9 +681,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.SetPageProperty(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetPageProperty (filter As String, name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetPageProperty(System::String ^ filter, System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetPageProperty : string * string * string -&gt; unit" Usage="pageParserFilter.SetPageProperty (filter, name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -668,9 +718,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.TotalNumberOfDependenciesAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TotalNumberOfDependenciesAllowed As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TotalNumberOfDependenciesAllowed { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalNumberOfDependenciesAllowed : int" Usage="System.Web.UI.PageParserFilter.TotalNumberOfDependenciesAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -696,9 +748,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ VirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string" Usage="System.Web.UI.PageParserFilter.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

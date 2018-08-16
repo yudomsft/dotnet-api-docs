@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageContractAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageContractAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageContractAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MessageContractAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -20,8 +22,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -70,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -90,12 +96,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.HasProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.MessageContractAttribute.HasProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -119,10 +132,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.IsWrapped" />
       <MemberSignature Language="VB.NET" Value="Public Property IsWrapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWrapped { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsWrapped : bool with get, set" Usage="System.ServiceModel.MessageContractAttribute.IsWrapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -131,6 +146,14 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -154,12 +177,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.MessageContractAttribute.ProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
@@ -183,10 +213,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.WrapperName" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapperName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrapperName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapperName : string with get, set" Usage="System.ServiceModel.MessageContractAttribute.WrapperName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -195,6 +227,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -219,10 +256,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.WrapperNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapperNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrapperNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapperNamespace : string with get, set" Usage="System.ServiceModel.MessageContractAttribute.WrapperNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -231,6 +270,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

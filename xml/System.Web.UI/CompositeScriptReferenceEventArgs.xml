@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CompositeScriptReferenceEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositeScriptReferenceEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositeScriptReferenceEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type CompositeScriptReferenceEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,9 +25,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.CompositeScriptReferenceEventArgs.#ctor(System.Web.UI.CompositeScriptReference)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (compositeScript As CompositeScriptReference)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeScriptReferenceEventArgs(System::Web::UI::CompositeScriptReference ^ compositeScript);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.CompositeScriptReferenceEventArgs : System.Web.UI.CompositeScriptReference -&gt; System.Web.UI.CompositeScriptReferenceEventArgs" Usage="new System.Web.UI.CompositeScriptReferenceEventArgs compositeScript" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -43,11 +47,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.CompositeScriptReferenceEventArgs.CompositeScript" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompositeScript As CompositeScriptReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::CompositeScriptReference ^ CompositeScript { System::Web::UI::CompositeScriptReference ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompositeScript : System.Web.UI.CompositeScriptReference" Usage="System.Web.UI.CompositeScriptReferenceEventArgs.CompositeScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.CompositeScriptReference</ReturnType>
       </ReturnValue>

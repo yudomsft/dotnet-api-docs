@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Reference" />
   <TypeSignature Language="VB.NET" Value="Public Class Reference&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class Reference : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type Reference = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Name")</AttributeName>
     </Attribute>
   </Attributes>
@@ -55,6 +56,11 @@
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.Reference" /> class.</summary>
@@ -67,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Reference.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Reference(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.Reference : string -&gt; System.Windows.Markup.Reference" Usage="new System.Windows.Markup.Reference name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -87,14 +94,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Reference.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Markup.Reference.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Markup.ConstructorArgument("name")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Reference.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="reference.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

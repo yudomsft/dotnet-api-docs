@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DisplayNameAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DisplayNameAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DisplayNameAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type DisplayNameAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,8 +26,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Event | System.AttributeTargets.Method | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Event)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -74,6 +79,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -93,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayNameAttribute(System::String ^ displayName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DisplayNameAttribute : string -&gt; System.ComponentModel.DisplayNameAttribute" Usage="new System.ComponentModel.DisplayNameAttribute displayName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -102,6 +109,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -109,6 +117,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="displayName" Type="System.String" />
       </Parameters>
@@ -124,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DisplayNameAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DisplayNameAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DisplayNameAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DisplayNameAttribute" Usage="System.ComponentModel.DisplayNameAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -133,6 +147,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -154,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DisplayNameAttribute.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.ComponentModel.DisplayNameAttribute.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -163,6 +179,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -170,6 +187,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -185,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DisplayNameAttribute.DisplayNameValue" />
       <MemberSignature Language="VB.NET" Value="Protected Property DisplayNameValue As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ DisplayNameValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayNameValue : string with get, set" Usage="System.ComponentModel.DisplayNameAttribute.DisplayNameValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -194,6 +217,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -201,6 +225,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -216,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="displayNameAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -225,6 +258,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -252,6 +286,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="displayNameAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -261,6 +296,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -284,9 +320,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DisplayNameAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="displayNameAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

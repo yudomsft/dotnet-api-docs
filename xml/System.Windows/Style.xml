@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Style" />
   <TypeSignature Language="VB.NET" Value="Public Class Style&#xA;Inherits DispatcherObject&#xA;Implements IAddChild, INameScope, IQueryAmbient, ISealable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Style : System::Windows::Threading::DispatcherObject, System::Windows::ISealable, System::Windows::Markup::IAddChild, System::Windows::Markup::INameScope, System::Windows::Markup::IQueryAmbient" />
+  <TypeSignature Language="F#" Value="type Style = class&#xA;    inherit DispatcherObject&#xA;    interface INameScope&#xA;    interface IAddChild&#xA;    interface ISealable&#xA;    interface IQueryAmbient" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,13 +28,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Ignore)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Setters")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.DictionaryKeyProperty("TargetType")</AttributeName>
     </Attribute>
   </Attributes>
@@ -103,6 +105,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -124,9 +127,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Style.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Style(Type ^ targetType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Style : Type -&gt; System.Windows.Style" Usage="new System.Windows.Style targetType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -144,9 +149,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Style.#ctor(System.Type,System.Windows.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetType As Type, basedOn As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Style(Type ^ targetType, System::Windows::Style ^ basedOn);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Style : Type * System.Windows.Style -&gt; System.Windows.Style" Usage="new System.Windows.Style (targetType, basedOn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -166,16 +173,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.BasedOn" />
       <MemberSignature Language="VB.NET" Value="Public Property BasedOn As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ BasedOn { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BasedOn : System.Windows.Style with get, set" Usage="System.Windows.Style.BasedOn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Markup.Ambient</AttributeName>
         </Attribute>
       </Attributes>
@@ -231,9 +240,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Style.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="style.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,9 +263,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.IsSealed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.Style.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,12 +294,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Style.RegisterName(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterName (name As String, scopedElement As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterName(System::String ^ name, System::Object ^ scopedElement);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterName : string * obj -&gt; unit&#xA;override this.RegisterName : string * obj -&gt; unit" Usage="style.RegisterName (name, scopedElement)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.INameScope.RegisterName(System.String,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,16 +324,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.Resources" />
       <MemberSignature Language="VB.NET" Value="Public Property Resources As ResourceDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionary ^ Resources { System::Windows::ResourceDictionary ^ get(); void set(System::Windows::ResourceDictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resources : System.Windows.ResourceDictionary with get, set" Usage="System.Windows.Style.Resources" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IHaveResources.Resources</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Markup.Ambient</AttributeName>
         </Attribute>
       </Attributes>
@@ -368,9 +385,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Style.Seal" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seal ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seal();" />
+      <MemberSignature Language="F#" Value="member this.Seal : unit -&gt; unit" Usage="style.Seal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -388,14 +407,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.Setters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Setters As SetterBaseCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::SetterBaseCollection ^ Setters { System::Windows::SetterBaseCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Setters : System.Windows.SetterBaseCollection" Usage="System.Windows.Style.Setters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -457,10 +481,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.ISealable.CanSeal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.System#Windows#ISealable#CanSeal" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSeal As Boolean Implements ISealable.CanSeal" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.ISealable.CanSeal { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::ISealable::CanSeal { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.ISealable.CanSeal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -477,12 +503,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.ISealable.IsSealed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.System#Windows#ISealable#IsSealed" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSealed As Boolean Implements ISealable.IsSealed" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.ISealable.IsSealed { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::ISealable::IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.ISealable.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -501,8 +534,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -524,6 +563,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -557,6 +597,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -590,6 +631,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -647,16 +689,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.TargetType" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetType : Type with get, set" Usage="System.Windows.Style.TargetType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Markup.Ambient</AttributeName>
         </Attribute>
       </Attributes>
@@ -712,14 +756,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Style.Triggers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Triggers As TriggerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TriggerCollection ^ Triggers { System::Windows::TriggerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Triggers : System.Windows.TriggerCollection" Usage="System.Windows.Style.Triggers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -769,12 +818,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Style.UnregisterName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterName (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnregisterName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterName : string -&gt; unit&#xA;override this.UnregisterName : string -&gt; unit" Usage="style.UnregisterName name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.INameScope.UnregisterName(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

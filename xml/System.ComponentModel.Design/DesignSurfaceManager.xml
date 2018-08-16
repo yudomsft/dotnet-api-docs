@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurfaceManager" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignSurfaceManager&#xA;Implements IDisposable, IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignSurfaceManager : IDisposable, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type DesignSurfaceManager = class&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,8 +65,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class.</summary>
@@ -77,9 +85,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parentProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignSurfaceManager(IServiceProvider ^ parentProvider);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignSurfaceManager : IServiceProvider -&gt; System.ComponentModel.Design.DesignSurfaceManager" Usage="new System.ComponentModel.Design.DesignSurfaceManager parentProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -99,9 +109,11 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurface" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ActiveDesignSurface As DesignSurface" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignSurface ^ ActiveDesignSurface { System::ComponentModel::Design::DesignSurface ^ get(); void set(System::ComponentModel::Design::DesignSurface ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveDesignSurface : System.ComponentModel.Design.DesignSurface with get, set" Usage="System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurface" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +138,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurfaceChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ActiveDesignSurfaceChanged As ActiveDesignSurfaceChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ActiveDesignSurfaceChangedEventHandler ^ ActiveDesignSurfaceChanged;" />
+      <MemberSignature Language="F#" Value="member this.ActiveDesignSurfaceChanged : System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler " Usage="member this.ActiveDesignSurfaceChanged : System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,9 +168,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDesignSurface () As DesignSurface" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::DesignSurface ^ CreateDesignSurface();" />
+      <MemberSignature Language="F#" Value="member this.CreateDesignSurface : unit -&gt; System.ComponentModel.Design.DesignSurface" Usage="designSurfaceManager.CreateDesignSurface " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,9 +193,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDesignSurface (parentProvider As IServiceProvider) As DesignSurface" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Design::DesignSurface ^ CreateDesignSurface(IServiceProvider ^ parentProvider);" />
+      <MemberSignature Language="F#" Value="member this.CreateDesignSurface : IServiceProvider -&gt; System.ComponentModel.Design.DesignSurface" Usage="designSurfaceManager.CreateDesignSurface parentProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,9 +235,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurfaceCore(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDesignSurfaceCore (parentProvider As IServiceProvider) As DesignSurface" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::Design::DesignSurface ^ CreateDesignSurfaceCore(IServiceProvider ^ parentProvider);" />
+      <MemberSignature Language="F#" Value="abstract member CreateDesignSurfaceCore : IServiceProvider -&gt; System.ComponentModel.Design.DesignSurface&#xA;override this.CreateDesignSurfaceCore : IServiceProvider -&gt; System.ComponentModel.Design.DesignSurface" Usage="designSurfaceManager.CreateDesignSurfaceCore parentProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,9 +270,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaceCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DesignSurfaceCreated As DesignSurfaceEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::DesignSurfaceEventHandler ^ DesignSurfaceCreated;" />
+      <MemberSignature Language="F#" Value="member this.DesignSurfaceCreated : System.ComponentModel.Design.DesignSurfaceEventHandler " Usage="member this.DesignSurfaceCreated : System.ComponentModel.Design.DesignSurfaceEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,9 +291,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaceDisposed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event DesignSurfaceDisposed As DesignSurfaceEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::DesignSurfaceEventHandler ^ DesignSurfaceDisposed;" />
+      <MemberSignature Language="F#" Value="member this.DesignSurfaceDisposed : System.ComponentModel.Design.DesignSurfaceEventHandler " Usage="member this.DesignSurfaceDisposed : System.ComponentModel.Design.DesignSurfaceEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,9 +312,11 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignSurfaces As DesignSurfaceCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignSurfaceCollection ^ DesignSurfaces { System::ComponentModel::Design::DesignSurfaceCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignSurfaces : System.ComponentModel.Design.DesignSurfaceCollection" Usage="System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -326,14 +352,21 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="designSurfaceManager.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -359,9 +392,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="designSurfaceManager.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -403,9 +438,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="designSurfaceManager.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,9 +471,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.SelectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectionChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : EventHandler " Usage="member this.SelectionChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,9 +499,11 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceManager.ServiceContainer" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ServiceContainer As ServiceContainer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::Design::ServiceContainer ^ ServiceContainer { System::ComponentModel::Design::ServiceContainer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceContainer : System.ComponentModel.Design.ServiceContainer" Usage="System.ComponentModel.Design.DesignSurfaceManager.ServiceContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

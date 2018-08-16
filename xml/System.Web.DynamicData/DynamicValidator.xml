@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicValidator&#xA;Inherits BaseValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicValidator : System::Web::UI::WebControls::BaseValidator" />
+  <TypeSignature Language="F#" Value="type DynamicValidator = class&#xA;    inherit BaseValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.DynamicData.DynamicValidator), "DynamicValidator.bmp")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.DynamicData.DynamicValidator), "DynamicValidator.ico")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -128,8 +133,14 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicValidator" /> class.</summary>
@@ -142,17 +153,25 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.Column" />
       <MemberSignature Language="VB.NET" Value="Public Property Column As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); void set(System::Web::DynamicData::MetaColumn ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Web.DynamicData.MetaColumn with get, set" Usage="System.Web.DynamicData.DynamicValidator.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,16 +189,18 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.ColumnName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ColumnName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnName : string" Usage="System.Web.DynamicData.DynamicValidator.ColumnName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -198,9 +219,11 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.ControlPropertiesValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
+      <MemberSignature Language="F#" Value="abstract member ControlPropertiesValid : unit -&gt; bool&#xA;override this.ControlPropertiesValid : unit -&gt; bool" Usage="dynamicValidator.ControlPropertiesValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -227,9 +250,11 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.EvaluateIsValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateIsValid : unit -&gt; bool&#xA;override this.EvaluateIsValid : unit -&gt; bool" Usage="dynamicValidator.EvaluateIsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,9 +274,11 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="dynamicValidator.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,9 +298,11 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.ValidateException(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ValidateException(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateException : Exception -&gt; unit&#xA;override this.ValidateException : Exception -&gt; unit" Usage="dynamicValidator.ValidateException exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -304,11 +333,21 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.ValidationException" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property ValidationException As Exception" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Exception ^ ValidationException { Exception ^ get(); void set(Exception ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationException : Exception with get, set" Usage="System.Web.DynamicData.DynamicValidator.ValidationException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>

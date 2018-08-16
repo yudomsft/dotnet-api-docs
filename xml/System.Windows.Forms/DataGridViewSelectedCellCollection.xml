@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSelectedCellCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewSelectedCellCollection&#xA;Inherits BaseCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewSelectedCellCollection : System::Windows::Forms::BaseCollection, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type DataGridViewSelectedCellCollection = class&#xA;    inherit BaseCollection&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,16 +43,21 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewSelectedCellCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="dataGridViewSelectedCellCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -78,9 +85,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Forms.DataGridViewCell dataGridViewCell) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewSelectedCellCollection.Contains(System.Windows.Forms.DataGridViewCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::DataGridViewCell ^ dataGridViewCell);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.DataGridViewCell -&gt; bool" Usage="dataGridViewSelectedCellCollection.Contains dataGridViewCell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,9 +114,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewSelectedCellCollection.CopyTo(System.Windows.Forms.DataGridViewCell[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataGridViewCell(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Forms::DataGridViewCell ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Windows.Forms.DataGridViewCell[] * int -&gt; unit" Usage="dataGridViewSelectedCellCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,13 +153,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Forms.DataGridViewCell dataGridViewCell) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewSelectedCellCollection.Insert(System.Int32,System.Windows.Forms.DataGridViewCell)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::DataGridViewCell ^ dataGridViewCell);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.DataGridViewCell -&gt; unit" Usage="dataGridViewSelectedCellCollection.Insert (index, dataGridViewCell)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -182,9 +198,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataGridViewCell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewCell ^ default[int] { System::Windows::Forms::DataGridViewCell ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.DataGridViewCell" Usage="System.Windows.Forms.DataGridViewSelectedCellCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,11 +232,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.List" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property List As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.ArrayList" Usage="System.Windows.Forms.DataGridViewSelectedCellCollection.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
@@ -241,6 +266,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,13 +309,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Collections::ICollection::Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -315,13 +343,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,13 +379,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -389,6 +421,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -423,6 +456,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -463,6 +497,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -499,6 +534,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -537,6 +573,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -574,6 +611,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -608,13 +646,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -642,13 +682,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -676,13 +718,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewSelectedCellCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -727,6 +771,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -766,6 +811,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

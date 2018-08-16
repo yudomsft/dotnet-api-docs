@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.BaseVsaSite" />
   <TypeSignature Language="VB.NET" Value="Public Class BaseVsaSite&#xA;Implements IJSVsaSite" />
   <TypeSignature Language="C++ CLI" Value="public ref class BaseVsaSite : Microsoft::JScript::Vsa::IJSVsaSite" />
+  <TypeSignature Language="F#" Value="type BaseVsaSite = class&#xA;    interface IJSVsaSite" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -17,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,6 +38,11 @@
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new site.</summary>
@@ -49,6 +55,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.BaseVsaSite.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Assembly As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Assembly { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : byte[]" Usage="Microsoft.JScript.Vsa.BaseVsaSite.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -69,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.BaseVsaSite.DebugInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DebugInfo As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ DebugInfo { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DebugInfo : byte[]" Usage="Microsoft.JScript.Vsa.BaseVsaSite.DebugInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,9 +97,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetCompiledState (ByRef pe As Byte(), ByRef debugInfo As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetCompiledState([Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % pe, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % debugInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetCompiledState :  *  -&gt; unit&#xA;override this.GetCompiledState :  *  -&gt; unit" Usage="baseVsaSite.GetCompiledState (pe, debugInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.GetCompiledState(System.Byte[],System.Byte[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -101,8 +110,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
-        <Parameter Name="debugInfo" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="pe" Type="System.Byte[]" RefType="out" />
+        <Parameter Name="debugInfo" Type="System.Byte[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pe">An assembly to be set.</param>
@@ -117,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.GetEventSourceInstance(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEventSourceInstance (itemName As String, eventSourceName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetEventSourceInstance(System::String ^ itemName, System::String ^ eventSourceName);" />
+      <MemberSignature Language="F#" Value="abstract member GetEventSourceInstance : string * string -&gt; obj&#xA;override this.GetEventSourceInstance : string * string -&gt; obj" Usage="baseVsaSite.GetEventSourceInstance (itemName, eventSourceName)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.GetEventSourceInstance(System.String,System.String)</InterfaceMember>
@@ -135,7 +145,7 @@
       <Docs>
         <param name="itemName">The specified item name.</param>
         <param name="eventSourceName">The specified event source name.</param>
-        <summary>Gets a reference to an event source previously added to a script engine using the <see cref="M:Microsoft.Vsa.IVsaCodeItem.AddEventSource(System.String,System.String)" /> method.</summary>
+        <summary>Gets a reference to an event source previously added to a script engine using the <see cref="M:Microsoft.JScript.Vsa.IJSVsaCodeItem.AddEventSource(System.String,System.String)" /> method.</summary>
         <returns>Returns the event source to the engine.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.GetGlobalInstance(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlobalInstance (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetGlobalInstance(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalInstance : string -&gt; obj&#xA;override this.GetGlobalInstance : string -&gt; obj" Usage="baseVsaSite.GetGlobalInstance name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.GetGlobalInstance(System.String)</InterfaceMember>
@@ -173,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.Notify(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Notify (notify As String, optional As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Notify(System::String ^ notify, System::Object ^ optional);" />
+      <MemberSignature Language="F#" Value="abstract member Notify : string * obj -&gt; unit&#xA;override this.Notify : string * obj -&gt; unit" Usage="baseVsaSite.Notify (notify, optional)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.Notify(System.String,System.Object)</InterfaceMember>
@@ -201,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.OnCompilerError(Microsoft.JScript.Vsa.IJSVsaError)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OnCompilerError (error As IJSVsaError) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool OnCompilerError(Microsoft::JScript::Vsa::IJSVsaError ^ error);" />
+      <MemberSignature Language="F#" Value="abstract member OnCompilerError : Microsoft.JScript.Vsa.IJSVsaError -&gt; bool&#xA;override this.OnCompilerError : Microsoft.JScript.Vsa.IJSVsaError -&gt; bool" Usage="baseVsaSite.OnCompilerError error" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.Vsa.IJSVsaSite.OnCompilerError(Microsoft.JScript.Vsa.IJSVsaError)</InterfaceMember>
@@ -216,9 +229,9 @@
         <Parameter Name="error" Type="Microsoft.JScript.Vsa.IJSVsaError" />
       </Parameters>
       <Docs>
-        <param name="error">The <see cref="T:Microsoft.Vsa.IVsaError" /> object representing the offending error.</param>
+        <param name="error">The <see cref="T:Microsoft.JScript.Vsa.IJSVsaError" /> object representing the offending error.</param>
         <summary>Notifies the host about how to respond to compiler errors encountered by the script engine.</summary>
-        <returns>Returns TRUE if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.Vsa.IVsaSite" /> object. Returns FALSE if the compiler is directed to stop reporting further errors to the <see langword="IVsaSite" /> object.</returns>
+        <returns>Returns TRUE if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.JScript.Vsa.IJSVsaSite" /> object. Returns FALSE if the compiler is directed to stop reporting further errors to the <see langword="IVsaSite" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

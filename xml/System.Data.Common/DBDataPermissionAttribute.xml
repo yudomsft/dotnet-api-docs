@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DBDataPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DBDataPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DBDataPermissionAttribute abstract : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type DBDataPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -18,8 +21,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,9 +39,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Data.Common.DBDataPermissionAttribute" Usage="new System.Data.Common.DBDataPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -58,9 +67,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.AllowBlankPassword" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowBlankPassword As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowBlankPassword { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowBlankPassword : bool with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.AllowBlankPassword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -84,9 +96,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -116,9 +131,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.KeyRestrictionBehavior" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictionBehavior As KeyRestrictionBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::KeyRestrictionBehavior KeyRestrictionBehavior { System::Data::KeyRestrictionBehavior get(); void set(System::Data::KeyRestrictionBehavior value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyRestrictionBehavior : System.Data.KeyRestrictionBehavior with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.KeyRestrictionBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -141,9 +159,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DBDataPermissionAttribute.KeyRestrictions" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictions As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyRestrictions { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyRestrictions : string with get, set" Usage="System.Data.Common.DBDataPermissionAttribute.KeyRestrictions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -177,9 +198,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermissionAttribute.ShouldSerializeConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeConnectionString () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeConnectionString();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeConnectionString : unit -&gt; bool" Usage="dBDataPermissionAttribute.ShouldSerializeConnectionString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -188,7 +211,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -209,9 +235,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermissionAttribute.ShouldSerializeKeyRestrictions" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeKeyRestrictions () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeKeyRestrictions();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeKeyRestrictions : unit -&gt; bool" Usage="dBDataPermissionAttribute.ShouldSerializeKeyRestrictions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -220,7 +248,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

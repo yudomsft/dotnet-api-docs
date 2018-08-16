@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Vector3D" />
   <TypeSignature Language="VB.NET" Value="Public Structure Vector3D&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Vector3D : IFormattable" />
+  <TypeSignature Language="F#" Value="type Vector3D = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +19,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Media3D.Vector3DConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Media.Media3D.Converters.Vector3DValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -70,11 +72,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.#ctor(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double, z As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector3D(double x, double y, double z);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.Vector3D : double * double * double -&gt; System.Windows.Media.Media3D.Vector3D" Usage="new System.Windows.Media.Media3D.Vector3D (x, y, z)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="x" Type="System.Double" />
         <Parameter Name="y" Type="System.Double" />
@@ -111,9 +120,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Add(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (vector As Vector3D, point As Point3D) As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D Add(System::Windows::Media::Media3D::Vector3D vector, System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.Point3D" Usage="System.Windows.Media.Media3D.Vector3D.Add (vector, point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,9 +159,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Add(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (vector1 As Vector3D, vector2 As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Add(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.Add (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,9 +198,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.AngleBetween(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AngleBetween (vector1 As Vector3D, vector2 As Vector3D) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double AngleBetween(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member AngleBetween : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; double" Usage="System.Windows.Media.Media3D.Vector3D.AngleBetween (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,9 +241,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.CrossProduct(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CrossProduct (vector1 As Vector3D, vector2 As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D CrossProduct(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member CrossProduct : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.CrossProduct (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,9 +277,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Divide(System.Windows.Media.Media3D.Vector3D,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (vector As Vector3D, scalar As Double) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Divide(System::Windows::Media::Media3D::Vector3D vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Windows.Media.Media3D.Vector3D * double -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.Divide (vector, scalar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,9 +316,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.DotProduct(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DotProduct (vector1 As Vector3D, vector2 As Vector3D) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double DotProduct(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member DotProduct : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; double" Usage="System.Windows.Media.Media3D.Vector3D.DotProduct (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,9 +363,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vector3D.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -385,9 +408,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Equals(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Vector3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::Media3D::Vector3D value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.Media3D.Vector3D -&gt; bool" Usage="vector3D.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -418,9 +443,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Equals(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (vector1 As Vector3D, vector2 As Vector3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; bool" Usage="System.Windows.Media.Media3D.Vector3D.Equals (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -463,9 +490,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vector3D.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -494,9 +523,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Length { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : double" Usage="System.Windows.Media.Media3D.Vector3D.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -529,9 +560,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.LengthSquared" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LengthSquared As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LengthSquared { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.LengthSquared : double" Usage="System.Windows.Media.Media3D.Vector3D.LengthSquared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -573,9 +606,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (scalar As Double, vector As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Multiply(double scalar, System::Windows::Media::Media3D::Vector3D vector);" />
+      <MemberSignature Language="F#" Value="static member Multiply : double * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.Multiply (scalar, vector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -610,9 +645,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Windows.Media.Media3D.Vector3D,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (vector As Vector3D, scalar As Double) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Multiply(System::Windows::Media::Media3D::Vector3D vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Media.Media3D.Vector3D * double -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.Multiply (vector, scalar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -647,9 +684,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (vector As Vector3D, matrix As Matrix3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Multiply(System::Windows::Media::Media3D::Vector3D vector, System::Windows::Media::Media3D::Matrix3D matrix);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Matrix3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.Multiply (vector, matrix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -684,9 +723,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Negate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Negate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Negate();" />
+      <MemberSignature Language="F#" Value="member this.Negate : unit -&gt; unit" Usage="vector3D.Negate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -720,9 +761,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Normalize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Normalize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Normalize();" />
+      <MemberSignature Language="F#" Value="member this.Normalize : unit -&gt; unit" Usage="vector3D.Normalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -764,9 +807,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Addition(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (vector As Vector3D, point As Point3D) As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D operator +(System::Windows::Media::Media3D::Vector3D vector, System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.Point3D" Usage="vector + point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -801,9 +846,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Addition(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (vector1 As Vector3D, vector2 As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator +(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector1 + vector2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,9 +885,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Division(System.Windows.Media.Media3D.Vector3D,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator / (vector As Vector3D, scalar As Double) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator /(System::Windows::Media::Media3D::Vector3D vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Windows.Media.Media3D.Vector3D * double -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector / scalar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -875,9 +924,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Equality(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (vector1 As Vector3D, vector2 As Vector3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; bool" Usage="vector1 = vector2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -929,9 +980,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Explicit(System.Windows.Media.Media3D.Vector3D)~System.Windows.Media.Media3D.Point3D" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (vector As Vector3D) As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Media::Media3D::Point3D(System::Windows::Media::Media3D::Vector3D vector);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Point3D" Usage="System.Windows.Media.Media3D.Vector3D.op_Explicit vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -953,9 +1006,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Explicit(System.Windows.Media.Media3D.Vector3D)~System.Windows.Media.Media3D.Size3D" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (vector As Vector3D) As Size3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Media::Media3D::Size3D(System::Windows::Media::Media3D::Vector3D vector);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Size3D" Usage="System.Windows.Media.Media3D.Vector3D.op_Explicit vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -984,9 +1039,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Inequality(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (vector1 As Vector3D, vector2 As Vector3D) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; bool" Usage="System.Windows.Media.Media3D.Vector3D.op_Inequality (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1037,9 +1094,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (scalar As Double, vector As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator *(double scalar, System::Windows::Media::Media3D::Vector3D vector);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : double * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="scalar * vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1074,9 +1133,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Windows.Media.Media3D.Vector3D,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (vector As Vector3D, scalar As Double) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator *(System::Windows::Media::Media3D::Vector3D vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Media.Media3D.Vector3D * double -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector * scalar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1111,9 +1172,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (vector As Vector3D, matrix As Matrix3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator *(System::Windows::Media::Media3D::Vector3D vector, System::Windows::Media::Media3D::Matrix3D matrix);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Matrix3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector * matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1157,9 +1220,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Subtraction(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (vector As Vector3D, point As Point3D) As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D operator -(System::Windows::Media::Media3D::Vector3D vector, System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.Point3D" Usage="vector - point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1194,9 +1259,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Subtraction(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (vector1 As Vector3D, vector2 As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator -(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector1 - vector2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1231,9 +1298,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_UnaryNegation(System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (vector As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D operator -(System::Windows::Media::Media3D::Vector3D vector);" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="- vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1271,9 +1340,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1314,9 +1385,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Subtract(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (vector As Vector3D, point As Point3D) As Point3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Point3D Subtract(System::Windows::Media::Media3D::Vector3D vector, System::Windows::Media::Media3D::Point3D point);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Point3D -&gt; System.Windows.Media.Media3D.Point3D" Usage="System.Windows.Media.Media3D.Vector3D.Subtract (vector, point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1349,9 +1422,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Subtract(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (vector1 As Vector3D, vector2 As Vector3D) As Vector3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Vector3D Subtract(System::Windows::Media::Media3D::Vector3D vector1, System::Windows::Media::Media3D::Vector3D vector2);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.Vector3D.Subtract (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1392,8 +1467,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1432,11 +1513,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vector3D.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1461,11 +1549,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="vector3D.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1485,11 +1580,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="System.Windows.Media.Media3D.Vector3D.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -1515,11 +1620,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="System.Windows.Media.Media3D.Vector3D.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -1545,11 +1660,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.Z" />
       <MemberSignature Language="VB.NET" Value="Public Property Z As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Z { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Z : double with get, set" Usage="System.Windows.Media.Media3D.Vector3D.Z" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>

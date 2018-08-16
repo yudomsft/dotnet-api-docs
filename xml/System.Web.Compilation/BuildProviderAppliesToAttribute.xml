@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProviderAppliesToAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuildProviderAppliesToAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildProviderAppliesToAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type BuildProviderAppliesToAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -39,11 +41,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildProviderAppliesToAttribute.#ctor(System.Web.Compilation.BuildProviderAppliesTo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (appliesTo As BuildProviderAppliesTo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildProviderAppliesToAttribute(System::Web::Compilation::BuildProviderAppliesTo appliesTo);" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.BuildProviderAppliesToAttribute : System.Web.Compilation.BuildProviderAppliesTo -&gt; System.Web.Compilation.BuildProviderAppliesToAttribute" Usage="new System.Web.Compilation.BuildProviderAppliesToAttribute appliesTo" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="appliesTo" Type="System.Web.Compilation.BuildProviderAppliesTo" />
       </Parameters>
@@ -59,11 +68,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildProviderAppliesToAttribute.AppliesTo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As BuildProviderAppliesTo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Compilation::BuildProviderAppliesTo AppliesTo { System::Web::Compilation::BuildProviderAppliesTo get(); };" />
+      <MemberSignature Language="F#" Value="member this.AppliesTo : System.Web.Compilation.BuildProviderAppliesTo" Usage="System.Web.Compilation.BuildProviderAppliesToAttribute.AppliesTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>

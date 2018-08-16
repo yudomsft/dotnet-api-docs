@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsPartBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XpsPartBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class XpsPartBase abstract" />
+  <TypeSignature Language="F#" Value="type XpsPartBase = class" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,11 +25,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsPartBase.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="System.Windows.Xps.Packaging.XpsPartBase.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>

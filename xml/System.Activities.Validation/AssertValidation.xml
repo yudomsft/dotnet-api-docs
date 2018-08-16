@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Validation.AssertValidation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssertValidation&#xA;Inherits NativeActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssertValidation sealed : System::Activities::NativeActivity" />
+  <TypeSignature Language="F#" Value="type AssertValidation = class&#xA;    inherit NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,11 @@
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Activities.Validation.AssertValidation" /> class.</summary>
@@ -40,11 +46,20 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.Assertion" />
       <MemberSignature Language="VB.NET" Value="Public Property Assertion As InArgument(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;bool&gt; ^ Assertion { System::Activities::InArgument&lt;bool&gt; ^ get(); void set(System::Activities::InArgument&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Assertion : System.Activities.InArgument&lt;bool&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.Assertion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Activities.InArgument&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -61,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.AssertValidation.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="assertValidation.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -84,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Validation.AssertValidation.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="assertValidation.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,14 +124,21 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.IsWarning" />
       <MemberSignature Language="VB.NET" Value="Public Property IsWarning As InArgument(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;bool&gt; ^ IsWarning { System::Activities::InArgument&lt;bool&gt; ^ get(); void set(System::Activities::InArgument&lt;bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : System.Activities.InArgument&lt;bool&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.IsWarning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -133,11 +157,20 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As InArgument(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ Message { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Activities.InArgument&lt;System.String&gt;</ReturnType>
       </ReturnValue>
@@ -154,14 +187,21 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Validation.AssertValidation.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As InArgument(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ PropertyName { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Validation.AssertValidation.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

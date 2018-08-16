@@ -4,22 +4,27 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.StaticExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class StaticExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class StaticExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type StaticExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Markup.StaticExtensionConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("PresentationFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Object))</AttributeName>
     </Attribute>
   </Attributes>
@@ -57,6 +62,15 @@
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.StaticExtension" /> class.</summary>
@@ -69,10 +83,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.StaticExtension.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (member As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticExtension(System::String ^ member);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.StaticExtension : string -&gt; System.Windows.Markup.StaticExtension" Usage="new System.Windows.Markup.StaticExtension member" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="member" Type="System.String" />
@@ -98,14 +117,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.StaticExtension.Member" />
       <MemberSignature Language="VB.NET" Value="Public Property Member As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Windows.Markup.StaticExtension.Member" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Markup.ConstructorArgument("member")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -137,14 +164,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.StaticExtension.MemberType" />
       <MemberSignature Language="VB.NET" Value="Public Property MemberType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ MemberType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MemberType : Type with get, set" Usage="System.Windows.Markup.StaticExtension.MemberType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,10 +205,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.StaticExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="staticExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

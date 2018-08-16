@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicFileLicenseProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class LicFileLicenseProvider&#xA;Inherits LicenseProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class LicFileLicenseProvider : System::ComponentModel::LicenseProvider" />
+  <TypeSignature Language="F#" Value="type LicFileLicenseProvider = class&#xA;    inherit LicenseProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -64,6 +67,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -76,6 +81,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.LicFileLicenseProvider" /> class.</summary>
@@ -95,9 +105,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetKey(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicFileLicenseProvider.GetKey(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetKey(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetKey : Type -&gt; string&#xA;override this.GetKey : Type -&gt; string" Usage="licFileLicenseProvider.GetKey type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -136,9 +149,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.License GetLicense(class System.ComponentModel.LicenseContext context, class System.Type type, object instance, bool allowExceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicFileLicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::License ^ GetLicense(System::ComponentModel::LicenseContext ^ context, Type ^ type, System::Object ^ instance, bool allowExceptions);" />
+      <MemberSignature Language="F#" Value="override this.GetLicense : System.ComponentModel.LicenseContext * Type * obj * bool -&gt; System.ComponentModel.License" Usage="licFileLicenseProvider.GetLicense (context, type, instance, allowExceptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -193,9 +209,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsKeyValid(string key, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicFileLicenseProvider.IsKeyValid(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsKeyValid(System::String ^ key, Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member IsKeyValid : string * Type -&gt; bool&#xA;override this.IsKeyValid : string * Type -&gt; bool" Usage="licFileLicenseProvider.IsKeyValid (key, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

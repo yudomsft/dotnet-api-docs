@@ -4,12 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeFileHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeFileHandle&#xA;Inherits SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="C++ CLI" Value="public ref class SafeFileHandle sealed : Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="F#" Value="type SafeFileHandle = class&#xA;    inherit SafeHandleZeroOrMinusOneIsInvalid" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -28,7 +30,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeFileHandle.#ctor(System.IntPtr,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (preexistingHandle As IntPtr, ownsHandle As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeFileHandle(IntPtr preexistingHandle, bool ownsHandle);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SafeHandles.SafeFileHandle : nativeint * bool -&gt; Microsoft.Win32.SafeHandles.SafeFileHandle" Usage="new Microsoft.Win32.SafeHandles.SafeFileHandle (preexistingHandle, ownsHandle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -71,6 +74,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeFileHandle.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.SafeFileHandle.IsInvalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -124,7 +129,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netstandard-1.3;netstandard-1.4;netstandard-1.6">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeFileHandle.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseHandle : unit -&gt; bool" Usage="safeFileHandle.ReleaseHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -150,6 +156,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -163,7 +170,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

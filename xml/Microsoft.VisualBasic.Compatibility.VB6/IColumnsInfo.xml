@@ -4,20 +4,26 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IColumnsInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IColumnsInfo" />
+  <TypeSignature Language="F#" Value="type IColumnsInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0C733A11-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,18 +44,21 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo.GetColumnInfo(System.Int32@,System.IntPtr@,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetColumnInfo (ByRef cColumns As Integer, ByRef pColumnInfo As IntPtr, ByRef pStringsBuffer As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetColumnInfo([Runtime::InteropServices::Out] int % cColumns, [Runtime::InteropServices::Out] IntPtr % pColumnInfo, [Runtime::InteropServices::Out] IntPtr % pStringsBuffer);" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnInfo :  *  *  -&gt; unit" Usage="iColumnsInfo.GetColumnInfo (cColumns, pColumnInfo, pStringsBuffer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cColumns" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="pColumnInfo" Type="System.IntPtr&amp;" RefType="out" />
-        <Parameter Name="pStringsBuffer" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="cColumns" Type="System.Int32" RefType="out" />
+        <Parameter Name="pColumnInfo" Type="System.IntPtr" RefType="out" />
+        <Parameter Name="pStringsBuffer" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cColumns">A pointer to memory in which to return the number of columns in the rowset; this number includes the bookmark column, if there is one.</param>
@@ -72,9 +81,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo.MapColumnIDs(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBID[],System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub MapColumnIDs (cColumnIDs As Integer, columnIDs As DBID(), rgColumns As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MapColumnIDs(int cColumnIDs, cli::array &lt;Microsoft::VisualBasic::Compatibility::VB6::DBID&gt; ^ columnIDs, cli::array &lt;int&gt; ^ rgColumns);" />
+      <MemberSignature Language="F#" Value="abstract member MapColumnIDs : int * Microsoft.VisualBasic.Compatibility.VB6.DBID[] * int[] -&gt; unit" Usage="iColumnsInfo.MapColumnIDs (cColumnIDs, columnIDs, rgColumns)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

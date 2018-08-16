@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.CorrelationInitializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CorrelationInitializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class CorrelationInitializer abstract" />
+  <TypeSignature Language="F#" Value="type CorrelationInitializer = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,14 +31,21 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle" />
       <MemberSignature Language="VB.NET" Value="Public Property CorrelationHandle As InArgument(Of CorrelationHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ CorrelationHandle { System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::ServiceModel::Activities::CorrelationHandle ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationHandle : System.Activities.InArgument&lt;System.ServiceModel.Activities.CorrelationHandle&gt; with get, set" Usage="System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

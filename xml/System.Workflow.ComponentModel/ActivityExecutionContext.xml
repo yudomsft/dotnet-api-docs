@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityExecutionContext&#xA;Implements IDisposable, IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityExecutionContext sealed : IDisposable, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type ActivityExecutionContext = class&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -48,9 +50,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ Activity { System::Workflow::ComponentModel::Activity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Activity : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,9 +72,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelActivity(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.CancelActivity(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelActivity(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="member this.CancelActivity : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="activityExecutionContext.CancelActivity activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,9 +104,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.CloseActivity" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseActivity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseActivity();" />
+      <MemberSignature Language="F#" Value="member this.CloseActivity : unit -&gt; unit" Usage="activityExecutionContext.CloseActivity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,9 +128,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.ContextGuid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ContextGuid { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextGuid : Guid" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.ContextGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,9 +150,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionContext.CurrentExceptionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CurrentExceptionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CurrentExceptionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CurrentExceptionProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.CurrentExceptionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,9 +170,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteActivity(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.ExecuteActivity(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecuteActivity(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="member this.ExecuteActivity : System.Workflow.ComponentModel.Activity -&gt; unit" Usage="activityExecutionContext.ExecuteActivity activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,9 +208,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.ExecutionContextManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionContextManager As ActivityExecutionContextManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityExecutionContextManager ^ ExecutionContextManager { System::Workflow::ComponentModel::ActivityExecutionContextManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutionContextManager : System.Workflow.ComponentModel.ActivityExecutionContextManager" Usage="System.Workflow.ComponentModel.ActivityExecutionContext.ExecutionContextManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,9 +230,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="activityExecutionContext.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,9 +257,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.GetService``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService(Of T) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetService();" />
+      <MemberSignature Language="F#" Value="member this.GetService : unit -&gt; 'T" Usage="activityExecutionContext.GetService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,6 +291,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,9 +318,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrackData (userData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrackData(System::Object ^ userData);" />
+      <MemberSignature Language="F#" Value="member this.TrackData : obj -&gt; unit" Usage="activityExecutionContext.TrackData userData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -329,9 +352,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrackData (userDataKey As String, userData As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrackData(System::String ^ userDataKey, System::Object ^ userData);" />
+      <MemberSignature Language="F#" Value="member this.TrackData : string * obj -&gt; unit" Usage="activityExecutionContext.TrackData (userDataKey, userData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

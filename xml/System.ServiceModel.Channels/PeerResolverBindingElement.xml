@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.PeerResolverBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PeerResolverBindingElement&#xA;Inherits BindingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class PeerResolverBindingElement abstract : System::ServiceModel::Channels::BindingElement" />
+  <TypeSignature Language="F#" Value="type PeerResolverBindingElement = class&#xA;    inherit BindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -42,8 +44,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.Channels.PeerResolverBindingElement" /> class.</summary>
@@ -56,11 +64,18 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerResolverBindingElement.#ctor(System.ServiceModel.Channels.PeerResolverBindingElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (other As PeerResolverBindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerResolverBindingElement(System::ServiceModel::Channels::PeerResolverBindingElement ^ other);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.PeerResolverBindingElement : System.ServiceModel.Channels.PeerResolverBindingElement -&gt; System.ServiceModel.Channels.PeerResolverBindingElement" Usage="new System.ServiceModel.Channels.PeerResolverBindingElement other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="other" Type="System.ServiceModel.Channels.PeerResolverBindingElement" />
       </Parameters>
@@ -77,9 +92,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerResolverBindingElement.CreatePeerResolver" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreatePeerResolver () As PeerResolver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::PeerResolver ^ CreatePeerResolver();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePeerResolver : unit -&gt; System.ServiceModel.PeerResolver" Usage="peerResolverBindingElement.CreatePeerResolver " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,9 +116,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.PeerResolverBindingElement.ReferralPolicy" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ReferralPolicy As PeerReferralPolicy" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::PeerResolvers::PeerReferralPolicy ReferralPolicy { System::ServiceModel::PeerResolvers::PeerReferralPolicy get(); void set(System::ServiceModel::PeerResolvers::PeerReferralPolicy value); };" />
+      <MemberSignature Language="F#" Value="member this.ReferralPolicy : System.ServiceModel.PeerResolvers.PeerReferralPolicy with get, set" Usage="System.ServiceModel.Channels.PeerResolverBindingElement.ReferralPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

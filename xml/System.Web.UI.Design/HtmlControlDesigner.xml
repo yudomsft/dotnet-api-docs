@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.HtmlControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlControlDesigner&#xA;Inherits ComponentDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlControlDesigner : System::ComponentModel::Design::ComponentDesigner" />
+  <TypeSignature Language="F#" Value="type HtmlControlDesigner = class&#xA;    inherit ComponentDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,6 +33,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -47,14 +52,23 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HtmlControlDesigner.Behavior" />
       <MemberSignature Language="VB.NET" Value="Public Property Behavior As IHtmlControlDesignerBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IHtmlControlDesignerBehavior ^ Behavior { System::Web::UI::Design::IHtmlControlDesignerBehavior ^ get(); void set(System::Web::UI::Design::IHtmlControlDesignerBehavior ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Behavior : System.Web.UI.Design.IHtmlControlDesignerBehavior with get, set" Usage="System.Web.UI.Design.HtmlControlDesigner.Behavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("The recommended alternative is ControlDesigner.Tag. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -84,9 +98,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HtmlControlDesigner.DataBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBindings As DataBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataBindingCollection ^ DataBindings { System::Web::UI::DataBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataBindings : System.Web.UI.DataBindingCollection" Usage="System.Web.UI.Design.HtmlControlDesigner.DataBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,14 +121,20 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HtmlControlDesigner.DesignTimeElement" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DesignTimeElement As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ DesignTimeElement { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeElement : obj" Usage="System.Web.UI.Design.HtmlControlDesigner.DesignTimeElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Error: This property can no longer be referenced, and is included to support existing compiled applications. The design-time element may not always provide access to the element in the markup. There are alternate methods on WebFormsRootDesigner for handling client script and controls. http://go.microsoft.com/fwlink/?linkid=14202", true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -136,9 +159,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="htmlControlDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,9 +202,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HtmlControlDesigner.Expressions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expressions As ExpressionBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ExpressionBindingCollection ^ Expressions { System::Web::UI::ExpressionBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Expressions : System.Web.UI.ExpressionBindingCollection" Usage="System.Web.UI.Design.HtmlControlDesigner.Expressions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,9 +239,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="htmlControlDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,13 +276,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorAttached" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBehaviorAttached ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBehaviorAttached();" />
+      <MemberSignature Language="F#" Value="abstract member OnBehaviorAttached : unit -&gt; unit&#xA;override this.OnBehaviorAttached : unit -&gt; unit" Usage="htmlControlDesigner.OnBehaviorAttached " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("The recommended alternative is ControlDesigner.Tag. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>
@@ -287,13 +320,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.OnBehaviorDetaching" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBehaviorDetaching ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBehaviorDetaching();" />
+      <MemberSignature Language="F#" Value="abstract member OnBehaviorDetaching : unit -&gt; unit&#xA;override this.OnBehaviorDetaching : unit -&gt; unit" Usage="htmlControlDesigner.OnBehaviorDetaching " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("The recommended alternative is ControlDesigner.Tag. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>
@@ -326,13 +362,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.OnBindingsCollectionChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBindingsCollectionChanged (propName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBindingsCollectionChanged(System::String ^ propName);" />
+      <MemberSignature Language="F#" Value="abstract member OnBindingsCollectionChanged : string -&gt; unit&#xA;override this.OnBindingsCollectionChanged : string -&gt; unit" Usage="htmlControlDesigner.OnBindingsCollectionChanged propName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("The recommended alternative is to handle the Changed event on the DataBindings collection. The DataBindings collection allows more control of the databindings associated with the control. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>
@@ -368,9 +407,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.OnSetParent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnSetParent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnSetParent();" />
+      <MemberSignature Language="F#" Value="abstract member OnSetParent : unit -&gt; unit&#xA;override this.OnSetParent : unit -&gt; unit" Usage="htmlControlDesigner.OnSetParent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,9 +435,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterEvents(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterEvents (events As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterEvents(System::Collections::IDictionary ^ events);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="htmlControlDesigner.PreFilterEvents events" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -429,9 +474,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HtmlControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="htmlControlDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -465,14 +513,23 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HtmlControlDesigner.ShouldCodeSerialize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShouldCodeSerialize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShouldCodeSerialize { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldCodeSerialize : bool with get, set" Usage="System.Web.UI.Design.HtmlControlDesigner.ShouldCodeSerialize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Use of this property is not recommended because code serialization is not supported. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

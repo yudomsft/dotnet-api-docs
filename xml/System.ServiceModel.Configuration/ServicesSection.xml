@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServicesSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServicesSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServicesSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type ServicesSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,8 +35,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServicesSection" /> class.</summary>
@@ -47,9 +55,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServicesSection.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="servicesSection.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,9 +77,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServicesSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServicesSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,13 +99,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServicesSection.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="servicesSection.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -115,13 +129,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServicesSection.Services" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServiceElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ServiceElementCollection ^ Services { System::ServiceModel::Configuration::ServiceElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Services : System.ServiceModel.Configuration.ServiceElementCollection" Usage="System.ServiceModel.Configuration.ServicesSection.Services" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
         </Attribute>
       </Attributes>

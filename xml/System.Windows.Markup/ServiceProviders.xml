@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ServiceProviders" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceProviders&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceProviders : IServiceProvider" />
+  <TypeSignature Language="F#" Value="type ServiceProviders = class&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +19,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -47,6 +52,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -61,9 +67,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ServiceProviders.AddService(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, service As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(Type ^ serviceType, System::Object ^ service);" />
+      <MemberSignature Language="F#" Value="member this.AddService : Type * obj -&gt; unit" Usage="serviceProviders.AddService (serviceType, service)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,9 +97,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ServiceProviders.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="serviceProviders.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

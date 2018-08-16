@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncUpdateCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function SyncUpdateCallback(eventType As SyncFromAllServersEvent, targetServer As String, sourceServer As String, exception As SyncFromAllServersOperationException) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public delegate bool SyncUpdateCallback(SyncFromAllServersEvent eventType, System::String ^ targetServer, System::String ^ sourceServer, SyncFromAllServersOperationException ^ exception);" />
+  <TypeSignature Language="F#" Value="type SyncUpdateCallback = delegate of SyncFromAllServersEvent * string * string * SyncFromAllServersOperationException -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -28,7 +30,7 @@
     <param name="exception">A <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> object that contains additional information about any error that has occurred. This parameter will be <see langword="null" /> if no error has occurred.</param>
     <summary>Receives event notifications during a replica synchronization.</summary>
     <returns>
-      <see langword="true" /> if the SyncReplicaFromAllServers method invoked on a <see cref="T:System.DirectoryServices.ActiveDirectory.ADAMInstance" />,  <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object should resume; <see langword="false" /> if the SyncReplicaFromAllServers method should terminate.</returns>
+      <see langword="true" /> if the SyncReplicaFromAllServers method invoked on a <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" />,  <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> or <see cref="T:System.DirectoryServices.ActiveDirectory.DomainController" /> object should resume; <see langword="false" /> if the SyncReplicaFromAllServers method should terminate.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

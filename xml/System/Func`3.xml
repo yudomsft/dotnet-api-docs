@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Func`3" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Func(Of In T1, In T2, Out TResult)(arg1 As T1, arg2 As T2) As TResult " />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2, typename TResult&gt;&#xA;public delegate TResult Func(T1 arg1, T2 arg2);" />
+  <TypeSignature Language="F#" Value="type Func&lt;'T1, 'T2, 'Result&gt; = delegate of 'T1 * 'T2 -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +22,10 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T1">
@@ -43,8 +48,11 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=2.0.5.0, Culture=Neutral, PublicKeyToken=7cec85d7bea7798e")</AttributeName>
     </Attribute>
   </Attributes>
   <Parameters>

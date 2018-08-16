@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.MatchNoneMessageFilter" />
   <TypeSignature Language="VB.NET" Value="Public Class MatchNoneMessageFilter&#xA;Inherits MessageFilter" />
   <TypeSignature Language="C++ CLI" Value="public ref class MatchNoneMessageFilter : System::ServiceModel::Dispatcher::MessageFilter" />
+  <TypeSignature Language="F#" Value="type MatchNoneMessageFilter = class&#xA;    inherit MessageFilter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
     </Attribute>
   </Attributes>
@@ -38,8 +40,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MatchNoneMessageFilter" /> class.</summary>
@@ -75,9 +83,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MatchNoneMessageFilter.Match(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="matchNoneMessageFilter.Match message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,29 +113,31 @@
       </Docs>
     </Member>
     <Member MemberName="Match">
-      <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer messageBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer messageBuffer) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer messageBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer messageBuffer) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer buffer);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer buffer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MatchNoneMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MatchNoneMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (buffer As MessageBuffer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ buffer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="matchNoneMessageFilter.Match buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="messageBuffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="messageBuffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="messageBuffer">To be added.</param>
-        <param name="buffer">To be added.</param>
+        <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> object to test.</param>
+        <param name="buffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> object to test.</param>
         <summary>This method returns <see langword="false" /> for every message that is not <see langword="null" />.</summary>
         <returns>Returns <see langword="false" />.</returns>
         <remarks>

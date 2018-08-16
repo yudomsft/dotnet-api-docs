@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.BypassElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BypassElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class BypassElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type BypassElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Net.Configuration.BypassElement), CollectionType=System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Net.Configuration.BypassElement))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,8 +43,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes an empty instance of the <see cref="T:System.Net.Configuration.BypassElementCollection" /> class.</summary>
@@ -52,9 +63,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Add(System.Net.Configuration.BypassElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As BypassElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::Configuration::BypassElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Net.Configuration.BypassElement -&gt; unit" Usage="bypassElementCollection.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,9 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="bypassElementCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="bypassElementCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,13 +133,15 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="bypassElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinmac-3.0">
           <AttributeName>System.MonoTODO("argument exception?")</AttributeName>
         </Attribute>
       </Attributes>
@@ -145,9 +164,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.IndexOf(System.Net.Configuration.BypassElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As BypassElement) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Net::Configuration::BypassElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Net.Configuration.BypassElement -&gt; int" Usage="bypassElementCollection.IndexOf element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,13 +199,15 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.BypassElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As BypassElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::BypassElement ^ default[int] { System::Net::Configuration::BypassElement ^ get(int index); void set(int index, System::Net::Configuration::BypassElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Net.Configuration.BypassElement with get, set" Usage="System.Net.Configuration.BypassElementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinmac-3.0">
           <AttributeName>System.MonoTODO</AttributeName>
         </Attribute>
       </Attributes>
@@ -207,9 +230,11 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.BypassElementCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As BypassElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::BypassElement ^ default[System::String ^] { System::Net::Configuration::BypassElement ^ get(System::String ^ name); void set(System::String ^ name, System::Net::Configuration::BypassElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Net.Configuration.BypassElement with get, set" Usage="System.Net.Configuration.BypassElementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,9 +267,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Remove(System.Net.Configuration.BypassElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As BypassElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Net::Configuration::BypassElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Net.Configuration.BypassElement -&gt; unit" Usage="bypassElementCollection.Remove element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,9 +292,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="bypassElementCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,9 +317,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="bypassElementCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,9 +342,11 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.BypassElementCollection.ThrowOnDuplicate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Net.Configuration.BypassElementCollection.ThrowOnDuplicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

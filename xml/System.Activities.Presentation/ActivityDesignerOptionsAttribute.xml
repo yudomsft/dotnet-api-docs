@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ActivityDesignerOptionsAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityDesignerOptionsAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerOptionsAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerOptionsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,12 +14,12 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies drill-down and node viewing mode for an <see cref="T:system.Activities.Presentation.ActivityDesigner" />, such as Flowcharts, that are used to compose activities.</summary>
+    <summary>Specifies drill-down and node viewing mode for an <see cref="T:System.Activities.Presentation.ActivityDesigner" />, such as Flowcharts, that are used to compose activities.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,16 +60,25 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AllowDrillIn" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowDrillIn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowDrillIn { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowDrillIn : bool with get, set" Usage="System.Activities.Presentation.ActivityDesignerOptionsAttribute.AllowDrillIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether drilling down one level into an <see cref="T:system.Activities.Presentation.ActivityDesigner" /> is allowed.</summary>
+        <summary>Gets or sets a value that indicates whether drilling down one level into an <see cref="T:System.Activities.Presentation.ActivityDesigner" /> is allowed.</summary>
         <value>
           <see langword="true" /> if drilling into the UI elements is allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -80,11 +90,20 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AlwaysCollapseChildren" />
       <MemberSignature Language="VB.NET" Value="Public Property AlwaysCollapseChildren As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysCollapseChildren { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AlwaysCollapseChildren : bool with get, set" Usage="System.Activities.Presentation.ActivityDesignerOptionsAttribute.AlwaysCollapseChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -101,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ActivityDesignerOptionsAttribute.OutlineViewIconProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property OutlineViewIconProvider As Func(Of ModelItem, DrawingBrush)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Activities::Presentation::Model::ModelItem ^, System::Windows::Media::DrawingBrush ^&gt; ^ OutlineViewIconProvider { Func&lt;System::Activities::Presentation::Model::ModelItem ^, System::Windows::Media::DrawingBrush ^&gt; ^ get(); void set(Func&lt;System::Activities::Presentation::Model::ModelItem ^, System::Windows::Media::DrawingBrush ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewIconProvider : Func&lt;System.Activities.Presentation.Model.ModelItem, System.Windows.Media.DrawingBrush&gt; with get, set" Usage="System.Activities.Presentation.ActivityDesignerOptionsAttribute.OutlineViewIconProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

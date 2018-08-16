@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.NamespaceInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamespaceInfo&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class NamespaceInfo sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type NamespaceInfo = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -60,9 +62,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceInfo.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; NamespaceInfo(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.NamespaceInfo : string -&gt; System.Web.Configuration.NamespaceInfo" Usage="new System.Web.Configuration.NamespaceInfo name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -96,9 +100,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceInfo.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (namespaceInformation As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ namespaceInformation);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="namespaceInfo.Equals namespaceInformation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,9 +128,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceInfo.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="namespaceInfo.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,16 +152,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceInfo.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Configuration.NamespaceInfo.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("namespace", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -188,11 +198,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceInfo.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.NamespaceInfo.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>

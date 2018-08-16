@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.WebBrowserPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBrowserPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebBrowserPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type WebBrowserPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,11 +53,18 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.WebBrowserPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.WebBrowserPermissionAttribute" Usage="new System.Security.Permissions.WebBrowserPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
       </Parameters>
@@ -86,9 +98,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="webBrowserPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,11 +133,18 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.WebBrowserPermissionAttribute.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As WebBrowserPermissionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::WebBrowserPermissionLevel Level { System::Security::Permissions::WebBrowserPermissionLevel get(); void set(System::Security::Permissions::WebBrowserPermissionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Security.Permissions.WebBrowserPermissionLevel with get, set" Usage="System.Security.Permissions.WebBrowserPermissionAttribute.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>

@@ -4,12 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.RegistrySecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrySecurity&#xA;Inherits NativeObjectSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistrySecurity sealed : System::Security::AccessControl::NativeObjectSecurity" />
+  <TypeSignature Language="F#" Value="type RegistrySecurity = class&#xA;    inherit NativeObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -21,6 +23,11 @@
     <BaseTypeName>System.Security.AccessControl.NativeObjectSecurity</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0">
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the Windows access control security for a registry key. This class cannot be inherited.</summary>
     <remarks>
@@ -108,6 +115,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -134,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistrySecurity.AccessRightType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessRightType : Type" Usage="System.Security.AccessControl.RegistrySecurity.AccessRightType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -141,6 +150,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -169,6 +179,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule" Usage="registrySecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -176,6 +187,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -232,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistrySecurity.AccessRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AccessRuleType : Type" Usage="System.Security.AccessControl.RegistrySecurity.AccessRuleType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -239,6 +252,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -268,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AddAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As RegistryAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.AddAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.AddAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -275,6 +290,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -328,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AddAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As RegistryAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.AddAuditRule : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.AddAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -335,6 +352,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -368,6 +386,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="registrySecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -375,6 +394,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -431,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistrySecurity.AuditRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AuditRuleType : Type" Usage="System.Security.AccessControl.RegistrySecurity.AuditRuleType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -438,6 +459,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -467,6 +489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As RegistryAccessRule) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; bool" Usage="registrySecurity.RemoveAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -474,6 +497,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -525,6 +549,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleAll (rule As RegistryAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRuleAll : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.RemoveAccessRuleAll rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -532,6 +557,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -581,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As RegistryAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRuleSpecific : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.RemoveAccessRuleSpecific rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -588,6 +615,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -638,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As RegistryAuditRule) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRule : System.Security.AccessControl.RegistryAuditRule -&gt; bool" Usage="registrySecurity.RemoveAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -645,6 +674,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -681,6 +711,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRuleAll(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleAll (rule As RegistryAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRuleAll : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.RemoveAuditRuleAll rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -688,6 +719,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -722,6 +754,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As RegistryAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRuleSpecific : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.RemoveAuditRuleSpecific rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -729,6 +762,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -766,6 +800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.ResetAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As RegistryAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.ResetAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.ResetAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -773,6 +808,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -818,6 +854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.SetAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As RegistryAccessRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.SetAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.SetAccessRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -825,6 +862,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -874,6 +912,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.SetAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As RegistryAuditRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
+      <MemberSignature Language="F#" Value="override this.SetAuditRule : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.SetAuditRule rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -881,6 +920,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

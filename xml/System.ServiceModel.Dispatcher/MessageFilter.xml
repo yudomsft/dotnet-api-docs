@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.MessageFilter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageFilter" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageFilter abstract" />
+  <TypeSignature Language="F#" Value="type MessageFilter = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,19 +15,19 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.Dispatcher.MatchNoneMessageFilter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.Dispatcher.ActionMessageFilter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.Dispatcher.MatchAllMessageFilter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.Dispatcher.XPathMessageFilter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -69,8 +71,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>When called in a derived class, initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> class.</summary>
@@ -90,9 +98,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageFilter.CreateFilterTable``1" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateFilterTable(Of FilterData) () As IMessageFilterTable(Of FilterData)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename FilterData&gt;&#xA; virtual System::ServiceModel::Dispatcher::IMessageFilterTable&lt;FilterData&gt; ^ CreateFilterTable();" />
+      <MemberSignature Language="F#" Value="abstract member CreateFilterTable : unit -&gt; System.ServiceModel.Dispatcher.IMessageFilterTable&lt;'FilterData&gt;&#xA;override this.CreateFilterTable : unit -&gt; System.ServiceModel.Dispatcher.IMessageFilterTable&lt;'FilterData&gt;" Usage="messageFilter.CreateFilterTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,9 +154,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageFilter.Match(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Match(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="F#" Value="abstract member Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="messageFilter.Match message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,9 +191,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.MessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Match (buffer As MessageBuffer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Match(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="messageFilter.Match buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

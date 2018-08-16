@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Security.PermissionSet" />
   <TypeSignature Language="VB.NET" Value="Public Class PermissionSet&#xA;Implements ICollection, IDeserializationCallback, ISecurityEncodable, IStackWalk" />
   <TypeSignature Language="C++ CLI" Value="public ref class PermissionSet : System::Collections::ICollection, System::Runtime::Serialization::IDeserializationCallback, System::Security::ISecurityEncodable, System::Security::IStackWalk" />
+  <TypeSignature Language="F#" Value="type PermissionSet = class&#xA;    interface ISecurityEncodable&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IStackWalk&#xA;    interface IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -31,7 +34,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -73,9 +76,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PermissionSet(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Security.PermissionSet : System.Security.Permissions.PermissionState -&gt; System.Security.PermissionSet" Usage="new System.Security.PermissionSet state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -117,9 +123,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.#ctor(System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permSet As PermissionSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PermissionSet(System::Security::PermissionSet ^ permSet);" />
+      <MemberSignature Language="F#" Value="new System.Security.PermissionSet : System.Security.PermissionSet -&gt; System.Security.PermissionSet" Usage="new System.Security.PermissionSet permSet" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -152,9 +161,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.AddPermission(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddPermission (perm As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ AddPermission(System::Security::IPermission ^ perm);" />
+      <MemberSignature Language="F#" Value="member this.AddPermission : System.Security.IPermission -&gt; System.Security.IPermission" Usage="permissionSet.AddPermission perm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -201,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.AddPermissionImpl(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function AddPermissionImpl (perm As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::IPermission ^ AddPermissionImpl(System::Security::IPermission ^ perm);" />
+      <MemberSignature Language="F#" Value="abstract member AddPermissionImpl : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.AddPermissionImpl : System.Security.IPermission -&gt; System.Security.IPermission" Usage="permissionSet.AddPermissionImpl perm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -210,6 +223,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
@@ -239,12 +257,15 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Assert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Assert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Assert();" />
+      <MemberSignature Language="F#" Value="abstract member Assert : unit -&gt; unit&#xA;override this.Assert : unit -&gt; unit" Usage="permissionSet.Assert " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IStackWalk.Assert</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -252,6 +273,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -282,9 +308,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ContainsNonCodeAccessPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsNonCodeAccessPermissions () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsNonCodeAccessPermissions();" />
+      <MemberSignature Language="F#" Value="member this.ContainsNonCodeAccessPermissions : unit -&gt; bool" Usage="permissionSet.ContainsNonCodeAccessPermissions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -320,9 +349,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ConvertPermissionSet(System.String,System.Byte[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertPermissionSet (inFormat As String, inData As Byte(), outFormat As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ ConvertPermissionSet(System::String ^ inFormat, cli::array &lt;System::Byte&gt; ^ inData, System::String ^ outFormat);" />
+      <MemberSignature Language="F#" Value="static member ConvertPermissionSet : string * byte[] * string -&gt; byte[]" Usage="System.Security.PermissionSet.ConvertPermissionSet (inFormat, inData, outFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -330,6 +362,14 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-2.0">
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Obsolete("This method is obsolete and shoud no longer be used.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -361,9 +401,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Copy () As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::PermissionSet ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.PermissionSet&#xA;override this.Copy : unit -&gt; System.Security.PermissionSet" Usage="permissionSet.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -402,12 +445,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="permissionSet.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -415,6 +461,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -438,12 +489,15 @@
       <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.PermissionSet.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -482,12 +536,15 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Demand" />
       <MemberSignature Language="VB.NET" Value="Public Sub Demand ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Demand();" />
+      <MemberSignature Language="F#" Value="abstract member Demand : unit -&gt; unit&#xA;override this.Demand : unit -&gt; unit" Usage="permissionSet.Demand " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IStackWalk.Demand</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -495,6 +552,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -531,12 +593,15 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Deny" />
       <MemberSignature Language="VB.NET" Value="Public Sub Deny ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Deny();" />
+      <MemberSignature Language="F#" Value="abstract member Deny : unit -&gt; unit&#xA;override this.Deny : unit -&gt; unit" Usage="permissionSet.Deny " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IStackWalk.Deny</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -544,6 +609,17 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-2.0">
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Obsolete("Deny is obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -570,14 +646,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" FrameworkAlternate="netcore-2.0" />
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Equals(System.Object)" FrameworkAlternate="netframework-4.5;netcore-2.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Equals(System.Object)" FrameworkAlternate="netframework-4.5;netcore-2.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="permissionSet.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -586,7 +664,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -595,7 +673,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="o" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0" />
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
       </Parameters>
       <Docs>
         <param name="o">The object to compare with the current <see cref="T:System.Security.PermissionSet" />.</param>
@@ -621,12 +699,15 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub FromXml (et As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ et);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="permissionSet.FromXml et" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -669,12 +750,15 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="permissionSet.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -717,6 +801,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetEnumeratorImpl" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetEnumeratorImpl () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IEnumerator ^ GetEnumeratorImpl();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumeratorImpl : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumeratorImpl : unit -&gt; System.Collections.IEnumerator" Usage="permissionSet.GetEnumeratorImpl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -749,9 +834,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="permissionSet.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -760,7 +847,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -787,9 +874,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetPermission(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPermission (permClass As Type) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ GetPermission(Type ^ permClass);" />
+      <MemberSignature Language="F#" Value="member this.GetPermission : Type -&gt; System.Security.IPermission" Usage="permissionSet.GetPermission permClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -826,6 +916,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.GetPermissionImpl(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetPermissionImpl (permClass As Type) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::IPermission ^ GetPermissionImpl(Type ^ permClass);" />
+      <MemberSignature Language="F#" Value="abstract member GetPermissionImpl : Type -&gt; System.Security.IPermission&#xA;override this.GetPermissionImpl : Type -&gt; System.Security.IPermission" Usage="permissionSet.GetPermissionImpl permClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -863,9 +954,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Intersect(System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function Intersect (other As PermissionSet) As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::PermissionSet ^ Intersect(System::Security::PermissionSet ^ other);" />
+      <MemberSignature Language="F#" Value="member this.Intersect : System.Security.PermissionSet -&gt; System.Security.PermissionSet" Usage="permissionSet.Intersect other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -873,6 +967,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.PermissionSet</ReturnType>
       </ReturnValue>
@@ -910,9 +1009,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEmpty () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmpty();" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : unit -&gt; bool" Usage="permissionSet.IsEmpty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -920,6 +1022,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -944,9 +1051,12 @@
       <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Security.PermissionSet.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -985,9 +1095,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.IsSubsetOf(System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSubsetOf (target As PermissionSet) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubsetOf(System::Security::PermissionSet ^ target);" />
+      <MemberSignature Language="F#" Value="member this.IsSubsetOf : System.Security.PermissionSet -&gt; bool" Usage="permissionSet.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -995,6 +1108,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1031,12 +1149,15 @@
       <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.PermissionSet.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1077,9 +1198,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUnrestricted();" />
+      <MemberSignature Language="F#" Value="member this.IsUnrestricted : unit -&gt; bool" Usage="permissionSet.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1120,12 +1244,15 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.PermitOnly" />
       <MemberSignature Language="VB.NET" Value="Public Sub PermitOnly ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PermitOnly();" />
+      <MemberSignature Language="F#" Value="abstract member PermitOnly : unit -&gt; unit&#xA;override this.PermitOnly : unit -&gt; unit" Usage="permissionSet.PermitOnly " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.IStackWalk.PermitOnly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1133,6 +1260,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1157,9 +1289,12 @@
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.RemovePermission(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemovePermission (permClass As Type) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ RemovePermission(Type ^ permClass);" />
+      <MemberSignature Language="F#" Value="member this.RemovePermission : Type -&gt; System.Security.IPermission" Usage="permissionSet.RemovePermission permClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1216,6 +1351,7 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.RemovePermissionImpl(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function RemovePermissionImpl (permClass As Type) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::IPermission ^ RemovePermissionImpl(Type ^ permClass);" />
+      <MemberSignature Language="F#" Value="abstract member RemovePermissionImpl : Type -&gt; System.Security.IPermission&#xA;override this.RemovePermissionImpl : Type -&gt; System.Security.IPermission" Usage="permissionSet.RemovePermissionImpl permClass" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1255,9 +1391,11 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.RevertAssert" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RevertAssert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RevertAssert();" />
+      <MemberSignature Language="F#" Value="static member RevertAssert : unit -&gt; unit" Usage="System.Security.PermissionSet.RevertAssert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1265,6 +1403,11 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1288,9 +1431,12 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.SetPermission(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetPermission (perm As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::IPermission ^ SetPermission(System::Security::IPermission ^ perm);" />
+      <MemberSignature Language="F#" Value="member this.SetPermission : System.Security.IPermission -&gt; System.Security.IPermission" Usage="permissionSet.SetPermission perm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1337,6 +1483,7 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.SetPermissionImpl(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function SetPermissionImpl (perm As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Security::IPermission ^ SetPermissionImpl(System::Security::IPermission ^ perm);" />
+      <MemberSignature Language="F#" Value="abstract member SetPermissionImpl : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.SetPermissionImpl : System.Security.IPermission -&gt; System.Security.IPermission" Usage="permissionSet.SetPermissionImpl perm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1375,12 +1522,15 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="P:System.Security.PermissionSet.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.PermissionSet.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1425,6 +1575,8 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1450,9 +1602,12 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="permissionSet.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1460,6 +1615,11 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1492,12 +1652,15 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="permissionSet.ToXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1532,9 +1695,12 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
       <MemberSignature Language="DocId" Value="M:System.Security.PermissionSet.Union(System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function Union (other As PermissionSet) As PermissionSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::PermissionSet ^ Union(System::Security::PermissionSet ^ other);" />
+      <MemberSignature Language="F#" Value="member this.Union : System.Security.PermissionSet -&gt; System.Security.PermissionSet" Usage="permissionSet.Union other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1542,6 +1708,11 @@ myPermSet.RemovePermission(typeof(FileIOPermission));
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.PermissionSet</ReturnType>
       </ReturnValue>

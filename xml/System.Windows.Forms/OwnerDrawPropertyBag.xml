@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.OwnerDrawPropertyBag" />
   <TypeSignature Language="VB.NET" Value="Public Class OwnerDrawPropertyBag&#xA;Inherits MarshalByRefObject&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class OwnerDrawPropertyBag : MarshalByRefObject, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type OwnerDrawPropertyBag = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -38,9 +41,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OwnerDrawPropertyBag.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; OwnerDrawPropertyBag(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.OwnerDrawPropertyBag : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Windows.Forms.OwnerDrawPropertyBag" Usage="new System.Windows.Forms.OwnerDrawPropertyBag (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,11 +66,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OwnerDrawPropertyBag.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.OwnerDrawPropertyBag.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
@@ -82,9 +98,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OwnerDrawPropertyBag.Copy(System.Windows.Forms.OwnerDrawPropertyBag)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Copy (value As OwnerDrawPropertyBag) As OwnerDrawPropertyBag" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::OwnerDrawPropertyBag ^ Copy(System::Windows::Forms::OwnerDrawPropertyBag ^ value);" />
+      <MemberSignature Language="F#" Value="static member Copy : System.Windows.Forms.OwnerDrawPropertyBag -&gt; System.Windows.Forms.OwnerDrawPropertyBag" Usage="System.Windows.Forms.OwnerDrawPropertyBag.Copy value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,11 +126,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OwnerDrawPropertyBag.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.OwnerDrawPropertyBag.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
@@ -128,11 +158,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.OwnerDrawPropertyBag.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.OwnerDrawPropertyBag.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
@@ -149,9 +190,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OwnerDrawPropertyBag.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEmpty () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEmpty();" />
+      <MemberSignature Language="F#" Value="abstract member IsEmpty : unit -&gt; bool&#xA;override this.IsEmpty : unit -&gt; bool" Usage="ownerDrawPropertyBag.IsEmpty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,6 +222,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

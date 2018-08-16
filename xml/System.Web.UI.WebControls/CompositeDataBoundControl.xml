@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CompositeDataBoundControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CompositeDataBoundControl&#xA;Inherits DataBoundControl&#xA;Implements INamingContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompositeDataBoundControl abstract : System::Web::UI::WebControls::DataBoundControl, System::Web::UI::INamingContainer" />
+  <TypeSignature Language="F#" Value="type CompositeDataBoundControl = class&#xA;    inherit DataBoundControl&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -57,8 +59,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CompositeDataBoundControl" /> class.</summary>
@@ -79,9 +87,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompositeDataBoundControl.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.CompositeDataBoundControl.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,9 +127,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="compositeDataBoundControl.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,9 +157,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls(System.Collections.IEnumerable,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateChildControls (dataSource As IEnumerable, dataBinding As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract int CreateChildControls(System::Collections::IEnumerable ^ dataSource, bool dataBinding);" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : System.Collections.IEnumerable * bool -&gt; int" Usage="compositeDataBoundControl.CreateChildControls (dataSource, dataBinding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompositeDataBoundControl.DeleteMethod" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property DeleteMethod As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ DeleteMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeleteMethod : string with get, set" Usage="System.Web.UI.WebControls.CompositeDataBoundControl.DeleteMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -218,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompositeDataBoundControl.InsertMethod" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property InsertMethod As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ InsertMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InsertMethod : string with get, set" Usage="System.Web.UI.WebControls.CompositeDataBoundControl.InsertMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompositeDataBoundControl.IsUsingModelBinders" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsUsingModelBinders As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsUsingModelBinders { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsUsingModelBinders : bool" Usage="System.Web.UI.WebControls.CompositeDataBoundControl.IsUsingModelBinders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -268,9 +285,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PerformDataBinding (data As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PerformDataBinding(System::Collections::IEnumerable ^ data);" />
+      <MemberSignature Language="F#" Value="override this.PerformDataBinding : System.Collections.IEnumerable -&gt; unit" Usage="compositeDataBoundControl.PerformDataBinding data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompositeDataBoundControl.UpdateMethod" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property UpdateMethod As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ UpdateMethod { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateMethod : string with get, set" Usage="System.Web.UI.WebControls.CompositeDataBoundControl.UpdateMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

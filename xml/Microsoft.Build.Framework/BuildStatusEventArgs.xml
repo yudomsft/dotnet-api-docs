@@ -4,12 +4,16 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildStatusEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuildStatusEventArgs&#xA;Inherits LazyFormattedBuildEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildStatusEventArgs abstract : Microsoft::Build::Framework::LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="F#" Value="type BuildStatusEventArgs = class&#xA;    inherit LazyFormattedBuildEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Build.Framework.LazyFormattedBuildEventArgs</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-2.0">Microsoft.Build.Framework.BuildEventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -42,8 +46,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class.</summary>
@@ -56,9 +67,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStatusEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStatusEventArgs : string * string * string -&gt; Microsoft.Build.Framework.BuildStatusEventArgs" Usage="new Microsoft.Build.Framework.BuildStatusEventArgs (message, helpKeyword, senderName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -80,11 +94,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStatusEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStatusEventArgs : string * string * string * DateTime -&gt; Microsoft.Build.Framework.BuildStatusEventArgs" Usage="new Microsoft.Build.Framework.BuildStatusEventArgs (message, helpKeyword, senderName, eventTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="helpKeyword" Type="System.String" />
@@ -96,7 +116,7 @@
         <param name="helpKeyword">The Help keyword associated with the event.</param>
         <param name="senderName">The source of the event.</param>
         <param name="eventTimestamp">The time the event was raised.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.TimeStamp" /> values.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Timestamp" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,11 +126,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStatusEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStatusEventArgs : string * string * string * DateTime * obj[] -&gt; Microsoft.Build.Framework.BuildStatusEventArgs" Usage="new Microsoft.Build.Framework.BuildStatusEventArgs (message, helpKeyword, senderName, eventTimestamp, messageArgs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="helpKeyword" Type="System.String" />
@@ -130,7 +156,7 @@
         <param name="senderName">The source of the event.</param>
         <param name="eventTimestamp">The time the event was raised.</param>
         <param name="messageArgs">The event message.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.TimeStamp" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" /> values.</summary>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Timestamp" /> and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" /> values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

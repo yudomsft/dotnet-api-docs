@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.TransportContext" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TransportContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransportContext abstract" />
+  <TypeSignature Language="F#" Value="type TransportContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -60,6 +62,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -67,6 +70,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Net.TransportContext" /> class</summary>
@@ -79,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.TransportContext.GetChannelBinding(System.Security.Authentication.ExtendedProtection.ChannelBindingKind)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetChannelBinding (kind As ChannelBindingKind) As ChannelBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Authentication::ExtendedProtection::ChannelBinding ^ GetChannelBinding(System::Security::Authentication::ExtendedProtection::ChannelBindingKind kind);" />
+      <MemberSignature Language="F#" Value="abstract member GetChannelBinding : System.Security.Authentication.ExtendedProtection.ChannelBindingKind -&gt; System.Security.Authentication.ExtendedProtection.ChannelBinding" Usage="transportContext.GetChannelBinding kind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -88,6 +97,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -128,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.TransportContext.GetTlsTokenBindings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTlsTokenBindings () As IEnumerable(Of TokenBinding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Security::Authentication::ExtendedProtection::TokenBinding ^&gt; ^ GetTlsTokenBindings();" />
+      <MemberSignature Language="F#" Value="abstract member GetTlsTokenBindings : unit -&gt; seq&lt;System.Security.Authentication.ExtendedProtection.TokenBinding&gt;&#xA;override this.GetTlsTokenBindings : unit -&gt; seq&lt;System.Security.Authentication.ExtendedProtection.TokenBinding&gt;" Usage="transportContext.GetTlsTokenBindings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

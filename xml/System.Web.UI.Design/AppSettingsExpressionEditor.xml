@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.AppSettingsExpressionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class AppSettingsExpressionEditor&#xA;Inherits ExpressionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppSettingsExpressionEditor : System::Web::UI::Design::ExpressionEditor" />
+  <TypeSignature Language="F#" Value="type AppSettingsExpressionEditor = class&#xA;    inherit ExpressionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -72,8 +74,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.AppSettingsExpressionEditor" /> class.</summary>
@@ -99,9 +107,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.AppSettingsExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (expression As String, parseTimeData As Object, propertyType As Type, serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::String ^ expression, System::Object ^ parseTimeData, Type ^ propertyType, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.EvaluateExpression : string * obj * Type * IServiceProvider -&gt; obj" Usage="appSettingsExpressionEditor.EvaluateExpression (expression, parseTimeData, propertyType, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,9 +156,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.AppSettingsExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpressionEditorSheet (expression As String, serviceProvider As IServiceProvider) As ExpressionEditorSheet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::ExpressionEditorSheet ^ GetExpressionEditorSheet(System::String ^ expression, IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.GetExpressionEditorSheet : string * IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditorSheet" Usage="appSettingsExpressionEditor.GetExpressionEditorSheet (expression, serviceProvider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

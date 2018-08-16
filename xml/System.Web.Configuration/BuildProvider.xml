@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.BuildProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BuildProvider&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildProvider sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type BuildProvider = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,9 +27,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProvider.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (extension As String, type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildProvider(System::String ^ extension, System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.BuildProvider : string * string -&gt; System.Web.Configuration.BuildProvider" Usage="new System.Web.Configuration.BuildProvider (extension, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -47,9 +51,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProvider.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (provider As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="buildProvider.Equals provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,16 +85,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProvider.Extension" />
       <MemberSignature Language="VB.NET" Value="Public Property Extension As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extension { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Extension : string with get, set" Usage="System.Web.Configuration.BuildProvider.Extension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("extension", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -107,9 +115,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProvider.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="buildProvider.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,11 +138,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProvider.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.BuildProvider.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
@@ -148,16 +165,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProvider.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Configuration.BuildProvider.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("type", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>

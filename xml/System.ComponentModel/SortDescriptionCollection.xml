@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SortDescriptionCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SortDescriptionCollection&#xA;Inherits Collection(Of SortDescription)&#xA;Implements INotifyCollectionChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class SortDescriptionCollection : System::Collections::ObjectModel::Collection&lt;System::ComponentModel::SortDescription&gt;, System::Collections::Specialized::INotifyCollectionChanged" />
+  <TypeSignature Language="F#" Value="type SortDescriptionCollection = class&#xA;    inherit Collection&lt;SortDescription&gt;&#xA;    interface INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -34,8 +36,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SortDescriptionCollection" /> class.</summary>
@@ -48,9 +56,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="sortDescriptionCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,9 +87,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.SortDescriptionCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Event CollectionChanged As NotifyCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,9 +109,11 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.SortDescriptionCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As SortDescriptionCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::SortDescriptionCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.ComponentModel.SortDescriptionCollection" Usage="System.ComponentModel.SortDescriptionCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,9 +130,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.InsertItem(System.Int32,System.ComponentModel.SortDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As SortDescription)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ComponentModel::SortDescription item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ComponentModel.SortDescription -&gt; unit" Usage="sortDescriptionCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,9 +166,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="sortDescriptionCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,9 +200,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.SetItem(System.Int32,System.ComponentModel.SortDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As SortDescription)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ComponentModel::SortDescription item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ComponentModel.SortDescription -&gt; unit" Usage="sortDescriptionCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,6 +228,27 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.SortDescriptionCollection.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event CollectionChanged As NotifyCollectionChangedEventHandler Implements System.Collections.Specialized.INotifyCollectionChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

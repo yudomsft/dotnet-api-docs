@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeParameterCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeTypeParameterCollection&#xA;Inherits CollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeParameterCollection : System::Collections::CollectionBase" />
+  <TypeSignature Language="F#" Value="type CodeTypeParameterCollection = class&#xA;    inherit CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -17,11 +19,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -55,12 +60,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new, empty instance of the <see cref="T:System.CodeDom.CodeTypeParameterCollection" /> class.</summary>
@@ -73,9 +84,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.#ctor(System.CodeDom.CodeTypeParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeTypeParameter())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeParameterCollection(cli::array &lt;System::CodeDom::CodeTypeParameter ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeParameterCollection : System.CodeDom.CodeTypeParameter[] -&gt; System.CodeDom.CodeTypeParameterCollection" Usage="new System.CodeDom.CodeTypeParameterCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -97,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.#ctor(System.CodeDom.CodeTypeParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeTypeParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeParameterCollection(System::CodeDom::CodeTypeParameterCollection ^ value);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeParameterCollection : System.CodeDom.CodeTypeParameterCollection -&gt; System.CodeDom.CodeTypeParameterCollection" Usage="new System.CodeDom.CodeTypeParameterCollection value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -130,9 +145,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.Add(System.CodeDom.CodeTypeParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeTypeParameter) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeTypeParameter ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.CodeDom.CodeTypeParameter -&gt; int" Usage="codeTypeParameterCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -159,9 +176,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; unit" Usage="codeTypeParameterCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -195,9 +214,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.AddRange(System.CodeDom.CodeTypeParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeTypeParameter())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeTypeParameter ^&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeTypeParameter[] -&gt; unit" Usage="codeTypeParameterCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -224,9 +245,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.AddRange(System.CodeDom.CodeTypeParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeTypeParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeTypeParameterCollection ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.CodeDom.CodeTypeParameterCollection -&gt; unit" Usage="codeTypeParameterCollection.AddRange value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -253,9 +276,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.Contains(System.CodeDom.CodeTypeParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeTypeParameter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeTypeParameter ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.CodeDom.CodeTypeParameter -&gt; bool" Usage="codeTypeParameterCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -283,9 +308,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.CopyTo(System.CodeDom.CodeTypeParameter[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeTypeParameter(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeTypeParameter ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.CodeDom.CodeTypeParameter[] * int -&gt; unit" Usage="codeTypeParameterCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -322,9 +349,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.IndexOf(System.CodeDom.CodeTypeParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeTypeParameter) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeTypeParameter ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.CodeDom.CodeTypeParameter -&gt; int" Usage="codeTypeParameterCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -351,9 +380,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.Insert(System.Int32,System.CodeDom.CodeTypeParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeTypeParameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeTypeParameter ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.CodeDom.CodeTypeParameter -&gt; unit" Usage="codeTypeParameterCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -380,9 +411,11 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeParameterCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeTypeParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeParameter ^ default[int] { System::CodeDom::CodeTypeParameter ^ get(int index); void set(int index, System::CodeDom::CodeTypeParameter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.CodeDom.CodeTypeParameter with get, set" Usage="System.CodeDom.CodeTypeParameterCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -417,9 +450,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeParameterCollection.Remove(System.CodeDom.CodeTypeParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeTypeParameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeTypeParameter ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.CodeDom.CodeTypeParameter -&gt; unit" Usage="codeTypeParameterCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

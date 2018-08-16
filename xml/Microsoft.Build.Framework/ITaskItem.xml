@@ -4,16 +4,19 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITaskItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITaskItem" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITaskItem" />
+  <TypeSignature Language="F#" Value="type ITaskItem = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("8661674F-2148-4F71-A92A-49875511C528")</AttributeName>
     </Attribute>
   </Attributes>
@@ -46,9 +49,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.CloneCustomMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCustomMetadata () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ CloneCustomMetadata();" />
+      <MemberSignature Language="F#" Value="abstract member CloneCustomMetadata : unit -&gt; System.Collections.IDictionary" Usage="iTaskItem.CloneCustomMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,9 +85,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.CopyMetadataTo(Microsoft.Build.Framework.ITaskItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyMetadataTo (destinationItem As ITaskItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyMetadataTo(Microsoft::Build::Framework::ITaskItem ^ destinationItem);" />
+      <MemberSignature Language="F#" Value="abstract member CopyMetadataTo : Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="iTaskItem.CopyMetadataTo destinationItem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,9 +124,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.GetMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadata (metadataName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetMetadata(System::String ^ metadataName);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadata : string -&gt; string" Usage="iTaskItem.GetMetadata metadataName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,7 +141,7 @@
       <Docs>
         <param name="metadataName">The name of the metadata entry.</param>
         <summary>Gets the value of the specified metadata entry.</summary>
-        <returns>The value of the <paramref name="attributeName" /> metadata.</returns>
+        <returns>The value of the <paramref name="attributeName" /> metadata, or an empty string if no value can be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,9 +151,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem.ItemSpec" />
       <MemberSignature Language="VB.NET" Value="Public Property ItemSpec As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemSpec { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ItemSpec : string with get, set" Usage="Microsoft.Build.Framework.ITaskItem.ItemSpec" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -181,9 +196,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem.MetadataCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MetadataCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataCount : int" Usage="Microsoft.Build.Framework.ITaskItem.MetadataCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,9 +219,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem.MetadataNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataNames As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ MetadataNames { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataNames : System.Collections.ICollection" Usage="Microsoft.Build.Framework.ITaskItem.MetadataNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,9 +242,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.RemoveMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveMetadata (metadataName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveMetadata(System::String ^ metadataName);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveMetadata : string -&gt; unit" Usage="iTaskItem.RemoveMetadata metadataName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,9 +268,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.SetMetadata(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMetadata (metadataName As String, metadataValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMetadata(System::String ^ metadataName, System::String ^ metadataValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetMetadata : string * string -&gt; unit" Usage="iTaskItem.SetMetadata (metadataName, metadataValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

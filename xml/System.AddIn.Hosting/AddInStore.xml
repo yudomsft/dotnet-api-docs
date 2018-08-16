@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInStore" />
   <TypeSignature Language="VB.NET" Value="Public Class AddInStore" />
   <TypeSignature Language="C++ CLI" Value="public ref class AddInStore abstract sealed" />
+  <TypeSignature Language="F#" Value="type AddInStore = class" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -50,13 +52,15 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIn(System.Type,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIn (hostViewOfAddIn As Type, pipelineRootFolderPath As String, addInFilePath As String, addInTypeName As String) As Collection(Of AddInToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIn(Type ^ hostViewOfAddIn, System::String ^ pipelineRootFolderPath, System::String ^ addInFilePath, System::String ^ addInTypeName);" />
+      <MemberSignature Language="F#" Value="static member FindAddIn : Type * string * string * string -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIn (hostViewOfAddIn, pipelineRootFolderPath, addInFilePath, addInTypeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -118,14 +122,22 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.AddIn.Hosting.PipelineStoreLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIns (hostViewOfAddIn As Type, location As PipelineStoreLocation) As Collection(Of AddInToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIns(Type ^ hostViewOfAddIn, System::AddIn::Hosting::PipelineStoreLocation location);" />
+      <MemberSignature Language="F#" Value="static member FindAddIns : Type * System.AddIn.Hosting.PipelineStoreLocation -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIns (hostViewOfAddIn, location)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -167,13 +179,15 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.AddIn.Hosting.PipelineStoreLocation,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIns (hostViewOfAddIn As Type, location As PipelineStoreLocation, ParamArray addInFolderPaths As String()) As Collection(Of AddInToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIns(Type ^ hostViewOfAddIn, System::AddIn::Hosting::PipelineStoreLocation location, ... cli::array &lt;System::String ^&gt; ^ addInFolderPaths);" />
+      <MemberSignature Language="F#" Value="static member FindAddIns : Type * System.AddIn.Hosting.PipelineStoreLocation * string[] -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIns (hostViewOfAddIn, location, addInFolderPaths)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -220,14 +234,19 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIns (hostViewOfAddIn As Type, pipelineRootFolderPath As String, ParamArray addInFolderPaths As String()) As Collection(Of AddInToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIns(Type ^ hostViewOfAddIn, System::String ^ pipelineRootFolderPath, ... cli::array &lt;System::String ^&gt; ^ addInFolderPaths);" />
+      <MemberSignature Language="F#" Value="static member FindAddIns : Type * string * string[] -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIns (hostViewOfAddIn, pipelineRootFolderPath, addInFolderPaths)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -279,14 +298,22 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Rebuild(System.AddIn.Hosting.PipelineStoreLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Rebuild (location As PipelineStoreLocation) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Rebuild(System::AddIn::Hosting::PipelineStoreLocation location);" />
+      <MemberSignature Language="F#" Value="static member Rebuild : System.AddIn.Hosting.PipelineStoreLocation -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Rebuild location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -321,14 +348,19 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Rebuild(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Rebuild (pipelineRootFolderPath As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Rebuild(System::String ^ pipelineRootFolderPath);" />
+      <MemberSignature Language="F#" Value="static member Rebuild : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Rebuild pipelineRootFolderPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -362,13 +394,15 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.RebuildAddIns(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RebuildAddIns (addInsFolderPath As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ RebuildAddIns(System::String ^ addInsFolderPath);" />
+      <MemberSignature Language="F#" Value="static member RebuildAddIns : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.RebuildAddIns addInsFolderPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -416,14 +450,22 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Update(System.AddIn.Hosting.PipelineStoreLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Update (location As PipelineStoreLocation) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Update(System::AddIn::Hosting::PipelineStoreLocation location);" />
+      <MemberSignature Language="F#" Value="static member Update : System.AddIn.Hosting.PipelineStoreLocation -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Update location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -458,14 +500,19 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Update(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Update (pipelineRootFolderPath As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Update(System::String ^ pipelineRootFolderPath);" />
+      <MemberSignature Language="F#" Value="static member Update : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Update pipelineRootFolderPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -506,13 +553,15 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.UpdateAddIns(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UpdateAddIns (addInsFolderPath As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ UpdateAddIns(System::String ^ addInsFolderPath);" />
+      <MemberSignature Language="F#" Value="static member UpdateAddIns : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.UpdateAddIns addInsFolderPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

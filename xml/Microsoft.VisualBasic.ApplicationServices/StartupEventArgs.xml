@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class StartupEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StartupEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type StartupEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,11 +15,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (args As ReadOnlyCollection(Of String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StartupEventArgs(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.StartupEventArgs : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; -&gt; Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" Usage="new Microsoft.VisualBasic.ApplicationServices.StartupEventArgs args" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,11 +80,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandLine As ReadOnlyCollection(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CommandLine { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandLine : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>

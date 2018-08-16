@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.DesignerMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerMetadata&#xA;Implements IRegisterMetadata" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerMetadata : System::Activities::Presentation::Metadata::IRegisterMetadata" />
+  <TypeSignature Language="F#" Value="type DesignerMetadata = class&#xA;    interface IRegisterMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,11 @@
         <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Core.Presentation.DesignerMetadata" /> class.</summary>
@@ -48,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.DesignerMetadata.Register" />
       <MemberSignature Language="VB.NET" Value="Public Sub Register ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Register();" />
+      <MemberSignature Language="F#" Value="abstract member Register : unit -&gt; unit&#xA;override this.Register : unit -&gt; unit" Usage="designerMetadata.Register " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Activities.Presentation.Metadata.IRegisterMetadata.Register</InterfaceMember>

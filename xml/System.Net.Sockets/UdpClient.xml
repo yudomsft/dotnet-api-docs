@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.UdpClient" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpClient&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpClient : IDisposable" />
+  <TypeSignature Language="F#" Value="type UdpClient = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -86,6 +89,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -93,6 +98,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.UdpClient" /> class.</summary>
@@ -103,7 +113,7 @@
  This constructor creates a new <xref:System.Net.Sockets.UdpClient> and allows the underlying service provider to assign the most appropriate local IPv4 address and port number. If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with an address family of IPv4 that cannot be changed or overwritten by a connect method call with an IPv6 target.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  This constructor is not suitable for joining a multicast group because it does not perform socket binding. Also, it works only with IPv4 address types.  
   
@@ -127,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(int port);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : int -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient port" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -136,6 +147,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -143,6 +156,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="port" Type="System.Int32" />
       </Parameters>
@@ -156,7 +174,7 @@
  This constructor creates an underlying <xref:System.Net.Sockets.Socket> and binds it to the port number from which you intend to communicate. Use this constructor if you are only interested in setting the local port number. The underlying service provider will assign the local IP address. If you pass 0 to the constructor, the underlying service provider will assign a port number. If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with an address family of IPv4 that cannot be changed or overwritten by a connect method call with an IPv6 target.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  This constructor works only with IPv4 address types.  
   
@@ -181,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localEP As IPEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(System::Net::IPEndPoint ^ localEP);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : System.Net.IPEndPoint -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient localEP" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -190,6 +209,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -212,7 +233,7 @@
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `localEP` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -237,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Net.Sockets.AddressFamily)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (family As AddressFamily)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(System::Net::Sockets::AddressFamily family);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : System.Net.Sockets.AddressFamily -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient family" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -246,6 +268,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -268,7 +292,7 @@
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `family` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  The <xref:System.Net.Sockets.UdpClient.%23ctor%28System.Net.Sockets.AddressFamily%29?displayProperty=nameWithType> is not suitable for joining a multicast group because it does not perform socket binding.  
   
@@ -285,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.Int32,System.Net.Sockets.AddressFamily)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer, family As AddressFamily)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(int port, System::Net::Sockets::AddressFamily family);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : int * System.Net.Sockets.AddressFamily -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient (port, family)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -294,6 +319,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -320,7 +347,7 @@
  If this constructor is used, the <xref:System.Net.Sockets.UdpClient> instance is set with the address family specified by the `family` parameter  that cannot be changed or overwritten by a connect method call with a different address family.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -346,9 +373,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostname As String, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpClient(System::String ^ hostname, int port);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpClient : string * int -&gt; System.Net.Sockets.UdpClient" Usage="new System.Net.Sockets.UdpClient (hostname, port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -376,7 +406,7 @@
  This constructor initializes a new <xref:System.Net.Sockets.UdpClient> and establishes a remote host using the `hostname` and `port` parameters. Establishing a default remote host is optional. If you use this constructor, you do not have to specify a remote host in each call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method. Specifying a default remote host limits you to that host only. You can change the default remote host at any time by calling the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you want to specify a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, do not use this constructor.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -404,6 +434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Active" />
       <MemberSignature Language="VB.NET" Value="Protected Property Active As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool Active { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Active : bool with get, set" Usage="System.Net.Sockets.UdpClient.Active" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -413,6 +444,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -420,6 +453,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -446,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AllowNatTraversal (allowed As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllowNatTraversal(bool allowed);" />
+      <MemberSignature Language="F#" Value="member this.AllowNatTraversal : bool -&gt; unit" Usage="udpClient.AllowNatTraversal allowed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -497,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Available" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Available As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Available { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Available : int" Usage="System.Net.Sockets.UdpClient.Available" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -506,6 +549,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -550,9 +594,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginReceive(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceive (requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceive(AsyncCallback ^ requestCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginReceive : AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginReceive (requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -615,9 +661,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginSend(System.Byte[],System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSend (datagram As Byte(), bytes As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, AsyncCallback ^ requestCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginSend (datagram, bytes, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -630,6 +678,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -677,9 +730,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginSend(System.Byte[],System.Int32,System.Net.IPEndPoint,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSend (datagram As Byte(), bytes As Integer, endPoint As IPEndPoint, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::Net::IPEndPoint ^ endPoint, AsyncCallback ^ requestCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * System.Net.IPEndPoint * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginSend (datagram, bytes, endPoint, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -741,9 +796,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.BeginSend(System.Byte[],System.Int32,System.String,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSend (datagram As Byte(), bytes As Integer, hostname As String, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::String ^ hostname, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSend : byte[] * int * string * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpClient.BeginSend (datagram, bytes, hostname, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -807,6 +864,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Client" />
       <MemberSignature Language="VB.NET" Value="Public Property Client As Socket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::Socket ^ Client { System::Net::Sockets::Socket ^ get(); void set(System::Net::Sockets::Socket ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Client : System.Net.Sockets.Socket with get, set" Usage="System.Net.Sockets.UdpClient.Client" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -816,6 +874,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -823,6 +883,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
       </ReturnValue>
@@ -855,9 +923,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="udpClient.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -870,6 +941,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -883,7 +959,7 @@
  The <xref:System.Net.Sockets.UdpClient.Close%2A> disables the underlying <xref:System.Net.Sockets.Socket> and releases all managed and unmanaged resources associated with the <xref:System.Net.Sockets.UdpClient>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -916,9 +992,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Connect(System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (endPoint As IPEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::Net::IPEndPoint ^ endPoint);" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPEndPoint -&gt; unit" Usage="udpClient.Connect endPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -946,7 +1025,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.UdpClient.Connect%2A> method establishes a default remote host using the value specified in the `endPoint` parameter. Once established, you do not have to specify a remote host in each call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method.  
   
- Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the Client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>.  
   
@@ -981,9 +1060,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Connect(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (addr As IPAddress, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::Net::IPAddress ^ addr, int port);" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress * int -&gt; unit" Usage="udpClient.Connect (addr, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1013,7 +1095,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.UdpClient.Connect%2A> method establishes a default remote host using the values specified in the `addr` and `port` parameters. Once established, you do not have to specify a remote host in each call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method.  
   
- Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host. If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>.  
   
@@ -1051,9 +1133,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Connect(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (hostname As String, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::String ^ hostname, int port);" />
+      <MemberSignature Language="F#" Value="member this.Connect : string * int -&gt; unit" Usage="udpClient.Connect (hostname, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1085,7 +1170,7 @@
   
  Establishing a default remote host is optional. Specifying a default remote host limits you to that host only. If you want to send datagrams to a different remote host, you must make another call to the <xref:System.Net.Sockets.UdpClient.Connect%2A> method or create another <xref:System.Net.Sockets.UdpClient> without a default remote host.  
   
- If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ If you have established a default remote host and you also provide a remote host in your call to the <xref:System.Net.Sockets.UdpClient.Send%2A> method, <xref:System.Net.Sockets.UdpClient.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  If you call the <xref:System.Net.Sockets.Socket.Connect%2A> method, any datagrams that arrive from an address other than the specified default will be discarded. You cannot set the default remote host to a broadcast address using this method unless you inherit from <xref:System.Net.Sockets.UdpClient>, use the client method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>.  
   
@@ -1120,6 +1205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="udpClient.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1154,6 +1240,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="udpClient.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1163,6 +1250,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1204,6 +1292,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.DontFragment" />
       <MemberSignature Language="VB.NET" Value="Public Property DontFragment As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DontFragment { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DontFragment : bool with get, set" Usage="System.Net.Sockets.UdpClient.DontFragment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1213,6 +1302,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1262,6 +1352,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DropMulticastGroup (multicastAddr As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DropMulticastGroup(System::Net::IPAddress ^ multicastAddr);" />
+      <MemberSignature Language="F#" Value="member this.DropMulticastGroup : System.Net.IPAddress -&gt; unit" Usage="udpClient.DropMulticastGroup multicastAddr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1271,6 +1362,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1294,7 +1387,7 @@
  The <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method withdraws the <xref:System.Net.Sockets.UdpClient> from the multicast group identified by the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router, removing the router from the multicast group. After a <xref:System.Net.Sockets.UdpClient> withdraws from the group, it will no longer be able to receive datagrams sent to that group.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -1321,6 +1414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.DropMulticastGroup(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DropMulticastGroup (multicastAddr As IPAddress, ifindex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DropMulticastGroup(System::Net::IPAddress ^ multicastAddr, int ifindex);" />
+      <MemberSignature Language="F#" Value="member this.DropMulticastGroup : System.Net.IPAddress * int -&gt; unit" Usage="udpClient.DropMulticastGroup (multicastAddr, ifindex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1330,6 +1424,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1355,7 +1451,7 @@
  The <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method withdraws the <xref:System.Net.Sockets.UdpClient> from the multicast group identified by the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router, removing the router from the multicast group. After a <xref:System.Net.Sockets.UdpClient> withdraws from the group, it will no longer be able to receive datagrams sent to that group.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -1382,6 +1478,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.EnableBroadcast" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableBroadcast As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableBroadcast { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableBroadcast : bool with get, set" Usage="System.Net.Sockets.UdpClient.EnableBroadcast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1391,6 +1488,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1429,9 +1527,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.EndReceive(System.IAsyncResult,System.Net.IPEndPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndReceive (asyncResult As IAsyncResult, ByRef remoteEP As IPEndPoint) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ EndReceive(IAsyncResult ^ asyncResult, System::Net::IPEndPoint ^ % remoteEP);" />
+      <MemberSignature Language="F#" Value="member this.EndReceive : IAsyncResult *  -&gt; byte[]" Usage="udpClient.EndReceive (asyncResult, remoteEP)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1449,7 +1549,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
-        <Parameter Name="remoteEP" Type="System.Net.IPEndPoint&amp;" RefType="ref" />
+        <Parameter Name="remoteEP" Type="System.Net.IPEndPoint" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> object returned by a call to <see cref="M:System.Net.Sockets.UdpClient.BeginReceive(System.AsyncCallback,System.Object)" />.</param>
@@ -1490,9 +1590,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.EndSend(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndSend (asyncResult As IAsyncResult) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndSend(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndSend : IAsyncResult -&gt; int" Usage="udpClient.EndSend asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1549,6 +1651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.ExclusiveAddressUse" />
       <MemberSignature Language="VB.NET" Value="Public Property ExclusiveAddressUse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExclusiveAddressUse { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExclusiveAddressUse : bool with get, set" Usage="System.Net.Sockets.UdpClient.ExclusiveAddressUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1558,6 +1661,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1600,6 +1704,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!UdpClient ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="udpClient.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1631,6 +1736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (multicastAddr As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(System::Net::IPAddress ^ multicastAddr);" />
+      <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : System.Net.IPAddress -&gt; unit" Usage="udpClient.JoinMulticastGroup multicastAddr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1640,6 +1746,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1660,7 +1768,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
+ The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
   
 > [!NOTE]
 >  You must create the <xref:System.Net.Sockets.UdpClient> using the multicast port number; otherwise, you will not be able to receive multicasted datagrams. Do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, or the <xref:System.Net.Sockets.UdpClient.Receive%2A> method will not work. You do not need to belong to a multicast group to send datagrams to a multicast IP address.  
@@ -1698,6 +1806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Int32,System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (ifindex As Integer, multicastAddr As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(int ifindex, System::Net::IPAddress ^ multicastAddr);" />
+      <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : int * System.Net.IPAddress -&gt; unit" Usage="udpClient.JoinMulticastGroup (ifindex, multicastAddr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1707,6 +1816,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1758,6 +1869,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (multicastAddr As IPAddress, timeToLive As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(System::Net::IPAddress ^ multicastAddr, int timeToLive);" />
+      <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : System.Net.IPAddress * int -&gt; unit" Usage="udpClient.JoinMulticastGroup (multicastAddr, timeToLive)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1767,6 +1879,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1789,7 +1903,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error. The `timeToLive` parameter specifies how many router hops will be allowed for a multicasted datagram before being discarded. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
+ The <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method subscribes the <xref:System.Net.Sockets.UdpClient> to a multicast group using the specified <xref:System.Net.IPAddress>. After calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method, the underlying <xref:System.Net.Sockets.Socket> sends an Internet Group Management Protocol (IGMP) packet to the router requesting membership to the multicast group. The multicast address range is 224.0.0.0 to 239.255.255.255. If you specify an address outside this range or if the router to which the request is made is not multicast enabled, <xref:System.Net.Sockets.UdpClient> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error. The `timeToLive` parameter specifies how many router hops will be allowed for a multicasted datagram before being discarded. Once the <xref:System.Net.Sockets.UdpClient> is listed with the router as a member of the multicast group, it will be able to receive multicasted datagrams sent to the specified <xref:System.Net.IPAddress>.  
   
 > [!NOTE]
 >  You must create the <xref:System.Net.Sockets.UdpClient> using the multicast port number otherwise you will not be able to receive multicasted datagrams. Do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method or the receive method will not work. You do not need to belong to a multicast group to send datagrams to a multicast IP address.  
@@ -1827,6 +1941,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.JoinMulticastGroup(System.Net.IPAddress,System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub JoinMulticastGroup (multicastAddr As IPAddress, localAddress As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void JoinMulticastGroup(System::Net::IPAddress ^ multicastAddr, System::Net::IPAddress ^ localAddress);" />
+      <MemberSignature Language="F#" Value="member this.JoinMulticastGroup : System.Net.IPAddress * System.Net.IPAddress -&gt; unit" Usage="udpClient.JoinMulticastGroup (multicastAddr, localAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1836,6 +1951,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1886,6 +2002,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.MulticastLoopback" />
       <MemberSignature Language="VB.NET" Value="Public Property MulticastLoopback As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MulticastLoopback { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MulticastLoopback : bool with get, set" Usage="System.Net.Sockets.UdpClient.MulticastLoopback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1895,6 +2012,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1933,9 +2051,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Receive(System.Net.IPEndPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Receive (ByRef remoteEP As IPEndPoint) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Receive(System::Net::IPEndPoint ^ % remoteEP);" />
+      <MemberSignature Language="F#" Value="member this.Receive :  -&gt; byte[]" Usage="udpClient.Receive remoteEP" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1952,7 +2073,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="remoteEP" Type="System.Net.IPEndPoint&amp;" RefType="ref" />
+        <Parameter Name="remoteEP" Type="System.Net.IPEndPoint" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="remoteEP">An <see cref="T:System.Net.IPEndPoint" /> that represents the remote host from which the data was sent.</param>
@@ -1966,7 +2087,7 @@
   
  If you specify a default remote host in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method, the <xref:System.Net.Sockets.UdpClient.Receive%2A> method will accept datagrams from that host only. All other datagrams will be discarded.  
   
- If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  If you intend to receive multicasted datagrams, do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling the <xref:System.Net.Sockets.UdpClient.Receive%2A> method. The <xref:System.Net.Sockets.UdpClient> you use to receive datagrams must be created using the multicast port number.  
@@ -1996,6 +2117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.ReceiveAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function ReceiveAsync () As Task(Of UdpReceiveResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Net::Sockets::UdpReceiveResult&gt; ^ ReceiveAsync();" />
+      <MemberSignature Language="F#" Value="member this.ReceiveAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Net.Sockets.UdpReceiveResult&gt;" Usage="udpClient.ReceiveAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2029,7 +2151,7 @@
   
  If you specify a default remote host in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method, this method will accept datagrams from that host only. All other datagrams will be discarded.  
   
- If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!WARNING]
 >  If you intend to receive multicasted datagrams, do not call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method prior to calling this method. The <xref:System.Net.Sockets.UdpClient> you use to receive datagrams must be created using the multicast port number.  
@@ -2056,9 +2178,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Send (dgram As Byte(), bytes As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Send(cli::array &lt;System::Byte&gt; ^ dgram, int bytes);" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] * int -&gt; int" Usage="udpClient.Send (dgram, bytes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2087,7 +2212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and returns the number of bytes sent. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and returns the number of bytes sent. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  If you want to send datagrams to a different remote host, you must call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and specify the desired remote host. Use either of the other <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads to send datagrams to a broadcast address.  
   
@@ -2116,9 +2241,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function Send (dgram As Byte(), bytes As Integer, endPoint As IPEndPoint) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Send(cli::array &lt;System::Byte&gt; ^ dgram, int bytes, System::Net::IPEndPoint ^ endPoint);" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] * int * System.Net.IPEndPoint -&gt; int" Usage="udpClient.Send (dgram, bytes, endPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2154,7 +2282,7 @@
  If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
->  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -2186,9 +2314,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.Send(System.Byte[],System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Send (dgram As Byte(), bytes As Integer, hostname As String, port As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Send(cli::array &lt;System::Byte&gt; ^ dgram, int bytes, System::String ^ hostname, int port);" />
+      <MemberSignature Language="F#" Value="member this.Send : byte[] * int * string * int -&gt; int" Usage="udpClient.Send (dgram, bytes, hostname, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2226,7 +2357,7 @@
  If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
->  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
    
   
@@ -2265,6 +2396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.SendAsync(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (datagram As Byte(), bytes As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ SendAsync(cli::array &lt;System::Byte&gt; ^ datagram, int bytes);" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : byte[] * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="udpClient.SendAsync (datagram, bytes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2296,7 +2428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+ This overload sends datagrams to the remote host established in the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do not call <xref:System.Net.Sockets.UdpClient.Connect%2A> before calling this overload, the method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  If you want to send datagrams to a different remote host, you must call the <xref:System.Net.Sockets.UdpClient.Connect%2A> method and specify the desired remote host. Use either of the other <xref:System.Net.Sockets.UdpClient.SendAsync%2A> method overloads to send datagrams to a broadcast address.  
   
@@ -2315,6 +2447,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.SendAsync(System.Byte[],System.Int32,System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (datagram As Byte(), bytes As Integer, endPoint As IPEndPoint) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ SendAsync(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::Net::IPEndPoint ^ endPoint);" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : byte[] * int * System.Net.IPEndPoint -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="udpClient.SendAsync (datagram, bytes, endPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2354,7 +2487,7 @@
  If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!WARNING]
->  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  ]]></format>
         </remarks>
@@ -2373,6 +2506,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpClient.SendAsync(System.Byte[],System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (datagram As Byte(), bytes As Integer, hostname As String, port As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ SendAsync(cli::array &lt;System::Byte&gt; ^ datagram, int bytes, System::String ^ hostname, int port);" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : byte[] * int * string * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="udpClient.SendAsync (datagram, bytes, hostname, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2414,7 +2548,7 @@
  If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName.Broadcast?displayProperty=nameWithType>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!WARNING]
->  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide a host name or port number to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, this method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. Once you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
  ]]></format>
         </remarks>
@@ -2437,8 +2571,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2454,6 +2595,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpClient.Ttl" />
       <MemberSignature Language="VB.NET" Value="Public Property Ttl As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Ttl { short get(); void set(short value); };" />
+      <MemberSignature Language="F#" Value="member this.Ttl : int16 with get, set" Usage="System.Net.Sockets.UdpClient.Ttl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -2463,6 +2605,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

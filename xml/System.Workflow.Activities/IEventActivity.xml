@@ -4,13 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IEventActivity" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEventActivity" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEventActivity" />
+  <TypeSignature Language="F#" Value="type IEventActivity = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -34,9 +36,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.IEventActivity.QueueName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueName As IComparable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IComparable ^ QueueName { IComparable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable" Usage="System.Workflow.Activities.IEventActivity.QueueName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,9 +58,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IEventActivity.Subscribe(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Subscribe (parentContext As ActivityExecutionContext, parentEventHandler As IActivityEventListener(Of QueueEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Subscribe(System::Workflow::ComponentModel::ActivityExecutionContext ^ parentContext, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ parentEventHandler);" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="iEventActivity.Subscribe (parentContext, parentEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,9 +95,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IEventActivity.Unsubscribe(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unsubscribe (parentContext As ActivityExecutionContext, parentEventHandler As IActivityEventListener(Of QueueEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unsubscribe(System::Workflow::ComponentModel::ActivityExecutionContext ^ parentContext, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ parentEventHandler);" />
+      <MemberSignature Language="F#" Value="abstract member Unsubscribe : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="iEventActivity.Unsubscribe (parentContext, parentEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SplashScreen" />
   <TypeSignature Language="VB.NET" Value="Public Class SplashScreen" />
   <TypeSignature Language="C++ CLI" Value="public ref class SplashScreen" />
+  <TypeSignature Language="F#" Value="type SplashScreen = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
     </Attribute>
   </Attributes>
@@ -71,13 +73,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resourceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplashScreen(System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.SplashScreen : string -&gt; System.Windows.SplashScreen" Usage="new System.Windows.SplashScreen resourceName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -106,13 +110,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.#ctor(System.Reflection.Assembly,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resourceAssembly As Assembly, resourceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplashScreen(System::Reflection::Assembly ^ resourceAssembly, System::String ^ resourceName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.SplashScreen : System.Reflection.Assembly * string -&gt; System.Windows.SplashScreen" Usage="new System.Windows.SplashScreen (resourceAssembly, resourceName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -142,13 +148,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Close(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (fadeoutDuration As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(TimeSpan fadeoutDuration);" />
+      <MemberSignature Language="F#" Value="member this.Close : TimeSpan -&gt; unit" Usage="splashScreen.Close fadeoutDuration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -188,14 +196,19 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Show(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Show (autoClose As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(bool autoClose);" />
+      <MemberSignature Language="F#" Value="member this.Show : bool -&gt; unit" Usage="splashScreen.Show autoClose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -228,13 +241,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Show(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Show (autoClose As Boolean, topMost As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(bool autoClose, bool topMost);" />
+      <MemberSignature Language="F#" Value="member this.Show : bool * bool -&gt; unit" Usage="splashScreen.Show (autoClose, topMost)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

@@ -4,20 +4,26 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRowsetInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRowsetInfo" />
+  <TypeSignature Language="F#" Value="type IRowsetInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0C733A55-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,9 +46,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetProperties(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[],System.Int32@,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetProperties (cPropertyIDSets As Integer, rgPropertyIDSets As DBPROPIDSET(), ByRef cPropertySets As Integer, ByRef prgPropertySets As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetProperties(int cPropertyIDSets, cli::array &lt;Microsoft::VisualBasic::Compatibility::VB6::DBPROPIDSET&gt; ^ rgPropertyIDSets, [Runtime::InteropServices::Out] int % cPropertySets, [Runtime::InteropServices::Out] IntPtr % prgPropertySets);" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : int * Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[] *  *  -&gt; unit" Usage="iRowsetInfo.GetProperties (cPropertyIDSets, rgPropertyIDSets, cPropertySets, prgPropertySets)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,8 +60,8 @@
       <Parameters>
         <Parameter Name="cPropertyIDSets" Type="System.Int32" />
         <Parameter Name="rgPropertyIDSets" Type="Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[]" />
-        <Parameter Name="cPropertySets" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="prgPropertySets" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="cPropertySets" Type="System.Int32" RefType="out" />
+        <Parameter Name="prgPropertySets" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cPropertyIDSets">The number of <see langword="DBPROPIDSET" /> structures in <c>rgPropertyIDSets</c>.</param>
@@ -78,9 +87,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetReferencedRowset(System.Int32,System.Guid,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetReferencedRowset (iOrdinal As Integer, riid As Guid, ByRef referencedRowset As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetReferencedRowset(int iOrdinal, Guid riid, [Runtime::InteropServices::Out] System::Object ^ % referencedRowset);" />
+      <MemberSignature Language="F#" Value="abstract member GetReferencedRowset : int * Guid *  -&gt; unit" Usage="iRowsetInfo.GetReferencedRowset (iOrdinal, riid, referencedRowset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,7 +101,7 @@
       <Parameters>
         <Parameter Name="iOrdinal" Type="System.Int32" />
         <Parameter Name="riid" Type="System.Guid" />
-        <Parameter Name="referencedRowset" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="referencedRowset" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="iOrdinal">The bookmark or chapter column for which to get the related rowset.</param>
@@ -114,9 +126,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetSpecification(System.Guid,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSpecification (riid As Guid, ByRef specification As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSpecification(Guid riid, [Runtime::InteropServices::Out] System::Object ^ % specification);" />
+      <MemberSignature Language="F#" Value="abstract member GetSpecification : Guid *  -&gt; unit" Usage="iRowsetInfo.GetSpecification (riid, specification)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,7 +139,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="riid" Type="System.Guid" />
-        <Parameter Name="specification" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="specification" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="riid">The IID of the interface on which to return a pointer.</param>

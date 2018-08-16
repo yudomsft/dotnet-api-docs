@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMapDataSourceDesigner&#xA;Inherits HierarchicalDataSourceDesigner&#xA;Implements IDataSourceDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class SiteMapDataSourceDesigner : System::Web::UI::Design::HierarchicalDataSourceDesigner, System::Web::UI::Design::IDataSourceDesigner" />
+  <TypeSignature Language="F#" Value="type SiteMapDataSourceDesigner = class&#xA;    inherit HierarchicalDataSourceDesigner&#xA;    interface IDataSourceDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,8 +34,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner" /> class.</summary>
@@ -46,12 +54,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRefreshSchema As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRefreshSchema : bool" Usage="System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,9 +79,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetView (viewPath As String) As DesignerHierarchicalDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::DesignerHierarchicalDataSourceView ^ GetView(System::String ^ viewPath);" />
+      <MemberSignature Language="F#" Value="override this.GetView : string -&gt; System.Web.UI.Design.DesignerHierarchicalDataSourceView" Usage="siteMapDataSourceDesigner.GetView viewPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,12 +106,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetViewNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetViewNames();" />
+      <MemberSignature Language="F#" Value="abstract member GetViewNames : unit -&gt; string[]&#xA;override this.GetViewNames : unit -&gt; string[]" Usage="siteMapDataSourceDesigner.GetViewNames " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.Design.IDataSourceDesigner.GetViewNames</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,9 +139,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="siteMapDataSourceDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,9 +164,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, e As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="siteMapDataSourceDesigner.OnComponentChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,12 +198,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.RefreshSchema(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RefreshSchema (preferSilent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RefreshSchema(bool preferSilent);" />
+      <MemberSignature Language="F#" Value="override this.RefreshSchema : bool -&gt; unit" Usage="siteMapDataSourceDesigner.RefreshSchema preferSilent" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.Design.IDataSourceDesigner.RefreshSchema(System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,13 +226,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanConfigure" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanConfigure As Boolean Implements IDataSourceDesigner.CanConfigure" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataSourceDesigner.CanConfigure { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::Design::IDataSourceDesigner::CanConfigure { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataSourceDesigner.CanConfigure</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,13 +259,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRefreshSchema As Boolean Implements IDataSourceDesigner.CanRefreshSchema" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::Design::IDataSourceDesigner::CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,6 +298,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,14 +328,24 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="E:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetView">
@@ -325,6 +360,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -359,8 +395,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
@@ -391,6 +433,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,6 +469,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -456,14 +500,24 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>For a description of this member, see <see cref="E:System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20">ASP.NET Site Maps</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents">
@@ -478,6 +532,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

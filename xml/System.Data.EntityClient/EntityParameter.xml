@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityParameter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityParameter&#xA;Inherits DbParameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityParameter sealed : System::Data::Common::DbParameter" />
+  <TypeSignature Language="F#" Value="type EntityParameter = class&#xA;    inherit DbParameter&#xA;    interface IDbDataParameter&#xA;    interface IDataParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -42,8 +44,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the default values.</summary>
@@ -55,9 +63,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityParameter(System::String ^ parameterName, System::Data::DbType dbType);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -76,9 +86,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityParameter(System::String ^ parameterName, System::Data::DbType dbType, int size);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType * int -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -99,9 +111,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size, string sourceColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityParameter(System::String ^ parameterName, System::Data::DbType dbType, int size, System::String ^ sourceColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType * int * string -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType, size, sourceColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -124,9 +138,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName, valuetype System.Data.DbType dbType, int32 size, valuetype System.Data.ParameterDirection direction, bool isNullable, unsigned int8 precision, unsigned int8 scale, string sourceColumn, valuetype System.Data.DataRowVersion sourceVersion, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.#ctor(System.String,System.Data.DbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityParameter(System::String ^ parameterName, System::Data::DbType dbType, int size, System::Data::ParameterDirection direction, bool isNullable, System::Byte precision, System::Byte scale, System::String ^ sourceColumn, System::Data::DataRowVersion sourceVersion, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntityClient.EntityParameter : string * System.Data.DbType * int * System.Data.ParameterDirection * bool * byte * byte * string * System.Data.DataRowVersion * obj -&gt; System.Data.EntityClient.EntityParameter" Usage="new System.Data.EntityClient.EntityParameter (parameterName, dbType, size, direction, isNullable, precision, scale, sourceColumn, sourceVersion, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -163,12 +179,14 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.DbType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DbType As DbType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DbType DbType { System::Data::DbType get(); void set(System::Data::DbType value); };" />
+      <MemberSignature Language="F#" Value="member this.DbType : System.Data.DbType with get, set" Usage="System.Data.EntityClient.EntityParameter.DbType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.DbType</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,17 +204,28 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Direction" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Direction As ParameterDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ParameterDirection Direction { System::Data::ParameterDirection get(); void set(System::Data::ParameterDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Data.ParameterDirection with get, set" Usage="System.Data.EntityClient.EntityParameter.Direction" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.Direction</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResCategory("DataCategory_Data")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResDescription("DbParameter_Direction")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -214,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.EdmType" />
       <MemberSignature Language="VB.NET" Value="Public Property EdmType As EdmType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmType ^ EdmType { System::Data::Metadata::Edm::EdmType ^ get(); void set(System::Data::Metadata::Edm::EdmType ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EdmType : System.Data.Metadata.Edm.EdmType with get, set" Usage="System.Data.EntityClient.EntityParameter.EdmType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -241,9 +271,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property IsNullable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsNullable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Data.EntityClient.EntityParameter.IsNullable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,14 +294,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.ParameterName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ParameterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterName : string with get, set" Usage="System.Data.EntityClient.EntityParameter.ParameterName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.ParameterName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -285,12 +324,14 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Precision" />
       <MemberSignature Language="VB.NET" Value="Public Property Precision As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Precision { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.Precision : byte with get, set" Usage="System.Data.EntityClient.EntityParameter.Precision" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataParameter.Precision</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,9 +349,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.ResetDbType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetDbType ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetDbType();" />
+      <MemberSignature Language="F#" Value="override this.ResetDbType : unit -&gt; unit" Usage="entityParameter.ResetDbType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,12 +371,14 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Scale" />
       <MemberSignature Language="VB.NET" Value="Public Property Scale As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Scale { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.Scale : byte with get, set" Usage="System.Data.EntityClient.EntityParameter.Scale" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataParameter.Scale</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -351,14 +396,24 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Size" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Size { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Data.EntityClient.EntityParameter.Size" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDbDataParameter.Size</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResCategory("DataCategory_Data")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResDescription("DbParameter_Size")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -374,14 +429,27 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceColumn" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.EntityClient.EntityParameter.SourceColumn" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.SourceColumn</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResCategory("DataCategory_Update")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResDescription("DbParameter_SourceColumn")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -397,11 +465,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceColumnNullMapping" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceColumnNullMapping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SourceColumnNullMapping { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceColumnNullMapping : bool with get, set" Usage="System.Data.EntityClient.EntityParameter.SourceColumnNullMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -418,14 +496,24 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.SourceVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SourceVersion As DataRowVersion" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::DataRowVersion SourceVersion { System::Data::DataRowVersion get(); void set(System::Data::DataRowVersion value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceVersion : System.Data.DataRowVersion with get, set" Usage="System.Data.EntityClient.EntityParameter.SourceVersion" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.SourceVersion</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResCategory("DataCategory_Update")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Data.ResDescription("DbParameter_SourceVersion")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.DataRowVersion</ReturnType>
       </ReturnValue>
@@ -441,9 +529,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityParameter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="entityParameter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,14 +552,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityParameter.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Data.EntityClient.EntityParameter.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataParameter.Value</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

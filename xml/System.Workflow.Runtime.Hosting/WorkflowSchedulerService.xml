@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowSchedulerService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowSchedulerService&#xA;Inherits WorkflowRuntimeService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowSchedulerService abstract : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
+  <TypeSignature Language="F#" Value="type WorkflowSchedulerService = class&#xA;    inherit WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -45,6 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -69,9 +72,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Cancel (timerId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Cancel(Guid timerId);" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : Guid -&gt; unit" Usage="workflowSchedulerService.Cancel timerId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,9 +113,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Schedule (callback As WaitCallback, workflowInstanceId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Schedule(System::Threading::WaitCallback ^ callback, Guid workflowInstanceId);" />
+      <MemberSignature Language="F#" Value="abstract member Schedule : System.Threading.WaitCallback * Guid -&gt; unit" Usage="workflowSchedulerService.Schedule (callback, workflowInstanceId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,9 +147,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid,System.DateTime,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Schedule (callback As WaitCallback, workflowInstanceId As Guid, whenUtc As DateTime, timerId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Schedule(System::Threading::WaitCallback ^ callback, Guid workflowInstanceId, DateTime whenUtc, Guid timerId);" />
+      <MemberSignature Language="F#" Value="abstract member Schedule : System.Threading.WaitCallback * Guid * DateTime * Guid -&gt; unit" Usage="workflowSchedulerService.Schedule (callback, workflowInstanceId, whenUtc, timerId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

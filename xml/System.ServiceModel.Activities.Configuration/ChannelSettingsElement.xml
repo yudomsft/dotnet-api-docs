@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.ChannelSettingsElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelSettingsElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelSettingsElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ChannelSettingsElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,11 @@
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.Configuration.ChannelSettingsElement" /> class.</summary>
@@ -40,20 +46,24 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.ChannelSettingsElement.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Configuration.ChannelSettingsElement.IdleTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("idleTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ServiceModel.Configuration.ServiceModelTimeSpanValidator(MinValueString="00:00:00")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -71,20 +81,24 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.ChannelSettingsElement.LeaseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LeaseTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan LeaseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.LeaseTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Activities.Configuration.ChannelSettingsElement.LeaseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("leaseTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ServiceModel.Configuration.ServiceModelTimeSpanValidator(MinValueString="00:00:00")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -102,16 +116,17 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.ChannelSettingsElement.MaxItemsInCache" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInCache As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInCache { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInCache : int with get, set" Usage="System.ServiceModel.Activities.Configuration.ChannelSettingsElement.MaxItemsInCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxItemsInCache", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -130,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.ChannelSettingsElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Configuration.ChannelSettingsElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

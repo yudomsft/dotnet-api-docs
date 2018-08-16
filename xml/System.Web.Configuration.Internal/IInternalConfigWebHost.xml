@@ -4,13 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.Internal.IInternalConfigWebHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInternalConfigWebHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInternalConfigWebHost" />
+  <TypeSignature Language="F#" Value="type IInternalConfigWebHost = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -25,9 +27,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.Internal.IInternalConfigWebHost.GetConfigPathFromSiteIDAndVPath(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfigPathFromSiteIDAndVPath (siteID As String, vpath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetConfigPathFromSiteIDAndVPath(System::String ^ siteID, System::String ^ vpath);" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigPathFromSiteIDAndVPath : string * string -&gt; string" Usage="iInternalConfigWebHost.GetConfigPathFromSiteIDAndVPath (siteID, vpath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,9 +55,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.Internal.IInternalConfigWebHost.GetSiteIDAndVPathFromConfigPath(System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSiteIDAndVPathFromConfigPath (configPath As String, ByRef siteID As String, ByRef vpath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSiteIDAndVPathFromConfigPath(System::String ^ configPath, [Runtime::InteropServices::Out] System::String ^ % siteID, [Runtime::InteropServices::Out] System::String ^ % vpath);" />
+      <MemberSignature Language="F#" Value="abstract member GetSiteIDAndVPathFromConfigPath : string *  *  -&gt; unit" Usage="iInternalConfigWebHost.GetSiteIDAndVPathFromConfigPath (configPath, siteID, vpath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,8 +67,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="configPath" Type="System.String" />
-        <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="vpath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="siteID" Type="System.String" RefType="out" />
+        <Parameter Name="vpath" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="configPath">A string representing the path to the application's configuration file.</param>

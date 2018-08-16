@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.RawSecurityDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RawSecurityDescriptor&#xA;Inherits GenericSecurityDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class RawSecurityDescriptor sealed : System::Security::AccessControl::GenericSecurityDescriptor" />
+  <TypeSignature Language="F#" Value="type RawSecurityDescriptor = class&#xA;    inherit GenericSecurityDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -39,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sddlForm As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RawSecurityDescriptor(System::String ^ sddlForm);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RawSecurityDescriptor : string -&gt; System.Security.AccessControl.RawSecurityDescriptor" Usage="new System.Security.AccessControl.RawSecurityDescriptor sddlForm" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -47,9 +50,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="sddlForm" Type="System.String" />
       </Parameters>
@@ -65,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.#ctor(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binaryForm As Byte(), offset As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RawSecurityDescriptor(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RawSecurityDescriptor : byte[] * int -&gt; System.Security.AccessControl.RawSecurityDescriptor" Usage="new System.Security.AccessControl.RawSecurityDescriptor (binaryForm, offset)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -73,6 +83,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -93,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.#ctor(System.Security.AccessControl.ControlFlags,System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.RawAcl,System.Security.AccessControl.RawAcl)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (flags As ControlFlags, owner As SecurityIdentifier, group As SecurityIdentifier, systemAcl As RawAcl, discretionaryAcl As RawAcl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RawSecurityDescriptor(System::Security::AccessControl::ControlFlags flags, System::Security::Principal::SecurityIdentifier ^ owner, System::Security::Principal::SecurityIdentifier ^ group, System::Security::AccessControl::RawAcl ^ systemAcl, System::Security::AccessControl::RawAcl ^ discretionaryAcl);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RawSecurityDescriptor : System.Security.AccessControl.ControlFlags * System.Security.Principal.SecurityIdentifier * System.Security.Principal.SecurityIdentifier * System.Security.AccessControl.RawAcl * System.Security.AccessControl.RawAcl -&gt; System.Security.AccessControl.RawSecurityDescriptor" Usage="new System.Security.AccessControl.RawSecurityDescriptor (flags, owner, group, systemAcl, discretionaryAcl)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -101,6 +113,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -127,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.ControlFlags" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ControlFlags As ControlFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::AccessControl::ControlFlags ControlFlags { System::Security::AccessControl::ControlFlags get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlFlags : System.Security.AccessControl.ControlFlags" Usage="System.Security.AccessControl.RawSecurityDescriptor.ControlFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -135,6 +149,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -153,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.DiscretionaryAcl" />
       <MemberSignature Language="VB.NET" Value="Public Property DiscretionaryAcl As RawAcl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::RawAcl ^ DiscretionaryAcl { System::Security::AccessControl::RawAcl ^ get(); void set(System::Security::AccessControl::RawAcl ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DiscretionaryAcl : System.Security.AccessControl.RawAcl with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.DiscretionaryAcl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -161,6 +177,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -179,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.Group" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Group As SecurityIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::SecurityIdentifier ^ Group { System::Security::Principal::SecurityIdentifier ^ get(); void set(System::Security::Principal::SecurityIdentifier ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Group : System.Security.Principal.SecurityIdentifier with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -187,6 +205,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -205,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.Owner" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Owner As SecurityIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::SecurityIdentifier ^ Owner { System::Security::Principal::SecurityIdentifier ^ get(); void set(System::Security::Principal::SecurityIdentifier ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Security.Principal.SecurityIdentifier with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -213,6 +233,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -231,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.ResourceManagerControl" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceManagerControl As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte ResourceManagerControl { System::Byte get(); void set(System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceManagerControl : byte with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.ResourceManagerControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -239,6 +261,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -264,6 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.SetFlags(System.Security.AccessControl.ControlFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFlags (flags As ControlFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFlags(System::Security::AccessControl::ControlFlags flags);" />
+      <MemberSignature Language="F#" Value="member this.SetFlags : System.Security.AccessControl.ControlFlags -&gt; unit" Usage="rawSecurityDescriptor.SetFlags flags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -272,6 +296,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -293,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.SystemAcl" />
       <MemberSignature Language="VB.NET" Value="Public Property SystemAcl As RawAcl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::RawAcl ^ SystemAcl { System::Security::AccessControl::RawAcl ^ get(); void set(System::Security::AccessControl::RawAcl ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SystemAcl : System.Security.AccessControl.RawAcl with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.SystemAcl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -301,6 +327,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

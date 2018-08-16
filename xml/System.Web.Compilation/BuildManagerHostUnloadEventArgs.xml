@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildManagerHostUnloadEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildManagerHostUnloadEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildManagerHostUnloadEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type BuildManagerHostUnloadEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,11 +35,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManagerHostUnloadEventArgs.#ctor(System.Web.ApplicationShutdownReason)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As ApplicationShutdownReason)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildManagerHostUnloadEventArgs(System::Web::ApplicationShutdownReason reason);" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.BuildManagerHostUnloadEventArgs : System.Web.ApplicationShutdownReason -&gt; System.Web.Compilation.BuildManagerHostUnloadEventArgs" Usage="new System.Web.Compilation.BuildManagerHostUnloadEventArgs reason" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="reason" Type="System.Web.ApplicationShutdownReason" />
       </Parameters>
@@ -60,11 +69,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManagerHostUnloadEventArgs.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As ApplicationShutdownReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ApplicationShutdownReason Reason { System::Web::ApplicationShutdownReason get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reason : System.Web.ApplicationShutdownReason" Usage="System.Web.Compilation.BuildManagerHostUnloadEventArgs.Reason" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>

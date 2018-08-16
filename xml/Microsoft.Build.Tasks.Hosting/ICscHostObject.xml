@@ -4,9 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.ICscHostObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICscHostObject&#xA;Implements ITaskHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICscHostObject : Microsoft::Build::Framework::ITaskHost" />
+  <TypeSignature Language="F#" Value="type ICscHostObject = interface&#xA;    interface ITaskHost" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -14,14 +19,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("8520CC4D-64DC-4855-BE3F-4C28CCE048EE")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,10 +50,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.BeginInitialization" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginInitialization ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginInitialization();" />
+      <MemberSignature Language="F#" Value="abstract member BeginInitialization : unit -&gt; unit" Usage="iCscHostObject.BeginInitialization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -62,10 +75,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.Compile" />
       <MemberSignature Language="VB.NET" Value="Public Function Compile () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Compile();" />
+      <MemberSignature Language="F#" Value="abstract member Compile : unit -&gt; bool" Usage="iCscHostObject.Compile " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -84,17 +102,22 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.EndInitialization(System.String@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndInitialization (ByRef errorMessage As String, ByRef errorCode As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EndInitialization([Runtime::InteropServices::Out] System::String ^ % errorMessage, [Runtime::InteropServices::Out] int % errorCode);" />
+      <MemberSignature Language="F#" Value="abstract member EndInitialization :  *  -&gt; bool" Usage="iCscHostObject.EndInitialization (errorMessage, errorCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="errorMessage" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="errorCode" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="errorMessage" Type="System.String" RefType="out" />
+        <Parameter Name="errorCode" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="errorMessage">The error message.</param>
@@ -111,10 +134,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.IsDesignTime" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDesignTime () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDesignTime();" />
+      <MemberSignature Language="F#" Value="abstract member IsDesignTime : unit -&gt; bool" Usage="iCscHostObject.IsDesignTime " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -133,10 +161,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.IsUpToDate" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUpToDate () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUpToDate();" />
+      <MemberSignature Language="F#" Value="abstract member IsUpToDate : unit -&gt; bool" Usage="iCscHostObject.IsUpToDate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -155,10 +188,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAdditionalLibPaths(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetAdditionalLibPaths (additionalLibPaths As String()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetAdditionalLibPaths(cli::array &lt;System::String ^&gt; ^ additionalLibPaths);" />
+      <MemberSignature Language="F#" Value="abstract member SetAdditionalLibPaths : string[] -&gt; bool" Usage="iCscHostObject.SetAdditionalLibPaths additionalLibPaths" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -180,10 +218,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAddModules(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetAddModules (addModules As String()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetAddModules(cli::array &lt;System::String ^&gt; ^ addModules);" />
+      <MemberSignature Language="F#" Value="abstract member SetAddModules : string[] -&gt; bool" Usage="iCscHostObject.SetAddModules addModules" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -205,10 +248,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetAllowUnsafeBlocks(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetAllowUnsafeBlocks (allowUnsafeBlocks As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetAllowUnsafeBlocks(bool allowUnsafeBlocks);" />
+      <MemberSignature Language="F#" Value="abstract member SetAllowUnsafeBlocks : bool -&gt; bool" Usage="iCscHostObject.SetAllowUnsafeBlocks allowUnsafeBlocks" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -231,10 +279,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetBaseAddress(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetBaseAddress (baseAddress As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetBaseAddress(System::String ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="abstract member SetBaseAddress : string -&gt; bool" Usage="iCscHostObject.SetBaseAddress baseAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -256,10 +309,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetCheckForOverflowUnderflow(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetCheckForOverflowUnderflow (checkForOverflowUnderflow As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetCheckForOverflowUnderflow(bool checkForOverflowUnderflow);" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckForOverflowUnderflow : bool -&gt; bool" Usage="iCscHostObject.SetCheckForOverflowUnderflow checkForOverflowUnderflow" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -282,10 +340,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetCodePage(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetCodePage (codePage As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetCodePage(int codePage);" />
+      <MemberSignature Language="F#" Value="abstract member SetCodePage : int -&gt; bool" Usage="iCscHostObject.SetCodePage codePage" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -307,10 +370,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDebugType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetDebugType (debugType As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDebugType(System::String ^ debugType);" />
+      <MemberSignature Language="F#" Value="abstract member SetDebugType : string -&gt; bool" Usage="iCscHostObject.SetDebugType debugType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -332,10 +400,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDefineConstants(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetDefineConstants (defineConstants As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDefineConstants(System::String ^ defineConstants);" />
+      <MemberSignature Language="F#" Value="abstract member SetDefineConstants : string -&gt; bool" Usage="iCscHostObject.SetDefineConstants defineConstants" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -357,10 +430,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDelaySign(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetDelaySign (delaySignExplicitlySet As Boolean, delaySign As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDelaySign(bool delaySignExplicitlySet, bool delaySign);" />
+      <MemberSignature Language="F#" Value="abstract member SetDelaySign : bool * bool -&gt; bool" Usage="iCscHostObject.SetDelaySign (delaySignExplicitlySet, delaySign)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -386,10 +464,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDisabledWarnings(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetDisabledWarnings (disabledWarnings As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDisabledWarnings(System::String ^ disabledWarnings);" />
+      <MemberSignature Language="F#" Value="abstract member SetDisabledWarnings : string -&gt; bool" Usage="iCscHostObject.SetDisabledWarnings disabledWarnings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -411,10 +494,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetDocumentationFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetDocumentationFile (documentationFile As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetDocumentationFile(System::String ^ documentationFile);" />
+      <MemberSignature Language="F#" Value="abstract member SetDocumentationFile : string -&gt; bool" Usage="iCscHostObject.SetDocumentationFile documentationFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -436,10 +524,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetEmitDebugInformation(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetEmitDebugInformation (emitDebugInformation As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetEmitDebugInformation(bool emitDebugInformation);" />
+      <MemberSignature Language="F#" Value="abstract member SetEmitDebugInformation : bool -&gt; bool" Usage="iCscHostObject.SetEmitDebugInformation emitDebugInformation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -462,10 +555,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetErrorReport(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetErrorReport (errorReport As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetErrorReport(System::String ^ errorReport);" />
+      <MemberSignature Language="F#" Value="abstract member SetErrorReport : string -&gt; bool" Usage="iCscHostObject.SetErrorReport errorReport" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -487,10 +585,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetFileAlignment(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetFileAlignment (fileAlignment As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetFileAlignment(int fileAlignment);" />
+      <MemberSignature Language="F#" Value="abstract member SetFileAlignment : int -&gt; bool" Usage="iCscHostObject.SetFileAlignment fileAlignment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -512,10 +615,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetGenerateFullPaths(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetGenerateFullPaths (generateFullPaths As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetGenerateFullPaths(bool generateFullPaths);" />
+      <MemberSignature Language="F#" Value="abstract member SetGenerateFullPaths : bool -&gt; bool" Usage="iCscHostObject.SetGenerateFullPaths generateFullPaths" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -538,10 +646,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetKeyContainer(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetKeyContainer (keyContainer As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetKeyContainer(System::String ^ keyContainer);" />
+      <MemberSignature Language="F#" Value="abstract member SetKeyContainer : string -&gt; bool" Usage="iCscHostObject.SetKeyContainer keyContainer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -563,10 +676,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetKeyFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetKeyFile (keyFile As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetKeyFile(System::String ^ keyFile);" />
+      <MemberSignature Language="F#" Value="abstract member SetKeyFile : string -&gt; bool" Usage="iCscHostObject.SetKeyFile keyFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -588,10 +706,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetLangVersion(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetLangVersion (langVersion As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetLangVersion(System::String ^ langVersion);" />
+      <MemberSignature Language="F#" Value="abstract member SetLangVersion : string -&gt; bool" Usage="iCscHostObject.SetLangVersion langVersion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -613,10 +736,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetLinkResources(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetLinkResources (linkResources As ITaskItem()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetLinkResources(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ linkResources);" />
+      <MemberSignature Language="F#" Value="abstract member SetLinkResources : Microsoft.Build.Framework.ITaskItem[] -&gt; bool" Usage="iCscHostObject.SetLinkResources linkResources" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -638,10 +766,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetMainEntryPoint(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMainEntryPoint (targetType As String, mainEntryPoint As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetMainEntryPoint(System::String ^ targetType, System::String ^ mainEntryPoint);" />
+      <MemberSignature Language="F#" Value="abstract member SetMainEntryPoint : string * string -&gt; bool" Usage="iCscHostObject.SetMainEntryPoint (targetType, mainEntryPoint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -665,10 +798,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetModuleAssemblyName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetModuleAssemblyName (moduleAssemblyName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetModuleAssemblyName(System::String ^ moduleAssemblyName);" />
+      <MemberSignature Language="F#" Value="abstract member SetModuleAssemblyName : string -&gt; bool" Usage="iCscHostObject.SetModuleAssemblyName moduleAssemblyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -690,10 +828,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetNoConfig(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetNoConfig (noConfig As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetNoConfig(bool noConfig);" />
+      <MemberSignature Language="F#" Value="abstract member SetNoConfig : bool -&gt; bool" Usage="iCscHostObject.SetNoConfig noConfig" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -716,10 +859,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetNoStandardLib(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetNoStandardLib (noStandardLib As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetNoStandardLib(bool noStandardLib);" />
+      <MemberSignature Language="F#" Value="abstract member SetNoStandardLib : bool -&gt; bool" Usage="iCscHostObject.SetNoStandardLib noStandardLib" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -742,10 +890,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetOptimize(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetOptimize (optimize As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetOptimize(bool optimize);" />
+      <MemberSignature Language="F#" Value="abstract member SetOptimize : bool -&gt; bool" Usage="iCscHostObject.SetOptimize optimize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -768,10 +921,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetOutputAssembly(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetOutputAssembly (outputAssembly As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetOutputAssembly(System::String ^ outputAssembly);" />
+      <MemberSignature Language="F#" Value="abstract member SetOutputAssembly : string -&gt; bool" Usage="iCscHostObject.SetOutputAssembly outputAssembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -793,10 +951,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetPdbFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetPdbFile (pdbFile As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetPdbFile(System::String ^ pdbFile);" />
+      <MemberSignature Language="F#" Value="abstract member SetPdbFile : string -&gt; bool" Usage="iCscHostObject.SetPdbFile pdbFile" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -818,10 +981,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetPlatform(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetPlatform (platform As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetPlatform(System::String ^ platform);" />
+      <MemberSignature Language="F#" Value="abstract member SetPlatform : string -&gt; bool" Usage="iCscHostObject.SetPlatform platform" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -843,10 +1011,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetReferences(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetReferences (references As ITaskItem()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetReferences(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ references);" />
+      <MemberSignature Language="F#" Value="abstract member SetReferences : Microsoft.Build.Framework.ITaskItem[] -&gt; bool" Usage="iCscHostObject.SetReferences references" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -868,10 +1041,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetResources(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetResources (resources As ITaskItem()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetResources(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ resources);" />
+      <MemberSignature Language="F#" Value="abstract member SetResources : Microsoft.Build.Framework.ITaskItem[] -&gt; bool" Usage="iCscHostObject.SetResources resources" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -893,10 +1071,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetResponseFiles(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetResponseFiles (responseFiles As ITaskItem()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetResponseFiles(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ responseFiles);" />
+      <MemberSignature Language="F#" Value="abstract member SetResponseFiles : Microsoft.Build.Framework.ITaskItem[] -&gt; bool" Usage="iCscHostObject.SetResponseFiles responseFiles" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -918,10 +1101,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetSources(Microsoft.Build.Framework.ITaskItem[])" />
       <MemberSignature Language="VB.NET" Value="Public Function SetSources (sources As ITaskItem()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetSources(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources);" />
+      <MemberSignature Language="F#" Value="abstract member SetSources : Microsoft.Build.Framework.ITaskItem[] -&gt; bool" Usage="iCscHostObject.SetSources sources" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -943,10 +1131,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetTargetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetTargetType (targetType As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetTargetType(System::String ^ targetType);" />
+      <MemberSignature Language="F#" Value="abstract member SetTargetType : string -&gt; bool" Usage="iCscHostObject.SetTargetType targetType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -968,10 +1161,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetTreatWarningsAsErrors(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetTreatWarningsAsErrors (treatWarningsAsErrors As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetTreatWarningsAsErrors(bool treatWarningsAsErrors);" />
+      <MemberSignature Language="F#" Value="abstract member SetTreatWarningsAsErrors : bool -&gt; bool" Usage="iCscHostObject.SetTreatWarningsAsErrors treatWarningsAsErrors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -994,10 +1192,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningLevel(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetWarningLevel (warningLevel As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWarningLevel(int warningLevel);" />
+      <MemberSignature Language="F#" Value="abstract member SetWarningLevel : int -&gt; bool" Usage="iCscHostObject.SetWarningLevel warningLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1019,10 +1222,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningsAsErrors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetWarningsAsErrors (warningsAsErrors As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWarningsAsErrors(System::String ^ warningsAsErrors);" />
+      <MemberSignature Language="F#" Value="abstract member SetWarningsAsErrors : string -&gt; bool" Usage="iCscHostObject.SetWarningsAsErrors warningsAsErrors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1044,10 +1252,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWarningsNotAsErrors(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetWarningsNotAsErrors (warningsNotAsErrors As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWarningsNotAsErrors(System::String ^ warningsNotAsErrors);" />
+      <MemberSignature Language="F#" Value="abstract member SetWarningsNotAsErrors : string -&gt; bool" Usage="iCscHostObject.SetWarningsNotAsErrors warningsNotAsErrors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1069,10 +1282,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWin32Icon(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetWin32Icon (win32Icon As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWin32Icon(System::String ^ win32Icon);" />
+      <MemberSignature Language="F#" Value="abstract member SetWin32Icon : string -&gt; bool" Usage="iCscHostObject.SetWin32Icon win32Icon" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1094,10 +1312,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject.SetWin32Resource(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetWin32Resource (win32Resource As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWin32Resource(System::String ^ win32Resource);" />
+      <MemberSignature Language="F#" Value="abstract member SetWin32Resource : string -&gt; bool" Usage="iCscHostObject.SetWin32Resource win32Resource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

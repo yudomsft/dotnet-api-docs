@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlTrackingService&#xA;Inherits TrackingService&#xA;Implements IProfileNotification" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlTrackingService sealed : System::Workflow::Runtime::Tracking::TrackingService, System::Workflow::Runtime::Tracking::IProfileNotification" />
+  <TypeSignature Language="F#" Value="type SqlTrackingService = class&#xA;    inherit TrackingService&#xA;    interface IProfileNotification" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -59,9 +61,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.#ctor(System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTrackingService(System::Collections::Specialized::NameValueCollection ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.SqlTrackingService : System.Collections.Specialized.NameValueCollection -&gt; System.Workflow.Runtime.Tracking.SqlTrackingService" Usage="new System.Workflow.Runtime.Tracking.SqlTrackingService parameters" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -97,9 +101,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTrackingService(System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.SqlTrackingService : string -&gt; System.Workflow.Runtime.Tracking.SqlTrackingService" Usage="new System.Workflow.Runtime.Tracking.SqlTrackingService connectionString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -118,9 +124,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string" Usage="System.Workflow.Runtime.Tracking.SqlTrackingService.ConnectionString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,9 +146,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.EnableRetries" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableRetries As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableRetries { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableRetries : bool with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingService.EnableRetries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,9 +188,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.GetProfile(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetProfile (scheduleInstanceId As Guid) As TrackingProfile" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::Runtime::Tracking::TrackingProfile ^ GetProfile(Guid scheduleInstanceId);" />
+      <MemberSignature Language="F#" Value="override this.GetProfile : Guid -&gt; System.Workflow.Runtime.Tracking.TrackingProfile" Usage="sqlTrackingService.GetProfile scheduleInstanceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,9 +214,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.GetProfile(System.Type,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetProfile (workflowType As Type, profileVersion As Version) As TrackingProfile" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::Runtime::Tracking::TrackingProfile ^ GetProfile(Type ^ workflowType, Version ^ profileVersion);" />
+      <MemberSignature Language="F#" Value="override this.GetProfile : Type * Version -&gt; System.Workflow.Runtime.Tracking.TrackingProfile" Usage="sqlTrackingService.GetProfile (workflowType, profileVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,9 +242,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.GetTrackingChannel(System.Workflow.Runtime.Tracking.TrackingParameters)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetTrackingChannel (parameters As TrackingParameters) As TrackingChannel" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::Runtime::Tracking::TrackingChannel ^ GetTrackingChannel(System::Workflow::Runtime::Tracking::TrackingParameters ^ parameters);" />
+      <MemberSignature Language="F#" Value="override this.GetTrackingChannel : System.Workflow.Runtime.Tracking.TrackingParameters -&gt; System.Workflow.Runtime.Tracking.TrackingChannel" Usage="sqlTrackingService.GetTrackingChannel parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,9 +268,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional" />
       <MemberSignature Language="VB.NET" Value="Public Property IsTransactional As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTransactional { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsTransactional : bool with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,9 +298,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.PartitionOnCompletion" />
       <MemberSignature Language="VB.NET" Value="Public Property PartitionOnCompletion As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PartitionOnCompletion { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PartitionOnCompletion : bool with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingService.PartitionOnCompletion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,9 +328,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property ProfileChangeCheckInterval As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ProfileChangeCheckInterval { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.ProfileChangeCheckInterval : double with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -335,12 +357,14 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved" />
       <MemberSignature Language="VB.NET" Value="Public Event ProfileRemoved As EventHandler(Of ProfileRemovedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Workflow::Runtime::Tracking::ProfileRemovedEventArgs ^&gt; ^ ProfileRemoved;" />
+      <MemberSignature Language="F#" Value="member this.ProfileRemoved : EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; " Usage="member this.ProfileRemoved : System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,12 +388,14 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Event ProfileUpdated As EventHandler(Of ProfileUpdatedEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Workflow::Runtime::Tracking::ProfileUpdatedEventArgs ^&gt; ^ ProfileUpdated;" />
+      <MemberSignature Language="F#" Value="member this.ProfileUpdated : EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; " Usage="member this.ProfileUpdated : System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,9 +419,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.Start" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Start();" />
+      <MemberSignature Language="F#" Value="override this.Start : unit -&gt; unit" Usage="sqlTrackingService.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -413,9 +441,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.TryGetProfile(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryGetProfile (workflowType As Type, ByRef profile As TrackingProfile) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryGetProfile(Type ^ workflowType, [Runtime::InteropServices::Out] System::Workflow::Runtime::Tracking::TrackingProfile ^ % profile);" />
+      <MemberSignature Language="F#" Value="override this.TryGetProfile : Type *  -&gt; bool" Usage="sqlTrackingService.TryGetProfile (workflowType, profile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -423,7 +453,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="workflowType" Type="System.Type" />
-        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workflowType">To be added.</param>
@@ -439,9 +469,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.TryReloadProfile(System.Type,System.Guid,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryReloadProfile (workflowType As Type, scheduleInstanceId As Guid, ByRef profile As TrackingProfile) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryReloadProfile(Type ^ workflowType, Guid scheduleInstanceId, [Runtime::InteropServices::Out] System::Workflow::Runtime::Tracking::TrackingProfile ^ % profile);" />
+      <MemberSignature Language="F#" Value="override this.TryReloadProfile : Type * Guid *  -&gt; bool" Usage="sqlTrackingService.TryReloadProfile (workflowType, scheduleInstanceId, profile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,7 +482,7 @@
       <Parameters>
         <Parameter Name="workflowType" Type="System.Type" />
         <Parameter Name="scheduleInstanceId" Type="System.Guid" />
-        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workflowType">To be added.</param>
@@ -467,9 +499,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.UseDefaultProfile" />
       <MemberSignature Language="VB.NET" Value="Public Property UseDefaultProfile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultProfile { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultProfile : bool with get, set" Usage="System.Workflow.Runtime.Tracking.SqlTrackingService.UseDefaultProfile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

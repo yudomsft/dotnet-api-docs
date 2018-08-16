@@ -4,9 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CreateManifestResourceName" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CreateManifestResourceName&#xA;Inherits TaskExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreateManifestResourceName abstract : Microsoft::Build::Tasks::TaskExtension" />
+  <TypeSignature Language="F#" Value="type CreateManifestResourceName = class&#xA;    inherit TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
@@ -29,6 +34,10 @@
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateManifestResourceName" /> class.</summary>
@@ -42,10 +51,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateManifestResourceName.CreateManifestName(System.String,System.String,System.String,System.String,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateManifestName (fileName As String, linkFileName As String, rootNamespaceName As String, dependentUponFileName As String, binaryStream As Stream) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ CreateManifestName(System::String ^ fileName, System::String ^ linkFileName, System::String ^ rootNamespaceName, System::String ^ dependentUponFileName, System::IO::Stream ^ binaryStream);" />
+      <MemberSignature Language="F#" Value="abstract member CreateManifestName : string * string * string * string * System.IO.Stream -&gt; string" Usage="createManifestResourceName.CreateManifestName (fileName, linkFileName, rootNamespaceName, dependentUponFileName, binaryStream)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -75,10 +89,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateManifestResourceName.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="createManifestResourceName.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -98,10 +117,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateManifestResourceName.IsSourceFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function IsSourceFile (fileName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool IsSourceFile(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="abstract member IsSourceFile : string -&gt; bool" Usage="createManifestResourceName.IsSourceFile fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -124,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.CreateManifestResourceName.itemSpecToTaskitem" />
       <MemberSignature Language="VB.NET" Value="Protected itemSpecToTaskitem As Dictionary(Of String, ITaskItem) " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Generic::Dictionary&lt;System::String ^, Microsoft::Build::Framework::ITaskItem ^&gt; ^ itemSpecToTaskitem;" />
+      <MemberSignature Language="F#" Value="val mutable itemSpecToTaskitem : System.Collections.Generic.Dictionary&lt;string, Microsoft.Build.Framework.ITaskItem&gt;" Usage="Microsoft.Build.Tasks.CreateManifestResourceName.itemSpecToTaskitem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -144,10 +169,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateManifestResourceName.MakeValidEverettIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function MakeValidEverettIdentifier (name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeValidEverettIdentifier(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member MakeValidEverettIdentifier : string -&gt; string" Usage="Microsoft.Build.Tasks.CreateManifestResourceName.MakeValidEverettIdentifier name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -169,14 +199,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CreateManifestResourceName.ManifestResourceNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManifestResourceNames As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ManifestResourceNames { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ManifestResourceNames : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.CreateManifestResourceName.ManifestResourceNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -195,11 +233,20 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CreateManifestResourceName.PrependCultureAsDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Property PrependCultureAsDirectory As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrependCultureAsDirectory { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PrependCultureAsDirectory : bool with get, set" Usage="Microsoft.Build.Tasks.CreateManifestResourceName.PrependCultureAsDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -224,14 +271,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CreateManifestResourceName.ResourceFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceFiles As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResourceFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.CreateManifestResourceName.ResourceFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -250,14 +305,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CreateManifestResourceName.ResourceFilesWithManifestResourceNames" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceFilesWithManifestResourceNames As ITaskItem()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ResourceFilesWithManifestResourceNames { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceFilesWithManifestResourceNames : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.CreateManifestResourceName.ResourceFilesWithManifestResourceNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -276,11 +338,24 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CreateManifestResourceName.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="Microsoft.Build.Tasks.CreateManifestResourceName.RootNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

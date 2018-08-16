@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedViewStream" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryMappedViewStream&#xA;Inherits UnmanagedMemoryStream" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryMappedViewStream sealed : System::IO::UnmanagedMemoryStream" />
+  <TypeSignature Language="F#" Value="type MemoryMappedViewStream = class&#xA;    inherit UnmanagedMemoryStream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="memoryMappedViewStream.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -68,8 +70,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -90,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="memoryMappedViewStream.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -107,7 +113,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.MemoryMappedFiles.MemoryMappedViewStream.PointerOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointerOffset As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PointerOffset { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.PointerOffset : int64" Usage="System.IO.MemoryMappedFiles.MemoryMappedViewStream.PointerOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.MemoryMappedFiles.MemoryMappedViewStream.SafeMemoryMappedViewHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeMemoryMappedViewHandle As SafeMemoryMappedViewHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeMemoryMappedViewHandle ^ SafeMemoryMappedViewHandle { Microsoft::Win32::SafeHandles::SafeMemoryMappedViewHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SafeMemoryMappedViewHandle : Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle" Usage="System.IO.MemoryMappedFiles.MemoryMappedViewStream.SafeMemoryMappedViewHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -188,7 +196,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -208,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
+      <MemberSignature Language="F#" Value="abstract member SetLength : int64 -&gt; unit&#xA;override this.SetLength : int64 -&gt; unit" Usage="memoryMappedViewStream.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>

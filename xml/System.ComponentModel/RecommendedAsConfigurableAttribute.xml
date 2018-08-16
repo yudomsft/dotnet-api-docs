@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.RecommendedAsConfigurableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class RecommendedAsConfigurableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RecommendedAsConfigurableAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type RecommendedAsConfigurableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,10 +26,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Obsolete("Use System.ComponentModel.SettingsBindableAttribute instead to work with the new settings model.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -84,9 +87,12 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RecommendedAsConfigurableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (recommendedAsConfigurable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RecommendedAsConfigurableAttribute(bool recommendedAsConfigurable);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.RecommendedAsConfigurableAttribute : bool -&gt; System.ComponentModel.RecommendedAsConfigurableAttribute" Usage="new System.ComponentModel.RecommendedAsConfigurableAttribute recommendedAsConfigurable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -99,6 +105,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="recommendedAsConfigurable" Type="System.Boolean" />
       </Parameters>
@@ -127,9 +138,12 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RecommendedAsConfigurableAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As RecommendedAsConfigurableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::RecommendedAsConfigurableAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.RecommendedAsConfigurableAttribute" Usage="System.ComponentModel.RecommendedAsConfigurableAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -159,9 +173,12 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RecommendedAsConfigurableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="recommendedAsConfigurableAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -194,9 +211,12 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RecommendedAsConfigurableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="recommendedAsConfigurableAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -225,9 +245,12 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RecommendedAsConfigurableAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="recommendedAsConfigurableAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -257,9 +280,12 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RecommendedAsConfigurableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As RecommendedAsConfigurableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::RecommendedAsConfigurableAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.RecommendedAsConfigurableAttribute" Usage="System.ComponentModel.RecommendedAsConfigurableAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -297,9 +323,12 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.RecommendedAsConfigurableAttribute.RecommendedAsConfigurable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecommendedAsConfigurable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RecommendedAsConfigurable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecommendedAsConfigurable : bool" Usage="System.ComponentModel.RecommendedAsConfigurableAttribute.RecommendedAsConfigurable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -312,6 +341,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -352,9 +386,12 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.RecommendedAsConfigurableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As RecommendedAsConfigurableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::RecommendedAsConfigurableAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.RecommendedAsConfigurableAttribute" Usage="System.ComponentModel.RecommendedAsConfigurableAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

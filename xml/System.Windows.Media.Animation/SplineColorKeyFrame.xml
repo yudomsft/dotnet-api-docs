@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineColorKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class SplineColorKeyFrame&#xA;Inherits ColorKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class SplineColorKeyFrame : System::Windows::Media::Animation::ColorKeyFrame" />
+  <TypeSignature Language="F#" Value="type SplineColorKeyFrame = class&#xA;    inherit ColorKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -48,8 +50,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.SplineColorKeyFrame" /> class.</summary>
@@ -62,9 +70,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineColorKeyFrame.#ctor(System.Windows.Media.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Color)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineColorKeyFrame(System::Windows::Media::Color value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineColorKeyFrame : System.Windows.Media.Color -&gt; System.Windows.Media.Animation.SplineColorKeyFrame" Usage="new System.Windows.Media.Animation.SplineColorKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -81,9 +91,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineColorKeyFrame.#ctor(System.Windows.Media.Color,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineColorKeyFrame(System::Windows::Media::Color value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineColorKeyFrame : System.Windows.Media.Color * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.SplineColorKeyFrame" Usage="new System.Windows.Media.Animation.SplineColorKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -102,9 +114,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.KeySpline keySpline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineColorKeyFrame.#ctor(System.Windows.Media.Color,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineColorKeyFrame(System::Windows::Media::Color value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::KeySpline ^ keySpline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineColorKeyFrame : System.Windows.Media.Color * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.KeySpline -&gt; System.Windows.Media.Animation.SplineColorKeyFrame" Usage="new System.Windows.Media.Animation.SplineColorKeyFrame (value, keyTime, keySpline)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -127,9 +141,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineColorKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="splineColorKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,9 +165,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineColorKeyFrame.InterpolateValueCore(System.Windows.Media.Color,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Color, keyFrameProgress As Double) As Color" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Color InterpolateValueCore(System::Windows::Media::Color baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Media.Color * double -&gt; System.Windows.Media.Color" Usage="splineColorKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,9 +193,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplineColorKeyFrame.KeySpline" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySpline As KeySpline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeySpline ^ KeySpline { System::Windows::Media::Animation::KeySpline ^ get(); void set(System::Windows::Media::Animation::KeySpline ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySpline : System.Windows.Media.Animation.KeySpline with get, set" Usage="System.Windows.Media.Animation.SplineColorKeyFrame.KeySpline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,9 +230,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplineColorKeyFrame.KeySplineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeySplineProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeySplineProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeySplineProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SplineColorKeyFrame.KeySplineProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

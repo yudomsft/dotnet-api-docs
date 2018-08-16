@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ThemeDictionaryExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class ThemeDictionaryExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThemeDictionaryExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type ThemeDictionaryExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Uri))</AttributeName>
     </Attribute>
   </Attributes>
@@ -51,8 +53,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.ThemeDictionaryExtension" /> class.</summary>
@@ -65,9 +73,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ThemeDictionaryExtension.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThemeDictionaryExtension(System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.ThemeDictionaryExtension : string -&gt; System.Windows.ThemeDictionaryExtension" Usage="new System.Windows.ThemeDictionaryExtension assemblyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -85,11 +95,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ThemeDictionaryExtension.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Windows.ThemeDictionaryExtension.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -115,9 +135,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ThemeDictionaryExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="themeDictionaryExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

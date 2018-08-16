@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomLabelsCollection&#xA;Inherits ChartElementCollection(Of CustomLabel)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomLabelsCollection : System::Windows::Forms::DataVisualization::Charting::ChartElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::CustomLabel ^&gt;" />
+  <TypeSignature Language="F#" Value="type CustomLabelsCollection = class&#xA;    inherit ChartElementCollection&lt;CustomLabel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,11 +48,17 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType intervalType);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -84,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String) As CustomLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * double * string -&gt; System.Windows.Forms.DataVisualization.Charting.CustomLabel" Usage="customLabelsCollection.Add (fromPosition, toPosition, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -124,11 +132,17 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, format As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType intervalType, System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType * string -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -163,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String,System.Int32,System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String, rowIndex As Integer, markStyle As LabelMarkStyle) As CustomLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text, int rowIndex, System::Windows::Forms::DataVisualization::Charting::LabelMarkStyle markStyle);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * double * string * int * System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle -&gt; System.Windows.Forms.DataVisualization.Charting.CustomLabel" Usage="customLabelsCollection.Add (fromPosition, toPosition, text, rowIndex, markStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -183,7 +198,7 @@
         <param name="toPosition">The maximum value of the axis range the label is applied to.</param>
         <param name="text">The label text.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies mark style for the label.</param>
+        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle" /> enumeration value that specifies mark style for the label.</param>
         <summary>Adds a custom label to the collection, using the given axis range, text, row index and marking style.</summary>
         <returns>The newly added <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> object.</returns>
         <remarks>To be added.</remarks>
@@ -195,11 +210,17 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType,System.String,System.Int32,System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, format As String, rowIndex As Integer, markStyle As LabelMarkStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType intervalType, System::String ^ format, int rowIndex, System::Windows::Forms::DataVisualization::Charting::LabelMarkStyle markStyle);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType * string * int * System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType, format, rowIndex, markStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -215,7 +236,7 @@
         <param name="intervalType">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that determines the unit of measure for the <c>labelsStep</c> parameter.</param>
         <param name="format">The label text format.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies mark style for the label.</param>
+        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle" /> enumeration value that specifies mark style for the label.</param>
         <summary>Adds multiple custom labels to the collection. The labels will be <see cref="T:System.DateTime" /> labels with the specified interval type, text format, row index and marking style.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Double,System.String,System.Int32,System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle,System.Windows.Forms.DataVisualization.Charting.GridTickTypes)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (fromPosition As Double, toPosition As Double, text As String, rowIndex As Integer, markStyle As LabelMarkStyle, gridTick As GridTickTypes) As CustomLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::DataVisualization::Charting::CustomLabel ^ Add(double fromPosition, double toPosition, System::String ^ text, int rowIndex, System::Windows::Forms::DataVisualization::Charting::LabelMarkStyle markStyle, System::Windows::Forms::DataVisualization::Charting::GridTickTypes gridTick);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * double * string * int * System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle * System.Windows.Forms.DataVisualization.Charting.GridTickTypes -&gt; System.Windows.Forms.DataVisualization.Charting.CustomLabel" Usage="customLabelsCollection.Add (fromPosition, toPosition, text, rowIndex, markStyle, gridTick)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -247,7 +269,7 @@
         <param name="toPosition">The maximum value of the axis range the label is applied to.</param>
         <param name="text">The label text.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies mark style for the label.</param>
+        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle" /> enumeration value that specifies mark style for the label.</param>
         <param name="gridTick">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GridTickTypes" /> enumeration value that specifies the grid tick for the label.</param>
         <summary>Adds a custom label to the collection, using the given axis range, text, row index, marking style and grid tick type.</summary>
         <returns>The newly added <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> object.</returns>
@@ -260,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add(System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType,System.Double,System.Double,System.String,System.Int32,System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (labelsStep As Double, intervalType As DateTimeIntervalType, min As Double, max As Double, format As String, rowIndex As Integer, markStyle As LabelMarkStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(double labelsStep, System::Windows::Forms::DataVisualization::Charting::DateTimeIntervalType intervalType, double min, double max, System::String ^ format, int rowIndex, System::Windows::Forms::DataVisualization::Charting::LabelMarkStyle markStyle);" />
+      <MemberSignature Language="F#" Value="override this.Add : double * System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType * double * double * string * int * System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle -&gt; unit" Usage="customLabelsCollection.Add (labelsStep, intervalType, min, max, format, rowIndex, markStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -284,7 +307,7 @@
         <param name="max">The maximum value for the axis range.</param>
         <param name="format">The label text format.</param>
         <param name="rowIndex">The label row index.</param>
-        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkstyle" /> enumeration value that specifies mark style for the label.</param>
+        <param name="markStyle">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelMarkStyle" /> enumeration value that specifies mark style for the label.</param>
         <summary>Adds multiple custom labels to the collection. The labels will be <see cref="T:System.DateTime" /> labels with the specified interval type, and will be generated for the axis range that is determined by the <paramref name="min" /> and <paramref name="max" /> arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>

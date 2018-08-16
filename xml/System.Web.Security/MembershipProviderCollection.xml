@@ -4,16 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipProviderCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MembershipProviderCollection&#xA;Inherits ProviderCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipProviderCollection sealed : System::Configuration::Provider::ProviderCollection" />
+  <TypeSignature Language="F#" Value="type MembershipProviderCollection = class&#xA;    inherit ProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Configuration.Provider.ProviderCollection</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web, Version=2.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
@@ -51,6 +56,15 @@
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new, empty membership provider collection.</summary>
@@ -70,10 +84,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="membershipProviderCollection.Add provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,10 +123,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProviderCollection.CopyTo(System.Web.Security.MembershipProvider[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MembershipProvider(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Security::MembershipProvider ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.Security.MembershipProvider[] * int -&gt; unit" Usage="membershipProviderCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -155,10 +179,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProviderCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As MembershipProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::MembershipProvider ^ default[System::String ^] { System::Web::Security::MembershipProvider ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Security.MembershipProvider" Usage="System.Web.Security.MembershipProviderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipProvider</ReturnType>

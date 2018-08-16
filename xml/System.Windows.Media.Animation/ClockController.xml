@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ClockController" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClockController&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClockController sealed : System::Windows::Threading::DispatcherObject" />
+  <TypeSignature Language="F#" Value="type ClockController = class&#xA;    inherit DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -32,9 +34,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Begin" />
       <MemberSignature Language="VB.NET" Value="Public Sub Begin ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin();" />
+      <MemberSignature Language="F#" Value="member this.Begin : unit -&gt; unit" Usage="clockController.Begin " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,11 +70,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockController.Clock" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clock As Clock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Clock ^ Clock { System::Windows::Media::Animation::Clock ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Clock : System.Windows.Media.Animation.Clock" Usage="System.Windows.Media.Animation.ClockController.Clock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.Clock</ReturnType>
       </ReturnValue>
@@ -86,9 +97,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Pause" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="clockController.Pause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,9 +131,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
+      <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; unit" Usage="clockController.Remove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,9 +168,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Resume" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
+      <MemberSignature Language="F#" Value="member this.Resume : unit -&gt; unit" Usage="clockController.Resume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,9 +200,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Seek(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seek (offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.Seek : TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="clockController.Seek (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,9 +250,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SeekAlignedToLastTick (offset As TimeSpan, origin As TimeSeekOrigin)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeekAlignedToLastTick(TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="member this.SeekAlignedToLastTick : TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="clockController.SeekAlignedToLastTick (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -279,9 +300,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.SkipToFill" />
       <MemberSignature Language="VB.NET" Value="Public Sub SkipToFill ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkipToFill();" />
+      <MemberSignature Language="F#" Value="member this.SkipToFill : unit -&gt; unit" Usage="clockController.SkipToFill " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,9 +335,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockController.SpeedRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property SpeedRatio As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SpeedRatio { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.SpeedRatio : double with get, set" Usage="System.Windows.Media.Animation.ClockController.SpeedRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,9 +369,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="clockController.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

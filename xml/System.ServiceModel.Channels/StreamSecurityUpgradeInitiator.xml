@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamSecurityUpgradeInitiator&#xA;Inherits StreamUpgradeInitiator" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamSecurityUpgradeInitiator abstract : System::ServiceModel::Channels::StreamUpgradeInitiator" />
+  <TypeSignature Language="F#" Value="type StreamSecurityUpgradeInitiator = class&#xA;    inherit StreamUpgradeInitiator" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,8 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" /> class.</summary>
@@ -49,9 +57,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.GetRemoteSecurity" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRemoteSecurity () As SecurityMessageProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Security::SecurityMessageProperty ^ GetRemoteSecurity();" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoteSecurity : unit -&gt; System.ServiceModel.Security.SecurityMessageProperty" Usage="streamSecurityUpgradeInitiator.GetRemoteSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

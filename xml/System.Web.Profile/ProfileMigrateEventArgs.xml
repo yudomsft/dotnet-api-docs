@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileMigrateEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileMigrateEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileMigrateEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type ProfileMigrateEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -66,11 +68,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileMigrateEventArgs.#ctor(System.Web.HttpContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext, anonymousId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileMigrateEventArgs(System::Web::HttpContext ^ context, System::String ^ anonymousId);" />
+      <MemberSignature Language="F#" Value="new System.Web.Profile.ProfileMigrateEventArgs : System.Web.HttpContext * string -&gt; System.Web.Profile.ProfileMigrateEventArgs" Usage="new System.Web.Profile.ProfileMigrateEventArgs (context, anonymousId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="context" Type="System.Web.HttpContext" />
         <Parameter Name="anonymousId" Type="System.String" />
@@ -95,11 +104,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileMigrateEventArgs.AnonymousID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnonymousID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AnonymousID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnonymousID : string" Usage="System.Web.Profile.ProfileMigrateEventArgs.AnonymousID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -157,11 +173,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileMigrateEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Profile.ProfileMigrateEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.HttpContext</ReturnType>
       </ReturnValue>

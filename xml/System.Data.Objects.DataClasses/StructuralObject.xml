@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.StructuralObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StructuralObject&#xA;Implements INotifyPropertyChanged, INotifyPropertyChanging" />
   <TypeSignature Language="C++ CLI" Value="public ref class StructuralObject abstract : System::ComponentModel::INotifyPropertyChanged, System::ComponentModel::INotifyPropertyChanging" />
+  <TypeSignature Language="F#" Value="type StructuralObject = class&#xA;    interface INotifyPropertyChanging&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.Serialization.DataContract(IsReference=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -45,8 +47,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.StructuralObject" /> class.</summary>
@@ -59,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.BinaryEquals(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function BinaryEquals (first As Byte(), second As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool BinaryEquals(cli::array &lt;System::Byte&gt; ^ first, cli::array &lt;System::Byte&gt; ^ second);" />
+      <MemberSignature Language="F#" Value="static member BinaryEquals : byte[] * byte[] -&gt; bool" Usage="System.Data.Objects.DataClasses.StructuralObject.BinaryEquals (first, second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -86,9 +95,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.DefaultDateTimeValue" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function DefaultDateTimeValue () As DateTime" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static DateTime DefaultDateTimeValue();" />
+      <MemberSignature Language="F#" Value="static member DefaultDateTimeValue : unit -&gt; DateTime" Usage="System.Data.Objects.DataClasses.StructuralObject.DefaultDateTimeValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,9 +118,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Objects.DataClasses.StructuralObject.EntityKeyPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EntityKeyPropertyName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ EntityKeyPropertyName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EntityKeyPropertyName : string" Usage="System.Data.Objects.DataClasses.StructuralObject.EntityKeyPropertyName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +139,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.GetValidValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function GetValidValue (currentValue As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetValidValue(cli::array &lt;System::Byte&gt; ^ currentValue);" />
+      <MemberSignature Language="F#" Value="static member GetValidValue : byte[] -&gt; byte[]" Usage="System.Data.Objects.DataClasses.StructuralObject.GetValidValue currentValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,9 +165,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.GetValidValue``1(``0,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function GetValidValue(Of T As {ComplexObjectNew}) (currentValue As T, property As String, isNullable As Boolean, isInitialized As Boolean) As T" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Objects::DataClasses::ComplexObjectgcnew() T GetValidValue(T currentValue, System::String ^ property, bool isNullable, bool isInitialized);" />
+      <MemberSignature Language="F#" Value="member this.GetValidValue : 'T * string * bool * bool -&gt; 'T (requires 'T :&gt; System.Data.Objects.DataClasses.ComplexObject and 'T : (new : unit -&gt; 'T))" Usage="structuralObject.GetValidValue (currentValue, property, isNullable, isInitialized)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,9 +206,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.OnPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : string -&gt; unit&#xA;override this.OnPropertyChanged : string -&gt; unit" Usage="structuralObject.OnPropertyChanged property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,9 +231,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.OnPropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanging (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanging(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanging : string -&gt; unit&#xA;override this.OnPropertyChanging : string -&gt; unit" Usage="structuralObject.OnPropertyChanging property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,9 +256,11 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.DataClasses.StructuralObject.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,9 +277,11 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.DataClasses.StructuralObject.PropertyChanging" />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyChanging As PropertyChangingEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangingEventHandler ^ PropertyChanging;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " Usage="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,9 +298,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.ReportPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReportPropertyChanged (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReportPropertyChanged(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member ReportPropertyChanged : string -&gt; unit&#xA;override this.ReportPropertyChanged : string -&gt; unit" Usage="structuralObject.ReportPropertyChanged property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,9 +323,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.ReportPropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ReportPropertyChanging (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ReportPropertyChanging(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member ReportPropertyChanging : string -&gt; unit&#xA;override this.ReportPropertyChanging : string -&gt; unit" Usage="structuralObject.ReportPropertyChanging property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,9 +357,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool SetValidValue(bool value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : bool -&gt; bool" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -352,9 +383,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Byte SetValidValue(System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : byte -&gt; byte" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -376,9 +409,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTime) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTime SetValidValue(DateTime value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : DateTime -&gt; DateTime" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -400,9 +435,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTimeOffset)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTimeOffset) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTimeOffset SetValidValue(DateTimeOffset value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : DateTimeOffset -&gt; DateTimeOffset" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -424,9 +461,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Decimal) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Decimal SetValidValue(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : decimal -&gt; decimal" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -448,9 +487,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static double SetValidValue(double value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : double -&gt; double" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,9 +513,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Guid) As Guid" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Guid SetValidValue(Guid value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Guid -&gt; Guid" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -496,9 +539,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static short SetValidValue(short value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : int16 -&gt; int16" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -520,9 +565,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static int SetValidValue(int value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : int -&gt; int" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -544,9 +591,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static long SetValidValue(long value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : int64 -&gt; int64" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -568,9 +617,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Boolean)) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;bool&gt; SetValidValue(Nullable&lt;bool&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;bool&gt; -&gt; Nullable&lt;bool&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -592,9 +643,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Byte)) As Nullable(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Byte&gt; SetValidValue(Nullable&lt;System::Byte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;byte&gt; -&gt; Nullable&lt;byte&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -616,9 +669,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTime})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTime)) As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTime&gt; SetValidValue(Nullable&lt;DateTime&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;DateTime&gt; -&gt; Nullable&lt;DateTime&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -640,9 +695,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTimeOffset})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTimeOffset)) As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTimeOffset&gt; SetValidValue(Nullable&lt;DateTimeOffset&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;DateTimeOffset&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -664,9 +721,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Decimal})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Decimal)) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Decimal&gt; SetValidValue(Nullable&lt;System::Decimal&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;decimal&gt; -&gt; Nullable&lt;decimal&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -688,9 +747,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Double})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Double)) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;double&gt; SetValidValue(Nullable&lt;double&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;double&gt; -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -712,9 +773,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Guid})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Guid)) As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;Guid&gt; SetValidValue(Nullable&lt;Guid&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;Guid&gt; -&gt; Nullable&lt;Guid&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -736,9 +799,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int16})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Short)) As Nullable(Of Short)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;short&gt; SetValidValue(Nullable&lt;short&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;int16&gt; -&gt; Nullable&lt;int16&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -760,9 +825,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Integer)) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;int&gt; SetValidValue(Nullable&lt;int&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;int&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -784,9 +851,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Long)) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;long&gt; SetValidValue(Nullable&lt;long&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;int64&gt; -&gt; Nullable&lt;int64&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -808,13 +877,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.SByte})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of SByte)) As Nullable(Of SByte)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::SByte&gt; SetValidValue(Nullable&lt;System::SByte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;sbyte&gt; -&gt; Nullable&lt;sbyte&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -837,9 +908,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Single})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Single)) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;float&gt; SetValidValue(Nullable&lt;float&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;single&gt; -&gt; Nullable&lt;single&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -861,9 +934,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.TimeSpan})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of TimeSpan)) As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;TimeSpan&gt; SetValidValue(Nullable&lt;TimeSpan&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;TimeSpan&gt; -&gt; Nullable&lt;TimeSpan&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -885,13 +960,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt16})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UShort)) As Nullable(Of UShort)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt16&gt; SetValidValue(Nullable&lt;System::UInt16&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;uint16&gt; -&gt; Nullable&lt;uint16&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -914,13 +991,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt32})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UInteger)) As Nullable(Of UInteger)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt32&gt; SetValidValue(Nullable&lt;System::UInt32&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;uint32&gt; -&gt; Nullable&lt;uint32&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -943,13 +1022,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt64})" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of ULong)) As Nullable(Of ULong)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt64&gt; SetValidValue(Nullable&lt;System::UInt64&gt; value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;uint64&gt; -&gt; Nullable&lt;uint64&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -972,13 +1053,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::SByte SetValidValue(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : sbyte -&gt; sbyte" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1001,9 +1084,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static float SetValidValue(float value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : single -&gt; single" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1025,9 +1110,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As TimeSpan) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static TimeSpan SetValidValue(TimeSpan value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : TimeSpan -&gt; TimeSpan" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1049,13 +1136,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UShort) As UShort" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt16 SetValidValue(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : uint16 -&gt; uint16" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1078,13 +1167,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt32 SetValidValue(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : uint32 -&gt; uint32" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1107,13 +1198,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As ULong) As ULong" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt64 SetValidValue(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : uint64 -&gt; uint64" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1136,6 +1229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Boolean, propertyName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static bool SetValidValue(bool value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : bool * string -&gt; bool" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1162,6 +1256,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte, propertyName As String) As Byte" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Byte SetValidValue(System::Byte value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : byte * string -&gt; byte" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1188,9 +1283,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte(), isNullable As Boolean) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static cli::array &lt;System::Byte&gt; ^ SetValidValue(cli::array &lt;System::Byte&gt; ^ value, bool isNullable);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : byte[] * bool -&gt; byte[]" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1214,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeography,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeography, isNullable As Boolean) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeography ^ SetValidValue(System::Data::Spatial::DbGeography ^ value, bool isNullable);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : System.Data.Spatial.DbGeography * bool -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1242,6 +1340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeometry,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeometry, isNullable As Boolean) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeometry ^ SetValidValue(System::Data::Spatial::DbGeometry ^ value, bool isNullable);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : System.Data.Spatial.DbGeometry * bool -&gt; System.Data.Spatial.DbGeometry" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1269,6 +1368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTime,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTime, propertyName As String) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTime SetValidValue(DateTime value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : DateTime * string -&gt; DateTime" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1295,6 +1395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.DateTimeOffset,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DateTimeOffset, propertyName As String) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static DateTimeOffset SetValidValue(DateTimeOffset value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : DateTimeOffset * string -&gt; DateTimeOffset" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1321,6 +1422,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Decimal,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Decimal, propertyName As String) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Decimal SetValidValue(System::Decimal value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : decimal * string -&gt; decimal" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1347,6 +1449,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Double,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Double, propertyName As String) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static double SetValidValue(double value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : double * string -&gt; double" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1373,6 +1476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Guid,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Guid, propertyName As String) As Guid" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Guid SetValidValue(Guid value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Guid * string -&gt; Guid" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1399,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int16,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Short, propertyName As String) As Short" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static short SetValidValue(short value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : int16 * string -&gt; int16" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1425,6 +1530,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Integer, propertyName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static int SetValidValue(int value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : int * string -&gt; int" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1451,6 +1557,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Int64,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Long, propertyName As String) As Long" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static long SetValidValue(long value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : int64 * string -&gt; int64" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1477,6 +1584,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Boolean},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Boolean), propertyName As String) As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;bool&gt; SetValidValue(Nullable&lt;bool&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;bool&gt; * string -&gt; Nullable&lt;bool&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1503,6 +1611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Byte},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Byte), propertyName As String) As Nullable(Of Byte)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Byte&gt; SetValidValue(Nullable&lt;System::Byte&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;byte&gt; * string -&gt; Nullable&lt;byte&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1529,6 +1638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTime},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTime), propertyName As String) As Nullable(Of DateTime)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTime&gt; SetValidValue(Nullable&lt;DateTime&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;DateTime&gt; * string -&gt; Nullable&lt;DateTime&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1555,6 +1665,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.DateTimeOffset},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of DateTimeOffset), propertyName As String) As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;DateTimeOffset&gt; SetValidValue(Nullable&lt;DateTimeOffset&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;DateTimeOffset&gt; * string -&gt; Nullable&lt;DateTimeOffset&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1581,6 +1692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Decimal},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Decimal), propertyName As String) As Nullable(Of Decimal)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::Decimal&gt; SetValidValue(Nullable&lt;System::Decimal&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;decimal&gt; * string -&gt; Nullable&lt;decimal&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1607,6 +1719,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Double},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Double), propertyName As String) As Nullable(Of Double)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;double&gt; SetValidValue(Nullable&lt;double&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;double&gt; * string -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1633,6 +1746,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Guid},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Guid), propertyName As String) As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;Guid&gt; SetValidValue(Nullable&lt;Guid&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;Guid&gt; * string -&gt; Nullable&lt;Guid&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1659,6 +1773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int16},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Short), propertyName As String) As Nullable(Of Short)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;short&gt; SetValidValue(Nullable&lt;short&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;int16&gt; * string -&gt; Nullable&lt;int16&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1685,6 +1800,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int32},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Integer), propertyName As String) As Nullable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;int&gt; SetValidValue(Nullable&lt;int&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;int&gt; * string -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1711,6 +1827,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Int64},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Long), propertyName As String) As Nullable(Of Long)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;long&gt; SetValidValue(Nullable&lt;long&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;int64&gt; * string -&gt; Nullable&lt;int64&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1737,13 +1854,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.SByte},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of SByte), propertyName As String) As Nullable(Of SByte)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::SByte&gt; SetValidValue(Nullable&lt;System::SByte&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;sbyte&gt; * string -&gt; Nullable&lt;sbyte&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1768,6 +1886,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.Single},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of Single), propertyName As String) As Nullable(Of Single)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;float&gt; SetValidValue(Nullable&lt;float&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;single&gt; * string -&gt; Nullable&lt;single&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1794,6 +1913,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.TimeSpan},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of TimeSpan), propertyName As String) As Nullable(Of TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;TimeSpan&gt; SetValidValue(Nullable&lt;TimeSpan&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;TimeSpan&gt; * string -&gt; Nullable&lt;TimeSpan&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1820,13 +1940,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt16},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UShort), propertyName As String) As Nullable(Of UShort)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt16&gt; SetValidValue(Nullable&lt;System::UInt16&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;uint16&gt; * string -&gt; Nullable&lt;uint16&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1851,13 +1972,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt32},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of UInteger), propertyName As String) As Nullable(Of UInteger)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt32&gt; SetValidValue(Nullable&lt;System::UInt32&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;uint32&gt; * string -&gt; Nullable&lt;uint32&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1882,13 +2004,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Nullable{System.UInt64},System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Nullable(Of ULong), propertyName As String) As Nullable(Of ULong)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static Nullable&lt;System::UInt64&gt; SetValidValue(Nullable&lt;System::UInt64&gt; value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : Nullable&lt;uint64&gt; * string -&gt; Nullable&lt;uint64&gt;" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1913,13 +2036,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.SByte,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As SByte, propertyName As String) As SByte" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::SByte SetValidValue(System::SByte value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : sbyte * string -&gt; sbyte" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1944,6 +2068,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Single,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Single, propertyName As String) As Single" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static float SetValidValue(float value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : single * string -&gt; single" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1970,9 +2095,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As String, isNullable As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::String ^ SetValidValue(System::String ^ value, bool isNullable);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : string * bool -&gt; string" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1996,6 +2123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.TimeSpan,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As TimeSpan, propertyName As String) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static TimeSpan SetValidValue(TimeSpan value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : TimeSpan * string -&gt; TimeSpan" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2022,13 +2150,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt16,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UShort, propertyName As String) As UShort" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt16 SetValidValue(System::UInt16 value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : uint16 * string -&gt; uint16" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2053,13 +2182,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As UInteger, propertyName As String) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt32 SetValidValue(System::UInt32 value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : uint32 * string -&gt; uint32" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2084,13 +2214,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.UInt64,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As ULong, propertyName As String) As ULong" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::UInt64 SetValidValue(System::UInt64 value, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : uint64 * string -&gt; uint64" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2115,6 +2246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Byte[],System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As Byte(), isNullable As Boolean, propertyName As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static cli::array &lt;System::Byte&gt; ^ SetValidValue(cli::array &lt;System::Byte&gt; ^ value, bool isNullable, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : byte[] * bool * string -&gt; byte[]" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2144,6 +2276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeography,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeography, isNullable As Boolean, propertyName As String) As DbGeography" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeography ^ SetValidValue(System::Data::Spatial::DbGeography ^ value, bool isNullable, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : System.Data.Spatial.DbGeography * bool * string -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2173,6 +2306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.Data.Spatial.DbGeometry,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As DbGeometry, isNullable As Boolean, propertyName As String) As DbGeometry" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::Data::Spatial::DbGeometry ^ SetValidValue(System::Data::Spatial::DbGeometry ^ value, bool isNullable, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : System.Data.Spatial.DbGeometry * bool * string -&gt; System.Data.Spatial.DbGeometry" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2203,6 +2337,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue(System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function SetValidValue (value As String, isNullable As Boolean, propertyName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; static System::String ^ SetValidValue(System::String ^ value, bool isNullable, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member SetValidValue : string * bool * string -&gt; string" Usage="System.Data.Objects.DataClasses.StructuralObject.SetValidValue (value, isNullable, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -2232,9 +2367,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.SetValidValue``1(``0,``0,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function SetValidValue(Of T As ComplexObject) (oldValue As T, newValue As T, property As String) As T" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Objects::DataClasses::ComplexObject T SetValidValue(T oldValue, T newValue, System::String ^ property);" />
+      <MemberSignature Language="F#" Value="member this.SetValidValue : 'T * 'T * string -&gt; 'T (requires 'T :&gt; System.Data.Objects.DataClasses.ComplexObject)" Usage="structuralObject.SetValidValue (oldValue, newValue, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2268,9 +2405,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.StructuralObject.VerifyComplexObjectIsNotNull``1(``0,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Shared Function VerifyComplexObjectIsNotNull(Of TComplex As ComplexObject) (complexObject As TComplex, propertyName As String) As TComplex" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename TComplex&gt;&#xA; where TComplex : System::Data::Objects::DataClasses::ComplexObject static TComplex VerifyComplexObjectIsNotNull(TComplex complexObject, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="static member VerifyComplexObjectIsNotNull : 'Complex * string -&gt; 'Complex (requires 'Complex :&gt; System.Data.Objects.DataClasses.ComplexObject)" Usage="System.Data.Objects.DataClasses.StructuralObject.VerifyComplexObjectIsNotNull (complexObject, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

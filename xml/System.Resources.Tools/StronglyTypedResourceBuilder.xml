@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.Tools.StronglyTypedResourceBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class StronglyTypedResourceBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class StronglyTypedResourceBuilder abstract sealed" />
+  <TypeSignature Language="F#" Value="type StronglyTypedResourceBuilder = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -56,11 +58,18 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.Collections.IDictionary,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resourceList As IDictionary, baseName As String, generatedCodeNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::Collections::IDictionary ^ resourceList, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.IDictionary * string * string * System.CodeDom.Compiler.CodeDomProvider * bool *  -&gt; System.CodeDom.CodeCompileUnit" Usage="System.Resources.Tools.StronglyTypedResourceBuilder.Create (resourceList, baseName, generatedCodeNamespace, codeProvider, internalClass, unmatchable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
       </ReturnValue>
@@ -70,7 +79,7 @@
         <Parameter Name="generatedCodeNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resourceList">An <see cref="T:System.Collections.IDictionary" /> collection where each dictionary entry key/value pair is the name of a resource and the value of the resource.</param>
@@ -103,11 +112,18 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.String,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resxFile As String, baseName As String, generatedCodeNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::String ^ resxFile, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * string * System.CodeDom.Compiler.CodeDomProvider * bool *  -&gt; System.CodeDom.CodeCompileUnit" Usage="System.Resources.Tools.StronglyTypedResourceBuilder.Create (resxFile, baseName, generatedCodeNamespace, codeProvider, internalClass, unmatchable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
       </ReturnValue>
@@ -117,7 +133,7 @@
         <Parameter Name="generatedCodeNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resxFile">The name of a .resx file used as input.</param>
@@ -149,9 +165,11 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.Collections.IDictionary,System.String,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resourceList As IDictionary, baseName As String, generatedCodeNamespace As String, resourcesNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::Collections::IDictionary ^ resourceList, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::String ^ resourcesNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.IDictionary * string * string * string * System.CodeDom.Compiler.CodeDomProvider * bool *  -&gt; System.CodeDom.CodeCompileUnit" Usage="System.Resources.Tools.StronglyTypedResourceBuilder.Create (resourceList, baseName, generatedCodeNamespace, resourcesNamespace, codeProvider, internalClass, unmatchable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,7 +182,7 @@
         <Parameter Name="resourcesNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resourceList">An <see cref="T:System.Collections.IDictionary" /> collection where each dictionary entry key/value pair is the name of a resource and the value of the resource.</param>
@@ -204,9 +222,11 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.Create(System.String,System.String,System.String,System.String,System.CodeDom.Compiler.CodeDomProvider,System.Boolean,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (resxFile As String, baseName As String, generatedCodeNamespace As String, resourcesNamespace As String, codeProvider As CodeDomProvider, internalClass As Boolean, ByRef unmatchable As String()) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::CodeDom::CodeCompileUnit ^ Create(System::String ^ resxFile, System::String ^ baseName, System::String ^ generatedCodeNamespace, System::String ^ resourcesNamespace, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, bool internalClass, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % unmatchable);" />
+      <MemberSignature Language="F#" Value="static member Create : string * string * string * string * System.CodeDom.Compiler.CodeDomProvider * bool *  -&gt; System.CodeDom.CodeCompileUnit" Usage="System.Resources.Tools.StronglyTypedResourceBuilder.Create (resxFile, baseName, generatedCodeNamespace, resourcesNamespace, codeProvider, internalClass, unmatchable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,7 +239,7 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
         <Parameter Name="resourcesNamespace" Type="System.String" />
         <Parameter Name="codeProvider" Type="System.CodeDom.Compiler.CodeDomProvider" />
         <Parameter Name="internalClass" Type="System.Boolean" />
-        <Parameter Name="unmatchable" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="unmatchable" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="resxFile">The name of a .resx file used as input.</param>
@@ -252,11 +272,18 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.StronglyTypedResourceBuilder.VerifyResourceName(System.String,System.CodeDom.Compiler.CodeDomProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function VerifyResourceName (key As String, provider As CodeDomProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VerifyResourceName(System::String ^ key, System::CodeDom::Compiler::CodeDomProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member VerifyResourceName : string * System.CodeDom.Compiler.CodeDomProvider -&gt; string" Usage="System.Resources.Tools.StronglyTypedResourceBuilder.VerifyResourceName (key, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

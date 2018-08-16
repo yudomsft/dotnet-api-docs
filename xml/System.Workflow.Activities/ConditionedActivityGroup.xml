@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ConditionedActivityGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConditionedActivityGroup&#xA;Inherits CompositeActivity&#xA;Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConditionedActivityGroup sealed : System::Workflow::ComponentModel::CompositeActivity, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;" />
+  <TypeSignature Language="F#" Value="type ConditionedActivityGroup = class&#xA;    inherit CompositeActivity&#xA;    interface IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,22 +19,22 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.ConditionedActivityGroupDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.ComponentModel.Design.ActivityToolboxItem))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.Activities.ConditionedActivityGroup), "Resources.cag.png")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.ConditionedActivityGroupValidator))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Workflow.Runtime.DebugEngine.WorkflowDebuggerStepping(System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption.Concurrent)</AttributeName>
     </Attribute>
   </Attributes>
@@ -74,6 +76,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -99,9 +102,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConditionedActivityGroup(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.ConditionedActivityGroup : string -&gt; System.Workflow.Activities.ConditionedActivityGroup" Usage="new System.Workflow.Activities.ConditionedActivityGroup name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -119,9 +124,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="conditionedActivityGroup.Cancel executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,9 +150,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="conditionedActivityGroup.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,9 +176,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.GetChildActivityExecutedCount(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildActivityExecutedCount (child As Activity) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetChildActivityExecutedCount(System::Workflow::ComponentModel::Activity ^ child);" />
+      <MemberSignature Language="F#" Value="member this.GetChildActivityExecutedCount : System.Workflow.ComponentModel.Activity -&gt; int" Usage="conditionedActivityGroup.GetChildActivityExecutedCount child" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,9 +206,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.GetDynamicActivity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDynamicActivity (childActivityName As String) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Activity ^ GetDynamicActivity(System::String ^ childActivityName);" />
+      <MemberSignature Language="F#" Value="member this.GetDynamicActivity : string -&gt; System.Workflow.ComponentModel.Activity" Usage="conditionedActivityGroup.GetDynamicActivity childActivityName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,9 +235,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.GetWhenCondition(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetWhenCondition (dependencyObject As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetWhenCondition(System::Object ^ dependencyObject);" />
+      <MemberSignature Language="F#" Value="static member GetWhenCondition : obj -&gt; obj" Usage="System.Workflow.Activities.ConditionedActivityGroup.GetWhenCondition dependencyObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,9 +264,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.OnActivityChangeAdd(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivityChangeAdd (executionContext As ActivityExecutionContext, addedActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivityChangeAdd(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, System::Workflow::ComponentModel::Activity ^ addedActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnActivityChangeAdd : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="conditionedActivityGroup.OnActivityChangeAdd (executionContext, addedActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,9 +291,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivityChangeRemove (executionContext As ActivityExecutionContext, removedActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivityChangeRemove(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, System::Workflow::ComponentModel::Activity ^ removedActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnActivityChangeRemove : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="conditionedActivityGroup.OnActivityChangeRemove (executionContext, removedActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,9 +318,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.OnClosed(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.OnClosed : IServiceProvider -&gt; unit" Usage="conditionedActivityGroup.OnClosed provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -322,9 +343,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.OnWorkflowChangesCompleted(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWorkflowChangesCompleted (executionContext As ActivityExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWorkflowChangesCompleted(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.OnWorkflowChangesCompleted : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit" Usage="conditionedActivityGroup.OnWorkflowChangesCompleted executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,9 +368,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ConditionedActivityGroup.SetWhenCondition(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetWhenCondition (dependencyObject As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetWhenCondition(System::Object ^ dependencyObject, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetWhenCondition : obj * obj -&gt; unit" Usage="System.Workflow.Activities.ConditionedActivityGroup.SetWhenCondition (dependencyObject, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -379,6 +404,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -401,13 +427,15 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ConditionedActivityGroup.UntilCondition" />
       <MemberSignature Language="VB.NET" Value="Public Property UntilCondition As ActivityCondition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCondition ^ UntilCondition { System::Workflow::ComponentModel::ActivityCondition ^ get(); void set(System::Workflow::ComponentModel::ActivityCondition ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UntilCondition : System.Workflow.ComponentModel.ActivityCondition with get, set" Usage="System.Workflow.Activities.ConditionedActivityGroup.UntilCondition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
       </Attributes>
@@ -436,9 +464,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ConditionedActivityGroup.UntilConditionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UntilConditionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ UntilConditionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UntilConditionProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.ConditionedActivityGroup.UntilConditionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,9 +492,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WhenConditionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ WhenConditionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable WhenConditionProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.ConditionedActivityGroup.WhenConditionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

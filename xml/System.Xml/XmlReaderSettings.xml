@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlReaderSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlReaderSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlReaderSettings sealed" />
+  <TypeSignature Language="F#" Value="type XmlReaderSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -97,6 +99,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -154,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReaderSettings.#ctor(System.Xml.XmlResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (resolver As XmlResolver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReaderSettings(System::Xml::XmlResolver ^ resolver);" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlReaderSettings : System.Xml.XmlResolver -&gt; System.Xml.XmlReaderSettings" Usage="new System.Xml.XmlReaderSettings resolver" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -161,11 +165,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.Async" />
       <MemberSignature Language="VB.NET" Value="Public Property Async As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Async { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Async : bool with get, set" Usage="System.Xml.XmlReaderSettings.Async" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.CheckCharacters" />
       <MemberSignature Language="VB.NET" Value="Public Property CheckCharacters As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckCharacters { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CheckCharacters : bool with get, set" Usage="System.Xml.XmlReaderSettings.CheckCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -239,6 +248,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -246,6 +256,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -280,6 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReaderSettings.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As XmlReaderSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReaderSettings ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Xml.XmlReaderSettings" Usage="xmlReaderSettings.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -291,6 +307,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -323,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.CloseInput" />
       <MemberSignature Language="VB.NET" Value="Public Property CloseInput As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CloseInput { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CloseInput : bool with get, set" Usage="System.Xml.XmlReaderSettings.CloseInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -334,6 +352,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -341,6 +360,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -364,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.ConformanceLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ConformanceLevel As ConformanceLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::ConformanceLevel ConformanceLevel { System::Xml::ConformanceLevel get(); void set(System::Xml::ConformanceLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ConformanceLevel : System.Xml.ConformanceLevel with get, set" Usage="System.Xml.XmlReaderSettings.ConformanceLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -375,6 +400,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -382,6 +408,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.ConformanceLevel</ReturnType>
       </ReturnValue>
@@ -452,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.DtdProcessing" />
       <MemberSignature Language="VB.NET" Value="Public Property DtdProcessing As DtdProcessing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::DtdProcessing DtdProcessing { System::Xml::DtdProcessing get(); void set(System::Xml::DtdProcessing value); };" />
+      <MemberSignature Language="F#" Value="member this.DtdProcessing : System.Xml.DtdProcessing with get, set" Usage="System.Xml.XmlReaderSettings.DtdProcessing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -470,6 +502,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
@@ -525,6 +562,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.IgnoreComments" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreComments As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreComments { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreComments : bool with get, set" Usage="System.Xml.XmlReaderSettings.IgnoreComments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -536,6 +574,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -543,6 +582,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -576,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.IgnoreProcessingInstructions" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreProcessingInstructions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreProcessingInstructions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreProcessingInstructions : bool with get, set" Usage="System.Xml.XmlReaderSettings.IgnoreProcessingInstructions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -587,6 +632,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -594,6 +640,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -627,6 +678,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.IgnoreWhitespace" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreWhitespace As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreWhitespace { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreWhitespace : bool with get, set" Usage="System.Xml.XmlReaderSettings.IgnoreWhitespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -638,6 +690,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -645,6 +698,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -680,6 +738,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.LineNumberOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property LineNumberOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumberOffset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumberOffset : int with get, set" Usage="System.Xml.XmlReaderSettings.LineNumberOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -691,6 +750,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -698,6 +758,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -721,6 +786,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.LinePositionOffset" />
       <MemberSignature Language="VB.NET" Value="Public Property LinePositionOffset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePositionOffset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LinePositionOffset : int with get, set" Usage="System.Xml.XmlReaderSettings.LinePositionOffset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -732,6 +798,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -739,6 +806,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -762,6 +834,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.MaxCharactersFromEntities" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxCharactersFromEntities As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxCharactersFromEntities { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCharactersFromEntities : int64 with get, set" Usage="System.Xml.XmlReaderSettings.MaxCharactersFromEntities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -773,6 +846,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -780,6 +854,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -863,6 +942,7 @@ There is an error in XML document (MaxCharactersFromEntities, ).
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.MaxCharactersInDocument" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxCharactersInDocument As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxCharactersInDocument { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCharactersInDocument : int64 with get, set" Usage="System.Xml.XmlReaderSettings.MaxCharactersInDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -874,6 +954,7 @@ There is an error in XML document (MaxCharactersFromEntities, ).
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -881,6 +962,11 @@ There is an error in XML document (MaxCharactersFromEntities, ).
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -952,6 +1038,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.NameTable" />
       <MemberSignature Language="VB.NET" Value="Public Property NameTable As XmlNameTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); void set(System::Xml::XmlNameTable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable with get, set" Usage="System.Xml.XmlReaderSettings.NameTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -963,6 +1050,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -970,6 +1058,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNameTable</ReturnType>
       </ReturnValue>
@@ -997,9 +1090,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.ProhibitDtd" />
       <MemberSignature Language="VB.NET" Value="Public Property ProhibitDtd As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProhibitDtd { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ProhibitDtd : bool with get, set" Usage="System.Xml.XmlReaderSettings.ProhibitDtd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1013,7 +1108,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("Use XmlReaderSettings.DtdProcessing property instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1057,6 +1152,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlReaderSettings.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="xmlReaderSettings.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -1068,6 +1164,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1119,9 +1216,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.Schemas" />
       <MemberSignature Language="VB.NET" Value="Public Property Schemas As XmlSchemaSet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaSet ^ Schemas { System::Xml::Schema::XmlSchemaSet ^ get(); void set(System::Xml::Schema::XmlSchemaSet ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schemas : System.Xml.Schema.XmlSchemaSet with get, set" Usage="System.Xml.XmlReaderSettings.Schemas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1187,9 +1286,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.Schema.ValidationEventHandler ValidationEventHandler" />
       <MemberSignature Language="DocId" Value="E:System.Xml.XmlReaderSettings.ValidationEventHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::Schema::ValidationEventHandler ^ ValidationEventHandler;" />
+      <MemberSignature Language="F#" Value="member this.ValidationEventHandler : System.Xml.Schema.ValidationEventHandler " Usage="member this.ValidationEventHandler : System.Xml.Schema.ValidationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1240,9 +1341,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.ValidationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidationFlags As XmlSchemaValidationFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaValidationFlags ValidationFlags { System::Xml::Schema::XmlSchemaValidationFlags get(); void set(System::Xml::Schema::XmlSchemaValidationFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationFlags : System.Xml.Schema.XmlSchemaValidationFlags with get, set" Usage="System.Xml.XmlReaderSettings.ValidationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1255,6 +1358,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
@@ -1303,9 +1411,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.ValidationType" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidationType As ValidationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::ValidationType ValidationType { System::Xml::ValidationType get(); void set(System::Xml::ValidationType value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationType : System.Xml.ValidationType with get, set" Usage="System.Xml.XmlReaderSettings.ValidationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1318,6 +1428,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.ValidationType</ReturnType>
       </ReturnValue>
@@ -1371,9 +1486,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlReaderSettings.XmlResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlResolver As XmlResolver" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlResolver ^ XmlResolver {  void set(System::Xml::XmlResolver ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlResolver : System.Xml.XmlResolver" Usage="System.Xml.XmlReaderSettings.XmlResolver" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

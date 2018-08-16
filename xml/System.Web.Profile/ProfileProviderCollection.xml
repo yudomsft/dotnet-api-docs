@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileProviderCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileProviderCollection&#xA;Inherits SettingsProviderCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileProviderCollection sealed : System::Configuration::SettingsProviderCollection" />
+  <TypeSignature Language="F#" Value="type ProfileProviderCollection = class&#xA;    inherit SettingsProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -41,8 +43,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new, empty profile provider collection.</summary>
@@ -62,9 +70,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Configuration.Provider.ProviderBase -&gt; unit&#xA;override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="profileProviderCollection.Add provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,9 +108,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileProviderCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ProfileProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Profile::ProfileProvider ^ default[System::String ^] { System::Web::Profile::ProfileProvider ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Profile.ProfileProvider" Usage="System.Web.Profile.ProfileProviderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

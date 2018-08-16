@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementNewInstanceAttribute" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ManagementNewInstanceAttribute&#xA;Inherits ManagementMemberAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementNewInstanceAttribute abstract : System::Management::Instrumentation::ManagementMemberAttribute" />
+  <TypeSignature Language="F#" Value="type ManagementNewInstanceAttribute = class&#xA;    inherit ManagementMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,11 +35,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementNewInstanceAttribute" /> class. This is the default constructor.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.ManagementNewInstanceAttribute" /> class. This is the default constructor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

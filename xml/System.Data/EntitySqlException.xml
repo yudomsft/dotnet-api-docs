@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EntitySqlException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntitySqlException&#xA;Inherits EntityException" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntitySqlException sealed : System::Data::EntityException" />
+  <TypeSignature Language="F#" Value="type EntitySqlException = class&#xA;    inherit EntityException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -50,6 +52,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -71,9 +74,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntitySqlException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitySqlException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntitySqlException : string -&gt; System.Data.EntitySqlException" Usage="new System.Data.EntitySqlException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -98,9 +103,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntitySqlException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitySqlException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Data.EntitySqlException : string * Exception -&gt; System.Data.EntitySqlException" Usage="new System.Data.EntitySqlException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -127,11 +134,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : int" Usage="System.Data.EntitySqlException.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -147,9 +161,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.ErrorContext" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorContext As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorContext { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorContext : string" Usage="System.Data.EntitySqlException.ErrorContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,9 +183,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.ErrorDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorDescription { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorDescription : string" Usage="System.Data.EntitySqlException.ErrorDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,13 +205,15 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntitySqlException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="entitySqlException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -227,17 +247,46 @@
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.Line" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="System.Data.EntitySqlException.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets the approximate line number where the error occurred.</summary>
         <value>An integer that describes the line number where the error occurred.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public override string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Data.EntitySqlException.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the full error message. As available, the message contains the error description, context, line number, and column number.</summary>
+        <value>A string describing the full error message. As available, the message contains the error description, context, line number, and column number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

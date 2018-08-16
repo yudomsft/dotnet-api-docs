@@ -4,13 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Graphics.EnumerateMetafileProc" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Graphics.EnumerateMetafileProc(recordType As EmfPlusRecordType, flags As Integer, dataSize As Integer, data As IntPtr, callbackData As PlayRecordCallback) As Boolean " />
   <TypeSignature Language="C++ CLI" Value="public: delegate bool Graphics::EnumerateMetafileProc(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr data, PlayRecordCallback ^ callbackData);" />
+  <TypeSignature Language="F#" Value="type Graphics.EnumerateMetafileProc = delegate of EmfPlusRecordType * int * int * nativeint * PlayRecordCallback -&gt; bool" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Parameters>
     <Parameter Name="recordType" Type="System.Drawing.Imaging.EmfPlusRecordType" />
     <Parameter Name="flags" Type="System.Int32" />

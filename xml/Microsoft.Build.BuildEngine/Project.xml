@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Project" />
   <TypeSignature Language="VB.NET" Value="Public Class Project" />
   <TypeSignature Language="C++ CLI" Value="public ref class Project" />
+  <TypeSignature Language="F#" Value="type Project = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("This class has been deprecated. Please use Microsoft.Build.Evaluation.Project from the Microsoft.Build assembly instead.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -23,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:Microsoft.Build.BuildEngine.Project> represents an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project. It is a container for items, properties and targets. It can load project content from in-memory XML or from an XML file, and can save to an XML file, preserving most whitespace and all XML comments.  
+ A <xref:Microsoft.Build.BuildEngine.Project> represents an [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project. It is a container for items, properties and targets. It can load project content from in-memory XML or from an XML file, and can save to an XML file, preserving most white space and all XML comments.  
   
  Every <xref:Microsoft.Build.BuildEngine.Project> must be associated with an <xref:Microsoft.Build.BuildEngine.Engine> to access shared information. During a build, the <xref:Microsoft.Build.BuildEngine.Engine> object keeps track of which projects are currently building.  
   
@@ -60,8 +63,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> class.</summary>
@@ -83,11 +93,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.BuildEngine.Engine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.#ctor(Microsoft.Build.BuildEngine.Engine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Project(Microsoft::Build::BuildEngine::Engine ^ engine);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.Project : Microsoft.Build.BuildEngine.Engine -&gt; Microsoft.Build.BuildEngine.Project" Usage="new Microsoft.Build.BuildEngine.Project engine" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="engine" Type="Microsoft.Build.BuildEngine.Engine" />
       </Parameters>
@@ -112,9 +130,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.BuildEngine.Engine engine, string toolsVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.#ctor(Microsoft.Build.BuildEngine.Engine,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Project(Microsoft::Build::BuildEngine::Engine ^ engine, System::String ^ toolsVersion);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.Project : Microsoft.Build.BuildEngine.Engine * string -&gt; Microsoft.Build.BuildEngine.Project" Usage="new Microsoft.Build.BuildEngine.Project (engine, toolsVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -134,9 +154,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewImport(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNewImport (projectFile As String, condition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewImport(System::String ^ projectFile, System::String ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.AddNewImport : string * string -&gt; unit" Usage="project.AddNewImport (projectFile, condition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,9 +191,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewItem(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewItem (itemName As String, itemInclude As String) As BuildItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItem ^ AddNewItem(System::String ^ itemName, System::String ^ itemInclude);" />
+      <MemberSignature Language="F#" Value="member this.AddNewItem : string * string -&gt; Microsoft.Build.BuildEngine.BuildItem" Usage="project.AddNewItem (itemName, itemInclude)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,9 +227,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewItem(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewItem (itemName As String, itemInclude As String, treatItemIncludeAsLiteral As Boolean) As BuildItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItem ^ AddNewItem(System::String ^ itemName, System::String ^ itemInclude, bool treatItemIncludeAsLiteral);" />
+      <MemberSignature Language="F#" Value="member this.AddNewItem : string * string * bool -&gt; Microsoft.Build.BuildEngine.BuildItem" Usage="project.AddNewItem (itemName, itemInclude, treatItemIncludeAsLiteral)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,9 +266,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewItemGroup" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewItemGroup () As BuildItemGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItemGroup ^ AddNewItemGroup();" />
+      <MemberSignature Language="F#" Value="member this.AddNewItemGroup : unit -&gt; Microsoft.Build.BuildEngine.BuildItemGroup" Usage="project.AddNewItemGroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,9 +290,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewPropertyGroup(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewPropertyGroup (insertAtEndOfProject As Boolean) As BuildPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildPropertyGroup ^ AddNewPropertyGroup(bool insertAtEndOfProject);" />
+      <MemberSignature Language="F#" Value="member this.AddNewPropertyGroup : bool -&gt; Microsoft.Build.BuildEngine.BuildPropertyGroup" Usage="project.AddNewPropertyGroup insertAtEndOfProject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,11 +318,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewUsingTaskFromAssemblyFile(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNewUsingTaskFromAssemblyFile (taskName As String, assemblyFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewUsingTaskFromAssemblyFile(System::String ^ taskName, System::String ^ assemblyFile);" />
+      <MemberSignature Language="F#" Value="member this.AddNewUsingTaskFromAssemblyFile : string * string -&gt; unit" Usage="project.AddNewUsingTaskFromAssemblyFile (taskName, assemblyFile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -308,11 +351,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.AddNewUsingTaskFromAssemblyName(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNewUsingTaskFromAssemblyName (taskName As String, assemblyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewUsingTaskFromAssemblyName(System::String ^ taskName, System::String ^ assemblyName);" />
+      <MemberSignature Language="F#" Value="member this.AddNewUsingTaskFromAssemblyName : string * string -&gt; unit" Usage="project.AddNewUsingTaskFromAssemblyName (taskName, assemblyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -342,9 +393,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build" />
       <MemberSignature Language="VB.NET" Value="Public Function Build () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build();" />
+      <MemberSignature Language="F#" Value="member this.Build : unit -&gt; bool" Usage="project.Build " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,9 +418,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targetName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(System::String ^ targetName);" />
+      <MemberSignature Language="F#" Value="member this.Build : string -&gt; bool" Usage="project.Build targetName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -389,9 +446,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targetNames As String()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targetNames);" />
+      <MemberSignature Language="F#" Value="member this.Build : string[] -&gt; bool" Usage="project.Build targetNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -414,9 +474,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String[],System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targetNames As String(), targetOutputs As IDictionary) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ targetOutputs);" />
+      <MemberSignature Language="F#" Value="member this.Build : string[] * System.Collections.IDictionary -&gt; bool" Usage="project.Build (targetNames, targetOutputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -441,9 +504,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Build(System.String[],System.Collections.IDictionary,Microsoft.Build.BuildEngine.BuildSettings)" />
       <MemberSignature Language="VB.NET" Value="Public Function Build (targetNames As String(), targetOutputs As IDictionary, buildFlags As BuildSettings) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Build(cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ targetOutputs, Microsoft::Build::BuildEngine::BuildSettings buildFlags);" />
+      <MemberSignature Language="F#" Value="member this.Build : string[] * System.Collections.IDictionary * Microsoft.Build.BuildEngine.BuildSettings -&gt; bool" Usage="project.Build (targetNames, targetOutputs, buildFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -470,9 +536,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.BuildEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuildEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildEnabled : bool with get, set" Usage="Microsoft.Build.BuildEngine.Project.BuildEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -498,9 +567,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.DefaultTargets" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultTargets As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultTargets { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTargets : string with get, set" Usage="Microsoft.Build.BuildEngine.Project.DefaultTargets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -518,26 +590,28 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultToolsVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultToolsVersion { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultToolsVersion : string with get, set" Usage="Microsoft.Build.BuildEngine.Project.DefaultToolsVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets the ToolsVersion XML attribute found on the <see cref="Project" />[Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element in the project file.</summary>
+        <summary>Sets or gets the ToolsVersion XML attribute found on the [Project element](/visualstudio/msbuild/project-element-msbuild) in the project file.</summary>
         <value>A string representing the Tools version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element, getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
+ If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project element](/visualstudio/msbuild/project-element-msbuild), getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
   
  The <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value can differ from the Tools version used during a build if its value is overridden during construction of the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> instance or it is set to a specific value with the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property. Setting the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value cannot change the Tools version if it has been overridden, but you can change the Tools version using the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property.  
   
- For more information about Tools versions, see `MSBuild Tool Set (ToolsVersion)`.  
+ For more information about Tools versions, see [MSBuild ToolSet (ToolsVersion)](/visualstudio/msbuild/msbuild-toolset-toolsversion).  
   
  ]]></format>
         </remarks>
@@ -549,9 +623,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ Encoding { System::Text::Encoding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Text.Encoding" Usage="Microsoft.Build.BuildEngine.Project.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -569,9 +646,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.EvaluatedItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedItems As BuildItemGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildItemGroup ^ EvaluatedItems { Microsoft::Build::BuildEngine::BuildItemGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedItems : Microsoft.Build.BuildEngine.BuildItemGroup" Usage="Microsoft.Build.BuildEngine.Project.EvaluatedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -596,9 +676,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.EvaluatedItemsIgnoringCondition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedItemsIgnoringCondition As BuildItemGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildItemGroup ^ EvaluatedItemsIgnoringCondition { Microsoft::Build::BuildEngine::BuildItemGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedItemsIgnoringCondition : Microsoft.Build.BuildEngine.BuildItemGroup" Usage="Microsoft.Build.BuildEngine.Project.EvaluatedItemsIgnoringCondition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -623,9 +706,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.EvaluatedProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EvaluatedProperties As BuildPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildPropertyGroup ^ EvaluatedProperties { Microsoft::Build::BuildEngine::BuildPropertyGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EvaluatedProperties : Microsoft.Build.BuildEngine.BuildPropertyGroup" Usage="Microsoft.Build.BuildEngine.Project.EvaluatedProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -653,11 +739,19 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.FullFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property FullFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullFileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FullFileName : string with get, set" Usage="Microsoft.Build.BuildEngine.Project.FullFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -680,9 +774,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetConditionedPropertyValues(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConditionedPropertyValues (propertyName As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetConditionedPropertyValues(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.GetConditionedPropertyValues : string -&gt; string[]" Usage="project.GetConditionedPropertyValues propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -711,9 +808,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetEvaluatedItemsByName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEvaluatedItemsByName (itemName As String) As BuildItemGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItemGroup ^ GetEvaluatedItemsByName(System::String ^ itemName);" />
+      <MemberSignature Language="F#" Value="member this.GetEvaluatedItemsByName : string -&gt; Microsoft.Build.BuildEngine.BuildItemGroup" Usage="project.GetEvaluatedItemsByName itemName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -735,9 +835,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetEvaluatedItemsByNameIgnoringCondition(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEvaluatedItemsByNameIgnoringCondition (itemName As String) As BuildItemGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildItemGroup ^ GetEvaluatedItemsByNameIgnoringCondition(System::String ^ itemName);" />
+      <MemberSignature Language="F#" Value="member this.GetEvaluatedItemsByNameIgnoringCondition : string -&gt; Microsoft.Build.BuildEngine.BuildItemGroup" Usage="project.GetEvaluatedItemsByNameIgnoringCondition itemName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -759,9 +862,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetEvaluatedProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEvaluatedProperty (propertyName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetEvaluatedProperty(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="member this.GetEvaluatedProperty : string -&gt; string" Usage="project.GetEvaluatedProperty propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -790,9 +896,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.GetProjectExtensions(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProjectExtensions (id As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetProjectExtensions(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.GetProjectExtensions : string -&gt; string" Usage="project.GetProjectExtensions id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -814,9 +923,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.GlobalProperties" />
       <MemberSignature Language="VB.NET" Value="Public Property GlobalProperties As BuildPropertyGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildPropertyGroup ^ GlobalProperties { Microsoft::Build::BuildEngine::BuildPropertyGroup ^ get(); void set(Microsoft::Build::BuildEngine::BuildPropertyGroup ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalProperties : Microsoft.Build.BuildEngine.BuildPropertyGroup with get, set" Usage="Microsoft.Build.BuildEngine.Project.GlobalProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -841,9 +953,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.HasToolsVersionAttribute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasToolsVersionAttribute As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasToolsVersionAttribute { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasToolsVersionAttribute : bool" Usage="Microsoft.Build.BuildEngine.Project.HasToolsVersionAttribute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -869,9 +983,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Imports" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Imports As ImportCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::ImportCollection ^ Imports { Microsoft::Build::BuildEngine::ImportCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Imports : Microsoft.Build.BuildEngine.ImportCollection" Usage="Microsoft.Build.BuildEngine.Project.Imports" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -896,9 +1013,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.InitialTargets" />
       <MemberSignature Language="VB.NET" Value="Public Property InitialTargets As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialTargets { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialTargets : string with get, set" Usage="Microsoft.Build.BuildEngine.Project.InitialTargets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -916,11 +1036,19 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="Microsoft.Build.BuildEngine.Project.IsDirty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -937,11 +1065,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.IsValidated" />
       <MemberSignature Language="VB.NET" Value="Public Property IsValidated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValidated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsValidated : bool with get, set" Usage="Microsoft.Build.BuildEngine.Project.IsValidated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -958,9 +1097,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.ItemGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemGroups As BuildItemGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildItemGroupCollection ^ ItemGroups { Microsoft::Build::BuildEngine::BuildItemGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemGroups : Microsoft.Build.BuildEngine.BuildItemGroupCollection" Usage="Microsoft.Build.BuildEngine.Project.ItemGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1012,11 +1154,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.IO.TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::IO::TextReader ^ textReader);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.IO.TextReader -&gt; unit" Usage="project.Load textReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1036,11 +1186,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (projectFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ projectFileName);" />
+      <MemberSignature Language="F#" Value="member this.Load : string -&gt; unit" Usage="project.Load projectFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1069,9 +1227,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.TextReader textReader, valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.IO.TextReader,Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::IO::TextReader ^ textReader, Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
+      <MemberSignature Language="F#" Value="member this.Load : System.IO.TextReader * Microsoft.Build.BuildEngine.ProjectLoadSettings -&gt; unit" Usage="project.Load (textReader, projectLoadSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1093,9 +1253,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string projectFileName, valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Load(System.String,Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ projectFileName, Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
+      <MemberSignature Language="F#" Value="member this.Load : string * Microsoft.Build.BuildEngine.ProjectLoadSettings -&gt; unit" Usage="project.Load (projectFileName, projectLoadSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1127,11 +1289,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.LoadXml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (projectXml As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::String ^ projectXml);" />
+      <MemberSignature Language="F#" Value="member this.LoadXml : string -&gt; unit" Usage="project.LoadXml projectXml" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1160,9 +1330,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(string projectXml, valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.LoadXml(System.String,Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::String ^ projectXml, Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
+      <MemberSignature Language="F#" Value="member this.LoadXml : string * Microsoft.Build.BuildEngine.ProjectLoadSettings -&gt; unit" Usage="project.LoadXml (projectXml, projectLoadSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1185,9 +1357,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.MarkProjectAsDirty" />
       <MemberSignature Language="VB.NET" Value="Public Sub MarkProjectAsDirty ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MarkProjectAsDirty();" />
+      <MemberSignature Language="F#" Value="member this.MarkProjectAsDirty : unit -&gt; unit" Usage="project.MarkProjectAsDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1205,9 +1380,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.ParentEngine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentEngine As Engine" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::Engine ^ ParentEngine { Microsoft::Build::BuildEngine::Engine ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentEngine : Microsoft.Build.BuildEngine.Engine" Usage="Microsoft.Build.BuildEngine.Project.ParentEngine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1225,9 +1403,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.PropertyGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyGroups As BuildPropertyGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::BuildPropertyGroupCollection ^ PropertyGroups { Microsoft::Build::BuildEngine::BuildPropertyGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyGroups : Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" Usage="Microsoft.Build.BuildEngine.Project.PropertyGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1260,9 +1441,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveAllItemGroups" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllItemGroups ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllItemGroups();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAllItemGroups : unit -&gt; unit" Usage="project.RemoveAllItemGroups " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1280,9 +1464,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveAllPropertyGroups" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllPropertyGroups ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllPropertyGroups();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAllPropertyGroups : unit -&gt; unit" Usage="project.RemoveAllPropertyGroups " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1300,9 +1487,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveImportedPropertyGroup(Microsoft.Build.BuildEngine.BuildPropertyGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveImportedPropertyGroup (propertyGroupToRemove As BuildPropertyGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveImportedPropertyGroup(Microsoft::Build::BuildEngine::BuildPropertyGroup ^ propertyGroupToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveImportedPropertyGroup : Microsoft.Build.BuildEngine.BuildPropertyGroup -&gt; unit" Usage="project.RemoveImportedPropertyGroup propertyGroupToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1323,9 +1512,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItem(Microsoft.Build.BuildEngine.BuildItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (itemToRemove As BuildItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(Microsoft::Build::BuildEngine::BuildItem ^ itemToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveItem : Microsoft.Build.BuildEngine.BuildItem -&gt; unit" Usage="project.RemoveItem itemToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1346,9 +1538,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItemGroup(Microsoft.Build.BuildEngine.BuildItemGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveItemGroup (itemGroupToRemove As BuildItemGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItemGroup(Microsoft::Build::BuildEngine::BuildItemGroup ^ itemGroupToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemoveItemGroup : Microsoft.Build.BuildEngine.BuildItemGroup -&gt; unit" Usage="project.RemoveItemGroup itemGroupToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1369,9 +1564,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItemGroupsWithMatchingCondition(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveItemGroupsWithMatchingCondition (matchCondition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItemGroupsWithMatchingCondition(System::String ^ matchCondition);" />
+      <MemberSignature Language="F#" Value="member this.RemoveItemGroupsWithMatchingCondition : string -&gt; unit" Usage="project.RemoveItemGroupsWithMatchingCondition matchCondition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1392,9 +1590,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemoveItemsByName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveItemsByName (itemName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItemsByName(System::String ^ itemName);" />
+      <MemberSignature Language="F#" Value="member this.RemoveItemsByName : string -&gt; unit" Usage="project.RemoveItemsByName itemName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1415,9 +1616,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemovePropertyGroup(Microsoft.Build.BuildEngine.BuildPropertyGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyGroup (propertyGroupToRemove As BuildPropertyGroup)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyGroup(Microsoft::Build::BuildEngine::BuildPropertyGroup ^ propertyGroupToRemove);" />
+      <MemberSignature Language="F#" Value="member this.RemovePropertyGroup : Microsoft.Build.BuildEngine.BuildPropertyGroup -&gt; unit" Usage="project.RemovePropertyGroup propertyGroupToRemove" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1455,11 +1659,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemovePropertyGroupsWithMatchingCondition(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyGroupsWithMatchingCondition (matchCondition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyGroupsWithMatchingCondition(System::String ^ matchCondition);" />
+      <MemberSignature Language="F#" Value="member this.RemovePropertyGroupsWithMatchingCondition : string -&gt; unit" Usage="project.RemovePropertyGroupsWithMatchingCondition matchCondition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1478,9 +1690,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.RemovePropertyGroupsWithMatchingCondition(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyGroupsWithMatchingCondition (matchCondition As String, includeImportedPropertyGroups As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyGroupsWithMatchingCondition(System::String ^ matchCondition, bool includeImportedPropertyGroups);" />
+      <MemberSignature Language="F#" Value="member this.RemovePropertyGroupsWithMatchingCondition : string * bool -&gt; unit" Usage="project.RemovePropertyGroupsWithMatchingCondition (matchCondition, includeImportedPropertyGroups)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1510,9 +1724,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.ResetBuildStatus" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetBuildStatus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetBuildStatus();" />
+      <MemberSignature Language="F#" Value="member this.ResetBuildStatus : unit -&gt; unit" Usage="project.ResetBuildStatus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1538,9 +1755,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Save(System.IO.TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.TextWriter -&gt; unit" Usage="project.Save textWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1561,9 +1781,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (projectFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ projectFileName);" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="project.Save projectFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1583,9 +1806,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string projectFileName, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.Save(System.String,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ projectFileName, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Text.Encoding -&gt; unit" Usage="project.Save (projectFileName, encoding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1608,11 +1834,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.SchemaFile" />
       <MemberSignature Language="VB.NET" Value="Public Property SchemaFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaFile : string with get, set" Usage="Microsoft.Build.BuildEngine.Project.SchemaFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1637,11 +1874,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetImportedProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.Project)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetImportedProperty (propertyName As String, propertyValue As String, condition As String, importProject As Project)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::Project ^ importProject);" />
+      <MemberSignature Language="F#" Value="member this.SetImportedProperty : string * string * string * Microsoft.Build.BuildEngine.Project -&gt; unit" Usage="project.SetImportedProperty (propertyName, propertyValue, condition, importProject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1666,9 +1911,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetImportedProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.Project,Microsoft.Build.BuildEngine.PropertyPosition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetImportedProperty (propertyName As String, propertyValue As String, condition As String, importedProject As Project, position As PropertyPosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::Project ^ importedProject, Microsoft::Build::BuildEngine::PropertyPosition position);" />
+      <MemberSignature Language="F#" Value="member this.SetImportedProperty : string * string * string * Microsoft.Build.BuildEngine.Project * Microsoft.Build.BuildEngine.PropertyPosition -&gt; unit" Usage="project.SetImportedProperty (propertyName, propertyValue, condition, importedProject, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1697,9 +1945,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetImportedProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.Project,Microsoft.Build.BuildEngine.PropertyPosition,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetImportedProperty (propertyName As String, propertyValue As String, condition As String, importedProject As Project, position As PropertyPosition, treatPropertyValueAsLiteral As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImportedProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::Project ^ importedProject, Microsoft::Build::BuildEngine::PropertyPosition position, bool treatPropertyValueAsLiteral);" />
+      <MemberSignature Language="F#" Value="member this.SetImportedProperty : string * string * string * Microsoft.Build.BuildEngine.Project * Microsoft.Build.BuildEngine.PropertyPosition * bool -&gt; unit" Usage="project.SetImportedProperty (propertyName, propertyValue, condition, importedProject, position, treatPropertyValueAsLiteral)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1738,9 +1989,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProjectExtensions(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProjectExtensions (id As String, content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProjectExtensions(System::String ^ id, System::String ^ content);" />
+      <MemberSignature Language="F#" Value="member this.SetProjectExtensions : string * string -&gt; unit" Usage="project.SetProjectExtensions (id, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1772,11 +2026,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue);" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string -&gt; unit" Usage="project.SetProperty (propertyName, propertyValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1797,11 +2059,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String, condition As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition);" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string * string -&gt; unit" Usage="project.SetProperty (propertyName, propertyValue, condition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1824,11 +2094,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.PropertyPosition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String, condition As String, position As PropertyPosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::PropertyPosition position);" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string * string * Microsoft.Build.BuildEngine.PropertyPosition -&gt; unit" Usage="project.SetProperty (propertyName, propertyValue, condition, position)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1860,9 +2138,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.PropertyPosition,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (propertyName As String, propertyValue As String, condition As String, position As PropertyPosition, treatPropertyValueAsLiteral As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ propertyName, System::String ^ propertyValue, System::String ^ condition, Microsoft::Build::BuildEngine::PropertyPosition position, bool treatPropertyValueAsLiteral);" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : string * string * string * Microsoft.Build.BuildEngine.PropertyPosition * bool -&gt; unit" Usage="project.SetProperty (propertyName, propertyValue, condition, position, treatPropertyValueAsLiteral)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1892,9 +2173,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Targets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Targets As TargetCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::TargetCollection ^ Targets { Microsoft::Build::BuildEngine::TargetCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Targets : Microsoft.Build.BuildEngine.TargetCollection" Usage="Microsoft.Build.BuildEngine.Project.Targets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1919,11 +2203,19 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.TimeOfLastDirty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeOfLastDirty As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeOfLastDirty { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeOfLastDirty : DateTime" Usage="Microsoft.Build.BuildEngine.Project.TimeOfLastDirty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
@@ -1939,9 +2231,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.ToolsVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolsVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolsVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolsVersion : string" Usage="Microsoft.Build.BuildEngine.Project.ToolsVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1971,9 +2265,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.UsingTasks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsingTasks As UsingTaskCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::BuildEngine::UsingTaskCollection ^ UsingTasks { Microsoft::Build::BuildEngine::UsingTaskCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsingTasks : Microsoft.Build.BuildEngine.UsingTaskCollection" Usage="Microsoft.Build.BuildEngine.Project.UsingTasks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1991,9 +2288,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.Project.Xml" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Xml As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Xml { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Xml : string" Usage="Microsoft.Build.BuildEngine.Project.Xml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

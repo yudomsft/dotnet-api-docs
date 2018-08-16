@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Module" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Module&#xA;Implements _Module, ICustomAttributeProvider, ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Module abstract : System::Reflection::ICustomAttributeProvider, System::Runtime::InteropServices::_Module, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type Module = class&#xA;    interface ISerializable&#xA;    interface ICustomAttributeProvider&#xA;    interface _Module" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -39,13 +42,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._Module))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.Assembly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Assembly As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Reflection.Module.Assembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -123,6 +127,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -161,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.CustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CustomAttributes As IEnumerable(Of CustomAttributeData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::CustomAttributeData ^&gt; ^ CustomAttributes { System::Collections::Generic::IEnumerable&lt;System::Reflection::CustomAttributeData ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomAttributes : seq&lt;System.Reflection.CustomAttributeData&gt;" Usage="System.Reflection.Module.CustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="module.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -206,6 +214,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Module.FilterTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FilterTypeName As TypeFilter " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::TypeFilter ^ FilterTypeName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FilterTypeName : System.Reflection.TypeFilter" Usage="System.Reflection.Module.FilterTypeName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -245,6 +255,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -288,6 +300,7 @@
       <MemberSignature Language="DocId" Value="F:System.Reflection.Module.FilterTypeNameIgnoreCase" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FilterTypeNameIgnoreCase As TypeFilter " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Reflection::TypeFilter ^ FilterTypeNameIgnoreCase;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FilterTypeNameIgnoreCase : System.Reflection.TypeFilter" Usage="System.Reflection.Module.FilterTypeNameIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -295,6 +308,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -338,6 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FindTypes (filter As TypeFilter, filterCriteria As Object) As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ FindTypes(System::Reflection::TypeFilter ^ filter, System::Object ^ filterCriteria);" />
+      <MemberSignature Language="F#" Value="abstract member FindTypes : System.Reflection.TypeFilter * obj -&gt; Type[]&#xA;override this.FindTypes : System.Reflection.TypeFilter * obj -&gt; Type[]" Usage="module.FindTypes (filter, filterCriteria)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -345,6 +361,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -402,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.FullyQualifiedName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FullyQualifiedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FullyQualifiedName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullyQualifiedName : string" Usage="System.Reflection.Module.FullyQualifiedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -411,6 +430,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -471,12 +492,15 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : bool -&gt; obj[]&#xA;override this.GetCustomAttributes : bool -&gt; obj[]" Usage="module.GetCustomAttributes inherit" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -519,12 +543,15 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : Type * bool -&gt; obj[]&#xA;override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="module.GetCustomAttributes (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -573,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetCustomAttributesData" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCustomAttributesData () As IList(Of CustomAttributeData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeData ^&gt; ^ GetCustomAttributesData();" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributesData : unit -&gt; System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt;&#xA;override this.GetCustomAttributesData : unit -&gt; System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt;" Usage="module.GetCustomAttributesData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -620,6 +648,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetField (name As String) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ GetField(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetField : string -&gt; System.Reflection.FieldInfo" Usage="module.GetField name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -627,6 +656,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -659,6 +690,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetField (name As String, bindingAttr As BindingFlags) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetField(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo&#xA;override this.GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo" Usage="module.GetField (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -666,6 +698,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -709,6 +743,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetFields" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFields () As FieldInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields();" />
+      <MemberSignature Language="F#" Value="member this.GetFields : unit -&gt; System.Reflection.FieldInfo[]" Usage="module.GetFields " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -716,6 +751,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -750,6 +787,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo[] GetFields(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetFields(System.Reflection.BindingFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(System::Reflection::BindingFlags bindingFlags);" />
+      <MemberSignature Language="F#" Value="abstract member GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]&#xA;override this.GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]" Usage="module.GetFields bindingFlags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -757,6 +795,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -795,6 +834,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="module.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -804,6 +844,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -841,6 +882,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetMethod(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.GetMethod : string -&gt; System.Reflection.MethodInfo" Usage="module.GetMethod name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -848,6 +890,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -881,6 +925,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetMethod(System.String,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, types As Type()) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, cli::array &lt;Type ^&gt; ^ types);" />
+      <MemberSignature Language="F#" Value="member this.GetMethod : string * Type[] -&gt; System.Reflection.MethodInfo" Usage="module.GetMethod (name, types)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -888,6 +933,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -922,9 +969,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MethodInfo GetMethod(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, valuetype System.Reflection.CallingConventions callConvention, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, System::Reflection::CallingConventions callConvention, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
+      <MemberSignature Language="F#" Value="member this.GetMethod : string * System.Reflection.BindingFlags * System.Reflection.Binder * System.Reflection.CallingConventions * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="module.GetMethod (name, bindingAttr, binder, callConvention, types, modifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -970,9 +1020,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethodImpl(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, valuetype System.Reflection.CallingConventions callConvention, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::MethodInfo ^ GetMethodImpl(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, System::Reflection::CallingConventions callConvention, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodImpl : string * System.Reflection.BindingFlags * System.Reflection.Binder * System.Reflection.CallingConventions * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo&#xA;override this.GetMethodImpl : string * System.Reflection.BindingFlags * System.Reflection.Binder * System.Reflection.CallingConventions * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="module.GetMethodImpl (name, bindingAttr, binder, callConvention, types, modifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1028,6 +1081,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetMethods" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMethods () As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods();" />
+      <MemberSignature Language="F#" Value="member this.GetMethods : unit -&gt; System.Reflection.MethodInfo[]" Usage="module.GetMethods " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1035,6 +1089,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1062,6 +1118,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo[] GetMethods(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(System::Reflection::BindingFlags bindingFlags);" />
+      <MemberSignature Language="F#" Value="abstract member GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]&#xA;override this.GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]" Usage="module.GetMethods bindingFlags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1069,6 +1126,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1100,12 +1158,15 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="module.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1118,6 +1179,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1141,9 +1207,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetPEKind(System.Reflection.PortableExecutableKinds@,System.Reflection.ImageFileMachine@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetPEKind (ByRef peKind As PortableExecutableKinds, ByRef machine As ImageFileMachine)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPEKind([Runtime::InteropServices::Out] System::Reflection::PortableExecutableKinds % peKind, [Runtime::InteropServices::Out] System::Reflection::ImageFileMachine % machine);" />
+      <MemberSignature Language="F#" Value="abstract member GetPEKind :  *  -&gt; unit&#xA;override this.GetPEKind :  *  -&gt; unit" Usage="module.GetPEKind (peKind, machine)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1160,8 +1228,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="peKind" Type="System.Reflection.PortableExecutableKinds&amp;" RefType="out" />
-        <Parameter Name="machine" Type="System.Reflection.ImageFileMachine&amp;" RefType="out" />
+        <Parameter Name="peKind" Type="System.Reflection.PortableExecutableKinds" RefType="out" />
+        <Parameter Name="machine" Type="System.Reflection.ImageFileMachine" RefType="out" />
       </Parameters>
       <Docs>
         <param name="peKind">When this method returns, a combination of the <see cref="T:System.Reflection.PortableExecutableKinds" /> values indicating the nature of the code in the module.</param>
@@ -1176,9 +1244,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetSignerCertificate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSignerCertificate () As X509Certificate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::X509Certificates::X509Certificate ^ GetSignerCertificate();" />
+      <MemberSignature Language="F#" Value="abstract member GetSignerCertificate : unit -&gt; System.Security.Cryptography.X509Certificates.X509Certificate&#xA;override this.GetSignerCertificate : unit -&gt; System.Security.Cryptography.X509Certificates.X509Certificate" Usage="module.GetSignerCertificate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1207,6 +1278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetType (className As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType(System::String ^ className);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string -&gt; Type" Usage="module.GetType className" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1214,6 +1286,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1227,7 +1301,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1289,6 +1363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetType(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetType (className As String, ignoreCase As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType(System::String ^ className, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * bool -&gt; Type" Usage="module.GetType (className, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1296,6 +1371,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1309,7 +1386,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1374,6 +1451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetType (className As String, throwOnError As Boolean, ignoreCase As Boolean) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType(System::String ^ className, bool throwOnError, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * bool * bool -&gt; Type" Usage="module.GetType (className, throwOnError, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1382,6 +1460,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1395,7 +1475,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1466,6 +1546,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.GetTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetTypes();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypes : unit -&gt; Type[]&#xA;override this.GetTypes : unit -&gt; Type[]" Usage="module.GetTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1473,6 +1554,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1517,12 +1600,15 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDefined(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="abstract member IsDefined : Type * bool -&gt; bool&#xA;override this.IsDefined : Type * bool -&gt; bool" Usage="module.IsDefined (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1572,9 +1658,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.IsResource" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsResource () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsResource();" />
+      <MemberSignature Language="F#" Value="abstract member IsResource : unit -&gt; bool&#xA;override this.IsResource : unit -&gt; bool" Usage="module.IsResource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1615,9 +1704,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.MDStreamVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MDStreamVersion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MDStreamVersion { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MDStreamVersion : int" Usage="System.Reflection.Module.MDStreamVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1654,9 +1745,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.MetadataToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MetadataToken As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MetadataToken { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataToken : int" Usage="System.Reflection.Module.MetadataToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1694,9 +1787,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.ModuleHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModuleHandle As ModuleHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property ModuleHandle ModuleHandle { ModuleHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModuleHandle : ModuleHandle" Usage="System.Reflection.Module.ModuleHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1724,6 +1819,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.ModuleVersionId" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ModuleVersionId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid ModuleVersionId { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModuleVersionId : Guid" Usage="System.Reflection.Module.ModuleVersionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1731,6 +1827,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1768,6 +1865,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Module.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1777,6 +1875,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1824,6 +1924,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.op_Equality(System.Reflection.Module,System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Module, right As Module) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Module ^ left, System::Reflection::Module ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Module * System.Reflection.Module -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1861,6 +1962,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.op_Inequality(System.Reflection.Module,System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Module, right As Module) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Module ^ left, System::Reflection::Module ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Module * System.Reflection.Module -&gt; bool" Usage="System.Reflection.Module.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1908,9 +2010,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveField(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveField (metadataToken As Integer) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ ResolveField(int metadataToken);" />
+      <MemberSignature Language="F#" Value="member this.ResolveField : int -&gt; System.Reflection.FieldInfo" Usage="module.ResolveField metadataToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1962,9 +2066,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveField(System.Int32,System.Type[],System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveField (metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ ResolveField(int metadataToken, cli::array &lt;Type ^&gt; ^ genericTypeArguments, cli::array &lt;Type ^&gt; ^ genericMethodArguments);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveField : int * Type[] * Type[] -&gt; System.Reflection.FieldInfo&#xA;override this.ResolveField : int * Type[] * Type[] -&gt; System.Reflection.FieldInfo" Usage="module.ResolveField (metadataToken, genericTypeArguments, genericMethodArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2030,9 +2136,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveMember(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveMember (metadataToken As Integer) As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MemberInfo ^ ResolveMember(int metadataToken);" />
+      <MemberSignature Language="F#" Value="member this.ResolveMember : int -&gt; System.Reflection.MemberInfo" Usage="module.ResolveMember metadataToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2088,9 +2196,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveMember(System.Int32,System.Type[],System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveMember (metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As MemberInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MemberInfo ^ ResolveMember(int metadataToken, cli::array &lt;Type ^&gt; ^ genericTypeArguments, cli::array &lt;Type ^&gt; ^ genericMethodArguments);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveMember : int * Type[] * Type[] -&gt; System.Reflection.MemberInfo&#xA;override this.ResolveMember : int * Type[] * Type[] -&gt; System.Reflection.MemberInfo" Usage="module.ResolveMember (metadataToken, genericTypeArguments, genericMethodArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2160,9 +2270,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveMethod(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveMethod (metadataToken As Integer) As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodBase ^ ResolveMethod(int metadataToken);" />
+      <MemberSignature Language="F#" Value="member this.ResolveMethod : int -&gt; System.Reflection.MethodBase" Usage="module.ResolveMethod metadataToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2240,9 +2352,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveMethod(System.Int32,System.Type[],System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveMethod (metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As MethodBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodBase ^ ResolveMethod(int metadataToken, cli::array &lt;Type ^&gt; ^ genericTypeArguments, cli::array &lt;Type ^&gt; ^ genericMethodArguments);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveMethod : int * Type[] * Type[] -&gt; System.Reflection.MethodBase&#xA;override this.ResolveMethod : int * Type[] * Type[] -&gt; System.Reflection.MethodBase" Usage="module.ResolveMethod (metadataToken, genericTypeArguments, genericMethodArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2324,9 +2438,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveSignature(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveSignature (metadataToken As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ ResolveSignature(int metadataToken);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveSignature : int -&gt; byte[]&#xA;override this.ResolveSignature : int -&gt; byte[]" Usage="module.ResolveSignature metadataToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2371,9 +2487,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveString (metadataToken As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ResolveString(int metadataToken);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveString : int -&gt; string&#xA;override this.ResolveString : int -&gt; string" Usage="module.ResolveString metadataToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2428,9 +2546,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveType (metadataToken As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ ResolveType(int metadataToken);" />
+      <MemberSignature Language="F#" Value="member this.ResolveType : int -&gt; Type" Usage="module.ResolveType metadataToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2480,9 +2600,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveType (metadataToken As Integer, genericTypeArguments As Type(), genericMethodArguments As Type()) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ ResolveType(int metadataToken, cli::array &lt;Type ^&gt; ^ genericTypeArguments, cli::array &lt;Type ^&gt; ^ genericMethodArguments);" />
+      <MemberSignature Language="F#" Value="abstract member ResolveType : int * Type[] * Type[] -&gt; Type&#xA;override this.ResolveType : int * Type[] * Type[] -&gt; Type" Usage="module.ResolveType (metadataToken, genericTypeArguments, genericMethodArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2538,6 +2660,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Module.ScopeName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ScopeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ScopeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ScopeName : string" Usage="System.Reflection.Module.ScopeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2545,6 +2668,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2675,17 +2800,19 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Module.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_Module::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._Module.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._Module.GetIDsOfNames(System.Guid,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="rgszNames" Type="System.IntPtr" />
         <Parameter Name="cNames" Type="System.UInt32" />
         <Parameter Name="lcid" Type="System.UInt32" />
@@ -2721,6 +2848,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2755,17 +2884,19 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Module.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_Module::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._Module.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._Module.GetTypeInfoCount(System.UInt32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="pcTInfo" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
@@ -2789,10 +2920,12 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._Module.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_Module::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._Module.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._Module.Invoke(System.UInt32,System.Guid,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2800,7 +2933,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="dispIdMember" Type="System.UInt32" />
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="lcid" Type="System.UInt32" />
         <Parameter Name="wFlags" Type="System.Int16" />
         <Parameter Name="pDispParams" Type="System.IntPtr" />
@@ -2835,6 +2968,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Module.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="module.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2844,6 +2978,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

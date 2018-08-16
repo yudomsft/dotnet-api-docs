@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSHttpBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class WSHttpBinding&#xA;Inherits WSHttpBindingBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSHttpBinding : System::ServiceModel::WSHttpBindingBase" />
+  <TypeSignature Language="F#" Value="type WSHttpBinding = class&#xA;    inherit WSHttpBindingBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -50,6 +52,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -73,11 +76,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.SecurityMode securityMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.#ctor(System.ServiceModel.SecurityMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpBinding(System::ServiceModel::SecurityMode securityMode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WSHttpBinding : System.ServiceModel.SecurityMode -&gt; System.ServiceModel.WSHttpBinding" Usage="new System.ServiceModel.WSHttpBinding securityMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" />
       </Parameters>
@@ -103,9 +113,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpBinding(System::String ^ configName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WSHttpBinding : string -&gt; System.ServiceModel.WSHttpBinding" Usage="new System.ServiceModel.WSHttpBinding configName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -133,9 +145,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.SecurityMode securityMode, bool reliableSessionEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.#ctor(System.ServiceModel.SecurityMode,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpBinding(System::ServiceModel::SecurityMode securityMode, bool reliableSessionEnabled);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WSHttpBinding : System.ServiceModel.SecurityMode * bool -&gt; System.ServiceModel.WSHttpBinding" Usage="new System.ServiceModel.WSHttpBinding (securityMode, reliableSessionEnabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -166,13 +180,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBinding.AllowCookies" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowCookies As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowCookies { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowCookies : bool with get, set" Usage="System.ServiceModel.WSHttpBinding.AllowCookies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -231,6 +247,7 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.BuildChannelFactory``1(System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (parameters As BindingParameterCollection) As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingParameterCollection -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="wSHttpBinding.BuildChannelFactory parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -259,9 +276,11 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.CreateBindingElements" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="wSHttpBinding.CreateBindingElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,9 +315,11 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.CreateMessageSecurity" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateMessageSecurity () As SecurityBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::SecurityBindingElement ^ CreateMessageSecurity();" />
+      <MemberSignature Language="F#" Value="override this.CreateMessageSecurity : unit -&gt; System.ServiceModel.Channels.SecurityBindingElement" Usage="wSHttpBinding.CreateMessageSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,9 +338,11 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.GetTransport" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTransport () As TransportBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::TransportBindingElement ^ GetTransport();" />
+      <MemberSignature Language="F#" Value="override this.GetTransport : unit -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="wSHttpBinding.GetTransport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,11 +361,18 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBinding.Security" />
       <MemberSignature Language="VB.NET" Value="Public Property Security As WSHttpSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::WSHttpSecurity ^ Security { System::ServiceModel::WSHttpSecurity ^ get(); void set(System::ServiceModel::WSHttpSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.WSHttpSecurity with get, set" Usage="System.ServiceModel.WSHttpBinding.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.WSHttpSecurity</ReturnType>
       </ReturnValue>
@@ -373,14 +403,15 @@ MyWebServiceClient client = new MyWebServiceClient();
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBinding.ShouldSerializeSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSecurity () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSecurity();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSecurity : unit -&gt; bool" Usage="wSHttpBinding.ShouldSerializeSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

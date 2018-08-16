@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XDeclaration" />
   <TypeSignature Language="VB.NET" Value="Public Class XDeclaration" />
   <TypeSignature Language="C++ CLI" Value="public ref class XDeclaration" />
+  <TypeSignature Language="F#" Value="type XDeclaration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.#ctor(System.Xml.Linq.XDeclaration)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XDeclaration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XDeclaration(System::Xml::Linq::XDeclaration ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDeclaration : System.Xml.Linq.XDeclaration -&gt; System.Xml.Linq.XDeclaration" Usage="new System.Xml.Linq.XDeclaration other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -68,6 +71,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (version As String, encoding As String, standalone As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XDeclaration(System::String ^ version, System::String ^ encoding, System::String ^ standalone);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDeclaration : string * string * string -&gt; System.Xml.Linq.XDeclaration" Usage="new System.Xml.Linq.XDeclaration (version, encoding, standalone)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -108,12 +113,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="version" Type="System.String" />
         <Parameter Name="encoding" Type="System.String" />
@@ -171,6 +182,7 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.Xml.Linq.XDeclaration.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -182,12 +194,21 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -307,6 +328,7 @@ Encoding of loaded document is:utf-16
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Standalone" />
       <MemberSignature Language="VB.NET" Value="Public Property Standalone As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Standalone { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Standalone : string with get, set" Usage="System.Xml.Linq.XDeclaration.Standalone" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -318,12 +340,21 @@ Encoding of loaded document is:utf-16
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -374,6 +405,7 @@ yes
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xDeclaration.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -385,6 +417,7 @@ yes
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -407,6 +440,7 @@ yes
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Xml.Linq.XDeclaration.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -418,12 +452,21 @@ yes
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

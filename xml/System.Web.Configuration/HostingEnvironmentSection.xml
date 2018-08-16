@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HostingEnvironmentSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostingEnvironmentSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostingEnvironmentSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type HostingEnvironmentSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -58,8 +60,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HostingEnvironmentSection" /> class by using default settings.</summary>
@@ -79,19 +87,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.IdleTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanMinutesOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("idleTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:00:00")</AttributeName>
         </Attribute>
       </Attributes>
@@ -125,11 +135,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HostingEnvironmentSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
@@ -145,13 +162,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.ShadowCopyBinAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadowCopyBinAssemblies As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShadowCopyBinAssemblies { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowCopyBinAssemblies : bool with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.ShadowCopyBinAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("shadowCopyBinAssemblies", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -171,19 +190,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.ShutdownTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ShutdownTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ShutdownTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ShutdownTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.ShutdownTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanSecondsConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("shutdownTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:00:00")</AttributeName>
         </Attribute>
       </Attributes>
@@ -217,19 +238,20 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HostingEnvironmentSection.UrlMetadataSlidingExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Property UrlMetadataSlidingExpiration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UrlMetadataSlidingExpiration { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.UrlMetadataSlidingExpiration : TimeSpan with get, set" Usage="System.Web.Configuration.HostingEnvironmentSection.UrlMetadataSlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteTimeSpanConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("urlMetadataSlidingExpiration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:00:00")</AttributeName>
         </Attribute>
       </Attributes>

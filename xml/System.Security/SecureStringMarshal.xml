@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecureStringMarshal" />
   <TypeSignature Language="VB.NET" Value="Public Class SecureStringMarshal" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecureStringMarshal abstract sealed" />
+  <TypeSignature Language="F#" Value="type SecureStringMarshal = class" />
   <AssemblyInfo>
     <AssemblyName>System.Security.SecureString</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,8 +27,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netstandard-2.0">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,6 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToCoTaskMemAnsi(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToCoTaskMemAnsi (s As SecureString) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToCoTaskMemAnsi(System::Security::SecureString ^ s);" />
+      <MemberSignature Language="F#" Value="static member SecureStringToCoTaskMemAnsi : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToCoTaskMemAnsi s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>
@@ -59,6 +64,14 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -92,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToCoTaskMemUnicode (s As SecureString) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToCoTaskMemUnicode(System::Security::SecureString ^ s);" />
+      <MemberSignature Language="F#" Value="static member SecureStringToCoTaskMemUnicode : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>
@@ -110,6 +124,14 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -143,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToGlobalAllocAnsi(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToGlobalAllocAnsi (s As SecureString) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToGlobalAllocAnsi(System::Security::SecureString ^ s);" />
+      <MemberSignature Language="F#" Value="static member SecureStringToGlobalAllocAnsi : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToGlobalAllocAnsi s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>
@@ -161,6 +184,14 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -194,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecureStringMarshal.SecureStringToGlobalAllocUnicode(System.Security.SecureString)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SecureStringToGlobalAllocUnicode (s As SecureString) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr SecureStringToGlobalAllocUnicode(System::Security::SecureString ^ s);" />
+      <MemberSignature Language="F#" Value="static member SecureStringToGlobalAllocUnicode : System.Security.SecureString -&gt; nativeint" Usage="System.Security.SecureStringMarshal.SecureStringToGlobalAllocUnicode s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.SecureString</AssemblyName>
@@ -212,6 +244,14 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>

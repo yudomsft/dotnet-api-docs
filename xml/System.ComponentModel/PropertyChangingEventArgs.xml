@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyChangingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class PropertyChangingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyChangingEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type PropertyChangingEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -34,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangingEventArgs.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyChangingEventArgs(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.PropertyChangingEventArgs : string -&gt; System.ComponentModel.PropertyChangingEventArgs" Usage="new System.ComponentModel.PropertyChangingEventArgs propertyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -43,6 +46,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -50,6 +54,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
@@ -65,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.PropertyChangingEventArgs.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PropertyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.ComponentModel.PropertyChangingEventArgs.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -74,6 +84,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -81,6 +92,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

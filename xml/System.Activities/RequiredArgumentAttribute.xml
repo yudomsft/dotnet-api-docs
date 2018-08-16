@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.RequiredArgumentAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequiredArgumentAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequiredArgumentAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type RequiredArgumentAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,6 +34,11 @@
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new  instance of the <see cref="T:System.Activities.RequiredArgumentAttribute" /> class.</summary>
@@ -45,6 +51,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.RequiredArgumentAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Activities.RequiredArgumentAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

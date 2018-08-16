@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.PropertyBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyBuilder&#xA;Inherits PropertyInfo&#xA;Implements _PropertyBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyBuilder sealed : System::Reflection::PropertyInfo, System::Runtime::InteropServices::_PropertyBuilder" />
+  <TypeSignature Language="F#" Value="type PropertyBuilder = class&#xA;    inherit PropertyInfo&#xA;    interface _PropertyBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,13 +27,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._PropertyBuilder))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.AddOtherMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddOtherMethod (mdBuilder As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOtherMethod(System::Reflection::Emit::MethodBuilder ^ mdBuilder);" />
+      <MemberSignature Language="F#" Value="member this.AddOtherMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="propertyBuilder.AddOtherMethod mdBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -87,9 +91,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -112,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As PropertyAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::PropertyAttributes Attributes { System::Reflection::PropertyAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.PropertyAttributes" Usage="System.Reflection.Emit.PropertyBuilder.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -121,6 +133,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -139,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.Reflection.Emit.PropertyBuilder.CanRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -148,6 +163,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -174,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.Reflection.Emit.PropertyBuilder.CanWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -183,6 +201,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -209,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Reflection.Emit.PropertyBuilder.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -218,6 +239,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -236,9 +259,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetAccessors(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAccessors (nonPublic As Boolean) As MethodInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetAccessors(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="override this.GetAccessors : bool -&gt; System.Reflection.MethodInfo[]" Usage="propertyBuilder.GetAccessors nonPublic" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -284,9 +310,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="propertyBuilder.GetCustomAttributes inherit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -322,9 +351,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="propertyBuilder.GetCustomAttributes (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -362,9 +394,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetGetMethod(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGetMethod (nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetGetMethod(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="override this.GetGetMethod : bool -&gt; System.Reflection.MethodInfo" Usage="propertyBuilder.GetGetMethod nonPublic" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -399,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetIndexParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIndexParameters () As ParameterInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetIndexParameters();" />
+      <MemberSignature Language="F#" Value="override this.GetIndexParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="propertyBuilder.GetIndexParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -408,6 +444,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -435,9 +473,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetSetMethod(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSetMethod (nonPublic As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetSetMethod(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="override this.GetSetMethod : bool -&gt; System.Reflection.MethodInfo" Usage="propertyBuilder.GetSetMethod nonPublic" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -500,6 +541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetValue(System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (obj As Object, index As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ obj, cli::array &lt;System::Object ^&gt; ^ index);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj * obj[] -&gt; obj" Usage="propertyBuilder.GetValue (obj, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -509,6 +551,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -540,9 +584,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] index, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.GetValue(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ index, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="propertyBuilder.GetValue (obj, invokeAttr, binder, index, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -586,9 +633,12 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="propertyBuilder.IsDefined (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -627,9 +677,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.Module" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Module As Module" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Reflection.Emit.PropertyBuilder.Module" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -661,6 +713,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Emit.PropertyBuilder.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -670,6 +723,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -688,9 +743,12 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.PropertyToken" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyToken As PropertyToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::PropertyToken PropertyToken { System::Reflection::Emit::PropertyToken get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyToken : System.Reflection.Emit.PropertyToken" Usage="System.Reflection.Emit.PropertyBuilder.PropertyToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -709,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PropertyType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ PropertyType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.Reflection.Emit.PropertyBuilder.PropertyType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -718,6 +777,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -736,9 +797,12 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.PropertyBuilder.ReflectedType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Reflection.Emit.PropertyBuilder.ReflectedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -762,6 +826,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.SetConstant(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetConstant (defaultValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetConstant(System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.SetConstant : obj -&gt; unit" Usage="propertyBuilder.SetConstant defaultValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -771,9 +836,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -820,6 +892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (customBuilder As CustomAttributeBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::Emit::CustomAttributeBuilder ^ customBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.Emit.CustomAttributeBuilder -&gt; unit" Usage="propertyBuilder.SetCustomAttribute customBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -829,9 +902,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -853,6 +933,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCustomAttribute (con As ConstructorInfo, binaryAttribute As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCustomAttribute(System::Reflection::ConstructorInfo ^ con, cli::array &lt;System::Byte&gt; ^ binaryAttribute);" />
+      <MemberSignature Language="F#" Value="member this.SetCustomAttribute : System.Reflection.ConstructorInfo * byte[] -&gt; unit" Usage="propertyBuilder.SetCustomAttribute (con, binaryAttribute)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -862,12 +943,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -901,6 +987,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.SetGetMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetGetMethod (mdBuilder As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetGetMethod(System::Reflection::Emit::MethodBuilder ^ mdBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetGetMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="propertyBuilder.SetGetMethod mdBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -910,9 +997,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -946,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.SetSetMethod(System.Reflection.Emit.MethodBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSetMethod (mdBuilder As MethodBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSetMethod(System::Reflection::Emit::MethodBuilder ^ mdBuilder);" />
+      <MemberSignature Language="F#" Value="member this.SetSetMethod : System.Reflection.Emit.MethodBuilder -&gt; unit" Usage="propertyBuilder.SetSetMethod mdBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -955,9 +1050,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1001,6 +1103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.SetValue(System.Object,System.Object,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (obj As Object, value As Object, index As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ obj, System::Object ^ value, cli::array &lt;System::Object ^&gt; ^ index);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj * obj * obj[] -&gt; unit" Usage="propertyBuilder.SetValue (obj, value, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit</AssemblyName>
@@ -1010,6 +1113,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1042,9 +1147,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object obj, object value, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] index, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.PropertyBuilder.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ obj, System::Object ^ value, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ index, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj * obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; unit" Usage="propertyBuilder.SetValue (obj, value, invokeAttr, binder, index, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1091,10 +1199,12 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._PropertyBuilder.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_PropertyBuilder::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._PropertyBuilder.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._PropertyBuilder.GetIDsOfNames(System.Guid,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1102,7 +1212,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="rgszNames" Type="System.IntPtr" />
         <Parameter Name="cNames" Type="System.UInt32" />
         <Parameter Name="lcid" Type="System.UInt32" />
@@ -1138,6 +1248,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1173,10 +1285,12 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._PropertyBuilder.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_PropertyBuilder::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._PropertyBuilder.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._PropertyBuilder.GetTypeInfoCount(System.UInt32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1184,7 +1298,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="pcTInfo" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
@@ -1208,10 +1322,12 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._PropertyBuilder.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_PropertyBuilder::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._PropertyBuilder.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._PropertyBuilder.Invoke(System.UInt32,System.Guid,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1220,7 +1336,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="dispIdMember" Type="System.UInt32" />
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="lcid" Type="System.UInt32" />
         <Parameter Name="wFlags" Type="System.Int16" />
         <Parameter Name="pDispParams" Type="System.IntPtr" />

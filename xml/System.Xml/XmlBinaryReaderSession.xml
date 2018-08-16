@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlBinaryReaderSession" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlBinaryReaderSession&#xA;Implements IXmlDictionary" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlBinaryReaderSession : System::Xml::IXmlDictionary" />
+  <TypeSignature Language="F#" Value="type XmlBinaryReaderSession = class&#xA;    interface IXmlDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -61,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.Add(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (id As Integer, value As String) As XmlDictionaryString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryString ^ Add(int id, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : int * string -&gt; System.Xml.XmlDictionaryString" Usage="xmlBinaryReaderSession.Add (id, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -89,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="xmlBinaryReaderSession.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -131,6 +137,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -162,9 +169,10 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLookup (key As Integer, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(int key, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : int *  -&gt; bool&#xA;override this.TryLookup : int *  -&gt; bool" Usage="xmlBinaryReaderSession.TryLookup (key, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)</InterfaceMember>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -175,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -186,7 +195,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="System.Int32" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key to search on.</param>
@@ -205,9 +214,10 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.TryLookup(System.String,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLookup (value As String, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::String ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : string *  -&gt; bool&#xA;override this.TryLookup : string *  -&gt; bool" Usage="xmlBinaryReaderSession.TryLookup (value, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)</InterfaceMember>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -218,6 +228,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -229,7 +240,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The value to search for.</param>
@@ -248,9 +259,10 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlBinaryReaderSession.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryLookup (value As XmlDictionaryString, ByRef result As XmlDictionaryString) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::Xml::XmlDictionaryString ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool&#xA;override this.TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool" Usage="xmlBinaryReaderSession.TryLookup (value, result)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)</InterfaceMember>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -261,6 +273,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -272,7 +285,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Xml.XmlDictionaryString" />
-        <Parameter Name="result" Type="System.Xml.XmlDictionaryString&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Xml.XmlDictionaryString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The value to search for.</param>

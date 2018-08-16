@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.Binding" />
   <TypeSignature Language="VB.NET" Value="Public Class Binding&#xA;Inherits BindingBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class Binding : System::Windows::Data::BindingBase" />
+  <TypeSignature Language="F#" Value="type Binding = class&#xA;    inherit BindingBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -70,6 +72,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -84,9 +87,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Binding(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Data.Binding : string -&gt; System.Windows.Data.Binding" Usage="new System.Windows.Data.Binding path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -104,9 +109,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.AddSourceUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddSourceUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddSourceUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddSourceUpdatedHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; -&gt; unit" Usage="System.Windows.Data.Binding.AddSourceUpdatedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,9 +143,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.AddTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddTargetUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddTargetUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member AddTargetUpdatedHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; -&gt; unit" Usage="System.Windows.Data.Binding.AddTargetUpdatedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,14 +177,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.AsyncState" />
       <MemberSignature Language="VB.NET" Value="Public Property AsyncState As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AsyncState { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncState : obj with get, set" Usage="System.Windows.Data.Binding.AsyncState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -196,14 +210,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.BindsDirectlyToSource" />
       <MemberSignature Language="VB.NET" Value="Public Property BindsDirectlyToSource As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BindsDirectlyToSource { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BindsDirectlyToSource : bool with get, set" Usage="System.Windows.Data.Binding.BindsDirectlyToSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -231,14 +250,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Converter" />
       <MemberSignature Language="VB.NET" Value="Public Property Converter As IValueConverter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::IValueConverter ^ Converter { System::Windows::Data::IValueConverter ^ get(); void set(System::Windows::Data::IValueConverter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Converter : System.Windows.Data.IValueConverter with get, set" Usage="System.Windows.Data.Binding.Converter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -277,17 +301,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ConverterCulture" />
       <MemberSignature Language="VB.NET" Value="Public Property ConverterCulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ ConverterCulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConverterCulture : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Data.Binding.ConverterCulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.CultureInfoIetfLanguageTagConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -314,14 +343,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ConverterParameter" />
       <MemberSignature Language="VB.NET" Value="Public Property ConverterParameter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ConverterParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConverterParameter : obj with get, set" Usage="System.Windows.Data.Binding.ConverterParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -348,9 +382,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.DoNothing" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DoNothing As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ DoNothing;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DoNothing : obj" Usage="System.Windows.Data.Binding.DoNothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,14 +410,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ElementName" />
       <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string with get, set" Usage="System.Windows.Data.Binding.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -412,9 +453,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.GetXmlNamespaceManager(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXmlNamespaceManager (target As DependencyObject) As XmlNamespaceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlNamespaceManager ^ GetXmlNamespaceManager(System::Windows::DependencyObject ^ target);" />
+      <MemberSignature Language="F#" Value="static member GetXmlNamespaceManager : System.Windows.DependencyObject -&gt; System.Xml.XmlNamespaceManager" Usage="System.Windows.Data.Binding.GetXmlNamespaceManager target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,9 +493,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.IndexerName" />
       <MemberSignature Language="VB.NET" Value="Public Const IndexerName As String " />
       <MemberSignature Language="C++ CLI" Value="public: System::String ^ IndexerName;" />
+      <MemberSignature Language="F#" Value="val mutable IndexerName : string" Usage="System.Windows.Data.Binding.IndexerName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -469,14 +514,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.IsAsync" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAsync As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsync { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAsync : bool with get, set" Usage="System.Windows.Data.Binding.IsAsync" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -509,13 +559,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As BindingMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingMode Mode { System::Windows::Data::BindingMode get(); void set(System::Windows::Data::BindingMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Windows.Data.BindingMode with get, set" Usage="System.Windows.Data.Binding.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -547,13 +599,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.NotifyOnSourceUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyOnSourceUpdated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnSourceUpdated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyOnSourceUpdated : bool with get, set" Usage="System.Windows.Data.Binding.NotifyOnSourceUpdated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -574,13 +628,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.NotifyOnTargetUpdated" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyOnTargetUpdated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnTargetUpdated { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyOnTargetUpdated : bool with get, set" Usage="System.Windows.Data.Binding.NotifyOnTargetUpdated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -601,13 +657,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.NotifyOnValidationError" />
       <MemberSignature Language="VB.NET" Value="Public Property NotifyOnValidationError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NotifyOnValidationError { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NotifyOnValidationError : bool with get, set" Usage="System.Windows.Data.Binding.NotifyOnValidationError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -636,11 +694,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As PropertyPath" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PropertyPath ^ Path { System::Windows::PropertyPath ^ get(); void set(System::Windows::PropertyPath ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : System.Windows.PropertyPath with get, set" Usage="System.Windows.Data.Binding.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.PropertyPath</ReturnType>
       </ReturnValue>
@@ -696,14 +761,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.RelativeSource" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeSource As RelativeSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::RelativeSource ^ RelativeSource { System::Windows::Data::RelativeSource ^ get(); void set(System::Windows::Data::RelativeSource ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeSource : System.Windows.Data.RelativeSource with get, set" Usage="System.Windows.Data.Binding.RelativeSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -742,9 +812,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.RemoveSourceUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveSourceUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveSourceUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveSourceUpdatedHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; -&gt; unit" Usage="System.Windows.Data.Binding.RemoveSourceUpdatedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -774,9 +846,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.RemoveTargetUpdatedHandler(System.Windows.DependencyObject,System.EventHandler{System.Windows.Data.DataTransferEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveTargetUpdatedHandler (element As DependencyObject, handler As EventHandler(Of DataTransferEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveTargetUpdatedHandler(System::Windows::DependencyObject ^ element, EventHandler&lt;System::Windows::Data::DataTransferEventArgs ^&gt; ^ handler);" />
+      <MemberSignature Language="F#" Value="static member RemoveTargetUpdatedHandler : System.Windows.DependencyObject * EventHandler&lt;System.Windows.Data.DataTransferEventArgs&gt; -&gt; unit" Usage="System.Windows.Data.Binding.RemoveTargetUpdatedHandler (element, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -806,9 +880,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.SetXmlNamespaceManager(System.Windows.DependencyObject,System.Xml.XmlNamespaceManager)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetXmlNamespaceManager (target As DependencyObject, value As XmlNamespaceManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetXmlNamespaceManager(System::Windows::DependencyObject ^ target, System::Xml::XmlNamespaceManager ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetXmlNamespaceManager : System.Windows.DependencyObject * System.Xml.XmlNamespaceManager -&gt; unit" Usage="System.Windows.Data.Binding.SetXmlNamespaceManager (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -840,13 +916,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.ShouldSerializePath" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializePath () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializePath();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializePath : unit -&gt; bool" Usage="binding.ShouldSerializePath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -874,13 +955,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.ShouldSerializeSource" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSource () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSource();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSource : unit -&gt; bool" Usage="binding.ShouldSerializeSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -908,13 +994,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.Binding.ShouldSerializeValidationRules" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeValidationRules () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeValidationRules();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeValidationRules : unit -&gt; bool" Usage="binding.ShouldSerializeValidationRules " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -942,9 +1033,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Source { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : obj with get, set" Usage="System.Windows.Data.Binding.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -999,14 +1092,33 @@
       <MemberSignature Language="ILAsm" Value="see AddSourceUpdatedHandler, and RemoveSourceUpdatedHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.Binding.SourceUpdated" />
       <MemberSignature Language="VB.NET" Value="see AddSourceUpdatedHandler, and RemoveSourceUpdatedHandler" />
+      <MemberSignature Language="F#" Value="see AddSourceUpdatedHandler, and RemoveSourceUpdatedHandler" Usage="see AddSourceUpdatedHandler, and RemoveSourceUpdatedHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a value is transferred from the binding target to the binding source, but only for bindings with the <see cref="P:System.Windows.Data.Binding.NotifyOnSourceUpdated" /> value set to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_SourceUpdatedEvent"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.Binding.SourceUpdatedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.EventHandler%601>, constrained to <xref:System.Windows.Data.DataTransferEventArgs>.|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateSource" />
+        <altmember cref="E:System.Windows.Data.Binding.TargetUpdated" />
       </Docs>
     </Member>
     <Member MemberName="SourceUpdatedEvent">
@@ -1015,9 +1127,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.SourceUpdatedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceUpdatedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SourceUpdatedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceUpdatedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Data.Binding.SourceUpdatedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1033,14 +1147,33 @@
       <MemberSignature Language="ILAsm" Value="see AddTargetUpdatedHandler, and RemoveTargetUpdatedHandler" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.Binding.TargetUpdated" />
       <MemberSignature Language="VB.NET" Value="see AddTargetUpdatedHandler, and RemoveTargetUpdatedHandler" />
+      <MemberSignature Language="F#" Value="see AddTargetUpdatedHandler, and RemoveTargetUpdatedHandler" Usage="see AddTargetUpdatedHandler, and RemoveTargetUpdatedHandler" />
       <MemberType>AttachedEvent</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a value is transferred from the binding source to the binding target, but only for bindings with the <see cref="P:System.Windows.Data.Binding.NotifyOnTargetUpdated" /> value set to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="routedEventInfo_TargetUpdatedEvent"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.Binding.TargetUpdatedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.EventHandler%601>, constrained to <xref:System.Windows.Data.DataTransferEventArgs>.|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Data.BindingExpression.UpdateTarget" />
+        <altmember cref="E:System.Windows.Data.Binding.SourceUpdated" />
       </Docs>
     </Member>
     <Member MemberName="TargetUpdatedEvent">
@@ -1049,9 +1182,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.TargetUpdatedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetUpdatedEvent As RoutedEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ TargetUpdatedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetUpdatedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Data.Binding.TargetUpdatedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1068,14 +1203,25 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.UpdateSourceExceptionFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateSourceExceptionFilter As UpdateSourceExceptionFilterCallback" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::UpdateSourceExceptionFilterCallback ^ UpdateSourceExceptionFilter { System::Windows::Data::UpdateSourceExceptionFilterCallback ^ get(); void set(System::Windows::Data::UpdateSourceExceptionFilterCallback ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateSourceExceptionFilter : System.Windows.Data.UpdateSourceExceptionFilterCallback with get, set" Usage="System.Windows.Data.Binding.UpdateSourceExceptionFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1119,13 +1265,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.UpdateSourceTrigger" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdateSourceTrigger As UpdateSourceTrigger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::UpdateSourceTrigger UpdateSourceTrigger { System::Windows::Data::UpdateSourceTrigger get(); void set(System::Windows::Data::UpdateSourceTrigger value); };" />
+      <MemberSignature Language="F#" Value="member this.UpdateSourceTrigger : System.Windows.Data.UpdateSourceTrigger with get, set" Usage="System.Windows.Data.Binding.UpdateSourceTrigger" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1156,13 +1304,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidatesOnDataErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnDataErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnDataErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatesOnDataErrors : bool with get, set" Usage="System.Windows.Data.Binding.ValidatesOnDataErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1204,13 +1354,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidatesOnExceptions" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnExceptions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnExceptions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatesOnExceptions : bool with get, set" Usage="System.Windows.Data.Binding.ValidatesOnExceptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1252,13 +1404,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidatesOnNotifyDataErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidatesOnNotifyDataErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidatesOnNotifyDataErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidatesOnNotifyDataErrors : bool with get, set" Usage="System.Windows.Data.Binding.ValidatesOnNotifyDataErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1285,9 +1438,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.ValidationRules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationRules As Collection(Of ValidationRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ ValidationRules { System::Collections::ObjectModel::Collection&lt;System::Windows::Controls::ValidationRule ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationRules : System.Collections.ObjectModel.Collection&lt;System.Windows.Controls.ValidationRule&gt;" Usage="System.Windows.Data.Binding.ValidationRules" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1334,14 +1489,31 @@
       <MemberSignature Language="ILAsm" Value="see GetXmlNamespaceManager, and SetXmlNamespaceManager" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.XmlNamespaceManager" />
       <MemberSignature Language="VB.NET" Value="see GetXmlNamespaceManager, and SetXmlNamespaceManager" />
+      <MemberSignature Language="F#" Value="see GetXmlNamespaceManager, and SetXmlNamespaceManager" Usage="see GetXmlNamespaceManager, and SetXmlNamespaceManager" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the <see cref="T:System.Xml.XmlNamespaceManager" /> used to perform namespace-aware <see langword="XPath" /> queries in XML bindings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attached property uses property value inheritance, which reproduces the behavior of namespace inheritance that is present in [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)]. For details, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+<a name="dependencyPropertyInfo_XmlNamespaceManager"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Data.Binding.XmlNamespaceManagerProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlNamespaceManagerProperty">
@@ -1350,9 +1522,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.Binding.XmlNamespaceManagerProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XmlNamespaceManagerProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ XmlNamespaceManagerProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable XmlNamespaceManagerProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.Binding.XmlNamespaceManagerProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1369,14 +1543,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.Binding.XPath" />
       <MemberSignature Language="VB.NET" Value="Public Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string with get, set" Usage="System.Windows.Data.Binding.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

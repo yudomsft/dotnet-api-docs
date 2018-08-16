@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.UndoUnitEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class UndoUnitEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class UndoUnitEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type UndoUnitEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the argument that is passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAddedevent" /> event.</summary>
+    <summary>Represents the argument that is passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAdded" /> event.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.UndoUnitEventArgs" /> class.</summary>
@@ -40,16 +46,25 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.UndoUnitEventArgs.UndoUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property UndoUnit As UndoUnit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::UndoUnit ^ UndoUnit { System::Activities::Presentation::UndoUnit ^ get(); void set(System::Activities::Presentation::UndoUnit ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UndoUnit : System.Activities.Presentation.UndoUnit with get, set" Usage="System.Activities.Presentation.UndoUnitEventArgs.UndoUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.UndoUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Activities.Presentation.UndoUnit" /> to be passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAddedevent" /> event.</summary>
+        <summary>Gets or sets the <see cref="T:System.Activities.Presentation.UndoUnit" /> to be passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAdded" /> event.</summary>
         <value>Returns <see cref="T:System.Activities.Presentation.UndoUnit" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

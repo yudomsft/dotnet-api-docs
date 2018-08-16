@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.GridViewCellAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewCellAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer&#xA;Implements ITableItemProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewCellAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer, System::Windows::Automation::Provider::ITableItemProvider" />
+  <TypeSignature Language="F#" Value="type GridViewCellAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer&#xA;    interface ITableItemProvider&#xA;    interface IGridItemProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,9 +29,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewCellAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="gridViewCellAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,9 +52,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewCellAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="gridViewCellAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,9 +74,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewCellAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="gridViewCellAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,9 +100,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewCellAutomationPeer.IsControlElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsControlElementCore : unit -&gt; bool" Usage="gridViewCellAutomationPeer.IsControlElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,15 +122,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Column" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Column As Integer Implements IGridItemProvider.Column" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.Column { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Windows::Automation::Provider::IGridItemProvider::Column { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IGridItemProvider.Column" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.Column</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -142,13 +159,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ColumnSpan" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ColumnSpan As Integer Implements IGridItemProvider.ColumnSpan" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Windows::Automation::Provider::IGridItemProvider::ColumnSpan { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,13 +191,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ContainingGrid" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainingGrid As IRawElementProviderSimple Implements IGridItemProvider.ContainingGrid" />
-      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::Provider::IRawElementProviderSimple ^ System::Windows::Automation::Provider::IGridItemProvider::ContainingGrid { System::Windows::Automation::Provider::IRawElementProviderSimple ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -202,15 +223,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.Row" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Row" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Row As Integer Implements IGridItemProvider.Row" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.Row { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Windows::Automation::Provider::IGridItemProvider::Row { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IGridItemProvider.Row" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.Row</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -232,13 +260,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.RowSpan" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#RowSpan" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property RowSpan As Integer Implements IGridItemProvider.RowSpan" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Windows.Automation.Provider.IGridItemProvider.RowSpan { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Windows::Automation::Provider::IGridItemProvider::RowSpan { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.IGridItemProvider.RowSpan" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.IGridItemProvider.RowSpan</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,6 +299,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,6 +324,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

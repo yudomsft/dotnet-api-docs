@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.DesignerSerializationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerSerializationManager&#xA;Implements IDesignerSerializationManager, IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerSerializationManager : IServiceProvider, System::ComponentModel::Design::Serialization::IDesignerSerializationManager" />
+  <TypeSignature Language="F#" Value="type DesignerSerializationManager = class&#xA;    interface IDesignerSerializationManager&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -114,6 +116,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -137,9 +140,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerSerializationManager(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.DesignerSerializationManager : IServiceProvider -&gt; System.ComponentModel.Design.Serialization.DesignerSerializationManager" Usage="new System.ComponentModel.Design.Serialization.DesignerSerializationManager provider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -171,9 +176,11 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.Container" />
       <MemberSignature Language="VB.NET" Value="Public Property Container As IContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IContainer ^ Container { System::ComponentModel::IContainer ^ get(); void set(System::ComponentModel::IContainer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Container : System.ComponentModel.IContainer with get, set" Usage="System.ComponentModel.Design.Serialization.DesignerSerializationManager.Container" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,9 +205,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object CreateInstance(class System.Type type, class System.Collections.ICollection arguments, string name, bool addToContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ CreateInstance(Type ^ type, System::Collections::ICollection ^ arguments, System::String ^ name, bool addToContainer);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : Type * System.Collections.ICollection * string * bool -&gt; obj&#xA;override this.CreateInstance : Type * System.Collections.ICollection * string * bool -&gt; obj" Usage="designerSerializationManager.CreateInstance (type, arguments, name, addToContainer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,9 +251,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateSession" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateSession () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ CreateSession();" />
+      <MemberSignature Language="F#" Value="member this.CreateSession : unit -&gt; IDisposable" Usage="designerSerializationManager.CreateSession " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,9 +284,11 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Errors { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Collections.IList" Usage="System.ComponentModel.Design.Serialization.DesignerSerializationManager.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetRuntimeType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeType (typeName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetRuntimeType(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="member this.GetRuntimeType : string -&gt; Type" Usage="designerSerializationManager.GetRuntimeType typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -325,9 +339,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetSerializer(System.Type,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSerializer (objectType As Type, serializerType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSerializer(Type ^ objectType, Type ^ serializerType);" />
+      <MemberSignature Language="F#" Value="member this.GetSerializer : Type * Type -&gt; obj" Usage="designerSerializationManager.GetSerializer (objectType, serializerType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,9 +378,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="designerSerializationManager.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,9 +411,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetType (typeName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetType(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string -&gt; Type" Usage="designerSerializationManager.GetType typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -424,9 +444,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.OnResolveName(System.ComponentModel.Design.Serialization.ResolveNameEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnResolveName (e As ResolveNameEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnResolveName(System::ComponentModel::Design::Serialization::ResolveNameEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnResolveName : System.ComponentModel.Design.Serialization.ResolveNameEventArgs -&gt; unit&#xA;override this.OnResolveName : System.ComponentModel.Design.Serialization.ResolveNameEventArgs -&gt; unit" Usage="designerSerializationManager.OnResolveName e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -462,9 +484,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.OnSessionCreated(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSessionCreated (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSessionCreated(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSessionCreated : EventArgs -&gt; unit&#xA;override this.OnSessionCreated : EventArgs -&gt; unit" Usage="designerSerializationManager.OnSessionCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -499,9 +523,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.OnSessionDisposed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSessionDisposed (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSessionDisposed(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSessionDisposed : EventArgs -&gt; unit&#xA;override this.OnSessionDisposed : EventArgs -&gt; unit" Usage="designerSerializationManager.OnSessionDisposed e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,11 +562,18 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.PreserveNames" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveNames As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveNames { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PreserveNames : bool with get, set" Usage="System.ComponentModel.Design.Serialization.DesignerSerializationManager.PreserveNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -569,11 +602,18 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.PropertyProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyProvider As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PropertyProvider { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyProvider : obj with get, set" Usage="System.ComponentModel.Design.Serialization.DesignerSerializationManager.PropertyProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -598,11 +638,18 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.RecycleInstances" />
       <MemberSignature Language="VB.NET" Value="Public Property RecycleInstances As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RecycleInstances { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RecycleInstances : bool with get, set" Usage="System.ComponentModel.Design.Serialization.DesignerSerializationManager.RecycleInstances" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -631,9 +678,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.SessionCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SessionCreated As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SessionCreated;" />
+      <MemberSignature Language="F#" Value="member this.SessionCreated : EventHandler " Usage="member this.SessionCreated : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -650,9 +699,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.SessionDisposed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SessionDisposed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SessionDisposed;" />
+      <MemberSignature Language="F#" Value="member this.SessionDisposed : EventHandler " Usage="member this.SessionDisposed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,6 +723,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -700,10 +752,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Serialization.ContextStack System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#Context" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Context As ContextStack Implements IDesignerSerializationManager.Context" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::Serialization::ContextStack ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::Serialization::ContextStack ^ System::ComponentModel::Design::Serialization::IDesignerSerializationManager::Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -733,6 +787,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -764,6 +819,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -793,6 +849,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -831,8 +888,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -857,6 +920,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -878,10 +942,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#Properties" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Properties As PropertyDescriptorCollection Implements IDesignerSerializationManager.Properties" />
-      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptorCollection ^ System::ComponentModel::Design::Serialization::IDesignerSerializationManager::Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -902,6 +968,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -934,6 +1001,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -960,6 +1028,48 @@
         <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
       </Docs>
     </Member>
+    <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.Design.Serialization.ResolveNameEventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.Serialization.ResolveNameEventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#ResolveName" />
+      <MemberSignature Language="VB.NET" Value="Custom Event ResolveName As ResolveNameEventHandler Implements System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.ResolveNameEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete">
+      <MemberSignature Language="C#" Value="event EventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#SerializationComplete" />
+      <MemberSignature Language="VB.NET" Value="Custom Event SerializationComplete As EventHandler Implements System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName">
       <MemberSignature Language="C#" Value="void IDesignerSerializationManager.SetName (object instance, string name);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName(object instance, string name) cil managed" />
@@ -969,6 +1079,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1007,8 +1118,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1039,11 +1156,18 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.DesignerSerializationManager.ValidateRecycledTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidateRecycledTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateRecycledTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidateRecycledTypes : bool with get, set" Usage="System.ComponentModel.Design.Serialization.DesignerSerializationManager.ValidateRecycledTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

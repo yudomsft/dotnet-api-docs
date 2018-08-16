@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.DllHostInitializer" />
   <TypeSignature Language="VB.NET" Value="Public Class DllHostInitializer&#xA;Implements IProcessInitializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DllHostInitializer : System::EnterpriseServices::IProcessInitializer" />
+  <TypeSignature Language="F#" Value="type DllHostInitializer = class&#xA;    interface IProcessInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,11 +19,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("59856830-3ECB-4D29-9CFE-DDD0F74B96A2")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.Guid("7B2801E6-0BC6-4c92-B742-6BE9B01AE874")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -38,6 +43,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -52,12 +58,14 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.DllHostInitializer.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit&#xA;override this.Shutdown : unit -&gt; unit" Usage="dllHostInitializer.Shutdown " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.IProcessInitializer.Shutdown</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,12 +83,14 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.DllHostInitializer.Startup(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Startup (punkProcessControl As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Startup(System::Object ^ punkProcessControl);" />
+      <MemberSignature Language="F#" Value="abstract member Startup : obj -&gt; unit&#xA;override this.Startup : obj -&gt; unit" Usage="dllHostInitializer.Startup punkProcessControl" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.IProcessInitializer.Startup(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

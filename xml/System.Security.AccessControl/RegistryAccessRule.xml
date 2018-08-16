@@ -4,12 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.RegistryAccessRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistryAccessRule&#xA;Inherits AccessRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistryAccessRule sealed : System::Security::AccessControl::AccessRule" />
+  <TypeSignature Language="F#" Value="type RegistryAccessRule = class&#xA;    inherit AccessRule" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -21,6 +23,11 @@
     <BaseTypeName>System.Security.AccessControl.AccessRule</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0">
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a set of access rights allowed or denied for a user or group. This class cannot be inherited.</summary>
     <remarks>
@@ -76,6 +83,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.RegistryRights registryRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::RegistryRights registryRights, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RegistryAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.RegistryRights * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.RegistryAccessRule" Usage="new System.Security.AccessControl.RegistryAccessRule (identity, registryRights, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -83,6 +91,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -129,6 +138,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.RegistryRights registryRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.String,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryAccessRule(System::String ^ identity, System::Security::AccessControl::RegistryRights registryRights, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RegistryAccessRule : string * System.Security.AccessControl.RegistryRights * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.RegistryAccessRule" Usage="new System.Security.AccessControl.RegistryAccessRule (identity, registryRights, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -136,6 +146,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -196,6 +207,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.RegistryRights registryRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::RegistryRights registryRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RegistryAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.RegistryRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.RegistryAccessRule" Usage="new System.Security.AccessControl.RegistryAccessRule (identity, registryRights, inheritanceFlags, propagationFlags, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -203,6 +215,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -275,6 +288,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.RegistryRights registryRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.String,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistryAccessRule(System::String ^ identity, System::Security::AccessControl::RegistryRights registryRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RegistryAccessRule : string * System.Security.AccessControl.RegistryRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.RegistryAccessRule" Usage="new System.Security.AccessControl.RegistryAccessRule (identity, registryRights, inheritanceFlags, propagationFlags, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -282,6 +296,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -371,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistryAccessRule.RegistryRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegistryRights As RegistryRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::RegistryRights RegistryRights { System::Security::AccessControl::RegistryRights get(); };" />
+      <MemberSignature Language="F#" Value="member this.RegistryRights : System.Security.AccessControl.RegistryRights" Usage="System.Security.AccessControl.RegistryAccessRule.RegistryRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -378,6 +394,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

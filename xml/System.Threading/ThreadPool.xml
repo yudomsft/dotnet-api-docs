@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPool" />
   <TypeSignature Language="VB.NET" Value="Public Class ThreadPool" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThreadPool abstract sealed" />
+  <TypeSignature Language="F#" Value="type ThreadPool = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.ThreadPool</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -106,9 +109,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.BindHandle(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BindHandle (osHandle As IntPtr) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool BindHandle(IntPtr osHandle);" />
+      <MemberSignature Language="F#" Value="static member BindHandle : nativeint -&gt; bool" Usage="System.Threading.ThreadPool.BindHandle osHandle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -122,10 +128,10 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("ThreadPool.BindHandle(IntPtr) has been deprecated.  Please use ThreadPool.BindHandle(SafeHandle) instead.", false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.BindHandle(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BindHandle (osHandle As SafeHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool BindHandle(System::Runtime::InteropServices::SafeHandle ^ osHandle);" />
+      <MemberSignature Language="F#" Value="static member BindHandle : System.Runtime.InteropServices.SafeHandle -&gt; bool" Usage="System.Threading.ThreadPool.BindHandle osHandle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -160,6 +167,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -168,8 +176,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -202,9 +213,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.GetAvailableThreads(System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub GetAvailableThreads (ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetAvailableThreads([Runtime::InteropServices::Out] int % workerThreads, [Runtime::InteropServices::Out] int % completionPortThreads);" />
+      <MemberSignature Language="F#" Value="static member GetAvailableThreads :  *  -&gt; unit" Usage="System.Threading.ThreadPool.GetAvailableThreads (workerThreads, completionPortThreads)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -218,7 +232,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -226,8 +240,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="completionPortThreads" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workerThreads">The number of available worker threads.</param>
@@ -263,9 +277,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.GetMaxThreads(System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub GetMaxThreads (ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetMaxThreads([Runtime::InteropServices::Out] int % workerThreads, [Runtime::InteropServices::Out] int % completionPortThreads);" />
+      <MemberSignature Language="F#" Value="static member GetMaxThreads :  *  -&gt; unit" Usage="System.Threading.ThreadPool.GetMaxThreads (workerThreads, completionPortThreads)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -279,7 +296,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -287,8 +304,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="completionPortThreads" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workerThreads">The maximum number of worker threads in the thread pool.</param>
@@ -329,9 +346,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.GetMinThreads(System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub GetMinThreads (ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetMinThreads([Runtime::InteropServices::Out] int % workerThreads, [Runtime::InteropServices::Out] int % completionPortThreads);" />
+      <MemberSignature Language="F#" Value="static member GetMinThreads :  *  -&gt; unit" Usage="System.Threading.ThreadPool.GetMinThreads (workerThreads, completionPortThreads)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -345,7 +365,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -353,8 +373,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="completionPortThreads" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workerThreads">When this method returns, contains the minimum number of worker threads that the thread pool creates on demand.</param>
@@ -401,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function QueueUserWorkItem (callBack As WaitCallback) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool QueueUserWorkItem(System::Threading::WaitCallback ^ callBack);" />
+      <MemberSignature Language="F#" Value="static member QueueUserWorkItem : System.Threading.WaitCallback -&gt; bool" Usage="System.Threading.ThreadPool.QueueUserWorkItem callBack" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -410,6 +431,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -418,7 +441,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -467,6 +490,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function QueueUserWorkItem (callBack As WaitCallback, state As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool QueueUserWorkItem(System::Threading::WaitCallback ^ callBack, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="static member QueueUserWorkItem : System.Threading.WaitCallback * obj -&gt; bool" Usage="System.Threading.ThreadPool.QueueUserWorkItem (callBack, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -476,6 +500,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -484,7 +510,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -516,7 +542,9 @@
    
   
 ## Examples  
- The following example shows how to create an object that contains task information. It also demonstrates how to pass that object to a task that is queued for execution by the thread pool.  
+ The following example uses the .NET thread pool to calculate the `Fibonacci` result for five numbers between 20 and 40. Each `Fibonacci` result is represented by the `Fibonacci` class, which provides a method named `ThreadPoolCallback` that performs the calculation. An object that represents each `Fibonacci` value is created, and the `ThreadPoolCallback` method is passed to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>, which assigns an available thread in the pool to execute the method.  
+  
+ Because each `Fibonacci` object is given a semi-random value to compute, and because each thread will be competing for processor time, you cannot know in advance how long it will take for all five results to be calculated. That is why each `Fibonacci` object is passed an instance of the <xref:System.Threading.ManualResetEvent> class during construction. Each object signals the provided event object when its calculation is complete, which allows the primary thread to block execution with <xref:System.Threading.WaitHandle.WaitAll%2A> until all five `Fibonacci` objects have calculated a result. The `Main` method then displays each `Fibonacci` result.
   
  [!code-cpp[System.Threading.ThreadPool QueueUserWorkItem1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem1/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.ThreadPool QueueUserWorkItem1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem1/CS/source.cs#1)]
@@ -535,6 +563,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.QueueUserWorkItem``1(System.Action{``0},``0,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function QueueUserWorkItem(Of TState) (callBack As Action(Of TState), state As TState, preferLocal As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TState&gt;&#xA; static bool QueueUserWorkItem(Action&lt;TState&gt; ^ callBack, TState state, bool preferLocal);" />
+      <MemberSignature Language="F#" Value="static member QueueUserWorkItem : Action&lt;'State&gt; * 'State * bool -&gt; bool" Usage="System.Threading.ThreadPool.QueueUserWorkItem (callBack, state, preferLocal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -577,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Integer, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, int millisecondsTimeOutInterval, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -586,6 +616,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -594,7 +626,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -654,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Long, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, long millisecondsTimeOutInterval, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int64 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -663,6 +696,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -671,7 +706,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -731,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, timeout As TimeSpan, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, TimeSpan timeout, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * TimeSpan * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, timeout, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -740,6 +776,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -748,7 +786,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -809,6 +847,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As UInteger, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, System::UInt32 millisecondsTimeOutInterval, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * uint32 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -818,6 +857,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -826,10 +867,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -904,9 +945,11 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.SetMaxThreads(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetMaxThreads (workerThreads As Integer, completionPortThreads As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetMaxThreads(int workerThreads, int completionPortThreads);" />
+      <MemberSignature Language="F#" Value="static member SetMaxThreads : int * int -&gt; bool" Usage="System.Threading.ThreadPool.SetMaxThreads (workerThreads, completionPortThreads)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -920,7 +963,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -964,9 +1007,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.SetMinThreads(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SetMinThreads (workerThreads As Integer, completionPortThreads As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetMinThreads(int workerThreads, int completionPortThreads);" />
+      <MemberSignature Language="F#" Value="static member SetMinThreads : int * int -&gt; bool" Usage="System.Threading.ThreadPool.SetMinThreads (workerThreads, completionPortThreads)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -980,7 +1026,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1032,9 +1078,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnsafeQueueNativeOverlapped(valuetype System.Threading.NativeOverlapped* overlapped) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeQueueNativeOverlapped(System.Threading.NativeOverlapped*)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnsafeQueueNativeOverlapped(System::Threading::NativeOverlapped* overlapped);" />
+      <MemberSignature Language="F#" Value="static member UnsafeQueueNativeOverlapped : nativeptr&lt;System.Threading.NativeOverlapped&gt; -&gt; bool" Usage="System.Threading.ThreadPool.UnsafeQueueNativeOverlapped overlapped" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1048,10 +1096,10 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1086,9 +1134,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeQueueUserWorkItem(System.Threading.WaitCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeQueueUserWorkItem (callBack As WaitCallback, state As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnsafeQueueUserWorkItem(System::Threading::WaitCallback ^ callBack, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="static member UnsafeQueueUserWorkItem : System.Threading.WaitCallback * obj -&gt; bool" Usage="System.Threading.ThreadPool.UnsafeQueueUserWorkItem (callBack, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1102,7 +1153,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1154,9 +1205,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Integer, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, int millisecondsTimeOutInterval, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1170,7 +1224,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1219,9 +1273,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Long, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, long millisecondsTimeOutInterval, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int64 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1235,7 +1292,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1284,9 +1341,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, timeout As TimeSpan, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, TimeSpan timeout, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * TimeSpan * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, timeout, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1300,7 +1360,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1350,9 +1410,12 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As UInteger, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, System::UInt32 millisecondsTimeOutInterval, bool executeOnlyOnce);" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * uint32 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1366,10 +1429,10 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

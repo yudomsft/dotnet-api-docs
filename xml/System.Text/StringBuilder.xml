@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Text.StringBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringBuilder&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringBuilder sealed : System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type StringBuilder = class&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -31,7 +34,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -303,6 +306,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -310,6 +315,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Text.StringBuilder" /> class.</summary>
@@ -338,6 +348,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Text.StringBuilder : int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -350,6 +361,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -357,6 +370,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
@@ -393,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Text.StringBuilder : string -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -405,6 +424,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -443,6 +464,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer, maxCapacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(int capacity, int maxCapacity);" />
+      <MemberSignature Language="F#" Value="new System.Text.StringBuilder : int * int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder (capacity, maxCapacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -455,6 +477,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -462,6 +486,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="capacity" Type="System.Int32" />
         <Parameter Name="maxCapacity" Type="System.Int32" />
@@ -506,6 +535,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value, int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Text.StringBuilder : string * int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder (value, capacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -518,6 +548,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -525,6 +557,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
         <Parameter Name="capacity" Type="System.Int32" />
@@ -563,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.#ctor(System.String,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, startIndex As Integer, length As Integer, capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StringBuilder(System::String ^ value, int startIndex, int length, int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Text.StringBuilder : string * int * int * int -&gt; System.Text.StringBuilder" Usage="new System.Text.StringBuilder (value, startIndex, length, capacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -575,6 +613,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -583,7 +623,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -646,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Boolean) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(bool value);" />
+      <MemberSignature Language="F#" Value="member this.Append : bool -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -658,6 +699,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -701,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Byte) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Byte value);" />
+      <MemberSignature Language="F#" Value="member this.Append : byte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -713,6 +757,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -758,6 +804,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char value);" />
+      <MemberSignature Language="F#" Value="member this.Append : char -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -770,6 +817,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -777,6 +826,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -813,6 +867,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(cli::array &lt;char&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Append : char[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -825,6 +880,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -833,7 +890,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -874,6 +931,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Decimal) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="member this.Append : decimal -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -886,6 +944,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -931,6 +991,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Double) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(double value);" />
+      <MemberSignature Language="F#" Value="member this.Append : double -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -943,6 +1004,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -988,6 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Short) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(short value);" />
+      <MemberSignature Language="F#" Value="member this.Append : int16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1000,6 +1064,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1045,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(int value);" />
+      <MemberSignature Language="F#" Value="member this.Append : int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1057,6 +1124,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1064,6 +1133,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -1102,6 +1176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Long) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(long value);" />
+      <MemberSignature Language="F#" Value="member this.Append : int64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1114,6 +1189,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1159,6 +1236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Append : obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1171,6 +1249,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1178,6 +1258,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -1216,6 +1301,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As ReadOnlySpan(Of Char)) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="F#" Value="member this.Append : ReadOnlySpan&lt;char&gt; -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1240,6 +1326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As SByte) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::SByte value);" />
+      <MemberSignature Language="F#" Value="member this.Append : sbyte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1252,6 +1339,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1302,6 +1391,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Single) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(float value);" />
+      <MemberSignature Language="F#" Value="member this.Append : single -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1314,6 +1404,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1359,6 +1451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As String) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Append : string -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1371,6 +1464,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1379,7 +1474,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1421,6 +1516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Text.StringBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As StringBuilder) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Text::StringBuilder ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Text.StringBuilder -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1445,6 +1541,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As UShort) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="member this.Append : uint16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1457,6 +1554,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1507,6 +1606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As UInteger) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="member this.Append : uint32 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1519,6 +1619,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1569,6 +1671,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As ULong) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="member this.Append : uint64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1581,6 +1684,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1631,6 +1736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char, repeatCount As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char value, int repeatCount);" />
+      <MemberSignature Language="F#" Value="member this.Append : char * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, repeatCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1643,6 +1749,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1650,6 +1758,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -1693,6 +1806,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Text.StringBuilder Append(char* value, int32 valueCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char*,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(char* value, int valueCount);" />
+      <MemberSignature Language="F#" Value="member this.Append : nativeptr&lt;char&gt; * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, valueCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1711,10 +1825,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1762,6 +1876,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(cli::array &lt;char&gt; ^ value, int startIndex, int charCount);" />
+      <MemberSignature Language="F#" Value="member this.Append : char[] * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, startIndex, charCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1774,6 +1889,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1782,7 +1899,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1843,6 +1960,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As String, startIndex As Integer, count As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::String ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.Append : string * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1855,6 +1973,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1863,7 +1983,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1924,6 +2044,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Append(System.Text.StringBuilder,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Append (value As StringBuilder, startIndex As Integer, count As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Append(System::Text::StringBuilder ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Text.StringBuilder * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Append (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1963,6 +2084,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, arg0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1973,6 +2095,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1980,6 +2104,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -2050,6 +2179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, ParamArray args As Object()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2062,6 +2192,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2145,6 +2277,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, arg0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2243,6 +2376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, ParamArray args As Object()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2255,6 +2389,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2262,6 +2398,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -2355,6 +2496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object, arg1 As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2365,6 +2507,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2444,6 +2588,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2544,6 +2689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : string * obj * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (format, arg0, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2554,6 +2700,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2635,6 +2783,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendFormat (provider As IFormatProvider, format As String, arg0 As Object, arg1 As Object, arg2 As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendFormat(IFormatProvider ^ provider, System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="member this.AppendFormat : IFormatProvider * string * obj * obj * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendFormat (provider, format, arg0, arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2737,6 +2886,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As Char, ParamArray values As Object()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AppendJoin : char * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2770,6 +2920,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.Char,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As Char, ParamArray values As String()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, ... cli::array &lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AppendJoin : char * string[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2803,6 +2954,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As String, ParamArray values As Object()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, ... cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AppendJoin : string * obj[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2836,6 +2988,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin (separator As String, ParamArray values As String()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, ... cli::array &lt;System::String ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AppendJoin : string * string[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2869,6 +3022,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin``1(System.Char,System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin(Of T) (separator As Char, values As IEnumerable(Of T)) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Text::StringBuilder ^ AppendJoin(char separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AppendJoin : char * seq&lt;'T&gt; -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2900,6 +3054,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendJoin``1(System.String,System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendJoin(Of T) (separator As String, values As IEnumerable(Of T)) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Text::StringBuilder ^ AppendJoin(System::String ^ separator, System::Collections::Generic::IEnumerable&lt;T&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="member this.AppendJoin : string * seq&lt;'T&gt; -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendJoin (separator, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2944,6 +3099,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendLine" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendLine () As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendLine();" />
+      <MemberSignature Language="F#" Value="member this.AppendLine : unit -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2956,6 +3112,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2964,7 +3121,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3007,6 +3164,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.AppendLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AppendLine (value As String) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ AppendLine(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AppendLine : string -&gt; System.Text.StringBuilder" Usage="stringBuilder.AppendLine value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3019,6 +3177,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3027,7 +3186,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3064,6 +3223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Text.StringBuilder.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3076,6 +3236,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3083,6 +3245,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -3121,6 +3288,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Chars(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Chars(index As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); void set(int index, char value); };" />
+      <MemberSignature Language="F#" Value="member this.Chars(int) : char with get, set" Usage="System.Text.StringBuilder.Chars" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3133,6 +3301,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3180,6 +3350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Function Clear () As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; System.Text.StringBuilder" Usage="stringBuilder.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3232,6 +3403,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.CopyTo(System.Int32,System.Span{System.Char},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (sourceIndex As Integer, destination As Span(Of Char), count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int sourceIndex, Span&lt;char&gt; destination, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : int * Span&lt;char&gt; * int -&gt; unit" Usage="stringBuilder.CopyTo (sourceIndex, destination, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3259,6 +3431,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (sourceIndex As Integer, destination As Char(), destinationIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int sourceIndex, cli::array &lt;char&gt; ^ destination, int destinationIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : int * char[] * int * int -&gt; unit" Usage="stringBuilder.CopyTo (sourceIndex, destination, destinationIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3271,6 +3444,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3279,10 +3453,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -3342,6 +3516,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.EnsureCapacity(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function EnsureCapacity (capacity As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnsureCapacity(int capacity);" />
+      <MemberSignature Language="F#" Value="member this.EnsureCapacity : int -&gt; int" Usage="stringBuilder.EnsureCapacity capacity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3354,6 +3529,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3402,6 +3579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Equals(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (span As ReadOnlySpan(Of Char)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(ReadOnlySpan&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="override this.Equals : ReadOnlySpan&lt;char&gt; -&gt; bool" Usage="stringBuilder.Equals span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3426,6 +3604,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Equals(System.Text.StringBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (sb As StringBuilder) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Text::StringBuilder ^ sb);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Text.StringBuilder -&gt; bool" Usage="stringBuilder.Equals sb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3438,6 +3617,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3489,6 +3670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Boolean) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, bool value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * bool -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3501,6 +3683,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3552,6 +3736,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Byte) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Byte value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * byte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3564,6 +3749,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3615,6 +3802,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, char value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * char -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3627,6 +3815,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3635,7 +3825,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -3683,6 +3873,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char()) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, cli::array &lt;char&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * char[] -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3695,6 +3886,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3747,6 +3940,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Decimal) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Decimal value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * decimal -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3759,6 +3953,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3810,6 +4006,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Double) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, double value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * double -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3822,6 +4019,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3873,6 +4072,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Short) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, short value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * int16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3885,6 +4085,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3936,6 +4138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, int value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3948,6 +4151,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3999,6 +4204,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Long) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, long value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * int64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4011,6 +4217,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4062,6 +4270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Object) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * obj -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4074,6 +4283,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4127,6 +4338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As ReadOnlySpan(Of Char)) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * ReadOnlySpan&lt;char&gt; -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4153,6 +4365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As SByte) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::SByte value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * sbyte -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4165,6 +4378,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4221,6 +4436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Single) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, float value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * single -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4233,6 +4449,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4284,6 +4502,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As String) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4296,6 +4515,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4304,7 +4525,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -4354,6 +4575,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As UShort) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * uint16 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4366,6 +4588,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4422,6 +4646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As UInteger) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * uint32 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4434,6 +4659,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4490,6 +4717,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As ULong) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * uint64 -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4502,6 +4730,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4558,6 +4788,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As String, count As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, System::String ^ value, int count);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * string * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4570,6 +4801,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4578,7 +4811,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -4631,6 +4864,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Insert(System.Int32,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (index As Integer, value As Char(), startIndex As Integer, charCount As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Insert(int index, cli::array &lt;char&gt; ^ value, int startIndex, int charCount);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * char[] * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Insert (index, value, startIndex, charCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4643,6 +4877,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4651,7 +4887,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -4712,6 +4948,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.Length" />
       <MemberSignature Language="VB.NET" Value="Public Property Length As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int with get, set" Usage="System.Text.StringBuilder.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4724,6 +4961,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4731,6 +4970,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -4769,6 +5016,7 @@
       <MemberSignature Language="DocId" Value="P:System.Text.StringBuilder.MaxCapacity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxCapacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxCapacity { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxCapacity : int" Usage="System.Text.StringBuilder.MaxCapacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4781,6 +5029,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4812,6 +5062,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (startIndex As Integer, length As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Remove(int startIndex, int length);" />
+      <MemberSignature Language="F#" Value="member this.Remove : int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Remove (startIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4824,6 +5075,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4831,6 +5084,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -4886,6 +5144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.Char,System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(char oldChar, char newChar);" />
+      <MemberSignature Language="F#" Value="member this.Replace : char * char -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldChar, newChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4898,6 +5157,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4942,6 +5203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(System::String ^ oldValue, System::String ^ newValue);" />
+      <MemberSignature Language="F#" Value="member this.Replace : string * string -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4954,6 +5216,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4961,6 +5225,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -5003,6 +5272,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.Char,System.Char,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldChar As Char, newChar As Char, startIndex As Integer, count As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(char oldChar, char newChar, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.Replace : char * char * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldChar, newChar, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5015,6 +5285,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -5022,6 +5294,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -5069,6 +5346,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.Replace(System.String,System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (oldValue As String, newValue As String, startIndex As Integer, count As Integer) As StringBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::StringBuilder ^ Replace(System::String ^ oldValue, System::String ^ newValue, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.Replace : string * string * int * int -&gt; System.Text.StringBuilder" Usage="stringBuilder.Replace (oldValue, newValue, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5081,6 +5359,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -5088,6 +5368,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.StringBuilder</ReturnType>
       </ReturnValue>
@@ -5149,6 +5434,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -5162,7 +5448,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -5211,6 +5497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stringBuilder.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5223,6 +5510,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -5231,7 +5520,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -5267,6 +5556,7 @@
       <MemberSignature Language="DocId" Value="M:System.Text.StringBuilder.ToString(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (startIndex As Integer, length As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(int startIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.ToString : int * int -&gt; string" Usage="stringBuilder.ToString (startIndex, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -5279,6 +5569,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -5287,7 +5579,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

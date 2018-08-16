@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailAttachment" />
   <TypeSignature Language="VB.NET" Value="Public Class MailAttachment" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailAttachment" />
+  <TypeSignature Language="F#" Value="type MailAttachment = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The recommended alternative is System.Net.Mail.Attachment. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,9 +40,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Mail.MailAttachment.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MailAttachment(System::String ^ filename);" />
+      <MemberSignature Language="F#" Value="new System.Web.Mail.MailAttachment : string -&gt; System.Web.Mail.MailAttachment" Usage="new System.Web.Mail.MailAttachment filename" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -70,9 +76,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Mail.MailAttachment.#ctor(System.String,System.Web.Mail.MailEncoding)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filename As String, encoding As MailEncoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MailAttachment(System::String ^ filename, System::Web::Mail::MailEncoding encoding);" />
+      <MemberSignature Language="F#" Value="new System.Web.Mail.MailAttachment : string * System.Web.Mail.MailEncoding -&gt; System.Web.Mail.MailAttachment" Usage="new System.Web.Mail.MailAttachment (filename, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -92,11 +101,19 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailAttachment.Encoding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encoding As MailEncoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Mail::MailEncoding Encoding { System::Web::Mail::MailEncoding get(); };" />
+      <MemberSignature Language="F#" Value="member this.Encoding : System.Web.Mail.MailEncoding" Usage="System.Web.Mail.MailAttachment.Encoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Mail.MailEncoding</ReturnType>
       </ReturnValue>
@@ -112,11 +129,19 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mail.MailAttachment.Filename" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Filename As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Filename { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filename : string" Usage="System.Web.Mail.MailAttachment.Filename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

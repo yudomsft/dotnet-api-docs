@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CompareValidator" />
   <TypeSignature Language="VB.NET" Value="Public Class CompareValidator&#xA;Inherits BaseCompareValidator" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompareValidator : System::Web::UI::WebControls::BaseCompareValidator" />
+  <TypeSignature Language="F#" Value="type CompareValidator = class&#xA;    inherit BaseCompareValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +16,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ToolboxData("&lt;{0}:CompareValidator runat="server" ErrorMessage="CompareValidator"&gt;&lt;/{0}:CompareValidator&gt;")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Web.UI.ToolboxData("&lt;{0}:CompareValidator runat=server ErrorMessage="CompareValidator"&gt;&lt;/{0}:CompareValidator&gt;")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -101,8 +107,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.CompareValidator" /> class.</summary>
@@ -123,9 +136,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompareValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="compareValidator.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,9 +177,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompareValidator.ControlPropertiesValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
+      <MemberSignature Language="F#" Value="override this.ControlPropertiesValid : unit -&gt; bool" Usage="compareValidator.ControlPropertiesValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,19 +218,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompareValidator.ControlToCompare" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlToCompare As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlToCompare { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlToCompare : string with get, set" Usage="System.Web.UI.WebControls.CompareValidator.ControlToCompare" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.ValidatedControlConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -263,9 +285,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CompareValidator.EvaluateIsValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
+      <MemberSignature Language="F#" Value="override this.EvaluateIsValid : unit -&gt; bool" Usage="compareValidator.EvaluateIsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,16 +325,19 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompareValidator.Operator" />
       <MemberSignature Language="VB.NET" Value="Public Property Operator As ValidationCompareOperator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ValidationCompareOperator Operator { System::Web::UI::WebControls::ValidationCompareOperator get(); void set(System::Web::UI::WebControls::ValidationCompareOperator value); };" />
+      <MemberSignature Language="F#" Value="member this.Operator : System.Web.UI.WebControls.ValidationCompareOperator with get, set" Usage="System.Web.UI.WebControls.CompareValidator.Operator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -360,17 +388,23 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CompareValidator.ValueToCompare" />
       <MemberSignature Language="VB.NET" Value="Public Property ValueToCompare As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueToCompare { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValueToCompare : string with get, set" Usage="System.Web.UI.WebControls.CompareValidator.ValueToCompare" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FigureLength" />
   <TypeSignature Language="VB.NET" Value="Public Structure FigureLength&#xA;Implements IEquatable(Of FigureLength)" />
   <TypeSignature Language="C++ CLI" Value="public value class FigureLength : IEquatable&lt;System::Windows::FigureLength&gt;" />
+  <TypeSignature Language="F#" Value="type FigureLength = struct" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.FigureLengthConverter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -83,11 +85,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (pixels As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FigureLength(double pixels);" />
+      <MemberSignature Language="F#" Value="new System.Windows.FigureLength : double -&gt; System.Windows.FigureLength" Usage="new System.Windows.FigureLength pixels" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="pixels" Type="System.Double" />
       </Parameters>
@@ -116,9 +125,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.#ctor(System.Double,System.Windows.FigureUnitType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, type As FigureUnitType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FigureLength(double value, System::Windows::FigureUnitType type);" />
+      <MemberSignature Language="F#" Value="new System.Windows.FigureLength : double * System.Windows.FigureUnitType -&gt; System.Windows.FigureLength" Usage="new System.Windows.FigureLength (value, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -168,9 +179,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (oCompare As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ oCompare);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="figureLength.Equals oCompare" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,12 +205,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.FigureLength figureLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.Equals(System.Windows.FigureLength)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::FigureLength figureLength);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.FigureLength -&gt; bool" Usage="figureLength.Equals figureLength" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -220,11 +235,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.FigureUnitType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FigureUnitType As FigureUnitType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FigureUnitType FigureUnitType { System::Windows::FigureUnitType get(); };" />
+      <MemberSignature Language="F#" Value="member this.FigureUnitType : System.Windows.FigureUnitType" Usage="System.Windows.FigureLength.FigureUnitType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.FigureUnitType</ReturnType>
       </ReturnValue>
@@ -249,9 +271,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="figureLength.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,9 +294,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsAbsolute" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbsolute As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbsolute { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAbsolute : bool" Usage="System.Windows.FigureLength.IsAbsolute" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -290,9 +316,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsAuto" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuto As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuto { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAuto : bool" Usage="System.Windows.FigureLength.IsAuto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,9 +338,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsColumn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsColumn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsColumn { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsColumn : bool" Usage="System.Windows.FigureLength.IsColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -330,9 +360,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsContent : bool" Usage="System.Windows.FigureLength.IsContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,9 +382,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.IsPage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPage { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPage : bool" Usage="System.Windows.FigureLength.IsPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -370,9 +404,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.op_Equality(System.Windows.FigureLength,System.Windows.FigureLength)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (fl1 As FigureLength, fl2 As FigureLength) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::FigureLength fl1, System::Windows::FigureLength fl2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.FigureLength * System.Windows.FigureLength -&gt; bool" Usage="fl1 = fl2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,9 +435,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.op_Inequality(System.Windows.FigureLength,System.Windows.FigureLength)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (fl1 As FigureLength, fl2 As FigureLength) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::FigureLength fl1, System::Windows::FigureLength fl2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.FigureLength * System.Windows.FigureLength -&gt; bool" Usage="System.Windows.FigureLength.op_Inequality (fl1, fl2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,9 +466,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FigureLength.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="figureLength.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -449,9 +489,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.FigureLength.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : double" Usage="System.Windows.FigureLength.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.WmiConfigurationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WmiConfigurationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class WmiConfigurationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type WmiConfigurationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly)</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,9 +65,11 @@
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.WmiConfigurationAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WmiConfigurationAttribute(System::String ^ scope);" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.WmiConfigurationAttribute : string -&gt; System.Management.Instrumentation.WmiConfigurationAttribute" Usage="new System.Management.Instrumentation.WmiConfigurationAttribute scope" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,7 +77,7 @@
       </Parameters>
       <Docs>
         <param name="scope">The WMI namespace in which the provider will expose classes. For example, "root\MyProviderNamespace".</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.WmiConfigurationAttribute" /> class that specifies the WMI namespace in which the WMI provider will expose classes.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.WmiConfigurationAttribute" /> class that specifies the WMI namespace in which the WMI provider will expose classes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -90,11 +94,21 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.HostingGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property HostingGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostingGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostingGroup : string with get, set" Usage="System.Management.Instrumentation.WmiConfigurationAttribute.HostingGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -128,11 +142,21 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.HostingModel" />
       <MemberSignature Language="VB.NET" Value="Public Property HostingModel As ManagementHostingModel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::Instrumentation::ManagementHostingModel HostingModel { System::Management::Instrumentation::ManagementHostingModel get(); void set(System::Management::Instrumentation::ManagementHostingModel value); };" />
+      <MemberSignature Language="F#" Value="member this.HostingModel : System.Management.Instrumentation.ManagementHostingModel with get, set" Usage="System.Management.Instrumentation.WmiConfigurationAttribute.HostingModel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
@@ -172,11 +196,21 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.IdentifyLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property IdentifyLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IdentifyLevel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IdentifyLevel : bool with get, set" Usage="System.Management.Instrumentation.WmiConfigurationAttribute.IdentifyLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -208,11 +242,21 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.NamespaceSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Property NamespaceSecurity As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceSecurity { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceSecurity : string with get, set" Usage="System.Management.Instrumentation.WmiConfigurationAttribute.NamespaceSecurity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -244,11 +288,18 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.Scope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scope { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : string" Usage="System.Management.Instrumentation.WmiConfigurationAttribute.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -271,11 +322,21 @@
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.WmiConfigurationAttribute.SecurityRestriction" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityRestriction As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecurityRestriction { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SecurityRestriction : string with get, set" Usage="System.Management.Instrumentation.WmiConfigurationAttribute.SecurityRestriction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

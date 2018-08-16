@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.LocationReference" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class LocationReference" />
   <TypeSignature Language="C++ CLI" Value="public ref class LocationReference abstract" />
+  <TypeSignature Language="F#" Value="type LocationReference = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,11 @@
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Activities.LocationReference" /> class.</summary>
@@ -49,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.LocationReference.GetLocation(System.Activities.ActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLocation (context As ActivityContext) As Location" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Location ^ GetLocation(System::Activities::ActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location" Usage="locationReference.GetLocation context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -73,11 +80,17 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.LocationReference.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -93,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.NameCore" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property NameCore As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ NameCore { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameCore : string" Usage="System.Activities.LocationReference.NameCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,11 +127,17 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.LocationReference.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -133,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.TypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property TypeCore As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property Type ^ TypeCore { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeCore : Type" Usage="System.Activities.LocationReference.TypeCore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class XPathMessageContextMarkupExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageContextMarkupExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type XPathMessageContextMarkupExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Namespaces")</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor(System.ServiceModel.Dispatcher.XPathMessageContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As XPathMessageContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageContextMarkupExtension(System::ServiceModel::Dispatcher::XPathMessageContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension : System.ServiceModel.Dispatcher.XPathMessageContext -&gt; System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" Usage="new System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,11 +85,17 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As Dictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ Namespaces { System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Namespaces : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
@@ -103,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="xPathMessageContextMarkupExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsGroupDescriptionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsGroupDescriptionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsGroupDescriptionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SettingsGroupDescriptionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -17,7 +19,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,15 +46,22 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsGroupDescriptionAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsGroupDescriptionAttribute(System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingsGroupDescriptionAttribute : string -&gt; System.Configuration.SettingsGroupDescriptionAttribute" Usage="new System.Configuration.SettingsGroupDescriptionAttribute description" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="description" Type="System.String" />
       </Parameters>
@@ -76,15 +85,22 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsGroupDescriptionAttribute.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Configuration.SettingsGroupDescriptionAttribute.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

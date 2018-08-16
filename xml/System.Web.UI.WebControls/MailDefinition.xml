@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MailDefinition" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MailDefinition&#xA;Implements IStateManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailDefinition sealed : System::Web::UI::IStateManager" />
+  <TypeSignature Language="F#" Value="type MailDefinition = class&#xA;    interface IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,13 +19,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.EmptyStringExpandableObjectConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ParseChildren(true, "")</AttributeName>
     </Attribute>
   </Attributes>
@@ -71,8 +73,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MailDefinition" /> class.</summary>
@@ -85,23 +93,31 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.BodyFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property BodyFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BodyFileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BodyFileName : string with get, set" Usage="System.Web.UI.WebControls.MailDefinition.BodyFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty("*.*")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,16 +159,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.CC" />
       <MemberSignature Language="VB.NET" Value="Public Property CC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CC : string with get, set" Usage="System.Web.UI.WebControls.MailDefinition.CC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -202,9 +220,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MailDefinition.CreateMailMessage(System.String,System.Collections.IDictionary,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMailMessage (recipients As String, replacements As IDictionary, owner As Control) As MailMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Mail::MailMessage ^ CreateMailMessage(System::String ^ recipients, System::Collections::IDictionary ^ replacements, System::Web::UI::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.CreateMailMessage : string * System.Collections.IDictionary * System.Web.UI.Control -&gt; System.Net.Mail.MailMessage" Usage="mailDefinition.CreateMailMessage (recipients, replacements, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,9 +294,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MailDefinition.CreateMailMessage(System.String,System.Collections.IDictionary,System.String,System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMailMessage (recipients As String, replacements As IDictionary, body As String, owner As Control) As MailMessage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Mail::MailMessage ^ CreateMailMessage(System::String ^ recipients, System::Collections::IDictionary ^ replacements, System::String ^ body, System::Web::UI::Control ^ owner);" />
+      <MemberSignature Language="F#" Value="member this.CreateMailMessage : string * System.Collections.IDictionary * string * System.Web.UI.Control -&gt; System.Net.Mail.MailMessage" Usage="mailDefinition.CreateMailMessage (recipients, replacements, body, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -348,19 +370,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmbeddedObjects As EmbeddedMailObjectsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::EmbeddedMailObjectsCollection ^ EmbeddedObjects { System::Web::UI::WebControls::EmbeddedMailObjectsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EmbeddedObjects : System.Web.UI.WebControls.EmbeddedMailObjectsCollection" Usage="System.Web.UI.WebControls.MailDefinition.EmbeddedObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -388,16 +412,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.From" />
       <MemberSignature Language="VB.NET" Value="Public Property From As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ From { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.From : string with get, set" Usage="System.Web.UI.WebControls.MailDefinition.From" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -436,16 +462,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.IsBodyHtml" />
       <MemberSignature Language="VB.NET" Value="Public Property IsBodyHtml As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBodyHtml { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsBodyHtml : bool with get, set" Usage="System.Web.UI.WebControls.MailDefinition.IsBodyHtml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -475,17 +503,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As MailPriority" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::MailPriority Priority { System::Net::Mail::MailPriority get(); void set(System::Net::Mail::MailPriority value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : System.Net.Mail.MailPriority with get, set" Usage="System.Web.UI.WebControls.MailDefinition.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -524,16 +557,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.Subject" />
       <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="System.Web.UI.WebControls.MailDefinition.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -571,13 +606,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailDefinition.System#Web#UI#IStateManager#IsTrackingViewState" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::IStateManager::IsTrackingViewState { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -612,6 +649,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -645,6 +683,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -676,6 +715,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

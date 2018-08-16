@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Canvas" />
   <TypeSignature Language="VB.NET" Value="Public Class Canvas&#xA;Inherits Panel" />
   <TypeSignature Language="C++ CLI" Value="public ref class Canvas : System::Windows::Controls::Panel" />
+  <TypeSignature Language="F#" Value="type Canvas = class&#xA;    inherit Panel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -54,8 +56,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Canvas" /> class.</summary>
@@ -68,9 +76,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="canvas.ArrangeOverride arrangeSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,14 +102,35 @@
       <MemberSignature Language="ILAsm" Value="see GetBottom, and SetBottom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Canvas.Bottom" />
       <MemberSignature Language="VB.NET" Value="see GetBottom, and SetBottom" />
+      <MemberSignature Language="F#" Value="see GetBottom, and SetBottom" Usage="see GetBottom, and SetBottom" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that represents the distance between the bottom of an element and the bottom of its parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Canvas.Bottom%2A> offset of a child element does not affect the size of a parent <xref:System.Windows.Controls.Canvas>.  
+  
+ If you specify them, the attached properties <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=nameWithType> take priority over the <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType> properties.  
+  
+<a name="dependencyPropertyInfo_Bottom"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Canvas.BottomProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.Canvas.GetBottom(System.Windows.UIElement)" />
+        <altmember cref="M:System.Windows.Controls.Canvas.SetBottom(System.Windows.UIElement,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="BottomProperty">
@@ -108,9 +139,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Canvas.BottomProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BottomProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BottomProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BottomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Canvas.BottomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,17 +161,22 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.GetBottom(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetBottom (element As UIElement) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetBottom(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetBottom : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.Canvas.GetBottom element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.AttachedPropertyBrowsableForChildren</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,9 +199,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.GetLayoutClip(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLayoutClip (layoutSlotSize As Size) As Geometry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Geometry ^ GetLayoutClip(System::Windows::Size layoutSlotSize);" />
+      <MemberSignature Language="F#" Value="override this.GetLayoutClip : System.Windows.Size -&gt; System.Windows.Media.Geometry" Usage="canvas.GetLayoutClip layoutSlotSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,17 +226,22 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.GetLeft(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLeft (element As UIElement) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetLeft(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetLeft : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.Canvas.GetLeft element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.AttachedPropertyBrowsableForChildren</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -219,17 +264,22 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.GetRight(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRight (element As UIElement) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetRight(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetRight : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.Canvas.GetRight element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.AttachedPropertyBrowsableForChildren</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,17 +302,22 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.GetTop(System.Windows.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTop (element As UIElement) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetTop(System::Windows::UIElement ^ element);" />
+      <MemberSignature Language="F#" Value="static member GetTop : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.Canvas.GetTop element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.AttachedPropertyBrowsableForChildren</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.LengthConverter, PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -284,14 +339,35 @@
       <MemberSignature Language="ILAsm" Value="see GetLeft, and SetLeft" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Canvas.Left" />
       <MemberSignature Language="VB.NET" Value="see GetLeft, and SetLeft" />
+      <MemberSignature Language="F#" Value="see GetLeft, and SetLeft" Usage="see GetLeft, and SetLeft" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that represents the distance between the left side of an element and the left side of its parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Canvas.Left%2A> offset of a child element does not affect the size of a parent <xref:System.Windows.Controls.Canvas>.  
+  
+ If you specify them, the attached properties <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=nameWithType> take priority over <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType> properties.  
+  
+<a name="dependencyPropertyInfo_Left"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Canvas.LeftProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.Canvas.GetLeft(System.Windows.UIElement)" />
+        <altmember cref="M:System.Windows.Controls.Canvas.SetLeft(System.Windows.UIElement,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="LeftProperty">
@@ -300,9 +376,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Canvas.LeftProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LeftProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LeftProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable LeftProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Canvas.LeftProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -320,9 +398,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="canvas.MeasureOverride constraint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,14 +424,35 @@
       <MemberSignature Language="ILAsm" Value="see GetRight, and SetRight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Canvas.Right" />
       <MemberSignature Language="VB.NET" Value="see GetRight, and SetRight" />
+      <MemberSignature Language="F#" Value="see GetRight, and SetRight" Usage="see GetRight, and SetRight" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that represents the distance between the right side of an element and the right side of its parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType> offset of a child element does not affect the size of a parent <xref:System.Windows.Controls.Canvas>.  
+  
+ If you specify them, the attached properties <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=nameWithType> take priority over <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType> properties.  
+  
+<a name="dependencyPropertyInfo_Right"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Canvas.RightProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.Canvas.GetRight(System.Windows.UIElement)" />
+        <altmember cref="M:System.Windows.Controls.Canvas.SetRight(System.Windows.UIElement,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="RightProperty">
@@ -360,9 +461,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Canvas.RightProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RightProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RightProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Canvas.RightProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -380,9 +483,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.SetBottom(System.Windows.UIElement,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBottom (element As UIElement, length As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBottom(System::Windows::UIElement ^ element, double length);" />
+      <MemberSignature Language="F#" Value="static member SetBottom : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.Canvas.SetBottom (element, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -406,9 +511,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.SetLeft(System.Windows.UIElement,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLeft (element As UIElement, length As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLeft(System::Windows::UIElement ^ element, double length);" />
+      <MemberSignature Language="F#" Value="static member SetLeft : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.Canvas.SetLeft (element, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -432,9 +539,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.SetRight(System.Windows.UIElement,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRight (element As UIElement, length As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRight(System::Windows::UIElement ^ element, double length);" />
+      <MemberSignature Language="F#" Value="static member SetRight : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.Canvas.SetRight (element, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -458,9 +567,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Canvas.SetTop(System.Windows.UIElement,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTop (element As UIElement, length As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTop(System::Windows::UIElement ^ element, double length);" />
+      <MemberSignature Language="F#" Value="static member SetTop : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.Canvas.SetTop (element, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -483,14 +594,35 @@
       <MemberSignature Language="ILAsm" Value="see GetTop, and SetTop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Canvas.Top" />
       <MemberSignature Language="VB.NET" Value="see GetTop, and SetTop" />
+      <MemberSignature Language="F#" Value="see GetTop, and SetTop" Usage="see GetTop, and SetTop" />
       <MemberType>AttachedProperty</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that represents the distance between the top of an element and the top of its parent <see cref="T:System.Windows.Controls.Canvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Canvas.Top%2A> offset of a child element does not affect the size of a parent <xref:System.Windows.Controls.Canvas>.  
+  
+ If you specify them, the attached properties <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=nameWithType> take priority over <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType>.  
+  
+<a name="dependencyPropertyInfo_Top"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Canvas.TopProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.Canvas.GetTop(System.Windows.UIElement)" />
+        <altmember cref="M:System.Windows.Controls.Canvas.SetTop(System.Windows.UIElement,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="TopProperty">
@@ -499,9 +631,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Canvas.TopProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TopProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TopProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TopProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Canvas.TopProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

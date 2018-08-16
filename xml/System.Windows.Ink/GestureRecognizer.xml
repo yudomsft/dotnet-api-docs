@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.GestureRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GestureRecognizer&#xA;Inherits DependencyObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class GestureRecognizer sealed : System::Windows::DependencyObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type GestureRecognizer = class&#xA;    inherit DependencyObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -58,6 +60,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -79,9 +82,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.GestureRecognizer.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Ink.ApplicationGesture})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enabledApplicationGestures As IEnumerable(Of ApplicationGesture))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GestureRecognizer(System::Collections::Generic::IEnumerable&lt;System::Windows::Ink::ApplicationGesture&gt; ^ enabledApplicationGestures);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Ink.GestureRecognizer : seq&lt;System.Windows.Ink.ApplicationGesture&gt; -&gt; System.Windows.Ink.GestureRecognizer" Usage="new System.Windows.Ink.GestureRecognizer enabledApplicationGestures" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -114,12 +119,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.GestureRecognizer.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="gestureRecognizer.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,9 +154,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.GestureRecognizer.GetEnabledGestures" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnabledGestures () As ReadOnlyCollection(Of ApplicationGesture)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Ink::ApplicationGesture&gt; ^ GetEnabledGestures();" />
+      <MemberSignature Language="F#" Value="member this.GetEnabledGestures : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Ink.ApplicationGesture&gt;" Usage="gestureRecognizer.GetEnabledGestures " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,9 +187,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.GestureRecognizer.IsRecognizerAvailable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRecognizerAvailable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRecognizerAvailable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsRecognizerAvailable : bool" Usage="System.Windows.Ink.GestureRecognizer.IsRecognizerAvailable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,13 +220,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.GestureRecognizer.Recognize(System.Windows.Ink.StrokeCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function Recognize (strokes As StrokeCollection) As ReadOnlyCollection(Of GestureRecognitionResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Ink::GestureRecognitionResult ^&gt; ^ Recognize(System::Windows::Ink::StrokeCollection ^ strokes);" />
+      <MemberSignature Language="F#" Value="member this.Recognize : System.Windows.Ink.StrokeCollection -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Ink.GestureRecognitionResult&gt;" Usage="gestureRecognizer.Recognize strokes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -265,9 +278,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.GestureRecognizer.SetEnabledGestures(System.Collections.Generic.IEnumerable{System.Windows.Ink.ApplicationGesture})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEnabledGestures (applicationGestures As IEnumerable(Of ApplicationGesture))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEnabledGestures(System::Collections::Generic::IEnumerable&lt;System::Windows::Ink::ApplicationGesture&gt; ^ applicationGestures);" />
+      <MemberSignature Language="F#" Value="member this.SetEnabledGestures : seq&lt;System.Windows.Ink.ApplicationGesture&gt; -&gt; unit" Usage="gestureRecognizer.SetEnabledGestures applicationGestures" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

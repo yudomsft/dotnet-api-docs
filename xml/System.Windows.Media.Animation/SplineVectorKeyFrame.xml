@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineVectorKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public Class SplineVectorKeyFrame&#xA;Inherits VectorKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class SplineVectorKeyFrame : System::Windows::Media::Animation::VectorKeyFrame" />
+  <TypeSignature Language="F#" Value="type SplineVectorKeyFrame = class&#xA;    inherit VectorKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -48,8 +50,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.SplineVectorKeyFrame" /> class.</summary>
@@ -62,9 +70,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineVectorKeyFrame(System::Windows::Vector value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineVectorKeyFrame : System.Windows.Vector -&gt; System.Windows.Media.Animation.SplineVectorKeyFrame" Usage="new System.Windows.Media.Animation.SplineVectorKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -81,9 +91,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineVectorKeyFrame(System::Windows::Vector value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineVectorKeyFrame : System.Windows.Vector * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.SplineVectorKeyFrame" Usage="new System.Windows.Media.Animation.SplineVectorKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -102,9 +114,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.KeySpline keySpline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineVectorKeyFrame(System::Windows::Vector value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::KeySpline ^ keySpline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.SplineVectorKeyFrame : System.Windows.Vector * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.KeySpline -&gt; System.Windows.Media.Animation.SplineVectorKeyFrame" Usage="new System.Windows.Media.Animation.SplineVectorKeyFrame (value, keyTime, keySpline)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -127,9 +141,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineVectorKeyFrame.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="splineVectorKeyFrame.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,9 +165,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineVectorKeyFrame.InterpolateValueCore(System.Windows.Vector,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Vector, keyFrameProgress As Double) As Vector" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Vector InterpolateValueCore(System::Windows::Vector baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Vector * double -&gt; System.Windows.Vector" Usage="splineVectorKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,9 +193,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplineVectorKeyFrame.KeySpline" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySpline As KeySpline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeySpline ^ KeySpline { System::Windows::Media::Animation::KeySpline ^ get(); void set(System::Windows::Media::Animation::KeySpline ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySpline : System.Windows.Media.Animation.KeySpline with get, set" Usage="System.Windows.Media.Animation.SplineVectorKeyFrame.KeySpline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,9 +230,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplineVectorKeyFrame.KeySplineProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeySplineProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeySplineProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeySplineProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.SplineVectorKeyFrame.KeySplineProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

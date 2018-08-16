@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.OutOfProcNode" />
   <TypeSignature Language="VB.NET" Value="Public Class OutOfProcNode" />
   <TypeSignature Language="C++ CLI" Value="public ref class OutOfProcNode" />
+  <TypeSignature Language="F#" Value="type OutOfProcNode = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,9 +41,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.OutOfProcNode.Run(System.Exception@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Run (ByRef shutdownException As Exception) As NodeEngineShutdownReason" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Build::Execution::NodeEngineShutdownReason Run([Runtime::InteropServices::Out] Exception ^ % shutdownException);" />
+      <MemberSignature Language="F#" Value="abstract member Run :  -&gt; Microsoft.Build.Execution.NodeEngineShutdownReason&#xA;override this.Run :  -&gt; Microsoft.Build.Execution.NodeEngineShutdownReason" Usage="outOfProcNode.Run shutdownException" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Build.BackEnd.INode.Run(System.Exception@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Build.BackEnd.INode.Run(System.Exception)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -52,7 +54,7 @@
         <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="shutdownException" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="shutdownException" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="shutdownException">The exception which caused shutdown, if any.</param>

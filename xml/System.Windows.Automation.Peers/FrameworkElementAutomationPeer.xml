@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class FrameworkElementAutomationPeer&#xA;Inherits UIElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class FrameworkElementAutomationPeer : System::Windows::Automation::Peers::UIElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type FrameworkElementAutomationPeer = class&#xA;    inherit UIElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,11 +25,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkElementAutomationPeer.#ctor(System.Windows.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As FrameworkElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkElementAutomationPeer(System::Windows::FrameworkElement ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.FrameworkElementAutomationPeer : System.Windows.FrameworkElement -&gt; System.Windows.Automation.Peers.FrameworkElementAutomationPeer" Usage="new System.Windows.Automation.Peers.FrameworkElementAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.FrameworkElement" />
       </Parameters>
@@ -43,9 +52,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkElementAutomationPeer.GetAutomationIdCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationIdCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationIdCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationIdCore : unit -&gt; string" Usage="frameworkElementAutomationPeer.GetAutomationIdCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -73,9 +84,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkElementAutomationPeer.GetHelpTextCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="frameworkElementAutomationPeer.GetHelpTextCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,15 +103,39 @@
         <altmember cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />
       </Docs>
     </Member>
+    <Member MemberName="GetLabeledByCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer GetLabeledByCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer GetLabeledByCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkElementAutomationPeer.GetLabeledByCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLabeledByCore () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ GetLabeledByCore();" />
+      <MemberSignature Language="F#" Value="override this.GetLabeledByCore : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="frameworkElementAutomationPeer.GetLabeledByCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNameCore">
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.FrameworkElementAutomationPeer.GetNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="frameworkElementAutomationPeer.GetNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

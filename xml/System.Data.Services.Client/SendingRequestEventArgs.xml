@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.SendingRequestEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SendingRequestEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendingRequestEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SendingRequestEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,12 +26,19 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.SendingRequestEventArgs.Request" />
       <MemberSignature Language="VB.NET" Value="Public Property Request As WebRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebRequest ^ Request { System::Net::WebRequest ^ get(); void set(System::Net::WebRequest ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Request : System.Net.WebRequest with get, set" Usage="System.Data.Services.Client.SendingRequestEventArgs.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.WebRequest</ReturnType>
       </ReturnValue>
@@ -46,12 +55,19 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.SendingRequestEventArgs.RequestHeaders" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestHeaders As WebHeaderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ RequestHeaders { System::Net::WebHeaderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequestHeaders : System.Net.WebHeaderCollection" Usage="System.Data.Services.Client.SendingRequestEventArgs.RequestHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>

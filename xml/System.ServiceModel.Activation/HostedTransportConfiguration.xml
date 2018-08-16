@@ -4,16 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.HostedTransportConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HostedTransportConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostedTransportConfiguration abstract" />
+  <TypeSignature Language="F#" Value="type HostedTransportConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
     </Attribute>
   </Attributes>
@@ -40,6 +45,15 @@
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.HostedTransportConfiguration" /> class.</summary>
@@ -52,10 +66,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.HostedTransportConfiguration.GetBaseAddresses(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBaseAddresses (virtualPath As String) As Uri()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;Uri ^&gt; ^ GetBaseAddresses(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetBaseAddresses : string -&gt; Uri[]" Usage="hostedTransportConfiguration.GetBaseAddresses virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri[]</ReturnType>

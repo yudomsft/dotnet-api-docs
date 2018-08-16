@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackagePartCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class PackagePartCollection&#xA;Implements IEnumerable(Of PackagePart)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackagePartCollection : System::Collections::Generic::IEnumerable&lt;System::IO::Packaging::PackagePart ^&gt;" />
+  <TypeSignature Language="F#" Value="type PackagePartCollection = class&#xA;    interface seq&lt;PackagePart&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePartCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of PackagePart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerator&lt;System::IO::Packaging::PackagePart ^&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.IO.Packaging.PackagePart&gt;" Usage="packagePartCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -51,6 +54,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,8 +91,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.IO.Packaging.PackagePart&gt;</ReturnType>
       </ReturnValue>
@@ -123,8 +133,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>

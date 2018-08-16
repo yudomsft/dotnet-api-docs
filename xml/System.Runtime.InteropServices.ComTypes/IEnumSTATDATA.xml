@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumSTATDATA" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEnumSTATDATA" />
+  <TypeSignature Language="F#" Value="type IEnumSTATDATA = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -20,11 +22,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00000103-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,9 +54,11 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Clone(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef newEnum As IEnumSTATDATA)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumSTATDATA ^ % newEnum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumSTATDATA.Clone newEnum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -68,7 +75,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="newEnum" Type="System.Runtime.InteropServices.ComTypes.IEnumSTATDATA&amp;" RefType="out" />
+        <Parameter Name="newEnum" Type="System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" RefType="out" />
       </Parameters>
       <Docs>
         <param name="newEnum">When this method returns, contains a reference to the newly created enumerator. This parameter is passed uninitialized.</param>
@@ -89,9 +96,11 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Next(System.Int32,System.Runtime.InteropServices.ComTypes.STATDATA[],System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As STATDATA(), pceltFetched As Integer()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::Runtime::InteropServices::ComTypes::STATDATA&gt; ^ rgelt, cli::array &lt;int&gt; ^ pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * System.Runtime.InteropServices.ComTypes.STATDATA[] * int[] -&gt; int" Usage="iEnumSTATDATA.Next (celt, rgelt, pceltFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -135,9 +144,11 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Function Reset () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; int" Usage="iEnumSTATDATA.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -173,9 +184,11 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Skip(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="iEnumSTATDATA.Skip celt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

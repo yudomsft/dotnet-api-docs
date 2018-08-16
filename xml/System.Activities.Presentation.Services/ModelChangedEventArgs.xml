@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ModelChangedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ModelChangedEventArgs abstract : EventArgs" />
+  <TypeSignature Language="F#" Value="type ModelChangedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Services.ModelChangedEventArgs" /> class.</summary>
@@ -48,13 +54,14 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsAdded" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ItemsAdded As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ ItemsAdded { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsAdded : seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsAdded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Don't use this property. Use "ModelChangeInfo" instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -73,13 +80,14 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsRemoved" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ItemsRemoved As IEnumerable(Of ModelItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ ItemsRemoved { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemsRemoved : seq&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.ItemsRemoved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Don't use this property. Use "ModelChangeInfo" instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -98,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.ModelChangeInfo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ModelChangeInfo As ModelChangeInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Activities::Presentation::Services::ModelChangeInfo ^ ModelChangeInfo { System::Activities::Presentation::Services::ModelChangeInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ModelChangeInfo : System.Activities.Presentation.Services.ModelChangeInfo" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.ModelChangeInfo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -118,13 +127,14 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Services.ModelChangedEventArgs.PropertiesChanged" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PropertiesChanged As IEnumerable(Of ModelProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelProperty ^&gt; ^ PropertiesChanged { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::Model::ModelProperty ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PropertiesChanged : seq&lt;System.Activities.Presentation.Model.ModelProperty&gt;" Usage="System.Activities.Presentation.Services.ModelChangedEventArgs.PropertiesChanged" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("Don't use this property. Use "ModelChangeInfo" instead.")</AttributeName>
         </Attribute>
       </Attributes>

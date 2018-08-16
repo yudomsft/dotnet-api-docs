@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WsdlImporterElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WsdlImporterElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WsdlImporterElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WsdlImporterElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -45,8 +47,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> class.</summary>
@@ -59,9 +67,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WsdlImporterElement(System::String ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WsdlImporterElement : string -&gt; System.ServiceModel.Configuration.WsdlImporterElement" Usage="new System.ServiceModel.Configuration.WsdlImporterElement type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -78,9 +88,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElement.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WsdlImporterElement(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WsdlImporterElement : Type -&gt; System.ServiceModel.Configuration.WsdlImporterElement" Usage="new System.ServiceModel.Configuration.WsdlImporterElement type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -98,9 +110,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WsdlImporterElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WsdlImporterElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,17 +132,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WsdlImporterElement.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.ServiceModel.Configuration.WsdlImporterElement.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("type", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.ConfigurationProperty("type", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

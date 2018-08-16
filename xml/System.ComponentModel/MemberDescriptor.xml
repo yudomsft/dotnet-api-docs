@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.MemberDescriptor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemberDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemberDescriptor abstract" />
+  <TypeSignature Language="F#" Value="type MemberDescriptor = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,7 +27,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.#ctor(System.ComponentModel.MemberDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (descr As MemberDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberDescriptor(System::ComponentModel::MemberDescriptor ^ descr);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.MemberDescriptor : System.ComponentModel.MemberDescriptor -&gt; System.ComponentModel.MemberDescriptor" Usage="new System.ComponentModel.MemberDescriptor descr" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -79,6 +83,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -101,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberDescriptor(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.MemberDescriptor : string -&gt; System.ComponentModel.MemberDescriptor" Usage="new System.ComponentModel.MemberDescriptor name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -110,6 +117,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -117,6 +126,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
@@ -133,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (oldMemberDescriptor As MemberDescriptor, newAttributes As Attribute())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberDescriptor(System::ComponentModel::MemberDescriptor ^ oldMemberDescriptor, cli::array &lt;Attribute ^&gt; ^ newAttributes);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.MemberDescriptor : System.ComponentModel.MemberDescriptor * Attribute[] -&gt; System.ComponentModel.MemberDescriptor" Usage="new System.ComponentModel.MemberDescriptor (oldMemberDescriptor, newAttributes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -142,6 +157,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -173,6 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.#ctor(System.String,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, attributes As Attribute())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberDescriptor(System::String ^ name, cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.MemberDescriptor : string * Attribute[] -&gt; System.ComponentModel.MemberDescriptor" Usage="new System.ComponentModel.MemberDescriptor (name, attributes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -182,6 +200,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -207,6 +227,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.AttributeArray" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property AttributeArray As Attribute()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property cli::array &lt;Attribute ^&gt; ^ AttributeArray { cli::array &lt;Attribute ^&gt; ^ get(); void set(cli::array &lt;Attribute ^&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttributeArray : Attribute[] with get, set" Usage="System.ComponentModel.MemberDescriptor.AttributeArray" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -216,6 +237,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -246,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Attributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.ComponentModel.MemberDescriptor.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -255,6 +279,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -285,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.Category" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Category As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Category { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.ComponentModel.MemberDescriptor.Category" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -294,6 +321,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -326,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.CreateAttributeCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateAttributeCollection () As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ComponentModel::AttributeCollection ^ CreateAttributeCollection();" />
+      <MemberSignature Language="F#" Value="abstract member CreateAttributeCollection : unit -&gt; System.ComponentModel.AttributeCollection&#xA;override this.CreateAttributeCollection : unit -&gt; System.ComponentModel.AttributeCollection" Usage="memberDescriptor.CreateAttributeCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -335,6 +365,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -365,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.Description" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ComponentModel.MemberDescriptor.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -374,6 +407,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -406,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.DesignTimeOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DesignTimeOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeOnly : bool" Usage="System.ComponentModel.MemberDescriptor.DesignTimeOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -415,6 +451,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -446,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.ComponentModel.MemberDescriptor.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -455,6 +494,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -478,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="memberDescriptor.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -487,6 +529,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -514,6 +558,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.FillAttributes(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub FillAttributes (attributeList As IList)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FillAttributes(System::Collections::IList ^ attributeList);" />
+      <MemberSignature Language="F#" Value="abstract member FillAttributes : System.Collections.IList -&gt; unit&#xA;override this.FillAttributes : System.Collections.IList -&gt; unit" Usage="memberDescriptor.FillAttributes attributeList" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -523,6 +568,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -567,6 +614,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FindMethod (componentClass As Type, name As String, args As Type(), returnType As Type) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Reflection::MethodInfo ^ FindMethod(Type ^ componentClass, System::String ^ name, cli::array &lt;Type ^&gt; ^ args, Type ^ returnType);" />
+      <MemberSignature Language="F#" Value="static member FindMethod : Type * string * Type[] * Type -&gt; System.Reflection.MethodInfo" Usage="System.ComponentModel.MemberDescriptor.FindMethod (componentClass, name, args, returnType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -576,6 +624,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -583,6 +633,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
@@ -609,6 +664,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FindMethod (componentClass As Type, name As String, args As Type(), returnType As Type, publicOnly As Boolean) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Reflection::MethodInfo ^ FindMethod(Type ^ componentClass, System::String ^ name, cli::array &lt;Type ^&gt; ^ args, Type ^ returnType, bool publicOnly);" />
+      <MemberSignature Language="F#" Value="static member FindMethod : Type * string * Type[] * Type * bool -&gt; System.Reflection.MethodInfo" Usage="System.ComponentModel.MemberDescriptor.FindMethod (componentClass, name, args, returnType, publicOnly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -618,6 +674,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -653,6 +711,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="memberDescriptor.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -662,6 +721,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -684,6 +745,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetInvocationTarget(class System.Type type, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.GetInvocationTarget(System.Type,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetInvocationTarget(Type ^ type, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetInvocationTarget : Type * obj -&gt; obj&#xA;override this.GetInvocationTarget : Type * obj -&gt; obj" Usage="memberDescriptor.GetInvocationTarget (type, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -693,6 +755,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -730,9 +793,12 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.GetInvokee(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetInvokee (componentClass As Type, component As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Object ^ GetInvokee(Type ^ componentClass, System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="static member GetInvokee : Type * obj -&gt; obj" Usage="System.ComponentModel.MemberDescriptor.GetInvokee (componentClass, component)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -746,7 +812,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("This method has been deprecated. Use GetInvocationTarget instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>
@@ -773,6 +839,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MemberDescriptor.GetSite(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function GetSite (component As Object) As ISite" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::ComponentModel::ISite ^ GetSite(System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="static member GetSite : obj -&gt; System.ComponentModel.ISite" Usage="System.ComponentModel.MemberDescriptor.GetSite component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -782,6 +849,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -808,6 +877,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.IsBrowsable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsBrowsable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsBrowsable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsBrowsable : bool" Usage="System.ComponentModel.MemberDescriptor.IsBrowsable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -817,6 +887,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -850,6 +922,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.MemberDescriptor.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -859,6 +932,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -884,6 +959,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MemberDescriptor.NameHashCode" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property NameHashCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int NameHashCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameHashCode : int" Usage="System.ComponentModel.MemberDescriptor.NameHashCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -893,6 +969,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -900,6 +978,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedDictionary`2.Enumerator" />
   <TypeSignature Language="VB.NET" Value="Public Structure SortedDictionary(Of TKey, TValue).Enumerator&#xA;Implements IDictionaryEnumerator, IEnumerator(Of KeyValuePair(Of TKey, TValue))" />
   <TypeSignature Language="C++ CLI" Value="public: value class SortedDictionary&lt;TKey, TValue&gt;::Enumerator : System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::IDictionaryEnumerator" />
+  <TypeSignature Language="F#" Value="type SortedDictionary&lt;'Key, 'Value&gt;.Enumerator = struct&#xA;    interface IEnumerator&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IDictionaryEnumerator&#xA;    interface IDisposable&#xA;    interface IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -45,13 +47,13 @@
   
  Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
   
- Initially, the enumerator is positioned before the first element in the collection. At this position, the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property returns the default value of <xref:System.Collections.Generic.KeyValuePair%602>. You must call the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A>.  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> is undefined. You must call the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A>.  
   
  The <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property returns the same object until <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> to the next element.  
   
- If <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> returns the default value of <xref:System.Collections.Generic.KeyValuePair%602>. You cannot set <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+ If <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As KeyValuePair(Of TKey, TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; Current { System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;" Usage="System.Collections.Generic.SortedDictionary&lt;'Key, 'Value&gt;.Enumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -84,6 +87,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -101,18 +105,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> returns the default value of <xref:System.Collections.Generic.KeyValuePair%602> under any of the following conditions:  
+ <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> is undefined under any of the following conditions:  
   
 - The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property.  
   
 - The last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
 
-> [!NOTE]
-> That behaviour is different for the non-generic <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property. The non-generic <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property throws an <xref:System.InvalidOperationException> if the enumerator is positioned before the first element of the collection or after the last element.
- 
+-  The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.
+
  <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> return the same object until either <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
-  
- If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> returns the element that it is set to, even though the enumerator is invalidated.
   
  ]]></format>
         </remarks>
@@ -125,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.Enumerator.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="enumerator.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -138,6 +140,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -160,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -173,6 +177,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -196,7 +201,7 @@
   
  If <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> also return `false`.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> returns the element that it is set to, even though the enumerator is invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  ]]></format>
         </remarks>
@@ -209,7 +214,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.DictionaryEntry System.Collections.IDictionaryEnumerator.Entry" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Entry" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Entry As DictionaryEntry Implements IDictionaryEnumerator.Entry" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::DictionaryEntry System.Collections.IDictionaryEnumerator.Entry { System::Collections::DictionaryEntry get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::DictionaryEntry System::Collections::IDictionaryEnumerator::Entry { System::Collections::DictionaryEntry get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionaryEnumerator.Entry" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Entry</InterfaceMember>
@@ -223,6 +229,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -241,19 +248,18 @@
   
 ## Remarks  
 
- <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Entry%2A> throws an <xref:System.InvalidOperationException> under any of the following conditions:  
+ <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Entry%2A> is undefined under any of the following conditions:  
   
 - The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Entry%2A> property.  
   
 - The last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
 
+- The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.
+
  <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Entry%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Entry%2A> return the same object until either <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
-  
- If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Entry%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Entry%2A> returns the element that it is set to, even though the enumerator is invalidated.
-  
+   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
         <altmember cref="T:System.Collections.IDictionaryEnumerator" />
         <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
         <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
@@ -265,7 +271,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionaryEnumerator.Key" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Key" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Key As Object Implements IDictionaryEnumerator.Key" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Key { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionaryEnumerator::Key { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionaryEnumerator.Key" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Key</InterfaceMember>
@@ -279,6 +286,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -296,19 +304,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Key%2A> throws an <xref:System.InvalidOperationException> under any of the following conditions:  
+ <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Key%2A> is undefined under any of the following conditions:  
   
 - The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Key%2A> property.  
   
 - The last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
 
+- The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.
+
  <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Key%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Key%2A> return the same object until either <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
-  
- If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Key%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Key%2A> returns the element that it is set to, even though the enumerator is invalidated.
-  
+    
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
         <altmember cref="T:System.Collections.IDictionaryEnumerator" />
         <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
         <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
@@ -320,7 +327,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionaryEnumerator.Value" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IDictionaryEnumerator#Value" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Value As Object Implements IDictionaryEnumerator.Value" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionaryEnumerator.Value { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionaryEnumerator::Value { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionaryEnumerator.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionaryEnumerator.Value</InterfaceMember>
@@ -334,6 +342,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -351,19 +360,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Value%2A> throws an <xref:System.InvalidOperationException> under any of the following conditions:  
+ <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Value%2A> is undefined under any of the following conditions:  
   
 - The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Value%2A> property.  
   
 - The last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
 
+- The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.
+
  <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Value%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Value%2A> return the same object until either <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
-  
- If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Value%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IDictionaryEnumerator%23Value%2A> returns the element that it is set to, even though the enumerator is invalidated.
-  
+    
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
         <altmember cref="T:System.Collections.IDictionaryEnumerator" />
         <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
         <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
@@ -375,7 +383,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.SortedDictionary`2.Enumerator.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IEnumerator::Current { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IEnumerator.Current" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
@@ -389,6 +398,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -407,22 +417,18 @@
   
 ## Remarks  
 
- <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> throws an <xref:System.InvalidOperationException> under any of the following conditions:  
+ <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> is undefined under any of the following conditions:  
   
 - The enumerator is positioned before the first element of the collection. That happens after an enumerator is created or after the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> method is called. The <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property.  
   
 - The last call to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> returned `false`, which indicates the end of the collection and that the enumerator is positioned after the last element of the collection.
 
-> [!NOTE]
-> That behaviour is different for the generic <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property. The generic <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.Current%2A> property returns the default value of <xref:System.Collections.Generic.KeyValuePair%602> if the enumerator is positioned before the first element of the collection or after the last element.
- 
+- The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.
+
  <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> return the same object until either <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> is called.  
-  
- If the collection is modified between calling <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> property, <xref:System.Collections.Generic.SortedDictionary%602.Enumerator.System%23Collections%23IEnumerator%23Current%2A> returns the element that it is set to, even though the enumerator is invalidated.
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element.</exception>
         <altmember cref="P:System.Collections.IEnumerator.Current" />
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="M:System.Collections.IEnumerator.Reset" />
@@ -448,6 +454,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScriptControl&#xA;Inherits WebControl&#xA;Implements IScriptControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptControl abstract : System::Web::UI::WebControls::WebControl, System::Web::UI::IScriptControl" />
+  <TypeSignature Language="F#" Value="type ScriptControl = class&#xA;    inherit WebControl&#xA;    interface IScriptControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -41,8 +43,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptControl" /> class in a derived class.</summary>
@@ -55,12 +63,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.GetScriptDescriptors" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptDescriptors () As IEnumerable(Of ScriptDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ GetScriptDescriptors();" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptDescriptors : unit -&gt; seq&lt;System.Web.UI.ScriptDescriptor&gt;" Usage="scriptControl.GetScriptDescriptors " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptDescriptors</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,12 +89,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.GetScriptReferences" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptReferences () As IEnumerable(Of ScriptReference)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences();" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptReferences : unit -&gt; seq&lt;System.Web.UI.ScriptReference&gt;" Usage="scriptControl.GetScriptReferences " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IScriptControl.GetScriptReferences</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,9 +115,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="scriptControl.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,9 +147,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="scriptControl.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,7 +162,7 @@
       </Parameters>
       <Docs>
         <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
-        <summary>Raises the <see cref="M:System.Web.UI.Control.Render(System.EventArgs)" /> event and sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered to the browser.</summary>
+        <summary>Raises the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> event and sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered to the browser.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
@@ -163,8 +179,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptDescriptor&gt;</ReturnType>
       </ReturnValue>
@@ -187,8 +209,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptReference&gt;</ReturnType>
       </ReturnValue>

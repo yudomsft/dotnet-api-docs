@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.QuadraticEase" />
   <TypeSignature Language="VB.NET" Value="Public Class QuadraticEase&#xA;Inherits EasingFunctionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class QuadraticEase : System::Windows::Media::Animation::EasingFunctionBase" />
+  <TypeSignature Language="F#" Value="type QuadraticEase = class&#xA;    inherit EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,16 +30,12 @@
 > [!NOTE]
 >  You can use <xref:System.Windows.Media.Animation.PowerEase> to create the same behavior as <xref:System.Windows.Media.Animation.CubicEase>, <xref:System.Windows.Media.Animation.QuadraticEase>, <xref:System.Windows.Media.Animation.QuarticEase>, and <xref:System.Windows.Media.Animation.QuinticEase> by using the <xref:System.Windows.Media.Animation.PowerEase.Power%2A> property. For example, if you want to use <xref:System.Windows.Media.Animation.PowerEase> to substitute for <xref:System.Windows.Media.Animation.CubicEase>, specify a <xref:System.Windows.Media.Animation.PowerEase.Power%2A> value of 3.  
   
- There are several other easing functions besides <xref:System.Windows.Media.Animation.QuadraticEase> which you can explore using the following Silverlight sample.  
-  
- [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
-  
+ There are several other easing functions besides <xref:System.Windows.Media.Animation.QuadraticEase>.
  In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
   
-<a name="xamlObjectElementUsage_QuadraticEase"></a>   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <QuadraticEase .../>  
 ```  
   
@@ -64,6 +61,11 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.QuadraticEase" /> class.</summary>
@@ -76,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuadraticEase.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="quadraticEase.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.QuadraticEase.EaseInCore(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
+      <MemberSignature Language="F#" Value="override this.EaseInCore : double -&gt; double" Usage="quadraticEase.EaseInCore normalizedTime" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ExceptionHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExceptionHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExceptionHandler abstract" />
+  <TypeSignature Language="F#" Value="type ExceptionHandler = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -46,8 +48,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> class.</summary>
@@ -60,11 +68,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AlwaysHandle As ExceptionHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Dispatcher::ExceptionHandler ^ AlwaysHandle { System::ServiceModel::Dispatcher::ExceptionHandler ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AlwaysHandle : System.ServiceModel.Dispatcher.ExceptionHandler" Usage="System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ExceptionHandler</ReturnType>
       </ReturnValue>
@@ -80,17 +95,31 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property AsynchronousThreadExceptionHandler As ExceptionHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Dispatcher::ExceptionHandler ^ AsynchronousThreadExceptionHandler { System::ServiceModel::Dispatcher::ExceptionHandler ^ get(); void set(System::ServiceModel::Dispatcher::ExceptionHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AsynchronousThreadExceptionHandler : System.ServiceModel.Dispatcher.ExceptionHandler with get, set" Usage="System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>get: System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>set: System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -116,9 +145,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandleException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool HandleException(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="abstract member HandleException : Exception -&gt; bool" Usage="exceptionHandler.HandleException exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,11 +190,21 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property TransportExceptionHandler As ExceptionHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Dispatcher::ExceptionHandler ^ TransportExceptionHandler { System::ServiceModel::Dispatcher::ExceptionHandler ^ get(); void set(System::ServiceModel::Dispatcher::ExceptionHandler ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TransportExceptionHandler : System.ServiceModel.Dispatcher.ExceptionHandler with get, set" Usage="System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ExceptionHandler</ReturnType>
       </ReturnValue>

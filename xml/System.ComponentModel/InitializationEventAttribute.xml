@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.InitializationEventAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InitializationEventAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InitializationEventAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type InitializationEventAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,7 +26,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
     </Attribute>
   </Attributes>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.InitializationEventAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InitializationEventAttribute(System::String ^ eventName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.InitializationEventAttribute : string -&gt; System.ComponentModel.InitializationEventAttribute" Usage="new System.ComponentModel.InitializationEventAttribute eventName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -55,6 +58,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -62,6 +66,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="eventName" Type="System.String" />
       </Parameters>
@@ -77,6 +86,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.InitializationEventAttribute.EventName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventName : string" Usage="System.ComponentModel.InitializationEventAttribute.EventName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -86,6 +96,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -93,6 +104,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

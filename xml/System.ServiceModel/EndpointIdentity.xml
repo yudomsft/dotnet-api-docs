@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EndpointIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointIdentity abstract" />
+  <TypeSignature Language="F#" Value="type EndpointIdentity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -41,6 +43,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -49,6 +52,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an empty <see cref="T:System.ServiceModel.EndpointIdentity" /> instance.</summary>
@@ -61,9 +69,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateDnsIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDnsIdentity (dnsName As String) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateDnsIdentity(System::String ^ dnsName);" />
+      <MemberSignature Language="F#" Value="static member CreateDnsIdentity : string -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateDnsIdentity dnsName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,9 +113,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateIdentity(System.IdentityModel.Claims.Claim)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateIdentity (identity As Claim) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
+      <MemberSignature Language="F#" Value="static member CreateIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateIdentity identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,9 +176,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateRsaIdentity(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRsaIdentity (certificate As X509Certificate2) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateRsaIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="static member CreateRsaIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateRsaIdentity certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,9 +222,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateRsaIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRsaIdentity (publicKey As String) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateRsaIdentity(System::String ^ publicKey);" />
+      <MemberSignature Language="F#" Value="static member CreateRsaIdentity : string -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateRsaIdentity publicKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -243,9 +259,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateSpnIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSpnIdentity (spnName As String) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateSpnIdentity(System::String ^ spnName);" />
+      <MemberSignature Language="F#" Value="static member CreateSpnIdentity : string -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateSpnIdentity spnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,9 +305,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateUpnIdentity(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpnIdentity (upnName As String) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateUpnIdentity(System::String ^ upnName);" />
+      <MemberSignature Language="F#" Value="static member CreateUpnIdentity : string -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateUpnIdentity upnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,9 +370,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateX509CertificateIdentity(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateX509CertificateIdentity (certificate As X509Certificate2) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateX509CertificateIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
+      <MemberSignature Language="F#" Value="static member CreateX509CertificateIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateX509CertificateIdentity certificate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -392,9 +414,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.CreateX509CertificateIdentity(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateX509CertificateIdentity (primaryCertificate As X509Certificate2, supportingCertificates As X509Certificate2Collection) As EndpointIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::EndpointIdentity ^ CreateX509CertificateIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ primaryCertificate, System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ supportingCertificates);" />
+      <MemberSignature Language="F#" Value="static member CreateX509CertificateIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.EndpointIdentity.CreateX509CertificateIdentity (primaryCertificate, supportingCertificates)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -424,18 +448,20 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Equals(System.Object)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Equals(System.Object)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="public override bool Equals (object other);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="endpointIdentity.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -448,12 +474,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="other" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="other">To be added.</param>
+        <param name="obj">The <see cref="T:System.Object" /> compared for equality with the current identity.</param>
+        <param name="other">The <see cref="T:System.Object" /> compared for equality with the current identity.</param>
         <summary>Returns a value that determines whether a specified object is equal to the current identity object or if they have equal security properties.</summary>
         <returns>
           <see langword="true" /> if the specified object <paramref name="obj" /> is equivalent to the current identity or contains the same security properties; otherwise, <see langword="false" />.</returns>
@@ -466,9 +492,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="endpointIdentity.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -493,9 +521,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointIdentity.IdentityClaim" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdentityClaim As Claim" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Claims::Claim ^ IdentityClaim { System::IdentityModel::Claims::Claim ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IdentityClaim : System.IdentityModel.Claims.Claim" Usage="System.ServiceModel.EndpointIdentity.IdentityClaim" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -524,29 +554,31 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (identityClaim As Claim)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ identityClaim);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ identityClaim);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim claim);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim claim) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ claim);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Initialize : System.IdentityModel.Claims.Claim -&gt; unit" Usage="endpointIdentity.Initialize claim" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
+        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="identityClaim">To be added.</param>
-        <param name="claim">To be added.</param>
+        <param name="identityClaim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <param name="claim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
         <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -559,33 +591,35 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; claimComparer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; claimComparer) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim,System.Collections.Generic.IEqualityComparer{System.IdentityModel.Claims.Claim})" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; claimComparer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; claimComparer) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim,System.Collections.Generic.IEqualityComparer{System.IdentityModel.Claims.Claim})" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (identityClaim As Claim, claimComparer As IEqualityComparer(Of Claim))" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ identityClaim, System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ claimComparer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ identityClaim, System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ claimComparer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim claim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; comparer);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim claim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; comparer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ claim, System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ comparer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.Initialize : System.IdentityModel.Claims.Claim * System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; -&gt; unit" Usage="endpointIdentity.Initialize (claim, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
+        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="claimComparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2" />
+        <Parameter Name="claimComparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="identityClaim">To be added.</param>
-        <param name="claim">To be added.</param>
-        <param name="claimComparer">To be added.</param>
-        <param name="comparer">To be added.</param>
+        <param name="identityClaim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <param name="claim">The <see cref="T:System.IdentityModel.Claims.Claim" /> used to initialize the <see cref="T:System.ServiceModel.EndpointIdentity" />.</param>
+        <param name="claimComparer">The <see cref="T:System.Collections.IEqualityComparer" /> used to compare claims.</param>
+        <param name="comparer">The <see cref="T:System.Collections.IEqualityComparer" /> used to compare claims.</param>
         <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim and an interface and compares equality.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,9 +630,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="endpointIdentity.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

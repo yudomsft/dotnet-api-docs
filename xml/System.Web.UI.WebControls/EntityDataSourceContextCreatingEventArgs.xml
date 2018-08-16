@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceContextCreatingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceContextCreatingEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type EntityDataSourceContextCreatingEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -50,11 +52,21 @@ public partial class _Default : System.Web.UI.Page
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context" />
       <MemberSignature Language="VB.NET" Value="Public Property Context As ObjectContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContext ^ Context { System::Data::Objects::ObjectContext ^ get(); void set(System::Data::Objects::ObjectContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Objects.ObjectContext with get, set" Usage="System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Objects.ObjectContext</ReturnType>
       </ReturnValue>

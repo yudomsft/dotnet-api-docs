@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfigurationSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtectedConfigurationSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProtectedConfigurationSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type ProtectedConfigurationSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -32,7 +34,7 @@
 ## Examples  
  The following configuration file excerpt shows how to declaratively specify protected data providers.  
   
-```  
+```xml  
 <configProtectedData defaultProvider="RsaProtectedConfigurationProvider">  
   <providers>  
     <clear />  
@@ -66,6 +68,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -91,9 +94,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfigurationSection.DefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Configuration.ProtectedConfigurationSection.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -101,7 +106,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Configuration.ConfigurationProperty("defaultProvider", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -130,9 +135,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfigurationSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ProtectedConfigurationSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -154,9 +161,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfigurationSection.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Configuration.ProtectedConfigurationSection.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -164,7 +173,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Configuration.ConfigurationProperty("providers")</AttributeName>
         </Attribute>
       </Attributes>

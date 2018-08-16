@@ -4,20 +4,26 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataFormat" />
+  <TypeSignature Language="F#" Value="type IDataFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("AF08B280-90F2-11D0-9484-00A0C91110ED")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,16 +47,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Clone(Microsoft.VisualBasic.Compatibility.VB6.IDataFormat@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef newObject As IDataFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] Microsoft::VisualBasic::Compatibility::VB6::IDataFormat ^ % newObject);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iDataFormat.Clone newObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="newObject" Type="Microsoft.VisualBasic.Compatibility.VB6.IDataFormat&amp;" RefType="out" />
+        <Parameter Name="newObject" Type="Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" RefType="out" />
       </Parameters>
       <Docs>
         <param name="newObject">An <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />.</param>
@@ -74,9 +83,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Convert(System.Int32,System.Object,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Convert (cookie As Integer, from As Object, ByRef varTo As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert(int cookie, System::Object ^ from, [Runtime::InteropServices::Out] System::Object ^ % varTo);" />
+      <MemberSignature Language="F#" Value="abstract member Convert : int * obj *  -&gt; unit" Usage="iDataFormat.Convert (cookie, from, varTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,7 +97,7 @@
       <Parameters>
         <Parameter Name="cookie" Type="System.Int32" />
         <Parameter Name="from" Type="System.Object" />
-        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="varTo" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cookie">An <see langword="Integer" />.</param>
@@ -111,16 +123,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Default(System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Default (ByRef fDefault As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Default([Runtime::InteropServices::Out] bool % fDefault);" />
+      <MemberSignature Language="F#" Value="abstract member Default :  -&gt; unit" Usage="iDataFormat.Default fDefault" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fDefault" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="fDefault" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="fDefault">A <see cref="T:System.Boolean" />.</param>
@@ -144,9 +159,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetBinding(System.Runtime.InteropServices.VarEnum,System.Int32,Microsoft.VisualBasic.Compatibility.VB6.IRowset,Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO@,Microsoft.VisualBasic.Compatibility.VB6.DBBINDING@,System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetBinding (vtPropHint As VarEnum, rgfDataFormat As Integer, rowset As IRowset, ByRef columnInfo As DBCOLUMNINFO, ByRef binding As DBBINDING, ByRef size As Integer, ByRef cookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBinding(System::Runtime::InteropServices::VarEnum vtPropHint, int rgfDataFormat, Microsoft::VisualBasic::Compatibility::VB6::IRowset ^ rowset, Microsoft::VisualBasic::Compatibility::VB6::DBCOLUMNINFO % columnInfo, [Runtime::InteropServices::Out] Microsoft::VisualBasic::Compatibility::VB6::DBBINDING % binding, [Runtime::InteropServices::Out] int % size, [Runtime::InteropServices::Out] int % cookie);" />
+      <MemberSignature Language="F#" Value="abstract member GetBinding : System.Runtime.InteropServices.VarEnum * int * Microsoft.VisualBasic.Compatibility.VB6.IRowset *  *  *  *  -&gt; unit" Usage="iDataFormat.GetBinding (vtPropHint, rgfDataFormat, rowset, columnInfo, binding, size, cookie)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,10 +174,10 @@
         <Parameter Name="vtPropHint" Type="System.Runtime.InteropServices.VarEnum" />
         <Parameter Name="rgfDataFormat" Type="System.Int32" />
         <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
-        <Parameter Name="columnInfo" Type="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO&amp;" RefType="ref" />
-        <Parameter Name="binding" Type="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING&amp;" RefType="out" />
-        <Parameter Name="size" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="cookie" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="columnInfo" Type="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO" RefType="ref" />
+        <Parameter Name="binding" Type="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" RefType="out" />
+        <Parameter Name="size" Type="System.Int32" RefType="out" />
+        <Parameter Name="cookie" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="vtPropHint">A <see cref="T:System.Runtime.InteropServices.VarEnum" />.</param>
@@ -189,9 +207,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetData(System.Int32,System.IntPtr,System.Object@,System.Int32@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetData (cookie As Integer, from As IntPtr, ByRef varTo As Object, ByRef dbStatus As Integer, pObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetData(int cookie, IntPtr from, [Runtime::InteropServices::Out] System::Object ^ % varTo, [Runtime::InteropServices::Out] int % dbStatus, System::Object ^ pObject);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : int * nativeint *  *  * obj -&gt; unit" Usage="iDataFormat.GetData (cookie, from, varTo, dbStatus, pObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,8 +221,8 @@
       <Parameters>
         <Parameter Name="cookie" Type="System.Int32" />
         <Parameter Name="from" Type="System.IntPtr" />
-        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
-        <Parameter Name="dbStatus" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="varTo" Type="System.Object" RefType="out" />
+        <Parameter Name="dbStatus" Type="System.Int32" RefType="out" />
         <Parameter Name="pObject" Type="System.Object" />
       </Parameters>
       <Docs>
@@ -230,16 +251,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetLcid(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetLcid (ByRef lcid As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetLcid([Runtime::InteropServices::Out] int % lcid);" />
+      <MemberSignature Language="F#" Value="abstract member GetLcid :  -&gt; unit" Usage="iDataFormat.GetLcid lcid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="lcid" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="lcid" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="lcid">An <see langword="Integer" />.</param>
@@ -263,9 +287,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetRawData(System.Int32,System.IntPtr,System.Object@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRawData (cookie As Integer, from As IntPtr, ByRef varTo As Object, ByRef dbStatus As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRawData(int cookie, IntPtr from, [Runtime::InteropServices::Out] System::Object ^ % varTo, [Runtime::InteropServices::Out] int % dbStatus);" />
+      <MemberSignature Language="F#" Value="abstract member GetRawData : int * nativeint *  *  -&gt; unit" Usage="iDataFormat.GetRawData (cookie, from, varTo, dbStatus)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,8 +301,8 @@
       <Parameters>
         <Parameter Name="cookie" Type="System.Int32" />
         <Parameter Name="from" Type="System.IntPtr" />
-        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
-        <Parameter Name="dbStatus" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="varTo" Type="System.Object" RefType="out" />
+        <Parameter Name="dbStatus" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="cookie">An <see langword="Integer" />.</param>
@@ -302,16 +329,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetSubFormatType(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSubFormatType (ByRef subFormatType As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSubFormatType([Runtime::InteropServices::Out] int % subFormatType);" />
+      <MemberSignature Language="F#" Value="abstract member GetSubFormatType :  -&gt; unit" Usage="iDataFormat.GetSubFormatType subFormatType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subFormatType" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="subFormatType" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="subFormatType">An <see langword="Integer" />.</param>
@@ -335,9 +365,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseBinding(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseBinding (cookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseBinding(int cookie);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseBinding : int -&gt; unit" Usage="iDataFormat.ReleaseBinding cookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,9 +401,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseData(System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseData (cookie As Integer, pv As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseData(int cookie, IntPtr pv);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseData : int * nativeint -&gt; unit" Usage="iDataFormat.ReleaseData (cookie, pv)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -403,9 +439,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetData(System.Int32,System.Object@,System.IntPtr,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (cookie As Integer, ByRef from As Object, pVarTo As IntPtr, pObject As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(int cookie, [Runtime::InteropServices::Out] System::Object ^ % from, IntPtr pVarTo, System::Object ^ pObject);" />
+      <MemberSignature Language="F#" Value="abstract member SetData : int *  * nativeint * obj -&gt; unit" Usage="iDataFormat.SetData (cookie, from, pVarTo, pObject)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -413,7 +452,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="cookie" Type="System.Int32" />
-        <Parameter Name="from" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="from" Type="System.Object" RefType="out" />
         <Parameter Name="pVarTo" Type="System.IntPtr" />
         <Parameter Name="pObject" Type="System.Object" />
       </Parameters>
@@ -442,9 +481,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetLcid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLcid (lcid As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLcid(int lcid);" />
+      <MemberSignature Language="F#" Value="abstract member SetLcid : int -&gt; unit" Usage="iDataFormat.SetLcid lcid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,9 +517,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetRawData(System.Int32,System.Object,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetRawData (cookie As Integer, from As Object, pVarTo As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawData(int cookie, System::Object ^ from, IntPtr pVarTo);" />
+      <MemberSignature Language="F#" Value="abstract member SetRawData : int * obj * nativeint -&gt; unit" Usage="iDataFormat.SetRawData (cookie, from, pVarTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -512,9 +557,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetSubFormatType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSubFormatType (subFormatType As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSubFormatType(int subFormatType);" />
+      <MemberSignature Language="F#" Value="abstract member SetSubFormatType : int -&gt; unit" Usage="iDataFormat.SetSubFormatType subFormatType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

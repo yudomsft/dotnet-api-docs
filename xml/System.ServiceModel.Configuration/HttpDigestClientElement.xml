@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.HttpDigestClientElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpDigestClientElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpDigestClientElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type HttpDigestClientElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,8 +28,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.HttpDigestClientElement" /> class.</summary>
@@ -40,9 +48,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.HttpDigestClientElement.Copy(System.ServiceModel.Configuration.HttpDigestClientElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As HttpDigestClientElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::HttpDigestClientElement ^ from);" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.HttpDigestClientElement -&gt; unit" Usage="httpDigestClientElement.Copy from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,14 +76,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HttpDigestClientElement.ImpersonationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ImpersonationLevel As TokenImpersonationLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel ImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); void set(System::Security::Principal::TokenImpersonationLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.Security.Principal.TokenImpersonationLevel with get, set" Usage="System.ServiceModel.Configuration.HttpDigestClientElement.ImpersonationLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.ConfigurationProperty("impersonationLevel", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -98,9 +113,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HttpDigestClientElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.HttpDigestClientElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

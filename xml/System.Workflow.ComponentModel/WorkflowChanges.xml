@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowChanges" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowChanges" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowChanges sealed" />
+  <TypeSignature Language="F#" Value="type WorkflowChanges = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -49,9 +51,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChanges.#ctor(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rootActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowChanges(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.WorkflowChanges : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.WorkflowChanges" Usage="new System.Workflow.ComponentModel.WorkflowChanges rootActivity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -75,9 +79,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ConditionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ConditionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ConditionProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.WorkflowChanges.ConditionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,9 +111,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChanges.GetCondition(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCondition (dependencyObject As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetCondition(System::Object ^ dependencyObject);" />
+      <MemberSignature Language="F#" Value="static member GetCondition : obj -&gt; obj" Usage="System.Workflow.ComponentModel.WorkflowChanges.GetCondition dependencyObject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,9 +152,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChanges.SetCondition(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCondition (dependencyObject As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCondition(System::Object ^ dependencyObject, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member SetCondition : obj * obj -&gt; unit" Usage="System.Workflow.ComponentModel.WorkflowChanges.SetCondition (dependencyObject, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,9 +190,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.WorkflowChanges.TransientWorkflow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransientWorkflow As CompositeActivity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::CompositeActivity ^ TransientWorkflow { System::Workflow::ComponentModel::CompositeActivity ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransientWorkflow : System.Workflow.ComponentModel.CompositeActivity" Usage="System.Workflow.ComponentModel.WorkflowChanges.TransientWorkflow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,9 +222,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowChanges.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Function Validate () As ValidationErrorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Validate();" />
+      <MemberSignature Language="F#" Value="member this.Validate : unit -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="workflowChanges.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

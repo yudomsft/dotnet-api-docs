@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteMapDesignerDataSourceView&#xA;Inherits DesignerDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class SiteMapDesignerDataSourceView : System::Web::UI::Design::DesignerDataSourceView" />
+  <TypeSignature Language="F#" Value="type SiteMapDesignerDataSourceView = class&#xA;    inherit DesignerDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,9 +26,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As SiteMapDataSourceDesigner, viewName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapDesignerDataSourceView(System::Web::UI::Design::WebControls::SiteMapDataSourceDesigner ^ owner, System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView : System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner * string -&gt; System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView" Usage="new System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView (owner, viewName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,9 +50,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeData (minimumRows As Integer, ByRef isSampleData As Boolean) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerable ^ GetDesignTimeData(int minimumRows, [Runtime::InteropServices::Out] bool % isSampleData);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeData : int *  -&gt; System.Collections.IEnumerable" Usage="siteMapDesignerDataSourceView.GetDesignTimeData (minimumRows, isSampleData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="minimumRows" Type="System.Int32" />
-        <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isSampleData" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="minimumRows">The minimum number of rows to retrieve or create.</param>
@@ -73,11 +79,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Schema As IDataSourceViewSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceViewSchema ^ Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceViewSchema" Usage="System.Web.UI.Design.WebControls.SiteMapDesignerDataSourceView.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
       </ReturnValue>

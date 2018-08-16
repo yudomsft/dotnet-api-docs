@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ICommand" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICommand" />
   <TypeSignature Language="C++ CLI" Value="public interface class ICommand" />
+  <TypeSignature Language="F#" Value="type ICommand = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +21,27 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Input.CommandConverter, PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.Windows.Markup.ValueSerializer("System.Windows.Input.CommandValueSerializer, PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Input.CommandConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Windows.Markup.ValueSerializer("System.Windows.Input.CommandValueSerializer, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -75,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ICommand.CanExecute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExecute(System::Object ^ parameter);" />
+      <MemberSignature Language="F#" Value="abstract member CanExecute : obj -&gt; bool" Usage="iCommand.CanExecute parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -91,6 +110,11 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,6 +146,7 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.ICommand.CanExecuteChanged" />
       <MemberSignature Language="VB.NET" Value="Event CanExecuteChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CanExecuteChanged;" />
+      <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -138,6 +163,11 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -165,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ICommand.Execute(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute(System::Object ^ parameter);" />
+      <MemberSignature Language="F#" Value="abstract member Execute : obj -&gt; unit" Usage="iCommand.Execute parameter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -181,6 +212,11 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

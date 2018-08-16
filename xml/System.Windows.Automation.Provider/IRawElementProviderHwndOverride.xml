@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderHwndOverride" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderHwndOverride&#xA;Implements IRawElementProviderSimple" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderHwndOverride : System::Windows::Automation::Provider::IRawElementProviderSimple" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderHwndOverride = interface&#xA;    interface IRawElementProviderSimple" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -14,14 +16,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("1d5df27c-8947-4425-b8d9-79787bb460b8")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,9 +40,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOverrideProviderForHwnd (hwnd As IntPtr) As IRawElementProviderSimple" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderSimple ^ GetOverrideProviderForHwnd(IntPtr hwnd);" />
+      <MemberSignature Language="F#" Value="abstract member GetOverrideProviderForHwnd : nativeint -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="iRawElementProviderHwndOverride.GetOverrideProviderForHwnd hwnd" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

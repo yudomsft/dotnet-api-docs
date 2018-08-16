@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskCommandLineEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskCommandLineEventArgs&#xA;Inherits BuildMessageEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class TaskCommandLineEventArgs : Microsoft::Build::Framework::BuildMessageEventArgs" />
+  <TypeSignature Language="F#" Value="type TaskCommandLineEventArgs = class&#xA;    inherit BuildMessageEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -42,8 +45,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.TaskCommandLineEventArgs" /> class.</summary>
@@ -56,9 +66,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TaskCommandLineEventArgs.#ctor(System.String,System.String,Microsoft.Build.Framework.MessageImportance)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandLine As String, taskName As String, importance As MessageImportance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCommandLineEventArgs(System::String ^ commandLine, System::String ^ taskName, Microsoft::Build::Framework::MessageImportance importance);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TaskCommandLineEventArgs : string * string * Microsoft.Build.Framework.MessageImportance -&gt; Microsoft.Build.Framework.TaskCommandLineEventArgs" Usage="new Microsoft.Build.Framework.TaskCommandLineEventArgs (commandLine, taskName, importance)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -80,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.TaskCommandLineEventArgs.#ctor(System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandLine As String, taskName As String, importance As MessageImportance, eventTimestamp As DateTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCommandLineEventArgs(System::String ^ commandLine, System::String ^ taskName, Microsoft::Build::Framework::MessageImportance importance, DateTime eventTimestamp);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.TaskCommandLineEventArgs : string * string * Microsoft.Build.Framework.MessageImportance * DateTime -&gt; Microsoft.Build.Framework.TaskCommandLineEventArgs" Usage="new Microsoft.Build.Framework.TaskCommandLineEventArgs (commandLine, taskName, importance, eventTimestamp)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -106,9 +120,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskCommandLineEventArgs.CommandLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandLine As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandLine { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandLine : string" Usage="Microsoft.Build.Framework.TaskCommandLineEventArgs.CommandLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +143,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.TaskCommandLineEventArgs.TaskName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TaskName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskName : string" Usage="Microsoft.Build.Framework.TaskCommandLineEventArgs.TaskName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

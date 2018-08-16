@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SessionParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class SessionParameter&#xA;Inherits Parameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class SessionParameter : System::Web::UI::WebControls::Parameter" />
+  <TypeSignature Language="F#" Value="type SessionParameter = class&#xA;    inherit Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultProperty("SessionField")</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,8 +65,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new unnamed instance of the <see cref="T:System.Web.UI.WebControls.SessionParameter" /> class.</summary>
@@ -92,9 +100,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.Web.UI.WebControls.SessionParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (original As SessionParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SessionParameter(System::Web::UI::WebControls::SessionParameter ^ original);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SessionParameter : System.Web.UI.WebControls.SessionParameter -&gt; System.Web.UI.WebControls.SessionParameter" Usage="new System.Web.UI.WebControls.SessionParameter original" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -120,9 +130,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, sessionField As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionParameter(System::String ^ name, System::String ^ sessionField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SessionParameter : string * string -&gt; System.Web.UI.WebControls.SessionParameter" Usage="new System.Web.UI.WebControls.SessionParameter (name, sessionField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -150,9 +162,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string sessionField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.String,System.Data.DbType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ sessionField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SessionParameter : string * System.Data.DbType * string -&gt; System.Web.UI.WebControls.SessionParameter" Usage="new System.Web.UI.WebControls.SessionParameter (name, dbType, sessionField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -181,9 +195,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.#ctor(System.String,System.TypeCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, sessionField As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionParameter(System::String ^ name, TypeCode type, System::String ^ sessionField);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SessionParameter : string * TypeCode * string -&gt; System.Web.UI.WebControls.SessionParameter" Usage="new System.Web.UI.WebControls.SessionParameter (name, type, sessionField)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -222,9 +238,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Web.UI.WebControls.Parameter" Usage="sessionParameter.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,9 +268,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SessionParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="sessionParameter.Evaluate (context, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,13 +306,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SessionParameter.SessionField" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionField : string with get, set" Usage="System.Web.UI.WebControls.SessionParameter.SessionField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>

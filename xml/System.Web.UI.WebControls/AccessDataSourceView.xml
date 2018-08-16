@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AccessDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessDataSourceView&#xA;Inherits SqlDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class AccessDataSourceView : System::Web::UI::WebControls::SqlDataSourceView" />
+  <TypeSignature Language="F#" Value="type AccessDataSourceView = class&#xA;    inherit SqlDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,11 +37,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSourceView.#ctor(System.Web.UI.WebControls.AccessDataSource,System.String,System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As AccessDataSource, name As String, context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessDataSourceView(System::Web::UI::WebControls::AccessDataSource ^ owner, System::String ^ name, System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.AccessDataSourceView : System.Web.UI.WebControls.AccessDataSource * string * System.Web.HttpContext -&gt; System.Web.UI.WebControls.AccessDataSourceView" Usage="new System.Web.UI.WebControls.AccessDataSourceView (owner, name, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Web.UI.WebControls.AccessDataSource" />
         <Parameter Name="name" Type="System.String" />
@@ -66,9 +75,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AccessDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ExecuteSelect (arguments As DataSourceSelectArguments) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Collections::IEnumerable ^ ExecuteSelect(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
+      <MemberSignature Language="F#" Value="override this.ExecuteSelect : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="accessDataSourceView.ExecuteSelect arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

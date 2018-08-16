@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceStatusEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceStatusEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceStatusEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -50,9 +52,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceStatusEventArgs(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceStatusEventArgs : Exception -&gt; System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceStatusEventArgs exception" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -77,9 +81,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (result As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceStatusEventArgs(System::Object ^ result);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceStatusEventArgs : obj -&gt; System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceStatusEventArgs result" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -104,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (result As Object, totalRowCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceStatusEventArgs(System::Object ^ result, int totalRowCount);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceStatusEventArgs : obj * int -&gt; System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceStatusEventArgs (result, totalRowCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -126,11 +134,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
@@ -161,11 +176,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -197,11 +222,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Result { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Result : obj" Usage="System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -236,11 +268,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalRowCount : int" Usage="System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

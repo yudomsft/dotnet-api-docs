@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ITypeLib2" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeLib2&#xA;Implements ITypeLib" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITypeLib2 : System::Runtime::InteropServices::ComTypes::ITypeLib" />
+  <TypeSignature Language="F#" Value="type ITypeLib2 = interface&#xA;    interface ITypeLib" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +17,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -29,11 +31,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("00020411-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,9 +61,10 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FindName (szNameBuf As String, lHashVal As Integer, ppTInfo As ITypeInfo(), rgMemId As Integer(), ByRef pcFound As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindName(System::String ^ szNameBuf, int lHashVal, cli::array &lt;System::Runtime::InteropServices::ComTypes::ITypeInfo ^&gt; ^ ppTInfo, cli::array &lt;int&gt; ^ rgMemId, short % pcFound);" />
+      <MemberSignature Language="F#" Value="abstract member FindName : string * int * System.Runtime.InteropServices.ComTypes.ITypeInfo[] * int[] *  -&gt; unit" Usage="iTypeLib2.FindName (szNameBuf, lHashVal, ppTInfo, rgMemId, pcFound)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo[],System.Int32[],System.Int16)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -72,6 +78,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -87,7 +94,7 @@
         <Parameter Name="lHashVal" Type="System.Int32" />
         <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo[]" />
         <Parameter Name="rgMemId" Type="System.Int32[]" />
-        <Parameter Name="pcFound" Type="System.Int16&amp;" RefType="ref" />
+        <Parameter Name="pcFound" Type="System.Int16" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="szNameBuf">The name to search for.</param>
@@ -116,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetAllCustData(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAllCustData (pCustData As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllCustData(IntPtr pCustData);" />
+      <MemberSignature Language="F#" Value="abstract member GetAllCustData : nativeint -&gt; unit" Usage="iTypeLib2.GetAllCustData pCustData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -129,6 +137,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -154,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetCustData(System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetCustData (ByRef guid As Guid, ByRef pVarVal As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCustData(Guid % guid, [Runtime::InteropServices::Out] System::Object ^ % pVarVal);" />
+      <MemberSignature Language="F#" Value="abstract member GetCustData :  *  -&gt; unit" Usage="iTypeLib2.GetCustData (guid, pVarVal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -167,6 +177,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -178,8 +189,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="pVarVal" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="pVarVal" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="guid">A <see cref="T:System.Guid" /> , passed by reference, that is used to identify the data.</param>
@@ -194,9 +205,10 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation (index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation(int index, [Runtime::InteropServices::Out] System::String ^ % strName, [Runtime::InteropServices::Out] System::String ^ % strDocString, [Runtime::InteropServices::Out] int % dwHelpContext, [Runtime::InteropServices::Out] System::String ^ % strHelpFile);" />
+      <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="iTypeLib2.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetDocumentation(System.Int32,System.String,System.String,System.Int32,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -210,6 +222,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -222,10 +235,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="strName" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="strDocString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="dwHelpContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="strHelpFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="strName" Type="System.String" RefType="out" />
+        <Parameter Name="strDocString" Type="System.String" RefType="out" />
+        <Parameter Name="dwHelpContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="strHelpFile" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">An index of the type description whose documentation is to be returned.</param>
@@ -250,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetDocumentation2(System.Int32,System.String@,System.Int32@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation2 (index As Integer, ByRef pbstrHelpString As String, ByRef pdwHelpStringContext As Integer, ByRef pbstrHelpStringDll As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation2(int index, [Runtime::InteropServices::Out] System::String ^ % pbstrHelpString, [Runtime::InteropServices::Out] int % pdwHelpStringContext, [Runtime::InteropServices::Out] System::String ^ % pbstrHelpStringDll);" />
+      <MemberSignature Language="F#" Value="abstract member GetDocumentation2 : int *  *  *  -&gt; unit" Usage="iTypeLib2.GetDocumentation2 (index, pbstrHelpString, pdwHelpStringContext, pbstrHelpStringDll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -263,6 +277,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -271,7 +286,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -280,9 +295,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="pbstrHelpString" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="pdwHelpStringContext" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="pbstrHelpStringDll" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="pbstrHelpString" Type="System.String" RefType="out" />
+        <Parameter Name="pdwHelpStringContext" Type="System.Int32" RefType="out" />
+        <Parameter Name="pbstrHelpStringDll" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">An index of the type description whose documentation is to be returned; if <c>index</c> is -1, the documentation for the library is returned.</param>
@@ -299,9 +314,10 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetLibAttr(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetLibAttr (ByRef ppTLibAttr As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetLibAttr([Runtime::InteropServices::Out] IntPtr % ppTLibAttr);" />
+      <MemberSignature Language="F#" Value="abstract member GetLibAttr :  -&gt; unit" Usage="iTypeLib2.GetLibAttr ppTLibAttr" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetLibAttr(System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -315,6 +331,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -326,7 +343,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTLibAttr" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="ppTLibAttr" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTLibAttr">When this method returns, contains a structure that contains the library's attributes. This parameter is passed uninitialized.</param>
@@ -349,6 +366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetLibStatistics(System.IntPtr,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetLibStatistics (pcUniqueNames As IntPtr, ByRef pcchUniqueNames As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetLibStatistics(IntPtr pcUniqueNames, [Runtime::InteropServices::Out] int % pcchUniqueNames);" />
+      <MemberSignature Language="F#" Value="abstract member GetLibStatistics : nativeint *  -&gt; unit" Usage="iTypeLib2.GetLibStatistics (pcUniqueNames, pcchUniqueNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -362,6 +380,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -374,7 +393,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pcUniqueNames" Type="System.IntPtr" />
-        <Parameter Name="pcchUniqueNames" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pcchUniqueNames" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pcUniqueNames">A pointer to a count of unique names. If the caller does not need this information, set to <see langword="null" />.</param>
@@ -396,9 +415,10 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeComp (ByRef ppTComp As ITypeComp)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeComp([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeComp ^ % ppTComp);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="iTypeLib2.GetTypeComp ppTComp" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -412,6 +432,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -423,7 +444,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp&amp;" RefType="out" />
+        <Parameter Name="ppTComp" Type="System.Runtime.InteropServices.ComTypes.ITypeComp" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppTComp">When this method returns, contains an <see langword="ITypeComp" /> instance for this <see langword="ITypeLib" />. This parameter is passed uninitialized.</param>
@@ -444,9 +465,10 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfo (index As Integer, ByRef ppTI As ITypeInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfo(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTI);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfo : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfo (index, ppTI)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -460,6 +482,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -472,7 +495,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo&amp;" RefType="out" />
+        <Parameter Name="ppTI" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">An index of the <see langword="ITypeInfo" /> interface to return.</param>
@@ -494,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfoCount" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeInfoCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTypeInfoCount();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoCount : unit -&gt; int" Usage="iTypeLib2.GetTypeInfoCount " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoCount</InterfaceMember>
@@ -510,6 +534,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -540,9 +565,10 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.ComTypes.ITypeInfo@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoOfGuid (ByRef guid As Guid, ByRef ppTInfo As ITypeInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoOfGuid(Guid % guid, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoOfGuid :  *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoOfGuid (guid, ppTInfo)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoOfGuid(System.Guid,System.Runtime.InteropServices.ComTypes.ITypeInfo)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -556,6 +582,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -567,8 +594,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="guid" Type="System.Guid&amp;" RefType="ref" />
-        <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo&amp;" RefType="out" />
+        <Parameter Name="guid" Type="System.Guid" RefType="ref" />
+        <Parameter Name="ppTInfo" Type="System.Runtime.InteropServices.ComTypes.ITypeInfo" RefType="out" />
       </Parameters>
       <Docs>
         <param name="guid">The <see cref="T:System.Guid" />, passed by reference, that represents the IID of the <see langword="CLSID" /> interface of the class whose type info is requested.</param>
@@ -590,9 +617,10 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoType (index As Integer, ByRef pTKind As TYPEKIND)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoType(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::TYPEKIND % pTKind);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoType : int *  -&gt; unit" Usage="iTypeLib2.GetTypeInfoType (index, pTKind)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.ComTypes.TYPEKIND)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -606,6 +634,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -618,7 +647,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="pTKind" Type="System.Runtime.InteropServices.ComTypes.TYPEKIND&amp;" RefType="out" />
+        <Parameter Name="pTKind" Type="System.Runtime.InteropServices.ComTypes.TYPEKIND" RefType="out" />
       </Parameters>
       <Docs>
         <param name="index">The index of the type description within the type library.</param>
@@ -640,6 +669,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.IsName(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsName (szNameBuf As String, lHashVal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsName(System::String ^ szNameBuf, int lHashVal);" />
+      <MemberSignature Language="F#" Value="abstract member IsName : string * int -&gt; bool" Usage="iTypeLib2.IsName (szNameBuf, lHashVal)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.IsName(System.String,System.Int32)</InterfaceMember>
@@ -656,6 +686,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -692,6 +723,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeLib2.ReleaseTLibAttr(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseTLibAttr (pTLibAttr As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseTLibAttr(IntPtr pTLibAttr);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseTLibAttr : nativeint -&gt; unit" Usage="iTypeLib2.ReleaseTLibAttr pTLibAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeLib.ReleaseTLibAttr(System.IntPtr)</InterfaceMember>
@@ -708,6 +740,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

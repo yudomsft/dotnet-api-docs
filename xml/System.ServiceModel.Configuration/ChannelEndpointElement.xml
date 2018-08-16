@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ChannelEndpointElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ChannelEndpointElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelEndpointElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ChannelEndpointElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,8 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> class.</summary>
@@ -49,9 +57,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.#ctor(System.ServiceModel.EndpointAddress,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress, contractType As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelEndpointElement(System::ServiceModel::EndpointAddress ^ address, System::String ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ChannelEndpointElement : System.ServiceModel.EndpointAddress * string -&gt; System.ServiceModel.Configuration.ChannelEndpointElement" Usage="new System.ServiceModel.Configuration.ChannelEndpointElement (address, contractType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -71,13 +81,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Address { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : Uri with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("address", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
       </Attributes>
@@ -96,16 +108,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.BehaviorConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property BehaviorConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BehaviorConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.BehaviorConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("behaviorConfiguration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -124,17 +138,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Binding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("binding", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.ConfigurationProperty("binding", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,16 +174,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.BindingConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property BindingConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BindingConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BindingConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.BindingConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("bindingConfiguration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -180,17 +204,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Contract" />
       <MemberSignature Language="VB.NET" Value="Public Property Contract As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Contract { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Contract : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Contract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("contract", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.ConfigurationProperty("contract", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -208,16 +240,17 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.EndpointConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointConfiguration As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EndpointConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.EndpointConfiguration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("endpointConfiguration", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -236,13 +269,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Headers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As AddressHeaderCollectionElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::AddressHeaderCollectionElement ^ Headers { System::ServiceModel::Configuration::AddressHeaderCollectionElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Configuration.AddressHeaderCollectionElement" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Headers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("headers")</AttributeName>
         </Attribute>
       </Attributes>
@@ -261,13 +296,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Identity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As IdentityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::IdentityElement ^ Identity { System::ServiceModel::Configuration::IdentityElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.ServiceModel.Configuration.IdentityElement" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("identity")</AttributeName>
         </Attribute>
       </Attributes>
@@ -286,16 +323,17 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Kind" />
       <MemberSignature Language="VB.NET" Value="Public Property Kind As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Kind { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("kind", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -314,16 +352,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -349,9 +389,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ChannelEndpointElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -369,13 +411,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="channelEndpointElement.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

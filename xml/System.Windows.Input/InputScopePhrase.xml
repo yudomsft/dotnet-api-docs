@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScopePhrase" />
   <TypeSignature Language="VB.NET" Value="Public Class InputScopePhrase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputScopePhrase : System::Windows::Markup::IAddChild" />
+  <TypeSignature Language="F#" Value="type InputScopePhrase = class&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Name")</AttributeName>
     </Attribute>
   </Attributes>
@@ -52,8 +54,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>This type or member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
@@ -66,9 +74,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopePhrase.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InputScopePhrase(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.InputScopePhrase : string -&gt; System.Windows.Input.InputScopePhrase" Usage="new System.Windows.Input.InputScopePhrase name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -94,12 +104,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopePhrase.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddChild (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddChild(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="inputScopePhrase.AddChild value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,12 +132,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScopePhrase.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddText (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddText(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="inputScopePhrase.AddText name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,11 +160,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScopePhrase.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Input.InputScopePhrase.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

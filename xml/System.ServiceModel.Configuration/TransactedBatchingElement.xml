@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.TransactedBatchingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransactedBatchingElement&#xA;Inherits BehaviorExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class TransactedBatchingElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type TransactedBatchingElement = class&#xA;    inherit BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -34,8 +36,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.TransactedBatchingElement" /> class.</summary>
@@ -48,9 +56,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransactedBatchingElement.BehaviorType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.TransactedBatchingElement.BehaviorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,9 +78,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.TransactedBatchingElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="transactedBatchingElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,9 +103,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.TransactedBatchingElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="transactedBatchingElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,16 +126,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransactedBatchingElement.MaxBatchSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBatchSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBatchSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBatchSize : int with get, set" Usage="System.ServiceModel.Configuration.TransactedBatchingElement.MaxBatchSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxBatchSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -140,9 +156,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransactedBatchingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.TransactedBatchingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

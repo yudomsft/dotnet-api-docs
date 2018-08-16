@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class ConnectionStringsExpressionBuilder&#xA;Inherits ExpressionBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringsExpressionBuilder : System::Web::Compilation::ExpressionBuilder" />
+  <TypeSignature Language="F#" Value="type ConnectionStringsExpressionBuilder = class&#xA;    inherit ExpressionBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,11 +15,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.Compilation.ExpressionPrefix("ConnectionStrings")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ConnectionStringsExpressionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -89,8 +94,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ConnectionStringsExpressionBuilder" /> class.</summary>
@@ -103,9 +114,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (target As Object, entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::Object ^ target, System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.EvaluateExpression : obj * System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="connectionStringsExpressionBuilder.EvaluateExpression (target, entry, parsedData, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,9 +156,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCodeExpression (entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeExpression ^ GetCodeExpression(System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetCodeExpression : System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; System.CodeDom.CodeExpression" Usage="connectionStringsExpressionBuilder.GetCodeExpression (entry, parsedData, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,9 +194,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetConnectionString (connectionStringName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetConnectionString(System::String ^ connectionStringName);" />
+      <MemberSignature Language="F#" Value="static member GetConnectionString : string -&gt; string" Usage="System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionString connectionStringName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,9 +230,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetConnectionStringProviderName (connectionStringName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetConnectionStringProviderName(System::String ^ connectionStringName);" />
+      <MemberSignature Language="F#" Value="static member GetConnectionStringProviderName : string -&gt; string" Usage="System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName connectionStringName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,9 +266,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ConnectionStringsExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ParseExpression (expression As String, propertyType As Type, context As ExpressionBuilderContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ParseExpression(System::String ^ expression, Type ^ propertyType, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.ParseExpression : string * Type * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="connectionStringsExpressionBuilder.ParseExpression (expression, propertyType, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,9 +304,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ConnectionStringsExpressionBuilder.SupportsEvaluate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsEvaluate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEvaluate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsEvaluate : bool" Usage="System.Web.Compilation.ConnectionStringsExpressionBuilder.SupportsEvaluate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

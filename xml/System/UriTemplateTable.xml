@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.UriTemplateTable" />
   <TypeSignature Language="VB.NET" Value="Public Class UriTemplateTable" />
   <TypeSignature Language="C++ CLI" Value="public ref class UriTemplateTable" />
+  <TypeSignature Language="F#" Value="type UriTemplateTable = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,12 +12,18 @@
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>A class that represents an associative set of <see cref="T:System.UriTemplate" /> objects.</summary>
     <remarks>
@@ -64,8 +71,14 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.UriTemplateTable" /> class.</summary>
@@ -88,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.UriTemplate,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyValuePairs As IEnumerable(Of KeyValuePair(Of UriTemplate, Object)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplateTable(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;UriTemplate ^, System::Object ^&gt;&gt; ^ keyValuePairs);" />
+      <MemberSignature Language="F#" Value="new UriTemplateTable : seq&lt;System.Collections.Generic.KeyValuePair&lt;UriTemplate, obj&gt;&gt; -&gt; UriTemplateTable" Usage="new System.UriTemplateTable keyValuePairs" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,8 +110,14 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="keyValuePairs" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UriTemplate,System.Object&gt;&gt;" />
       </Parameters>
@@ -123,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.#ctor(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseAddress As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplateTable(Uri ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new UriTemplateTable : Uri -&gt; UriTemplateTable" Usage="new System.UriTemplateTable baseAddress" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,8 +152,14 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="baseAddress" Type="System.Uri" />
       </Parameters>
@@ -158,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.#ctor(System.Uri,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.UriTemplate,System.Object}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseAddress As Uri, keyValuePairs As IEnumerable(Of KeyValuePair(Of UriTemplate, Object)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplateTable(Uri ^ baseAddress, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;UriTemplate ^, System::Object ^&gt;&gt; ^ keyValuePairs);" />
+      <MemberSignature Language="F#" Value="new UriTemplateTable : Uri * seq&lt;System.Collections.Generic.KeyValuePair&lt;UriTemplate, obj&gt;&gt; -&gt; UriTemplateTable" Usage="new System.UriTemplateTable (baseAddress, keyValuePairs)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -166,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -195,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.BaseAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseAddress : Uri with get, set" Usage="System.UriTemplateTable.BaseAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,8 +233,14 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -235,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.UriTemplateTable.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -243,6 +280,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.KeyValuePairs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyValuePairs As IList(Of KeyValuePair(Of UriTemplate, Object))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Collections::Generic::KeyValuePair&lt;UriTemplate ^, System::Object ^&gt;&gt; ^ KeyValuePairs { System::Collections::Generic::IList&lt;System::Collections::Generic::KeyValuePair&lt;UriTemplate ^, System::Object ^&gt;&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyValuePairs : System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;UriTemplate, obj&gt;&gt;" Usage="System.UriTemplateTable.KeyValuePairs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -284,8 +323,14 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;System.UriTemplate,System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -316,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.MakeReadOnly(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly (allowDuplicateEquivalentUriTemplates As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly(bool allowDuplicateEquivalentUriTemplates);" />
+      <MemberSignature Language="F#" Value="member this.MakeReadOnly : bool -&gt; unit" Usage="uriTemplateTable.MakeReadOnly allowDuplicateEquivalentUriTemplates" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -324,6 +370,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,6 +403,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.UriTemplateMatch&gt; Match(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.Match(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;UriTemplateMatch ^&gt; ^ Match(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="member this.Match : Uri -&gt; System.Collections.ObjectModel.Collection&lt;UriTemplateMatch&gt;" Usage="uriTemplateTable.Match uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -364,6 +412,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,6 +448,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.UriTemplateMatch MatchSingle(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.MatchSingle(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplateMatch ^ MatchSingle(Uri ^ uri);" />
+      <MemberSignature Language="F#" Value="member this.MatchSingle : Uri -&gt; UriTemplateMatch" Usage="uriTemplateTable.MatchSingle uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -407,6 +457,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,11 +494,17 @@
       <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.OriginalBaseAddress" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalBaseAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ OriginalBaseAddress { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OriginalBaseAddress : Uri" Usage="System.UriTemplateTable.OriginalBaseAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>

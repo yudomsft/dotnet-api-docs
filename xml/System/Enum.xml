@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Enum" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Enum&#xA;Inherits ValueType&#xA;Implements IComparable, IConvertible, IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Enum abstract : ValueType, IComparable, IConvertible, IFormattable" />
+  <TypeSignature Language="F#" Value="type Enum = class&#xA;    inherit ValueType&#xA;    interface IComparable&#xA;    interface IFormattable&#xA;    interface IConvertible" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -37,7 +40,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -251,6 +254,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -270,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (target As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="enum.CompareTo target" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -285,6 +291,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -293,7 +301,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -353,6 +361,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="enum.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -365,6 +374,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -372,6 +383,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -414,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.Format(System.Type,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Format (enumType As Type, value As Object, format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(Type ^ enumType, System::Object ^ value, System::String ^ format);" />
+      <MemberSignature Language="F#" Value="static member Format : Type * obj * string -&gt; string" Usage="System.Enum.Format (enumType, value, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -426,6 +443,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -434,7 +453,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -498,6 +517,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="enum.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -510,6 +530,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -518,7 +540,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -538,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.GetName(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetName (enumType As Type, value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetName(Type ^ enumType, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member GetName : Type * obj -&gt; string" Usage="System.Enum.GetName (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -550,6 +573,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -558,7 +583,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -607,6 +632,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.GetNames(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNames (enumType As Type) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetNames(Type ^ enumType);" />
+      <MemberSignature Language="F#" Value="static member GetNames : Type -&gt; string[]" Usage="System.Enum.GetNames enumType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -619,6 +645,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -627,7 +655,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -675,12 +703,15 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="enum.GetTypeCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -711,6 +742,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.GetUnderlyingType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnderlyingType (enumType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetUnderlyingType(Type ^ enumType);" />
+      <MemberSignature Language="F#" Value="static member GetUnderlyingType : Type -&gt; Type" Usage="System.Enum.GetUnderlyingType enumType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -723,6 +755,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -731,8 +765,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -774,6 +811,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.GetValues(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetValues (enumType As Type) As Array" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ GetValues(Type ^ enumType);" />
+      <MemberSignature Language="F#" Value="static member GetValues : Type -&gt; Array" Usage="System.Enum.GetValues enumType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -786,6 +824,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -794,7 +834,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -857,6 +897,7 @@
       <MemberSignature Language="DocId" Value="M:System.Enum.HasFlag(System.Enum)" />
       <MemberSignature Language="VB.NET" Value="Public Function HasFlag (flag As Enum) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasFlag(Enum ^ flag);" />
+      <MemberSignature Language="F#" Value="member this.HasFlag : Enum -&gt; bool" Usage="enum.HasFlag flag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -877,7 +918,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -931,6 +972,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.IsDefined(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (enumType As Type, value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(Type ^ enumType, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member IsDefined : Type * obj -&gt; bool" Usage="System.Enum.IsDefined (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -943,6 +985,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -951,7 +995,7 @@ thisInstance And flag = flag
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1042,6 +1086,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse(System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (enumType As Type, value As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Parse(Type ^ enumType, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Parse : Type * string -&gt; obj" Usage="System.Enum.Parse (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1054,6 +1099,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1062,7 +1109,7 @@ thisInstance And flag = flag
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1125,6 +1172,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse(System.Type,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (enumType As Type, value As String, ignoreCase As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Parse(Type ^ enumType, System::String ^ value, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="static member Parse : Type * string * bool -&gt; obj" Usage="System.Enum.Parse (enumType, value, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1137,6 +1185,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1145,7 +1195,7 @@ thisInstance And flag = flag
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1210,6 +1260,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse``1(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse(Of TEnum As Structure) (value As String) As TEnum" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static TEnum Parse(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; 'Enum (requires 'Enum : struct)" Usage="System.Enum.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1245,6 +1296,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse``1(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse(Of TEnum As Structure) (value As String, ignoreCase As Boolean) As TEnum" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static TEnum Parse(System::String ^ value, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * bool -&gt; 'Enum (requires 'Enum : struct)" Usage="System.Enum.Parse (value, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1321,6 +1373,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1368,6 +1422,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1414,6 +1470,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1461,6 +1519,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1508,6 +1568,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1555,6 +1617,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1602,6 +1666,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1648,6 +1714,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1694,6 +1762,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1740,6 +1810,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1747,6 +1819,11 @@ thisInstance And flag = flag
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
@@ -1786,6 +1863,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1830,7 +1909,7 @@ thisInstance And flag = flag
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
           <AttributeName>System.Obsolete("The provider argument is not used. Please use ToString().")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1865,6 +1944,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1913,6 +1994,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1920,6 +2003,11 @@ thisInstance And flag = flag
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt16</ReturnType>
       </ReturnValue>
@@ -1959,6 +2047,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1966,6 +2056,11 @@ thisInstance And flag = flag
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
@@ -2005,6 +2100,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2012,6 +2109,11 @@ thisInstance And flag = flag
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
@@ -2050,7 +2152,7 @@ thisInstance And flag = flag
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
           <AttributeName>System.Obsolete("The provider argument is not used. Please use ToString(String).")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2085,9 +2187,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Byte) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * byte -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2101,10 +2206,10 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2143,9 +2248,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Short) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, short value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * int16 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2159,10 +2267,10 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2201,9 +2309,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, int value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * int -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2217,10 +2328,10 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2259,9 +2370,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Long) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, long value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * int64 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2275,10 +2389,10 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2317,6 +2431,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * obj -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2329,6 +2444,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2337,7 +2454,7 @@ thisInstance And flag = flag
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2380,9 +2497,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As SByte) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * sbyte -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2396,13 +2516,13 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2441,9 +2561,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As UShort) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * uint16 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2457,13 +2580,13 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2502,9 +2625,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As UInteger) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * uint32 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2518,13 +2644,13 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2563,9 +2689,12 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As ULong) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * uint64 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2579,13 +2708,13 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -2637,6 +2766,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="enum.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2649,6 +2779,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2701,12 +2833,15 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="enum.ToString provider" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2720,7 +2855,7 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("The provider argument is not used. Please use ToString().")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2743,6 +2878,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="enum.ToString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2755,6 +2891,8 @@ thisInstance And flag = flag
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2762,6 +2900,11 @@ thisInstance And flag = flag
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -2776,7 +2919,7 @@ thisInstance And flag = flag
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+ The `format` parameter can be one of the following format strings: "G" or "g", "D" or "d", "X" or "x", and "F" or "f" (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -2815,12 +2958,15 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="enum.ToString (format, provider)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2834,7 +2980,7 @@ thisInstance And flag = flag
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("The provider argument is not used. Please use ToString(String).")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2854,7 +3000,7 @@ thisInstance And flag = flag
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+ The `format` parameter can be one of the following format strings: "G" or "g", "D" or "d", "X" or "x", and "F" or "f" (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  Specify only `format`; the `provider` parameter is obsolete.  
   
@@ -2883,6 +3029,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (enumType As Type, value As String, ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(Type ^ enumType, System::String ^ value, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : Type * string *  -&gt; bool" Usage="System.Enum.TryParse (enumType, value, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2895,7 +3042,7 @@ thisInstance And flag = flag
       <Parameters>
         <Parameter Name="enumType" Type="System.Type" />
         <Parameter Name="value" Type="System.String" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="enumType">To be added.</param>
@@ -2912,6 +3059,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Boolean,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (enumType As Type, value As String, ignoreCase As Boolean, ByRef result As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(Type ^ enumType, System::String ^ value, bool ignoreCase, [Runtime::InteropServices::Out] System::Object ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : Type * string * bool *  -&gt; bool" Usage="System.Enum.TryParse (enumType, value, ignoreCase, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2925,7 +3073,7 @@ thisInstance And flag = flag
         <Parameter Name="enumType" Type="System.Type" />
         <Parameter Name="value" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="enumType">To be added.</param>
@@ -2943,6 +3091,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse``1(System.String,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of TEnum As Structure) (value As String, ByRef result As TEnum) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static bool TryParse(System::String ^ value, [Runtime::InteropServices::Out] TEnum % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool (requires 'Enum : struct)" Usage="System.Enum.TryParse (value, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2962,6 +3111,11 @@ thisInstance And flag = flag
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2976,7 +3130,7 @@ thisInstance And flag = flag
       </TypeParameters>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
-        <Parameter Name="result" Type="TEnum&amp;" RefType="out" />
+        <Parameter Name="result" Type="TEnum" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TEnum">The enumeration type to which to convert <c>value</c>.</typeparam>
@@ -3016,6 +3170,7 @@ thisInstance And flag = flag
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse``1(System.String,System.Boolean,``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of TEnum As Structure) (value As String, ignoreCase As Boolean, ByRef result As TEnum) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static bool TryParse(System::String ^ value, bool ignoreCase, [Runtime::InteropServices::Out] TEnum % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * bool *  -&gt; bool (requires 'Enum : struct)" Usage="System.Enum.TryParse (value, ignoreCase, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3035,6 +3190,11 @@ thisInstance And flag = flag
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3050,7 +3210,7 @@ thisInstance And flag = flag
       <Parameters>
         <Parameter Name="value" Type="System.String" />
         <Parameter Name="ignoreCase" Type="System.Boolean" />
-        <Parameter Name="result" Type="TEnum&amp;" RefType="out" />
+        <Parameter Name="result" Type="TEnum" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TEnum">The enumeration type to which to convert <c>value</c>.</typeparam>

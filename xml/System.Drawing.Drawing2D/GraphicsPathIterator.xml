@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.GraphicsPathIterator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GraphicsPathIterator&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class GraphicsPathIterator sealed : MarshalByRefObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type GraphicsPathIterator = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,9 +30,12 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.#ctor(System.Drawing.Drawing2D.GraphicsPath)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As GraphicsPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GraphicsPathIterator(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.GraphicsPathIterator : System.Drawing.Drawing2D.GraphicsPath -&gt; System.Drawing.Drawing2D.GraphicsPathIterator" Usage="new System.Drawing.Drawing2D.GraphicsPathIterator path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -47,17 +53,20 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.CopyData(System.Drawing.PointF[]@,System.Byte[]@,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function CopyData (ByRef points As PointF(), ByRef types As Byte(), startIndex As Integer, endIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CopyData(cli::array &lt;System::Drawing::PointF&gt; ^ % points, cli::array &lt;System::Byte&gt; ^ % types, int startIndex, int endIndex);" />
+      <MemberSignature Language="F#" Value="member this.CopyData :  *  * int * int -&gt; int" Usage="graphicsPathIterator.CopyData (points, types, startIndex, endIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="points" Type="System.Drawing.PointF[]&amp;" RefType="ref" />
-        <Parameter Name="types" Type="System.Byte[]&amp;" RefType="ref" />
+        <Parameter Name="points" Type="System.Drawing.PointF[]" RefType="ref" />
+        <Parameter Name="types" Type="System.Byte[]" RefType="ref" />
         <Parameter Name="startIndex" Type="System.Int32" />
         <Parameter Name="endIndex" Type="System.Int32" />
       </Parameters>
@@ -107,9 +116,12 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPathIterator.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Drawing.Drawing2D.GraphicsPathIterator.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,12 +139,15 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="graphicsPathIterator.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,17 +172,20 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Enumerate(System.Drawing.PointF[]@,System.Byte[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Enumerate (ByRef points As PointF(), ByRef types As Byte()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Enumerate(cli::array &lt;System::Drawing::PointF&gt; ^ % points, cli::array &lt;System::Byte&gt; ^ % types);" />
+      <MemberSignature Language="F#" Value="member this.Enumerate :  *  -&gt; int" Usage="graphicsPathIterator.Enumerate (points, types)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="points" Type="System.Drawing.PointF[]&amp;" RefType="ref" />
-        <Parameter Name="types" Type="System.Byte[]&amp;" RefType="ref" />
+        <Parameter Name="points" Type="System.Drawing.PointF[]" RefType="ref" />
+        <Parameter Name="types" Type="System.Byte[]" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="points">Upon return, contains an array of <see cref="T:System.Drawing.PointF" /> structures that represents the points in the path.</param>
@@ -208,9 +226,12 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!GraphicsPathIterator ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="graphicsPathIterator.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,9 +249,12 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.HasCurve" />
       <MemberSignature Language="VB.NET" Value="Public Function HasCurve () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasCurve();" />
+      <MemberSignature Language="F#" Value="member this.HasCurve : unit -&gt; bool" Usage="graphicsPathIterator.HasCurve " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,9 +312,12 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Drawing.Drawing2D.GraphicsPath)" />
       <MemberSignature Language="VB.NET" Value="Public Function NextMarker (path As GraphicsPath) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextMarker(System::Drawing::Drawing2D::GraphicsPath ^ path);" />
+      <MemberSignature Language="F#" Value="member this.NextMarker : System.Drawing.Drawing2D.GraphicsPath -&gt; int" Usage="graphicsPathIterator.NextMarker path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,17 +371,20 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function NextMarker (ByRef startIndex As Integer, ByRef endIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextMarker([Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] int % endIndex);" />
+      <MemberSignature Language="F#" Value="member this.NextMarker :  *  -&gt; int" Usage="graphicsPathIterator.NextMarker (startIndex, endIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="startIndex">[out] The integer reference supplied to this parameter receives the index of the point that starts a subpath.</param>
@@ -400,18 +430,21 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextPathType(System.Byte@,System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function NextPathType (ByRef pathType As Byte, ByRef startIndex As Integer, ByRef endIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextPathType([Runtime::InteropServices::Out] System::Byte % pathType, [Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] int % endIndex);" />
+      <MemberSignature Language="F#" Value="member this.NextPathType :  *  *  -&gt; int" Usage="graphicsPathIterator.NextPathType (pathType, startIndex, endIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pathType" Type="System.Byte&amp;" RefType="out" />
-        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pathType" Type="System.Byte" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathType">[out] Receives the point type shared by all points in the group. Possible types can be retrieved from the <see cref="T:System.Drawing.Drawing2D.PathPointType" /> enumeration.</param>
@@ -464,9 +497,12 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Drawing.Drawing2D.GraphicsPath,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Function NextSubpath (path As GraphicsPath, ByRef isClosed As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextSubpath(System::Drawing::Drawing2D::GraphicsPath ^ path, [Runtime::InteropServices::Out] bool % isClosed);" />
+      <MemberSignature Language="F#" Value="member this.NextSubpath : System.Drawing.Drawing2D.GraphicsPath *  -&gt; int" Usage="graphicsPathIterator.NextSubpath (path, isClosed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -474,7 +510,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
-        <Parameter Name="isClosed" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isClosed" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that is to have its data points set to match the data points of the retrieved figure (subpath) for this iterator.</param>
@@ -515,18 +551,21 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Int32@,System.Int32@,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Function NextSubpath (ByRef startIndex As Integer, ByRef endIndex As Integer, ByRef isClosed As Boolean) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int NextSubpath([Runtime::InteropServices::Out] int % startIndex, [Runtime::InteropServices::Out] int % endIndex, [Runtime::InteropServices::Out] bool % isClosed);" />
+      <MemberSignature Language="F#" Value="member this.NextSubpath :  *  *  -&gt; int" Usage="graphicsPathIterator.NextSubpath (startIndex, endIndex, isClosed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="isClosed" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="isClosed" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="startIndex">[out] Receives the starting index of the next subpath.</param>
@@ -568,9 +607,12 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Rewind" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rewind ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rewind();" />
+      <MemberSignature Language="F#" Value="member this.Rewind : unit -&gt; unit" Usage="graphicsPathIterator.Rewind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -595,9 +637,12 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPathIterator.SubpathCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubpathCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubpathCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubpathCount : int" Usage="System.Drawing.Drawing2D.GraphicsPathIterator.SubpathCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

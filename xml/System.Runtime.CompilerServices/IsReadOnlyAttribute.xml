@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IsReadOnlyAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IsReadOnlyAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class IsReadOnlyAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type IsReadOnlyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -18,8 +19,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.All, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

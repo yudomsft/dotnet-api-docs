@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewEditEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewEditEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewEditEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewEditEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -47,9 +49,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewEditEventArgs.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newEditIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewEditEventArgs(int newEditIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewEditEventArgs : int -&gt; System.Web.UI.WebControls.ListViewEditEventArgs" Usage="new System.Web.UI.WebControls.ListViewEditEventArgs newEditIndex" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -84,11 +88,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewEditEventArgs.NewEditIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewEditIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewEditIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewEditIndex : int" Usage="System.Web.UI.WebControls.ListViewEditEventArgs.NewEditIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

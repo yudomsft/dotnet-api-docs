@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.StructuralType" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StructuralType&#xA;Inherits EdmType" />
   <TypeSignature Language="C++ CLI" Value="public ref class StructuralType abstract : System::Data::Metadata::Edm::EdmType" />
+  <TypeSignature Language="F#" Value="type StructuralType = class&#xA;    inherit EdmType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,11 +32,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.StructuralType.Members" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As ReadOnlyMetadataCollection(Of EdmMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmMember ^&gt; ^ Members { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::EdmMember ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Members : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmMember&gt;" Usage="System.Data.Metadata.Edm.StructuralType.Members" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmMember&gt;</ReturnType>
       </ReturnValue>

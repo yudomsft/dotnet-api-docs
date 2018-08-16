@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.AuthenticationService" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthenticationService" />
   <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationService" />
+  <TypeSignature Language="F#" Value="type AuthenticationService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,13 +15,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ServiceModel.Activation.AspNetCompatibilityRequirements(RequirementsMode=System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ServiceModel.ServiceBehavior(ConcurrencyMode=System.ServiceModel.ConcurrencyMode.Multiple, InstanceContextMode=System.ServiceModel.InstanceContextMode.Single, Namespace="http://asp.net/ApplicationServices/v200")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ServiceModel.ServiceContract(Namespace="http://asp.net/ApplicationServices/v200")</AttributeName>
     </Attribute>
   </Attributes>
@@ -68,9 +70,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.ApplicationServices.AuthenticationService.Authenticating" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event Authenticating As EventHandler(Of AuthenticatingEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Web::ApplicationServices::AuthenticatingEventArgs ^&gt; ^ Authenticating;" />
+      <MemberSignature Language="F#" Value="member this.Authenticating : EventHandler&lt;System.Web.ApplicationServices.AuthenticatingEventArgs&gt; " Usage="member this.Authenticating : System.EventHandler&lt;System.Web.ApplicationServices.AuthenticatingEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,9 +112,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.ApplicationServices.AuthenticationService.CreatingCookie" />
       <MemberSignature Language="VB.NET" Value="Public Shared Custom Event CreatingCookie As EventHandler(Of CreatingCookieEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Web::ApplicationServices::CreatingCookieEventArgs ^&gt; ^ CreatingCookie;" />
+      <MemberSignature Language="F#" Value="member this.CreatingCookie : EventHandler&lt;System.Web.ApplicationServices.CreatingCookieEventArgs&gt; " Usage="member this.CreatingCookie : System.EventHandler&lt;System.Web.ApplicationServices.CreatingCookieEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,13 +154,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.IsLoggedIn" />
       <MemberSignature Language="VB.NET" Value="Public Function IsLoggedIn () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsLoggedIn();" />
+      <MemberSignature Language="F#" Value="member this.IsLoggedIn : unit -&gt; bool" Usage="authenticationService.IsLoggedIn " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ServiceModel.OperationContract</AttributeName>
         </Attribute>
       </Attributes>
@@ -185,13 +193,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.Login(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Login (username As String, password As String, customCredential As String, isPersistent As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Login(System::String ^ username, System::String ^ password, System::String ^ customCredential, bool isPersistent);" />
+      <MemberSignature Language="F#" Value="member this.Login : string * string * string * bool -&gt; bool" Usage="authenticationService.Login (username, password, customCredential, isPersistent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ServiceModel.OperationContract</AttributeName>
         </Attribute>
       </Attributes>
@@ -238,13 +248,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.Logout" />
       <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
+      <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="authenticationService.Logout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ServiceModel.OperationContract</AttributeName>
         </Attribute>
       </Attributes>
@@ -276,13 +288,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.ValidateUser(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidateUser (username As String, password As String, customCredential As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateUser(System::String ^ username, System::String ^ password, System::String ^ customCredential);" />
+      <MemberSignature Language="F#" Value="member this.ValidateUser : string * string * string -&gt; bool" Usage="authenticationService.ValidateUser (username, password, customCredential)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ServiceModel.OperationContract</AttributeName>
         </Attribute>
       </Attributes>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderAdviseEvents&#xA;Implements IRawElementProviderSimple" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderAdviseEvents : System::Windows::Automation::Provider::IRawElementProviderSimple" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderAdviseEvents = interface&#xA;    interface IRawElementProviderSimple" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -14,14 +16,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("a407b27b-0f6d-4427-9292-473c7bf93258")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,9 +40,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventAdded(System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdviseEventAdded (eventId As Integer, properties As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventAdded(int eventId, cli::array &lt;int&gt; ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member AdviseEventAdded : int * int[] -&gt; unit" Usage="iRawElementProviderAdviseEvents.AdviseEventAdded (eventId, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,9 +84,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventRemoved(System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdviseEventRemoved (eventId As Integer, properties As Integer())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventRemoved(int eventId, cli::array &lt;int&gt; ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member AdviseEventRemoved : int * int[] -&gt; unit" Usage="iRawElementProviderAdviseEvents.AdviseEventRemoved (eventId, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

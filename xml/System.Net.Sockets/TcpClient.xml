@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.TcpClient" />
   <TypeSignature Language="VB.NET" Value="Public Class TcpClient&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class TcpClient : IDisposable" />
+  <TypeSignature Language="F#" Value="type TcpClient = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -94,6 +97,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -136,9 +141,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.#ctor(System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (localEP As IPEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpClient(System::Net::IPEndPoint ^ localEP);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpClient : System.Net.IPEndPoint -&gt; System.Net.Sockets.TcpClient" Usage="new System.Net.Sockets.TcpClient localEP" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -190,6 +198,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.#ctor(System.Net.Sockets.AddressFamily)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (family As AddressFamily)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpClient(System::Net::Sockets::AddressFamily family);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpClient : System.Net.Sockets.AddressFamily -&gt; System.Net.Sockets.TcpClient" Usage="new System.Net.Sockets.TcpClient family" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -199,6 +208,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -244,9 +255,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostname As String, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TcpClient(System::String ^ hostname, int port);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.TcpClient : string * int -&gt; System.Net.Sockets.TcpClient" Usage="new System.Net.Sockets.TcpClient (hostname, port)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -276,7 +290,7 @@
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.%23ctor%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -305,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Active" />
       <MemberSignature Language="VB.NET" Value="Protected Property Active As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool Active { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Active : bool with get, set" Usage="System.Net.Sockets.TcpClient.Active" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -314,6 +329,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -321,6 +338,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -346,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Available" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Available As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Available { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Available : int" Usage="System.Net.Sockets.TcpClient.Available" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -355,6 +381,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -406,9 +433,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (address As IPAddress, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::Net::IPAddress ^ address, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : System.Net.IPAddress * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpClient.BeginConnect (address, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -470,9 +499,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (addresses As IPAddress(), port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(cli::array &lt;System::Net::IPAddress ^&gt; ^ addresses, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : System.Net.IPAddress[] * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpClient.BeginConnect (addresses, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -536,9 +567,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginConnect (host As String, port As Integer, requestCallback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginConnect(System::String ^ host, int port, AsyncCallback ^ requestCallback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginConnect : string * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="tcpClient.BeginConnect (host, port, requestCallback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -600,6 +633,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Client" />
       <MemberSignature Language="VB.NET" Value="Public Property Client As Socket" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::Socket ^ Client { System::Net::Sockets::Socket ^ get(); void set(System::Net::Sockets::Socket ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Client : System.Net.Sockets.Socket with get, set" Usage="System.Net.Sockets.TcpClient.Client" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -609,6 +643,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -616,6 +652,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
       </ReturnValue>
@@ -647,9 +691,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="tcpClient.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -707,9 +754,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.Net.IPEndPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (remoteEP As IPEndPoint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::Net::IPEndPoint ^ remoteEP);" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPEndPoint -&gt; unit" Usage="tcpClient.Connect remoteEP" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -738,7 +788,7 @@
  Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPEndPoint>. Before you call <xref:System.Net.Sockets.TcpClient.Connect%2A> you must create an instance of the <xref:System.Net.IPEndPoint> class using an IP address and a port number. Use this <xref:System.Net.IPEndPoint> as the `remoteEP` parameter. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md)  
@@ -767,9 +817,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (address As IPAddress, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::Net::IPAddress ^ address, int port);" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress * int -&gt; unit" Usage="tcpClient.Connect (address, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -800,7 +853,7 @@
  Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number. The <xref:System.Net.Sockets.TcpClient.Connect%2A> method will block until it either connects or fails. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -830,9 +883,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.Net.IPAddress[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (ipAddresses As IPAddress(), port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(cli::array &lt;System::Net::IPAddress ^&gt; ^ ipAddresses, int port);" />
+      <MemberSignature Language="F#" Value="member this.Connect : System.Net.IPAddress[] * int -&gt; unit" Usage="tcpClient.Connect (ipAddresses, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -893,9 +948,12 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Connect(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (hostname As String, port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Connect(System::String ^ hostname, int port);" />
+      <MemberSignature Language="F#" Value="member this.Connect : string * int -&gt; unit" Usage="tcpClient.Connect (hostname, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -928,7 +986,7 @@
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.Connect%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -969,6 +1027,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.ConnectAsync(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConnectAsync (address As IPAddress, port As Integer) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ConnectAsync(System::Net::IPAddress ^ address, int port);" />
+      <MemberSignature Language="F#" Value="member this.ConnectAsync : System.Net.IPAddress * int -&gt; System.Threading.Tasks.Task" Usage="tcpClient.ConnectAsync (address, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1008,7 +1067,7 @@
  Call this method to establish a synchronous remote host connection to the specified <xref:System.Net.IPAddress> and port number as an asynchronous operation. After connecting with the remote host, use the <xref:System.Net.Sockets.TcpClient.GetStream%2A> method to obtain the underlying <xref:System.Net.Sockets.NetworkStream>. Use this <xref:System.Net.Sockets.NetworkStream> to send and receive data.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1029,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.ConnectAsync(System.Net.IPAddress[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConnectAsync (addresses As IPAddress(), port As Integer) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ConnectAsync(cli::array &lt;System::Net::IPAddress ^&gt; ^ addresses, int port);" />
+      <MemberSignature Language="F#" Value="member this.ConnectAsync : System.Net.IPAddress[] * int -&gt; System.Threading.Tasks.Task" Usage="tcpClient.ConnectAsync (addresses, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1090,6 +1150,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.ConnectAsync(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConnectAsync (host As String, port As Integer) As Task" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ConnectAsync(System::String ^ host, int port);" />
+      <MemberSignature Language="F#" Value="member this.ConnectAsync : string * int -&gt; System.Threading.Tasks.Task" Usage="tcpClient.ConnectAsync (host, port)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1131,7 +1192,7 @@
  If IPv6 is enabled and the <xref:System.Net.Sockets.TcpClient.ConnectAsync%28System.String%2CSystem.Int32%29> method is called to connect to a host that resolves to both IPv6 and IPv4 addresses, the connection to the IPv6 address will be attempted first before the IPv4 address. This may have the effect of delaying the time to establish the connection if the host is not listening on the IPv6 address.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1153,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.Connected" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Connected { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connected : bool" Usage="System.Net.Sockets.TcpClient.Connected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1162,6 +1224,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1202,6 +1265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="tcpClient.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1236,6 +1300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="tcpClient.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1245,6 +1310,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1288,9 +1355,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.EndConnect(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndConnect (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndConnect(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="member this.EndConnect : IAsyncResult -&gt; unit" Usage="tcpClient.EndConnect asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1344,6 +1413,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.ExclusiveAddressUse" />
       <MemberSignature Language="VB.NET" Value="Public Property ExclusiveAddressUse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExclusiveAddressUse { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExclusiveAddressUse : bool with get, set" Usage="System.Net.Sockets.TcpClient.ExclusiveAddressUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1353,6 +1423,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1395,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!TcpClient ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="tcpClient.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1404,6 +1476,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1438,6 +1512,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.TcpClient.GetStream" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStream () As NetworkStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::Sockets::NetworkStream ^ GetStream();" />
+      <MemberSignature Language="F#" Value="member this.GetStream : unit -&gt; System.Net.Sockets.NetworkStream" Usage="tcpClient.GetStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1447,6 +1522,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1473,7 +1550,7 @@
 >  You must close the <xref:System.Net.Sockets.NetworkStream> when you are through sending and receiving data. Closing <xref:System.Net.Sockets.TcpClient> does not release the <xref:System.Net.Sockets.NetworkStream>.  
   
 > [!NOTE]
->  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> to obtain the specific error code. After you have obtained this code, you can refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -1505,6 +1582,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.LingerState" />
       <MemberSignature Language="VB.NET" Value="Public Property LingerState As LingerOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::LingerOption ^ LingerState { System::Net::Sockets::LingerOption ^ get(); void set(System::Net::Sockets::LingerOption ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LingerState : System.Net.Sockets.LingerOption with get, set" Usage="System.Net.Sockets.TcpClient.LingerState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1514,6 +1592,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1571,6 +1651,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.NoDelay" />
       <MemberSignature Language="VB.NET" Value="Public Property NoDelay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoDelay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NoDelay : bool with get, set" Usage="System.Net.Sockets.TcpClient.NoDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1580,6 +1661,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1619,6 +1702,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.ReceiveBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceiveBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.Net.Sockets.TcpClient.ReceiveBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1628,6 +1712,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1635,6 +1721,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1677,6 +1768,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceiveTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveTimeout : int with get, set" Usage="System.Net.Sockets.TcpClient.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1686,6 +1778,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1693,6 +1787,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1726,6 +1825,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.SendBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property SendBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SendBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SendBufferSize : int with get, set" Usage="System.Net.Sockets.TcpClient.SendBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1735,6 +1835,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1742,6 +1844,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1779,6 +1886,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.TcpClient.SendTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SendTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : int with get, set" Usage="System.Net.Sockets.TcpClient.SendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -1788,6 +1896,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1795,6 +1905,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1836,8 +1951,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

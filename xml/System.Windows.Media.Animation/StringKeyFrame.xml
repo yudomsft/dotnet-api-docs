@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.StringKeyFrame" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StringKeyFrame&#xA;Inherits Freezable&#xA;Implements IKeyFrame" />
   <TypeSignature Language="C++ CLI" Value="public ref class StringKeyFrame abstract : System::Windows::Freezable, System::Windows::Media::Animation::IKeyFrame" />
+  <TypeSignature Language="F#" Value="type StringKeyFrame = class&#xA;    inherit Freezable&#xA;    interface IKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -41,8 +43,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.StringKeyFrame" /> class.</summary>
@@ -55,9 +63,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.StringKeyFrame.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StringKeyFrame(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.StringKeyFrame : string -&gt; System.Windows.Media.Animation.StringKeyFrame" Usage="new System.Windows.Media.Animation.StringKeyFrame value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -74,9 +84,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.StringKeyFrame.#ctor(System.String,System.Windows.Media.Animation.KeyTime)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StringKeyFrame(System::String ^ value, System::Windows::Media::Animation::KeyTime keyTime);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.StringKeyFrame : string * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.StringKeyFrame" Usage="new System.Windows.Media.Animation.StringKeyFrame (value, keyTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -96,9 +108,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.StringKeyFrame.InterpolateValue(System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function InterpolateValue (baseValue As String, keyFrameProgress As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ InterpolateValue(System::String ^ baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="member this.InterpolateValue : string * double -&gt; string" Usage="stringKeyFrame.InterpolateValue (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,9 +146,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.StringKeyFrame.InterpolateValueCore(System.String,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InterpolateValueCore (baseValue As String, keyFrameProgress As Double) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ InterpolateValueCore(System::String ^ baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="F#" Value="abstract member InterpolateValueCore : string * double -&gt; string" Usage="stringKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,12 +174,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.StringKeyFrame.KeyTime" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyTime As KeyTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeyTime KeyTime { System::Windows::Media::Animation::KeyTime get(); void set(System::Windows::Media::Animation::KeyTime value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyTime : System.Windows.Media.Animation.KeyTime with get, set" Usage="System.Windows.Media.Animation.StringKeyFrame.KeyTime" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.KeyTime</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,9 +213,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.StringKeyFrame.KeyTimeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTimeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTimeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTimeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.StringKeyFrame.KeyTimeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,15 +233,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Windows.Media.Animation.IKeyFrame.Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.StringKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value" />
       <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IKeyFrame.Value" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Windows.Media.Animation.IKeyFrame.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Windows::Media::Animation::IKeyFrame::Value { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.IKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.Value</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -237,9 +264,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.StringKeyFrame.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Windows.Media.Animation.StringKeyFrame.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,9 +300,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.StringKeyFrame.ValueProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValueProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.StringKeyFrame.ValueProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

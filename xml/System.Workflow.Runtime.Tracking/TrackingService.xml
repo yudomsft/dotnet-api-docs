@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingService&#xA;Inherits WorkflowRuntimeService" />
   <TypeSignature Language="C++ CLI" Value="public ref class TrackingService abstract : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
+  <TypeSignature Language="F#" Value="type TrackingService = class&#xA;    inherit WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -70,6 +72,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -111,9 +114,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetProfile (workflowInstanceId As Guid) As TrackingProfile" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::Runtime::Tracking::TrackingProfile ^ GetProfile(Guid workflowInstanceId);" />
+      <MemberSignature Language="F#" Value="abstract member GetProfile : Guid -&gt; System.Workflow.Runtime.Tracking.TrackingProfile" Usage="trackingService.GetProfile workflowInstanceId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,9 +155,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Type,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetProfile (workflowType As Type, profileVersionId As Version) As TrackingProfile" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::Runtime::Tracking::TrackingProfile ^ GetProfile(Type ^ workflowType, Version ^ profileVersionId);" />
+      <MemberSignature Language="F#" Value="abstract member GetProfile : Type * Version -&gt; System.Workflow.Runtime.Tracking.TrackingProfile" Usage="trackingService.GetProfile (workflowType, profileVersionId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,9 +190,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel(System.Workflow.Runtime.Tracking.TrackingParameters)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetTrackingChannel (parameters As TrackingParameters) As TrackingChannel" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::Runtime::Tracking::TrackingChannel ^ GetTrackingChannel(System::Workflow::Runtime::Tracking::TrackingParameters ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member GetTrackingChannel : System.Workflow.Runtime.Tracking.TrackingParameters -&gt; System.Workflow.Runtime.Tracking.TrackingChannel" Usage="trackingService.GetTrackingChannel parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,9 +231,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.TryGetProfile(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function TryGetProfile (workflowType As Type, ByRef profile As TrackingProfile) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool TryGetProfile(Type ^ workflowType, [Runtime::InteropServices::Out] System::Workflow::Runtime::Tracking::TrackingProfile ^ % profile);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetProfile : Type *  -&gt; bool" Usage="trackingService.TryGetProfile (workflowType, profile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -232,7 +243,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="workflowType" Type="System.Type" />
-        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workflowType">The <see cref="T:System.Type" /> of the workflow for which to get the tracking profile.</param>
@@ -264,9 +275,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.TryReloadProfile(System.Type,System.Guid,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function TryReloadProfile (workflowType As Type, workflowInstanceId As Guid, ByRef profile As TrackingProfile) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool TryReloadProfile(Type ^ workflowType, Guid workflowInstanceId, [Runtime::InteropServices::Out] System::Workflow::Runtime::Tracking::TrackingProfile ^ % profile);" />
+      <MemberSignature Language="F#" Value="abstract member TryReloadProfile : Type * Guid *  -&gt; bool" Usage="trackingService.TryReloadProfile (workflowType, workflowInstanceId, profile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,7 +288,7 @@
       <Parameters>
         <Parameter Name="workflowType" Type="System.Type" />
         <Parameter Name="workflowInstanceId" Type="System.Guid" />
-        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile" RefType="out" />
       </Parameters>
       <Docs>
         <param name="workflowType">The <see cref="T:System.Type" /> of the workflow instance.</param>

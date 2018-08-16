@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbPermission&#xA;Inherits DBDataPermission" />
   <TypeSignature Language="C++ CLI" Value="public ref class OleDbPermission sealed : System::Data::Common::DBDataPermission" />
+  <TypeSignature Language="F#" Value="type OleDbPermission = class&#xA;    inherit DBDataPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -46,6 +49,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -53,8 +58,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Obsolete("OleDbPermission() has been deprecated.  Use the OleDbPermission(PermissionState.None) constructor.  http://go.microsoft.com/fwlink/?linkid=14202", true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Obsolete("use OleDbPermission(PermissionState.None)", true)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -69,9 +77,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbPermission(System::Security::Permissions::PermissionState state);" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbPermission : System.Security.Permissions.PermissionState -&gt; System.Data.OleDb.OleDbPermission" Usage="new System.Data.OleDb.OleDbPermission state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -93,9 +104,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState, allowBlankPassword As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" />
+      <MemberSignature Language="F#" Value="new System.Data.OleDb.OleDbPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.OleDb.OleDbPermission" Usage="new System.Data.OleDb.OleDbPermission (state, allowBlankPassword)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -103,8 +117,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Obsolete("OleDbPermission(PermissionState state, Boolean allowBlankPassword) has been deprecated.  Use the OleDbPermission(PermissionState.None) constructor.  http://go.microsoft.com/fwlink/?linkid=14202", true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Obsolete("use OleDbPermission(PermissionState.None)", true)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -131,9 +148,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="oleDbPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -150,15 +170,66 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="oleDbPermission.FromXml securityElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityElement" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="securityElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="oleDbPermission.Intersect target" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Provider">
       <MemberSignature Language="C#" Value="public string Provider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbPermission.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Property Provider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Provider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : string with get, set" Usage="System.Data.OleDb.OleDbPermission.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -166,14 +237,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Obsolete("Provider property has been deprecated.  Use the Add method.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,6 +256,53 @@
       <Docs>
         <summary>This property has been marked as obsolete. Setting this property will have no effect.</summary>
         <value>This property has been marked as obsolete. Setting this property will have no effect.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="oleDbPermission.ToXml " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="oleDbPermission.Union target" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

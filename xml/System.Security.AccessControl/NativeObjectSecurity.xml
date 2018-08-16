@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class NativeObjectSecurity&#xA;Inherits CommonObjectSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class NativeObjectSecurity abstract : System::Security::AccessControl::CommonObjectSecurity" />
+  <TypeSignature Language="F#" Value="type NativeObjectSecurity = class&#xA;    inherit CommonObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -38,6 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -46,9 +49,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="isContainer" Type="System.Boolean" />
         <Parameter Name="resourceType" Type="System.Security.AccessControl.ResourceType" />
@@ -66,6 +75,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, class System.Runtime.InteropServices.SafeHandle handle, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, handle, includeSections)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -74,9 +84,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="isContainer" Type="System.Boolean" />
         <Parameter Name="resourceType" Type="System.Security.AccessControl.ResourceType" />
@@ -105,6 +121,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, class System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::Security::AccessControl::NativeObjectSecurity::ExceptionFromErrorCode ^ exceptionFromErrorCode, System::Object ^ exceptionContext);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode * obj -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, exceptionFromErrorCode, exceptionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -113,9 +130,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="isContainer" Type="System.Boolean" />
         <Parameter Name="resourceType" Type="System.Security.AccessControl.ResourceType" />
@@ -137,6 +160,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, string name, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, name, includeSections)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -145,9 +169,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="isContainer" Type="System.Boolean" />
         <Parameter Name="resourceType" Type="System.Security.AccessControl.ResourceType" />
@@ -176,6 +206,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, class System.Runtime.InteropServices.SafeHandle handle, valuetype System.Security.AccessControl.AccessControlSections includeSections, class System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections, System::Security::AccessControl::NativeObjectSecurity::ExceptionFromErrorCode ^ exceptionFromErrorCode, System::Object ^ exceptionContext);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections * System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode * obj -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, handle, includeSections, exceptionFromErrorCode, exceptionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -184,9 +215,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="isContainer" Type="System.Boolean" />
         <Parameter Name="resourceType" Type="System.Security.AccessControl.ResourceType" />
@@ -219,6 +256,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, string name, valuetype System.Security.AccessControl.AccessControlSections includeSections, class System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections, System::Security::AccessControl::NativeObjectSecurity::ExceptionFromErrorCode ^ exceptionFromErrorCode, System::Object ^ exceptionContext);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * string * System.Security.AccessControl.AccessControlSections * System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode * obj -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, name, includeSections, exceptionFromErrorCode, exceptionContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -227,9 +265,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="isContainer" Type="System.Boolean" />
         <Parameter Name="resourceType" Type="System.Security.AccessControl.ResourceType" />
@@ -273,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub Persist (handle As SafeHandle, includeSections As AccessControlSections)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Persist(System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="override this.Persist : System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections -&gt; unit" Usage="nativeObjectSecurity.Persist (handle, includeSections)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -281,9 +326,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -312,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub Persist (name As String, includeSections As AccessControlSections)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Persist(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="override this.Persist : string * System.Security.AccessControl.AccessControlSections -&gt; unit" Usage="nativeObjectSecurity.Persist (name, includeSections)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -320,9 +372,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -351,6 +409,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Persist (handle As SafeHandle, includeSections As AccessControlSections, exceptionContext As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Persist(System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections, System::Object ^ exceptionContext);" />
+      <MemberSignature Language="F#" Value="override this.Persist : System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections * obj -&gt; unit" Usage="nativeObjectSecurity.Persist (handle, includeSections, exceptionContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -359,9 +418,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -392,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Persist (name As String, includeSections As AccessControlSections, exceptionContext As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Persist(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections, System::Object ^ exceptionContext);" />
+      <MemberSignature Language="F#" Value="override this.Persist : string * System.Security.AccessControl.AccessControlSections * obj -&gt; unit" Usage="nativeObjectSecurity.Persist (name, includeSections, exceptionContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -400,9 +466,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

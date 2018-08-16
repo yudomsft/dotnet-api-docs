@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataTableBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerDataTableBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataTableBase abstract" />
+  <TypeSignature Language="F#" Value="type DesignerDataTableBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -43,11 +45,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTableBase.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataTableBase(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataTableBase : string -&gt; System.ComponentModel.Design.Data.DesignerDataTableBase" Usage="new System.ComponentModel.Design.Data.DesignerDataTableBase name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
@@ -70,11 +79,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTableBase.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, owner As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataTableBase(System::String ^ name, System::String ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataTableBase : string * string -&gt; System.ComponentModel.Design.Data.DesignerDataTableBase" Usage="new System.ComponentModel.Design.Data.DesignerDataTableBase (name, owner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="owner" Type="System.String" />
@@ -99,9 +115,11 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataTableBase.Columns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Columns { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Collections.ICollection" Usage="System.ComponentModel.Design.Data.DesignerDataTableBase.Columns" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +144,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTableBase.CreateColumns" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateColumns () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::ICollection ^ CreateColumns();" />
+      <MemberSignature Language="F#" Value="abstract member CreateColumns : unit -&gt; System.Collections.ICollection" Usage="designerDataTableBase.CreateColumns " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,11 +174,18 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataTableBase.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.Design.Data.DesignerDataTableBase.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -174,11 +201,18 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataTableBase.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Owner { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : string" Usage="System.ComponentModel.Design.Data.DesignerDataTableBase.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

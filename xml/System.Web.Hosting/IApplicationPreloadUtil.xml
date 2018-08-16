@@ -4,16 +4,17 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IApplicationPreloadUtil" />
   <TypeSignature Language="VB.NET" Value="Public Interface IApplicationPreloadUtil" />
   <TypeSignature Language="C++ CLI" Value="public interface class IApplicationPreloadUtil" />
+  <TypeSignature Language="F#" Value="type IApplicationPreloadUtil = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("940D8ADD-9E40-4475-9A67-2CDCDF57995C")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadUtil.GetApplicationPreloadInfo(System.String,System.Boolean@,System.String@,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetApplicationPreloadInfo (context As String, ByRef enabled As Boolean, ByRef startupObjType As String, ByRef parametersForStartupObj As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetApplicationPreloadInfo(System::String ^ context, [Runtime::InteropServices::Out] bool % enabled, [Runtime::InteropServices::Out] System::String ^ % startupObjType, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % parametersForStartupObj);" />
+      <MemberSignature Language="F#" Value="abstract member GetApplicationPreloadInfo : string *  *  *  -&gt; unit" Usage="iApplicationPreloadUtil.GetApplicationPreloadInfo (context, enabled, startupObjType, parametersForStartupObj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,9 +41,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="context" Type="System.String" />
-        <Parameter Name="enabled" Type="System.Boolean&amp;" RefType="out" />
-        <Parameter Name="startupObjType" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="parametersForStartupObj" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="enabled" Type="System.Boolean" RefType="out" />
+        <Parameter Name="startupObjType" Type="System.String" RefType="out" />
+        <Parameter Name="parametersForStartupObj" Type="System.String[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="context">The application context.</param>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadUtil.ReportApplicationPreloadFailure(System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReportApplicationPreloadFailure (context As String, errorCode As Integer, errorMessage As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportApplicationPreloadFailure(System::String ^ context, int errorCode, System::String ^ errorMessage);" />
+      <MemberSignature Language="F#" Value="abstract member ReportApplicationPreloadFailure : string * int * string -&gt; unit" Usage="iApplicationPreloadUtil.ReportApplicationPreloadFailure (context, errorCode, errorMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

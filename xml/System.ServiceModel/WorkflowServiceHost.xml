@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WorkflowServiceHost" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowServiceHost&#xA;Inherits ServiceHostBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowServiceHost : System::ServiceModel::ServiceHostBase" />
+  <TypeSignature Language="F#" Value="type WorkflowServiceHost = class&#xA;    inherit ServiceHostBase" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -53,6 +55,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -67,9 +70,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinition As Stream, ParamArray baseAddress As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::IO::Stream ^ workflowDefinition, ... cli::array &lt;Uri ^&gt; ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WorkflowServiceHost : System.IO.Stream * Uri[] -&gt; System.ServiceModel.WorkflowServiceHost" Usage="new System.ServiceModel.WorkflowServiceHost (workflowDefinition, baseAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -103,9 +108,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinitionPath As String, ParamArray baseAddress As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::String ^ workflowDefinitionPath, ... cli::array &lt;Uri ^&gt; ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WorkflowServiceHost : string * Uri[] -&gt; System.ServiceModel.WorkflowServiceHost" Usage="new System.ServiceModel.WorkflowServiceHost (workflowDefinitionPath, baseAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -138,9 +145,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowType As Type, ParamArray baseAddress As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(Type ^ workflowType, ... cli::array &lt;Uri ^&gt; ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WorkflowServiceHost : Type * Uri[] -&gt; System.ServiceModel.WorkflowServiceHost" Usage="new System.ServiceModel.WorkflowServiceHost (workflowType, baseAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -173,9 +182,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.IO.Stream,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinition As Stream, ruleDefinition As Stream, ParamArray baseAddress As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::IO::Stream ^ workflowDefinition, System::IO::Stream ^ ruleDefinition, ... cli::array &lt;Uri ^&gt; ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WorkflowServiceHost : System.IO.Stream * System.IO.Stream * Uri[] -&gt; System.ServiceModel.WorkflowServiceHost" Usage="new System.ServiceModel.WorkflowServiceHost (workflowDefinition, ruleDefinition, baseAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -212,9 +223,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.String,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinitionPath As String, ruleDefinitionPath As String, ParamArray baseAddress As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::String ^ workflowDefinitionPath, System::String ^ ruleDefinitionPath, ... cli::array &lt;Uri ^&gt; ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WorkflowServiceHost : string * string * Uri[] -&gt; System.ServiceModel.WorkflowServiceHost" Usage="new System.ServiceModel.WorkflowServiceHost (workflowDefinitionPath, ruleDefinitionPath, baseAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -249,9 +262,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.IO.Stream,System.IO.Stream,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinition As Stream, ruleDefinition As Stream, typeProvider As ITypeProvider, ParamArray baseAddress As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::IO::Stream ^ workflowDefinition, System::IO::Stream ^ ruleDefinition, System::Workflow::ComponentModel::Compiler::ITypeProvider ^ typeProvider, ... cli::array &lt;Uri ^&gt; ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WorkflowServiceHost : System.IO.Stream * System.IO.Stream * System.Workflow.ComponentModel.Compiler.ITypeProvider * Uri[] -&gt; System.ServiceModel.WorkflowServiceHost" Usage="new System.ServiceModel.WorkflowServiceHost (workflowDefinition, ruleDefinition, typeProvider, baseAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -290,9 +305,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.#ctor(System.String,System.String,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinitionPath As String, ruleDefinitionPath As String, typeProvider As ITypeProvider, ParamArray baseAddress As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHost(System::String ^ workflowDefinitionPath, System::String ^ ruleDefinitionPath, System::Workflow::ComponentModel::Compiler::ITypeProvider ^ typeProvider, ... cli::array &lt;Uri ^&gt; ^ baseAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WorkflowServiceHost : string * string * System.Workflow.ComponentModel.Compiler.ITypeProvider * Uri[] -&gt; System.ServiceModel.WorkflowServiceHost" Usage="new System.ServiceModel.WorkflowServiceHost (workflowDefinitionPath, ruleDefinitionPath, typeProvider, baseAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -337,9 +354,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, string address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -367,9 +386,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -397,9 +418,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, string address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address, Uri ^ listenUri);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * string * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -430,9 +453,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address, Uri ^ listenUri);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * Uri * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowServiceHost.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,16 +489,18 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDescription (ByRef implementedContracts As IDictionary(Of String, ContractDescription)) As ServiceDescription" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Description::ServiceDescription ^ CreateDescription([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ % implementedContracts);" />
+      <MemberSignature Language="F#" Value="override this.CreateDescription :  -&gt; System.ServiceModel.Description.ServiceDescription" Usage="workflowServiceHost.CreateDescription implementedContracts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="implementedContracts" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;&amp;" RefType="out" />
+        <Parameter Name="implementedContracts" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="implementedContracts">When this method returns, the <see cref="T:System.Collections.Generic.IDictionary`2" /> object contains the keyed-contracts of the hosted service that have been implemented.</param>
@@ -488,9 +515,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WorkflowServiceHost.OnClosing" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosing ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosing();" />
+      <MemberSignature Language="F#" Value="override this.OnClosing : unit -&gt; unit" Usage="workflowServiceHost.OnClosing " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

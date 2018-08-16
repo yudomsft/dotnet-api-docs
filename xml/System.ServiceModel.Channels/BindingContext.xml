@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingContext" />
   <TypeSignature Language="VB.NET" Value="Public Class BindingContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class BindingContext" />
+  <TypeSignature Language="F#" Value="type BindingContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -47,10 +49,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.#ctor(System.ServiceModel.Channels.CustomBinding,System.ServiceModel.Channels.BindingParameterCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (binding As CustomBinding, parameters As BindingParameterCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingContext(System::ServiceModel::Channels::CustomBinding ^ binding, System::ServiceModel::Channels::BindingParameterCollection ^ parameters);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.BindingContext : System.ServiceModel.Channels.CustomBinding * System.ServiceModel.Channels.BindingParameterCollection -&gt; System.ServiceModel.Channels.BindingContext" Usage="new System.ServiceModel.Channels.BindingContext (binding, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -90,10 +94,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.CustomBinding binding, class System.ServiceModel.Channels.BindingParameterCollection parameters, class System.Uri listenUriBaseAddress, string listenUriRelativeAddress, valuetype System.ServiceModel.Description.ListenUriMode listenUriMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.#ctor(System.ServiceModel.Channels.CustomBinding,System.ServiceModel.Channels.BindingParameterCollection,System.Uri,System.String,System.ServiceModel.Description.ListenUriMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingContext(System::ServiceModel::Channels::CustomBinding ^ binding, System::ServiceModel::Channels::BindingParameterCollection ^ parameters, Uri ^ listenUriBaseAddress, System::String ^ listenUriRelativeAddress, System::ServiceModel::Description::ListenUriMode listenUriMode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.BindingContext : System.ServiceModel.Channels.CustomBinding * System.ServiceModel.Channels.BindingParameterCollection * Uri * string * System.ServiceModel.Description.ListenUriMode -&gt; System.ServiceModel.Channels.BindingContext" Usage="new System.ServiceModel.Channels.BindingContext (binding, parameters, listenUriBaseAddress, listenUriRelativeAddress, listenUriMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -130,10 +136,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.Binding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Binding As CustomBinding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::CustomBinding ^ Binding { System::ServiceModel::Channels::CustomBinding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.ServiceModel.Channels.CustomBinding" Usage="System.ServiceModel.Channels.BindingContext.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -142,6 +150,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.CustomBinding</ReturnType>
       </ReturnValue>
@@ -165,10 +178,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.BindingParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindingParameters As BindingParameterCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::BindingParameterCollection ^ BindingParameters { System::ServiceModel::Channels::BindingParameterCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingParameters : System.ServiceModel.Channels.BindingParameterCollection" Usage="System.ServiceModel.Channels.BindingContext.BindingParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -177,6 +192,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.BindingParameterCollection</ReturnType>
       </ReturnValue>
@@ -205,10 +225,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.BuildInnerChannelFactory``1" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildInnerChannelFactory(Of TChannel) () As IChannelFactory(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildInnerChannelFactory();" />
+      <MemberSignature Language="F#" Value="member this.BuildInnerChannelFactory : unit -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="bindingContext.BuildInnerChannelFactory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -245,9 +267,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.BuildInnerChannelListener``1" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildInnerChannelListener(Of TChannel As {Class, IChannel}) () As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildInnerChannelListener();" />
+      <MemberSignature Language="F#" Value="member this.BuildInnerChannelListener : unit -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="bindingContext.BuildInnerChannelListener " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -283,10 +307,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.CanBuildInnerChannelFactory``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CanBuildInnerChannelFactory(Of TChannel) () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; bool CanBuildInnerChannelFactory();" />
+      <MemberSignature Language="F#" Value="member this.CanBuildInnerChannelFactory : unit -&gt; bool" Usage="bindingContext.CanBuildInnerChannelFactory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -324,9 +350,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.CanBuildInnerChannelListener``1" />
       <MemberSignature Language="VB.NET" Value="Public Function CanBuildInnerChannelListener(Of TChannel As {Class, IChannel}) () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel bool CanBuildInnerChannelListener();" />
+      <MemberSignature Language="F#" Value="member this.CanBuildInnerChannelListener : unit -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="bindingContext.CanBuildInnerChannelListener " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -363,10 +391,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BindingContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::BindingContext ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.ServiceModel.Channels.BindingContext" Usage="bindingContext.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -404,10 +434,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BindingContext.GetInnerProperty``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInnerProperty(Of T As Class) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T GetInnerProperty();" />
+      <MemberSignature Language="F#" Value="member this.GetInnerProperty : unit -&gt; 'T (requires 'T : null)" Usage="bindingContext.GetInnerProperty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -453,12 +485,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.ListenUriBaseAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ListenUriBaseAddress As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ListenUriBaseAddress { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ListenUriBaseAddress : Uri with get, set" Usage="System.ServiceModel.Channels.BindingContext.ListenUriBaseAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -487,12 +529,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.ListenUriMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ListenUriMode As ListenUriMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ListenUriMode ListenUriMode { System::ServiceModel::Description::ListenUriMode get(); void set(System::ServiceModel::Description::ListenUriMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ListenUriMode : System.ServiceModel.Description.ListenUriMode with get, set" Usage="System.ServiceModel.Channels.BindingContext.ListenUriMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ListenUriMode</ReturnType>
       </ReturnValue>
@@ -516,12 +568,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.ListenUriRelativeAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property ListenUriRelativeAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ListenUriRelativeAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ListenUriRelativeAddress : string with get, set" Usage="System.ServiceModel.Channels.BindingContext.ListenUriRelativeAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -550,10 +612,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BindingContext.RemainingBindingElements" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemainingBindingElements As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::BindingElementCollection ^ RemainingBindingElements { System::ServiceModel::Channels::BindingElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemainingBindingElements : System.ServiceModel.Channels.BindingElementCollection" Usage="System.ServiceModel.Channels.BindingContext.RemainingBindingElements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -562,6 +626,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.BindingElementCollection</ReturnType>
       </ReturnValue>

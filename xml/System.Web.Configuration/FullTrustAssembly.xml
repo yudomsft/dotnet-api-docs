@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FullTrustAssembly" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FullTrustAssembly&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FullTrustAssembly sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FullTrustAssembly = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.FullTrustAssembly.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String, version As String, publicKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FullTrustAssembly(System::String ^ assemblyName, System::String ^ version, System::String ^ publicKey);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.FullTrustAssembly : string * string * string -&gt; System.Web.Configuration.FullTrustAssembly" Usage="new System.Web.Configuration.FullTrustAssembly (assemblyName, version, publicKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,16 +51,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FullTrustAssembly.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Web.Configuration.FullTrustAssembly.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("assemblyName", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -77,11 +80,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FullTrustAssembly.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.FullTrustAssembly.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
@@ -97,16 +106,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FullTrustAssembly.PublicKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PublicKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublicKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PublicKey : string with get, set" Usage="System.Web.Configuration.FullTrustAssembly.PublicKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("publicKey", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=false, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -125,16 +135,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FullTrustAssembly.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Web.Configuration.FullTrustAssembly.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("version", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>

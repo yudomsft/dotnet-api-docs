@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowOutline" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowOutline&#xA;Inherits UserControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowOutline : System::Windows::Forms::UserControl" />
+  <TypeSignature Language="F#" Value="type WorkflowOutline = class&#xA;    inherit UserControl" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -39,9 +41,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.#ctor(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceProvider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowOutline(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.WorkflowOutline : IServiceProvider -&gt; System.Workflow.ComponentModel.Design.WorkflowOutline" Usage="new System.Workflow.ComponentModel.Design.WorkflowOutline serviceProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -65,9 +69,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Workflow.ComponentModel.Design.WorkflowOutlineNode CreateNewNode(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.CreateNewNode(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Workflow::ComponentModel::Design::WorkflowOutlineNode ^ CreateNewNode(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="abstract member CreateNewNode : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Design.WorkflowOutlineNode&#xA;override this.CreateNewNode : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Design.WorkflowOutlineNode" Usage="workflowOutline.CreateNewNode activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,9 +102,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="workflowOutline.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,9 +128,11 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Design.WorkflowOutline.Expanding" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Custom Event Expanding As TreeViewCancelEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; event System::Windows::Forms::TreeViewCancelEventHandler ^ Expanding;" />
+      <MemberSignature Language="F#" Value="member this.Expanding : System.Windows.Forms.TreeViewCancelEventHandler " Usage="member this.Expanding : System.Windows.Forms.TreeViewCancelEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,9 +148,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Workflow.ComponentModel.Design.WorkflowOutlineNode GetNode(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.GetNode(System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Workflow::ComponentModel::Design::WorkflowOutlineNode ^ GetNode(System::Workflow::ComponentModel::Activity ^ activity);" />
+      <MemberSignature Language="F#" Value="member this.GetNode : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Design.WorkflowOutlineNode" Usage="workflowOutline.GetNode activity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,9 +181,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="workflowOutline.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,9 +207,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowOutline.NeedsExpandAll" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property NeedsExpandAll As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool NeedsExpandAll { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NeedsExpandAll : bool with get, set" Usage="System.Workflow.ComponentModel.Design.WorkflowOutline.NeedsExpandAll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,9 +230,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.OnBeginUpdate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeginUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeginUpdate();" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginUpdate : unit -&gt; unit&#xA;override this.OnBeginUpdate : unit -&gt; unit" Usage="workflowOutline.OnBeginUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,9 +252,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.OnEndUpdate" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndUpdate();" />
+      <MemberSignature Language="F#" Value="abstract member OnEndUpdate : unit -&gt; unit&#xA;override this.OnEndUpdate : unit -&gt; unit" Usage="workflowOutline.OnEndUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,9 +274,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="workflowOutline.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,9 +309,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.OnNodeAdded(System.Workflow.ComponentModel.Design.WorkflowOutlineNode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNodeAdded (node As WorkflowOutlineNode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNodeAdded(System::Workflow::ComponentModel::Design::WorkflowOutlineNode ^ node);" />
+      <MemberSignature Language="F#" Value="abstract member OnNodeAdded : System.Workflow.ComponentModel.Design.WorkflowOutlineNode -&gt; unit&#xA;override this.OnNodeAdded : System.Workflow.ComponentModel.Design.WorkflowOutlineNode -&gt; unit" Usage="workflowOutline.OnNodeAdded node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,9 +334,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.OnNodeSelected(System.Workflow.ComponentModel.Design.WorkflowOutlineNode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNodeSelected (node As WorkflowOutlineNode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNodeSelected(System::Workflow::ComponentModel::Design::WorkflowOutlineNode ^ node);" />
+      <MemberSignature Language="F#" Value="abstract member OnNodeSelected : System.Workflow.ComponentModel.Design.WorkflowOutlineNode -&gt; unit&#xA;override this.OnNodeSelected : System.Workflow.ComponentModel.Design.WorkflowOutlineNode -&gt; unit" Usage="workflowOutline.OnNodeSelected node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,9 +359,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.OnRefreshNode(System.Workflow.ComponentModel.Design.WorkflowOutlineNode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRefreshNode (node As WorkflowOutlineNode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRefreshNode(System::Workflow::ComponentModel::Design::WorkflowOutlineNode ^ node);" />
+      <MemberSignature Language="F#" Value="abstract member OnRefreshNode : System.Workflow.ComponentModel.Design.WorkflowOutlineNode -&gt; unit&#xA;override this.OnRefreshNode : System.Workflow.ComponentModel.Design.WorkflowOutlineNode -&gt; unit" Usage="workflowOutline.OnRefreshNode node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,9 +384,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.RefreshNode(System.Workflow.ComponentModel.Design.WorkflowOutlineNode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RefreshNode (nodeToUpdate As WorkflowOutlineNode, refreshChildNodes As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RefreshNode(System::Workflow::ComponentModel::Design::WorkflowOutlineNode ^ nodeToUpdate, bool refreshChildNodes);" />
+      <MemberSignature Language="F#" Value="member this.RefreshNode : System.Workflow.ComponentModel.Design.WorkflowOutlineNode * bool -&gt; unit" Usage="workflowOutline.RefreshNode (nodeToUpdate, refreshChildNodes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,9 +412,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.RefreshWorkflowOutline" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshWorkflowOutline ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshWorkflowOutline();" />
+      <MemberSignature Language="F#" Value="member this.RefreshWorkflowOutline : unit -&gt; unit" Usage="workflowOutline.RefreshWorkflowOutline " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -402,9 +434,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowOutline.ReloadWorkflowOutline" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReloadWorkflowOutline ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReloadWorkflowOutline();" />
+      <MemberSignature Language="F#" Value="member this.ReloadWorkflowOutline : unit -&gt; unit" Usage="workflowOutline.ReloadWorkflowOutline " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,9 +456,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowOutline.RootNode" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property RootNode As TreeNode" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Forms::TreeNode ^ RootNode { System::Windows::Forms::TreeNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RootNode : System.Windows.Forms.TreeNode" Usage="System.Workflow.ComponentModel.Design.WorkflowOutline.RootNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -442,9 +478,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowOutline.TreeView" />
       <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property TreeView As TreeView" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Windows::Forms::TreeView ^ TreeView { System::Windows::Forms::TreeView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TreeView : System.Windows.Forms.TreeView" Usage="System.Workflow.ComponentModel.Design.WorkflowOutline.TreeView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

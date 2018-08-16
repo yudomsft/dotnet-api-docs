@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeRegionDirective" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeRegionDirective&#xA;Inherits CodeDirective" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeRegionDirective : System::CodeDom::CodeDirective" />
+  <TypeSignature Language="F#" Value="type CodeRegionDirective = class&#xA;    inherit CodeDirective" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -17,11 +19,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -65,12 +70,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRegionDirective" /> class with default values.</summary>
@@ -90,9 +101,11 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeRegionDirective.#ctor(System.CodeDom.CodeRegionMode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (regionMode As CodeRegionMode, regionText As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeRegionDirective(System::CodeDom::CodeRegionMode regionMode, System::String ^ regionText);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeRegionDirective : System.CodeDom.CodeRegionMode * string -&gt; System.CodeDom.CodeRegionDirective" Usage="new System.CodeDom.CodeRegionDirective (regionMode, regionText)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -126,15 +139,25 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRegionDirective.RegionMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RegionMode As CodeRegionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeRegionMode RegionMode { System::CodeDom::CodeRegionMode get(); void set(System::CodeDom::CodeRegionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RegionMode : System.CodeDom.CodeRegionMode with get, set" Usage="System.CodeDom.CodeRegionDirective.RegionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeRegionMode</ReturnType>
       </ReturnValue>
@@ -160,15 +183,22 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRegionDirective.RegionText" />
       <MemberSignature Language="VB.NET" Value="Public Property RegionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RegionText : string with get, set" Usage="System.CodeDom.CodeRegionDirective.RegionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

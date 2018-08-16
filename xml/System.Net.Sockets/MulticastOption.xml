@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.MulticastOption" />
   <TypeSignature Language="VB.NET" Value="Public Class MulticastOption" />
   <TypeSignature Language="C++ CLI" Value="public ref class MulticastOption" />
+  <TypeSignature Language="F#" Value="type MulticastOption = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastOption(System::Net::IPAddress ^ group);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.MulticastOption : System.Net.IPAddress -&gt; System.Net.Sockets.MulticastOption" Usage="new System.Net.Sockets.MulticastOption group" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -81,6 +85,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -112,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress, interfaceIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastOption(System::Net::IPAddress ^ group, int interfaceIndex);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.MulticastOption : System.Net.IPAddress * int -&gt; System.Net.Sockets.MulticastOption" Usage="new System.Net.Sockets.MulticastOption (group, interfaceIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -121,6 +128,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -145,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.MulticastOption.#ctor(System.Net.IPAddress,System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (group As IPAddress, mcint As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MulticastOption(System::Net::IPAddress ^ group, System::Net::IPAddress ^ mcint);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.MulticastOption : System.Net.IPAddress * System.Net.IPAddress -&gt; System.Net.Sockets.MulticastOption" Usage="new System.Net.Sockets.MulticastOption (group, mcint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -154,6 +163,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -200,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.MulticastOption.Group" />
       <MemberSignature Language="VB.NET" Value="Public Property Group As IPAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Group { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Group : System.Net.IPAddress with get, set" Usage="System.Net.Sockets.MulticastOption.Group" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -209,6 +221,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -216,6 +230,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.IPAddress</ReturnType>
       </ReturnValue>
@@ -247,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.MulticastOption.InterfaceIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property InterfaceIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InterfaceIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.InterfaceIndex : int with get, set" Usage="System.Net.Sockets.MulticastOption.InterfaceIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -256,6 +279,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -263,6 +287,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -278,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.MulticastOption.LocalAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalAddress As IPAddress" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ LocalAddress { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LocalAddress : System.Net.IPAddress with get, set" Usage="System.Net.Sockets.MulticastOption.LocalAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -287,6 +317,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -294,6 +326,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.IPAddress</ReturnType>
       </ReturnValue>

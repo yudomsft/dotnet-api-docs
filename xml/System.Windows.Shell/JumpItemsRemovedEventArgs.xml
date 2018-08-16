@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItemsRemovedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JumpItemsRemovedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class JumpItemsRemovedEventArgs sealed : EventArgs" />
+  <TypeSignature Language="F#" Value="type JumpItemsRemovedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRemovedEventArgs" /> class.</summary>
@@ -49,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor(System.Collections.Generic.IList{System.Windows.Shell.JumpItem})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (removedItems As IList(Of JumpItem))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; JumpItemsRemovedEventArgs(System::Collections::Generic::IList&lt;System::Windows::Shell::JumpItem ^&gt; ^ removedItems);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Shell.JumpItemsRemovedEventArgs : System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt; -&gt; System.Windows.Shell.JumpItemsRemovedEventArgs" Usage="new System.Windows.Shell.JumpItemsRemovedEventArgs removedItems" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,11 +76,17 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpItemsRemovedEventArgs.RemovedItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedItems As IList(Of JumpItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Windows::Shell::JumpItem ^&gt; ^ RemovedItems { System::Collections::Generic::IList&lt;System::Windows::Shell::JumpItem ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RemovedItems : System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;" Usage="System.Windows.Shell.JumpItemsRemovedEventArgs.RemovedItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;</ReturnType>
       </ReturnValue>

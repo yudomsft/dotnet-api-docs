@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WizardStepEditableRegion" />
   <TypeSignature Language="VB.NET" Value="Public Class WizardStepEditableRegion&#xA;Inherits EditableDesignerRegion" />
   <TypeSignature Language="C++ CLI" Value="public ref class WizardStepEditableRegion : System::Web::UI::Design::EditableDesignerRegion" />
+  <TypeSignature Language="F#" Value="type WizardStepEditableRegion = class&#xA;    inherit EditableDesignerRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,9 +27,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepEditableRegion.#ctor(System.Web.UI.Design.WebControls.WizardDesigner,System.Web.UI.WebControls.WizardStepBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (designer As WizardDesigner, wizardStep As WizardStepBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WizardStepEditableRegion(System::Web::UI::Design::WebControls::WizardDesigner ^ designer, System::Web::UI::WebControls::WizardStepBase ^ wizardStep);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.WizardStepEditableRegion : System.Web.UI.Design.WebControls.WizardDesigner * System.Web.UI.WebControls.WizardStepBase -&gt; System.Web.UI.Design.WebControls.WizardStepEditableRegion" Usage="new System.Web.UI.Design.WebControls.WizardStepEditableRegion (designer, wizardStep)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -49,14 +53,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardStepEditableRegion.Step" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Step As WizardStepBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WizardStepBase ^ Step { System::Web::UI::WebControls::WizardStepBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Step : System.Web.UI.WebControls.WizardStepBase" Usage="System.Web.UI.Design.WebControls.WizardStepEditableRegion.Step" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.WebControls.IWizardStepEditableRegion.Step</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepBase</ReturnType>
       </ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class Extensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -147,6 +149,7 @@ Console.WriteLine(newTree)
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.CreateNavigator(System.Xml.Linq.XNode)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateNavigator (node As XNode) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::Linq::XNode ^ node);" />
+      <MemberSignature Language="F#" Value="static member CreateNavigator : System.Xml.Linq.XNode -&gt; System.Xml.XPath.XPathNavigator" Usage="System.Xml.XPath.Extensions.CreateNavigator node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -157,12 +160,18 @@ Console.WriteLine(newTree)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
@@ -280,6 +289,7 @@ Console.WriteLine(newTree)
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.CreateNavigator(System.Xml.Linq.XNode,System.Xml.XmlNameTable)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateNavigator (node As XNode, nameTable As XmlNameTable) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::Linq::XNode ^ node, System::Xml::XmlNameTable ^ nameTable);" />
+      <MemberSignature Language="F#" Value="static member CreateNavigator : System.Xml.Linq.XNode * System.Xml.XmlNameTable -&gt; System.Xml.XPath.XPathNavigator" Usage="System.Xml.XPath.Extensions.CreateNavigator (node, nameTable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -290,6 +300,7 @@ Console.WriteLine(newTree)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -351,6 +362,7 @@ Console.WriteLine(newTree)
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathEvaluate(System.Xml.Linq.XNode,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function XPathEvaluate (node As XNode, expression As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Object ^ XPathEvaluate(System::Xml::Linq::XNode ^ node, System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="static member XPathEvaluate : System.Xml.Linq.XNode * string -&gt; obj" Usage="System.Xml.XPath.Extensions.XPathEvaluate (node, expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -361,12 +373,18 @@ Console.WriteLine(newTree)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -427,6 +445,7 @@ a="value"
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathEvaluate(System.Xml.Linq.XNode,System.String,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function XPathEvaluate (node As XNode, expression As String, resolver As IXmlNamespaceResolver) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Object ^ XPathEvaluate(System::Xml::Linq::XNode ^ node, System::String ^ expression, System::Xml::IXmlNamespaceResolver ^ resolver);" />
+      <MemberSignature Language="F#" Value="static member XPathEvaluate : System.Xml.Linq.XNode * string * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="System.Xml.XPath.Extensions.XPathEvaluate (node, expression, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -437,6 +456,7 @@ a="value"
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -531,6 +551,7 @@ aw:Att="attdata"
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElement(System.Xml.Linq.XNode,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function XPathSelectElement (node As XNode, expression As String) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::Linq::XElement ^ XPathSelectElement(System::Xml::Linq::XNode ^ node, System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="static member XPathSelectElement : System.Xml.Linq.XNode * string -&gt; System.Xml.Linq.XElement" Usage="System.Xml.XPath.Extensions.XPathSelectElement (node, expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -541,12 +562,18 @@ aw:Att="attdata"
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XElement</ReturnType>
       </ReturnValue>
@@ -596,7 +623,7 @@ Console.WriteLine(el)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child4>4</Child4>  
 ```  
   
@@ -610,6 +637,7 @@ Console.WriteLine(el)
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElement(System.Xml.Linq.XNode,System.String,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function XPathSelectElement (node As XNode, expression As String, resolver As IXmlNamespaceResolver) As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Xml::Linq::XElement ^ XPathSelectElement(System::Xml::Linq::XNode ^ node, System::String ^ expression, System::Xml::IXmlNamespaceResolver ^ resolver);" />
+      <MemberSignature Language="F#" Value="static member XPathSelectElement : System.Xml.Linq.XNode * string * System.Xml.IXmlNamespaceResolver -&gt; System.Xml.Linq.XElement" Usage="System.Xml.XPath.Extensions.XPathSelectElement (node, expression, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -620,6 +648,7 @@ Console.WriteLine(el)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -717,6 +746,7 @@ Console.WriteLine(child1)
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElements(System.Xml.Linq.XNode,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function XPathSelectElements (node As XNode, expression As String) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ XPathSelectElements(System::Xml::Linq::XNode ^ node, System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="static member XPathSelectElements : System.Xml.Linq.XNode * string -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.XPath.Extensions.XPathSelectElements (node, expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -727,12 +757,18 @@ Console.WriteLine(child1)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
@@ -792,7 +828,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child2>4</Child2>  
 <Child2>5</Child2>  
 <Child2>6</Child2>  
@@ -808,6 +844,7 @@ Next
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElements(System.Xml.Linq.XNode,System.String,System.Xml.IXmlNamespaceResolver)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function XPathSelectElements (node As XNode, expression As String, resolver As IXmlNamespaceResolver) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ XPathSelectElements(System::Xml::Linq::XNode ^ node, System::String ^ expression, System::Xml::IXmlNamespaceResolver ^ resolver);" />
+      <MemberSignature Language="F#" Value="static member XPathSelectElements : System.Xml.Linq.XNode * string * System.Xml.IXmlNamespaceResolver -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.XPath.Extensions.XPathSelectElements (node, expression, resolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
@@ -818,6 +855,7 @@ Next
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -897,7 +935,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 1</aw:Child1>  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 2</aw:Child1>  
 <aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 3</aw:Child1>  

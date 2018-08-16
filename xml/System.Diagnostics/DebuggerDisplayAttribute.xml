@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerDisplayAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggerDisplayAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DebuggerDisplayAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DebuggerDisplayAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Debug</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -25,11 +27,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Delegate, AllowMultiple=true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Delegate | System.AttributeTargets.Enum | System.AttributeTargets.Field | System.AttributeTargets.Property | System.AttributeTargets.Struct, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -69,6 +74,7 @@ class MyHashtable
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerDisplayAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerDisplayAttribute(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.DebuggerDisplayAttribute : string -&gt; System.Diagnostics.DebuggerDisplayAttribute" Usage="new System.Diagnostics.DebuggerDisplayAttribute value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -79,6 +85,7 @@ class MyHashtable
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -125,6 +132,7 @@ class MyTable
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerDisplayAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Diagnostics.DebuggerDisplayAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -135,6 +143,7 @@ class MyTable
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -173,6 +182,7 @@ class MyTable
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerDisplayAttribute.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Target { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : Type with get, set" Usage="System.Diagnostics.DebuggerDisplayAttribute.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -183,6 +193,7 @@ class MyTable
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -214,6 +225,7 @@ class MyTable
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerDisplayAttribute.TargetTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetTypeName : string with get, set" Usage="System.Diagnostics.DebuggerDisplayAttribute.TargetTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -224,6 +236,7 @@ class MyTable
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -253,6 +266,7 @@ class MyTable
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerDisplayAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Diagnostics.DebuggerDisplayAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -263,6 +277,7 @@ class MyTable
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -285,6 +300,7 @@ class MyTable
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerDisplayAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Diagnostics.DebuggerDisplayAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>
@@ -295,6 +311,7 @@ class MyTable
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

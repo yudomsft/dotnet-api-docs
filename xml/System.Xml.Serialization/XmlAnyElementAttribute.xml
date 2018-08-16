@@ -4,12 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAnyElementAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlAnyElementAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlAnyElementAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlAnyElementAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -27,8 +30,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -94,6 +100,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -125,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAnyElementAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlAnyElementAttribute(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlAnyElementAttribute : string -&gt; System.Xml.Serialization.XmlAnyElementAttribute" Usage="new System.Xml.Serialization.XmlAnyElementAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -132,6 +141,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -166,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlAnyElementAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlAnyElementAttribute(System::String ^ name, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlAnyElementAttribute : string * string -&gt; System.Xml.Serialization.XmlAnyElementAttribute" Usage="new System.Xml.Serialization.XmlAnyElementAttribute (name, ns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -173,6 +185,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -209,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAnyElementAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Xml.Serialization.XmlAnyElementAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -216,6 +231,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -228,6 +245,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -262,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAnyElementAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.XmlAnyElementAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -269,6 +292,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -281,6 +306,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -312,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlAnyElementAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.Xml.Serialization.XmlAnyElementAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -319,6 +350,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -331,6 +363,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

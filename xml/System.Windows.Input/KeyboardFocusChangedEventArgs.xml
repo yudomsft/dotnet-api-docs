@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardFocusChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyboardFocusChangedEventArgs&#xA;Inherits KeyboardEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyboardFocusChangedEventArgs : System::Windows::Input::KeyboardEventArgs" />
+  <TypeSignature Language="F#" Value="type KeyboardFocusChangedEventArgs = class&#xA;    inherit KeyboardEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -61,9 +63,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardFocusChangedEventArgs.#ctor(System.Windows.Input.KeyboardDevice,System.Int32,System.Windows.IInputElement,System.Windows.IInputElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyboard As KeyboardDevice, timestamp As Integer, oldFocus As IInputElement, newFocus As IInputElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyboardFocusChangedEventArgs(System::Windows::Input::KeyboardDevice ^ keyboard, int timestamp, System::Windows::IInputElement ^ oldFocus, System::Windows::IInputElement ^ newFocus);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.KeyboardFocusChangedEventArgs : System.Windows.Input.KeyboardDevice * int * System.Windows.IInputElement * System.Windows.IInputElement -&gt; System.Windows.Input.KeyboardFocusChangedEventArgs" Usage="new System.Windows.Input.KeyboardFocusChangedEventArgs (keyboard, timestamp, oldFocus, newFocus)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -90,9 +94,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="keyboardFocusChangedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,11 +128,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardFocusChangedEventArgs.NewFocus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewFocus As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ NewFocus { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewFocus : System.Windows.IInputElement" Usage="System.Windows.Input.KeyboardFocusChangedEventArgs.NewFocus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>
@@ -145,11 +158,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardFocusChangedEventArgs.OldFocus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldFocus As IInputElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ OldFocus { System::Windows::IInputElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldFocus : System.Windows.IInputElement" Usage="System.Windows.Input.KeyboardFocusChangedEventArgs.OldFocus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
       </ReturnValue>

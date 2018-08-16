@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Menu&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class Menu abstract : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type Menu = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,11 +16,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Windows.Forms")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.Designer("Microsoft.VisualStudio.Windows.Forms.MenuDesigner, Microsoft.VisualStudio, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,9 +62,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.#ctor(System.Windows.Forms.MenuItem[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (items As MenuItem())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Menu(cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ items);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Menu : System.Windows.Forms.MenuItem[] -&gt; System.Windows.Forms.Menu" Usage="new System.Windows.Forms.Menu items" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -83,9 +92,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.CloneMenu(System.Windows.Forms.Menu)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub CloneMenu (menuSrc As Menu)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void CloneMenu(System::Windows::Forms::Menu ^ menuSrc);" />
+      <MemberSignature Language="F#" Value="member this.CloneMenu : System.Windows.Forms.Menu -&gt; unit" Usage="menu.CloneMenu menuSrc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,9 +136,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.CreateMenuHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateMenuHandle () As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IntPtr CreateMenuHandle();" />
+      <MemberSignature Language="F#" Value="abstract member CreateMenuHandle : unit -&gt; nativeint&#xA;override this.CreateMenuHandle : unit -&gt; nativeint" Usage="menu.CreateMenuHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,9 +161,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="menu.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,9 +198,12 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Menu.FindHandle" />
       <MemberSignature Language="VB.NET" Value="Public Const FindHandle As Integer  = 0" />
       <MemberSignature Language="C++ CLI" Value="public: int FindHandle = 0;" />
+      <MemberSignature Language="F#" Value="val mutable FindHandle : int" Usage="System.Windows.Forms.Menu.FindHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,9 +221,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.FindMenuItem(System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindMenuItem (type As Integer, value As IntPtr) As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::MenuItem ^ FindMenuItem(int type, IntPtr value);" />
+      <MemberSignature Language="F#" Value="member this.FindMenuItem : int * nativeint -&gt; System.Windows.Forms.MenuItem" Usage="menu.FindMenuItem (type, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,9 +260,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.FindMergePosition(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function FindMergePosition (mergeOrder As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; int FindMergePosition(int mergeOrder);" />
+      <MemberSignature Language="F#" Value="member this.FindMergePosition : int -&gt; int" Usage="menu.FindMergePosition mergeOrder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -267,9 +294,12 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Menu.FindShortcut" />
       <MemberSignature Language="VB.NET" Value="Public Const FindShortcut As Integer  = 1" />
       <MemberSignature Language="C++ CLI" Value="public: int FindShortcut = 1;" />
+      <MemberSignature Language="F#" Value="val mutable FindShortcut : int" Usage="System.Windows.Forms.Menu.FindShortcut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,9 +317,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.GetContextMenu" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContextMenu () As ContextMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ContextMenu ^ GetContextMenu();" />
+      <MemberSignature Language="F#" Value="member this.GetContextMenu : unit -&gt; System.Windows.Forms.ContextMenu" Usage="menu.GetContextMenu " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -325,9 +358,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.GetMainMenu" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMainMenu () As MainMenu" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::MainMenu ^ GetMainMenu();" />
+      <MemberSignature Language="F#" Value="member this.GetMainMenu : unit -&gt; System.Windows.Forms.MainMenu" Usage="menu.GetMainMenu " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -363,19 +399,28 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.Menu.Handle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -401,17 +446,23 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.IsParent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsParent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsParent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsParent : bool" Usage="System.Windows.Forms.Menu.IsParent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -448,17 +499,23 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MdiListItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MdiListItem As MenuItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MenuItem ^ MdiListItem { System::Windows::Forms::MenuItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MdiListItem : System.Windows.Forms.MenuItem" Usage="System.Windows.Forms.Menu.MdiListItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -485,20 +542,26 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuItems As Menu.MenuItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Menu::MenuItemCollection ^ MenuItems { System::Windows::Forms::Menu::MenuItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MenuItems : System.Windows.Forms.Menu.MenuItemCollection" Usage="System.Windows.Forms.Menu.MenuItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -536,9 +599,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MergeMenu(System.Windows.Forms.Menu)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub MergeMenu (menuSrc As Menu)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MergeMenu(System::Windows::Forms::Menu ^ menuSrc);" />
+      <MemberSignature Language="F#" Value="abstract member MergeMenu : System.Windows.Forms.Menu -&gt; unit&#xA;override this.MergeMenu : System.Windows.Forms.Menu -&gt; unit" Usage="menu.MergeMenu menuSrc" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -584,17 +650,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.Menu.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -619,16 +690,19 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool&#xA;override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="menu.ProcessCmdKey (msg, keyData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="msg" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" />
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
@@ -646,23 +720,31 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.Menu.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -680,9 +762,12 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="menu.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

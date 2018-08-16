@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectStateFormatter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectStateFormatter&#xA;Implements IFormatter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ObjectStateFormatter sealed : System::Runtime::Serialization::IFormatter" />
+  <TypeSignature Language="F#" Value="type ObjectStateFormatter = class&#xA;    interface IStateFormatter&#xA;    interface IFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -64,8 +66,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectStateFormatter" /> class.</summary>
@@ -99,9 +107,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (inputStream As Stream) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::IO::Stream ^ inputStream);" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.IO.Stream -&gt; obj" Usage="objectStateFormatter.Deserialize inputStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,12 +153,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Deserialize(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Deserialize (inputString As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::String ^ inputString);" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : string -&gt; obj" Usage="objectStateFormatter.Deserialize inputString" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateFormatter.Deserialize(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,12 +212,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Serialize(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Serialize (stateGraph As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Serialize(System::Object ^ stateGraph);" />
+      <MemberSignature Language="F#" Value="member this.Serialize : obj -&gt; string" Usage="objectStateFormatter.Serialize stateGraph" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IStateFormatter.Serialize(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,9 +256,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectStateFormatter.Serialize(System.IO.Stream,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Serialize (outputStream As Stream, stateGraph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::Stream ^ outputStream, System::Object ^ stateGraph);" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.IO.Stream * obj -&gt; unit" Usage="objectStateFormatter.Serialize (outputStream, stateGraph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,10 +298,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.SerializationBinder System.Runtime.Serialization.IFormatter.Binder" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Binder" />
       <MemberSignature Language="VB.NET" Value=" Property Binder As SerializationBinder Implements IFormatter.Binder" />
-      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::SerializationBinder ^ System.Runtime.Serialization.IFormatter.Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::SerializationBinder ^ System::Runtime::Serialization::IFormatter::Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.Serialization.IFormatter.Binder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,10 +327,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.StreamingContext System.Runtime.Serialization.IFormatter.Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#Context" />
       <MemberSignature Language="VB.NET" Value=" Property Context As StreamingContext Implements IFormatter.Context" />
-      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::StreamingContext System.Runtime.Serialization.IFormatter.Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::StreamingContext System::Runtime::Serialization::IFormatter::Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.Serialization.IFormatter.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,8 +360,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -371,8 +397,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -399,10 +431,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.ISurrogateSelector System.Runtime.Serialization.IFormatter.SurrogateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ObjectStateFormatter.System#Runtime#Serialization#IFormatter#SurrogateSelector" />
       <MemberSignature Language="VB.NET" Value=" Property SurrogateSelector As ISurrogateSelector Implements IFormatter.SurrogateSelector" />
-      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::ISurrogateSelector ^ System.Runtime.Serialization.IFormatter.SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::ISurrogateSelector ^ System::Runtime::Serialization::IFormatter::SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Runtime.Serialization.IFormatter.SurrogateSelector" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,8 +467,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -467,8 +507,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

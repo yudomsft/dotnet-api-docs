@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSACng" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RSACng&#xA;Inherits RSA" />
   <TypeSignature Language="C++ CLI" Value="public ref class RSACng sealed : System::Security::Cryptography::RSA" />
+  <TypeSignature Language="F#" Value="type RSACng = class&#xA;    inherit RSA" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -86,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keySize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RSACng(int keySize);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSACng : int -&gt; System.Security.Cryptography.RSACng" Usage="new System.Security.Cryptography.RSACng keySize" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -125,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.#ctor(System.Security.Cryptography.CngKey)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As CngKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RSACng(System::Security::Cryptography::CngKey ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSACng : System.Security.Cryptography.CngKey -&gt; System.Security.Cryptography.RSACng" Usage="new System.Security.Cryptography.RSACng key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -140,6 +143,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="key" Type="System.Security.Cryptography.CngKey" />
       </Parameters>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decrypt (data As Byte(), padding As RSAEncryptionPadding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decrypt(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::RSAEncryptionPadding ^ padding);" />
+      <MemberSignature Language="F#" Value="abstract member Decrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]&#xA;override this.Decrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACng.Decrypt (data, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -183,7 +192,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -216,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.DecryptValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptValue (rgb As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptValue(cli::array &lt;System::Byte&gt; ^ rgb);" />
+      <MemberSignature Language="F#" Value="abstract member DecryptValue : byte[] -&gt; byte[]&#xA;override this.DecryptValue : byte[] -&gt; byte[]" Usage="rSACng.DecryptValue rgb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -241,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="rSACng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -273,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encrypt (data As Byte(), padding As RSAEncryptionPadding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encrypt(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::RSAEncryptionPadding ^ padding);" />
+      <MemberSignature Language="F#" Value="abstract member Encrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]&#xA;override this.Encrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACng.Encrypt (data, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -288,7 +300,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -321,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.EncryptValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EncryptValue (rgb As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptValue(cli::array &lt;System::Byte&gt; ^ rgb);" />
+      <MemberSignature Language="F#" Value="abstract member EncryptValue : byte[] -&gt; byte[]&#xA;override this.EncryptValue : byte[] -&gt; byte[]" Usage="rSACng.EncryptValue rgb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -346,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As RSAParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::RSAParameters ExportParameters(bool includePrivateParameters);" />
+      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.RSAParameters&#xA;override this.ExportParameters : bool -&gt; System.Security.Cryptography.RSAParameters" Usage="rSACng.ExportParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -361,6 +375,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.RSAParameters</ReturnType>
       </ReturnValue>
@@ -381,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="abstract member HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACng.HashData (data, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -416,6 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
+      <MemberSignature Language="F#" Value="abstract member HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACng.HashData (data, offset, count, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -455,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.ImportParameters(System.Security.Cryptography.RSAParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As RSAParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::RSAParameters parameters);" />
+      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.RSAParameters -&gt; unit&#xA;override this.ImportParameters : System.Security.Cryptography.RSAParameters -&gt; unit" Usage="rSACng.ImportParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -470,6 +492,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -503,6 +530,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACng.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As CngKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngKey ^ Key { System::Security::Cryptography::CngKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Security.Cryptography.CngKey" Usage="System.Security.Cryptography.RSACng.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -519,7 +547,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -548,6 +576,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACng.KeyExchangeAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyExchangeAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyExchangeAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : string" Usage="System.Security.Cryptography.RSACng.KeyExchangeAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -568,6 +597,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACng.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.RSACng.LegalKeySizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -589,6 +619,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSACng.SignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SignatureAlgorithm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SignatureAlgorithm { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : string" Usage="System.Security.Cryptography.RSACng.SignatureAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -609,6 +640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SignHash (hash As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ SignHash(cli::array &lt;System::Byte&gt; ^ hash, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
+      <MemberSignature Language="F#" Value="abstract member SignHash : byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; byte[]&#xA;override this.SignHash : byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; byte[]" Usage="rSACng.SignHash (hash, hashAlgorithm, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -624,7 +656,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -660,6 +692,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyHash (hash As Byte(), signature As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyHash(cli::array &lt;System::Byte&gt; ^ hash, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
+      <MemberSignature Language="F#" Value="abstract member VerifyHash : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; bool&#xA;override this.VerifyHash : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; bool" Usage="rSACng.VerifyHash (hash, signature, hashAlgorithm, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -675,7 +708,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

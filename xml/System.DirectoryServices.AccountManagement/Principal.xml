@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.Principal" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Principal&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Principal abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type Principal = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -18,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Name ( {Name} )")</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,11 +46,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -72,18 +78,29 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.CheckDisposedOrDeleted" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckDisposedOrDeleted ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckDisposedOrDeleted();" />
+      <MemberSignature Language="F#" Value="member this.CheckDisposedOrDeleted : unit -&gt; unit" Usage="principal.CheckDisposedOrDeleted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -111,15 +128,23 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As PrincipalContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::PrincipalContext ^ Context { System::DirectoryServices::AccountManagement::PrincipalContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.DirectoryServices.AccountManagement.PrincipalContext" Usage="System.DirectoryServices.AccountManagement.Principal.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>get: System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,24 +163,32 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.ContextRaw" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property ContextRaw As PrincipalContext" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::DirectoryServices::AccountManagement::PrincipalContext ^ ContextRaw { System::DirectoryServices::AccountManagement::PrincipalContext ^ get(); void set(System::DirectoryServices::AccountManagement::PrincipalContext ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextRaw : System.DirectoryServices.AccountManagement.PrincipalContext with get, set" Usage="System.DirectoryServices.AccountManagement.Principal.ContextRaw" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,14 +207,16 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.ContextType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextType As ContextType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::ContextType ContextType { System::DirectoryServices::AccountManagement::ContextType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextType : System.DirectoryServices.AccountManagement.ContextType" Usage="System.DirectoryServices.AccountManagement.Principal.ContextType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -208,14 +243,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="principal.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -240,17 +277,19 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.DirectoryServices.AccountManagement.Principal.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -270,17 +309,19 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.DirectoryServices.AccountManagement.Principal.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -300,17 +341,19 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="principal.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -330,14 +373,16 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.DistinguishedName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DistinguishedName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DistinguishedName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DistinguishedName : string" Usage="System.DirectoryServices.AccountManagement.Principal.DistinguishedName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -357,9 +402,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="principal.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -384,14 +431,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.ExtensionGet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function ExtensionGet (attribute As String) As Object()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ ExtensionGet(System::String ^ attribute);" />
+      <MemberSignature Language="F#" Value="member this.ExtensionGet : string -&gt; obj[]" Usage="principal.ExtensionGet attribute" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -415,14 +464,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.ExtensionSet(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ExtensionSet (attribute As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ExtensionSet(System::String ^ attribute, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.ExtensionSet : string * obj -&gt; unit" Usage="principal.ExtensionSet (attribute, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -465,14 +516,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByIdentity (context As PrincipalContext, identityValue As String) As Principal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::Principal ^ FindByIdentity(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::String ^ identityValue);" />
+      <MemberSignature Language="F#" Value="static member FindByIdentity : System.DirectoryServices.AccountManagement.PrincipalContext * string -&gt; System.DirectoryServices.AccountManagement.Principal" Usage="System.DirectoryServices.AccountManagement.Principal.FindByIdentity (context, identityValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -498,14 +551,16 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.Principal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::Principal ^ FindByIdentity(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
+      <MemberSignature Language="F#" Value="static member FindByIdentity : System.DirectoryServices.AccountManagement.PrincipalContext * System.DirectoryServices.AccountManagement.IdentityType * string -&gt; System.DirectoryServices.AccountManagement.Principal" Usage="System.DirectoryServices.AccountManagement.Principal.FindByIdentity (context, identityType, identityValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -546,18 +601,23 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.FindByIdentityWithType(System.DirectoryServices.AccountManagement.PrincipalContext,System.Type,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function FindByIdentityWithType (context As PrincipalContext, principalType As Type, identityValue As String) As Principal" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::DirectoryServices::AccountManagement::Principal ^ FindByIdentityWithType(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, Type ^ principalType, System::String ^ identityValue);" />
+      <MemberSignature Language="F#" Value="static member FindByIdentityWithType : System.DirectoryServices.AccountManagement.PrincipalContext * Type * string -&gt; System.DirectoryServices.AccountManagement.Principal" Usage="System.DirectoryServices.AccountManagement.Principal.FindByIdentityWithType (context, principalType, identityValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -583,18 +643,23 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.DirectoryServices.AccountManagement.Principal FindByIdentityWithType(class System.DirectoryServices.AccountManagement.PrincipalContext context, class System.Type principalType, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.FindByIdentityWithType(System.DirectoryServices.AccountManagement.PrincipalContext,System.Type,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::DirectoryServices::AccountManagement::Principal ^ FindByIdentityWithType(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, Type ^ principalType, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
+      <MemberSignature Language="F#" Value="static member FindByIdentityWithType : System.DirectoryServices.AccountManagement.PrincipalContext * Type * System.DirectoryServices.AccountManagement.IdentityType * string -&gt; System.DirectoryServices.AccountManagement.Principal" Usage="System.DirectoryServices.AccountManagement.Principal.FindByIdentityWithType (context, principalType, identityType, identityValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -644,14 +709,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.GetGroups" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGroups () As PrincipalSearchResult(Of Principal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ GetGroups();" />
+      <MemberSignature Language="F#" Value="member this.GetGroups : unit -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;" Usage="principal.GetGroups " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -684,14 +751,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.GetGroups(System.DirectoryServices.AccountManagement.PrincipalContext)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetGroups (contextToQuery As PrincipalContext) As PrincipalSearchResult(Of Principal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ GetGroups(System::DirectoryServices::AccountManagement::PrincipalContext ^ contextToQuery);" />
+      <MemberSignature Language="F#" Value="member this.GetGroups : System.DirectoryServices.AccountManagement.PrincipalContext -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;" Usage="principal.GetGroups contextToQuery" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -729,9 +798,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="principal.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -752,14 +823,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.GetUnderlyingObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnderlyingObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetUnderlyingObject();" />
+      <MemberSignature Language="F#" Value="member this.GetUnderlyingObject : unit -&gt; obj" Usage="principal.GetUnderlyingObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -781,14 +854,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.GetUnderlyingObjectType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUnderlyingObjectType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetUnderlyingObjectType();" />
+      <MemberSignature Language="F#" Value="member this.GetUnderlyingObjectType : unit -&gt; Type" Usage="principal.GetUnderlyingObjectType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -809,14 +884,16 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.Guid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guid As Nullable(Of Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Guid&gt; Guid { Nullable&lt;Guid&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.Guid : Nullable&lt;Guid&gt;" Usage="System.DirectoryServices.AccountManagement.Principal.Guid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -854,14 +931,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.IsMemberOf(System.DirectoryServices.AccountManagement.GroupPrincipal)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsMemberOf (group As GroupPrincipal) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsMemberOf(System::DirectoryServices::AccountManagement::GroupPrincipal ^ group);" />
+      <MemberSignature Language="F#" Value="member this.IsMemberOf : System.DirectoryServices.AccountManagement.GroupPrincipal -&gt; bool" Usage="principal.IsMemberOf group" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -894,14 +973,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsMemberOf(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.IsMemberOf(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsMemberOf(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
+      <MemberSignature Language="F#" Value="member this.IsMemberOf : System.DirectoryServices.AccountManagement.PrincipalContext * System.DirectoryServices.AccountManagement.IdentityType * string -&gt; bool" Usage="principal.IsMemberOf (context, identityType, identityValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -939,17 +1020,19 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.DirectoryServices.AccountManagement.Principal.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -971,17 +1054,19 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.SamAccountName" />
       <MemberSignature Language="VB.NET" Value="Public Property SamAccountName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SamAccountName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SamAccountName : string with get, set" Usage="System.DirectoryServices.AccountManagement.Principal.SamAccountName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1014,14 +1099,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="principal.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1047,14 +1134,16 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.Save(System.DirectoryServices.AccountManagement.PrincipalContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (context As PrincipalContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::DirectoryServices::AccountManagement::PrincipalContext ^ context);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.DirectoryServices.AccountManagement.PrincipalContext -&gt; unit" Usage="principal.Save context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1090,14 +1179,16 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.Sid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sid As SecurityIdentifier" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::SecurityIdentifier ^ Sid { System::Security::Principal::SecurityIdentifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sid : System.Security.Principal.SecurityIdentifier" Usage="System.DirectoryServices.AccountManagement.Principal.Sid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1117,14 +1208,16 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.StructuralObjectClass" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StructuralObjectClass As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StructuralObjectClass { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StructuralObjectClass : string" Usage="System.DirectoryServices.AccountManagement.Principal.StructuralObjectClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1144,15 +1237,20 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.Principal.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="principal.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1172,17 +1270,19 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.Principal.UserPrincipalName" />
       <MemberSignature Language="VB.NET" Value="Public Property UserPrincipalName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserPrincipalName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UserPrincipalName : string with get, set" Usage="System.DirectoryServices.AccountManagement.Principal.UserPrincipalName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>set: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenAuthenticator" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityContextSecurityTokenAuthenticator&#xA;Inherits SecurityTokenAuthenticator" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityContextSecurityTokenAuthenticator : System::IdentityModel::Selectors::SecurityTokenAuthenticator" />
+  <TypeSignature Language="F#" Value="type SecurityContextSecurityTokenAuthenticator = class&#xA;    inherit SecurityTokenAuthenticator" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,8 +35,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenAuthenticator" /> class.</summary>
@@ -54,9 +62,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenAuthenticator.CanValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanValidateTokenCore (token As SecurityToken) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.CanValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="securityContextSecurityTokenAuthenticator.CanValidateTokenCore token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,9 +89,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityTokenAuthenticator.ValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateTokenCore (token As SecurityToken) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="override this.ValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="securityContextSecurityTokenAuthenticator.ValidateTokenCore token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

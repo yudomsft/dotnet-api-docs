@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SwitchAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SwitchAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SwitchAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SwitchAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,8 +25,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Event | System.AttributeTargets.Method | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Event)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -55,9 +60,11 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SwitchAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (switchName As String, switchType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SwitchAttribute(System::String ^ switchName, Type ^ switchType);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.SwitchAttribute : string * Type -&gt; System.Diagnostics.SwitchAttribute" Usage="new System.Diagnostics.SwitchAttribute (switchName, switchType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -101,9 +108,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.SwitchAttribute[] GetAll(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SwitchAttribute.GetAll(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Diagnostics::SwitchAttribute ^&gt; ^ GetAll(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="static member GetAll : System.Reflection.Assembly -&gt; System.Diagnostics.SwitchAttribute[]" Usage="System.Diagnostics.SwitchAttribute.GetAll assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -147,9 +156,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchAttribute.SwitchDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property SwitchDescription As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SwitchDescription { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SwitchDescription : string with get, set" Usage="System.Diagnostics.SwitchAttribute.SwitchDescription" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -162,6 +173,14 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -184,9 +203,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchAttribute.SwitchName" />
       <MemberSignature Language="VB.NET" Value="Public Property SwitchName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SwitchName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SwitchName : string with get, set" Usage="System.Diagnostics.SwitchAttribute.SwitchName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -199,6 +220,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -233,9 +259,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SwitchAttribute.SwitchType" />
       <MemberSignature Language="VB.NET" Value="Public Property SwitchType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ SwitchType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SwitchType : Type with get, set" Usage="System.Diagnostics.SwitchAttribute.SwitchType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -248,6 +276,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>

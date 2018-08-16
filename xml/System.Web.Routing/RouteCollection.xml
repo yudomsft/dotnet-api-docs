@@ -4,9 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class RouteCollection&#xA;Inherits Collection(Of RouteBase)" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteCollection : System::Collections::ObjectModel::Collection&lt;System::Web::Routing::RouteBase ^&gt;" />
+  <TypeSignature Language="F#" Value="type RouteCollection = class&#xA;    inherit Collection&lt;RouteBase&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Routing</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Web.Routing.RouteBase&gt;</BaseTypeName>
@@ -16,7 +21,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,6 +69,10 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
@@ -75,10 +84,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Hosting.VirtualPathProvider virtualPathProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.#ctor(System.Web.Hosting.VirtualPathProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteCollection(System::Web::Hosting::VirtualPathProvider ^ virtualPathProvider);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.RouteCollection : System.Web.Hosting.VirtualPathProvider -&gt; System.Web.Routing.RouteCollection" Usage="new System.Web.Routing.RouteCollection virtualPathProvider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="virtualPathProvider" Type="System.Web.Hosting.VirtualPathProvider" />
@@ -95,10 +109,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Add(System.String,System.Web.Routing.RouteBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, item As RouteBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, System::Web::Routing::RouteBase ^ item);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * System.Web.Routing.RouteBase -&gt; unit" Usage="routeCollection.Add (name, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -145,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.AppendTrailingSlash" />
       <MemberSignature Language="VB.NET" Value="Public Property AppendTrailingSlash As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppendTrailingSlash { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AppendTrailingSlash : bool with get, set" Usage="System.Web.Routing.RouteCollection.AppendTrailingSlash" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,10 +186,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="routeCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -193,10 +218,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetReadLock" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReadLock () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ GetReadLock();" />
+      <MemberSignature Language="F#" Value="member this.GetReadLock : unit -&gt; IDisposable" Usage="routeCollection.GetReadLock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -238,10 +268,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetRouteData(System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRouteData (httpContext As HttpContextBase) As RouteData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::RouteData ^ GetRouteData(System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="member this.GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData" Usage="routeCollection.GetRouteData httpContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Routing.RouteData</ReturnType>
@@ -273,10 +308,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::Web::Routing::RouteValueDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="member this.GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData" Usage="routeCollection.GetVirtualPath (requestContext, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Routing.VirtualPathData</ReturnType>
@@ -298,10 +338,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, string name, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.String,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::String ^ name, System::Web::Routing::RouteValueDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="member this.GetVirtualPath : System.Web.Routing.RequestContext * string * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData" Usage="routeCollection.GetVirtualPath (requestContext, name, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Routing.VirtualPathData</ReturnType>
@@ -327,10 +372,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetWriteLock" />
       <MemberSignature Language="VB.NET" Value="Public Function GetWriteLock () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ GetWriteLock();" />
+      <MemberSignature Language="F#" Value="member this.GetWriteLock : unit -&gt; IDisposable" Usage="routeCollection.GetWriteLock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -383,11 +433,17 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Ignore(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Ignore (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ignore(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Ignore : string -&gt; unit" Usage="routeCollection.Ignore url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -423,6 +479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Ignore(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Ignore (url As String, constraints As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ignore(System::String ^ url, System::Object ^ constraints);" />
+      <MemberSignature Language="F#" Value="member this.Ignore : string * obj -&gt; unit" Usage="routeCollection.Ignore (url, constraints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -473,10 +530,15 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.InsertItem(System.Int32,System.Web.Routing.RouteBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As RouteBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Web::Routing::RouteBase ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Web.Routing.RouteBase -&gt; unit" Usage="routeCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -511,10 +573,15 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As RouteBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteBase ^ default[System::String ^] { System::Web::Routing::RouteBase ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Routing.RouteBase" Usage="System.Web.Routing.RouteCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Routing.RouteBase</ReturnType>
@@ -542,6 +609,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.LowercaseUrls" />
       <MemberSignature Language="VB.NET" Value="Public Property LowercaseUrls As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LowercaseUrls { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LowercaseUrls : bool with get, set" Usage="System.Web.Routing.RouteCollection.LowercaseUrls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -595,11 +663,17 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String) As Route" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile);" />
+      <MemberSignature Language="F#" Value="member this.MapPageRoute : string * string * string -&gt; System.Web.Routing.Route" Usage="routeCollection.MapPageRoute (routeName, routeUrl, physicalFile)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
@@ -638,11 +712,17 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean) As Route" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess);" />
+      <MemberSignature Language="F#" Value="member this.MapPageRoute : string * string * string * bool -&gt; System.Web.Routing.Route" Usage="routeCollection.MapPageRoute (routeName, routeUrl, physicalFile, checkPhysicalUrlAccess)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
@@ -683,11 +763,17 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean, defaults As RouteValueDictionary) As Route" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess, System::Web::Routing::RouteValueDictionary ^ defaults);" />
+      <MemberSignature Language="F#" Value="member this.MapPageRoute : string * string * string * bool * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.Route" Usage="routeCollection.MapPageRoute (routeName, routeUrl, physicalFile, checkPhysicalUrlAccess, defaults)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
@@ -730,11 +816,17 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean, defaults As RouteValueDictionary, constraints As RouteValueDictionary) As Route" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess, System::Web::Routing::RouteValueDictionary ^ defaults, System::Web::Routing::RouteValueDictionary ^ constraints);" />
+      <MemberSignature Language="F#" Value="member this.MapPageRoute : string * string * string * bool * System.Web.Routing.RouteValueDictionary * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.Route" Usage="routeCollection.MapPageRoute (routeName, routeUrl, physicalFile, checkPhysicalUrlAccess, defaults, constraints)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Routing.Route</ReturnType>
       </ReturnValue>
@@ -779,6 +871,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapPageRoute (routeName As String, routeUrl As String, physicalFile As String, checkPhysicalUrlAccess As Boolean, defaults As RouteValueDictionary, constraints As RouteValueDictionary, dataTokens As RouteValueDictionary) As Route" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Routing::Route ^ MapPageRoute(System::String ^ routeName, System::String ^ routeUrl, System::String ^ physicalFile, bool checkPhysicalUrlAccess, System::Web::Routing::RouteValueDictionary ^ defaults, System::Web::Routing::RouteValueDictionary ^ constraints, System::Web::Routing::RouteValueDictionary ^ dataTokens);" />
+      <MemberSignature Language="F#" Value="member this.MapPageRoute : string * string * string * bool * System.Web.Routing.RouteValueDictionary * System.Web.Routing.RouteValueDictionary * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.Route" Usage="routeCollection.MapPageRoute (routeName, routeUrl, physicalFile, checkPhysicalUrlAccess, defaults, constraints, dataTokens)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -831,10 +924,15 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="routeCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -861,11 +959,24 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.RouteExistingFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteExistingFiles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RouteExistingFiles { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteExistingFiles : bool with get, set" Usage="System.Web.Routing.RouteCollection.RouteExistingFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -889,10 +1000,15 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.SetItem(System.Int32,System.Web.Routing.RouteBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As RouteBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Web::Routing::RouteBase ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Web.Routing.RouteBase -&gt; unit" Usage="routeCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

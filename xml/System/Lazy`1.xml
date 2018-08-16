@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Lazy`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Lazy(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Lazy" />
+  <TypeSignature Language="F#" Value="type Lazy&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,13 +31,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("ThreadSafetyMode={Mode}, IsValueCreated={IsValueCreated}, IsValueFaulted={IsValueFaulted}, Value={ValueForDebugDisplay}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.System_LazyDebugView`1))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -217,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : bool -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; isThreadSafe" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -277,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; valueFactory" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -352,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Threading.LazyThreadSafetyMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mode As LazyThreadSafetyMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(System::Threading::LazyThreadSafetyMode mode);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; mode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -429,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(T value);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : 'T -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -450,6 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; * bool -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; (valueFactory, isThreadSafe)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -531,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0},System.Threading.LazyThreadSafetyMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), mode As LazyThreadSafetyMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, System::Threading::LazyThreadSafetyMode mode);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; * System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; (valueFactory, mode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -623,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:System.Lazy`1.IsValueCreated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueCreated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValueCreated : bool" Usage="System.Lazy&lt;'T&gt;.IsValueCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -642,6 +650,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -670,6 +683,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="lazy.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -715,6 +729,7 @@
       <MemberSignature Language="DocId" Value="P:System.Lazy`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.Lazy&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -735,7 +750,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

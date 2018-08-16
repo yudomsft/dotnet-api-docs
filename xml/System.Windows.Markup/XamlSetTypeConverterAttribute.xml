@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlSetTypeConverterAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XamlSetTypeConverterAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlSetTypeConverterAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XamlSetTypeConverterAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetTypeConverterAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xamlSetTypeConverterHandler As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSetTypeConverterAttribute(System::String ^ xamlSetTypeConverterHandler);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XamlSetTypeConverterAttribute : string -&gt; System.Windows.Markup.XamlSetTypeConverterAttribute" Usage="new System.Windows.Markup.XamlSetTypeConverterAttribute xamlSetTypeConverterHandler" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -65,11 +67,17 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetTypeConverterAttribute.XamlSetTypeConverterHandler" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XamlSetTypeConverterHandler As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XamlSetTypeConverterHandler { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XamlSetTypeConverterHandler : string" Usage="System.Windows.Markup.XamlSetTypeConverterAttribute.XamlSetTypeConverterHandler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

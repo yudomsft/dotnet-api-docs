@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlTriggerContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlTriggerContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlTriggerContext sealed" />
+  <TypeSignature Language="F#" Value="type SqlTriggerContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -19,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The contextual information provided includes the type of action that caused the trigger to fire, which columns were modified in an UPDATE operation, and, in the case of a data definition language (DDL) trigger, an XML EventData structure (see "Transact-SQL Reference" in SQL Server Books Online) that describes the triggering operation.  
+ The contextual information provided includes the type of action that caused the trigger to fire, which columns were modified in an UPDATE operation, and, in the case of a data definition language (DDL) trigger, an XML EventData structure (see [Transact-SQL Reference](/sql/t-sql/language-reference)) that describes the triggering operation.  
   
  An instance of <xref:Microsoft.SqlServer.Server.SqlTriggerContext> is available from the <xref:Microsoft.SqlServer.Server.SqlContext> class, when the code is running inside a trigger through the <xref:Microsoft.SqlServer.Server.SqlContext.TriggerContext%2A> property.  
   
@@ -41,9 +43,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlTriggerContext.ColumnCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnCount : int" Usage="Microsoft.SqlServer.Server.SqlTriggerContext.ColumnCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -69,9 +73,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlTriggerContext.EventData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventData As SqlXml" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::SqlXml ^ EventData { System::Data::SqlTypes::SqlXml ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventData : System.Data.SqlTypes.SqlXml" Usage="Microsoft.SqlServer.Server.SqlTriggerContext.EventData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -97,9 +103,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlTriggerContext.IsUpdatedColumn(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUpdatedColumn (columnOrdinal As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUpdatedColumn(int columnOrdinal);" />
+      <MemberSignature Language="F#" Value="member this.IsUpdatedColumn : int -&gt; bool" Usage="sqlTriggerContext.IsUpdatedColumn columnOrdinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -124,9 +132,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlTriggerContext.TriggerAction" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TriggerAction As TriggerAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::SqlServer::Server::TriggerAction TriggerAction { Microsoft::SqlServer::Server::TriggerAction get(); };" />
+      <MemberSignature Language="F#" Value="member this.TriggerAction : Microsoft.SqlServer.Server.TriggerAction" Usage="Microsoft.SqlServer.Server.SqlTriggerContext.TriggerAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

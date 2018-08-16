@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultException`1" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultException(Of TDetail)&#xA;Inherits FaultException" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TDetail&gt;&#xA;public ref class FaultException : System::ServiceModel::FaultException" />
+  <TypeSignature Language="F#" Value="type FaultException&lt;'Detail&gt; = class&#xA;    inherit FaultException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -76,12 +78,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As TDetail)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(TDetail detail);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : 'Detail -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; detail" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
       </Parameters>
@@ -112,10 +121,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; FaultException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -139,12 +150,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(`0,System.ServiceModel.FaultReason)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As TDetail, reason As FaultReason)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(TDetail detail, System::ServiceModel::FaultReason ^ reason);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : 'Detail * System.ServiceModel.FaultReason -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; (detail, reason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
         <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
@@ -162,12 +180,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(`0,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As TDetail, reason As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(TDetail detail, System::String ^ reason);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : 'Detail * string -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; (detail, reason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
         <Parameter Name="reason" Type="System.String" />
@@ -185,12 +210,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(`0,System.ServiceModel.FaultReason,System.ServiceModel.FaultCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As TDetail, reason As FaultReason, code As FaultCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(TDetail detail, System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : 'Detail * System.ServiceModel.FaultReason * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; (detail, reason, code)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
         <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
@@ -210,12 +242,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(`0,System.String,System.ServiceModel.FaultCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As TDetail, reason As String, code As FaultCode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(TDetail detail, System::String ^ reason, System::ServiceModel::FaultCode ^ code);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : 'Detail * string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; (detail, reason, code)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
         <Parameter Name="reason" Type="System.String" />
@@ -235,10 +274,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(`0,System.ServiceModel.FaultReason,System.ServiceModel.FaultCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As TDetail, reason As FaultReason, code As FaultCode, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(TDetail detail, System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : 'Detail * System.ServiceModel.FaultReason * System.ServiceModel.FaultCode * string -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; (detail, reason, code, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -247,6 +288,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
         <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
@@ -268,12 +314,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.#ctor(`0,System.String,System.ServiceModel.FaultCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (detail As TDetail, reason As String, code As FaultCode, action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(TDetail detail, System::String ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException&lt;'Detail&gt; : 'Detail * string * System.ServiceModel.FaultCode * string -&gt; System.ServiceModel.FaultException&lt;'Detail&gt;" Usage="new System.ServiceModel.FaultException&lt;'Detail&gt; (detail, reason, code, action)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="detail" Type="TDetail" />
         <Parameter Name="reason" Type="System.String" />
@@ -295,10 +348,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.CreateMessageFault" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateMessageFault () As MessageFault" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::MessageFault ^ CreateMessageFault();" />
+      <MemberSignature Language="F#" Value="override this.CreateMessageFault : unit -&gt; System.ServiceModel.Channels.MessageFault" Usage="faultException.CreateMessageFault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -323,10 +378,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException`1.Detail" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Detail As TDetail" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TDetail Detail { TDetail get(); };" />
+      <MemberSignature Language="F#" Value="member this.Detail : 'Detail" Usage="System.ServiceModel.FaultException&lt;'Detail&gt;.Detail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -335,6 +392,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>TDetail</ReturnType>
       </ReturnValue>
@@ -350,12 +412,19 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="faultException.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -376,10 +445,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="faultException.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

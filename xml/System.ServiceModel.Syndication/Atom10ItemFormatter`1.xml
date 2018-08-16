@@ -4,12 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10ItemFormatter`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Atom10ItemFormatter(Of TSyndicationItem)&#xA;Inherits Atom10ItemFormatter" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : SyndicationItemgcnew()public ref class Atom10ItemFormatter : System::ServiceModel::Syndication::Atom10ItemFormatter" />
+  <TypeSignature Language="F#" Value="type Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; = class&#xA;    inherit Atom10ItemFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -25,8 +27,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Xml.Serialization.XmlRoot("entry", Namespace="http://www.w3.org/2005/Atom")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="entry", Namespace="http://www.w3.org/2005/Atom")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -75,6 +83,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -89,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As TSyndicationItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10ItemFormatter(TSyndicationItem itemToWrite);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; : 'SyndicationItem -&gt; System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt;" Usage="new System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; itemToWrite" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +106,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -123,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter`1.CreateItemInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
+      <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="atom10ItemFormatter.CreateItemInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +142,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

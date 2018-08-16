@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Activity`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Activity(Of TResult)&#xA;Inherits ActivityWithResult" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class Activity abstract : System::Activities::ActivityWithResult" />
+  <TypeSignature Language="F#" Value="type Activity&lt;'Result&gt; = class&#xA;    inherit ActivityWithResult" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +17,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Activities.XamlIntegration.ActivityWithResultConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Activities.XamlIntegration.ActivityWithResultValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -54,6 +55,11 @@
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
@@ -66,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromValue(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromValue (constValue As TResult) As Activity(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity&lt;TResult&gt; ^ FromValue(TResult constValue);" />
+      <MemberSignature Language="F#" Value="static member FromValue : 'Result -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.FromValue constValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +105,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity`1&lt;!TResult&gt; FromVariable(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromVariable(System.Activities.Variable)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity&lt;TResult&gt; ^ FromVariable(System::Activities::Variable ^ variable);" />
+      <MemberSignature Language="F#" Value="static member FromVariable : System.Activities.Variable -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.FromVariable variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -129,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromVariable(System.Activities.Variable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromVariable (variable As Variable(Of TResult)) As Activity(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity&lt;TResult&gt; ^ FromVariable(System::Activities::Variable&lt;TResult&gt; ^ variable);" />
+      <MemberSignature Language="F#" Value="static member FromVariable : System.Activities.Variable&lt;'Result&gt; -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.FromVariable variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -152,11 +161,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable)~System.Activities.Activity{`0}" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Activity&lt;TResult&gt; ^(System::Activities::Variable ^ variable);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Activities.Variable -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.op_Implicit variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -183,11 +198,17 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable{`0})~System.Activities.Activity{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (variable As Variable(Of TResult)) As Activity(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Activity&lt;TResult&gt; ^(System::Activities::Variable&lt;TResult&gt; ^ variable);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Activities.Variable&lt;'Result&gt; -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.op_Implicit variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -207,11 +228,17 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(`0)~System.Activities.Activity{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (constValue As TResult) As Activity(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Activity&lt;TResult&gt; ^(TResult constValue);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'Result -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.op_Implicit constValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -231,14 +258,21 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity`1.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As OutArgument(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::OutArgument&lt;TResult&gt; ^ Result { System::Activities::OutArgument&lt;TResult&gt; ^ get(); void set(System::Activities::OutArgument&lt;TResult&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : System.Activities.OutArgument&lt;'Result&gt; with get, set" Usage="System.Activities.Activity&lt;'Result&gt;.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

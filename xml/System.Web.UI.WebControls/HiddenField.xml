@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HiddenField" />
   <TypeSignature Language="VB.NET" Value="Public Class HiddenField&#xA;Inherits Control&#xA;Implements IPostBackDataHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class HiddenField : System::Web::UI::Control, System::Web::UI::IPostBackDataHandler" />
+  <TypeSignature Language="F#" Value="type HiddenField = class&#xA;    inherit Control&#xA;    interface IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,29 +19,32 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("ValueChanged")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultProperty("Value")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.HiddenFieldDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ControlValueProperty("Value")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.NonVisualControl</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.HiddenFieldDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -114,8 +119,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HiddenField" /> class.</summary>
@@ -135,9 +146,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HiddenField.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="hiddenField.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,16 +180,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HiddenField.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.HiddenField.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -204,13 +222,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HiddenField.Focus" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Focus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Focus();" />
+      <MemberSignature Language="F#" Value="override this.Focus : unit -&gt; unit" Usage="hiddenField.Focus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -238,12 +261,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HiddenField.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="hiddenField.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,9 +302,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HiddenField.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="hiddenField.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,9 +328,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HiddenField.OnValueChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValueChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValueChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnValueChanged : EventArgs -&gt; unit&#xA;override this.OnValueChanged : EventArgs -&gt; unit" Usage="hiddenField.OnValueChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,12 +368,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HiddenField.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="hiddenField.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -373,9 +404,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HiddenField.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="hiddenField.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -407,17 +440,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HiddenField.SkinID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SkinID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SkinID : string with get, set" Usage="System.Web.UI.WebControls.HiddenField.SkinID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -450,8 +491,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -488,8 +535,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -513,16 +566,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HiddenField.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.UI.WebControls.HiddenField.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>
@@ -560,9 +615,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.HiddenField.ValueChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ValueChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ValueChanged;" />
+      <MemberSignature Language="F#" Value="member this.ValueChanged : EventHandler " Usage="member this.ValueChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

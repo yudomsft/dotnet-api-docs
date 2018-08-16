@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowRuntimeService" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntimeService abstract" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -46,6 +48,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -67,9 +70,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.OnStarted" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStarted ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStarted();" />
+      <MemberSignature Language="F#" Value="abstract member OnStarted : unit -&gt; unit&#xA;override this.OnStarted : unit -&gt; unit" Usage="workflowRuntimeService.OnStarted " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,9 +104,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.OnStopped" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStopped ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStopped();" />
+      <MemberSignature Language="F#" Value="abstract member OnStopped : unit -&gt; unit&#xA;override this.OnStopped : unit -&gt; unit" Usage="workflowRuntimeService.OnStopped " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,9 +137,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseServicesExceptionNotHandledEvent(class System.Exception exception, valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.RaiseServicesExceptionNotHandledEvent(System.Exception,System.Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseServicesExceptionNotHandledEvent(Exception ^ exception, Guid instanceId);" />
+      <MemberSignature Language="F#" Value="member this.RaiseServicesExceptionNotHandledEvent : Exception * Guid -&gt; unit" Usage="workflowRuntimeService.RaiseServicesExceptionNotHandledEvent (exception, instanceId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -162,9 +171,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Runtime" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Runtime As WorkflowRuntime" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::Runtime::WorkflowRuntime ^ Runtime { System::Workflow::Runtime::WorkflowRuntime ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Runtime : System.Workflow.Runtime.WorkflowRuntime" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Runtime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,9 +200,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Start" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Start();" />
+      <MemberSignature Language="F#" Value="abstract member Start : unit -&gt; unit&#xA;override this.Start : unit -&gt; unit" Usage="workflowRuntimeService.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,9 +252,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.State" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property State As WorkflowRuntimeServiceState" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::Runtime::Hosting::WorkflowRuntimeServiceState State { System::Workflow::Runtime::Hosting::WorkflowRuntimeServiceState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeService.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,9 +283,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Stop" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Stop();" />
+      <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit&#xA;override this.Stop : unit -&gt; unit" Usage="workflowRuntimeService.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.XmlElementElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlElementElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlElementElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type XmlElementElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,8 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.XmlElementElement" /> class.</summary>
@@ -49,9 +57,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XmlElementElement.#ctor(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (element As XmlElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlElementElement(System::Xml::XmlElement ^ element);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.XmlElementElement : System.Xml.XmlElement -&gt; System.ServiceModel.Configuration.XmlElementElement" Usage="new System.ServiceModel.Configuration.XmlElementElement element" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -69,9 +79,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XmlElementElement.Copy(System.ServiceModel.Configuration.XmlElementElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (source As XmlElementElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::XmlElementElement ^ source);" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.XmlElementElement -&gt; unit" Usage="xmlElementElement.Copy source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,14 +107,22 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XmlElementElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="xmlElementElement.DeserializeElement (reader, serializeCollectionKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -125,9 +145,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XmlElementElement.PostDeserialize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="xmlElementElement.PostDeserialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,9 +167,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlElementElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.XmlElementElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,9 +189,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.XmlElementElement.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeToXmlElement (writer As XmlWriter, elementName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeToXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName);" />
+      <MemberSignature Language="F#" Value="override this.SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool" Usage="xmlElementElement.SerializeToXmlElement (writer, elementName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,13 +217,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.XmlElementElement.XmlElement" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlElement As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ XmlElement { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlElement : System.Xml.XmlElement with get, set" Usage="System.ServiceModel.Configuration.XmlElementElement.XmlElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("xmlElement", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
         </Attribute>
       </Attributes>

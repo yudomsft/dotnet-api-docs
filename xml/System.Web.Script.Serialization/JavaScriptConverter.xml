@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptConverter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class JavaScriptConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class JavaScriptConverter abstract" />
+  <TypeSignature Language="F#" Value="type JavaScriptConverter = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -57,8 +59,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.JavaScriptConverter" /> class.</summary>
@@ -70,9 +78,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Deserialize(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; dictionary, class System.Type type, class System.Web.Script.Serialization.JavaScriptSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptConverter.Deserialize(System.Collections.Generic.IDictionary{System.String,System.Object},System.Type,System.Web.Script.Serialization.JavaScriptSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Deserialize(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ dictionary, Type ^ type, System::Web::Script::Serialization::JavaScriptSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.Collections.Generic.IDictionary&lt;string, obj&gt; * Type * System.Web.Script.Serialization.JavaScriptSerializer -&gt; obj" Usage="javaScriptConverter.Deserialize (dictionary, type, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,9 +115,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptConverter.Serialize(System.Object,System.Web.Script.Serialization.JavaScriptSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Serialize (obj As Object, serializer As JavaScriptSerializer) As IDictionary(Of String, Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Serialize(System::Object ^ obj, System::Web::Script::Serialization::JavaScriptSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : obj * System.Web.Script.Serialization.JavaScriptSerializer -&gt; System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="javaScriptConverter.Serialize (obj, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,9 +155,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Serialization.JavaScriptConverter.SupportedTypes" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportedTypes As IEnumerable(Of Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ SupportedTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedTypes : seq&lt;Type&gt;" Usage="System.Web.Script.Serialization.JavaScriptConverter.SupportedTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.HttpRequestValidationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpRequestValidationException&#xA;Inherits HttpException" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestValidationException sealed : System::Web::HttpException" />
+  <TypeSignature Language="F#" Value="type HttpRequestValidationException = class&#xA;    inherit HttpException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -72,8 +75,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.HttpRequestValidationException" /> class.</summary>
@@ -86,9 +95,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestValidationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestValidationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpRequestValidationException : string -&gt; System.Web.HttpRequestValidationException" Usage="new System.Web.HttpRequestValidationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -113,11 +124,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpRequestValidationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestValidationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpRequestValidationException : string * Exception -&gt; System.Web.HttpRequestValidationException" Usage="new System.Web.HttpRequestValidationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="innerException" Type="System.Exception" />

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DefaultHttpHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class DefaultHttpHandler&#xA;Implements IHttpAsyncHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class DefaultHttpHandler : System::Web::IHttpAsyncHandler" />
+  <TypeSignature Language="F#" Value="type DefaultHttpHandler = class&#xA;    interface IHttpAsyncHandler&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -57,8 +59,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.DefaultHttpHandler" /> class.</summary>
@@ -71,12 +79,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginProcessRequest (context As HttpContext, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginProcessRequest(System::Web::HttpContext ^ context, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginProcessRequest : System.Web.HttpContext * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginProcessRequest : System.Web.HttpContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="defaultHttpHandler.BeginProcessRequest (context, callback, state)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,11 +120,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DefaultHttpHandler.Context" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Context As HttpContext" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.DefaultHttpHandler.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.HttpContext</ReturnType>
       </ReturnValue>
@@ -138,12 +155,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.EndProcessRequest(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndProcessRequest (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndProcessRequest(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndProcessRequest : IAsyncResult -&gt; unit&#xA;override this.EndProcessRequest : IAsyncResult -&gt; unit" Usage="defaultHttpHandler.EndProcessRequest result" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpAsyncHandler.EndProcessRequest(System.IAsyncResult)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,9 +190,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DefaultHttpHandler.ExecuteUrlHeaders" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ExecuteUrlHeaders As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Specialized::NameValueCollection ^ ExecuteUrlHeaders { System::Collections::Specialized::NameValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExecuteUrlHeaders : System.Collections.Specialized.NameValueCollection" Usage="System.Web.DefaultHttpHandler.ExecuteUrlHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,12 +219,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DefaultHttpHandler.IsReusable" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReusable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.DefaultHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,9 +253,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnExecuteUrlPreconditionFailure ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnExecuteUrlPreconditionFailure();" />
+      <MemberSignature Language="F#" Value="abstract member OnExecuteUrlPreconditionFailure : unit -&gt; unit&#xA;override this.OnExecuteUrlPreconditionFailure : unit -&gt; unit" Usage="defaultHttpHandler.OnExecuteUrlPreconditionFailure " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -271,9 +296,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.OverrideExecuteUrlPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function OverrideExecuteUrlPath () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ OverrideExecuteUrlPath();" />
+      <MemberSignature Language="F#" Value="abstract member OverrideExecuteUrlPath : unit -&gt; string&#xA;override this.OverrideExecuteUrlPath : unit -&gt; string" Usage="defaultHttpHandler.OverrideExecuteUrlPath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,12 +338,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ProcessRequest (context As HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="defaultHttpHandler.ProcessRequest context" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

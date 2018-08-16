@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.InheritedExportAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class InheritedExportAttribute&#xA;Inherits ExportAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class InheritedExportAttribute : System::ComponentModel::Composition::ExportAttribute" />
+  <TypeSignature Language="F#" Value="type InheritedExportAttribute = class&#xA;    inherit ExportAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -14,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface, AllowMultiple=true, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -45,6 +46,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.InheritedExportAttribute" /> class.</summary>
@@ -57,12 +63,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(System::String ^ contractName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : string -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute contractName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
@@ -78,12 +90,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : Type -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute contractType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
@@ -99,12 +117,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, contractType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(System::String ^ contractName, Type ^ contractType);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : string * Type -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute (contractName, contractType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="contractName" Type="System.String" />
         <Parameter Name="contractType" Type="System.Type" />

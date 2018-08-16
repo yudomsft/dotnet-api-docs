@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ExtenderControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExtenderControl&#xA;Inherits Control&#xA;Implements IExtenderControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExtenderControl abstract : System::Web::UI::Control, System::Web::UI::IExtenderControl" />
+  <TypeSignature Language="F#" Value="type ExtenderControl = class&#xA;    inherit Control&#xA;    interface IExtenderControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,23 +19,29 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultProperty("TargetControlID")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.ExtenderControlDesigner, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem("System.Web.UI.Design.ExtenderControlToolboxItem, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.NonVisualControl</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.ExtenderControlDesigner, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName>System.ComponentModel.ToolboxItem("System.Web.UI.Design.ExtenderControlToolboxItem, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -65,8 +73,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ExtenderControl" /> class.</summary>
@@ -79,12 +93,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.GetScriptDescriptors(System.Web.UI.Control)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptDescriptors (targetControl As Control) As IEnumerable(Of ScriptDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ GetScriptDescriptors(System::Web::UI::Control ^ targetControl);" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptDescriptors : System.Web.UI.Control -&gt; seq&lt;System.Web.UI.ScriptDescriptor&gt;" Usage="extenderControl.GetScriptDescriptors targetControl" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IExtenderControl.GetScriptDescriptors(System.Web.UI.Control)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,12 +122,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.GetScriptReferences" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptReferences () As IEnumerable(Of ScriptReference)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences();" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptReferences : unit -&gt; seq&lt;System.Web.UI.ScriptReference&gt;" Usage="extenderControl.GetScriptReferences " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IExtenderControl.GetScriptReferences</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,9 +148,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="extenderControl.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,9 +180,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="extenderControl.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,8 +212,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptDescriptor&gt;</ReturnType>
       </ReturnValue>
@@ -217,8 +245,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptReference&gt;</ReturnType>
       </ReturnValue>
@@ -235,20 +269,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExtenderControl.TargetControlID" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetControlID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetControlID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetControlID : string with get, set" Usage="System.Web.UI.ExtenderControl.TargetControlID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.IDReferenceProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -266,19 +305,27 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExtenderControl.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.ExtenderControl.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

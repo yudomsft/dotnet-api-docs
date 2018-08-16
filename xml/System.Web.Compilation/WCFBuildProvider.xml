@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.WCFBuildProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class WCFBuildProvider&#xA;Inherits BuildProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class WCFBuildProvider : System::Web::Compilation::BuildProvider" />
+  <TypeSignature Language="F#" Value="type WCFBuildProvider = class&#xA;    inherit BuildProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,8 +43,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.WCFBuildProvider" /> class.</summary>
@@ -54,13 +62,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.WCFBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit&#xA;override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="wCFBuildProvider.GenerateCode assemblyBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

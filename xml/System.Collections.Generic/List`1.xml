@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.List`1" />
   <TypeSignature Language="VB.NET" Value="Public Class List(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList, IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class List : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::Generic::IReadOnlyList&lt;T&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type List&lt;'T&gt; = class&#xA;    interface IList&lt;'T&gt;&#xA;    interface IList&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -47,10 +49,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.Mscorlib_CollectionDebugView`1))</AttributeName>
     </Attribute>
   </Attributes>
@@ -155,6 +157,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -162,6 +165,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.List`1" /> class that is empty and has the default initial capacity.</summary>
@@ -199,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; List(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.List&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.Generic.List&lt;'T&gt;" Usage="new System.Collections.Generic.List&lt;'T&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -209,6 +218,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -253,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; List(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.List&lt;'T&gt; : int -&gt; System.Collections.Generic.List&lt;'T&gt;" Usage="new System.Collections.Generic.List&lt;'T&gt; capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -263,6 +274,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -270,6 +282,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
@@ -310,6 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Add(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; unit&#xA;override this.Add : 'T -&gt; unit" Usage="list.Add item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -323,6 +341,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -381,6 +400,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : seq&lt;'T&gt; -&gt; unit" Usage="list.AddRange collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -391,6 +411,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -445,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.AsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Function AsReadOnly () As ReadOnlyCollection(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ AsReadOnly();" />
+      <MemberSignature Language="F#" Value="member this.AsReadOnly : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;'T&gt;" Usage="list.AsReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -454,6 +476,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -508,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.BinarySearch(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (item As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(T item);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : 'T -&gt; int" Usage="list.BinarySearch item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -518,6 +542,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -573,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.BinarySearch(`0,System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (item As T, comparer As IComparer(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(T item, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : 'T * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; int" Usage="list.BinarySearch (item, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -583,6 +609,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -653,6 +680,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.BinarySearch(System.Int32,System.Int32,`0,System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function BinarySearch (index As Integer, count As Integer, item As T, comparer As IComparer(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int BinarySearch(int index, int count, T item, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.BinarySearch : int * int * 'T * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; int" Usage="list.BinarySearch (index, count, item, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -663,6 +691,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -743,6 +772,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Collections.Generic.List&lt;'T&gt;.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -753,6 +783,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -760,6 +791,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -809,6 +845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="list.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -823,6 +860,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -869,6 +907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Contains(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="list.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -882,6 +921,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -933,9 +973,11 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.ConvertAll``1(System.Converter{`0,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertAll(Of TOutput) (converter As Converter(Of T, TOutput)) As List(Of TOutput)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TOutput&gt;&#xA; System::Collections::Generic::List&lt;TOutput&gt; ^ ConvertAll(Converter&lt;T, TOutput&gt; ^ converter);" />
+      <MemberSignature Language="F#" Value="member this.ConvertAll : Converter&lt;'T, 'Output&gt; -&gt; System.Collections.Generic.List&lt;'Output&gt;" Usage="list.ConvertAll converter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1005,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.CopyTo(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : 'T[] -&gt; unit" Usage="list.CopyTo array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1015,6 +1058,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1022,6 +1066,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1063,6 +1112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), arrayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="list.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
@@ -1076,6 +1126,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1128,6 +1179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (index As Integer, array As T(), arrayIndex As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(int index, cli::array &lt;T&gt; ^ array, int arrayIndex, int count);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : int * 'T[] * int * int -&gt; unit" Usage="list.CopyTo (index, array, arrayIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1138,6 +1190,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1207,6 +1260,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.List&lt;'T&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -1221,6 +1275,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1270,6 +1325,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Exists(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Exists (match As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Exists : Predicate&lt;'T&gt; -&gt; bool" Usage="list.Exists match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1280,6 +1336,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1351,6 +1408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Find(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Find (match As Predicate(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T Find(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.Find : Predicate&lt;'T&gt; -&gt; 'T" Usage="list.Find match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1361,6 +1419,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1435,6 +1494,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindAll(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAll (match As Predicate(Of T)) As List(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;T&gt; ^ FindAll(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindAll : Predicate&lt;'T&gt; -&gt; System.Collections.Generic.List&lt;'T&gt;" Usage="list.FindAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1445,6 +1505,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1522,6 +1583,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindIndex(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : Predicate&lt;'T&gt; -&gt; int" Usage="list.FindIndex match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1532,6 +1594,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1606,6 +1669,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindIndex(System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (startIndex As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(int startIndex, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : int * Predicate&lt;'T&gt; -&gt; int" Usage="list.FindIndex (startIndex, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1616,6 +1680,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1694,6 +1759,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindIndex (startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindIndex(int startIndex, int count, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : int * int * Predicate&lt;'T&gt; -&gt; int" Usage="list.FindIndex (startIndex, count, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1704,6 +1770,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1792,6 +1859,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindLast(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLast (match As Predicate(Of T)) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T FindLast(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLast : Predicate&lt;'T&gt; -&gt; 'T" Usage="list.FindLast match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1802,6 +1870,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1882,6 +1951,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindLastIndex(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : Predicate&lt;'T&gt; -&gt; int" Usage="list.FindLastIndex match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1892,6 +1962,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1960,6 +2031,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindLastIndex(System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (startIndex As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(int startIndex, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : int * Predicate&lt;'T&gt; -&gt; int" Usage="list.FindLastIndex (startIndex, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1970,6 +2042,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2022,6 +2095,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function FindLastIndex (startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindLastIndex(int startIndex, int count, Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.FindLastIndex : int * int * Predicate&lt;'T&gt; -&gt; int" Usage="list.FindLastIndex (startIndex, count, match)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2032,6 +2106,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2114,6 +2189,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.ForEach(System.Action{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForEach (action As Action(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForEach(Action&lt;T&gt; ^ action);" />
+      <MemberSignature Language="F#" Value="member this.ForEach : Action&lt;'T&gt; -&gt; unit" Usage="list.ForEach action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2123,6 +2199,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2174,6 +2251,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As List(Of T).Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;T&gt;::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.List&lt;'T&gt;.Enumerator" Usage="list.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2184,6 +2262,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2191,6 +2270,11 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;T&gt;+Enumerator</ReturnType>
       </ReturnValue>
@@ -2212,7 +2296,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  If <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.List%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.List%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.List%601.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.List%601.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -2232,6 +2316,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.GetRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRange (index As Integer, count As Integer) As List(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;T&gt; ^ GetRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.GetRange : int * int -&gt; System.Collections.Generic.List&lt;'T&gt;" Usage="list.GetRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2242,6 +2327,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2314,6 +2400,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.IndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(T item);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : 'T -&gt; int&#xA;override this.IndexOf : 'T -&gt; int" Usage="list.IndexOf item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -2327,6 +2414,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2334,6 +2422,11 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -2375,6 +2468,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.IndexOf(`0,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As T, index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(T item, int index);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : 'T * int -&gt; int" Usage="list.IndexOf (item, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2385,6 +2479,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2437,6 +2532,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.IndexOf(`0,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As T, index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(T item, int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : 'T * int * int -&gt; int" Usage="list.IndexOf (item, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2447,6 +2543,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2509,6 +2606,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Insert(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, T item);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * 'T -&gt; unit&#xA;override this.Insert : int * 'T -&gt; unit" Usage="list.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -2522,6 +2620,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2587,6 +2686,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.InsertRange(System.Int32,System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertRange (index As Integer, collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertRange(int index, System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.InsertRange : int * seq&lt;'T&gt; -&gt; unit" Usage="list.InsertRange (index, collection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2597,6 +2697,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2660,6 +2761,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T default[int] { T get(int index); void set(int index, T value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'T with get, set" Usage="System.Collections.Generic.List&lt;'T&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -2673,6 +2775,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2680,6 +2783,14 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -2743,6 +2854,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.LastIndexOf(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(T item);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : 'T -&gt; int" Usage="list.LastIndexOf item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2753,6 +2865,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2801,6 +2914,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.LastIndexOf(`0,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As T, index As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(T item, int index);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : 'T * int -&gt; int" Usage="list.LastIndexOf (item, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2811,6 +2925,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2863,6 +2978,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.LastIndexOf(`0,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function LastIndexOf (item As T, index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int LastIndexOf(T item, int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.LastIndexOf : 'T * int * int -&gt; int" Usage="list.LastIndexOf (item, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -2873,6 +2989,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2935,6 +3052,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Remove(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T item);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="list.Remove item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -2948,6 +3066,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2955,6 +3074,11 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3004,6 +3128,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.RemoveAll(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAll (match As Predicate(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int RemoveAll(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : Predicate&lt;'T&gt; -&gt; int" Usage="list.RemoveAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3014,6 +3139,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3076,6 +3202,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="list.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
@@ -3090,6 +3217,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3143,6 +3271,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.RemoveRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveRange (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.RemoveRange : int * int -&gt; unit" Usage="list.RemoveRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3153,6 +3282,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3222,6 +3352,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Reverse" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reverse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reverse();" />
+      <MemberSignature Language="F#" Value="member this.Reverse : unit -&gt; unit" Usage="list.Reverse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3232,6 +3363,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3272,6 +3404,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Reverse(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reverse (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reverse(int index, int count);" />
+      <MemberSignature Language="F#" Value="member this.Reverse : int * int -&gt; unit" Usage="list.Reverse (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3282,6 +3415,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3385,6 +3519,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort();" />
+      <MemberSignature Language="F#" Value="member this.Sort : unit -&gt; unit" Usage="list.Sort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3395,6 +3530,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3458,6 +3594,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Sort(System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (comparer As IComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Sort : System.Collections.Generic.IComparer&lt;'T&gt; -&gt; unit" Usage="list.Sort comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3468,6 +3605,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3532,6 +3670,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Sort(System.Comparison{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (comparison As Comparison(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(Comparison&lt;T&gt; ^ comparison);" />
+      <MemberSignature Language="F#" Value="member this.Sort : Comparison&lt;'T&gt; -&gt; unit" Usage="list.Sort comparison" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3542,6 +3681,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3610,6 +3750,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sort (index As Integer, count As Integer, comparer As IComparer(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort(int index, int count, System::Collections::Generic::IComparer&lt;T&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="member this.Sort : int * int * System.Collections.Generic.IComparer&lt;'T&gt; -&gt; unit" Usage="list.Sort (index, count, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -3620,6 +3761,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3698,7 +3840,8 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;T&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -3712,6 +3855,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3719,6 +3863,11 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3759,6 +3908,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3766,6 +3916,11 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -3787,7 +3942,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -3818,6 +3973,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3825,6 +3981,11 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3873,7 +4034,8 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -3887,6 +4049,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3923,7 +4086,8 @@ Public Function StartsWith(e As Employee) As Boolean
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -3937,6 +4101,7 @@ Public Function StartsWith(e As Employee) As Boolean
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4014,6 +4179,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4021,6 +4187,11 @@ finally
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -4042,7 +4213,7 @@ finally
   
  If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -4074,6 +4245,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4122,6 +4294,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4129,6 +4302,11 @@ finally
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4171,6 +4349,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4178,6 +4357,14 @@ finally
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -4221,6 +4408,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4260,7 +4448,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -4274,6 +4463,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4307,7 +4497,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -4321,6 +4512,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4328,6 +4520,11 @@ finally
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4354,7 +4551,8 @@ finally
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.List`1.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -4368,6 +4566,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4419,6 +4618,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4426,6 +4626,11 @@ finally
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4455,6 +4660,7 @@ finally
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[]" Usage="list.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -4465,6 +4671,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4506,6 +4713,7 @@ finally
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.TrimExcess" />
       <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess();" />
+      <MemberSignature Language="F#" Value="member this.TrimExcess : unit -&gt; unit" Usage="list.TrimExcess " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -4516,6 +4724,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -4572,6 +4781,7 @@ finally
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.List`1.TrueForAll(System.Predicate{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function TrueForAll (match As Predicate(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrueForAll(Predicate&lt;T&gt; ^ match);" />
+      <MemberSignature Language="F#" Value="member this.TrueForAll : Predicate&lt;'T&gt; -&gt; bool" Usage="list.TrueForAll match" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -4582,6 +4792,7 @@ finally
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.ExpressionServices" />
   <TypeSignature Language="VB.NET" Value="Public Class ExpressionServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExpressionServices abstract sealed" />
+  <TypeSignature Language="F#" Value="type ExpressionServices = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,7 +28,7 @@
 ## Examples  
  The following code example calls <xref:System.Activities.Expressions.ExpressionServices.Convert%2A> to compute the sum of the array element at index 0 and the array element at index 1. Next, the resulting sum is assigned to a variable and is printed to the console.  
   
-```  
+```csharp  
   
 public static void ComputeSumWithConvert()  
 {  
@@ -65,7 +66,7 @@ public static void ComputeSumWithConvert()
   
  The following code example is provided for comparison purposes. This second example shows how to compute the sum by instantiating the <xref:System.Activities.Expressions.Add%603> expression activity. The two examples are functionally equivalent but as you can see the second approach involves more coding and is not as straightforward as calling <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>. Therefore the first example is recommended.  
   
-```  
+```csharp  
   
 public static void ComputeSumWithExpressionActivity()  
 {  
@@ -122,6 +123,7 @@ public static void ComputeSumWithExpressionActivity()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ExpressionServices.Convert``1(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,``0}})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Convert(Of TResult) (expression As Expression(Of Func(Of ActivityContext, TResult))) As Activity(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static System::Activities::Activity&lt;TResult&gt; ^ Convert(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, TResult&gt; ^&gt; ^ expression);" />
+      <MemberSignature Language="F#" Value="static member Convert : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'Result&gt;&gt; -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Expressions.ExpressionServices.Convert expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,6 +161,7 @@ public static void ComputeSumWithExpressionActivity()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ExpressionServices.ConvertReference``1(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,``0}})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertReference(Of TResult) (expression As Expression(Of Func(Of ActivityContext, TResult))) As Activity(Of Location(Of TResult))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static System::Activities::Activity&lt;System::Activities::Location&lt;TResult&gt; ^&gt; ^ ConvertReference(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, TResult&gt; ^&gt; ^ expression);" />
+      <MemberSignature Language="F#" Value="static member ConvertReference : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'Result&gt;&gt; -&gt; System.Activities.Activity&lt;System.Activities.Location&lt;'Result&gt;&gt;" Usage="System.Activities.Expressions.ExpressionServices.ConvertReference expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -189,7 +192,7 @@ public static void ComputeSumWithExpressionActivity()
 ## Examples  
  The following two code examples illustrate the use of <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A> and <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>. The first code example uses <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A> in an `Assign` activity to convert a lambda expression into a string property that is assigned a value. Next, <xref:System.Activities.Expressions.ExpressionServices.Convert%2A> is called to convert a lambda expression into a string property value that is printed to the console in the `WriteLine` activity.  
   
-```  
+```csharp  
   
 // Define a struct with a property named AProperty.  
 struct StructWithProperty  
@@ -230,7 +233,7 @@ public static void ConvertReferenceForValueTypePropertyReferenceSample()
   
  The following code example is like the previous one except that the expression to convert is a reference to an item in a multidimensional array.  
   
-```  
+```csharp  
   
 public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()  
 {  
@@ -273,6 +276,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ExpressionServices.TryConvert``1(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,``0}},System.Activities.Activity{``0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryConvert(Of TResult) (expression As Expression(Of Func(Of ActivityContext, TResult)), ByRef result As Activity(Of TResult)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static bool TryConvert(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, TResult&gt; ^&gt; ^ expression, [Runtime::InteropServices::Out] System::Activities::Activity&lt;TResult&gt; ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryConvert : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'Result&gt;&gt; *  -&gt; bool" Usage="System.Activities.Expressions.ExpressionServices.TryConvert (expression, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -286,7 +290,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
       </TypeParameters>
       <Parameters>
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,TResult&gt;&gt;" />
-        <Parameter Name="result" Type="System.Activities.Activity&lt;TResult&gt;&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Activities.Activity&lt;TResult&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TResult">The type the expression is being converted to.</typeparam>
@@ -311,6 +315,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ExpressionServices.TryConvertReference``1(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,``0}},System.Activities.Activity{System.Activities.Location{``0}}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryConvertReference(Of TResult) (expression As Expression(Of Func(Of ActivityContext, TResult)), ByRef result As Activity(Of Location(Of TResult))) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static bool TryConvertReference(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, TResult&gt; ^&gt; ^ expression, [Runtime::InteropServices::Out] System::Activities::Activity&lt;System::Activities::Location&lt;TResult&gt; ^&gt; ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryConvertReference : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'Result&gt;&gt; *  -&gt; bool" Usage="System.Activities.Expressions.ExpressionServices.TryConvertReference (expression, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -324,7 +329,7 @@ public static void ConvertReferenceForMultidimensionalArrayItemReferenceSample()
       </TypeParameters>
       <Parameters>
         <Parameter Name="expression" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,TResult&gt;&gt;" />
-        <Parameter Name="result" Type="System.Activities.Activity&lt;System.Activities.Location&lt;TResult&gt;&gt;&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Activities.Activity&lt;System.Activities.Location&lt;TResult&gt;&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="TResult">The type the expression is being converted to.</typeparam>

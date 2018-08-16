@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.FilePrompt" />
   <TypeSignature Language="VB.NET" Value="Public Class FilePrompt&#xA;Inherits Prompt" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilePrompt : System::Speech::Synthesis::Prompt" />
+  <TypeSignature Language="F#" Value="type FilePrompt = class&#xA;    inherit Prompt" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{_text}")</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,9 +39,11 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.FilePrompt.#ctor(System.String,System.Speech.Synthesis.SynthesisMediaType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, media As SynthesisMediaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilePrompt(System::String ^ path, System::Speech::Synthesis::SynthesisMediaType media);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.FilePrompt : string * System.Speech.Synthesis.SynthesisMediaType -&gt; System.Speech.Synthesis.FilePrompt" Usage="new System.Speech.Synthesis.FilePrompt (path, media)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -117,11 +121,18 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.FilePrompt.#ctor(System.Uri,System.Speech.Synthesis.SynthesisMediaType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (promptFile As Uri, media As SynthesisMediaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FilePrompt(Uri ^ promptFile, System::Speech::Synthesis::SynthesisMediaType media);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.FilePrompt : Uri * System.Speech.Synthesis.SynthesisMediaType -&gt; System.Speech.Synthesis.FilePrompt" Usage="new System.Speech.Synthesis.FilePrompt (promptFile, media)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="promptFile" Type="System.Uri" />
         <Parameter Name="media" Type="System.Speech.Synthesis.SynthesisMediaType" />

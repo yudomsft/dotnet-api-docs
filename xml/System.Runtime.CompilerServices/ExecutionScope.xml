@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ExecutionScope" />
   <TypeSignature Language="VB.NET" Value="Public Class ExecutionScope" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExecutionScope" />
+  <TypeSignature Language="F#" Value="type ExecutionScope = class" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Obsolete("do not use this type", true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,10 +39,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.CreateDelegate(System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateDelegate (indexLambda As Integer, locals As Object()) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Delegate ^ CreateDelegate(int indexLambda, cli::array &lt;System::Object ^&gt; ^ locals);" />
+      <MemberSignature Language="F#" Value="member this.CreateDelegate : int * obj[] -&gt; Delegate" Usage="executionScope.CreateDelegate (indexLambda, locals)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,10 +69,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.CreateHoistedLocals" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateHoistedLocals () As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ CreateHoistedLocals();" />
+      <MemberSignature Language="F#" Value="member this.CreateHoistedLocals : unit -&gt; obj[]" Usage="executionScope.CreateHoistedLocals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,10 +94,12 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Globals" />
       <MemberSignature Language="VB.NET" Value="Public Globals As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ Globals;" />
+      <MemberSignature Language="F#" Value="val mutable Globals : obj[]" Usage="System.Runtime.CompilerServices.ExecutionScope.Globals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,10 +116,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.Expression IsolateExpression(class System.Linq.Expressions.Expression expression, object[] locals) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.IsolateExpression(System.Linq.Expressions.Expression,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ IsolateExpression(System::Linq::Expressions::Expression ^ expression, cli::array &lt;System::Object ^&gt; ^ locals);" />
+      <MemberSignature Language="F#" Value="member this.IsolateExpression : System.Linq.Expressions.Expression * obj[] -&gt; System.Linq.Expressions.Expression" Usage="executionScope.IsolateExpression (expression, locals)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,10 +146,12 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Locals" />
       <MemberSignature Language="VB.NET" Value="Public Locals As Object() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Object ^&gt; ^ Locals;" />
+      <MemberSignature Language="F#" Value="val mutable Locals : obj[]" Usage="System.Runtime.CompilerServices.ExecutionScope.Locals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,10 +169,12 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Parent As ExecutionScope " />
       <MemberSignature Language="C++ CLI" Value="public: System::Runtime::CompilerServices::ExecutionScope ^ Parent;" />
+      <MemberSignature Language="F#" Value="val mutable Parent : System.Runtime.CompilerServices.ExecutionScope" Usage="System.Runtime.CompilerServices.ExecutionScope.Parent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

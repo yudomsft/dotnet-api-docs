@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.ObjectModel.ObservableCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ObservableCollection(Of T)&#xA;Inherits Collection(Of T)&#xA;Implements INotifyCollectionChanged, INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ObservableCollection : System::Collections::ObjectModel::Collection&lt;T&gt;, System::Collections::Specialized::INotifyCollectionChanged, System::ComponentModel::INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type ObservableCollection&lt;'T&gt; = class&#xA;    inherit Collection&lt;'T&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +20,10 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -38,7 +43,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=3.0.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -112,6 +117,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> class.</summary>
@@ -124,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObservableCollection(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.ObjectModel.ObservableCollection&lt;'T&gt;" Usage="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -140,6 +150,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
@@ -164,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor(System.Collections.Generic.List{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (list As List(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ObservableCollection(System::Collections::Generic::List&lt;T&gt; ^ list);" />
+      <MemberSignature Language="F#" Value="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; : System.Collections.Generic.List&lt;'T&gt; -&gt; System.Collections.ObjectModel.ObservableCollection&lt;'T&gt;" Usage="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; list" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +193,10 @@
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" />
@@ -202,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy" />
       <MemberSignature Language="VB.NET" Value="Protected Function BlockReentrancy () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; IDisposable ^ BlockReentrancy();" />
+      <MemberSignature Language="F#" Value="member this.BlockReentrancy : unit -&gt; IDisposable" Usage="observableCollection.BlockReentrancy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -218,6 +238,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -246,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckReentrancy ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckReentrancy();" />
+      <MemberSignature Language="F#" Value="member this.CheckReentrancy : unit -&gt; unit" Usage="observableCollection.CheckReentrancy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -262,6 +287,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -280,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="observableCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -296,6 +326,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -321,6 +355,7 @@
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event CollectionChanged As NotifyCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
@@ -341,6 +376,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
       </ReturnValue>
@@ -356,6 +395,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.InsertItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, T item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'T -&gt; unit" Usage="observableCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -372,6 +412,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -402,6 +446,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Move (oldIndex As Integer, newIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(int oldIndex, int newIndex);" />
+      <MemberSignature Language="F#" Value="member this.Move : int * int -&gt; unit" Usage="observableCollection.Move (oldIndex, newIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -419,6 +464,15 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -446,6 +500,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub MoveItem (oldIndex As Integer, newIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void MoveItem(int oldIndex, int newIndex);" />
+      <MemberSignature Language="F#" Value="abstract member MoveItem : int * int -&gt; unit&#xA;override this.MoveItem : int * int -&gt; unit" Usage="observableCollection.MoveItem (oldIndex, newIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -462,6 +517,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -492,6 +551,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (e As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="observableCollection.OnCollectionChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -508,6 +568,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -542,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="observableCollection.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -558,6 +623,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -577,6 +646,7 @@
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ObservableCollection`1.PropertyChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Custom Event PropertyChanged As PropertyChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
@@ -597,6 +667,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
@@ -612,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="observableCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -628,6 +703,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -656,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.SetItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, T item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'T -&gt; unit" Usage="observableCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -672,6 +752,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -721,11 +805,15 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when a property value changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

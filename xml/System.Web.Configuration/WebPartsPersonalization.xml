@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebPartsPersonalization" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartsPersonalization&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartsPersonalization sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebPartsPersonalization = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -71,8 +73,14 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.WebPartsPersonalization" /> class using default settings.</summary>
@@ -93,13 +101,15 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.Authorization" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authorization As WebPartsPersonalizationAuthorization" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::WebPartsPersonalizationAuthorization ^ Authorization { System::Web::Configuration::WebPartsPersonalizationAuthorization ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Authorization : System.Web.Configuration.WebPartsPersonalizationAuthorization" Usage="System.Web.Configuration.WebPartsPersonalization.Authorization" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("authorization")</AttributeName>
         </Attribute>
       </Attributes>
@@ -133,16 +143,18 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.DefaultProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Web.Configuration.WebPartsPersonalization.DefaultProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("defaultProvider", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -177,11 +189,18 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.WebPartsPersonalization.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
@@ -197,13 +216,15 @@ type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalization.Providers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.WebPartsPersonalization.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("providers")</AttributeName>
         </Attribute>
       </Attributes>

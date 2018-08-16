@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseGesture" />
   <TypeSignature Language="VB.NET" Value="Public Class MouseGesture&#xA;Inherits InputGesture" />
   <TypeSignature Language="C++ CLI" Value="public ref class MouseGesture : System::Windows::Input::InputGesture" />
+  <TypeSignature Language="F#" Value="type MouseGesture = class&#xA;    inherit InputGesture" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,10 +15,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Input.MouseGestureConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Input.MouseGestureValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -90,8 +92,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.MouseGesture" /> class.</summary>
@@ -108,11 +116,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.MouseAction mouseAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseGesture.#ctor(System.Windows.Input.MouseAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseGesture(System::Windows::Input::MouseAction mouseAction);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.MouseGesture : System.Windows.Input.MouseAction -&gt; System.Windows.Input.MouseGesture" Usage="new System.Windows.Input.MouseGesture mouseAction" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="mouseAction" Type="System.Windows.Input.MouseAction" />
       </Parameters>
@@ -134,9 +149,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Input.MouseAction mouseAction, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseGesture.#ctor(System.Windows.Input.MouseAction,System.Windows.Input.ModifierKeys)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MouseGesture(System::Windows::Input::MouseAction mouseAction, System::Windows::Input::ModifierKeys modifiers);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.MouseGesture : System.Windows.Input.MouseAction * System.Windows.Input.ModifierKeys -&gt; System.Windows.Input.MouseGesture" Usage="new System.Windows.Input.MouseGesture (mouseAction, modifiers)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -167,9 +184,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(object targetElement, class System.Windows.Input.InputEventArgs inputEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::Object ^ targetElement, System::Windows::Input::InputEventArgs ^ inputEventArgs);" />
+      <MemberSignature Language="F#" Value="override this.Matches : obj * System.Windows.Input.InputEventArgs -&gt; bool" Usage="mouseGesture.Matches (targetElement, inputEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,11 +223,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseGesture.Modifiers" />
       <MemberSignature Language="VB.NET" Value="Public Property Modifiers As ModifierKeys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ModifierKeys Modifiers { System::Windows::Input::ModifierKeys get(); void set(System::Windows::Input::ModifierKeys value); };" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Input.ModifierKeys with get, set" Usage="System.Windows.Input.MouseGesture.Modifiers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
       </ReturnValue>
@@ -258,11 +284,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseGesture.MouseAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MouseAction As MouseAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::MouseAction MouseAction { System::Windows::Input::MouseAction get(); void set(System::Windows::Input::MouseAction value); };" />
+      <MemberSignature Language="F#" Value="member this.MouseAction : System.Windows.Input.MouseAction with get, set" Usage="System.Windows.Input.MouseGesture.MouseAction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Input.MouseAction</ReturnType>
       </ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.GacMembershipCondition" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GacMembershipCondition&#xA;Implements IMembershipCondition" />
   <TypeSignature Language="C++ CLI" Value="public ref class GacMembershipCondition sealed : System::Security::Policy::IMembershipCondition" />
+  <TypeSignature Language="F#" Value="type GacMembershipCondition = class&#xA;    interface IMembershipCondition&#xA;    interface ISecurityEncodable&#xA;    interface ISecurityPolicyEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -22,7 +24,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,6 +58,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -90,12 +93,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Check(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.Check(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Check(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member Check : System.Security.Policy.Evidence -&gt; bool&#xA;override this.Check : System.Security.Policy.Evidence -&gt; bool" Usage="gacMembershipCondition.Check evidence" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Check(System.Security.Policy.Evidence)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -139,12 +144,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As IMembershipCondition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::IMembershipCondition ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.Policy.IMembershipCondition&#xA;override this.Copy : unit -&gt; System.Security.Policy.IMembershipCondition" Usage="gacMembershipCondition.Copy " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Copy</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -184,12 +191,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="gacMembershipCondition.Equals o" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Equals(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -243,12 +252,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="gacMembershipCondition.FromXml e" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -294,12 +305,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement, level As PolicyLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="gacMembershipCondition.FromXml (e, level)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -347,9 +360,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="gacMembershipCondition.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -389,12 +404,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="gacMembershipCondition.ToString " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IMembershipCondition.ToString</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -444,12 +461,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="gacMembershipCondition.ToXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -489,12 +508,14 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml (level As PolicyLevel) As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement&#xA;override this.ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement" Usage="gacMembershipCondition.ToXml level" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.ToXml(System.Security.Policy.PolicyLevel)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

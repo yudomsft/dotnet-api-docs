@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ControlParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlParameter&#xA;Inherits Parameter" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlParameter : System::Web::UI::WebControls::Parameter" />
+  <TypeSignature Language="F#" Value="type ControlParameter = class&#xA;    inherit Parameter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultProperty("ControlID")</AttributeName>
     </Attribute>
   </Attributes>
@@ -62,8 +64,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new unnamed instance of the <see cref="T:System.Web.UI.WebControls.ControlParameter" /> class.</summary>
@@ -91,9 +99,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ControlParameter.#ctor(System.Web.UI.WebControls.ControlParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (original As ControlParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ControlParameter(System::Web::UI::WebControls::ControlParameter ^ original);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ControlParameter : System.Web.UI.WebControls.ControlParameter -&gt; System.Web.UI.WebControls.ControlParameter" Usage="new System.Web.UI.WebControls.ControlParameter original" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -119,9 +129,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ControlParameter.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, controlID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlParameter(System::String ^ name, System::String ^ controlID);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ControlParameter : string * string -&gt; System.Web.UI.WebControls.ControlParameter" Usage="new System.Web.UI.WebControls.ControlParameter (name, controlID)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -150,9 +162,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ControlParameter.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, controlID As String, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlParameter(System::String ^ name, System::String ^ controlID, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ControlParameter : string * string * string -&gt; System.Web.UI.WebControls.ControlParameter" Usage="new System.Web.UI.WebControls.ControlParameter (name, controlID, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -191,9 +205,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string controlID, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ControlParameter.#ctor(System.String,System.Data.DbType,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlParameter(System::String ^ name, System::Data::DbType dbType, System::String ^ controlID, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ControlParameter : string * System.Data.DbType * string * string -&gt; System.Web.UI.WebControls.ControlParameter" Usage="new System.Web.UI.WebControls.ControlParameter (name, dbType, controlID, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -217,9 +233,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ControlParameter.#ctor(System.String,System.TypeCode,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As TypeCode, controlID As String, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlParameter(System::String ^ name, TypeCode type, System::String ^ controlID, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ControlParameter : string * TypeCode * string * string -&gt; System.Web.UI.WebControls.ControlParameter" Usage="new System.Web.UI.WebControls.ControlParameter (name, type, controlID, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -262,9 +280,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ControlParameter.Clone" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Clone () As Parameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Parameter ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Web.UI.WebControls.Parameter" Usage="controlParameter.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,23 +311,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ControlParameter.ControlID" />
       <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ControlID : string with get, set" Usage="System.Web.UI.WebControls.ControlParameter.ControlID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.ControlIDConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.IDReferenceProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -347,9 +372,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ControlParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="controlParameter.Evaluate (context, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,16 +425,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ControlParameter.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.Web.UI.WebControls.ControlParameter.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.ControlPropertyNameConverter))</AttributeName>
         </Attribute>
       </Attributes>

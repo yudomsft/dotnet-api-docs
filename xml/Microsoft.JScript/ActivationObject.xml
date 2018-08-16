@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ActivationObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivationObject&#xA;Inherits ScriptObject&#xA;Implements IActivationObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ActivationObject abstract : Microsoft::JScript::ScriptObject, Microsoft::JScript::IActivationObject" />
+  <TypeSignature Language="F#" Value="type ActivationObject = class&#xA;    inherit ScriptObject&#xA;    interface IActivationObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,9 +40,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.CreateField(System.String,System.Reflection.FieldAttributes,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateField (name As String, attributeFlags As FieldAttributes, value As Object) As JSVariableField" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Microsoft::JScript::JSVariableField ^ CreateField(System::String ^ name, System::Reflection::FieldAttributes attributeFlags, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CreateField : string * System.Reflection.FieldAttributes * obj -&gt; Microsoft.JScript.JSVariableField&#xA;override this.CreateField : string * System.Reflection.FieldAttributes * obj -&gt; Microsoft.JScript.JSVariableField" Usage="activationObject.CreateField (name, attributeFlags, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,9 +78,12 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ActivationObject.field_table" />
       <MemberSignature Language="VB.NET" Value="Protected field_table As ArrayList " />
       <MemberSignature Language="C++ CLI" Value="protected: System::Collections::ArrayList ^ field_table;" />
+      <MemberSignature Language="F#" Value="val mutable field_table : System.Collections.ArrayList" Usage="Microsoft.JScript.ActivationObject.field_table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,12 +107,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetDefaultThisObject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultThisObject () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetDefaultThisObject();" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultThisObject : unit -&gt; obj&#xA;override this.GetDefaultThisObject : unit -&gt; obj" Usage="activationObject.GetDefaultThisObject " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetDefaultThisObject</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,12 +141,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetField(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetField (name As String, lexLevel As Integer) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetField(System::String ^ name, int lexLevel);" />
+      <MemberSignature Language="F#" Value="override this.GetField : string * int -&gt; System.Reflection.FieldInfo" Usage="activationObject.GetField (name, lexLevel)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetField(System.String,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,12 +186,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetGlobalScope" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlobalScope () As GlobalScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::GlobalScope ^ GetGlobalScope();" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope&#xA;override this.GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope" Usage="activationObject.GetGlobalScope " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetGlobalScope</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,12 +219,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetLocalField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLocalField (name As String) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetLocalField(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalField : string -&gt; System.Reflection.FieldInfo&#xA;override this.GetLocalField : string -&gt; System.Reflection.FieldInfo" Usage="activationObject.GetLocalField name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetLocalField(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,9 +255,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetMember(System.String,System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="activationObject.GetMember (name, bindingAttr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,9 +290,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetMembers(System.Reflection.BindingFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
+      <MemberSignature Language="F#" Value="override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="activationObject.GetMembers bindingAttr" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,16 +323,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetMemberValue(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMemberValue (name As String, lexlevel As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetMemberValue(System::String ^ name, int lexlevel);" />
+      <MemberSignature Language="F#" Value="abstract member GetMemberValue : string * int -&gt; obj&#xA;override this.GetMemberValue : string * int -&gt; obj" Usage="activationObject.GetMemberValue (name, lexlevel)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetMemberValue(System.String,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>

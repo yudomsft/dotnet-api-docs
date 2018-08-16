@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeNCryptHandle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SafeNCryptHandle&#xA;Inherits SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="C++ CLI" Value="public ref class SafeNCryptHandle abstract : Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="F#" Value="type SafeNCryptHandle = class&#xA;    inherit SafeHandleZeroOrMinusOneIsInvalid" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -23,6 +25,11 @@
     <BaseTypeName FrameworkAlternate="netframework-4.5">Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides a safe handle that can be used by Cryptography Next Generation (CNG) objects.</summary>
     <remarks>To be added.</remarks>
@@ -45,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -65,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.#ctor(System.IntPtr,System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (handle As IntPtr, parentHandle As SafeHandle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SafeNCryptHandle(IntPtr handle, System::Runtime::InteropServices::SafeHandle ^ parentHandle);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SafeHandles.SafeNCryptHandle : nativeint * System.Runtime.InteropServices.SafeHandle -&gt; Microsoft.Win32.SafeHandles.SafeNCryptHandle" Usage="new Microsoft.Win32.SafeHandles.SafeNCryptHandle (handle, parentHandle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -99,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeNCryptHandle.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.SafeNCryptHandle.IsInvalid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -125,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
+      <MemberSignature Language="F#" Value="override this.ReleaseHandle : unit -&gt; bool" Usage="safeNCryptHandle.ReleaseHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -134,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -158,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseNativeHandle" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReleaseNativeHandle () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ReleaseNativeHandle();" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseNativeHandle : unit -&gt; bool" Usage="safeNCryptHandle.ReleaseNativeHandle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -167,12 +180,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ProjectedWrapper" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProjectedWrapper" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectedWrapper abstract" />
+  <TypeSignature Language="F#" Value="type ProjectedWrapper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -32,8 +37,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Data.Services.Internal.ProjectedWrapper" /> class.</summary>
@@ -47,9 +58,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper.GetProjectedPropertyValue(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProjectedPropertyValue (propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetProjectedPropertyValue(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="abstract member GetProjectedPropertyValue : string -&gt; obj&#xA;override this.GetProjectedPropertyValue : string -&gt; obj" Usage="projectedWrapper.GetProjectedPropertyValue propertyName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,9 +85,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper.InternalGetProjectedPropertyValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InternalGetProjectedPropertyValue (propertyIndex As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ InternalGetProjectedPropertyValue(int propertyIndex);" />
+      <MemberSignature Language="F#" Value="abstract member InternalGetProjectedPropertyValue : int -&gt; obj" Usage="projectedWrapper.InternalGetProjectedPropertyValue propertyIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,11 +112,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper.PropertyNameList" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyNameList As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyNameList { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyNameList : string with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper.PropertyNameList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -118,11 +140,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper.ResourceTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceTypeName : string with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper.ResourceTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

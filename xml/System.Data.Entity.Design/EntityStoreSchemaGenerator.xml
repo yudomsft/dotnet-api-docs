@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaGenerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityStoreSchemaGenerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class EntityStoreSchemaGenerator sealed" />
+  <TypeSignature Language="F#" Value="type EntityStoreSchemaGenerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,9 +32,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerInvariantName As String, connectionString As String, namespaceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityStoreSchemaGenerator(System::String ^ providerInvariantName, System::String ^ connectionString, System::String ^ namespaceName);" />
+      <MemberSignature Language="F#" Value="new System.Data.Entity.Design.EntityStoreSchemaGenerator : string * string * string -&gt; System.Data.Entity.Design.EntityStoreSchemaGenerator" Usage="new System.Data.Entity.Design.EntityStoreSchemaGenerator (providerInvariantName, connectionString, namespaceName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -63,9 +67,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStoreSchemaConnection (providerInvariantName As String, connectionString As String) As EntityConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::EntityClient::EntityConnection ^ CreateStoreSchemaConnection(System::String ^ providerInvariantName, System::String ^ connectionString);" />
+      <MemberSignature Language="F#" Value="static member CreateStoreSchemaConnection : string * string -&gt; System.Data.EntityClient.EntityConnection" Usage="System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection (providerInvariantName, connectionString)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection(System.String,System.String,System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStoreSchemaConnection (providerInvariantName As String, connectionString As String, targetEntityFrameworkVersion As Version) As EntityConnection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::EntityClient::EntityConnection ^ CreateStoreSchemaConnection(System::String ^ providerInvariantName, System::String ^ connectionString, Version ^ targetEntityFrameworkVersion);" />
+      <MemberSignature Language="F#" Value="static member CreateStoreSchemaConnection : string * string * Version -&gt; System.Data.EntityClient.EntityConnection" Usage="System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection (providerInvariantName, connectionString, targetEntityFrameworkVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -117,11 +124,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaGenerator.EntityContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityContainer As EntityContainer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EntityContainer ^ EntityContainer { System::Data::Metadata::Edm::EntityContainer ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityContainer : System.Data.Metadata.Edm.EntityContainer" Usage="System.Data.Entity.Design.EntityStoreSchemaGenerator.EntityContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EntityContainer</ReturnType>
       </ReturnValue>
@@ -137,11 +151,20 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateForeignKeyProperties" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateForeignKeyProperties As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GenerateForeignKeyProperties { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.GenerateForeignKeyProperties : bool with get, set" Usage="System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateForeignKeyProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -167,9 +190,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateStoreMetadata () As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateStoreMetadata();" />
+      <MemberSignature Language="F#" Value="member this.GenerateStoreMetadata : unit -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityStoreSchemaGenerator.GenerateStoreMetadata " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,9 +213,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry})" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateStoreMetadata (filters As IEnumerable(Of EntityStoreSchemaFilterEntry)) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateStoreMetadata(System::Collections::Generic::IEnumerable&lt;System::Data::Entity::Design::EntityStoreSchemaFilterEntry ^&gt; ^ filters);" />
+      <MemberSignature Language="F#" Value="member this.GenerateStoreMetadata : seq&lt;System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt; -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityStoreSchemaGenerator.GenerateStoreMetadata filters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry},System.Version)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateStoreMetadata (filters As IEnumerable(Of EntityStoreSchemaFilterEntry), targetEntityFrameworkVersion As Version) As IList(Of EdmSchemaError)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Data::Metadata::Edm::EdmSchemaError ^&gt; ^ GenerateStoreMetadata(System::Collections::Generic::IEnumerable&lt;System::Data::Entity::Design::EntityStoreSchemaFilterEntry ^&gt; ^ filters, Version ^ targetEntityFrameworkVersion);" />
+      <MemberSignature Language="F#" Value="member this.GenerateStoreMetadata : seq&lt;System.Data.Entity.Design.EntityStoreSchemaFilterEntry&gt; * Version -&gt; System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;" Usage="entityStoreSchemaGenerator.GenerateStoreMetadata (filters, targetEntityFrameworkVersion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -238,14 +266,19 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaGenerator.StoreItemCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreItemCollection As StoreItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::StoreItemCollection ^ StoreItemCollection { System::Data::Metadata::Edm::StoreItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StoreItemCollection : System.Data.Metadata.Edm.StoreItemCollection" Usage="System.Data.Entity.Design.EntityStoreSchemaGenerator.StoreItemCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -272,9 +305,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStoreSchema (outputFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStoreSchema(System::String ^ outputFileName);" />
+      <MemberSignature Language="F#" Value="member this.WriteStoreSchema : string -&gt; unit" Usage="entityStoreSchemaGenerator.WriteStoreSchema outputFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,9 +330,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStoreSchema (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStoreSchema(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteStoreSchema : System.Xml.XmlWriter -&gt; unit" Usage="entityStoreSchemaGenerator.WriteStoreSchema writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeDescriptionProviderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeDescriptionProviderAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptionProviderAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TypeDescriptionProviderAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,7 +26,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProviderAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptionProviderAttribute(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.TypeDescriptionProviderAttribute : string -&gt; System.ComponentModel.TypeDescriptionProviderAttribute" Usage="new System.ComponentModel.TypeDescriptionProviderAttribute typeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -79,6 +82,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -111,6 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProviderAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptionProviderAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.TypeDescriptionProviderAttribute : Type -&gt; System.ComponentModel.TypeDescriptionProviderAttribute" Usage="new System.ComponentModel.TypeDescriptionProviderAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -120,6 +125,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -153,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeDescriptionProviderAttribute.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.ComponentModel.TypeDescriptionProviderAttribute.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -162,6 +169,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -169,6 +177,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

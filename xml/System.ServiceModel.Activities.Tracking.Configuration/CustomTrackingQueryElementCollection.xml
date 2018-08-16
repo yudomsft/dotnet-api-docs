@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class CustomTrackingQueryElementCollection&#xA;Inherits TrackingConfigurationCollection(Of CustomTrackingQueryElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomTrackingQueryElementCollection : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::CustomTrackingQueryElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type CustomTrackingQueryElementCollection = class&#xA;    inherit TrackingConfigurationCollection&lt;CustomTrackingQueryElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +17,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElement), AddItemName="customTrackingQuery", CollectionType=System.Configuration.ConfigurationElementCollectionType.BasicMap)</AttributeName>
     </Attribute>
   </Attributes>
@@ -36,6 +37,11 @@
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection" /> class.</summary>
@@ -48,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection.ElementName" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection.ElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CustomBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomBindingCollectionElement&#xA;Inherits BindingCollectionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomBindingCollectionElement sealed : System::ServiceModel::Configuration::BindingCollectionElement" />
+  <TypeSignature Language="F#" Value="type CustomBindingCollectionElement = class&#xA;    inherit BindingCollectionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -45,8 +47,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.CustomBindingCollectionElement" /> class.</summary>
@@ -59,13 +67,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.CustomBindingCollectionElement.Bindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As CustomBindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::CustomBindingElementCollection ^ Bindings { System::ServiceModel::Configuration::CustomBindingElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bindings : System.ServiceModel.Configuration.CustomBindingElementCollection" Usage="System.ServiceModel.Configuration.CustomBindingCollectionElement.Bindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
         </Attribute>
       </Attributes>
@@ -84,9 +94,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.CustomBindingCollectionElement.BindingType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingType : Type" Usage="System.ServiceModel.Configuration.CustomBindingCollectionElement.BindingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,9 +116,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.CustomBindingCollectionElement.ConfiguredBindings" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConfiguredBindings As ReadOnlyCollection(Of IBindingConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Configuration::IBindingConfigurationElement ^&gt; ^ ConfiguredBindings { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ServiceModel::Configuration::IBindingConfigurationElement ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConfiguredBindings : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ServiceModel.Configuration.IBindingConfigurationElement&gt;" Usage="System.ServiceModel.Configuration.CustomBindingCollectionElement.ConfiguredBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,9 +138,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CustomBindingCollectionElement.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ContainsKey(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.ContainsKey : string -&gt; bool" Usage="customBindingCollectionElement.ContainsKey name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,9 +165,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CustomBindingCollectionElement.GetDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
+      <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="customBindingCollectionElement.GetDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,9 +188,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.CustomBindingCollectionElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.CustomBindingCollectionElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,9 +209,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryAdd(string name, class System.ServiceModel.Channels.Binding binding, class System.Configuration.Configuration config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CustomBindingCollectionElement.TryAdd(System.String,System.ServiceModel.Channels.Binding,System.Configuration.Configuration)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryAdd(System::String ^ name, System::ServiceModel::Channels::Binding ^ binding, System::Configuration::Configuration ^ config);" />
+      <MemberSignature Language="F#" Value="override this.TryAdd : string * System.ServiceModel.Channels.Binding * System.Configuration.Configuration -&gt; bool" Usage="customBindingCollectionElement.TryAdd (name, binding, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

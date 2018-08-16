@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Util.Transactions" />
   <TypeSignature Language="VB.NET" Value="Public Class Transactions" />
   <TypeSignature Language="C++ CLI" Value="public ref class Transactions" />
+  <TypeSignature Language="F#" Value="type Transactions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,8 +29,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Util.Transactions" /> class.</summary>
@@ -49,9 +59,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback,System.EnterpriseServices.TransactionOption)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransacted (callback As TransactedCallback, mode As TransactionOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransacted(System::Web::Util::TransactedCallback ^ callback, System::EnterpriseServices::TransactionOption mode);" />
+      <MemberSignature Language="F#" Value="static member InvokeTransacted : System.Web.Util.TransactedCallback * System.EnterpriseServices.TransactionOption -&gt; unit" Usage="System.Web.Util.Transactions.InvokeTransacted (callback, mode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,9 +89,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback,System.EnterpriseServices.TransactionOption,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransacted (callback As TransactedCallback, mode As TransactionOption, ByRef transactionAborted As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransacted(System::Web::Util::TransactedCallback ^ callback, System::EnterpriseServices::TransactionOption mode, bool % transactionAborted);" />
+      <MemberSignature Language="F#" Value="static member InvokeTransacted : System.Web.Util.TransactedCallback * System.EnterpriseServices.TransactionOption *  -&gt; unit" Usage="System.Web.Util.Transactions.InvokeTransacted (callback, mode, transactionAborted)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,7 +103,7 @@
       <Parameters>
         <Parameter Name="callback" Type="System.Web.Util.TransactedCallback" />
         <Parameter Name="mode" Type="System.EnterpriseServices.TransactionOption" />
-        <Parameter Name="transactionAborted" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="transactionAborted" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="callback">The <see cref="T:System.Web.Util.TransactedCallback" /> to be run under the specified transaction support.</param>

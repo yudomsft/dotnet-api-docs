@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlnsDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlnsDictionary&#xA;Implements IDictionary, IXamlNamespaceResolver" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlnsDictionary : System::Collections::IDictionary, System::Xaml::IXamlNamespaceResolver" />
+  <TypeSignature Language="F#" Value="type XmlnsDictionary = class&#xA;    interface IDictionary&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IXamlNamespaceResolver" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -52,6 +54,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -65,9 +68,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Markup.XmlnsDictionary xmlnsDictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.#ctor(System.Windows.Markup.XmlnsDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsDictionary(System::Windows::Markup::XmlnsDictionary ^ xmlnsDictionary);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XmlnsDictionary : System.Windows.Markup.XmlnsDictionary -&gt; System.Windows.Markup.XmlnsDictionary" Usage="new System.Windows.Markup.XmlnsDictionary xmlnsDictionary" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -103,12 +108,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.Add(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As Object, xmlNamespace As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Object ^ prefix, System::Object ^ xmlNamespace);" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * obj -&gt; unit&#xA;override this.Add : obj * obj -&gt; unit" Usage="xmlnsDictionary.Add (prefix, xmlNamespace)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,11 +150,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (prefix As String, xmlNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ prefix, System::String ^ xmlNamespace);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="xmlnsDictionary.Add (prefix, xmlNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -171,12 +185,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="xmlnsDictionary.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,12 +211,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (key As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="xmlnsDictionary.Contains key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -231,12 +249,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="xmlnsDictionary.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,11 +279,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.CopyTo(System.Collections.DictionaryEntry[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DictionaryEntry(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Collections::DictionaryEntry&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Collections.DictionaryEntry[] * int -&gt; unit" Usage="xmlnsDictionary.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -284,14 +311,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Markup.XmlnsDictionary.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -307,9 +341,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.DefaultNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Function DefaultNamespace () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DefaultNamespace();" />
+      <MemberSignature Language="F#" Value="member this.DefaultNamespace : unit -&gt; string" Usage="xmlnsDictionary.DefaultNamespace " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -335,9 +371,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.GetDictionaryEnumerator" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetDictionaryEnumerator () As IDictionaryEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::IDictionaryEnumerator ^ GetDictionaryEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetDictionaryEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="xmlnsDictionary.GetDictionaryEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -363,12 +401,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xmlnsDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -394,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.GetNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamespace (prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespace : string -&gt; string&#xA;override this.GetNamespace : string -&gt; string" Usage="xmlnsDictionary.GetNamespace prefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xaml.IXamlNamespaceResolver.GetNamespace(System.String)</InterfaceMember>
@@ -402,6 +443,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -421,6 +467,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.GetNamespacePrefixes" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetNamespacePrefixes () As IEnumerable(Of NamespaceDeclaration)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Xaml::NamespaceDeclaration ^&gt; ^ GetNamespacePrefixes();" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespacePrefixes : unit -&gt; seq&lt;System.Xaml.NamespaceDeclaration&gt;&#xA;override this.GetNamespacePrefixes : unit -&gt; seq&lt;System.Xaml.NamespaceDeclaration&gt;" Usage="xmlnsDictionary.GetNamespacePrefixes " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xaml.IXamlNamespaceResolver.GetNamespacePrefixes</InterfaceMember>
@@ -430,8 +477,11 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Windows.Markup.XmlnsDictionary/&lt;GetNamespacePrefixes&gt;d__15))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Windows.Markup.XmlnsDictionary/&lt;GetNamespacePrefixes&gt;d__1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -450,12 +500,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Windows.Markup.XmlnsDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -481,14 +533,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Markup.XmlnsDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -512,12 +571,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Windows.Markup.XmlnsDictionary.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -545,12 +606,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(prefix As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ prefix); void set(System::Object ^ prefix, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Windows.Markup.XmlnsDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -584,11 +647,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ prefix); void set(System::String ^ prefix, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Windows.Markup.XmlnsDictionary.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -614,12 +687,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Windows.Markup.XmlnsDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -637,9 +712,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.LookupNamespace(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LookupNamespace (prefix As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupNamespace(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="member this.LookupNamespace : string -&gt; string" Usage="xmlnsDictionary.LookupNamespace prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -663,9 +740,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.LookupPrefix(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LookupPrefix (xmlNamespace As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupPrefix(System::String ^ xmlNamespace);" />
+      <MemberSignature Language="F#" Value="member this.LookupPrefix : string -&gt; string" Usage="xmlnsDictionary.LookupPrefix xmlNamespace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -696,9 +775,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.PopScope" />
       <MemberSignature Language="VB.NET" Value="Public Sub PopScope ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PopScope();" />
+      <MemberSignature Language="F#" Value="member this.PopScope : unit -&gt; unit" Usage="xmlnsDictionary.PopScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -724,9 +805,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.PushScope" />
       <MemberSignature Language="VB.NET" Value="Public Sub PushScope ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushScope();" />
+      <MemberSignature Language="F#" Value="member this.PushScope : unit -&gt; unit" Usage="xmlnsDictionary.PushScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -761,12 +844,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (prefix As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ prefix);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="xmlnsDictionary.Remove prefix" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -795,9 +880,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (prefix As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ prefix);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="xmlnsDictionary.Remove prefix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -819,9 +906,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDictionary.Seal" />
       <MemberSignature Language="VB.NET" Value="Public Sub Seal ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seal();" />
+      <MemberSignature Language="F#" Value="member this.Seal : unit -&gt; unit" Usage="xmlnsDictionary.Seal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -846,11 +935,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.Sealed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sealed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sealed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sealed : bool" Usage="System.Windows.Markup.XmlnsDictionary.Sealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -874,12 +970,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Markup.XmlnsDictionary.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -903,6 +1001,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -928,8 +1027,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -946,12 +1051,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDictionary.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Windows.Markup.XmlnsDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

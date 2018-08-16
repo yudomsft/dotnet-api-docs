@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ConnectionManagementElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionManagementElementCollection&#xA;Inherits ConfigurationElementCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionManagementElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type ConnectionManagementElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Net.Configuration.ConnectionManagementElement), CollectionType=System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Net.Configuration.ConnectionManagementElement))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,8 +45,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElementCollection" /> class.</summary>
@@ -56,9 +67,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.Add(System.Net.Configuration.ConnectionManagementElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (element As ConnectionManagementElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::Configuration::ConnectionManagementElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Net.Configuration.ConnectionManagementElement -&gt; unit" Usage="connectionManagementElementCollection.Add element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,9 +94,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="connectionManagementElementCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,9 +116,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.CreateNewElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="connectionManagementElementCollection.CreateNewElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,9 +139,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="connectionManagementElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,9 +165,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.IndexOf(System.Net.Configuration.ConnectionManagementElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As ConnectionManagementElement) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Net::Configuration::ConnectionManagementElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Net.Configuration.ConnectionManagementElement -&gt; int" Usage="connectionManagementElementCollection.IndexOf element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,13 +204,15 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElementCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ConnectionManagementElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ConnectionManagementElement ^ default[int] { System::Net::Configuration::ConnectionManagementElement ^ get(int index); void set(int index, System::Net::Configuration::ConnectionManagementElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Net.Configuration.ConnectionManagementElement with get, set" Usage="System.Net.Configuration.ConnectionManagementElementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinmac-3.0">
           <AttributeName>System.MonoTODO</AttributeName>
         </Attribute>
       </Attributes>
@@ -214,9 +237,11 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElementCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As ConnectionManagementElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ConnectionManagementElement ^ default[System::String ^] { System::Net::Configuration::ConnectionManagementElement ^ get(System::String ^ name); void set(System::String ^ name, System::Net::Configuration::ConnectionManagementElement ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Net.Configuration.ConnectionManagementElement with get, set" Usage="System.Net.Configuration.ConnectionManagementElementCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,9 +274,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.Remove(System.Net.Configuration.ConnectionManagementElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As ConnectionManagementElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Net::Configuration::ConnectionManagementElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Net.Configuration.ConnectionManagementElement -&gt; unit" Usage="connectionManagementElementCollection.Remove element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,9 +301,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="connectionManagementElementCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,9 +328,11 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElementCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="connectionManagementElementCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

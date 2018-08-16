@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IArrayContract`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IArrayContract(Of C)&#xA;Implements IEnumerableContract(Of C)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename C&gt;&#xA; where C : IContractpublic interface class IArrayContract : System::AddIn::Contract::Collections::IEnumerableContract&lt;C&gt;" />
+  <TypeSignature Language="F#" Value="type IArrayContract&lt;'C (requires 'C :&gt; IContract)&gt; = interface&#xA;    interface IEnumerableContract&lt;'C (requires 'C :&gt; IContract)&gt;&#xA;    interface IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -41,9 +43,11 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IArrayContract`1.GetCount" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCount () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCount();" />
+      <MemberSignature Language="F#" Value="abstract member GetCount : unit -&gt; int" Usage="iArrayContract.GetCount " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,9 +66,11 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IArrayContract`1.GetItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItem (index As Integer) As C" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; C GetItem(int index);" />
+      <MemberSignature Language="F#" Value="abstract member GetItem : int -&gt; 'C" Usage="iArrayContract.GetItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,9 +98,11 @@
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IArrayContract`1.SetItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetItem (index As Integer, value As C)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(int index, C value);" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : int * 'C -&gt; unit" Usage="iArrayContract.SetItem (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

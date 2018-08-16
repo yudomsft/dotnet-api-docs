@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class AnnotationSmartLabelStyle&#xA;Inherits SmartLabelStyle" />
   <TypeSignature Language="C++ CLI" Value="public ref class AnnotationSmartLabelStyle : System::Windows::Forms::DataVisualization::Charting::SmartLabelStyle" />
+  <TypeSignature Language="F#" Value="type AnnotationSmartLabelStyle = class&#xA;    inherit SmartLabelStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,10 +14,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultProperty("Enabled")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,11 +65,17 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (chartElement As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationSmartLabelStyle(System::Object ^ chartElement);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle : obj -&gt; System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle" Usage="new System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle chartElement" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="chartElement" Type="System.Object" />
       </Parameters>
@@ -84,26 +91,30 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CalloutBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Transparent")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -128,20 +139,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineAnchorCapStyle As LineAnchorCapStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle CalloutLineAnchorCapStyle { System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineAnchorCapStyle : System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,26 +178,30 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CalloutLineColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -210,20 +226,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineDashStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineDashStyle As ChartDashStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::ChartDashStyle CalloutLineDashStyle { System::Windows::Forms::DataVisualization::Charting::ChartDashStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartDashStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineDashStyle : System.Windows.Forms.DataVisualization.Charting.ChartDashStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineDashStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -248,20 +265,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutLineWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CalloutLineWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutLineWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -286,20 +304,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CalloutStyle As LabelCalloutStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle CalloutStyle { System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LabelCalloutStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.CalloutStyle : System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

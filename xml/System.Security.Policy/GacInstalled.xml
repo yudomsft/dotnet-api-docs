@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.GacInstalled" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GacInstalled&#xA;Inherits EvidenceBase&#xA;Implements IIdentityPermissionFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class GacInstalled sealed : System::Security::Policy::EvidenceBase, System::Security::Policy::IIdentityPermissionFactory" />
+  <TypeSignature Language="F#" Value="type GacInstalled = class&#xA;    inherit EvidenceBase&#xA;    interface IIdentityPermissionFactory" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,6 +17,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-2.0">System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -22,7 +25,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,6 +59,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="gacInstalled.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,9 +117,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; obj" Usage="gacInstalled.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -148,12 +155,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission CreateIdentityPermission(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.CreateIdentityPermission(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ CreateIdentityPermission(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member CreateIdentityPermission : System.Security.Policy.Evidence -&gt; System.Security.IPermission&#xA;override this.CreateIdentityPermission : System.Security.Policy.Evidence -&gt; System.Security.IPermission" Usage="gacInstalled.CreateIdentityPermission evidence" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Policy.IIdentityPermissionFactory.CreateIdentityPermission(System.Security.Policy.Evidence)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -196,9 +205,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="gacInstalled.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -242,9 +253,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="gacInstalled.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -284,9 +297,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="gacInstalled.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

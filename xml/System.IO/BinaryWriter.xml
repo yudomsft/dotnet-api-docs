@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.BinaryWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryWriter&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryWriter : IDisposable" />
+  <TypeSignature Language="F#" Value="type BinaryWriter = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -33,7 +36,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -91,6 +94,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (output As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output);" />
+      <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter output" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -131,6 +137,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -143,6 +151,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="output" Type="System.IO.Stream" />
       </Parameters>
@@ -176,6 +189,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream output, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream * System.Text.Encoding -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter (output, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -185,6 +199,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -224,6 +240,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream output, class System.Text.Encoding encoding, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryWriter(System::IO::Stream ^ output, System::Text::Encoding ^ encoding, bool leaveOpen);" />
+      <MemberSignature Language="F#" Value="new System.IO.BinaryWriter : System.IO.Stream * System.Text.Encoding * bool -&gt; System.IO.BinaryWriter" Usage="new System.IO.BinaryWriter (output, encoding, leaveOpen)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -269,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.BinaryWriter.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.BinaryWriter.BaseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -278,6 +296,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -321,9 +341,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="binaryWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -371,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="binaryWriter.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -395,6 +419,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -410,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="binaryWriter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -419,6 +449,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -450,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="binaryWriter.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -459,6 +492,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -497,6 +532,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.BinaryWriter.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As BinaryWriter " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::BinaryWriter ^ Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.BinaryWriter" Usage="System.IO.BinaryWriter.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -506,6 +542,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -539,6 +577,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.BinaryWriter.OutStream" />
       <MemberSignature Language="VB.NET" Value="Protected OutStream As Stream " />
       <MemberSignature Language="C++ CLI" Value="protected: System::IO::Stream ^ OutStream;" />
+      <MemberSignature Language="F#" Value="val mutable OutStream : System.IO.Stream" Usage="System.IO.BinaryWriter.OutStream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -548,6 +587,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -581,6 +622,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Seek(System.Int32,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Seek (offset As Integer, origin As SeekOrigin) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long Seek(int offset, System::IO::SeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="abstract member Seek : int * System.IO.SeekOrigin -&gt; int64&#xA;override this.Seek : int * System.IO.SeekOrigin -&gt; int64" Usage="binaryWriter.Seek (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -590,6 +632,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -635,6 +679,30 @@
         <exception cref="T:System.ArgumentException">The <see cref="T:System.IO.SeekOrigin" /> value is invalid.</exception>
       </Docs>
     </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="Write">
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -652,6 +720,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(bool value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : bool -&gt; unit&#xA;override this.Write : bool -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -661,6 +730,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -708,6 +779,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Byte value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : byte -&gt; unit&#xA;override this.Write : byte -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -717,6 +789,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -729,6 +803,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -773,6 +852,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Write : byte[] -&gt; unit&#xA;override this.Write : byte[] -&gt; unit" Usage="binaryWriter.Write buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -782,6 +862,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -832,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (ch As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(char ch);" />
+      <MemberSignature Language="F#" Value="abstract member Write : char -&gt; unit&#xA;override this.Write : char -&gt; unit" Usage="binaryWriter.Write ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -841,6 +924,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -854,7 +939,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -907,6 +992,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As Char())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars);" />
+      <MemberSignature Language="F#" Value="abstract member Write : char[] -&gt; unit&#xA;override this.Write : char[] -&gt; unit" Usage="binaryWriter.Write chars" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -916,6 +1002,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -980,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : decimal -&gt; unit&#xA;override this.Write : decimal -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -989,6 +1078,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1041,6 +1132,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(double value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : double -&gt; unit&#xA;override this.Write : double -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1050,6 +1142,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1063,7 +1157,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1103,6 +1197,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(short value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : int16 -&gt; unit&#xA;override this.Write : int16 -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1112,6 +1207,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1166,6 +1263,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(int value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : int -&gt; unit&#xA;override this.Write : int -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1175,6 +1273,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1224,6 +1324,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(long value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : int64 -&gt; unit&#xA;override this.Write : int64 -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1233,6 +1334,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1274,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As ReadOnlySpan(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(ReadOnlySpan&lt;System::Byte&gt; buffer);" />
+      <MemberSignature Language="F#" Value="abstract member Write : ReadOnlySpan&lt;byte&gt; -&gt; unit&#xA;override this.Write : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="binaryWriter.Write buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1297,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As ReadOnlySpan(Of Char))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(ReadOnlySpan&lt;char&gt; chars);" />
+      <MemberSignature Language="F#" Value="abstract member Write : ReadOnlySpan&lt;char&gt; -&gt; unit&#xA;override this.Write : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="binaryWriter.Write chars" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1320,6 +1425,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As SByte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::SByte value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : sbyte -&gt; unit&#xA;override this.Write : sbyte -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1329,6 +1435,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1373,6 +1481,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(float value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : single -&gt; unit&#xA;override this.Write : single -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1382,6 +1491,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1395,7 +1506,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1436,6 +1547,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : string -&gt; unit&#xA;override this.Write : string -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1445,6 +1557,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1458,7 +1572,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1504,6 +1618,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : uint16 -&gt; unit&#xA;override this.Write : uint16 -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1513,6 +1628,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1559,6 +1676,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : uint32 -&gt; unit&#xA;override this.Write : uint32 -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1568,6 +1686,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1614,6 +1734,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="abstract member Write : uint64 -&gt; unit&#xA;override this.Write : uint64 -&gt; unit" Usage="binaryWriter.Write value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1623,6 +1744,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1669,6 +1792,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (buffer As Byte(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Write : byte[] * int * int -&gt; unit&#xA;override this.Write : byte[] * int * int -&gt; unit" Usage="binaryWriter.Write (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1678,6 +1802,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1734,6 +1860,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Write (chars As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;char&gt; ^ chars, int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Write : char[] * int * int -&gt; unit&#xA;override this.Write : char[] * int * int -&gt; unit" Usage="binaryWriter.Write (chars, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1743,6 +1870,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1801,6 +1930,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.BinaryWriter.Write7BitEncodedInt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Write7BitEncodedInt (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Write7BitEncodedInt(int value);" />
+      <MemberSignature Language="F#" Value="member this.Write7BitEncodedInt : int -&gt; unit" Usage="binaryWriter.Write7BitEncodedInt value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1810,6 +1940,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

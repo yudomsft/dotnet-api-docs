@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class GroupItemAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class GroupItemAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type GroupItemAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,9 +25,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GroupItemAutomationPeer.#ctor(System.Windows.Controls.GroupItem)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As GroupItem)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GroupItemAutomationPeer(System::Windows::Controls::GroupItem ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.GroupItemAutomationPeer : System.Windows.Controls.GroupItem -&gt; System.Windows.Automation.Peers.GroupItemAutomationPeer" Usage="new System.Windows.Automation.Peers.GroupItemAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -43,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GroupItemAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="groupItemAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,9 +70,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GroupItemAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="groupItemAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,9 +94,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GroupItemAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="groupItemAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,6 +116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GroupItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="groupItemAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +133,37 @@
         <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.GroupItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" />.</summary>
         <returns>If <paramref name="pattern" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" /> and the <see cref="T:System.Windows.Controls.GroupItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" /> contains an <see cref="T:System.Windows.Controls.Expander" />, this method returns a reference to the current instance of the <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" />.  Otherwise, this method calls the base implementation on <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" /> which returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOffscreenCore">
+      <MemberSignature Language="C#" Value="protected override bool IsOffscreenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsOffscreenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GroupItemAutomationPeer.IsOffscreenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsOffscreenCore () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsOffscreenCore();" />
+      <MemberSignature Language="F#" Value="override this.IsOffscreenCore : unit -&gt; bool" Usage="groupItemAutomationPeer.IsOffscreenCore " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.GroupItem" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" /> object is off the screen. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" />.</summary>
+        <returns><see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method does not indicate whether the element is visible.
+In some circumstances, the element can be on the screen but still not be visible (for example, an element that is obscured by other elements).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

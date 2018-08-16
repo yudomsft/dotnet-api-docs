@@ -4,20 +4,26 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IAccessor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAccessor" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAccessor" />
+  <TypeSignature Language="F#" Value="type IAccessor = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0c733a8c-2a1c-11ce-ade5-00aa0044773d")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,9 +46,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.AddRefAccessor(System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRefAccessor (hAccessor As Integer, ByRef cRefCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRefAccessor(int hAccessor, [Runtime::InteropServices::Out] int % cRefCount);" />
+      <MemberSignature Language="F#" Value="abstract member AddRefAccessor : int *  -&gt; unit" Usage="iAccessor.AddRefAccessor (hAccessor, cRefCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -50,7 +59,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hAccessor" Type="System.Int32" />
-        <Parameter Name="cRefCount" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cRefCount" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hAccessor">The handle of the accessor for which to increment the reference count.</param>
@@ -74,9 +83,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.CreateAccessor(System.Int32,System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[],System.Int32,System.Int32@,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateAccessor (accessorFlags As Integer, cBindings As Integer, bindings As DBBINDING(), cbRowSize As Integer, ByRef hAccessor As Integer, pBindStatus As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateAccessor(int accessorFlags, int cBindings, cli::array &lt;Microsoft::VisualBasic::Compatibility::VB6::DBBINDING&gt; ^ bindings, int cbRowSize, [Runtime::InteropServices::Out] int % hAccessor, IntPtr pBindStatus);" />
+      <MemberSignature Language="F#" Value="abstract member CreateAccessor : int * int * Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[] * int *  * nativeint -&gt; unit" Usage="iAccessor.CreateAccessor (accessorFlags, cBindings, bindings, cbRowSize, hAccessor, pBindStatus)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,7 +99,7 @@
         <Parameter Name="cBindings" Type="System.Int32" />
         <Parameter Name="bindings" Type="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING[]" />
         <Parameter Name="cbRowSize" Type="System.Int32" />
-        <Parameter Name="hAccessor" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="hAccessor" Type="System.Int32" RefType="out" />
         <Parameter Name="pBindStatus" Type="System.IntPtr" />
       </Parameters>
       <Docs>
@@ -116,9 +128,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.GetBindings(System.Int32,System.Int32@,System.Int32@,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetBindings (hAccessor As Integer, ByRef accessorFlags As Integer, ByRef cBindings As Integer, ByRef rgBindings As IntPtr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetBindings(int hAccessor, [Runtime::InteropServices::Out] int % accessorFlags, [Runtime::InteropServices::Out] int % cBindings, [Runtime::InteropServices::Out] IntPtr % rgBindings);" />
+      <MemberSignature Language="F#" Value="abstract member GetBindings : int *  *  *  -&gt; unit" Usage="iAccessor.GetBindings (hAccessor, accessorFlags, cBindings, rgBindings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +141,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hAccessor" Type="System.Int32" />
-        <Parameter Name="accessorFlags" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="cBindings" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="rgBindings" Type="System.IntPtr&amp;" RefType="out" />
+        <Parameter Name="accessorFlags" Type="System.Int32" RefType="out" />
+        <Parameter Name="cBindings" Type="System.Int32" RefType="out" />
+        <Parameter Name="rgBindings" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hAccessor">The handle of the accessor for which to return the bindings.</param>
@@ -154,9 +169,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IAccessor.ReleaseAccessor(System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseAccessor (hAccessor As Integer, ByRef cRefCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseAccessor(int hAccessor, [Runtime::InteropServices::Out] int % cRefCount);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseAccessor : int *  -&gt; unit" Usage="iAccessor.ReleaseAccessor (hAccessor, cRefCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,7 +182,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="hAccessor" Type="System.Int32" />
-        <Parameter Name="cRefCount" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cRefCount" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="hAccessor">The handle of the accessor to release.</param>

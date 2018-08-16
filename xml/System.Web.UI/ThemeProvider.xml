@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ThemeProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThemeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThemeProvider sealed" />
+  <TypeSignature Language="F#" Value="type ThemeProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,9 +37,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeProvider.#ctor(System.ComponentModel.Design.IDesignerHost,System.String,System.String,System.String[],System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (host As IDesignerHost, name As String, themeDefinition As String, cssFiles As String(), themePath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThemeProvider(System::ComponentModel::Design::IDesignerHost ^ host, System::String ^ name, System::String ^ themeDefinition, cli::array &lt;System::String ^&gt; ^ cssFiles, System::String ^ themePath);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ThemeProvider : System.ComponentModel.Design.IDesignerHost * string * string * string[] * string -&gt; System.Web.UI.ThemeProvider" Usage="new System.Web.UI.ThemeProvider (host, name, themeDefinition, cssFiles, themePath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -70,11 +74,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ThemeProvider.ContentHashCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentHashCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ContentHashCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentHashCode : int" Usage="System.Web.UI.ThemeProvider.ContentHashCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -90,11 +101,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ThemeProvider.CssFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CssFiles As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ CssFiles { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CssFiles : System.Collections.ICollection" Usage="System.Web.UI.ThemeProvider.CssFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
@@ -117,11 +135,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ThemeProvider.DesignerHost" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerHost As IDesignerHost" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::IDesignerHost ^ DesignerHost { System::ComponentModel::Design::IDesignerHost ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerHost : System.ComponentModel.Design.IDesignerHost" Usage="System.Web.UI.ThemeProvider.DesignerHost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.IDesignerHost</ReturnType>
       </ReturnValue>
@@ -137,9 +162,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.SkinBuilder GetSkinBuilder(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeProvider.GetSkinBuilder(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::SkinBuilder ^ GetSkinBuilder(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="member this.GetSkinBuilder : System.Web.UI.Control -&gt; System.Web.UI.SkinBuilder" Usage="themeProvider.GetSkinBuilder control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,9 +195,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionary GetSkinControlBuildersForControlType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeProvider.GetSkinControlBuildersForControlType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ GetSkinControlBuildersForControlType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetSkinControlBuildersForControlType : Type -&gt; System.Collections.IDictionary" Usage="themeProvider.GetSkinControlBuildersForControlType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,9 +220,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ICollection GetSkinsForControl(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeProvider.GetSkinsForControl(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetSkinsForControl(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.GetSkinsForControl : Type -&gt; System.Collections.ICollection" Usage="themeProvider.GetSkinsForControl type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,11 +253,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ThemeProvider.ThemeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThemeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThemeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThemeName : string" Usage="System.Web.UI.ThemeProvider.ThemeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

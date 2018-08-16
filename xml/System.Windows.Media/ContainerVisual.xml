@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ContainerVisual" />
   <TypeSignature Language="VB.NET" Value="Public Class ContainerVisual&#xA;Inherits Visual" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContainerVisual : System::Windows::Media::Visual" />
+  <TypeSignature Language="F#" Value="type ContainerVisual = class&#xA;    inherit Visual" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -41,6 +43,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -65,14 +68,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.BitmapEffect" />
       <MemberSignature Language="VB.NET" Value="Public Property BitmapEffect As BitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::BitmapEffect ^ BitmapEffect { System::Windows::Media::Effects::BitmapEffect ^ get(); void set(System::Windows::Media::Effects::BitmapEffect ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BitmapEffect : System.Windows.Media.Effects.BitmapEffect with get, set" Usage="System.Windows.Media.ContainerVisual.BitmapEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Obsolete("Avoid using BitmapEffects as they have very poor performance characteristics.  They will be deprecated in a future version.  Consider using the UIElement.Effect property and ShaderEffects where appropriate instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -90,14 +98,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.BitmapEffectInput" />
       <MemberSignature Language="VB.NET" Value="Public Property BitmapEffectInput As BitmapEffectInput" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::BitmapEffectInput ^ BitmapEffectInput { System::Windows::Media::Effects::BitmapEffectInput ^ get(); void set(System::Windows::Media::Effects::BitmapEffectInput ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BitmapEffectInput : System.Windows.Media.Effects.BitmapEffectInput with get, set" Usage="System.Windows.Media.ContainerVisual.BitmapEffectInput" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Obsolete("Avoid using BitmapEffects as they have very poor performance characteristics.  They will be deprecated in a future version.  Consider using the UIElement.Effect property and ShaderEffects where appropriate instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -115,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.CacheMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CacheMode As CacheMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::CacheMode ^ CacheMode { System::Windows::Media::CacheMode ^ get(); void set(System::Windows::Media::CacheMode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CacheMode : System.Windows.Media.CacheMode with get, set" Usage="System.Windows.Media.ContainerVisual.CacheMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,9 +160,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As VisualCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::VisualCollection ^ Children { System::Windows::Media::VisualCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.VisualCollection" Usage="System.Windows.Media.ContainerVisual.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,9 +192,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Clip" />
       <MemberSignature Language="VB.NET" Value="Public Property Clip As Geometry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Geometry ^ Clip { System::Windows::Media::Geometry ^ get(); void set(System::Windows::Media::Geometry ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Clip : System.Windows.Media.Geometry with get, set" Usage="System.Windows.Media.ContainerVisual.Clip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -197,9 +215,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.ContentBounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentBounds As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect ContentBounds { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentBounds : System.Windows.Rect" Usage="System.Windows.Media.ContainerVisual.ContentBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -232,9 +252,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.DescendantBounds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DescendantBounds As Rect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect DescendantBounds { System::Windows::Rect get(); };" />
+      <MemberSignature Language="F#" Value="member this.DescendantBounds : System.Windows.Rect" Usage="System.Windows.Media.ContainerVisual.DescendantBounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -267,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Effect" />
       <MemberSignature Language="VB.NET" Value="Public Property Effect As Effect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::Effect ^ Effect { System::Windows::Media::Effects::Effect ^ get(); void set(System::Windows::Media::Effects::Effect ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Effect : System.Windows.Media.Effects.Effect with get, set" Usage="System.Windows.Media.ContainerVisual.Effect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -289,9 +312,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ContainerVisual.GetVisualChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function GetVisualChild (index As Integer) As Visual" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="containerVisual.GetVisualChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,9 +365,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.HitTestResult HitTest(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ContainerVisual.HitTest(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::HitTestResult ^ HitTest(System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="override this.HitTest : System.Windows.Point -&gt; System.Windows.Media.HitTestResult" Usage="containerVisual.HitTest point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,9 +405,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void HitTest(class System.Windows.Media.HitTestFilterCallback filterCallback, class System.Windows.Media.HitTestResultCallback resultCallback, class System.Windows.Media.HitTestParameters hitTestParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ContainerVisual.HitTest(System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.HitTestParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void HitTest(System::Windows::Media::HitTestFilterCallback ^ filterCallback, System::Windows::Media::HitTestResultCallback ^ resultCallback, System::Windows::Media::HitTestParameters ^ hitTestParameters);" />
+      <MemberSignature Language="F#" Value="override this.HitTest : System.Windows.Media.HitTestFilterCallback * System.Windows.Media.HitTestResultCallback * System.Windows.Media.HitTestParameters -&gt; unit" Usage="containerVisual.HitTest (filterCallback, resultCallback, hitTestParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,9 +441,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector Offset { System::Windows::Vector get(); void set(System::Windows::Vector value); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : System.Windows.Vector with get, set" Usage="System.Windows.Media.ContainerVisual.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -432,9 +463,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Opacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Opacity As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Opacity { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Opacity : double with get, set" Usage="System.Windows.Media.ContainerVisual.Opacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -453,9 +486,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.OpacityMask" />
       <MemberSignature Language="VB.NET" Value="Public Property OpacityMask As Brush" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ OpacityMask { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OpacityMask : System.Windows.Media.Brush with get, set" Usage="System.Windows.Media.ContainerVisual.OpacityMask" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -480,9 +515,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Parent { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.DependencyObject" Usage="System.Windows.Media.ContainerVisual.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -509,9 +546,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Transform" />
       <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ Transform { System::Windows::Media::Transform ^ get(); void set(System::Windows::Media::Transform ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Transform with get, set" Usage="System.Windows.Media.ContainerVisual.Transform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,9 +575,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.VisualChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable ReadOnly Property VisualChildrenCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int VisualChildrenCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Media.ContainerVisual.VisualChildrenCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -577,13 +618,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.XSnappingGuidelines" />
       <MemberSignature Language="VB.NET" Value="Public Property XSnappingGuidelines As DoubleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DoubleCollection ^ XSnappingGuidelines { System::Windows::Media::DoubleCollection ^ get(); void set(System::Windows::Media::DoubleCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XSnappingGuidelines : System.Windows.Media.DoubleCollection with get, set" Usage="System.Windows.Media.ContainerVisual.XSnappingGuidelines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
       </Attributes>
@@ -612,13 +655,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.YSnappingGuidelines" />
       <MemberSignature Language="VB.NET" Value="Public Property YSnappingGuidelines As DoubleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::DoubleCollection ^ YSnappingGuidelines { System::Windows::Media::DoubleCollection ^ get(); void set(System::Windows::Media::DoubleCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.YSnappingGuidelines : System.Windows.Media.DoubleCollection with get, set" Usage="System.Windows.Media.ContainerVisual.YSnappingGuidelines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
       </Attributes>

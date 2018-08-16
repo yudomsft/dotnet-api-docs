@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.FieldMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Structure FieldMetadata" />
   <TypeSignature Language="C++ CLI" Value="public value class FieldMetadata" />
+  <TypeSignature Language="F#" Value="type FieldMetadata = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,9 +25,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.FieldMetadata.#ctor(System.Int32,System.Data.Metadata.Edm.EdmMember)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ordinal As Integer, fieldType As EdmMember)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FieldMetadata(int ordinal, System::Data::Metadata::Edm::EdmMember ^ fieldType);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.FieldMetadata : int * System.Data.Metadata.Edm.EdmMember -&gt; System.Data.Common.FieldMetadata" Usage="new System.Data.Common.FieldMetadata (ordinal, fieldType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -45,11 +49,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.FieldMetadata.FieldType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldType As EdmMember" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmMember ^ FieldType { System::Data::Metadata::Edm::EdmMember ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldType : System.Data.Metadata.Edm.EdmMember" Usage="System.Data.Common.FieldMetadata.FieldType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.EdmMember</ReturnType>
       </ReturnValue>
@@ -65,11 +76,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.FieldMetadata.Ordinal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ordinal As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Ordinal { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Ordinal : int" Usage="System.Data.Common.FieldMetadata.Ordinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

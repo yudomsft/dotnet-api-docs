@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceHost" />
   <TypeSignature Language="VB.NET" Value="Public Class DataServiceHost&#xA;Inherits WebServiceHost" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceHost : System::ServiceModel::Web::WebServiceHost" />
+  <TypeSignature Language="F#" Value="type DataServiceHost = class&#xA;    inherit WebServiceHost" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -38,11 +40,18 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceHost.#ctor(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceType As Type, baseAddresses As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.DataServiceHost : Type * Uri[] -&gt; System.Data.Services.DataServiceHost" Usage="new System.Data.Services.DataServiceHost (serviceType, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="serviceType" Type="System.Type" />
         <Parameter Name="baseAddresses" Type="System.Uri[]" />

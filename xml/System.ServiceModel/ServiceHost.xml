@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceHost" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceHost&#xA;Inherits ServiceHostBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceHost : System::ServiceModel::ServiceHostBase" />
+  <TypeSignature Language="F#" Value="type ServiceHost = class&#xA;    inherit ServiceHostBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -54,8 +56,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceHost" /> class.</summary>
@@ -75,9 +83,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.#ctor(System.Object,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (singletonInstance As Object, ParamArray baseAddresses As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHost(System::Object ^ singletonInstance, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceHost : obj * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="new System.ServiceModel.ServiceHost (singletonInstance, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -120,9 +130,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.#ctor(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (serviceType As Type, ParamArray baseAddresses As Uri())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceHost(Type ^ serviceType, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="new System.ServiceModel.ServiceHost (serviceType, baseAddresses)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -173,11 +185,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, string address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHost.AddServiceEndpoint (implementedContract, binding, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
       </ReturnValue>
@@ -210,11 +229,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHost.AddServiceEndpoint (implementedContract, binding, address)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
       </ReturnValue>
@@ -247,9 +273,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, string address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.String,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, System::String ^ address, Uri ^ listenUri);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * string * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHost.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,9 +319,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Type implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address, class System.Uri listenUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Description::ServiceEndpoint ^ AddServiceEndpoint(Type ^ implementedContract, System::ServiceModel::Channels::Binding ^ binding, Uri ^ address, Uri ^ listenUri);" />
+      <MemberSignature Language="F#" Value="override this.AddServiceEndpoint : Type * System.ServiceModel.Channels.Binding * Uri * Uri -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="serviceHost.AddServiceEndpoint (implementedContract, binding, address, listenUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -337,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.ApplyConfiguration" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ApplyConfiguration ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ApplyConfiguration();" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : unit -&gt; unit" Usage="serviceHost.ApplyConfiguration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -357,16 +388,18 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDescription (ByRef implementedContracts As IDictionary(Of String, ContractDescription)) As ServiceDescription" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Description::ServiceDescription ^ CreateDescription([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::String ^, System::ServiceModel::Description::ContractDescription ^&gt; ^ % implementedContracts);" />
+      <MemberSignature Language="F#" Value="override this.CreateDescription :  -&gt; System.ServiceModel.Description.ServiceDescription" Usage="serviceHost.CreateDescription implementedContracts" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Description.ServiceDescription</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="implementedContracts" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;&amp;" RefType="out" />
+        <Parameter Name="implementedContracts" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="implementedContracts">The <see cref="T:System.Collections.Generic.IDictionary`2" /> with key pairs of type (<see cref="T:System.String" />, <see cref="T:System.ServiceModel.Description.ContractDescription" />) that contains the keyed-contracts of the hosted service that have been implemented.</param>
@@ -406,9 +439,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.InitializeDescription(System.Object,System.ServiceModel.UriSchemeKeyedCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeDescription (singletonInstance As Object, baseAddresses As UriSchemeKeyedCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeDescription(System::Object ^ singletonInstance, System::ServiceModel::UriSchemeKeyedCollection ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="override this.InitializeDescription : obj * System.ServiceModel.UriSchemeKeyedCollection -&gt; unit" Usage="serviceHost.InitializeDescription (singletonInstance, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,9 +468,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.InitializeDescription(System.Type,System.ServiceModel.UriSchemeKeyedCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeDescription (serviceType As Type, baseAddresses As UriSchemeKeyedCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeDescription(Type ^ serviceType, System::ServiceModel::UriSchemeKeyedCollection ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="override this.InitializeDescription : Type * System.ServiceModel.UriSchemeKeyedCollection -&gt; unit" Usage="serviceHost.InitializeDescription (serviceType, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -460,9 +497,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceHost.OnClosed" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed();" />
+      <MemberSignature Language="F#" Value="override this.OnClosed : unit -&gt; unit" Usage="serviceHost.OnClosed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,11 +545,18 @@ protected override void OnClosed()
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceHost.SingletonInstance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingletonInstance As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SingletonInstance { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstance : obj" Usage="System.ServiceModel.ServiceHost.SingletonInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

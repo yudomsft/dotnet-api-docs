@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.MarshalByRefObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MarshalByRefObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class MarshalByRefObject abstract" />
+  <TypeSignature Language="F#" Value="type MarshalByRefObject = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,7 +26,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -80,6 +83,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -104,12 +109,20 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.CreateObjRef(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateObjRef (requestedType As Type) As ObjRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::ObjRef ^ CreateObjRef(Type ^ requestedType);" />
+      <MemberSignature Language="F#" Value="abstract member CreateObjRef : Type -&gt; System.Runtime.Remoting.ObjRef&#xA;override this.CreateObjRef : Type -&gt; System.Runtime.Remoting.ObjRef" Usage="marshalByRefObject.CreateObjRef requestedType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.ObjRef</ReturnType>
       </ReturnValue>
@@ -139,9 +152,12 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.GetLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetLifetimeService();" />
+      <MemberSignature Language="F#" Value="abstract member GetLifetimeService : unit -&gt; obj&#xA;override this.GetLifetimeService : unit -&gt; obj" Usage="marshalByRefObject.GetLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -154,6 +170,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -179,9 +200,12 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.InitializeLifetimeService" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function InitializeLifetimeService () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ InitializeLifetimeService();" />
+      <MemberSignature Language="F#" Value="abstract member InitializeLifetimeService : unit -&gt; obj&#xA;override this.InitializeLifetimeService : unit -&gt; obj" Usage="marshalByRefObject.InitializeLifetimeService " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -194,6 +218,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -238,9 +267,11 @@
       <MemberSignature Language="DocId" Value="M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Function MemberwiseClone (cloneIdentity As Boolean) As MarshalByRefObject" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MarshalByRefObject ^ MemberwiseClone(bool cloneIdentity);" />
+      <MemberSignature Language="F#" Value="override this.MemberwiseClone : bool -&gt; MarshalByRefObject" Usage="marshalByRefObject.MemberwiseClone cloneIdentity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

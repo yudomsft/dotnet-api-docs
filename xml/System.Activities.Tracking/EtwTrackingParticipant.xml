@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.EtwTrackingParticipant" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EtwTrackingParticipant&#xA;Inherits TrackingParticipant" />
   <TypeSignature Language="C++ CLI" Value="public ref class EtwTrackingParticipant sealed : System::Activities::Tracking::TrackingParticipant" />
+  <TypeSignature Language="F#" Value="type EtwTrackingParticipant = class&#xA;    inherit TrackingParticipant" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,11 +41,20 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.EtwTrackingParticipant.ApplicationReference" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationReference As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationReference { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationReference : string with get, set" Usage="System.Activities.Tracking.EtwTrackingParticipant.ApplicationReference" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -60,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.EtwTrackingParticipant.BeginTrack(System.Activities.Tracking.TrackingRecord,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function BeginTrack (record As TrackingRecord, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override IAsyncResult ^ BeginTrack(System::Activities::Tracking::TrackingRecord ^ record, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginTrack : System.Activities.Tracking.TrackingRecord * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="etwTrackingParticipant.BeginTrack (record, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -90,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.EtwTrackingParticipant.EndTrack(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub EndTrack (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void EndTrack(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="override this.EndTrack : IAsyncResult -&gt; unit" Usage="etwTrackingParticipant.EndTrack result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,11 +125,17 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.EtwTrackingParticipant.EtwProviderId" />
       <MemberSignature Language="VB.NET" Value="Public Property EtwProviderId As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid EtwProviderId { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.EtwProviderId : Guid with get, set" Usage="System.Activities.Tracking.EtwTrackingParticipant.EtwProviderId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
@@ -140,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.EtwTrackingParticipant.Track(System.Activities.Tracking.TrackingRecord,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Track (record As TrackingRecord, timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Track(System::Activities::Tracking::TrackingRecord ^ record, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.Track : System.Activities.Tracking.TrackingRecord * TimeSpan -&gt; unit" Usage="etwTrackingParticipant.Track (record, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

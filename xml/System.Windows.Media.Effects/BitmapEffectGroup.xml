@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BitmapEffectGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapEffectGroup&#xA;Inherits BitmapEffect" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapEffectGroup sealed : System::Windows::Media::Effects::BitmapEffect" />
+  <TypeSignature Language="F#" Value="type BitmapEffectGroup = class&#xA;    inherit BitmapEffect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Children")</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,8 +43,14 @@ Effects in a BitmapEffectGroup
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Initializes a new instance of the <see cref="T:System.Windows.Media.Effects.BitmapEffectGroup" /> class.</summary>
@@ -55,9 +63,11 @@ Effects in a BitmapEffectGroup
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectGroup.Children" />
       <MemberSignature Language="VB.NET" Value="Public Property Children As BitmapEffectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::BitmapEffectCollection ^ Children { System::Windows::Media::Effects::BitmapEffectCollection ^ get(); void set(System::Windows::Media::Effects::BitmapEffectCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.Effects.BitmapEffectCollection with get, set" Usage="System.Windows.Media.Effects.BitmapEffectGroup.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,9 +99,11 @@ Effects in a BitmapEffectGroup
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BitmapEffectGroup.ChildrenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildrenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildrenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ChildrenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.BitmapEffectGroup.ChildrenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,9 +127,11 @@ Effects in a BitmapEffectGroup
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectGroup.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapEffectGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectGroup ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BitmapEffectGroup" Usage="bitmapEffectGroup.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,9 +159,11 @@ Effects in a BitmapEffectGroup
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectGroup.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapEffectGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectGroup ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BitmapEffectGroup" Usage="bitmapEffectGroup.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,9 +191,11 @@ Effects in a BitmapEffectGroup
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectGroup.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bitmapEffectGroup.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,16 +214,18 @@ Effects in a BitmapEffectGroup
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectGroup.CreateUnmanagedEffect" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateUnmanagedEffect () As SafeHandle" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::SafeHandle ^ CreateUnmanagedEffect();" />
+      <MemberSignature Language="F#" Value="override this.CreateUnmanagedEffect : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="bitmapEffectGroup.CreateUnmanagedEffect " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -225,16 +245,18 @@ Effects in a BitmapEffectGroup
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectGroup.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateUnmanagedPropertyState (unmanagedEffect As SafeHandle)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateUnmanagedPropertyState(System::Runtime::InteropServices::SafeHandle ^ unmanagedEffect);" />
+      <MemberSignature Language="F#" Value="override this.UpdateUnmanagedPropertyState : System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="bitmapEffectGroup.UpdateUnmanagedPropertyState unmanagedEffect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Span" />
   <TypeSignature Language="VB.NET" Value="Public Class Span&#xA;Inherits Inline" />
   <TypeSignature Language="C++ CLI" Value="public ref class Span : System::Windows::Documents::Inline" />
+  <TypeSignature Language="F#" Value="type Span = class&#xA;    inherit Inline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Inlines")</AttributeName>
     </Attribute>
   </Attributes>
@@ -71,8 +73,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Documents.Span" /> class.</summary>
@@ -85,11 +93,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.#ctor(System.Windows.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Span(System::Windows::Documents::Inline ^ childInline);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Span : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Span" Usage="new System.Windows.Documents.Span childInline" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="childInline" Type="System.Windows.Documents.Inline" />
       </Parameters>
@@ -115,9 +130,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (childInline As Inline, insertionPosition As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Span(System::Windows::Documents::Inline ^ childInline, System::Windows::Documents::TextPointer ^ insertionPosition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Span : System.Windows.Documents.Inline * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Span" Usage="new System.Windows.Documents.Span (childInline, insertionPosition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -147,9 +164,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As TextPointer, end As TextPointer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Span(System::Windows::Documents::TextPointer ^ start, System::Windows::Documents::TextPointer ^ end);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Span : System.Windows.Documents.TextPointer * System.Windows.Documents.TextPointer -&gt; System.Windows.Documents.Span" Usage="new System.Windows.Documents.Span (start, end)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -190,14 +209,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Span.Inlines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inlines As InlineCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::InlineCollection ^ Inlines { System::Windows::Documents::InlineCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inlines : System.Windows.Documents.InlineCollection" Usage="System.Windows.Documents.Span.Inlines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -224,13 +248,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Span.ShouldSerializeInlines(System.Windows.Markup.XamlDesignerSerializationManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeInlines (manager As XamlDesignerSerializationManager) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeInlines(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeInlines : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="span.ShouldSerializeInlines manager" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

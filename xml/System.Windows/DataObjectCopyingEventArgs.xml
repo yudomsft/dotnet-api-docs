@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectCopyingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataObjectCopyingEventArgs&#xA;Inherits DataObjectEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataObjectCopyingEventArgs sealed : System::Windows::DataObjectEventArgs" />
+  <TypeSignature Language="F#" Value="type DataObjectCopyingEventArgs = class&#xA;    inherit DataObjectEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,9 +32,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectCopyingEventArgs.#ctor(System.Windows.IDataObject,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataObject As IDataObject, isDragDrop As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectCopyingEventArgs(System::Windows::IDataObject ^ dataObject, bool isDragDrop);" />
+      <MemberSignature Language="F#" Value="new System.Windows.DataObjectCopyingEventArgs : System.Windows.IDataObject * bool -&gt; System.Windows.DataObjectCopyingEventArgs" Usage="new System.Windows.DataObjectCopyingEventArgs (dataObject, isDragDrop)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -60,11 +64,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectCopyingEventArgs.DataObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataObject As IDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IDataObject ^ DataObject { System::Windows::IDataObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataObject : System.Windows.IDataObject" Usage="System.Windows.DataObjectCopyingEventArgs.DataObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.IDataObject</ReturnType>
       </ReturnValue>
@@ -80,9 +91,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectCopyingEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dataObjectCopyingEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

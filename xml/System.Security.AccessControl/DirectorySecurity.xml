@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.DirectorySecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DirectorySecurity&#xA;Inherits FileSystemSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectorySecurity sealed : System::Security::AccessControl::FileSystemSecurity" />
+  <TypeSignature Language="F#" Value="type DirectorySecurity = class&#xA;    inherit FileSystemSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -18,6 +20,11 @@
     <BaseTypeName>System.Security.AccessControl.FileSystemSecurity</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0">
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the access control and audit security for a directory. This class cannot be inherited.</summary>
     <remarks>
@@ -78,9 +85,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DirectorySecurity" /> class.</summary>
@@ -101,6 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectorySecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, includeSections As AccessControlSections)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectorySecurity(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.DirectorySecurity : string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.DirectorySecurity" Usage="new System.Security.AccessControl.DirectorySecurity (name, includeSections)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -109,9 +123,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
@@ -135,7 +155,7 @@
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the directory.</exception>
         <exception cref="T:System.NotSupportedException">The <paramref name="name" /> parameter is in an invalid format.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Microsoft Windows 2000 or later.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.Security.AccessControl.PrivilegeNotHeldException">The current system account does not have administrative privileges.</exception>
         <exception cref="T:System.SystemException">The directory could not be found.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The <paramref name="name" /> parameter specified a directory that is read-only.  

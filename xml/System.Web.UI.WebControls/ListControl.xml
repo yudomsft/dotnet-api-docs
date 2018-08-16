@@ -4,12 +4,16 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ListControl&#xA;Inherits DataBoundControl&#xA;Implements IEditableTextControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListControl abstract : System::Web::UI::WebControls::DataBoundControl, System::Web::UI::IEditableTextControl" />
+  <TypeSignature Language="F#" Value="type ListControl = class&#xA;    inherit DataBoundControl&#xA;    interface IEditableTextControl&#xA;    interface ITextControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Web.UI.WebControls.DataBoundControl</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.Web.UI.WebControls.WebControl</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -17,20 +21,35 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("SelectedIndexChanged")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.ListControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ControlValueProperty("SelectedValue")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.ListControlDataBindingHandler, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ParseChildren(true, "Items")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.DefaultProperty("DataSource")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.ListControlDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.ListControlDataBindingHandler, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.ListControlDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.WebControls.ListControlDataBindingHandler, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -78,6 +97,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -104,9 +125,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="listControl.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,16 +161,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.AppendDataBoundItems" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AppendDataBoundItems As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AppendDataBoundItems { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AppendDataBoundItems : bool with get, set" Usage="System.Web.UI.WebControls.ListControl.AppendDataBoundItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -187,16 +212,19 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.AutoPostBack" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoPostBack As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoPostBack { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoPostBack : bool with get, set" Usage="System.Web.UI.WebControls.ListControl.AutoPostBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -237,16 +265,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.ListControl.CausesValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -283,9 +313,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.ClearSelection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ClearSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ClearSelection();" />
+      <MemberSignature Language="F#" Value="abstract member ClearSelection : unit -&gt; unit&#xA;override this.ClearSelection : unit -&gt; unit" Usage="listControl.ClearSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,22 +339,83 @@
         <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
       </Docs>
     </Member>
+    <Member MemberName="DataMember">
+      <MemberSignature Language="C#" Value="public virtual string DataMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.DataMember" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataMember As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Web.UI.WebControls.ListControl.DataMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public virtual object DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Web.UI.WebControls.ListControl.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DataTextField">
       <MemberSignature Language="C#" Value="public virtual string DataTextField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.DataTextField" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataTextField : string with get, set" Usage="System.Web.UI.WebControls.ListControl.DataTextField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -361,16 +455,19 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.DataTextFormatString" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextFormatString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataTextFormatString : string with get, set" Usage="System.Web.UI.WebControls.ListControl.DataTextFormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -447,16 +544,19 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.DataValueField" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataValueField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataValueField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataValueField : string with get, set" Usage="System.Web.UI.WebControls.ListControl.DataValueField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -495,23 +595,29 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.Items" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As ListItemCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListItemCollection ^ Items { System::Web::UI::WebControls::ListItemCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Web.UI.WebControls.ListItemCollection" Usage="System.Web.UI.WebControls.ListControl.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.ListItemsCollectionEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerDefaultProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.ListItemsCollectionEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -545,9 +651,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="listControl.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -580,9 +689,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.OnDataBinding(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBinding (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBinding(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnDataBinding : EventArgs -&gt; unit" Usage="listControl.OnDataBinding e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,9 +716,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="listControl.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -641,9 +756,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedIndexChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedIndexChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectedIndexChanged : EventArgs -&gt; unit&#xA;override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="listControl.OnSelectedIndexChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -690,9 +808,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.OnTextChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnTextChanged : EventArgs -&gt; unit&#xA;override this.OnTextChanged : EventArgs -&gt; unit" Usage="listControl.OnTextChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -727,9 +847,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.PerformDataBinding(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PerformDataBinding (dataSource As IEnumerable)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PerformDataBinding(System::Collections::IEnumerable ^ dataSource);" />
+      <MemberSignature Language="F#" Value="override this.PerformDataBinding : System.Collections.IEnumerable -&gt; unit" Usage="listControl.PerformDataBinding dataSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -760,9 +882,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.PerformSelect" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformSelect ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformSelect();" />
+      <MemberSignature Language="F#" Value="override this.PerformSelect : unit -&gt; unit" Usage="listControl.PerformSelect " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -791,9 +915,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="listControl.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -822,9 +948,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="listControl.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -854,26 +983,32 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.SelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.ListControl.SelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -912,9 +1047,12 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListControl.SelectedIndexChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -952,20 +1090,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedItem As ListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListItem ^ SelectedItem { System::Web::UI::WebControls::ListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : System.Web.UI.WebControls.ListItem" Usage="System.Web.UI.WebControls.ListControl.SelectedItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1000,26 +1144,38 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.SelectedValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectedValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedValue : string with get, set" Usage="System.Web.UI.WebControls.ListControl.SelectedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Bindable(true, System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1082,9 +1238,11 @@ if(DropDownList1.Items.FindByValue("2") != null) {
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.SetPostDataSelection(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub SetPostDataSelection (selectedIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetPostDataSelection(int selectedIndex);" />
+      <MemberSignature Language="F#" Value="member this.SetPostDataSelection : int -&gt; unit" Usage="listControl.SetPostDataSelection selectedIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1112,9 +1270,11 @@ if(DropDownList1.Items.FindByValue("2") != null) {
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.ListControl.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1142,26 +1302,37 @@ if(DropDownList1.Items.FindByValue("2") != null) {
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.ListControl.Text" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.ITextControl.Text</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1195,12 +1366,14 @@ if(DropDownList1.Items.FindByValue("2") != null) {
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ListControl.TextChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ TextChanged;" />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Web.UI.IEditableTextControl.TextChanged</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1233,9 +1406,12 @@ if(DropDownList1.Items.FindByValue("2") != null) {
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="listControl.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1265,16 +1441,18 @@ if(DropDownList1.Items.FindByValue("2") != null) {
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListControl.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.WebControls.ListControl.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1309,9 +1487,11 @@ if(DropDownList1.Items.FindByValue("2") != null) {
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListControl.VerifyMultiSelect" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub VerifyMultiSelect ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void VerifyMultiSelect();" />
+      <MemberSignature Language="F#" Value="abstract member VerifyMultiSelect : unit -&gt; unit&#xA;override this.VerifyMultiSelect : unit -&gt; unit" Usage="listControl.VerifyMultiSelect " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

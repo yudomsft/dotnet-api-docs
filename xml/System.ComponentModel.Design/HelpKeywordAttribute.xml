@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.HelpKeywordAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HelpKeywordAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class HelpKeywordAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type HelpKeywordAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,7 +25,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.All, AllowMultiple=false, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -103,6 +105,7 @@ public class DemoComponent : Component
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -115,6 +118,11 @@ public class DemoComponent : Component
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.HelpKeywordAttribute" /> class.</summary>
@@ -127,9 +135,11 @@ public class DemoComponent : Component
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.HelpKeywordAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (keyword As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HelpKeywordAttribute(System::String ^ keyword);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.HelpKeywordAttribute : string -&gt; System.ComponentModel.Design.HelpKeywordAttribute" Usage="new System.ComponentModel.Design.HelpKeywordAttribute keyword" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -159,9 +169,11 @@ public class DemoComponent : Component
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.HelpKeywordAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (t As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HelpKeywordAttribute(Type ^ t);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.HelpKeywordAttribute : Type -&gt; System.ComponentModel.Design.HelpKeywordAttribute" Usage="new System.ComponentModel.Design.HelpKeywordAttribute t" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -198,9 +210,11 @@ public class DemoComponent : Component
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpKeywordAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As HelpKeywordAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::HelpKeywordAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.Design.HelpKeywordAttribute" Usage="System.ComponentModel.Design.HelpKeywordAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -234,9 +248,11 @@ public class DemoComponent : Component
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.HelpKeywordAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="helpKeywordAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -276,9 +292,11 @@ public class DemoComponent : Component
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.HelpKeywordAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="helpKeywordAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -307,9 +325,11 @@ public class DemoComponent : Component
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.HelpKeywordAttribute.HelpKeyword" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpKeyword As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="System.ComponentModel.Design.HelpKeywordAttribute.HelpKeyword" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -322,6 +342,11 @@ public class DemoComponent : Component
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -337,9 +362,11 @@ public class DemoComponent : Component
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.HelpKeywordAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="helpKeywordAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

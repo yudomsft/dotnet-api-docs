@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConnectionOrientedTransportBindingElement&#xA;Inherits TransportBindingElement&#xA;Implements IPolicyExportExtension, IWsdlExportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionOrientedTransportBindingElement abstract : System::ServiceModel::Channels::TransportBindingElement, System::ServiceModel::Description::IPolicyExportExtension, System::ServiceModel::Description::IWsdlExportExtension" />
+  <TypeSignature Language="F#" Value="type ConnectionOrientedTransportBindingElement = class&#xA;    inherit TransportBindingElement&#xA;    interface IPolicyExportExtension&#xA;    interface IWsdlExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -44,10 +46,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="connectionOrientedTransportBindingElement.CanBuildChannelFactory context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -91,9 +95,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="connectionOrientedTransportBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,12 +142,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ChannelInitializationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ChannelInitializationTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ChannelInitializationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelInitializationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ChannelInitializationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.TimeSpan), "00:00:05")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.TimeSpan), "00:00:30")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -164,10 +183,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ConnectionBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionBufferSize : int with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ConnectionBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -176,6 +197,14 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.DefaultValue(8192)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -199,10 +228,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="connectionOrientedTransportBindingElement.GetProperty context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -249,12 +280,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.HostNameComparisonMode" />
       <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.HostNameComparisonMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
@@ -269,7 +310,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid <see cref="T:System.ServiceModel.HostnameComparisonMode" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid <see cref="T:System.ServiceModel.HostNameComparisonMode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferSize">
@@ -278,10 +319,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -290,6 +333,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.DefaultValue(65536)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -317,12 +365,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxOutputDelay" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxOutputDelay As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxOutputDelay { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxOutputDelay : TimeSpan with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxOutputDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.TimeSpan), "00:00:00.2")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -346,12 +404,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingAccepts As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingAccepts { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingAccepts : int with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -375,12 +443,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingConnections As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingConnections { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingConnections : int with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.DefaultValue(10)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -406,14 +484,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ShouldSerializeMaxPendingAccepts" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMaxPendingAccepts () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMaxPendingAccepts();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMaxPendingAccepts : unit -&gt; bool" Usage="connectionOrientedTransportBindingElement.ShouldSerializeMaxPendingAccepts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -433,14 +512,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ShouldSerializeMaxPendingConnections" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMaxPendingConnections () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMaxPendingConnections();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMaxPendingConnections : unit -&gt; bool" Usage="connectionOrientedTransportBindingElement.ShouldSerializeMaxPendingConnections " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -466,6 +546,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -509,6 +590,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -537,6 +619,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -559,10 +642,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.TransferMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
+      <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.TransferMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -571,6 +656,14 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>

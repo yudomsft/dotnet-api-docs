@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.FixedDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class FixedDocument&#xA;Inherits FrameworkContentElement&#xA;Implements IDocumentPaginatorSource, IServiceProvider, IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class FixedDocument : System::Windows::FrameworkContentElement, IServiceProvider, System::Windows::Documents::IDocumentPaginatorSource, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type FixedDocument = class&#xA;    inherit FrameworkContentElement&#xA;    interface IDocumentPaginatorSource&#xA;    interface IAddChild&#xA;    interface IServiceProvider&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,7 +25,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Pages")</AttributeName>
     </Attribute>
   </Attributes>
@@ -55,6 +57,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -79,14 +82,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.DocumentPaginator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentPaginator As DocumentPaginator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::DocumentPaginator ^ DocumentPaginator { System::Windows::Documents::DocumentPaginator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentPaginator : System.Windows.Documents.DocumentPaginator" Usage="System.Windows.Documents.FixedDocument.DocumentPaginator" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.DocumentPaginator</ReturnType>
       </ReturnValue>
@@ -122,9 +132,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.LogicalChildren" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Documents.FixedDocument.LogicalChildren" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,9 +154,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.FixedDocument.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="fixedDocument.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,14 +180,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.Pages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pages As PageContentCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::PageContentCollection ^ Pages { System::Windows::Documents::PageContentCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pages : System.Windows.Documents.PageContentCollection" Usage="System.Windows.Documents.FixedDocument.Pages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,9 +214,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.PrintTicket" />
       <MemberSignature Language="VB.NET" Value="Public Property PrintTicket As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PrintTicket { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrintTicket : obj with get, set" Usage="System.Windows.Documents.FixedDocument.PrintTicket" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,9 +253,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.FixedDocument.PrintTicketProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PrintTicketProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PrintTicketProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PrintTicketProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.FixedDocument.PrintTicketProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -251,6 +277,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,6 +309,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,6 +336,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,13 +356,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.Windows.Markup.IUriContext.BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FixedDocument.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
-      <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System::Windows::Markup::IUriContext::BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

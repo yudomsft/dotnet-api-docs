@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.XmlDataProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDataProvider&#xA;Inherits DataSourceProvider&#xA;Implements IUriContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlDataProvider : System::Windows::Data::DataSourceProvider, System::Windows::Markup::IUriContext" />
+  <TypeSignature Language="F#" Value="type XmlDataProvider = class&#xA;    inherit DataSourceProvider&#xA;    interface IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +19,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("XmlSerializer")</AttributeName>
     </Attribute>
   </Attributes>
@@ -60,6 +62,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -74,14 +77,24 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property BaseUri As Uri" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Data.XmlDataProvider.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -97,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.BeginQuery" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BeginQuery ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BeginQuery();" />
+      <MemberSignature Language="F#" Value="abstract member BeginQuery : unit -&gt; unit&#xA;override this.BeginQuery : unit -&gt; unit" Usage="xmlDataProvider.BeginQuery " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,14 +141,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.Document" />
       <MemberSignature Language="VB.NET" Value="Public Property Document As XmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDocument ^ Document { System::Xml::XmlDocument ^ get(); void set(System::Xml::XmlDocument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Xml.XmlDocument with get, set" Usage="System.Windows.Data.XmlDataProvider.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,9 +193,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.EndInit" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EndInit ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EndInit();" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="xmlDataProvider.EndInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,14 +215,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAsynchronous As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsynchronous { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAsynchronous : bool with get, set" Usage="System.Windows.Data.XmlDataProvider.IsAsynchronous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -218,13 +251,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.ShouldSerializeSource" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSource () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSource();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSource : unit -&gt; bool" Usage="xmlDataProvider.ShouldSerializeSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -252,13 +290,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.ShouldSerializeXmlSerializer" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeXmlSerializer () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeXmlSerializer();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeXmlSerializer : unit -&gt; bool" Usage="xmlDataProvider.ShouldSerializeXmlSerializer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -286,13 +329,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlDataProvider.ShouldSerializeXPath" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeXPath () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeXPath();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeXPath : unit -&gt; bool" Usage="xmlDataProvider.ShouldSerializeXPath " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -320,11 +368,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Data.XmlDataProvider.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -369,15 +424,25 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.Windows.Markup.IUriContext.BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
-      <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System::Windows::Markup::IUriContext::BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Markup.IUriContext.BaseUri" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -393,14 +458,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.XmlNamespaceManager" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlNamespaceManager As XmlNamespaceManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNamespaceManager ^ XmlNamespaceManager { System::Xml::XmlNamespaceManager ^ get(); void set(System::Xml::XmlNamespaceManager ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespaceManager : System.Xml.XmlNamespaceManager with get, set" Usage="System.Windows.Data.XmlDataProvider.XmlNamespaceManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -446,16 +516,24 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.XmlSerializer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlSerializer As IXmlSerializable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::IXmlSerializable ^ XmlSerializer { System::Xml::Serialization::IXmlSerializable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSerializer : System.Xml.Serialization.IXmlSerializable" Usage="System.Windows.Data.XmlDataProvider.XmlSerializer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -512,14 +590,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.XmlDataProvider.XPath" />
       <MemberSignature Language="VB.NET" Value="Public Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string with get, set" Usage="System.Windows.Data.XmlDataProvider.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Markup.DesignerSerializationOptions</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Windows.Markup.DesignerSerializationOptions(System.Windows.Markup.DesignerSerializationOptions.SerializeAsAttribute)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

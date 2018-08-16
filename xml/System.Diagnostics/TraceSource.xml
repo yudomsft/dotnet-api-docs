@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceSource" />
   <TypeSignature Language="VB.NET" Value="Public Class TraceSource" />
   <TypeSignature Language="C++ CLI" Value="public ref class TraceSource" />
+  <TypeSignature Language="F#" Value="type TraceSource = class" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -86,7 +88,7 @@
   
  The trace listeners use the values of the <xref:System.Diagnostics.Trace> class properties <xref:System.Diagnostics.Trace.Indent%2A>, <xref:System.Diagnostics.Trace.IndentSize%2A>, and <xref:System.Diagnostics.Trace.AutoFlush%2A> to format trace output. You can use configuration file attributes to set the <xref:System.Diagnostics.Trace.Indent%2A>, <xref:System.Diagnostics.Trace.IndentSize%2A>, and <xref:System.Diagnostics.Trace.AutoFlush%2A> properties. The following example sets the <xref:System.Diagnostics.Trace.AutoFlush%2A> property to `false` and the <xref:System.Diagnostics.Trace.IndentSize%2A> property to 3.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="3" />  
@@ -124,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceSource(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TraceSource : string -&gt; System.Diagnostics.TraceSource" Usage="new System.Diagnostics.TraceSource name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -133,6 +136,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -140,6 +144,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
@@ -177,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.#ctor(System.String,System.Diagnostics.SourceLevels)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, defaultLevel As SourceLevels)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceSource(System::String ^ name, System::Diagnostics::SourceLevels defaultLevel);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TraceSource : string * System.Diagnostics.SourceLevels -&gt; System.Diagnostics.TraceSource" Usage="new System.Diagnostics.TraceSource (name, defaultLevel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -186,6 +196,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -224,9 +235,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As StringDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ Attributes { System::Collections::Specialized::StringDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Specialized.StringDictionary" Usage="System.Diagnostics.TraceSource.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -253,7 +266,7 @@
   
  The following is a sample of a trace source element specifying the custom attribute `SecondTraceSourceAttribute`:  
   
-```  
+```xml  
 <sources>  
   <source name="TraceTest" switchName="TestSourceSwitch"   
     switchType="Testing.MySourceSwitch, TraceSample"   
@@ -280,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="traceSource.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -289,6 +303,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -327,6 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
+      <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="traceSource.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -336,6 +352,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -374,9 +391,11 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.GetSupportedAttributes" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetSupportedAttributes () As String()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
+      <MemberSignature Language="F#" Value="abstract member GetSupportedAttributes : unit -&gt; string[]&#xA;override this.GetSupportedAttributes : unit -&gt; string[]" Usage="traceSource.GetSupportedAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -423,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Listeners" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Listeners As TraceListenerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceListenerCollection ^ Listeners { System::Diagnostics::TraceListenerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Listeners : System.Diagnostics.TraceListenerCollection" Usage="System.Diagnostics.TraceSource.Listeners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -432,6 +452,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -462,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.TraceSource.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -471,6 +493,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -478,6 +501,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -492,7 +520,7 @@
   
  The following XML element shows referring to a trace source in the configuration file.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  
@@ -521,6 +549,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Switch" />
       <MemberSignature Language="VB.NET" Value="Public Property Switch As SourceSwitch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SourceSwitch ^ Switch { System::Diagnostics::SourceSwitch ^ get(); void set(System::Diagnostics::SourceSwitch ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Switch : System.Diagnostics.SourceSwitch with get, set" Usage="System.Diagnostics.TraceSource.Switch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -530,6 +559,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -574,6 +604,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceData (eventType As TraceEventType, id As Integer, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceData(System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="member this.TraceData : System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="traceSource.TraceData (eventType, id, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -583,6 +614,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -591,7 +623,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
         </Attribute>
       </Attributes>
@@ -638,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceData (eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceData(System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="member this.TraceData : System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="traceSource.TraceData (eventType, id, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -647,6 +680,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -655,7 +689,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
         </Attribute>
       </Attributes>
@@ -710,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceEvent (eventType As TraceEventType, id As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceEvent(System::Diagnostics::TraceEventType eventType, int id);" />
+      <MemberSignature Language="F#" Value="member this.TraceEvent : System.Diagnostics.TraceEventType * int -&gt; unit" Usage="traceSource.TraceEvent (eventType, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -719,6 +754,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -727,7 +763,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
         </Attribute>
       </Attributes>
@@ -774,6 +810,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceEvent (eventType As TraceEventType, id As Integer, message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceEvent(System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.TraceEvent : System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="traceSource.TraceEvent (eventType, id, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -783,6 +820,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -791,7 +829,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
         </Attribute>
       </Attributes>
@@ -840,6 +878,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceEvent (eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceEvent(System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.TraceEvent : System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="traceSource.TraceEvent (eventType, id, format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -849,6 +888,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -857,7 +897,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
         </Attribute>
       </Attributes>
@@ -934,6 +974,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceInformation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceInformation (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceInformation(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.TraceInformation : string -&gt; unit" Usage="traceSource.TraceInformation message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -943,6 +984,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -951,8 +993,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -983,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceInformation(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceInformation (format As String, ParamArray args As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceInformation(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="member this.TraceInformation : string * obj[] -&gt; unit" Usage="traceSource.TraceInformation (format, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -992,6 +1038,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1000,8 +1047,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1050,9 +1100,11 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceTransfer(System.Int32,System.String,System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TraceTransfer (id As Integer, message As String, relatedActivityId As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceTransfer(int id, System::String ^ message, Guid relatedActivityId);" />
+      <MemberSignature Language="F#" Value="member this.TraceTransfer : int * string * Guid -&gt; unit" Usage="traceSource.TraceTransfer (id, message, relatedActivityId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1066,7 +1118,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.Conditional("TRACE")</AttributeName>
         </Attribute>
       </Attributes>

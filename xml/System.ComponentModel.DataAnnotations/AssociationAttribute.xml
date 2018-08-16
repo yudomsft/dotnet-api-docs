@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.AssociationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssociationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssociationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type AssociationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -19,8 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1">
+      <AttributeName>System.Obsolete("This attribute is no longer in use and will be ignored if applied.")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.AssociationAttribute.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, thisKey As String, otherKey As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssociationAttribute(System::String ^ name, System::String ^ thisKey, System::String ^ otherKey);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.AssociationAttribute : string * string * string -&gt; System.ComponentModel.DataAnnotations.AssociationAttribute" Usage="new System.ComponentModel.DataAnnotations.AssociationAttribute (name, thisKey, otherKey)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -45,6 +53,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="thisKey" Type="System.String" />
@@ -71,6 +84,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.AssociationAttribute.IsForeignKey" />
       <MemberSignature Language="VB.NET" Value="Public Property IsForeignKey As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsForeignKey { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsForeignKey : bool with get, set" Usage="System.ComponentModel.DataAnnotations.AssociationAttribute.IsForeignKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -82,6 +96,14 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -98,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.AssociationAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.DataAnnotations.AssociationAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -109,6 +132,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -131,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.AssociationAttribute.OtherKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OtherKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OtherKey : string" Usage="System.ComponentModel.DataAnnotations.AssociationAttribute.OtherKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -142,6 +171,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -157,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.AssociationAttribute.OtherKeyMembers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherKeyMembers As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ OtherKeyMembers { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OtherKeyMembers : seq&lt;string&gt;" Usage="System.ComponentModel.DataAnnotations.AssociationAttribute.OtherKeyMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -183,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.AssociationAttribute.ThisKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThisKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThisKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThisKey : string" Usage="System.ComponentModel.DataAnnotations.AssociationAttribute.ThisKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -194,6 +230,11 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -209,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.AssociationAttribute.ThisKeyMembers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThisKeyMembers As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ThisKeyMembers { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThisKeyMembers : seq&lt;string&gt;" Usage="System.ComponentModel.DataAnnotations.AssociationAttribute.ThisKeyMembers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

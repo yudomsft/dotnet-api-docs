@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCommentStatement" />
   <TypeSignature Language="VB.NET" Value="Public Class CodeCommentStatement&#xA;Inherits CodeStatement" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodeCommentStatement : System::CodeDom::CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeCommentStatement = class&#xA;    inherit CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -17,11 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -64,12 +70,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCommentStatement" /> class.</summary>
@@ -82,15 +95,23 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatement.#ctor(System.CodeDom.CodeComment)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comment As CodeComment)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCommentStatement(System::CodeDom::CodeComment ^ comment);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatement : System.CodeDom.CodeComment -&gt; System.CodeDom.CodeCommentStatement" Usage="new System.CodeDom.CodeCommentStatement comment" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="comment" Type="System.CodeDom.CodeComment" />
       </Parameters>
@@ -106,9 +127,12 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCommentStatement(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatement : string -&gt; System.CodeDom.CodeCommentStatement" Usage="new System.CodeDom.CodeCommentStatement text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -130,9 +154,12 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCommentStatement.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, docComment As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeCommentStatement(System::String ^ text, bool docComment);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeCommentStatement : string * bool -&gt; System.CodeDom.CodeCommentStatement" Usage="new System.CodeDom.CodeCommentStatement (text, docComment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -177,15 +204,26 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCommentStatement.Comment" />
       <MemberSignature Language="VB.NET" Value="Public Property Comment As CodeComment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeComment ^ Comment { System::CodeDom::CodeComment ^ get(); void set(System::CodeDom::CodeComment ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Comment : System.CodeDom.CodeComment with get, set" Usage="System.CodeDom.CodeCommentStatement.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeComment</ReturnType>
       </ReturnValue>

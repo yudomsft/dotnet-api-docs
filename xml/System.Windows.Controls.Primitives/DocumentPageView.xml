@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DocumentPageView" />
   <TypeSignature Language="VB.NET" Value="Public Class DocumentPageView&#xA;Inherits FrameworkElement&#xA;Implements IDisposable, IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DocumentPageView : System::Windows::FrameworkElement, IDisposable, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type DocumentPageView = class&#xA;    inherit FrameworkElement&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,6 +35,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -47,9 +50,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.ArrangeOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function ArrangeOverride (finalSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="documentPageView.ArrangeOverride finalSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,12 +84,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.Dispose" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="documentPageView.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,9 +120,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentPageView.DocumentPage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentPage As DocumentPage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::DocumentPage ^ DocumentPage { System::Windows::Documents::DocumentPage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentPage : System.Windows.Documents.DocumentPage" Usage="System.Windows.Controls.Primitives.DocumentPageView.DocumentPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,11 +143,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentPageView.DocumentPaginator" />
       <MemberSignature Language="VB.NET" Value="Public Property DocumentPaginator As DocumentPaginator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::DocumentPaginator ^ DocumentPaginator { System::Windows::Documents::DocumentPaginator ^ get(); void set(System::Windows::Documents::DocumentPaginator ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentPaginator : System.Windows.Documents.DocumentPaginator with get, set" Usage="System.Windows.Controls.Primitives.DocumentPageView.DocumentPaginator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Documents.DocumentPaginator</ReturnType>
       </ReturnValue>
@@ -154,9 +170,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="documentPageView.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,9 +203,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.GetVisualChild(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="documentPageView.GetVisualChild index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,11 +238,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentPageView.IsDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDisposed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.Windows.Controls.Primitives.DocumentPageView.IsDisposed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -240,9 +267,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.MeasureOverride(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function MeasureOverride (availableSize As Size) As Size" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="documentPageView.MeasureOverride availableSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,9 +301,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.OnCreateAutomationPeer" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="documentPageView.OnCreateAutomationPeer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,6 +324,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpiScaleInfo As DpiScale, newDpiScaleInfo As DpiScale)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpiScaleInfo, System::Windows::DpiScale newDpiScaleInfo);" />
+      <MemberSignature Language="F#" Value="abstract member OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit&#xA;override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="documentPageView.OnDpiChanged (oldDpiScaleInfo, newDpiScaleInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -318,9 +350,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.DocumentPageView.PageConnected" />
       <MemberSignature Language="VB.NET" Value="Public Event PageConnected As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PageConnected;" />
+      <MemberSignature Language="F#" Value="member this.PageConnected : EventHandler " Usage="member this.PageConnected : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,9 +374,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.DocumentPageView.PageDisconnected" />
       <MemberSignature Language="VB.NET" Value="Public Event PageDisconnected As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PageDisconnected;" />
+      <MemberSignature Language="F#" Value="member this.PageDisconnected : EventHandler " Usage="member this.PageDisconnected : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,9 +398,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentPageView.PageNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property PageNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageNumber : int with get, set" Usage="System.Windows.Controls.Primitives.DocumentPageView.PageNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -400,9 +438,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentPageView.PageNumberProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageNumberProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PageNumberProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PageNumberProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentPageView.PageNumberProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -419,9 +459,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentPageView.Stretch" />
       <MemberSignature Language="VB.NET" Value="Public Property Stretch As Stretch" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Stretch Stretch { System::Windows::Media::Stretch get(); void set(System::Windows::Media::Stretch value); };" />
+      <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.Media.Stretch with get, set" Usage="System.Windows.Controls.Primitives.DocumentPageView.Stretch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -454,9 +496,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentPageView.StretchDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property StretchDirection As StretchDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::StretchDirection StretchDirection { System::Windows::Controls::StretchDirection get(); void set(System::Windows::Controls::StretchDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.StretchDirection : System.Windows.Controls.StretchDirection with get, set" Usage="System.Windows.Controls.Primitives.DocumentPageView.StretchDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -489,9 +533,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentPageView.StretchDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentPageView.StretchDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -509,9 +555,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentPageView.StretchProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentPageView.StretchProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -535,8 +583,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -555,8 +609,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -576,9 +636,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentPageView.VisualChildrenCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Controls.Primitives.DocumentPageView.VisualChildrenCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

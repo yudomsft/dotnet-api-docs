@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AppContext" />
   <TypeSignature Language="VB.NET" Value="Public Class AppContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppContext abstract sealed" />
+  <TypeSignature Language="F#" Value="type AppContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.AppContext</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -160,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppContext.BaseDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BaseDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ BaseDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseDirectory : string" Usage="System.AppContext.BaseDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -202,6 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetData : string -&gt; obj" Usage="System.AppContext.GetData name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -221,6 +224,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netstandard-2.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.SetSwitch(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSwitch (switchName As String, isEnabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSwitch(System::String ^ switchName, bool isEnabled);" />
+      <MemberSignature Language="F#" Value="static member SetSwitch : string * bool -&gt; unit" Usage="System.AppContext.SetSwitch (switchName, isEnabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -332,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppContext.TargetFrameworkName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TargetFrameworkName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TargetFrameworkName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkName : string" Usage="System.AppContext.TargetFrameworkName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -351,6 +361,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netstandard-2.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -375,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.TryGetSwitch(System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetSwitch (switchName As String, ByRef isEnabled As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetSwitch(System::String ^ switchName, [Runtime::InteropServices::Out] bool % isEnabled);" />
+      <MemberSignature Language="F#" Value="static member TryGetSwitch : string *  -&gt; bool" Usage="System.AppContext.TryGetSwitch (switchName, isEnabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -400,7 +416,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="switchName" Type="System.String" />
-        <Parameter Name="isEnabled" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isEnabled" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="switchName">The name of the switch.</param>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImportCatalogPart&#xA;Inherits CatalogPart" />
   <TypeSignature Language="C++ CLI" Value="public ref class ImportCatalogPart sealed : System::Web::UI::WebControls::WebParts::CatalogPart" />
+  <TypeSignature Language="F#" Value="type ImportCatalogPart = class&#xA;    inherit CatalogPart" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -108,8 +110,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" /> class.</summary>
@@ -131,9 +139,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.BrowseHelpText" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseHelpText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BrowseHelpText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseHelpText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.BrowseHelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,9 +185,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="importCatalogPart.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,20 +207,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.DefaultButton" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultButton As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultButton : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.DefaultButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -236,9 +253,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.GetAvailableWebPartDescriptions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAvailableWebPartDescriptions () As WebPartDescriptionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::WebPartDescriptionCollection ^ GetAvailableWebPartDescriptions();" />
+      <MemberSignature Language="F#" Value="override this.GetAvailableWebPartDescriptions : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartDescriptionCollection" Usage="importCatalogPart.GetAvailableWebPartDescriptions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,9 +329,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.GetWebPart(System.Web.UI.WebControls.WebParts.WebPartDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetWebPart (description As WebPartDescription) As WebPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::WebPart ^ GetWebPart(System::Web::UI::WebControls::WebParts::WebPartDescription ^ description);" />
+      <MemberSignature Language="F#" Value="override this.GetWebPart : System.Web.UI.WebControls.WebParts.WebPartDescription -&gt; System.Web.UI.WebControls.WebParts.WebPart" Usage="importCatalogPart.GetWebPart description" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -385,9 +406,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.ImportedPartLabelText" />
       <MemberSignature Language="VB.NET" Value="Public Property ImportedPartLabelText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImportedPartLabelText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ImportedPartLabelText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.ImportedPartLabelText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -429,9 +452,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="importCatalogPart.LoadControlState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,9 +477,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="importCatalogPart.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,9 +502,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.PartImportErrorLabelText" />
       <MemberSignature Language="VB.NET" Value="Public Property PartImportErrorLabelText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartImportErrorLabelText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PartImportErrorLabelText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.PartImportErrorLabelText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -519,9 +548,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="importCatalogPart.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -542,9 +573,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="importCatalogPart.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -565,9 +598,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ImportCatalogPart.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
+      <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="importCatalogPart.SaveControlState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -586,9 +621,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,9 +667,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Property UploadButtonText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UploadButtonText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UploadButtonText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadButtonText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -674,9 +713,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadHelpText" />
       <MemberSignature Language="VB.NET" Value="Public Property UploadHelpText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UploadHelpText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UploadHelpText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ImportCatalogPart.UploadHelpText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

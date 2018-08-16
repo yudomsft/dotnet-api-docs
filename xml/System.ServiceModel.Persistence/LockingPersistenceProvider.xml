@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.LockingPersistenceProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class LockingPersistenceProvider&#xA;Inherits PersistenceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class LockingPersistenceProvider abstract : System::ServiceModel::Persistence::PersistenceProvider" />
+  <TypeSignature Language="F#" Value="type LockingPersistenceProvider = class&#xA;    inherit PersistenceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -35,9 +37,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.#ctor(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (id As Guid)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; LockingPersistenceProvider(Guid id);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Persistence.LockingPersistenceProvider : Guid -&gt; System.ServiceModel.Persistence.LockingPersistenceProvider" Usage="new System.ServiceModel.Persistence.LockingPersistenceProvider id" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,9 +68,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginCreate (instance As Object, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginCreate(System::Object ^ instance, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginCreate : obj * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginCreate (instance, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,9 +107,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(System.Object,System.TimeSpan,System.Boolean,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginCreate (instance As Object, timeout As TimeSpan, unlockInstance As Boolean, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginCreate(System::Object ^ instance, TimeSpan timeout, bool unlockInstance, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginCreate : obj * TimeSpan * bool * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginCreate (instance, timeout, unlockInstance, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,9 +151,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginLoad (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginLoad(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginLoad : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginLoad (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,9 +188,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan,System.Boolean,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginLoad (timeout As TimeSpan, lockInstance As Boolean, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginLoad(TimeSpan timeout, bool lockInstance, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginLoad : TimeSpan * bool * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginLoad (timeout, lockInstance, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,9 +230,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoadIfChanged(System.TimeSpan,System.Object,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginLoadIfChanged (timeout As TimeSpan, instanceToken As Object, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginLoadIfChanged(TimeSpan timeout, System::Object ^ instanceToken, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginLoadIfChanged : TimeSpan * obj * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginLoadIfChanged (timeout, instanceToken, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -248,9 +262,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoadIfChanged(System.TimeSpan,System.Object,System.Boolean,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginLoadIfChanged (timeout As TimeSpan, instanceToken As Object, lockInstance As Boolean, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginLoadIfChanged(TimeSpan timeout, System::Object ^ instanceToken, bool lockInstance, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginLoadIfChanged : TimeSpan * obj * bool * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginLoadIfChanged (timeout, instanceToken, lockInstance, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,9 +297,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUnlock(System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginUnlock (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginUnlock(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member BeginUnlock : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginUnlock (timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,9 +336,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginUpdate (instance As Object, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginUpdate(System::Object ^ instance, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginUpdate : obj * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginUpdate (instance, timeout, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,9 +375,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(System.Object,System.TimeSpan,System.Boolean,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BeginUpdate (instance As Object, timeout As TimeSpan, unlockInstance As Boolean, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginUpdate(System::Object ^ instance, TimeSpan timeout, bool unlockInstance, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginUpdate : obj * TimeSpan * bool * AsyncCallback * obj -&gt; IAsyncResult" Usage="lockingPersistenceProvider.BeginUpdate (instance, timeout, unlockInstance, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -397,9 +419,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Create(System.Object,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Create (instance As Object, timeout As TimeSpan) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Create(System::Object ^ instance, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.Create : obj * TimeSpan -&gt; obj" Usage="lockingPersistenceProvider.Create (instance, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -423,9 +447,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Create(System.Object,System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Create (instance As Object, timeout As TimeSpan, unlockInstance As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Create(System::Object ^ instance, TimeSpan timeout, bool unlockInstance);" />
+      <MemberSignature Language="F#" Value="override this.Create : obj * TimeSpan * bool -&gt; obj" Usage="lockingPersistenceProvider.Create (instance, timeout, unlockInstance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,9 +478,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.EndUnlock(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndUnlock (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndUnlock(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member EndUnlock : IAsyncResult -&gt; unit" Usage="lockingPersistenceProvider.EndUnlock result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -484,9 +512,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Load (timeout As TimeSpan) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Load(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.Load : TimeSpan -&gt; obj" Usage="lockingPersistenceProvider.Load timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -515,9 +545,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Load (timeout As TimeSpan, lockInstance As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Load(TimeSpan timeout, bool lockInstance);" />
+      <MemberSignature Language="F#" Value="override this.Load : TimeSpan * bool -&gt; obj" Usage="lockingPersistenceProvider.Load (timeout, lockInstance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -551,9 +583,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function LoadIfChanged (timeout As TimeSpan, instanceToken As Object, ByRef instance As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool LoadIfChanged(TimeSpan timeout, System::Object ^ instanceToken, [Runtime::InteropServices::Out] System::Object ^ % instance);" />
+      <MemberSignature Language="F#" Value="override this.LoadIfChanged : TimeSpan * obj *  -&gt; bool" Usage="lockingPersistenceProvider.LoadIfChanged (timeout, instanceToken, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -562,7 +596,7 @@
       <Parameters>
         <Parameter Name="timeout" Type="System.TimeSpan" />
         <Parameter Name="instanceToken" Type="System.Object" />
-        <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="instance" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
@@ -580,9 +614,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Boolean,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadIfChanged (timeout As TimeSpan, instanceToken As Object, lockInstance As Boolean, ByRef instance As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool LoadIfChanged(TimeSpan timeout, System::Object ^ instanceToken, bool lockInstance, [Runtime::InteropServices::Out] System::Object ^ % instance);" />
+      <MemberSignature Language="F#" Value="override this.LoadIfChanged : TimeSpan * obj * bool *  -&gt; bool" Usage="lockingPersistenceProvider.LoadIfChanged (timeout, instanceToken, lockInstance, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -592,7 +628,7 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
         <Parameter Name="instanceToken" Type="System.Object" />
         <Parameter Name="lockInstance" Type="System.Boolean" />
-        <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="instance" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
@@ -612,9 +648,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Unlock(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Unlock (timeout As TimeSpan)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Unlock(TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="abstract member Unlock : TimeSpan -&gt; unit" Usage="lockingPersistenceProvider.Unlock timeout" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -644,9 +682,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Update(System.Object,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Update (instance As Object, timeout As TimeSpan) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Update(System::Object ^ instance, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="override this.Update : obj * TimeSpan -&gt; obj" Usage="lockingPersistenceProvider.Update (instance, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -670,9 +710,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Update(System.Object,System.TimeSpan,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Update (instance As Object, timeout As TimeSpan, unlockInstance As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Update(System::Object ^ instance, TimeSpan timeout, bool unlockInstance);" />
+      <MemberSignature Language="F#" Value="override this.Update : obj * TimeSpan * bool -&gt; obj" Usage="lockingPersistenceProvider.Update (instance, timeout, unlockInstance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

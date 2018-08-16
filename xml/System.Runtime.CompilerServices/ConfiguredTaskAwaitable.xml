@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable" />
   <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredTaskAwaitable" />
   <TypeSignature Language="C++ CLI" Value="public value class ConfiguredTaskAwaitable" />
+  <TypeSignature Language="F#" Value="type ConfiguredTaskAwaitable = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +28,11 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-2.1">
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides an awaitable object that enables configured awaits on a task.</summary>
     <remarks>
@@ -45,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.GetAwaiter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As ConfiguredTaskAwaitable.ConfiguredTaskAwaiter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredTaskAwaitable::ConfiguredTaskAwaiter GetAwaiter();" />
+      <MemberSignature Language="F#" Value="member this.GetAwaiter : unit -&gt; System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter" Usage="configuredTaskAwaitable.GetAwaiter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -65,6 +72,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredTaskAwaitable+ConfiguredTaskAwaiter</ReturnType>
       </ReturnValue>

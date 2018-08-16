@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.InvokeFunc`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeFunc(Of TResult)&#xA;Inherits NativeActivity(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class InvokeFunc sealed : System::Activities::NativeActivity&lt;TResult&gt;" />
+  <TypeSignature Language="F#" Value="type InvokeFunc&lt;'Result&gt; = class&#xA;    inherit NativeActivity&lt;'Result&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Func")</AttributeName>
     </Attribute>
   </Attributes>
@@ -40,6 +41,11 @@
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.InvokeFunc`1" /> class.</summary>
@@ -52,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`1.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="invokeFunc.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -75,14 +82,21 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`1.Func" />
       <MemberSignature Language="VB.NET" Value="Public Property Func As ActivityFunc(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityFunc&lt;TResult&gt; ^ Func { System::Activities::ActivityFunc&lt;TResult&gt; ^ get(); void set(System::Activities::ActivityFunc&lt;TResult&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Func : System.Activities.ActivityFunc&lt;'Result&gt; with get, set" Usage="System.Activities.Expressions.InvokeFunc&lt;'Result&gt;.Func" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

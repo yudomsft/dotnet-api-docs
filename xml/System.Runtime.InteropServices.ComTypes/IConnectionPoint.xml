@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IConnectionPoint" />
   <TypeSignature Language="VB.NET" Value="Public Interface IConnectionPoint" />
   <TypeSignature Language="C++ CLI" Value="public interface class IConnectionPoint" />
+  <TypeSignature Language="F#" Value="type IConnectionPoint = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +17,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -25,11 +27,14 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("B196B286-BAB4-101A-B69C-00AA00341D07")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6">
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -52,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Advise (pUnkSink As Object, ByRef pdwCookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Advise(System::Object ^ pUnkSink, [Runtime::InteropServices::Out] int % pdwCookie);" />
+      <MemberSignature Language="F#" Value="abstract member Advise : obj *  -&gt; unit" Usage="iConnectionPoint.Advise (pUnkSink, pdwCookie)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -65,6 +71,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -77,7 +84,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pUnkSink" Type="System.Object" />
-        <Parameter Name="pdwCookie" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pdwCookie" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pUnkSink">A reference to the sink to receive calls for the outgoing interface managed by this connection point.</param>
@@ -99,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(System.Runtime.InteropServices.ComTypes.IEnumConnections@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumConnections (ByRef ppEnum As IEnumConnections)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumConnections([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumConnections ^ % ppEnum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumConnections :  -&gt; unit" Usage="iConnectionPoint.EnumConnections ppEnum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -112,6 +120,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -123,7 +132,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.ComTypes.IEnumConnections&amp;" RefType="out" />
+        <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.ComTypes.IEnumConnections" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppEnum">When this method returns, contains the newly created enumerator. This parameter is passed uninitialized.</param>
@@ -144,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetConnectionInterface (ByRef pIID As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetConnectionInterface([Runtime::InteropServices::Out] Guid % pIID);" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionInterface :  -&gt; unit" Usage="iConnectionPoint.GetConnectionInterface pIID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -157,6 +167,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -168,7 +179,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pIID" Type="System.Guid&amp;" RefType="out" />
+        <Parameter Name="pIID" Type="System.Guid" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pIID">When this parameter returns, contains the IID of the outgoing interface managed by this connection point. This parameter is passed uninitialized.</param>
@@ -189,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.ComTypes.IConnectionPointContainer@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetConnectionPointContainer (ByRef ppCPC As IConnectionPointContainer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetConnectionPointContainer([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IConnectionPointContainer ^ % ppCPC);" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionPointContainer :  -&gt; unit" Usage="iConnectionPoint.GetConnectionPointContainer ppCPC" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -202,6 +214,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -213,7 +226,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppCPC" Type="System.Runtime.InteropServices.ComTypes.IConnectionPointContainer&amp;" RefType="out" />
+        <Parameter Name="ppCPC" Type="System.Runtime.InteropServices.ComTypes.IConnectionPointContainer" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppCPC">When this parameter returns, contains the connectable object's <see langword="IConnectionPointContainer" /> interface. This parameter is passed uninitialized.</param>
@@ -234,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Unadvise(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unadvise (dwCookie As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unadvise(int dwCookie);" />
+      <MemberSignature Language="F#" Value="abstract member Unadvise : int -&gt; unit" Usage="iConnectionPoint.Unadvise dwCookie" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -247,6 +261,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.AbandonedMutexException" />
   <TypeSignature Language="VB.NET" Value="Public Class AbandonedMutexException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class AbandonedMutexException : SystemException" />
+  <TypeSignature Language="F#" Value="type AbandonedMutexException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -26,7 +28,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -86,6 +88,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -122,6 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AbandonedMutexException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AbandonedMutexException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Threading.AbandonedMutexException : string -&gt; System.Threading.AbandonedMutexException" Usage="new System.Threading.AbandonedMutexException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -132,6 +136,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AbandonedMutexException.#ctor(System.Int32,System.Threading.WaitHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (location As Integer, handle As WaitHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AbandonedMutexException(int location, System::Threading::WaitHandle ^ handle);" />
+      <MemberSignature Language="F#" Value="new System.Threading.AbandonedMutexException : int * System.Threading.WaitHandle -&gt; System.Threading.AbandonedMutexException" Usage="new System.Threading.AbandonedMutexException (location, handle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -181,6 +187,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -222,9 +229,11 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AbandonedMutexException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; AbandonedMutexException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Threading.AbandonedMutexException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.AbandonedMutexException" Usage="new System.Threading.AbandonedMutexException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -237,6 +246,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -262,6 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AbandonedMutexException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AbandonedMutexException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Threading.AbandonedMutexException : string * Exception -&gt; System.Threading.AbandonedMutexException" Usage="new System.Threading.AbandonedMutexException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -272,6 +287,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -315,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AbandonedMutexException.#ctor(System.String,System.Int32,System.Threading.WaitHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, location As Integer, handle As WaitHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AbandonedMutexException(System::String ^ message, int location, System::Threading::WaitHandle ^ handle);" />
+      <MemberSignature Language="F#" Value="new System.Threading.AbandonedMutexException : string * int * System.Threading.WaitHandle -&gt; System.Threading.AbandonedMutexException" Usage="new System.Threading.AbandonedMutexException (message, location, handle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -325,6 +342,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -368,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.AbandonedMutexException.#ctor(System.String,System.Exception,System.Int32,System.Threading.WaitHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, location As Integer, handle As WaitHandle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AbandonedMutexException(System::String ^ message, Exception ^ inner, int location, System::Threading::WaitHandle ^ handle);" />
+      <MemberSignature Language="F#" Value="new System.Threading.AbandonedMutexException : string * Exception * int * System.Threading.WaitHandle -&gt; System.Threading.AbandonedMutexException" Usage="new System.Threading.AbandonedMutexException (message, inner, location, handle)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -378,6 +397,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -425,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.AbandonedMutexException.Mutex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mutex As Mutex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Mutex ^ Mutex { System::Threading::Mutex ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mutex : System.Threading.Mutex" Usage="System.Threading.AbandonedMutexException.Mutex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -435,6 +456,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -465,6 +487,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.AbandonedMutexException.MutexIndex" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MutexIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MutexIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MutexIndex : int" Usage="System.Threading.AbandonedMutexException.MutexIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -475,6 +498,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

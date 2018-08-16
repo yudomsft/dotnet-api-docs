@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.ThemeInfoAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThemeInfoAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThemeInfoAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ThemeInfoAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly)</AttributeName>
     </Attribute>
   </Attributes>
@@ -61,11 +63,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.ThemeInfoAttribute.#ctor(System.Windows.ResourceDictionaryLocation,System.Windows.ResourceDictionaryLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (themeDictionaryLocation As ResourceDictionaryLocation, genericDictionaryLocation As ResourceDictionaryLocation)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThemeInfoAttribute(System::Windows::ResourceDictionaryLocation themeDictionaryLocation, System::Windows::ResourceDictionaryLocation genericDictionaryLocation);" />
+      <MemberSignature Language="F#" Value="new System.Windows.ThemeInfoAttribute : System.Windows.ResourceDictionaryLocation * System.Windows.ResourceDictionaryLocation -&gt; System.Windows.ThemeInfoAttribute" Usage="new System.Windows.ThemeInfoAttribute (themeDictionaryLocation, genericDictionaryLocation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="themeDictionaryLocation" Type="System.Windows.ResourceDictionaryLocation" />
         <Parameter Name="genericDictionaryLocation" Type="System.Windows.ResourceDictionaryLocation" />
@@ -102,11 +111,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenericDictionaryLocation As ResourceDictionaryLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionaryLocation GenericDictionaryLocation { System::Windows::ResourceDictionaryLocation get(); };" />
+      <MemberSignature Language="F#" Value="member this.GenericDictionaryLocation : System.Windows.ResourceDictionaryLocation" Usage="System.Windows.ThemeInfoAttribute.GenericDictionaryLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.ResourceDictionaryLocation</ReturnType>
       </ReturnValue>
@@ -122,11 +138,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThemeDictionaryLocation As ResourceDictionaryLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionaryLocation ThemeDictionaryLocation { System::Windows::ResourceDictionaryLocation get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThemeDictionaryLocation : System.Windows.ResourceDictionaryLocation" Usage="System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.ResourceDictionaryLocation</ReturnType>
       </ReturnValue>

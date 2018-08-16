@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewColumnHeaderAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer&#xA;Implements IInvokeProvider, ITransformProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewColumnHeaderAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer, System::Windows::Automation::Provider::IInvokeProvider, System::Windows::Automation::Provider::ITransformProvider" />
+  <TypeSignature Language="F#" Value="type GridViewColumnHeaderAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer&#xA;    interface IInvokeProvider&#xA;    interface ITransformProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,11 +32,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.#ctor(System.Windows.Controls.GridViewColumnHeader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As GridViewColumnHeader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewColumnHeaderAutomationPeer(System::Windows::Controls::GridViewColumnHeader ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer : System.Windows.Controls.GridViewColumnHeader -&gt; System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer" Usage="new System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.GridViewColumnHeader" />
       </Parameters>
@@ -50,9 +59,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="gridViewColumnHeaderAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,9 +83,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="gridViewColumnHeaderAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,9 +106,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="gridViewColumnHeaderAutomationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.IsContentElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="gridViewColumnHeaderAutomationPeer.IsContentElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +161,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,13 +178,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ITransformProvider.CanMove" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanMove" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanMove As Boolean Implements ITransformProvider.CanMove" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanMove { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ITransformProvider::CanMove { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ITransformProvider.CanMove" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanMove</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,13 +204,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ITransformProvider.CanResize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanResize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanResize As Boolean Implements ITransformProvider.CanResize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanResize { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ITransformProvider::CanResize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ITransformProvider.CanResize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanResize</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,13 +230,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.GridViewColumnHeaderAutomationPeer.System#Windows#Automation#Provider#ITransformProvider#CanRotate" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRotate As Boolean Implements ITransformProvider.CanRotate" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.Automation.Provider.ITransformProvider.CanRotate { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Windows::Automation::Provider::ITransformProvider::CanRotate { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Provider.ITransformProvider.CanRotate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Automation.Provider.ITransformProvider.CanRotate</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,6 +263,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,6 +292,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -296,6 +321,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

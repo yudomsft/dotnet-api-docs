@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.StructureChangedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StructureChangedEventArgs&#xA;Inherits AutomationEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class StructureChangedEventArgs sealed : System::Windows::Automation::AutomationEventArgs" />
+  <TypeSignature Language="F#" Value="type StructureChangedEventArgs = class&#xA;    inherit AutomationEventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,9 +27,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Automation.StructureChangeType structureChangeType, int32[] runtimeId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.StructureChangedEventArgs.#ctor(System.Windows.Automation.StructureChangeType,System.Int32[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StructureChangedEventArgs(System::Windows::Automation::StructureChangeType structureChangeType, cli::array &lt;int&gt; ^ runtimeId);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.StructureChangedEventArgs : System.Windows.Automation.StructureChangeType * int[] -&gt; System.Windows.Automation.StructureChangedEventArgs" Usage="new System.Windows.Automation.StructureChangedEventArgs (structureChangeType, runtimeId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -75,9 +79,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.StructureChangedEventArgs.GetRuntimeId" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeId () As Integer()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetRuntimeId();" />
+      <MemberSignature Language="F#" Value="member this.GetRuntimeId : unit -&gt; int[]" Usage="structureChangedEventArgs.GetRuntimeId " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,11 +112,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.StructureChangedEventArgs.StructureChangeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StructureChangeType As StructureChangeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::StructureChangeType StructureChangeType { System::Windows::Automation::StructureChangeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.StructureChangeType : System.Windows.Automation.StructureChangeType" Usage="System.Windows.Automation.StructureChangedEventArgs.StructureChangeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
       </ReturnValue>

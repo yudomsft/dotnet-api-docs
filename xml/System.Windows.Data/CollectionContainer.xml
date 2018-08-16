@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class CollectionContainer&#xA;Inherits DependencyObject&#xA;Implements INotifyCollectionChanged, IWeakEventListener" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionContainer : System::Windows::DependencyObject, System::Collections::Specialized::INotifyCollectionChanged, System::Windows::IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type CollectionContainer = class&#xA;    inherit DependencyObject&#xA;    interface INotifyCollectionChanged&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,8 +38,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of a <see cref="T:System.Windows.Data.CollectionContainer" /> class.</summary>
@@ -50,9 +58,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionContainer.Collection" />
       <MemberSignature Language="VB.NET" Value="Public Property Collection As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Collection { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Collection : System.Collections.IEnumerable with get, set" Usage="System.Windows.Data.CollectionContainer.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,9 +98,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionContainer.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Event CollectionChanged As NotifyCollectionChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,9 +120,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Data.CollectionContainer.CollectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CollectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CollectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CollectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Data.CollectionContainer.CollectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,9 +141,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionContainer.OnContainedCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContainedCollectionChanged (args As NotifyCollectionChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContainedCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member OnContainedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnContainedCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="collectionContainer.OnContainedCollectionChanged args" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,9 +166,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionContainer.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool&#xA;override this.ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool" Usage="collectionContainer.ReceiveWeakEvent (managerType, sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,13 +198,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionContainer.ShouldSerializeCollection" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeCollection () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeCollection();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeCollection : unit -&gt; bool" Usage="collectionContainer.ShouldSerializeCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -208,6 +231,27 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged">
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionContainer.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event CollectionChanged As NotifyCollectionChangedEventHandler Implements System.Collections.Specialized.INotifyCollectionChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.Windows.IWeakEventListener.ReceiveWeakEvent">
       <MemberSignature Language="C#" Value="bool IWeakEventListener.ReceiveWeakEvent (Type managerType, object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.IWeakEventListener.ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs e) cil managed" />
@@ -217,8 +261,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

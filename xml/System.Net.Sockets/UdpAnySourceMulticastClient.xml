@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.UdpAnySourceMulticastClient" />
   <TypeSignature Language="VB.NET" Value="Public Class UdpAnySourceMulticastClient&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class UdpAnySourceMulticastClient : IDisposable" />
+  <TypeSignature Language="F#" Value="type UdpAnySourceMulticastClient = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,10 +18,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -35,16 +36,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.#ctor(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (groupAddress As IPAddress, localPort As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpAnySourceMulticastClient(System::Net::IPAddress ^ groupAddress, int localPort);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpAnySourceMulticastClient : System.Net.IPAddress * int -&gt; System.Net.Sockets.UdpAnySourceMulticastClient" Usage="new System.Net.Sockets.UdpAnySourceMulticastClient (groupAddress, localPort)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -80,16 +82,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginJoinGroup(System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginJoinGroup (callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginJoinGroup(AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginJoinGroup : AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginJoinGroup (callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -130,16 +133,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginReceiveFromGroup(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginReceiveFromGroup (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceiveFromGroup(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginReceiveFromGroup : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginReceiveFromGroup (buffer, offset, count, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -202,16 +206,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.IPEndPoint,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSendTo (buffer As Byte(), offset As Integer, count As Integer, remoteEndPoint As IPEndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendTo(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Net::IPEndPoint ^ remoteEndPoint, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSendTo : byte[] * int * int * System.Net.IPEndPoint * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginSendTo (buffer, offset, count, remoteEndPoint, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -282,16 +287,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginSendToGroup(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginSendToGroup (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendToGroup(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="member this.BeginSendToGroup : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginSendToGroup (buffer, offset, count, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -356,16 +362,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BlockSource(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BlockSource (sourceAddress As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BlockSource(System::Net::IPAddress ^ sourceAddress);" />
+      <MemberSignature Language="F#" Value="member this.BlockSource : System.Net.IPAddress -&gt; unit" Usage="udpAnySourceMulticastClient.BlockSource sourceAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -403,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="udpAnySourceMulticastClient.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -412,10 +420,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -443,16 +451,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndJoinGroup(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndJoinGroup (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndJoinGroup(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndJoinGroup : IAsyncResult -&gt; unit" Usage="udpAnySourceMulticastClient.EndJoinGroup result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -489,16 +498,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndReceiveFromGroup(System.IAsyncResult,System.Net.IPEndPoint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFromGroup (result As IAsyncResult, ByRef source As IPEndPoint) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceiveFromGroup(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::Net::IPEndPoint ^ % source);" />
+      <MemberSignature Language="F#" Value="member this.EndReceiveFromGroup : IAsyncResult *  -&gt; int" Usage="udpAnySourceMulticastClient.EndReceiveFromGroup (result, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -507,7 +517,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="result" Type="System.IAsyncResult" />
-        <Parameter Name="source" Type="System.Net.IPEndPoint&amp;" RefType="out" />
+        <Parameter Name="source" Type="System.Net.IPEndPoint" RefType="out" />
       </Parameters>
       <Docs>
         <param name="result">The result of the asynchronous receive operation.</param>
@@ -537,16 +547,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndSendTo(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndSendTo (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSendTo(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndSendTo : IAsyncResult -&gt; unit" Usage="udpAnySourceMulticastClient.EndSendTo result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -582,16 +593,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndSendToGroup(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndSendToGroup (result As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSendToGroup(IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="member this.EndSendToGroup : IAsyncResult -&gt; unit" Usage="udpAnySourceMulticastClient.EndSendToGroup result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -627,16 +639,17 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpAnySourceMulticastClient.MulticastLoopback" />
       <MemberSignature Language="VB.NET" Value="Public Property MulticastLoopback As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MulticastLoopback { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MulticastLoopback : bool with get, set" Usage="System.Net.Sockets.UdpAnySourceMulticastClient.MulticastLoopback" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -666,16 +679,17 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpAnySourceMulticastClient.ReceiveBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceiveBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.Net.Sockets.UdpAnySourceMulticastClient.ReceiveBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -708,16 +722,17 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpAnySourceMulticastClient.SendBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property SendBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SendBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SendBufferSize : int with get, set" Usage="System.Net.Sockets.UdpAnySourceMulticastClient.SendBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -752,16 +767,17 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.UnblockSource(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnblockSource (sourceAddress As IPAddress)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnblockSource(System::Net::IPAddress ^ sourceAddress);" />
+      <MemberSignature Language="F#" Value="member this.UnblockSource : System.Net.IPAddress -&gt; unit" Usage="udpAnySourceMulticastClient.UnblockSource sourceAddress" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
         </Attribute>
       </Attributes>

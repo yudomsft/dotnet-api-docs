@@ -4,16 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceHostFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceHostFactory&#xA;Inherits ServiceHostFactoryBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceHostFactory : System::ServiceModel::Activation::ServiceHostFactoryBase" />
+  <TypeSignature Language="F#" Value="type ServiceHostFactory = class&#xA;    inherit ServiceHostFactoryBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.Activation.ServiceHostFactoryBase</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
     </Attribute>
   </Attributes>
@@ -52,6 +57,10 @@
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.ServiceHostFactory" /> class.</summary>
@@ -83,10 +92,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.String,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="serviceHostFactory.CreateServiceHost (constructorString, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
@@ -122,10 +136,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateServiceHost (serviceType As Type, baseAddresses As Uri()) As ServiceHost" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::ServiceHost ^ CreateServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="serviceHostFactory.CreateServiceHost (serviceType, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ServiceHost</ReturnType>

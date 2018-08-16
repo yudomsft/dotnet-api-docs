@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.RouteUrlExpressionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class RouteUrlExpressionBuilder&#xA;Inherits ExpressionBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteUrlExpressionBuilder : System::Web::Compilation::ExpressionBuilder" />
+  <TypeSignature Language="F#" Value="type RouteUrlExpressionBuilder = class&#xA;    inherit ExpressionBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,10 +14,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.RouteUrlExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.Compilation.ExpressionPrefix("Routes")</AttributeName>
     </Attribute>
   </Attributes>
@@ -67,6 +68,11 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.RouteUrlExpressionBuilder" /> class.</summary>
@@ -79,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteUrlExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (target As Object, entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::Object ^ target, System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.EvaluateExpression : obj * System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; obj" Usage="routeUrlExpressionBuilder.EvaluateExpression (target, entry, parsedData, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteUrlExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCodeExpression (entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeExpression ^ GetCodeExpression(System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetCodeExpression : System.Web.UI.BoundPropertyEntry * obj * System.Web.Compilation.ExpressionBuilderContext -&gt; System.CodeDom.CodeExpression" Usage="routeUrlExpressionBuilder.GetCodeExpression (entry, parsedData, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRouteUrl(class System.Web.UI.Control control, string expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteUrlExpressionBuilder.GetRouteUrl(System.Web.UI.Control,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetRouteUrl(System::Web::UI::Control ^ control, System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="static member GetRouteUrl : System.Web.UI.Control * string -&gt; string" Usage="System.Web.Compilation.RouteUrlExpressionBuilder.GetRouteUrl (control, expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.RouteUrlExpressionBuilder.SupportsEvaluate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsEvaluate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEvaluate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsEvaluate : bool" Usage="System.Web.Compilation.RouteUrlExpressionBuilder.SupportsEvaluate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteUrlExpressionBuilder.TryParseRouteExpression(System.String,System.Web.Routing.RouteValueDictionary,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseRouteExpression (expression As String, routeValues As RouteValueDictionary, ByRef routeName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseRouteExpression(System::String ^ expression, System::Web::Routing::RouteValueDictionary ^ routeValues, [Runtime::InteropServices::Out] System::String ^ % routeName);" />
+      <MemberSignature Language="F#" Value="static member TryParseRouteExpression : string * System.Web.Routing.RouteValueDictionary *  -&gt; bool" Usage="System.Web.Compilation.RouteUrlExpressionBuilder.TryParseRouteExpression (expression, routeValues, routeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,7 +239,7 @@
       <Parameters>
         <Parameter Name="expression" Type="System.String" />
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
-        <Parameter Name="routeName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="routeName" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="expression">The expression as specified in markup.</param>

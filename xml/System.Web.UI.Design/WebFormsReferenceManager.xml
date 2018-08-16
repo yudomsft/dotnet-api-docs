@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebFormsReferenceManager" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebFormsReferenceManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebFormsReferenceManager abstract" />
+  <TypeSignature Language="F#" Value="type WebFormsReferenceManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -46,8 +48,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebFormsReferenceManager" /> class.</summary>
@@ -73,9 +81,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsReferenceManager.GetRegisterDirectives" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRegisterDirectives () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::ICollection ^ GetRegisterDirectives();" />
+      <MemberSignature Language="F#" Value="abstract member GetRegisterDirectives : unit -&gt; System.Collections.ICollection" Usage="webFormsReferenceManager.GetRegisterDirectives " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,9 +108,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsReferenceManager.GetTagPrefix(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTagPrefix (objectType As Type) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetTagPrefix(Type ^ objectType);" />
+      <MemberSignature Language="F#" Value="abstract member GetTagPrefix : Type -&gt; string" Usage="webFormsReferenceManager.GetTagPrefix objectType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +138,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsReferenceManager.GetType(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetType (tagPrefix As String, tagName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetType(System::String ^ tagPrefix, System::String ^ tagName);" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * string -&gt; Type" Usage="webFormsReferenceManager.GetType (tagPrefix, tagName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,9 +170,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsReferenceManager.GetUserControlPath(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetUserControlPath (tagPrefix As String, tagName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetUserControlPath(System::String ^ tagPrefix, System::String ^ tagName);" />
+      <MemberSignature Language="F#" Value="abstract member GetUserControlPath : string * string -&gt; string" Usage="webFormsReferenceManager.GetUserControlPath (tagPrefix, tagName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,9 +210,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebFormsReferenceManager.RegisterTagPrefix(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function RegisterTagPrefix (objectType As Type) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ RegisterTagPrefix(Type ^ objectType);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterTagPrefix : Type -&gt; string" Usage="webFormsReferenceManager.RegisterTagPrefix objectType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

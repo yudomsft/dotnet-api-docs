@@ -4,14 +4,25 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityContextKeyIdentifierClause" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityContextKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityContextKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type SecurityContextKeyIdentifierClause = class&#xA;    inherit SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the key identifier clause for a security context token.</summary>
     <remarks>To be added.</remarks>
@@ -32,11 +43,22 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.#ctor(System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause : System.Xml.UniqueId -&gt; System.ServiceModel.Security.SecurityContextKeyIdentifierClause" Usage="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause contextId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
       </Parameters>
@@ -59,11 +81,22 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.#ctor(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, generation As UniqueId)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause : System.Xml.UniqueId * System.Xml.UniqueId -&gt; System.ServiceModel.Security.SecurityContextKeyIdentifierClause" Usage="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause (contextId, generation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="contextId" Type="System.Xml.UniqueId" />
         <Parameter Name="generation" Type="System.Xml.UniqueId" />
@@ -90,9 +123,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.#ctor(System.Xml.UniqueId,System.Xml.UniqueId,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, generation As UniqueId, derivationNonce As Byte(), derivationLength As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextKeyIdentifierClause(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause : System.Xml.UniqueId * System.Xml.UniqueId * byte[] * int -&gt; System.ServiceModel.Security.SecurityContextKeyIdentifierClause" Usage="new System.ServiceModel.Security.SecurityContextKeyIdentifierClause (contextId, generation, derivationNonce, derivationLength)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -123,11 +162,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.ContextId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextId As UniqueId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ ContextId { System::Xml::UniqueId ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextId : System.Xml.UniqueId" Usage="System.ServiceModel.Security.SecurityContextKeyIdentifierClause.ContextId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
@@ -143,11 +193,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Generation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Generation As UniqueId" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ Generation { System::Xml::UniqueId ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Generation : System.Xml.UniqueId" Usage="System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Generation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.UniqueId</ReturnType>
       </ReturnValue>
@@ -172,9 +233,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="securityContextKeyIdentifierClause.Matches keyIdentifierClause" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -197,9 +264,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.Matches(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberSignature Language="VB.NET" Value="Public Function Matches (contextId As UniqueId, generation As UniqueId) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Xml::UniqueId ^ contextId, System::Xml::UniqueId ^ generation);" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.Xml.UniqueId * System.Xml.UniqueId -&gt; bool" Usage="securityContextKeyIdentifierClause.Matches (contextId, generation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -224,9 +297,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityContextKeyIdentifierClause.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="securityContextKeyIdentifierClause.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

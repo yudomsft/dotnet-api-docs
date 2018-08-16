@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.Prompt" />
   <TypeSignature Language="VB.NET" Value="Public Class Prompt" />
   <TypeSignature Language="C++ CLI" Value="public ref class Prompt" />
+  <TypeSignature Language="F#" Value="type Prompt = class" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{_text}")</AttributeName>
     </Attribute>
   </Attributes>
@@ -47,9 +49,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Synthesis.PromptBuilder promptBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.Prompt.#ctor(System.Speech.Synthesis.PromptBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Prompt(System::Speech::Synthesis::PromptBuilder ^ promptBuilder);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.Prompt : System.Speech.Synthesis.PromptBuilder -&gt; System.Speech.Synthesis.Prompt" Usage="new System.Speech.Synthesis.Prompt promptBuilder" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,11 +71,18 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.Prompt.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (textToSpeak As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Prompt(System::String ^ textToSpeak);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.Prompt : string -&gt; System.Speech.Synthesis.Prompt" Usage="new System.Speech.Synthesis.Prompt textToSpeak" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="textToSpeak" Type="System.String" />
       </Parameters>
@@ -127,9 +138,11 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.Prompt.#ctor(System.String,System.Speech.Synthesis.SynthesisTextFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (textToSpeak As String, media As SynthesisTextFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Prompt(System::String ^ textToSpeak, System::Speech::Synthesis::SynthesisTextFormat media);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Synthesis.Prompt : string * System.Speech.Synthesis.SynthesisTextFormat -&gt; System.Speech.Synthesis.Prompt" Usage="new System.Speech.Synthesis.Prompt (textToSpeak, media)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -202,11 +215,18 @@ namespace SampleSynthesis
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.Prompt.IsCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Speech.Synthesis.Prompt.IsCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.FaultConverter" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FaultConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class FaultConverter abstract" />
+  <TypeSignature Language="F#" Value="type FaultConverter = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -34,6 +36,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -42,6 +45,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.FaultConverter" /> class.</summary>
@@ -54,10 +62,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter(System.ServiceModel.Channels.MessageVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetDefaultFaultConverter (version As MessageVersion) As FaultConverter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::FaultConverter ^ GetDefaultFaultConverter(System::ServiceModel::Channels::MessageVersion ^ version);" />
+      <MemberSignature Language="F#" Value="static member GetDefaultFaultConverter : System.ServiceModel.Channels.MessageVersion -&gt; System.ServiceModel.Channels.FaultConverter" Usage="System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter version" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -91,10 +101,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnTryCreateException(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.MessageFault fault, [out] class System.Exception&amp; exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool OnTryCreateException(System::ServiceModel::Channels::Message ^ message, System::ServiceModel::Channels::MessageFault ^ fault, [Runtime::InteropServices::Out] Exception ^ % exception);" />
+      <MemberSignature Language="F#" Value="abstract member OnTryCreateException : System.ServiceModel.Channels.Message * System.ServiceModel.Channels.MessageFault *  -&gt; bool" Usage="faultConverter.OnTryCreateException (message, fault, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -109,7 +121,7 @@
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
         <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" />
-        <Parameter Name="exception" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The fault message.</param>
@@ -141,10 +153,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnTryCreateFaultMessage(class System.Exception exception, [out] class System.ServiceModel.Channels.Message&amp; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.FaultConverter.OnTryCreateFaultMessage(System.Exception,System.ServiceModel.Channels.Message@)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool OnTryCreateFaultMessage(Exception ^ exception, [Runtime::InteropServices::Out] System::ServiceModel::Channels::Message ^ % message);" />
+      <MemberSignature Language="F#" Value="abstract member OnTryCreateFaultMessage : Exception *  -&gt; bool" Usage="faultConverter.OnTryCreateFaultMessage (exception, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -158,7 +172,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="exception" Type="System.Exception" />
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
         <param name="exception">The SOAP exception.</param>
@@ -181,10 +195,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCreateException(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.MessageFault fault, [out] class System.Exception&amp; exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.FaultConverter.TryCreateException(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.MessageFault,System.Exception@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryCreateException(System::ServiceModel::Channels::Message ^ message, System::ServiceModel::Channels::MessageFault ^ fault, [Runtime::InteropServices::Out] Exception ^ % exception);" />
+      <MemberSignature Language="F#" Value="member this.TryCreateException : System.ServiceModel.Channels.Message * System.ServiceModel.Channels.MessageFault *  -&gt; bool" Usage="faultConverter.TryCreateException (message, fault, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -199,7 +215,7 @@
       <Parameters>
         <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
         <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" />
-        <Parameter Name="exception" Type="System.Exception&amp;" RefType="out" />
+        <Parameter Name="exception" Type="System.Exception" RefType="out" />
       </Parameters>
       <Docs>
         <param name="message">The fault message.</param>
@@ -225,10 +241,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCreateFaultMessage(class System.Exception exception, [out] class System.ServiceModel.Channels.Message&amp; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.FaultConverter.TryCreateFaultMessage(System.Exception,System.ServiceModel.Channels.Message@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryCreateFaultMessage(Exception ^ exception, [Runtime::InteropServices::Out] System::ServiceModel::Channels::Message ^ % message);" />
+      <MemberSignature Language="F#" Value="member this.TryCreateFaultMessage : Exception *  -&gt; bool" Usage="faultConverter.TryCreateFaultMessage (exception, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,7 +254,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="exception" Type="System.Exception" />
-        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="out" />
       </Parameters>
       <Docs>
         <param name="exception">The SOAP exception.</param>

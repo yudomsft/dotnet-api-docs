@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SoapTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapTypeAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type SoapTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,8 +26,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Enum | System.AttributeTargets.Interface | System.AttributeTargets.Struct)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Interface)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -75,6 +81,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -115,9 +123,12 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapTypeAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapTypeAttribute(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapTypeAttribute : string -&gt; System.Xml.Serialization.SoapTypeAttribute" Usage="new System.Xml.Serialization.SoapTypeAttribute typeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -161,9 +172,12 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapTypeAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, ns As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapTypeAttribute(System::String ^ typeName, System::String ^ ns);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapTypeAttribute : string * string -&gt; System.Xml.Serialization.SoapTypeAttribute" Usage="new System.Xml.Serialization.SoapTypeAttribute (typeName, ns)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -211,9 +225,12 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapTypeAttribute.IncludeInSchema" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeInSchema As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeInSchema { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeInSchema : bool with get, set" Usage="System.Xml.Serialization.SoapTypeAttribute.IncludeInSchema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -226,6 +243,14 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -258,9 +283,12 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapTypeAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.SoapTypeAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -273,6 +301,14 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -304,9 +340,12 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapTypeAttribute.TypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string with get, set" Usage="System.Xml.Serialization.SoapTypeAttribute.TypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -319,6 +358,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

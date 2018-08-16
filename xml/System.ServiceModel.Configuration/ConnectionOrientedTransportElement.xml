@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ConnectionOrientedTransportElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConnectionOrientedTransportElement&#xA;Inherits TransportElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionOrientedTransportElement abstract : System::ServiceModel::Configuration::TransportElement" />
+  <TypeSignature Language="F#" Value="type ConnectionOrientedTransportElement = class&#xA;    inherit TransportElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,9 +25,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="connectionOrientedTransportElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -46,17 +50,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ChannelInitializationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ChannelInitializationTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ChannelInitializationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelInitializationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ChannelInitializationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("channelInitializationTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -74,16 +86,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ConnectionBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionBufferSize : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ConnectionBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("connectionBufferSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -109,9 +123,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="connectionOrientedTransportElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,13 +148,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.HostNameComparisonMode" />
       <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.HostNameComparisonMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("hostNameComparisonMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -156,9 +174,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="connectionOrientedTransportElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,16 +199,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxBufferSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -220,17 +242,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxOutputDelay" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxOutputDelay As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxOutputDelay { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxOutputDelay : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxOutputDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxOutputDelay", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -248,17 +278,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingAccepts" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingAccepts As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingAccepts { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingAccepts : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingAccepts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxPendingAccepts", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0">
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -283,17 +318,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingConnections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxPendingConnections As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingConnections { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingConnections : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxPendingConnections", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0">
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -318,9 +358,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,13 +380,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.TransferMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
+      <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.TransferMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("transferMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>

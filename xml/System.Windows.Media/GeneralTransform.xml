@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeneralTransform" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class GeneralTransform&#xA;Inherits Animatable&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public ref class GeneralTransform abstract : System::Windows::Media::Animation::Animatable, IFormattable" />
+  <TypeSignature Language="F#" Value="type GeneralTransform = class&#xA;    inherit Animatable&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,8 +46,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeneralTransform" /> class.</summary>
@@ -58,9 +66,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As GeneralTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeneralTransform ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.GeneralTransform" Usage="generalTransform.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,9 +98,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GeneralTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeneralTransform ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.GeneralTransform" Usage="generalTransform.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,9 +130,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeneralTransform.Inverse" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Inverse As GeneralTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::GeneralTransform ^ Inverse { System::Windows::Media::GeneralTransform ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inverse : System.Windows.Media.GeneralTransform" Usage="System.Windows.Media.GeneralTransform.Inverse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,6 +158,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -184,9 +199,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="generalTransform.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,9 +222,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="member this.ToString : IFormatProvider -&gt; string" Usage="generalTransform.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,9 +248,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point Transform(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.Transform(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point Transform(System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Point -&gt; System.Windows.Point" Usage="generalTransform.Transform point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -253,9 +274,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Rect TransformBounds(valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.TransformBounds(System.Windows.Rect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Rect TransformBounds(System::Windows::Rect rect);" />
+      <MemberSignature Language="F#" Value="abstract member TransformBounds : System.Windows.Rect -&gt; System.Windows.Rect" Usage="generalTransform.TransformBounds rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,9 +300,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeneralTransform.TryTransform(System.Windows.Point,System.Windows.Point@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryTransform (inPoint As Point, ByRef result As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryTransform(System::Windows::Point inPoint, [Runtime::InteropServices::Out] System::Windows::Point % result);" />
+      <MemberSignature Language="F#" Value="abstract member TryTransform : System.Windows.Point *  -&gt; bool" Usage="generalTransform.TryTransform (inPoint, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,7 +312,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="inPoint" Type="System.Windows.Point" />
-        <Parameter Name="result" Type="System.Windows.Point&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Windows.Point" RefType="out" />
       </Parameters>
       <Docs>
         <param name="inPoint">The point to transform.</param>

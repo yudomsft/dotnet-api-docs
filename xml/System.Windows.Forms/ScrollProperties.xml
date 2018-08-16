@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollProperties" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ScrollProperties" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScrollProperties abstract" />
+  <TypeSignature Language="F#" Value="type ScrollProperties = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,9 +32,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollProperties.#ctor(System.Windows.Forms.ScrollableControl)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (container As ScrollableControl)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ScrollProperties(System::Windows::Forms::ScrollableControl ^ container);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ScrollProperties : System.Windows.Forms.ScrollableControl -&gt; System.Windows.Forms.ScrollProperties" Usage="new System.Windows.Forms.ScrollProperties container" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -57,14 +61,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.ScrollProperties.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -83,17 +92,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.LargeChange" />
       <MemberSignature Language="VB.NET" Value="Public Property LargeChange As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LargeChange { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LargeChange : int with get, set" Usage="System.Windows.Forms.ScrollProperties.LargeChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(10)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,17 +134,25 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public Property Maximum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int with get, set" Usage="System.Windows.Forms.ScrollProperties.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -155,17 +177,25 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Minimum" />
       <MemberSignature Language="VB.NET" Value="Public Property Minimum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minimum { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Minimum : int with get, set" Usage="System.Windows.Forms.ScrollProperties.Minimum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,11 +222,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.ParentControl" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ParentControl As ScrollableControl" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::ScrollableControl ^ ParentControl { System::Windows::Forms::ScrollableControl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentControl : System.Windows.Forms.ScrollableControl" Usage="System.Windows.Forms.ScrollProperties.ParentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollableControl</ReturnType>
       </ReturnValue>
@@ -212,13 +249,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.SmallChange" />
       <MemberSignature Language="VB.NET" Value="Public Property SmallChange As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SmallChange { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SmallChange : int with get, set" Usage="System.Windows.Forms.ScrollProperties.SmallChange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -244,17 +283,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int with get, set" Usage="System.Windows.Forms.ScrollProperties.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -272,14 +316,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollProperties.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.ScrollProperties.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

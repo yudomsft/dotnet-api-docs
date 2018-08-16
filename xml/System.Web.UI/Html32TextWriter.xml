@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Html32TextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class Html32TextWriter&#xA;Inherits HtmlTextWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class Html32TextWriter : System::Web::UI::HtmlTextWriter" />
+  <TypeSignature Language="F#" Value="type Html32TextWriter = class&#xA;    inherit HtmlTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -50,11 +53,19 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.#ctor(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Html32TextWriter(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Html32TextWriter : System.IO.TextWriter -&gt; System.Web.UI.Html32TextWriter" Usage="new System.Web.UI.Html32TextWriter writer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="writer" Type="System.IO.TextWriter" />
       </Parameters>
@@ -89,9 +100,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.#ctor(System.IO.TextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, tabString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Html32TextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Html32TextWriter : System.IO.TextWriter * string -&gt; System.Web.UI.Html32TextWriter" Usage="new System.Web.UI.Html32TextWriter (writer, tabString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -123,9 +137,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Html32TextWriter.FontStack" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property FontStack As Stack" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Stack ^ FontStack { System::Collections::Stack ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FontStack : System.Collections.Stack" Usage="System.Web.UI.Html32TextWriter.FontStack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,9 +160,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.GetTagName(System.Web.UI.HtmlTextWriterTag)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTagName (tagKey As HtmlTextWriterTag) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetTagName(System::Web::UI::HtmlTextWriterTag tagKey);" />
+      <MemberSignature Language="F#" Value="override this.GetTagName : System.Web.UI.HtmlTextWriterTag -&gt; string" Usage="html32TextWriter.GetTagName tagKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,9 +194,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnStyleAttributeRender (name As String, value As String, key As HtmlTextWriterStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnStyleAttributeRender(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterStyle key);" />
+      <MemberSignature Language="F#" Value="override this.OnStyleAttributeRender : string * string * System.Web.UI.HtmlTextWriterStyle -&gt; bool" Usage="html32TextWriter.OnStyleAttributeRender (name, value, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,9 +233,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.OnTagRender(System.String,System.Web.UI.HtmlTextWriterTag)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnTagRender (name As String, key As HtmlTextWriterTag) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnTagRender(System::String ^ name, System::Web::UI::HtmlTextWriterTag key);" />
+      <MemberSignature Language="F#" Value="override this.OnTagRender : string * System.Web.UI.HtmlTextWriterTag -&gt; bool" Usage="html32TextWriter.OnTagRender (name, key)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,9 +270,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.RenderAfterContent" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RenderAfterContent () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ RenderAfterContent();" />
+      <MemberSignature Language="F#" Value="override this.RenderAfterContent : unit -&gt; string" Usage="html32TextWriter.RenderAfterContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -280,9 +309,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.RenderAfterTag" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RenderAfterTag () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ RenderAfterTag();" />
+      <MemberSignature Language="F#" Value="override this.RenderAfterTag : unit -&gt; string" Usage="html32TextWriter.RenderAfterTag " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,9 +346,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.RenderBeforeContent" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RenderBeforeContent () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ RenderBeforeContent();" />
+      <MemberSignature Language="F#" Value="override this.RenderBeforeContent : unit -&gt; string" Usage="html32TextWriter.RenderBeforeContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,9 +385,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.RenderBeforeTag" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function RenderBeforeTag () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ RenderBeforeTag();" />
+      <MemberSignature Language="F#" Value="override this.RenderBeforeTag : unit -&gt; string" Usage="html32TextWriter.RenderBeforeTag " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -384,9 +422,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.RenderBeginTag(System.Web.UI.HtmlTextWriterTag)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderBeginTag (tagKey As HtmlTextWriterTag)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderBeginTag(System::Web::UI::HtmlTextWriterTag tagKey);" />
+      <MemberSignature Language="F#" Value="override this.RenderBeginTag : System.Web.UI.HtmlTextWriterTag -&gt; unit" Usage="html32TextWriter.RenderBeginTag tagKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -414,9 +455,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Html32TextWriter.RenderEndTag" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderEndTag ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderEndTag();" />
+      <MemberSignature Language="F#" Value="override this.RenderEndTag : unit -&gt; unit" Usage="html32TextWriter.RenderEndTag " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -434,11 +478,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution" />
       <MemberSignature Language="VB.NET" Value="Public Property ShouldPerformDivTableSubstitution As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShouldPerformDivTableSubstitution { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldPerformDivTableSubstitution : bool with get, set" Usage="System.Web.UI.Html32TextWriter.ShouldPerformDivTableSubstitution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -455,11 +509,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Html32TextWriter.SupportsBold" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportsBold As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsBold { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsBold : bool with get, set" Usage="System.Web.UI.Html32TextWriter.SupportsBold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -491,11 +555,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Html32TextWriter.SupportsItalic" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportsItalic As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsItalic { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SupportsItalic : bool with get, set" Usage="System.Web.UI.Html32TextWriter.SupportsItalic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

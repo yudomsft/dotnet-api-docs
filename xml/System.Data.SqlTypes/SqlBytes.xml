@@ -4,12 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlBytes" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlBytes&#xA;Implements INullable, ISerializable, IXmlSerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlBytes sealed : System::Data::SqlTypes::INullable, System::Runtime::Serialization::ISerializable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlBytes = class&#xA;    interface INullable&#xA;    interface IXmlSerializable&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -37,7 +39,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Xml.Serialization.XmlSchemaProvider("GetXsdType")</AttributeName>
     </Attribute>
   </Attributes>
@@ -68,6 +70,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (buffer As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBytes(cli::array &lt;System::Byte&gt; ^ buffer);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlBytes : byte[] -&gt; System.Data.SqlTypes.SqlBytes" Usage="new System.Data.SqlTypes.SqlBytes buffer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -99,6 +103,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -133,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.#ctor(System.Data.SqlTypes.SqlBinary)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As SqlBinary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBytes(System::Data::SqlTypes::SqlBinary value);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlBytes : System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBytes" Usage="new System.Data.SqlTypes.SqlBytes value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -140,6 +146,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.#ctor(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (s As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBytes(System::IO::Stream ^ s);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlBytes : System.IO.Stream -&gt; System.Data.SqlTypes.SqlBytes" Usage="new System.Data.SqlTypes.SqlBytes s" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -181,6 +189,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.Buffer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Buffer As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Buffer { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Buffer : byte[]" Usage="System.Data.SqlTypes.SqlBytes.Buffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -222,6 +232,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -258,9 +269,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlBytes.GetXsdType schemaSet" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -292,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.IsNull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlBytes.IsNull" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
@@ -302,6 +316,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -337,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.Item(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(offset As Long) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte default[long] { System::Byte get(long offset); void set(long offset, System::Byte value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int64) : byte with get, set" Usage="System.Data.SqlTypes.SqlBytes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -344,6 +360,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -375,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Data.SqlTypes.SqlBytes.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -382,6 +400,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -420,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.MaxLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxLength As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxLength { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int64" Usage="System.Data.SqlTypes.SqlBytes.MaxLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -427,6 +447,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -461,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Null As SqlBytes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Data::SqlTypes::SqlBytes ^ Null { System::Data::SqlTypes::SqlBytes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Null : System.Data.SqlTypes.SqlBytes" Usage="System.Data.SqlTypes.SqlBytes.Null" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -468,6 +490,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -504,6 +527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.op_Explicit(System.Data.SqlTypes.SqlBinary)~System.Data.SqlTypes.SqlBytes" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As SqlBinary) As SqlBytes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlBytes ^(System::Data::SqlTypes::SqlBinary value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBinary -&gt; System.Data.SqlTypes.SqlBytes" Usage="System.Data.SqlTypes.SqlBytes.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -511,6 +535,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -544,6 +569,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.op_Explicit(System.Data.SqlTypes.SqlBytes)~System.Data.SqlTypes.SqlBinary" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As SqlBytes) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlBinary(System::Data::SqlTypes::SqlBytes ^ value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBytes -&gt; System.Data.SqlTypes.SqlBinary" Usage="System.Data.SqlTypes.SqlBytes.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -551,6 +577,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -584,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.Read(System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read (offset As Long, buffer As Byte(), offsetInBuffer As Integer, count As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; long Read(long offset, cli::array &lt;System::Byte&gt; ^ buffer, int offsetInBuffer, int count);" />
+      <MemberSignature Language="F#" Value="member this.Read : int64 * byte[] * int * int -&gt; int64" Usage="sqlBytes.Read (offset, buffer, offsetInBuffer, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -591,6 +619,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -641,6 +670,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLength(long value);" />
+      <MemberSignature Language="F#" Value="member this.SetLength : int64 -&gt; unit" Usage="sqlBytes.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -648,6 +678,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -685,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.SetNull" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetNull ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetNull();" />
+      <MemberSignature Language="F#" Value="member this.SetNull : unit -&gt; unit" Usage="sqlBytes.SetNull " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -692,6 +724,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -719,9 +752,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.Storage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Storage As StorageState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlTypes::StorageState Storage { System::Data::SqlTypes::StorageState get(); };" />
+      <MemberSignature Language="F#" Value="member this.Storage : System.Data.SqlTypes.StorageState" Usage="System.Data.SqlTypes.SqlBytes.Storage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -749,6 +784,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.Stream" />
       <MemberSignature Language="VB.NET" Value="Public Property Stream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Stream { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Stream : System.IO.Stream with get, set" Usage="System.Data.SqlTypes.SqlBytes.Stream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -756,6 +792,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -796,6 +833,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -834,6 +872,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -868,6 +907,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -906,6 +946,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -938,6 +979,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.ToSqlBinary" />
       <MemberSignature Language="VB.NET" Value="Public Function ToSqlBinary () As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBinary ToSqlBinary();" />
+      <MemberSignature Language="F#" Value="member this.ToSqlBinary : unit -&gt; System.Data.SqlTypes.SqlBinary" Usage="sqlBytes.ToSqlBinary " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -945,6 +987,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -973,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlBytes.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Value { cli::array &lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : byte[]" Usage="System.Data.SqlTypes.SqlBytes.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -980,6 +1024,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1014,6 +1059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.Write(System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (offset As Long, buffer As Byte(), offsetInBuffer As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(long offset, cli::array &lt;System::Byte&gt; ^ buffer, int offsetInBuffer, int count);" />
+      <MemberSignature Language="F#" Value="member this.Write : int64 * byte[] * int * int -&gt; unit" Usage="sqlBytes.Write (offset, buffer, offsetInBuffer, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1021,6 +1067,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

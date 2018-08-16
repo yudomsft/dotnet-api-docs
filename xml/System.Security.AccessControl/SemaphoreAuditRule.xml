@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.SemaphoreAuditRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SemaphoreAuditRule&#xA;Inherits AuditRule" />
   <TypeSignature Language="C++ CLI" Value="public ref class SemaphoreAuditRule sealed : System::Security::AccessControl::AuditRule" />
+  <TypeSignature Language="F#" Value="type SemaphoreAuditRule = class&#xA;    inherit AuditRule" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -19,8 +21,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.SemaphoreAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.SemaphoreRights,System.Security.AccessControl.AuditFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, eventRights As SemaphoreRights, flags As AuditFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SemaphoreAuditRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::SemaphoreRights eventRights, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.SemaphoreAuditRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.SemaphoreRights * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.SemaphoreAuditRule" Usage="new System.Security.AccessControl.SemaphoreAuditRule (identity, eventRights, flags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -69,9 +75,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
         <Parameter Name="eventRights" Type="System.Security.AccessControl.SemaphoreRights" />
@@ -112,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.SemaphoreAuditRule.SemaphoreRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SemaphoreRights As SemaphoreRights" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::SemaphoreRights SemaphoreRights { System::Security::AccessControl::SemaphoreRights get(); };" />
+      <MemberSignature Language="F#" Value="member this.SemaphoreRights : System.Security.AccessControl.SemaphoreRights" Usage="System.Security.AccessControl.SemaphoreAuditRule.SemaphoreRights" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -120,6 +133,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

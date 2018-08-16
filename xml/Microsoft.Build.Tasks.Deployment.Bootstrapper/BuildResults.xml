@@ -4,9 +4,14 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults" />
   <TypeSignature Language="VB.NET" Value="Public Class BuildResults&#xA;Implements IBuildResults" />
   <TypeSignature Language="C++ CLI" Value="public ref class BuildResults : Microsoft::Build::Tasks::Deployment::Bootstrapper::IBuildResults" />
+  <TypeSignature Language="F#" Value="type BuildResults = class&#xA;    interface IBuildResults" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,14 +22,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("FAD7BA7C-CA00-41e0-A5EF-2DA9A74E58E6")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.ComponentFiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComponentFiles As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ComponentFiles { cli::array &lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComponentFiles : string[]" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.ComponentFiles" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.ComponentFiles</InterfaceMember>
@@ -46,6 +55,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -63,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.KeyFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFile : string" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.KeyFile" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.KeyFile</InterfaceMember>
@@ -71,6 +85,15 @@
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -87,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.Messages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Messages As BuildMessage()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildMessage ^&gt; ^ Messages { cli::array &lt;Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildMessage ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Messages : Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage[]" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.Messages" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Messages</InterfaceMember>
@@ -94,6 +118,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage[]</ReturnType>
@@ -111,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Succeeded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Succeeded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Succeeded : bool" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults.Succeeded" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Succeeded</InterfaceMember>
@@ -119,6 +148,15 @@
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

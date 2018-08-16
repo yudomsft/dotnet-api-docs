@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Inline" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Inline&#xA;Inherits TextElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class Inline abstract : System::Windows::Documents::TextElement" />
+  <TypeSignature Language="F#" Value="type Inline = class&#xA;    inherit TextElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Documents.TextElementEditingBehavior(IsMergeable=true, IsTypographicOnly=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,8 +35,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes base class values when called by a derived class.</summary>
@@ -47,9 +55,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Inline.BaselineAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property BaselineAlignment As BaselineAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::BaselineAlignment BaselineAlignment { System::Windows::BaselineAlignment get(); void set(System::Windows::BaselineAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.BaselineAlignment : System.Windows.BaselineAlignment with get, set" Usage="System.Windows.Documents.Inline.BaselineAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,9 +93,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Inline.BaselineAlignmentProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaselineAlignmentProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BaselineAlignmentProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BaselineAlignmentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Inline.BaselineAlignmentProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,9 +114,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Inline.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); void set(System::Windows::FlowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.FlowDirection with get, set" Usage="System.Windows.Documents.Inline.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,9 +167,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Inline.FlowDirectionProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FlowDirectionProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FlowDirectionProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FlowDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Inline.FlowDirectionProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,9 +188,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Inline.NextInline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextInline As Inline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Inline ^ NextInline { System::Windows::Documents::Inline ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextInline : System.Windows.Documents.Inline" Usage="System.Windows.Documents.Inline.NextInline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,9 +227,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Inline.PreviousInline" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousInline As Inline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Inline ^ PreviousInline { System::Windows::Documents::Inline ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousInline : System.Windows.Documents.Inline" Usage="System.Windows.Documents.Inline.PreviousInline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,9 +266,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Inline.SiblingInlines" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SiblingInlines As InlineCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::InlineCollection ^ SiblingInlines { System::Windows::Documents::InlineCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SiblingInlines : System.Windows.Documents.InlineCollection" Usage="System.Windows.Documents.Inline.SiblingInlines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,9 +310,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Inline.TextDecorations" />
       <MemberSignature Language="VB.NET" Value="Public Property TextDecorations As TextDecorationCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); void set(System::Windows::TextDecorationCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextDecorations : System.Windows.TextDecorationCollection with get, set" Usage="System.Windows.Documents.Inline.TextDecorations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,9 +373,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Inline.TextDecorationsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextDecorationsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextDecorationsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextDecorationsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Inline.TextDecorationsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

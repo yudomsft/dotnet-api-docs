@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class PerformanceCounterPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterPermissionAttribute : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -17,8 +20,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Event | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Event, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,9 +50,12 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounterPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Diagnostics.PerformanceCounterPermissionAttribute" Usage="new System.Diagnostics.PerformanceCounterPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -69,15 +78,23 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.CategoryName" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryName : string with get, set" Usage="System.Diagnostics.PerformanceCounterPermissionAttribute.CategoryName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -94,9 +111,12 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="performanceCounterPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -119,15 +139,23 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.MachineName" />
       <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.PerformanceCounterPermissionAttribute.MachineName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -144,15 +172,26 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterPermissionAttribute.PermissionAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property PermissionAccess As PerformanceCounterPermissionAccess" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterPermissionAccess PermissionAccess { System::Diagnostics::PerformanceCounterPermissionAccess get(); void set(System::Diagnostics::PerformanceCounterPermissionAccess value); };" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.Diagnostics.PerformanceCounterPermissionAccess with get, set" Usage="System.Diagnostics.PerformanceCounterPermissionAttribute.PermissionAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>

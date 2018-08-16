@@ -4,16 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MembershipProvider&#xA;Inherits ProviderBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipProvider abstract : System::Configuration::Provider::ProviderBase" />
+  <TypeSignature Language="F#" Value="type MembershipProvider = class&#xA;    inherit ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Configuration.Provider.ProviderBase</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web, Version=2.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
@@ -53,6 +58,15 @@
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Security.MembershipProvider" /> class.</summary>
@@ -72,10 +86,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Security.MembershipProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -108,10 +127,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.ChangePassword(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ChangePassword (username As String, oldPassword As String, newPassword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ChangePassword(System::String ^ username, System::String ^ oldPassword, System::String ^ newPassword);" />
+      <MemberSignature Language="F#" Value="abstract member ChangePassword : string * string * string -&gt; bool" Usage="membershipProvider.ChangePassword (username, oldPassword, newPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -149,10 +173,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ChangePasswordQuestionAndAnswer (username As String, password As String, newPasswordQuestion As String, newPasswordAnswer As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ChangePasswordQuestionAndAnswer(System::String ^ username, System::String ^ password, System::String ^ newPasswordQuestion, System::String ^ newPasswordAnswer);" />
+      <MemberSignature Language="F#" Value="abstract member ChangePasswordQuestionAndAnswer : string * string * string * string -&gt; bool" Usage="membershipProvider.ChangePasswordQuestionAndAnswer (username, password, newPasswordQuestion, newPasswordAnswer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -194,10 +223,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateUser (username As String, password As String, email As String, passwordQuestion As String, passwordAnswer As String, isApproved As Boolean, providerUserKey As Object, ByRef status As MembershipCreateStatus) As MembershipUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Security::MembershipUser ^ CreateUser(System::String ^ username, System::String ^ password, System::String ^ email, System::String ^ passwordQuestion, System::String ^ passwordAnswer, bool isApproved, System::Object ^ providerUserKey, [Runtime::InteropServices::Out] System::Web::Security::MembershipCreateStatus % status);" />
+      <MemberSignature Language="F#" Value="abstract member CreateUser : string * string * string * string * string * bool * obj *  -&gt; System.Web.Security.MembershipUser" Usage="membershipProvider.CreateUser (username, password, email, passwordQuestion, passwordAnswer, isApproved, providerUserKey, status)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipUser</ReturnType>
@@ -210,7 +244,7 @@
         <Parameter Name="passwordAnswer" Type="System.String" />
         <Parameter Name="isApproved" Type="System.Boolean" />
         <Parameter Name="providerUserKey" Type="System.Object" />
-        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus&amp;" RefType="out" />
+        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus" RefType="out" />
       </Parameters>
       <Docs>
         <param name="username">The user name for the new user.</param>
@@ -246,10 +280,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.DecryptPassword(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function DecryptPassword (encodedPassword As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ DecryptPassword(cli::array &lt;System::Byte&gt; ^ encodedPassword);" />
+      <MemberSignature Language="F#" Value="abstract member DecryptPassword : byte[] -&gt; byte[]&#xA;override this.DecryptPassword : byte[] -&gt; byte[]" Usage="membershipProvider.DecryptPassword encodedPassword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -284,10 +323,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.DeleteUser(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteUser (username As String, deleteAllRelatedData As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool DeleteUser(System::String ^ username, bool deleteAllRelatedData);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteUser : string * bool -&gt; bool" Usage="membershipProvider.DeleteUser (username, deleteAllRelatedData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -324,10 +368,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.EnablePasswordReset" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EnablePasswordReset As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool EnablePasswordReset { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePasswordReset : bool" Usage="System.Web.Security.MembershipProvider.EnablePasswordReset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -357,10 +406,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.EnablePasswordRetrieval" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EnablePasswordRetrieval As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool EnablePasswordRetrieval { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePasswordRetrieval : bool" Usage="System.Web.Security.MembershipProvider.EnablePasswordRetrieval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -409,11 +463,21 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.EncryptPassword(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function EncryptPassword (password As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ EncryptPassword(cli::array &lt;System::Byte&gt; ^ password);" />
+      <MemberSignature Language="F#" Value="abstract member EncryptPassword : byte[] -&gt; byte[]&#xA;override this.EncryptPassword : byte[] -&gt; byte[]" Usage="membershipProvider.EncryptPassword password" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -447,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.EncryptPassword(System.Byte[],System.Web.Configuration.MembershipPasswordCompatibilityMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function EncryptPassword (password As Byte(), legacyPasswordCompatibilityMode As MembershipPasswordCompatibilityMode) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ EncryptPassword(cli::array &lt;System::Byte&gt; ^ password, System::Web::Configuration::MembershipPasswordCompatibilityMode legacyPasswordCompatibilityMode);" />
+      <MemberSignature Language="F#" Value="abstract member EncryptPassword : byte[] * System.Web.Configuration.MembershipPasswordCompatibilityMode -&gt; byte[]&#xA;override this.EncryptPassword : byte[] * System.Web.Configuration.MembershipPasswordCompatibilityMode -&gt; byte[]" Usage="membershipProvider.EncryptPassword (password, legacyPasswordCompatibilityMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -475,10 +540,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindUsersByEmail (emailToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Security::MembershipUserCollection ^ FindUsersByEmail(System::String ^ emailToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="abstract member FindUsersByEmail : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="membershipProvider.FindUsersByEmail (emailToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
@@ -487,7 +557,7 @@
         <Parameter Name="emailToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="emailToMatch">The email address to search for.</param>
@@ -519,10 +589,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindUsersByName (usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Security::MembershipUserCollection ^ FindUsersByName(System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="abstract member FindUsersByName : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="membershipProvider.FindUsersByName (usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
@@ -531,7 +606,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="usernameToMatch">The user name to search for.</param>
@@ -563,10 +638,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAllUsers (pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Security::MembershipUserCollection ^ GetAllUsers(int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="abstract member GetAllUsers : int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="membershipProvider.GetAllUsers (pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
@@ -574,7 +654,7 @@
       <Parameters>
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pageIndex">The index of the page of results to return. <c>pageIndex</c> is zero-based.</param>
@@ -605,10 +685,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.GetNumberOfUsersOnline" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNumberOfUsersOnline () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetNumberOfUsersOnline();" />
+      <MemberSignature Language="F#" Value="abstract member GetNumberOfUsersOnline : unit -&gt; int" Usage="membershipProvider.GetNumberOfUsersOnline " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -638,10 +723,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.GetPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPassword (username As String, answer As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetPassword(System::String ^ username, System::String ^ answer);" />
+      <MemberSignature Language="F#" Value="abstract member GetPassword : string * string -&gt; string" Usage="membershipProvider.GetPassword (username, answer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -691,10 +781,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.GetUser(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetUser (providerUserKey As Object, userIsOnline As Boolean) As MembershipUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Security::MembershipUser ^ GetUser(System::Object ^ providerUserKey, bool userIsOnline);" />
+      <MemberSignature Language="F#" Value="abstract member GetUser : obj * bool -&gt; System.Web.Security.MembershipUser" Usage="membershipProvider.GetUser (providerUserKey, userIsOnline)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipUser</ReturnType>
@@ -730,10 +825,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.GetUser(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetUser (username As String, userIsOnline As Boolean) As MembershipUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Security::MembershipUser ^ GetUser(System::String ^ username, bool userIsOnline);" />
+      <MemberSignature Language="F#" Value="abstract member GetUser : string * bool -&gt; System.Web.Security.MembershipUser" Usage="membershipProvider.GetUser (username, userIsOnline)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipUser</ReturnType>
@@ -769,10 +869,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.GetUserNameByEmail(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetUserNameByEmail (email As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetUserNameByEmail(System::String ^ email);" />
+      <MemberSignature Language="F#" Value="abstract member GetUserNameByEmail : string -&gt; string" Usage="membershipProvider.GetUserNameByEmail email" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -809,10 +914,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.MaxInvalidPasswordAttempts" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MaxInvalidPasswordAttempts As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int MaxInvalidPasswordAttempts { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxInvalidPasswordAttempts : int" Usage="System.Web.Security.MembershipProvider.MaxInvalidPasswordAttempts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -847,10 +957,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.MinRequiredNonAlphanumericCharacters" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MinRequiredNonAlphanumericCharacters As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int MinRequiredNonAlphanumericCharacters { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinRequiredNonAlphanumericCharacters : int" Usage="System.Web.Security.MembershipProvider.MinRequiredNonAlphanumericCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -903,10 +1018,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.MinRequiredPasswordLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MinRequiredPasswordLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int MinRequiredPasswordLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinRequiredPasswordLength : int" Usage="System.Web.Security.MembershipProvider.MinRequiredPasswordLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -952,10 +1072,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.OnValidatingPassword(System.Web.Security.ValidatePasswordEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValidatingPassword (e As ValidatePasswordEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValidatingPassword(System::Web::Security::ValidatePasswordEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnValidatingPassword : System.Web.Security.ValidatePasswordEventArgs -&gt; unit&#xA;override this.OnValidatingPassword : System.Web.Security.ValidatePasswordEventArgs -&gt; unit" Usage="membershipProvider.OnValidatingPassword e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -987,10 +1112,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.PasswordAttemptWindow" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PasswordAttemptWindow As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int PasswordAttemptWindow { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordAttemptWindow : int" Usage="System.Web.Security.MembershipProvider.PasswordAttemptWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1025,10 +1155,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.PasswordFormat" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PasswordFormat As MembershipPasswordFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Web::Security::MembershipPasswordFormat PasswordFormat { System::Web::Security::MembershipPasswordFormat get(); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordFormat : System.Web.Security.MembershipPasswordFormat" Usage="System.Web.Security.MembershipProvider.PasswordFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipPasswordFormat</ReturnType>
@@ -1059,10 +1194,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.PasswordStrengthRegularExpression" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PasswordStrengthRegularExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ PasswordStrengthRegularExpression { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordStrengthRegularExpression : string" Usage="System.Web.Security.MembershipProvider.PasswordStrengthRegularExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1116,10 +1256,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.RequiresQuestionAndAnswer" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RequiresQuestionAndAnswer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool RequiresQuestionAndAnswer { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresQuestionAndAnswer : bool" Usage="System.Web.Security.MembershipProvider.RequiresQuestionAndAnswer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1151,10 +1296,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipProvider.RequiresUniqueEmail" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RequiresUniqueEmail As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool RequiresUniqueEmail { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresUniqueEmail : bool" Usage="System.Web.Security.MembershipProvider.RequiresUniqueEmail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1184,10 +1334,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.ResetPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ResetPassword (username As String, answer As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ResetPassword(System::String ^ username, System::String ^ answer);" />
+      <MemberSignature Language="F#" Value="abstract member ResetPassword : string * string -&gt; string" Usage="membershipProvider.ResetPassword (username, answer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1231,10 +1386,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.UnlockUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function UnlockUser (userName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool UnlockUser(System::String ^ userName);" />
+      <MemberSignature Language="F#" Value="abstract member UnlockUser : string -&gt; bool" Usage="membershipProvider.UnlockUser userName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1268,10 +1428,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.UpdateUser(System.Web.Security.MembershipUser)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub UpdateUser (user As MembershipUser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void UpdateUser(System::Web::Security::MembershipUser ^ user);" />
+      <MemberSignature Language="F#" Value="abstract member UpdateUser : System.Web.Security.MembershipUser -&gt; unit" Usage="membershipProvider.UpdateUser user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1303,10 +1468,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipProvider.ValidateUser(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ValidateUser (username As String, password As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ValidateUser(System::String ^ username, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateUser : string * string -&gt; bool" Usage="membershipProvider.ValidateUser (username, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1344,10 +1514,15 @@
       <MemberSignature Language="DocId" Value="E:System.Web.Security.MembershipProvider.ValidatingPassword" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ValidatingPassword As MembershipValidatePasswordEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Security::MembershipValidatePasswordEventHandler ^ ValidatingPassword;" />
+      <MemberSignature Language="F#" Value="member this.ValidatingPassword : System.Web.Security.MembershipValidatePasswordEventHandler " Usage="member this.ValidatingPassword : System.Web.Security.MembershipValidatePasswordEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipValidatePasswordEventHandler</ReturnType>

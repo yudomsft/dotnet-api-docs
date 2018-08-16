@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SqlCacheDependencyDatabase" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlCacheDependencyDatabase&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlCacheDependencyDatabase sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SqlCacheDependencyDatabase = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -52,9 +54,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabase.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, connectionStringName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependencyDatabase(System::String ^ name, System::String ^ connectionStringName);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.SqlCacheDependencyDatabase : string * string -&gt; System.Web.Configuration.SqlCacheDependencyDatabase" Usage="new System.Web.Configuration.SqlCacheDependencyDatabase (name, connectionStringName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -84,9 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SqlCacheDependencyDatabase.#ctor(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, connectionStringName As String, pollTime As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlCacheDependencyDatabase(System::String ^ name, System::String ^ connectionStringName, int pollTime);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.SqlCacheDependencyDatabase : string * string * int -&gt; System.Web.Configuration.SqlCacheDependencyDatabase" Usage="new System.Web.Configuration.SqlCacheDependencyDatabase (name, connectionStringName, pollTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -118,16 +124,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.ConnectionStringName" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionStringName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionStringName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionStringName : string with get, set" Usage="System.Web.Configuration.SqlCacheDependencyDatabase.ConnectionStringName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("connectionStringName", IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -162,11 +170,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.ElementProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Web.Configuration.SqlCacheDependencyDatabase.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementProperty</ReturnType>
       </ReturnValue>
@@ -182,16 +197,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.SqlCacheDependencyDatabase.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("name", IsKey=true, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -228,13 +245,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.PollTime" />
       <MemberSignature Language="VB.NET" Value="Public Property PollTime As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PollTime { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PollTime : int with get, set" Usage="System.Web.Configuration.SqlCacheDependencyDatabase.PollTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("pollTime", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -271,11 +290,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SqlCacheDependencyDatabase.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.SqlCacheDependencyDatabase.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.DynamicMethod" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicMethod&#xA;Inherits MethodInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicMethod sealed : System::Reflection::MethodInfo" />
+  <TypeSignature Language="F#" Value="type DynamicMethod = class&#xA;    inherit MethodInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -19,7 +21,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -110,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -118,9 +121,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="returnType" Type="System.Type" />
@@ -161,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), restrictedSkipVisibility As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, bool restrictedSkipVisibility);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, restrictedSkipVisibility)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -169,9 +179,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="returnType" Type="System.Type" />
@@ -228,6 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), m As Module)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, System::Reflection::Module ^ m);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * System.Reflection.Module -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, m)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -236,9 +253,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="returnType" Type="System.Type" />
@@ -298,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), owner As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, Type ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * Type -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, owner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -306,9 +330,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="returnType" Type="System.Type" />
@@ -381,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), m As Module, skipVisibility As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, System::Reflection::Module ^ m, bool skipVisibility);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * System.Reflection.Module * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, m, skipVisibility)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -389,9 +420,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="returnType" Type="System.Type" />
@@ -445,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), owner As Type, skipVisibility As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, Type ^ owner, bool skipVisibility);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * Type * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, owner, skipVisibility)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -453,9 +491,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="returnType" Type="System.Type" />
@@ -509,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Reflection.Module,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), m As Module, skipVisibility As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, System::Reflection::MethodAttributes attributes, System::Reflection::CallingConventions callingConvention, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, System::Reflection::Module ^ m, bool skipVisibility);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * System.Reflection.MethodAttributes * System.Reflection.CallingConventions * Type * Type[] * System.Reflection.Module * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, attributes, callingConvention, returnType, parameterTypes, m, skipVisibility)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -517,9 +562,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="attributes" Type="System.Reflection.MethodAttributes" />
@@ -577,6 +628,8 @@
   
  <paramref name="returnType" /> is a type for which <see cref="P:System.Type.IsByRef" /> returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">to associate the dynamic method with a module other than the calling module. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess" />.</permission>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md">How to: Define and Execute Dynamic Methods</related>
+        <related type="Article" href="~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md">Security Issues in Reflection Emit</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -585,6 +638,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), owner As Type, skipVisibility As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, System::Reflection::MethodAttributes attributes, System::Reflection::CallingConventions callingConvention, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, Type ^ owner, bool skipVisibility);" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * System.Reflection.MethodAttributes * System.Reflection.CallingConventions * Type * Type[] * Type * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, attributes, callingConvention, returnType, parameterTypes, owner, skipVisibility)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -593,9 +647,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="attributes" Type="System.Reflection.MethodAttributes" />
@@ -661,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As MethodAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodAttributes" Usage="System.Reflection.Emit.DynamicMethod.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -669,6 +730,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -703,6 +765,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.CallingConvention" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CallingConvention As CallingConventions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::CallingConventions CallingConvention { System::Reflection::CallingConventions get(); };" />
+      <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.CallingConventions" Usage="System.Reflection.Emit.DynamicMethod.CallingConvention" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -711,6 +774,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -755,6 +819,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CreateDelegate (delegateType As Type) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Delegate ^ CreateDelegate(Type ^ delegateType);" />
+      <MemberSignature Language="F#" Value="override this.CreateDelegate : Type -&gt; Delegate" Usage="dynamicMethod.CreateDelegate delegateType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -763,12 +828,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -811,6 +880,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CreateDelegate (delegateType As Type, target As Object) As Delegate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Delegate ^ CreateDelegate(Type ^ delegateType, System::Object ^ target);" />
+      <MemberSignature Language="F#" Value="override this.CreateDelegate : Type * obj -&gt; Delegate" Usage="dynamicMethod.CreateDelegate (delegateType, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -819,12 +889,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -890,6 +964,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Reflection.Emit.DynamicMethod.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -898,6 +973,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -932,9 +1008,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.DefineParameter(System.Int32,System.Reflection.ParameterAttributes,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DefineParameter (position As Integer, attributes As ParameterAttributes, parameterName As String) As ParameterBuilder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ParameterBuilder ^ DefineParameter(int position, System::Reflection::ParameterAttributes attributes, System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="member this.DefineParameter : int * System.Reflection.ParameterAttributes * string -&gt; System.Reflection.Emit.ParameterBuilder" Usage="dynamicMethod.DefineParameter (position, attributes, parameterName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -988,9 +1066,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetBaseDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBaseDefinition () As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetBaseDefinition();" />
+      <MemberSignature Language="F#" Value="override this.GetBaseDefinition : unit -&gt; System.Reflection.MethodInfo" Usage="dynamicMethod.GetBaseDefinition " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1031,9 +1111,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="dynamicMethod.GetCustomAttributes inherit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1072,9 +1154,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="dynamicMethod.GetCustomAttributes (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1117,12 +1201,19 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetDynamicILInfo" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDynamicILInfo () As DynamicILInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::DynamicILInfo ^ GetDynamicILInfo();" />
+      <MemberSignature Language="F#" Value="member this.GetDynamicILInfo : unit -&gt; System.Reflection.Emit.DynamicILInfo" Usage="dynamicMethod.GetDynamicILInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.DynamicILInfo</ReturnType>
       </ReturnValue>
@@ -1158,6 +1249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetILGenerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetILGenerator () As ILGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ILGenerator ^ GetILGenerator();" />
+      <MemberSignature Language="F#" Value="member this.GetILGenerator : unit -&gt; System.Reflection.Emit.ILGenerator" Usage="dynamicMethod.GetILGenerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1166,6 +1258,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1204,6 +1297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetILGenerator(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetILGenerator (streamSize As Integer) As ILGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ILGenerator ^ GetILGenerator(int streamSize);" />
+      <MemberSignature Language="F#" Value="member this.GetILGenerator : int -&gt; System.Reflection.Emit.ILGenerator" Usage="dynamicMethod.GetILGenerator streamSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1212,9 +1306,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.ILGenerator</ReturnType>
       </ReturnValue>
@@ -1253,9 +1353,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetMethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMethodImplementationFlags () As MethodImplAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
+      <MemberSignature Language="F#" Value="override this.GetMethodImplementationFlags : unit -&gt; System.Reflection.MethodImplAttributes" Usage="dynamicMethod.GetMethodImplementationFlags " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1286,6 +1388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetParameters () As ParameterInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
+      <MemberSignature Language="F#" Value="override this.GetParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="dynamicMethod.GetParameters " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1294,6 +1397,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1330,6 +1434,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.InitLocals" />
       <MemberSignature Language="VB.NET" Value="Public Property InitLocals As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InitLocals { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InitLocals : bool with get, set" Usage="System.Reflection.Emit.DynamicMethod.InitLocals" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1338,6 +1443,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1372,9 +1478,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Invoke(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="override this.Invoke : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="dynamicMethod.Invoke (obj, invokeAttr, binder, parameters, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1382,6 +1490,11 @@
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1454,9 +1567,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.IsDefined(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
+      <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="dynamicMethod.IsDefined (attributeType, inherit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1498,13 +1613,14 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecurityCritical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityCritical { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityCritical : bool" Usage="System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1564,13 +1680,14 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecuritySafeCritical As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecuritySafeCritical { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecuritySafeCritical : bool" Usage="System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1630,13 +1747,14 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecurityTransparent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityTransparent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityTransparent : bool" Usage="System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1696,9 +1814,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.MethodHandle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodHandle As RuntimeMethodHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodHandle : RuntimeMethodHandle" Usage="System.Reflection.Emit.DynamicMethod.MethodHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1722,6 +1842,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.MethodImplementationFlags" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodImplementationFlags As MethodImplAttributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodImplementationFlags : System.Reflection.MethodImplAttributes" Usage="System.Reflection.Emit.DynamicMethod.MethodImplementationFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1742,9 +1863,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.Module" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Module As Module" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Reflection.Emit.DynamicMethod.Module" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1779,6 +1902,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Emit.DynamicMethod.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1787,6 +1911,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1823,9 +1948,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReflectedType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Reflection.Emit.DynamicMethod.ReflectedType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1864,6 +1991,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReturnParameter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReturnParameter As ParameterInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ParameterInfo ^ ReturnParameter { System::Reflection::ParameterInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnParameter : System.Reflection.ParameterInfo" Usage="System.Reflection.Emit.DynamicMethod.ReturnParameter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1872,6 +2000,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1897,6 +2026,7 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReturnType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReturnType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Reflection.Emit.DynamicMethod.ReturnType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1905,6 +2035,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1939,9 +2070,11 @@
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReturnTypeCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReturnTypeCustomAttributes As ICustomAttributeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ICustomAttributeProvider ^ ReturnTypeCustomAttributes { System::Reflection::ICustomAttributeProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnTypeCustomAttributes : System.Reflection.ICustomAttributeProvider" Usage="System.Reflection.Emit.DynamicMethod.ReturnTypeCustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1981,6 +2114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dynamicMethod.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1989,6 +2123,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

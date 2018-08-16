@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMACMD5" />
   <TypeSignature Language="VB.NET" Value="Public Class HMACMD5&#xA;Inherits HMAC" />
   <TypeSignature Language="C++ CLI" Value="public ref class HMACMD5 : System::Security::Cryptography::HMAC" />
+  <TypeSignature Language="F#" Value="type HMACMD5 = class&#xA;    inherit HMAC" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -26,7 +28,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -86,6 +88,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -114,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACMD5.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HMACMD5(cli::array &lt;System::Byte&gt; ^ key);" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACMD5 : byte[] -&gt; System.Security.Cryptography.HMACMD5" Usage="new System.Security.Cryptography.HMACMD5 key" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -125,6 +129,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACMD5.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="hMACMD5.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACMD5.HashCore(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (source As ReadOnlySpan(Of Byte))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="override this.HashCore : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="hMACMD5.HashCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACMD5.HashCore(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (rgb As Byte(), ib As Integer, cb As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ rgb, int ib, int cb);" />
+      <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="hMACMD5.HashCore (rgb, ib, cb)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACMD5.HashFinal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="hMACMD5.HashFinal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMACMD5.HashSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HashSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int HashSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HashSize : int" Usage="System.Security.Cryptography.HMACMD5.HashSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -290,6 +300,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACMD5.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="hMACMD5.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMACMD5.Key" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Key As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.HMACMD5.Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -338,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACMD5.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryHashFinal (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryHashFinal(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TryHashFinal : Span&lt;byte&gt; *  -&gt; bool" Usage="hMACMD5.TryHashFinal (destination, bytesWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -348,7 +361,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="destination">To be added.</param>

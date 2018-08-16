@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.ScopeElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScopeElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScopeElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ScopeElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +52,11 @@
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.ScopeElement" /> class.</summary>
@@ -63,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.ScopeElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Discovery.Configuration.ScopeElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -83,16 +90,17 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.ScopeElement.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Scope { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : Uri with get, set" Usage="System.ServiceModel.Discovery.Configuration.ScopeElement.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.CallbackValidator(CallbackMethodName="ScopeValidatorCallback", Type=typeof(System.ServiceModel.Discovery.Configuration.ScopeElement))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("scope", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
       </Attributes>

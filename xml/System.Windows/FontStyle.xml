@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.FontStyle" />
   <TypeSignature Language="VB.NET" Value="Public Structure FontStyle&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class FontStyle : IFormattable" />
+  <TypeSignature Language="F#" Value="type FontStyle = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +19,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.FontStyleConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None)</AttributeName>
     </Attribute>
   </Attributes>
@@ -82,9 +84,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fontStyle.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,9 +111,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.Equals(System.Windows.FontStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As FontStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::FontStyle obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.FontStyle -&gt; bool" Usage="fontStyle.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,9 +138,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fontStyle.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,9 +168,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.op_Equality(System.Windows.FontStyle,System.Windows.FontStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As FontStyle, right As FontStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::FontStyle left, System::Windows::FontStyle right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.FontStyle * System.Windows.FontStyle -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,9 +197,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.op_Inequality(System.Windows.FontStyle,System.Windows.FontStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As FontStyle, right As FontStyle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::FontStyle left, System::Windows::FontStyle right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.FontStyle * System.Windows.FontStyle -&gt; bool" Usage="System.Windows.FontStyle.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -220,8 +232,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -252,11 +270,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fontStyle.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

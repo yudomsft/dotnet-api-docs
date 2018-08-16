@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannelReceiver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IChannelReceiver&#xA;Implements IChannel" />
   <TypeSignature Language="C++ CLI" Value="public interface class IChannelReceiver : System::Runtime::Remoting::Channels::IChannel" />
+  <TypeSignature Language="F#" Value="type IChannelReceiver = interface&#xA;    interface IChannel" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,12 +47,20 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelData As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelData : obj" Usage="System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -74,12 +85,20 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUrlsForUri (objectURI As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectURI);" />
+      <MemberSignature Language="F#" Value="abstract member GetUrlsForUri : string -&gt; string[]" Usage="iChannelReceiver.GetUrlsForUri objectURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
@@ -115,12 +134,20 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartListening (data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartListening(System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit" Usage="iChannelReceiver.StartListening data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -155,12 +182,20 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopListening (data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopListening(System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit" Usage="iChannelReceiver.StopListening data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.TypeResolvingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class TypeResolvingOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeResolvingOptions" />
+  <TypeSignature Language="F#" Value="type TypeResolvingOptions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +38,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> class.</summary>
@@ -49,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeResolvingOptions.#ctor(System.Collections.Generic.IEnumerable{System.Type})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (defaultTypes As IEnumerable(Of Type))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeResolvingOptions(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ defaultTypes);" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.TypeResolvingOptions : seq&lt;Type&gt; -&gt; System.Activities.Presentation.View.TypeResolvingOptions" Usage="new System.Activities.Presentation.View.TypeResolvingOptions defaultTypes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -58,7 +65,7 @@
         <Parameter Name="defaultTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="defaultTypes">The default types in the <see cref="T:System.Activities.Presentation.View.TypePrensenter" /> control.</param>
+        <param name="defaultTypes">The default types in the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control.</param>
         <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,18 +76,27 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeResolvingOptions.BrowseTypeDirectly" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseTypeDirectly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowseTypeDirectly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseTypeDirectly : bool with get, set" Usage="System.Activities.Presentation.View.TypeResolvingOptions.BrowseTypeDirectly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control should show the type browser directly when a user tries to select a type.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.View.TypePrensenter" /> control should show the type browser directly when a user tries to select a type; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control should show the type browser directly when a user tries to select a type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,16 +106,25 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeResolvingOptions.Filter" />
       <MemberSignature Language="VB.NET" Value="Public Property Filter As Func(Of Type, Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, bool&gt; ^ Filter { Func&lt;Type ^, bool&gt; ^ get(); void set(Func&lt;Type ^, bool&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : Func&lt;Type, bool&gt; with get, set" Usage="System.Activities.Presentation.View.TypeResolvingOptions.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.Type,System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a filter used to filter types in the <see cref="T:System.Activities.Presentation.View.TypePrensenter" /> control.</summary>
+        <summary>Gets or sets a filter used to filter types in the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control.</summary>
         <value>The filter for the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control.</value>
         <remarks>To be added.</remarks>
       </Docs>

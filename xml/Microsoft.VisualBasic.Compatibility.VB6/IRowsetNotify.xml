@@ -4,20 +4,26 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRowsetNotify" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRowsetNotify" />
+  <TypeSignature Language="F#" Value="type IRowsetNotify = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0c733a83-2a1c-11ce-ade5-00aa0044773d")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,9 +46,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnFieldChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function OnFieldChange (rowset As IRowset, hRow As Integer, cColumns As Integer, rgColumns As Integer(), dbReason As Integer, eventPhase As Integer, fCantDeny As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int OnFieldChange(Microsoft::VisualBasic::Compatibility::VB6::IRowset ^ rowset, int hRow, int cColumns, cli::array &lt;int&gt; ^ rgColumns, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="F#" Value="abstract member OnFieldChange : Microsoft.VisualBasic.Compatibility.VB6.IRowset * int * int * int[] * int * int * int -&gt; int" Usage="iRowsetNotify.OnFieldChange (rowset, hRow, cColumns, rgColumns, dbReason, eventPhase, fCantDeny)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,9 +94,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnRowChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function OnRowChange (rowset As IRowset, cRows As Integer, rghRows As Integer(), dbReason As Integer, eventPhase As Integer, fCantDeny As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int OnRowChange(Microsoft::VisualBasic::Compatibility::VB6::IRowset ^ rowset, int cRows, cli::array &lt;int&gt; ^ rghRows, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowChange : Microsoft.VisualBasic.Compatibility.VB6.IRowset * int * int[] * int * int * int -&gt; int" Usage="iRowsetNotify.OnRowChange (rowset, cRows, rghRows, dbReason, eventPhase, fCantDeny)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,9 +140,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnRowsetChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function OnRowsetChange (rowset As IRowset, dbReason As Integer, eventPhase As Integer, fCantDeny As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int OnRowsetChange(Microsoft::VisualBasic::Compatibility::VB6::IRowset ^ rowset, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="F#" Value="abstract member OnRowsetChange : Microsoft.VisualBasic.Compatibility.VB6.IRowset * int * int * int -&gt; int" Usage="iRowsetNotify.OnRowsetChange (rowset, dbReason, eventPhase, fCantDeny)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

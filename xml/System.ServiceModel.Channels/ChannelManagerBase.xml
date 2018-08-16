@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelManagerBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelManagerBase&#xA;Inherits CommunicationObject&#xA;Implements IDefaultCommunicationTimeouts" />
   <TypeSignature Language="C++ CLI" Value="public ref class ChannelManagerBase abstract : System::ServiceModel::Channels::CommunicationObject, System::ServiceModel::IDefaultCommunicationTimeouts" />
+  <TypeSignature Language="F#" Value="type ChannelManagerBase = class&#xA;    inherit CommunicationObject&#xA;    interface ICommunicationObject&#xA;    interface IDefaultCommunicationTimeouts" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -49,6 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -57,6 +60,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ChannelManagerBase" /> class.</summary>
@@ -69,10 +77,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.DefaultReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property DefaultReceiveTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property TimeSpan DefaultReceiveTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultReceiveTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelManagerBase.DefaultReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -103,10 +113,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.DefaultSendTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property DefaultSendTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property TimeSpan DefaultSendTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultSendTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelManagerBase.DefaultSendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -136,7 +148,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#CloseTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CloseTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.CloseTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::CloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout</InterfaceMember>
@@ -144,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -157,7 +171,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the close method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the close method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the close method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -173,7 +187,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#OpenTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property OpenTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.OpenTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::OpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout</InterfaceMember>
@@ -181,6 +196,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -194,7 +210,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the open method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the open method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the open method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -210,7 +226,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.ReceiveTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::ReceiveTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout</InterfaceMember>
@@ -218,6 +235,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -226,12 +244,17 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the receive method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the receive method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the receive method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -247,7 +270,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelManagerBase.System#ServiceModel#IDefaultCommunicationTimeouts#SendTimeout" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SendTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.SendTimeout" />
-      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System::ServiceModel::IDefaultCommunicationTimeouts::SendTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout</InterfaceMember>
@@ -255,6 +279,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -263,12 +288,17 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets the interval of time after which the send method, invoked by a communication object, times out.</summary>
-        <value>The <see cref="T:System.Timespan" /> that specifies the interval of time to wait for the send method to time out.</value>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for the send method to time out.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

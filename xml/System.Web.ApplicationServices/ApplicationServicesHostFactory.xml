@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ApplicationServicesHostFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationServicesHostFactory&#xA;Inherits ServiceHostFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationServicesHostFactory : System::ServiceModel::Activation::ServiceHostFactory" />
+  <TypeSignature Language="F#" Value="type ApplicationServicesHostFactory = class&#xA;    inherit ServiceHostFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -57,8 +59,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ApplicationServices.ApplicationServicesHostFactory" /> class.</summary>
@@ -71,9 +79,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ApplicationServicesHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateServiceHost (serviceType As Type, baseAddresses As Uri()) As ServiceHost" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::ServiceHost ^ CreateServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="applicationServicesHostFactory.CreateServiceHost (serviceType, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

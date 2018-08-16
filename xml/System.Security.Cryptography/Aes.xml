@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Aes" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Aes&#xA;Inherits SymmetricAlgorithm" />
   <TypeSignature Language="C++ CLI" Value="public ref class Aes abstract : System::Security::Cryptography::SymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type Aes = class&#xA;    inherit SymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,13 +22,20 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Cryptography.SymmetricAlgorithm</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=2.0.5.0, Culture=Neutral, PublicKeyToken=7cec85d7bea7798e")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -69,6 +77,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Aes" /> class.</summary>
@@ -103,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Aes.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As Aes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Aes ^ Create();" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.Aes" Usage="System.Security.Cryptography.Aes.Create " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -121,6 +134,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Aes</ReturnType>
       </ReturnValue>
@@ -137,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Aes.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithmName As String) As Aes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Aes ^ Create(System::String ^ algorithmName);" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.Aes" Usage="System.Security.Cryptography.Aes.Create algorithmName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +169,10 @@
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
         <AssemblyVersion>4.3.0.0</AssemblyVersion>
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Aes</ReturnType>
@@ -179,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Aes.LegalBlockSizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalBlockSizes As KeySizes()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalBlockSizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalBlockSizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.Aes.LegalBlockSizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -201,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Aes.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.Aes.LegalKeySizes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

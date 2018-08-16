@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.FaultCallback" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub FaultCallback(faultContext As NativeActivityFaultContext, propagatedException As Exception, propagatedFrom As ActivityInstance)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void FaultCallback(NativeActivityFaultContext ^ faultContext, Exception ^ propagatedException, ActivityInstance ^ propagatedFrom);" />
+  <TypeSignature Language="F#" Value="type FaultCallback = delegate of NativeActivityFaultContext * Exception * ActivityInstance -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="faultContext">The <see cref="T:System.Activities.ActivityFaultContext" /> provided for inspecting the workflow fault.</param>
+    <param name="faultContext">The <see cref="T:System.Activities.NativeActivityFaultContext" /> provided for inspecting the workflow fault.</param>
     <param name="propagatedException">The exception that caused the fault.</param>
     <param name="propagatedFrom">The activity that threw the exception and generated the fault.</param>
     <summary>Represents the method that is called when a scheduled activity or one of its children enters the <see cref="F:System.Activities.ActivityInstanceState.Faulted" /> state.</summary>

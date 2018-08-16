@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelQuery" />
   <TypeSignature Language="VB.NET" Value="Public Class ParallelQuery&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ParallelQuery : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ParallelQuery = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +57,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>

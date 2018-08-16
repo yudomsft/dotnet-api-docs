@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicEntity" />
   <TypeSignature Language="VB.NET" Value="Public Class DynamicEntity&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class DynamicEntity : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type DynamicEntity = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.DynamicData.DynamicEntity), "DynamicEntity.bmp")</AttributeName>
     </Attribute>
   </Attributes>
@@ -53,6 +54,11 @@
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicEntity" /> class.</summary>
@@ -65,16 +71,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicEntity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As DataBoundControlMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataBoundControlMode Mode { System::Web::UI::WebControls::DataBoundControlMode get(); void set(System::Web::UI::WebControls::DataBoundControlMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.DataBoundControlMode with get, set" Usage="System.Web.DynamicData.DynamicEntity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
@@ -93,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicEntity.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="dynamicEntity.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -116,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicEntity.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dynamicEntity.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -146,16 +155,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicEntity.UIHint" />
       <MemberSignature Language="VB.NET" Value="Public Property UIHint As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UIHint { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.UIHint : string with get, set" Usage="System.Web.DynamicData.DynamicEntity.UIHint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>
@@ -174,19 +184,20 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicEntity.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.DynamicData.DynamicEntity.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>

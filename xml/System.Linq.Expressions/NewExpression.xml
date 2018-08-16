@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.NewExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class NewExpression&#xA;Inherits Expression&#xA;Implements IArgumentProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class NewExpression : System::Linq::Expressions::Expression, System::Linq::Expressions::IArgumentProvider" />
+  <TypeSignature Language="F#" Value="type NewExpression = class&#xA;    inherit Expression&#xA;    interface IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -30,7 +32,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Linq.Expressions.Expression/NewExpressionProxy))</AttributeName>
     </Attribute>
   </Attributes>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.NewExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="newExpression.Accept visitor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewExpression.Arguments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As ReadOnlyCollection(Of Expression)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Arguments { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.NewExpression.Arguments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -118,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewExpression.Constructor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Constructor As ConstructorInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ConstructorInfo ^ Constructor { System::Reflection::ConstructorInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Constructor : System.Reflection.ConstructorInfo" Usage="System.Linq.Expressions.NewExpression.Constructor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -158,12 +164,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.ConstructorInfo</ReturnType>
       </ReturnValue>
@@ -179,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewExpression.Members" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As ReadOnlyCollection(Of MemberInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Reflection::MemberInfo ^&gt; ^ Members { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Reflection::MemberInfo ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Members : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Reflection.MemberInfo&gt;" Usage="System.Linq.Expressions.NewExpression.Members" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -191,12 +204,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Reflection.MemberInfo&gt;</ReturnType>
       </ReturnValue>
@@ -219,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewExpression.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Linq.Expressions.ExpressionType" Usage="System.Linq.Expressions.NewExpression.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -251,7 +271,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewExpression.System#Linq#Expressions#IArgumentProvider#ArgumentCount" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ArgumentCount As Integer Implements IArgumentProvider.ArgumentCount" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Linq.Expressions.IArgumentProvider.ArgumentCount { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Linq::Expressions::IArgumentProvider::ArgumentCount { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Linq.Expressions.IArgumentProvider.ArgumentCount</InterfaceMember>
@@ -326,6 +347,7 @@
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewExpression.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.NewExpression.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -359,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.NewExpression.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (arguments As IEnumerable(Of Expression)) As NewExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::NewExpression ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ arguments);" />
+      <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.NewExpression" Usage="newExpression.Update arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

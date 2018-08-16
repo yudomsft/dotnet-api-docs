@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.SignatureHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SignatureHelper&#xA;Implements _SignatureHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignatureHelper sealed : System::Runtime::InteropServices::_SignatureHelper" />
+  <TypeSignature Language="F#" Value="type SignatureHelper = class&#xA;    interface _SignatureHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,13 +26,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._SignatureHelper))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArgument(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (clsArgument As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(Type ^ clsArgument);" />
+      <MemberSignature Language="F#" Value="member this.AddArgument : Type -&gt; unit" Usage="signatureHelper.AddArgument clsArgument" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -72,6 +76,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -103,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArgument(System.Type,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (argument As Type, pinned As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(Type ^ argument, bool pinned);" />
+      <MemberSignature Language="F#" Value="member this.AddArgument : Type * bool -&gt; unit" Usage="signatureHelper.AddArgument (argument, pinned)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -111,9 +118,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -144,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArgument(System.Type,System.Type[],System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (argument As Type, requiredCustomModifiers As Type(), optionalCustomModifiers As Type())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(Type ^ argument, cli::array &lt;Type ^&gt; ^ requiredCustomModifiers, cli::array &lt;Type ^&gt; ^ optionalCustomModifiers);" />
+      <MemberSignature Language="F#" Value="member this.AddArgument : Type * Type[] * Type[] -&gt; unit" Usage="signatureHelper.AddArgument (argument, requiredCustomModifiers, optionalCustomModifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -152,9 +166,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -199,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddArguments(System.Type[],System.Type[][],System.Type[][])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddArguments (arguments As Type(), requiredCustomModifiers As Type()(), optionalCustomModifiers As Type()())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArguments(cli::array &lt;Type ^&gt; ^ arguments, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ requiredCustomModifiers, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ optionalCustomModifiers);" />
+      <MemberSignature Language="F#" Value="member this.AddArguments : Type[] * Type[][] * Type[][] -&gt; unit" Usage="signatureHelper.AddArguments (arguments, requiredCustomModifiers, optionalCustomModifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -207,6 +228,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -259,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.AddSentinel" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSentinel ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSentinel();" />
+      <MemberSignature Language="F#" Value="member this.AddSentinel : unit -&gt; unit" Usage="signatureHelper.AddSentinel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -267,6 +290,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -285,6 +310,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="signatureHelper.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -293,6 +319,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -316,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetFieldSigHelper(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetFieldSigHelper (mod As Module) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetFieldSigHelper(System::Reflection::Module ^ mod);" />
+      <MemberSignature Language="F#" Value="static member GetFieldSigHelper : System.Reflection.Module -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetFieldSigHelper mod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -324,6 +353,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -346,6 +377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="signatureHelper.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -354,6 +386,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -390,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocalVarSigHelper () As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetLocalVarSigHelper();" />
+      <MemberSignature Language="F#" Value="static member GetLocalVarSigHelper : unit -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -398,6 +433,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -417,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper(System.Reflection.Module)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetLocalVarSigHelper (mod As Module) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetLocalVarSigHelper(System::Reflection::Module ^ mod);" />
+      <MemberSignature Language="F#" Value="static member GetLocalVarSigHelper : System.Reflection.Module -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper mod" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -425,6 +462,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -457,6 +496,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.CallingConventions,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (callingConvention As CallingConventions, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::CallingConventions callingConvention, Type ^ returnType);" />
+      <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.CallingConventions * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (callingConvention, returnType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -465,6 +505,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -489,9 +530,11 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Runtime.InteropServices.CallingConvention,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (unmanagedCallingConvention As CallingConvention, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Runtime::InteropServices::CallingConvention unmanagedCallingConvention, Type ^ returnType);" />
+      <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Runtime.InteropServices.CallingConvention * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (unmanagedCallingConvention, returnType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -518,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.Module,System.Reflection.CallingConventions,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (mod As Module, callingConvention As CallingConventions, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::Module ^ mod, System::Reflection::CallingConventions callingConvention, Type ^ returnType);" />
+      <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.Module * System.Reflection.CallingConventions * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (mod, callingConvention, returnType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -526,9 +570,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.SignatureHelper</ReturnType>
       </ReturnValue>
@@ -556,12 +607,20 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.Module,System.Runtime.InteropServices.CallingConvention,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (mod As Module, unmanagedCallConv As CallingConvention, returnType As Type) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::Module ^ mod, System::Runtime::InteropServices::CallingConvention unmanagedCallConv, Type ^ returnType);" />
+      <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.Module * System.Runtime.InteropServices.CallingConvention * Type -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (mod, unmanagedCallConv, returnType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.SignatureHelper</ReturnType>
       </ReturnValue>
@@ -593,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.Module,System.Type,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodSigHelper (mod As Module, returnType As Type, parameterTypes As Type()) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetMethodSigHelper(System::Reflection::Module ^ mod, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes);" />
+      <MemberSignature Language="F#" Value="static member GetMethodSigHelper : System.Reflection.Module * Type * Type[] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetMethodSigHelper (mod, returnType, parameterTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -601,9 +661,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.SignatureHelper</ReturnType>
       </ReturnValue>
@@ -654,6 +721,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper(System.Reflection.Module,System.Type,System.Type[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertySigHelper (mod As Module, returnType As Type, parameterTypes As Type()) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetPropertySigHelper(System::Reflection::Module ^ mod, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes);" />
+      <MemberSignature Language="F#" Value="static member GetPropertySigHelper : System.Reflection.Module * Type * Type[] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetPropertySigHelper (mod, returnType, parameterTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -662,6 +730,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -703,6 +773,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper(System.Reflection.Module,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertySigHelper (mod As Module, returnType As Type, requiredReturnTypeCustomModifiers As Type(), optionalReturnTypeCustomModifiers As Type(), parameterTypes As Type(), requiredParameterTypeCustomModifiers As Type()(), optionalParameterTypeCustomModifiers As Type()()) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetPropertySigHelper(System::Reflection::Module ^ mod, Type ^ returnType, cli::array &lt;Type ^&gt; ^ requiredReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ optionalReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ parameterTypes, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ requiredParameterTypeCustomModifiers, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ optionalParameterTypeCustomModifiers);" />
+      <MemberSignature Language="F#" Value="static member GetPropertySigHelper : System.Reflection.Module * Type * Type[] * Type[] * Type[] * Type[][] * Type[][] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetPropertySigHelper (mod, returnType, requiredReturnTypeCustomModifiers, optionalReturnTypeCustomModifiers, parameterTypes, requiredParameterTypeCustomModifiers, optionalParameterTypeCustomModifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -711,9 +782,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.SignatureHelper</ReturnType>
       </ReturnValue>
@@ -781,6 +858,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper(System.Reflection.Module,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertySigHelper (mod As Module, callingConvention As CallingConventions, returnType As Type, requiredReturnTypeCustomModifiers As Type(), optionalReturnTypeCustomModifiers As Type(), parameterTypes As Type(), requiredParameterTypeCustomModifiers As Type()(), optionalParameterTypeCustomModifiers As Type()()) As SignatureHelper" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Emit::SignatureHelper ^ GetPropertySigHelper(System::Reflection::Module ^ mod, System::Reflection::CallingConventions callingConvention, Type ^ returnType, cli::array &lt;Type ^&gt; ^ requiredReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ optionalReturnTypeCustomModifiers, cli::array &lt;Type ^&gt; ^ parameterTypes, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ requiredParameterTypeCustomModifiers, cli::array &lt;cli::array &lt;Type ^&gt; ^&gt; ^ optionalParameterTypeCustomModifiers);" />
+      <MemberSignature Language="F#" Value="static member GetPropertySigHelper : System.Reflection.Module * System.Reflection.CallingConventions * Type * Type[] * Type[] * Type[] * Type[][] * Type[][] -&gt; System.Reflection.Emit.SignatureHelper" Usage="System.Reflection.Emit.SignatureHelper.GetPropertySigHelper (mod, callingConvention, returnType, requiredReturnTypeCustomModifiers, optionalReturnTypeCustomModifiers, parameterTypes, requiredParameterTypeCustomModifiers, optionalParameterTypeCustomModifiers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -789,9 +867,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.SignatureHelper</ReturnType>
       </ReturnValue>
@@ -864,6 +948,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.GetSignature" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSignature () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetSignature();" />
+      <MemberSignature Language="F#" Value="member this.GetSignature : unit -&gt; byte[]" Usage="signatureHelper.GetSignature " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -872,6 +957,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -893,10 +980,12 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._SignatureHelper.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_SignatureHelper::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.GetIDsOfNames(System.Guid,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -904,7 +993,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="rgszNames" Type="System.IntPtr" />
         <Parameter Name="cNames" Type="System.UInt32" />
         <Parameter Name="lcid" Type="System.UInt32" />
@@ -940,6 +1029,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -975,10 +1066,12 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._SignatureHelper.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_SignatureHelper::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.GetTypeInfoCount(System.UInt32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -986,7 +1079,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="pcTInfo" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
@@ -1010,10 +1103,12 @@
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._SignatureHelper.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_SignatureHelper::Invoke;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.InteropServices._SignatureHelper.Invoke(System.UInt32,System.Guid,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1022,7 +1117,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="dispIdMember" Type="System.UInt32" />
-        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="lcid" Type="System.UInt32" />
         <Parameter Name="wFlags" Type="System.Int16" />
         <Parameter Name="pDispParams" Type="System.IntPtr" />
@@ -1057,6 +1152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.SignatureHelper.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="signatureHelper.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1065,6 +1161,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HtmlContainerControl&#xA;Inherits HtmlControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlContainerControl abstract : System::Web::UI::HtmlControls::HtmlControl" />
+  <TypeSignature Language="F#" Value="type HtmlContainerControl = class&#xA;    inherit HtmlControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -60,8 +63,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> class using default values.</summary>
@@ -90,11 +100,19 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlContainerControl(System::String ^ tag);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.HtmlControls.HtmlContainerControl : string -&gt; System.Web.UI.HtmlControls.HtmlContainerControl" Usage="new System.Web.UI.HtmlControls.HtmlContainerControl tag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="tag" Type="System.String" />
       </Parameters>
@@ -126,9 +144,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="htmlContainerControl.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,17 +169,23 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InnerHtml As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerHtml { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InnerHtml : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -212,17 +239,23 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InnerText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InnerText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InnerText : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlContainerControl.InnerText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -270,9 +303,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="htmlContainerControl.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -305,9 +341,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlContainerControl.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,9 +382,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlContainerControl.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -366,9 +408,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderEndTag (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderEndTag(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndTag : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderEndTag : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlContainerControl.RenderEndTag writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

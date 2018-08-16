@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class MsmqIntegrationBinding&#xA;Inherits MsmqBindingBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class MsmqIntegrationBinding : System::ServiceModel::MsmqBindingBase" />
+  <TypeSignature Language="F#" Value="type MsmqIntegrationBinding = class&#xA;    inherit MsmqBindingBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -64,6 +66,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -78,9 +81,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor(System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As MsmqIntegrationSecurityMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqIntegrationBinding(System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurityMode securityMode);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding : System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode -&gt; System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" Usage="new System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding securityMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -114,9 +119,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (configurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqIntegrationBinding(System::String ^ configurationName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding : string -&gt; System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding" Usage="new System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding configurationName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -149,9 +156,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.CreateBindingElements" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="msmqIntegrationBinding.CreateBindingElements " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,11 +179,21 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security" />
       <MemberSignature Language="VB.NET" Value="Public Property Security As MsmqIntegrationSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurity ^ Security { System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurity ^ get(); void set(System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Security : System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity</ReturnType>
       </ReturnValue>
@@ -197,13 +216,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.SerializationFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property SerializationFormat As MsmqMessageSerializationFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqIntegration::MsmqMessageSerializationFormat SerializationFormat { System::ServiceModel::MsmqIntegration::MsmqMessageSerializationFormat get(); void set(System::ServiceModel::MsmqIntegration::MsmqMessageSerializationFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationFormat : System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.SerializationFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -236,14 +257,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.ShouldSerializeSecurity" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeSecurity () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeSecurity();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeSecurity : unit -&gt; bool" Usage="msmqIntegrationBinding.ShouldSerializeSecurity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

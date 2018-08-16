@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Table`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Table(Of TEntity)&#xA;Implements IEnumerable(Of TEntity), IListSource, IQueryable(Of TEntity), IQueryProvider, ITable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic ref class Table sealed : System::Collections::Generic::IEnumerable&lt;TEntity&gt;, System::ComponentModel::IListSource, System::Data::Linq::ITable, System::Linq::IQueryable&lt;TEntity&gt;, System::Linq::IQueryProvider" />
+  <TypeSignature Language="F#" Value="type Table&lt;'Entity (requires 'Entity : null)&gt; = class&#xA;    interface ITable&#xA;    interface IQueryProvider&#xA;    interface IListSource&#xA;    interface seq&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
@@ -137,9 +139,11 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.Attach(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(TEntity entity);" />
+      <MemberSignature Language="F#" Value="member this.Attach : 'Entity -&gt; unit" Usage="table.Attach entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,9 +177,11 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.Attach(`0,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As TEntity, asModified As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(TEntity entity, bool asModified);" />
+      <MemberSignature Language="F#" Value="member this.Attach : 'Entity * bool -&gt; unit" Usage="table.Attach (entity, asModified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,9 +212,11 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.Attach(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As TEntity, original As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(TEntity entity, TEntity original);" />
+      <MemberSignature Language="F#" Value="member this.Attach : 'Entity * 'Entity -&gt; unit" Usage="table.Attach (entity, original)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -267,9 +275,11 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.AttachAll``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub AttachAll(Of TSubEntity As TEntity) (entities As IEnumerable(Of TSubEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSubEntity&gt;&#xA; where TSubEntity : TEntity void AttachAll(System::Collections::Generic::IEnumerable&lt;TSubEntity&gt; ^ entities);" />
+      <MemberSignature Language="F#" Value="member this.AttachAll : seq&lt;#'Entity&gt; -&gt; unit" Usage="table.AttachAll entities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,9 +317,11 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.AttachAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AttachAll(Of TSubEntity As TEntity) (entities As IEnumerable(Of TSubEntity), asModified As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSubEntity&gt;&#xA; where TSubEntity : TEntity void AttachAll(System::Collections::Generic::IEnumerable&lt;TSubEntity&gt; ^ entities, bool asModified);" />
+      <MemberSignature Language="F#" Value="member this.AttachAll : seq&lt;#'Entity&gt; * bool -&gt; unit" Usage="table.AttachAll (entities, asModified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,11 +380,18 @@ End Using
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Table`1.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As DataContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Linq::DataContext ^ Context { System::Data::Linq::DataContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Linq.DataContext" Usage="System.Data.Linq.Table&lt;'Entity (requires 'Entity : null)&gt;.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Linq.DataContext</ReturnType>
       </ReturnValue>
@@ -388,9 +407,11 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.DeleteAllOnSubmit``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteAllOnSubmit(Of TSubEntity As TEntity) (entities As IEnumerable(Of TSubEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSubEntity&gt;&#xA; where TSubEntity : TEntity void DeleteAllOnSubmit(System::Collections::Generic::IEnumerable&lt;TSubEntity&gt; ^ entities);" />
+      <MemberSignature Language="F#" Value="member this.DeleteAllOnSubmit : seq&lt;#'Entity&gt; -&gt; unit" Usage="table.DeleteAllOnSubmit entities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -448,9 +469,11 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.DeleteOnSubmit(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteOnSubmit (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteOnSubmit(TEntity entity);" />
+      <MemberSignature Language="F#" Value="member this.DeleteOnSubmit : 'Entity -&gt; unit" Usage="table.DeleteOnSubmit entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -487,12 +510,14 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerator&lt;TEntity&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'Entity (requires 'Entity : null)&gt;" Usage="table.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -511,9 +536,11 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.GetModifiedMembers(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetModifiedMembers (entity As TEntity) As ModifiedMemberInfo()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::Linq::ModifiedMemberInfo&gt; ^ GetModifiedMembers(TEntity entity);" />
+      <MemberSignature Language="F#" Value="member this.GetModifiedMembers : 'Entity -&gt; System.Data.Linq.ModifiedMemberInfo[]" Usage="table.GetModifiedMembers entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -535,9 +562,11 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.GetNewBindingList" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNewBindingList () As IBindingList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::IBindingList ^ GetNewBindingList();" />
+      <MemberSignature Language="F#" Value="member this.GetNewBindingList : unit -&gt; System.ComponentModel.IBindingList" Usage="table.GetNewBindingList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -563,9 +592,11 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.GetOriginalEntityState(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOriginalEntityState (entity As TEntity) As TEntity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TEntity GetOriginalEntityState(TEntity entity);" />
+      <MemberSignature Language="F#" Value="member this.GetOriginalEntityState : 'Entity -&gt; 'Entity" Usage="table.GetOriginalEntityState entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -594,9 +625,11 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.InsertAllOnSubmit``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertAllOnSubmit(Of TSubEntity As TEntity) (entities As IEnumerable(Of TSubEntity))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSubEntity&gt;&#xA; where TSubEntity : TEntity void InsertAllOnSubmit(System::Collections::Generic::IEnumerable&lt;TSubEntity&gt; ^ entities);" />
+      <MemberSignature Language="F#" Value="member this.InsertAllOnSubmit : seq&lt;#'Entity&gt; -&gt; unit" Usage="table.InsertAllOnSubmit entities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -632,9 +665,11 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.InsertOnSubmit(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertOnSubmit (entity As TEntity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertOnSubmit(TEntity entity);" />
+      <MemberSignature Language="F#" Value="member this.InsertOnSubmit : 'Entity -&gt; unit" Usage="table.InsertOnSubmit entity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -668,12 +703,14 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Table`1.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Linq.Table&lt;'Entity (requires 'Entity : null)&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Linq.ITable.IsReadOnly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -698,8 +735,14 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;TEntity&gt;</ReturnType>
       </ReturnValue>
@@ -722,8 +765,14 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -746,10 +795,12 @@ db.SubmitChanges()
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Table`1.System#ComponentModel#IListSource#ContainsListCollection" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ContainsListCollection As Boolean Implements IListSource.ContainsListCollection" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IListSource::ContainsListCollection { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -778,6 +829,7 @@ db.SubmitChanges()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -818,6 +870,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -851,6 +904,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -887,6 +941,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -931,6 +986,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -964,6 +1020,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1000,6 +1057,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1033,6 +1091,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1069,10 +1128,11 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinmac-3.0">
           <AttributeName>System.Obsolete("NOT IMPLEMENTED YET")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1108,10 +1168,11 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinmac-3.0">
           <AttributeName>System.Obsolete("NOT IMPLEMENTED YET")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1147,6 +1208,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1180,6 +1242,7 @@ db.SubmitChanges()
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1206,10 +1269,12 @@ db.SubmitChanges()
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type System.Linq.IQueryable.ElementType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Table`1.System#Linq#IQueryable#ElementType" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property ElementType As Type Implements IQueryable.ElementType" />
-      <MemberSignature Language="C++ CLI" Value="property Type ^ System.Linq.IQueryable.ElementType { Type ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property Type ^ System::Linq::IQueryable::ElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.IQueryable.ElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1233,10 +1298,12 @@ db.SubmitChanges()
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression System.Linq.IQueryable.Expression" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Table`1.System#Linq#IQueryable#Expression" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Expression As Expression Implements IQueryable.Expression" />
-      <MemberSignature Language="C++ CLI" Value="property System::Linq::Expressions::Expression ^ System.Linq.IQueryable.Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Linq::Expressions::Expression ^ System::Linq::IQueryable::Expression { System::Linq::Expressions::Expression ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.IQueryable.Expression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1260,10 +1327,12 @@ db.SubmitChanges()
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryProvider System.Linq.IQueryable.Provider" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Table`1.System#Linq#IQueryable#Provider" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Provider As IQueryProvider Implements IQueryable.Provider" />
-      <MemberSignature Language="C++ CLI" Value="property System::Linq::IQueryProvider ^ System.Linq.IQueryable.Provider { System::Linq::IQueryProvider ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Linq::IQueryProvider ^ System::Linq::IQueryable::Provider { System::Linq::IQueryProvider ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Linq.IQueryable.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1290,6 +1359,7 @@ db.SubmitChanges()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1320,6 +1390,7 @@ db.SubmitChanges()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1354,6 +1425,7 @@ db.SubmitChanges()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1384,6 +1456,7 @@ db.SubmitChanges()
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1416,9 +1489,11 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="table.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

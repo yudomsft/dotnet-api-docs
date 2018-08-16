@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Single" />
   <TypeSignature Language="VB.NET" Value="Public Structure Single&#xA;Implements IComparable, IComparable(Of Single), IConvertible, IEquatable(Of Single), IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Single : IComparable, IComparable&lt;float&gt;, IConvertible, IEquatable&lt;float&gt;, IFormattable" />
+  <TypeSignature Language="F#" Value="type single = struct&#xA;    interface IFormattable&#xA;    interface IConvertible" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -43,7 +46,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -288,12 +291,15 @@
       <MemberSignature Language="DocId" Value="M:System.Single.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="single.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -388,6 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.CompareTo(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Single) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(float value);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : single -&gt; int&#xA;override this.CompareTo : single -&gt; int" Usage="single.CompareTo value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -403,6 +410,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -493,6 +501,7 @@
       <MemberSignature Language="DocId" Value="F:System.Single.Epsilon" />
       <MemberSignature Language="VB.NET" Value="Public Const Epsilon As Single  = 1.401298E-45" />
       <MemberSignature Language="C++ CLI" Value="public: float Epsilon = 1.401298E-45;" />
+      <MemberSignature Language="F#" Value="val mutable Epsilon : single" Usage="System.single.Epsilon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -505,6 +514,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -567,6 +578,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="single.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -579,6 +591,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -644,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.Equals(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(float obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : single -&gt; bool" Usage="single.Equals obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -659,6 +674,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -731,6 +747,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="single.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -743,6 +760,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -751,7 +770,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -771,12 +790,15 @@
       <MemberSignature Language="DocId" Value="M:System.Single.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="single.GetTypeCode " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -806,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsFinite(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsFinite (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsFinite(float f);" />
+      <MemberSignature Language="F#" Value="static member IsFinite : single -&gt; bool" Usage="System.single.IsFinite f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -830,6 +853,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsInfinity(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsInfinity (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsInfinity(float f);" />
+      <MemberSignature Language="F#" Value="static member IsInfinity : single -&gt; bool" Usage="System.single.IsInfinity f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -842,6 +866,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -850,7 +876,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -894,6 +920,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsNaN(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNaN (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNaN(float f);" />
+      <MemberSignature Language="F#" Value="static member IsNaN : single -&gt; bool" Usage="System.single.IsNaN f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -906,6 +933,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -914,10 +943,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -961,6 +990,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsNegative(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNegative (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNegative(float f);" />
+      <MemberSignature Language="F#" Value="static member IsNegative : single -&gt; bool" Usage="System.single.IsNegative f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -985,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsNegativeInfinity(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNegativeInfinity (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNegativeInfinity(float f);" />
+      <MemberSignature Language="F#" Value="static member IsNegativeInfinity : single -&gt; bool" Usage="System.single.IsNegativeInfinity f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -997,6 +1028,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1005,7 +1038,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1049,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsNormal(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsNormal (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNormal(float f);" />
+      <MemberSignature Language="F#" Value="static member IsNormal : single -&gt; bool" Usage="System.single.IsNormal f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1073,6 +1107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsPositiveInfinity(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsPositiveInfinity (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsPositiveInfinity(float f);" />
+      <MemberSignature Language="F#" Value="static member IsPositiveInfinity : single -&gt; bool" Usage="System.single.IsPositiveInfinity f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1085,6 +1120,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1093,7 +1130,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1137,6 +1174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.IsSubnormal(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsSubnormal (f As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsSubnormal(float f);" />
+      <MemberSignature Language="F#" Value="static member IsSubnormal : single -&gt; bool" Usage="System.single.IsSubnormal f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1161,6 +1199,7 @@
       <MemberSignature Language="DocId" Value="F:System.Single.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Const MaxValue As Single  = 3.402823E+38" />
       <MemberSignature Language="C++ CLI" Value="public: float MaxValue = 3.402823E+38;" />
+      <MemberSignature Language="F#" Value="val mutable MaxValue : single" Usage="System.single.MaxValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1173,6 +1212,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1217,6 +1258,7 @@
       <MemberSignature Language="DocId" Value="F:System.Single.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public Const MinValue As Single  = -3.402823E+38" />
       <MemberSignature Language="C++ CLI" Value="public: float MinValue = -3.402823E+38;" />
+      <MemberSignature Language="F#" Value="val mutable MinValue : single" Usage="System.single.MinValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1229,6 +1271,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1273,6 +1317,7 @@
       <MemberSignature Language="DocId" Value="F:System.Single.NaN" />
       <MemberSignature Language="VB.NET" Value="Public Const NaN As Single  = NaN" />
       <MemberSignature Language="C++ CLI" Value="public: float NaN = NaN;" />
+      <MemberSignature Language="F#" Value="val mutable NaN : single" Usage="System.single.NaN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1285,6 +1330,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1337,6 +1384,7 @@
       <MemberSignature Language="DocId" Value="F:System.Single.NegativeInfinity" />
       <MemberSignature Language="VB.NET" Value="Public Const NegativeInfinity As Single  = -Infinity" />
       <MemberSignature Language="C++ CLI" Value="public: float NegativeInfinity = -Infinity;" />
+      <MemberSignature Language="F#" Value="val mutable NegativeInfinity : single" Usage="System.single.NegativeInfinity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1349,6 +1397,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1394,6 +1444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.op_Equality(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Single, right As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(float left, float right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : single * single -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1442,6 +1493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.op_GreaterThan(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As Single, right As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(float left, float right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : single * single -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1490,6 +1542,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.op_GreaterThanOrEqual(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As Single, right As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(float left, float right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : single * single -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1538,6 +1591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.op_Inequality(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Single, right As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(float left, float right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : single * single -&gt; bool" Usage="System.single.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1586,6 +1640,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.op_LessThan(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As Single, right As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(float left, float right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : single * single -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1634,6 +1689,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.op_LessThanOrEqual(System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As Single, right As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(float left, float right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : single * single -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1696,6 +1752,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; single" Usage="System.single.Parse s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1708,6 +1765,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1779,6 +1838,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.Parse(System.String,System.Globalization.NumberStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Parse(System::String ^ s, System::Globalization::NumberStyles style);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberStyles -&gt; single" Usage="System.single.Parse (s, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1791,6 +1851,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1912,6 +1974,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.Parse(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, provider As IFormatProvider) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Parse(System::String ^ s, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * IFormatProvider -&gt; single" Usage="System.single.Parse (s, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1924,6 +1987,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2006,6 +2071,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Parse(valuetype System.ReadOnlySpan`1&lt;char&gt; s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As ReadOnlySpan(Of Char), Optional style As NumberStyles = System.Globalization.NumberStyles.AllowDecimalPoint | System.Globalization.NumberStyles.AllowExponent | System.Globalization.NumberStyles.AllowLeadingSign | System.Globalization.NumberStyles.AllowLeadingWhite | System.Globalization.NumberStyles.AllowThousands | System.Globalization.NumberStyles.AllowTrailingWhite | System.Globalization.NumberStyles.Float | System.Globalization.NumberStyles.Integer, Optional provider As IFormatProvider = null) As Single" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; * System.Globalization.NumberStyles * IFormatProvider -&gt; single" Usage="System.single.Parse (s, style, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2034,6 +2100,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String, style As NumberStyles, provider As IFormatProvider) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Parse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberStyles * IFormatProvider -&gt; single" Usage="System.single.Parse (s, style, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2046,6 +2113,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2157,6 +2226,7 @@
       <MemberSignature Language="DocId" Value="F:System.Single.PositiveInfinity" />
       <MemberSignature Language="VB.NET" Value="Public Const PositiveInfinity As Single  = Infinity" />
       <MemberSignature Language="C++ CLI" Value="public: float PositiveInfinity = Infinity;" />
+      <MemberSignature Language="F#" Value="val mutable PositiveInfinity : single" Usage="System.single.PositiveInfinity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2169,6 +2239,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2282,6 +2354,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2329,6 +2403,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2375,6 +2451,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2415,6 +2493,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2455,6 +2535,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2501,6 +2583,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2547,6 +2631,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2593,6 +2679,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2639,6 +2727,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2685,6 +2775,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2692,6 +2784,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
@@ -2731,6 +2828,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2776,6 +2875,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2824,6 +2925,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2831,6 +2934,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt16</ReturnType>
       </ReturnValue>
@@ -2870,6 +2978,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2877,6 +2987,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
@@ -2916,6 +3031,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2923,6 +3040,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
@@ -2962,6 +3084,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="single.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2974,6 +3097,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2982,7 +3107,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -3054,6 +3179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="single.ToString provider" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
@@ -3069,6 +3195,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3077,7 +3205,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -3150,6 +3278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="single.ToString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3162,6 +3291,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3170,7 +3301,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -3235,6 +3366,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="single.ToString (format, provider)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
@@ -3250,6 +3382,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3258,7 +3392,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -3319,6 +3453,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFormat(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten, valuetype System.ReadOnlySpan`1&lt;char&gt; format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFormat (destination As Span(Of Char), ByRef charsWritten As Integer, Optional format As ReadOnlySpan(Of Char) = null, Optional provider As IFormatProvider = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryFormat : Span&lt;char&gt; *  * ReadOnlySpan&lt;char&gt; * IFormatProvider -&gt; bool" Usage="single.TryFormat (destination, charsWritten, format, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3329,7 +3464,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
-        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
@@ -3363,6 +3498,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.TryParse(System.ReadOnlySpan{System.Char},System.Single@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), ByRef result As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, [Runtime::InteropServices::Out] float % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.single.TryParse (s, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3373,7 +3509,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="s" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="result" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Single" RefType="out" />
       </Parameters>
       <Docs>
         <param name="s">To be added.</param>
@@ -3389,6 +3525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.TryParse(System.String,System.Single@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] float % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.single.TryParse (s, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3401,6 +3538,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3408,12 +3546,17 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="s" Type="System.String" />
-        <Parameter Name="result" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Single" RefType="out" />
       </Parameters>
       <Docs>
         <param name="s">A string representing a number to convert.</param>
@@ -3472,6 +3615,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Single@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), style As NumberStyles, provider As IFormatProvider, ByRef result As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] float % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; * System.Globalization.NumberStyles * IFormatProvider *  -&gt; bool" Usage="System.single.TryParse (s, style, provider, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3484,7 +3628,7 @@
         <Parameter Name="s" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="style" Type="System.Globalization.NumberStyles" />
         <Parameter Name="provider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Single" RefType="out" />
       </Parameters>
       <Docs>
         <param name="s">To be added.</param>
@@ -3502,6 +3646,7 @@
       <MemberSignature Language="DocId" Value="M:System.Single.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Single@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, style As NumberStyles, provider As IFormatProvider, ByRef result As Single) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] float % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * System.Globalization.NumberStyles * IFormatProvider *  -&gt; bool" Usage="System.single.TryParse (s, style, provider, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3514,6 +3659,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3521,6 +3667,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3528,7 +3679,7 @@
         <Parameter Name="s" Type="System.String" />
         <Parameter Name="style" Type="System.Globalization.NumberStyles" />
         <Parameter Name="provider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Single" RefType="out" />
       </Parameters>
       <Docs>
         <param name="s">A string representing a number to convert.</param>

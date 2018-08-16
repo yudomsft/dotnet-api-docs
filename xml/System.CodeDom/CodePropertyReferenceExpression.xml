@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodePropertyReferenceExpression" />
   <TypeSignature Language="VB.NET" Value="Public Class CodePropertyReferenceExpression&#xA;Inherits CodeExpression" />
   <TypeSignature Language="C++ CLI" Value="public ref class CodePropertyReferenceExpression : System::CodeDom::CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodePropertyReferenceExpression = class&#xA;    inherit CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -17,11 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -67,6 +73,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -85,9 +93,12 @@
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePropertyReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, propertyName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePropertyReferenceExpression(System::CodeDom::CodeExpression ^ targetObject, System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodePropertyReferenceExpression : System.CodeDom.CodeExpression * string -&gt; System.CodeDom.CodePropertyReferenceExpression" Usage="new System.CodeDom.CodePropertyReferenceExpression (targetObject, propertyName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -111,15 +122,23 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodePropertyReferenceExpression.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.CodeDom.CodePropertyReferenceExpression.PropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -135,15 +154,26 @@
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodePropertyReferenceExpression.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodePropertyReferenceExpression.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>

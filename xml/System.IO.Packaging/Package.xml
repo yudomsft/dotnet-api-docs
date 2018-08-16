@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.Package" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Package&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Package abstract : IDisposable" />
+  <TypeSignature Language="F#" Value="type Package = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -93,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.#ctor(System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (openFileAccess As FileAccess)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Package(System::IO::FileAccess openFileAccess);" />
+      <MemberSignature Language="F#" Value="new System.IO.Packaging.Package : System.IO.FileAccess -&gt; System.IO.Packaging.Package" Usage="new System.IO.Packaging.Package openFileAccess" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -101,8 +104,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="openFileAccess" Type="System.IO.FileAccess" />
       </Parameters>
@@ -127,9 +136,11 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.#ctor(System.IO.FileAccess,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (openFileAccess As FileAccess, streaming As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; Package(System::IO::FileAccess openFileAccess, bool streaming);" />
+      <MemberSignature Language="F#" Value="new System.IO.Packaging.Package : System.IO.FileAccess * bool -&gt; System.IO.Packaging.Package" Usage="new System.IO.Packaging.Package (openFileAccess, streaming)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -159,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="package.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -167,6 +179,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.CreatePart(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreatePart (partUri As Uri, contentType As String) As PackagePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackagePart ^ CreatePart(Uri ^ partUri, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="member this.CreatePart : Uri * string -&gt; System.IO.Packaging.PackagePart" Usage="package.CreatePart (partUri, contentType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -237,8 +251,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.PackagePart</ReturnType>
       </ReturnValue>
@@ -294,6 +314,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackagePart CreatePart(class System.Uri partUri, string contentType, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackagePart ^ CreatePart(Uri ^ partUri, System::String ^ contentType, System::IO::Packaging::CompressionOption compressionOption);" />
+      <MemberSignature Language="F#" Value="member this.CreatePart : Uri * string * System.IO.Packaging.CompressionOption -&gt; System.IO.Packaging.PackagePart" Usage="package.CreatePart (partUri, contentType, compressionOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -302,6 +323,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,6 +384,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IO.Packaging.PackagePart CreatePartCore(class System.Uri partUri, string contentType, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IO::Packaging::PackagePart ^ CreatePartCore(Uri ^ partUri, System::String ^ contentType, System::IO::Packaging::CompressionOption compressionOption);" />
+      <MemberSignature Language="F#" Value="abstract member CreatePartCore : Uri * string * System.IO.Packaging.CompressionOption -&gt; System.IO.Packaging.PackagePart" Usage="package.CreatePartCore (partUri, contentType, compressionOption)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -370,6 +393,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -444,6 +468,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationship CreateRelationship(class System.Uri targetUri, valuetype System.IO.Packaging.TargetMode targetMode, string relationshipType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ CreateRelationship(Uri ^ targetUri, System::IO::Packaging::TargetMode targetMode, System::String ^ relationshipType);" />
+      <MemberSignature Language="F#" Value="member this.CreateRelationship : Uri * System.IO.Packaging.TargetMode * string -&gt; System.IO.Packaging.PackageRelationship" Usage="package.CreateRelationship (targetUri, targetMode, relationshipType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -452,8 +477,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.PackageRelationship</ReturnType>
       </ReturnValue>
@@ -528,6 +559,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationship CreateRelationship(class System.Uri targetUri, valuetype System.IO.Packaging.TargetMode targetMode, string relationshipType, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ CreateRelationship(Uri ^ targetUri, System::IO::Packaging::TargetMode targetMode, System::String ^ relationshipType, System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.CreateRelationship : Uri * System.IO.Packaging.TargetMode * string * string -&gt; System.IO.Packaging.PackageRelationship" Usage="package.CreateRelationship (targetUri, targetMode, relationshipType, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -536,6 +568,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -622,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.DeletePart(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeletePart (partUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeletePart(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="member this.DeletePart : Uri -&gt; unit" Usage="package.DeletePart partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -630,6 +664,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -675,6 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.DeletePartCore(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DeletePartCore (partUri As Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DeletePartCore(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="abstract member DeletePartCore : Uri -&gt; unit" Usage="package.DeletePartCore partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -683,6 +719,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -718,6 +755,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.DeleteRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteRelationship (id As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteRelationship(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.DeleteRelationship : string -&gt; unit" Usage="package.DeleteRelationship id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -726,6 +764,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -771,6 +810,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="package.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -779,6 +819,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -819,6 +860,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.Package.FileOpenAccess" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileOpenAccess As FileAccess" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::FileAccess FileOpenAccess { System::IO::FileAccess get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileOpenAccess : System.IO.FileAccess" Usage="System.IO.Packaging.Package.FileOpenAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -827,6 +869,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -852,6 +895,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
+      <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="package.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -860,6 +904,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -894,6 +939,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.FlushCore" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub FlushCore ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void FlushCore();" />
+      <MemberSignature Language="F#" Value="abstract member FlushCore : unit -&gt; unit" Usage="package.FlushCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -902,6 +948,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -929,6 +976,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.GetPart(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPart (partUri As Uri) As PackagePart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackagePart ^ GetPart(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="member this.GetPart : Uri -&gt; System.IO.Packaging.PackagePart" Usage="package.GetPart partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -937,6 +985,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -995,6 +1044,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.GetPartCore(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetPartCore (partUri As Uri) As PackagePart" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IO::Packaging::PackagePart ^ GetPartCore(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="abstract member GetPartCore : Uri -&gt; System.IO.Packaging.PackagePart" Usage="package.GetPartCore partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1003,6 +1053,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1039,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.GetParts" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParts () As PackagePartCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackagePartCollection ^ GetParts();" />
+      <MemberSignature Language="F#" Value="member this.GetParts : unit -&gt; System.IO.Packaging.PackagePartCollection" Usage="package.GetParts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1047,6 +1099,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1092,6 +1145,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.GetPartsCore" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetPartsCore () As PackagePart()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::IO::Packaging::PackagePart ^&gt; ^ GetPartsCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetPartsCore : unit -&gt; System.IO.Packaging.PackagePart[]" Usage="package.GetPartsCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1100,6 +1154,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1133,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.GetRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationship (id As String) As PackageRelationship" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ GetRelationship(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationship : string -&gt; System.IO.Packaging.PackageRelationship" Usage="package.GetRelationship id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1141,6 +1197,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1182,6 +1239,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.GetRelationships" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationships () As PackageRelationshipCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationshipCollection ^ GetRelationships();" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : unit -&gt; System.IO.Packaging.PackageRelationshipCollection" Usage="package.GetRelationships " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1190,8 +1248,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.PackageRelationshipCollection</ReturnType>
       </ReturnValue>
@@ -1231,6 +1295,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipsByType (relationshipType As String) As PackageRelationshipCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationshipCollection ^ GetRelationshipsByType(System::String ^ relationshipType);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationshipsByType : string -&gt; System.IO.Packaging.PackageRelationshipCollection" Usage="package.GetRelationshipsByType relationshipType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1239,6 +1304,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1323,6 +1389,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.Package Open(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Open(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ Open(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member Open : System.IO.Stream -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.Package.Open stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1331,6 +1398,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1364,6 +1432,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Open(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String) As Package" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ Open(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member Open : string -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.Package.Open path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1372,6 +1441,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1413,6 +1483,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.Package Open(class System.IO.Stream stream, valuetype System.IO.FileMode packageMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ Open(System::IO::Stream ^ stream, System::IO::FileMode packageMode);" />
+      <MemberSignature Language="F#" Value="static member Open : System.IO.Stream * System.IO.FileMode -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.Package.Open (stream, packageMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1421,6 +1492,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1458,6 +1530,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Open(System.String,System.IO.FileMode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String, packageMode As FileMode) As Package" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ Open(System::String ^ path, System::IO::FileMode packageMode);" />
+      <MemberSignature Language="F#" Value="static member Open : string * System.IO.FileMode -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.Package.Open (path, packageMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1466,6 +1539,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1510,6 +1584,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.Package Open(class System.IO.Stream stream, valuetype System.IO.FileMode packageMode, valuetype System.IO.FileAccess packageAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ Open(System::IO::Stream ^ stream, System::IO::FileMode packageMode, System::IO::FileAccess packageAccess);" />
+      <MemberSignature Language="F#" Value="static member Open : System.IO.Stream * System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.Package.Open (stream, packageMode, packageAccess)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1518,8 +1593,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.Package</ReturnType>
       </ReturnValue>
@@ -1556,6 +1637,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String, packageMode As FileMode, packageAccess As FileAccess) As Package" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ Open(System::String ^ path, System::IO::FileMode packageMode, System::IO::FileAccess packageAccess);" />
+      <MemberSignature Language="F#" Value="static member Open : string * System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.Package.Open (path, packageMode, packageAccess)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1564,6 +1646,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1611,6 +1694,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String, packageMode As FileMode, packageAccess As FileAccess, packageShare As FileShare) As Package" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ Open(System::String ^ path, System::IO::FileMode packageMode, System::IO::FileAccess packageAccess, System::IO::FileShare packageShare);" />
+      <MemberSignature Language="F#" Value="static member Open : string * System.IO.FileMode * System.IO.FileAccess * System.IO.FileShare -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.Package.Open (path, packageMode, packageAccess, packageShare)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1619,8 +1703,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.Package</ReturnType>
       </ReturnValue>
@@ -1666,6 +1756,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.Package.PackageProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PackageProperties As PackageProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::PackageProperties ^ PackageProperties { System::IO::Packaging::PackageProperties ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PackageProperties : System.IO.Packaging.PackageProperties" Usage="System.IO.Packaging.Package.PackageProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1674,6 +1765,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1699,6 +1791,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.PartExists(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function PartExists (partUri As Uri) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool PartExists(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="abstract member PartExists : Uri -&gt; bool&#xA;override this.PartExists : Uri -&gt; bool" Usage="package.PartExists partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1707,6 +1800,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1748,6 +1842,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.Package.RelationshipExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RelationshipExists (id As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RelationshipExists(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.RelationshipExists : string -&gt; bool" Usage="package.RelationshipExists id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1756,6 +1851,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1803,6 +1899,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

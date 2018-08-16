@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityContext sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type SecurityContext = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -47,9 +49,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.Capture" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Capture () As SecurityContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::SecurityContext ^ Capture();" />
+      <MemberSignature Language="F#" Value="static member Capture : unit -&gt; System.Security.SecurityContext" Usage="System.Security.SecurityContext.Capture " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -57,6 +61,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.SecurityContext</ReturnType>
       </ReturnValue>
@@ -80,9 +89,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As SecurityContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityContext ^ CreateCopy();" />
+      <MemberSignature Language="F#" Value="member this.CreateCopy : unit -&gt; System.Security.SecurityContext" Usage="securityContext.CreateCopy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -90,6 +101,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.SecurityContext</ReturnType>
       </ReturnValue>
@@ -114,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="securityContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -127,6 +144,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -154,9 +176,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.IsFlowSuppressed" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsFlowSuppressed () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsFlowSuppressed();" />
+      <MemberSignature Language="F#" Value="static member IsFlowSuppressed : unit -&gt; bool" Usage="System.Security.SecurityContext.IsFlowSuppressed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -188,9 +212,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.IsWindowsIdentityFlowSuppressed" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsWindowsIdentityFlowSuppressed () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWindowsIdentityFlowSuppressed();" />
+      <MemberSignature Language="F#" Value="static member IsWindowsIdentityFlowSuppressed : unit -&gt; bool" Usage="System.Security.SecurityContext.IsWindowsIdentityFlowSuppressed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -222,9 +248,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.RestoreFlow" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub RestoreFlow ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RestoreFlow();" />
+      <MemberSignature Language="F#" Value="static member RestoreFlow : unit -&gt; unit" Usage="System.Security.SecurityContext.RestoreFlow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -232,6 +260,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -254,9 +287,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Run(class System.Security.SecurityContext securityContext, class System.Threading.ContextCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.Run(System.Security.SecurityContext,System.Threading.ContextCallback,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Run(System::Security::SecurityContext ^ securityContext, System::Threading::ContextCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="static member Run : System.Security.SecurityContext * System.Threading.ContextCallback * obj -&gt; unit" Usage="System.Security.SecurityContext.Run (securityContext, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -264,6 +299,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -312,9 +352,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.SuppressFlow" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SuppressFlow () As AsyncFlowControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::AsyncFlowControl SuppressFlow();" />
+      <MemberSignature Language="F#" Value="static member SuppressFlow : unit -&gt; System.Threading.AsyncFlowControl" Usage="System.Security.SecurityContext.SuppressFlow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -322,6 +364,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.AsyncFlowControl</ReturnType>
       </ReturnValue>
@@ -352,9 +399,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.SuppressFlowWindowsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SuppressFlowWindowsIdentity () As AsyncFlowControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::AsyncFlowControl SuppressFlowWindowsIdentity();" />
+      <MemberSignature Language="F#" Value="static member SuppressFlowWindowsIdentity : unit -&gt; System.Threading.AsyncFlowControl" Usage="System.Security.SecurityContext.SuppressFlowWindowsIdentity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -362,6 +411,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.AsyncFlowControl</ReturnType>
       </ReturnValue>

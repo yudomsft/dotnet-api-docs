@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementConfigurationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementConfigurationAttribute&#xA;Inherits ManagementMemberAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementConfigurationAttribute sealed : System::Management::Instrumentation::ManagementMemberAttribute" />
+  <TypeSignature Language="F#" Value="type ManagementConfigurationAttribute = class&#xA;    inherit ManagementMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -59,11 +64,12 @@ public double ReadableWritableProperty
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementConfigurationAttribute" /> class. This is the default constructor.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.ManagementConfigurationAttribute" /> class. This is the default constructor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,11 +79,21 @@ public double ReadableWritableProperty
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementConfigurationAttribute.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As ManagementConfigurationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::Instrumentation::ManagementConfigurationType Mode { System::Management::Instrumentation::ManagementConfigurationType get(); void set(System::Management::Instrumentation::ManagementConfigurationType value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Management.Instrumentation.ManagementConfigurationType with get, set" Usage="System.Management.Instrumentation.ManagementConfigurationAttribute.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementConfigurationType</ReturnType>
       </ReturnValue>
@@ -100,11 +116,21 @@ public double ReadableWritableProperty
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementConfigurationAttribute.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Schema { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : Type with get, set" Usage="System.Management.Instrumentation.ManagementConfigurationAttribute.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>

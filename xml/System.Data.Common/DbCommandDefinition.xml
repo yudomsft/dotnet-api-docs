@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbCommandDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Class DbCommandDefinition" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbCommandDefinition" />
+  <TypeSignature Language="F#" Value="type DbCommandDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -42,8 +44,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbCommandDefinition" /> class.</summary>
@@ -63,9 +71,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandDefinition.#ctor(System.Data.Common.DbCommand)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (prototype As DbCommand)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbCommandDefinition(System::Data::Common::DbCommand ^ prototype);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DbCommandDefinition : System.Data.Common.DbCommand -&gt; System.Data.Common.DbCommandDefinition" Usage="new System.Data.Common.DbCommandDefinition prototype" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -92,9 +102,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandDefinition.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbCommand ^ CreateCommand();" />
+      <MemberSignature Language="F#" Value="abstract member CreateCommand : unit -&gt; System.Data.Common.DbCommand&#xA;override this.CreateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbCommandDefinition.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

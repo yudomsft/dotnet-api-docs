@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="VB.NET" Value="Public Class ConfigurationSectionGroup" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type ConfigurationSectionGroup = class" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -24,7 +26,7 @@
 ## Remarks  
  Settings in configuration files (such as the Web.config file) are organized into sections. Because some sections are related, it is often convenient to group them in a section group. The <xref:System.Configuration.ConfigurationSectionGroup> class represents the `sectionGroup` XML element that is used to group sections when they are defined in the `configSections` element of a configuration file. Section groups can be nested (a section group can contain other section groups as well as sections). The following example shows a `configSections` element that defines three nested section groups:  
   
-```  
+```xml  
 <configSections>  
   <sectionGroup name="system.web.extensions"...>  
     <sectionGroup name="scripting" ...>  
@@ -75,6 +77,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -102,9 +105,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ForceDeclaration" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration();" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : unit -&gt; unit" Usage="configurationSectionGroup.ForceDeclaration " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -139,18 +144,20 @@
       </Docs>
     </Member>
     <Member MemberName="ForceDeclaration">
-      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool force) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (force As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool force) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (force As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ForceDeclaration(System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ForceDeclaration(System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool require);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="configurationSectionGroup.ForceDeclaration require" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -161,12 +168,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="force" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="force" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="require" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="force">To be added.</param>
-        <param name="require">To be added.</param>
+        <param name="force">
+          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object must be written to the file; otherwise, <see langword="false" />.</param>
+        <param name="require">
+          <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object must be written to the file; otherwise, <see langword="false" />.</param>
         <summary>Forces the declaration for this <see cref="T:System.Configuration.ConfigurationSectionGroup" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -204,9 +213,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclarationRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeclarationRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDeclarationRequired : bool" Usage="System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -242,9 +253,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.IsDeclared" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeclared As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeclared { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDeclared : bool" Usage="System.Configuration.ConfigurationSectionGroup.IsDeclared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -287,9 +300,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.ConfigurationSectionGroup.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -329,9 +344,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.SectionGroupName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SectionGroupName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SectionGroupName : string" Usage="System.Configuration.ConfigurationSectionGroup.SectionGroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -371,9 +388,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.SectionGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SectionGroups As ConfigurationSectionGroupCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionGroupCollection ^ SectionGroups { System::Configuration::ConfigurationSectionGroupCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SectionGroups : System.Configuration.ConfigurationSectionGroupCollection" Usage="System.Configuration.ConfigurationSectionGroup.SectionGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -408,9 +427,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Sections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sections As ConfigurationSectionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSectionCollection ^ Sections { System::Configuration::ConfigurationSectionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sections : System.Configuration.ConfigurationSectionCollection" Usage="System.Configuration.ConfigurationSectionGroup.Sections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -445,6 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion(System.Runtime.Versioning.FrameworkName)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializeSectionGroupInTargetVersion (targetFramework As FrameworkName) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ShouldSerializeSectionGroupInTargetVersion(System::Runtime::Versioning::FrameworkName ^ targetFramework);" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeSectionGroupInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool&#xA;override this.ShouldSerializeSectionGroupInTargetVersion : System.Runtime.Versioning.FrameworkName -&gt; bool" Usage="configurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion targetFramework" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -483,9 +505,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionGroup.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Configuration.ConfigurationSectionGroup.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

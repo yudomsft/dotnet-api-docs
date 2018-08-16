@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputHidden" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlInputHidden&#xA;Inherits HtmlInputControl&#xA;Implements IPostBackDataHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlInputHidden : System::Web::UI::HtmlControls::HtmlInputControl, System::Web::UI::IPostBackDataHandler" />
+  <TypeSignature Language="F#" Value="type HtmlInputHidden = class&#xA;    inherit HtmlInputControl&#xA;    interface IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +20,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("ServerChange")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
     </Attribute>
   </Attributes>
@@ -62,6 +65,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -97,12 +102,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputHidden.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="htmlInputHidden.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,9 +143,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputHidden.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlInputHidden.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,9 +188,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputHidden.OnServerChange(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnServerChange (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerChange(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnServerChange : EventArgs -&gt; unit&#xA;override this.OnServerChange : EventArgs -&gt; unit" Usage="htmlInputHidden.OnServerChange e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,12 +232,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputHidden.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="htmlInputHidden.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,9 +264,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputHidden.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlInputHidden.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,9 +289,12 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlInputHidden.ServerChange" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ServerChange As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerChange;" />
+      <MemberSignature Language="F#" Value="member this.ServerChange : EventHandler " Usage="member this.ServerChange : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,8 +330,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -340,8 +367,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

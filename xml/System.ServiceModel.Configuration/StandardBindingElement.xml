@@ -4,12 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StandardBindingElement&#xA;Inherits ServiceModelConfigurationElement&#xA;Implements IBindingConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class StandardBindingElement abstract : System::ServiceModel::Configuration::ServiceModelConfigurationElement, System::ServiceModel::Configuration::IBindingConfigurationElement" />
+  <TypeSignature Language="F#" Value="type StandardBindingElement = class&#xA;    inherit ServiceModelConfigurationElement&#xA;    interface IBindingConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.Configuration.ServiceModelConfigurationElement</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-3.0">System.Configuration.ConfigurationElement</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -46,8 +49,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardBindingElement" /> class.</summary>
@@ -60,9 +69,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StandardBindingElement(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.StandardBindingElement : string -&gt; System.ServiceModel.Configuration.StandardBindingElement" Usage="new System.ServiceModel.Configuration.StandardBindingElement name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -79,12 +90,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit&#xA;override this.ApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="standardBindingElement.ApplyConfiguration binding" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Configuration.IBindingConfigurationElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,9 +128,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.StandardBindingElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,17 +150,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.CloseTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property CloseTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CloseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.CloseTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.StandardBindingElement.CloseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("closeTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,9 +185,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit&#xA;override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="standardBindingElement.InitializeFrom binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,17 +213,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.StandardBindingElement.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("name", Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.ConfigurationProperty("name", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -222,9 +255,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="F#" Value="abstract member OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="standardBindingElement.OnApplyConfiguration binding" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,17 +280,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.OpenTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property OpenTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan OpenTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.OpenTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.StandardBindingElement.OpenTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("openTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -273,9 +316,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.StandardBindingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,17 +338,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.ReceiveTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReceiveTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReceiveTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ReceiveTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.StandardBindingElement.ReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("receiveTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -321,13 +374,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.Reset(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="standardBindingElement.Reset parentElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -349,17 +404,25 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.SendTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property SendTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SendTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.SendTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.StandardBindingElement.SendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("sendTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

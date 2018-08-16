@@ -4,13 +4,16 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComManagedImportUtil" />
   <TypeSignature Language="VB.NET" Value="Public Interface IComManagedImportUtil" />
   <TypeSignature Language="C++ CLI" Value="public interface class IComManagedImportUtil" />
+  <TypeSignature Language="F#" Value="type IComManagedImportUtil = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("c3f8f66b-91be-4c99-a94f-ce3b0a951039")</AttributeName>
     </Attribute>
   </Attributes>
@@ -34,13 +37,16 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetComponentInfo (assemblyPath As String, ByRef numComponents As String, ByRef componentInfo As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetComponentInfo(System::String ^ assemblyPath, [Runtime::InteropServices::Out] System::String ^ % numComponents, [Runtime::InteropServices::Out] System::String ^ % componentInfo);" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentInfo : string *  *  -&gt; unit" Usage="iComManagedImportUtil.GetComponentInfo (assemblyPath, numComponents, componentInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
         </Attribute>
       </Attributes>
@@ -49,8 +55,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="assemblyPath" Type="System.String" />
-        <Parameter Name="numComponents" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="componentInfo" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="numComponents" Type="System.String" RefType="out" />
+        <Parameter Name="componentInfo" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="assemblyPath">The path to the assembly.</param>
@@ -76,7 +82,7 @@
           <paramref name="assemblyPath" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="assemblyPath" /> contains a colon (":").</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
       </Docs>
     </Member>
     <Member MemberName="InstallAssembly">
@@ -85,13 +91,16 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComManagedImportUtil.InstallAssembly(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (filename As String, parname As String, appname As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssembly(System::String ^ filename, System::String ^ parname, System::String ^ appname);" />
+      <MemberSignature Language="F#" Value="abstract member InstallAssembly : string * string * string -&gt; unit" Usage="iComManagedImportUtil.InstallAssembly (filename, parname, appname)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
         </Attribute>
       </Attributes>

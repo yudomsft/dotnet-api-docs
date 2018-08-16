@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.PropertyPath" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PropertyPath" />
   <TypeSignature Language="C++ CLI" Value="public ref class PropertyPath sealed" />
+  <TypeSignature Language="F#" Value="type PropertyPath = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.PropertyPathConverter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,9 +66,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.PropertyPath.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (parameter As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyPath(System::Object ^ parameter);" />
+      <MemberSignature Language="F#" Value="new System.Windows.PropertyPath : obj -&gt; System.Windows.PropertyPath" Usage="new System.Windows.PropertyPath parameter" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -96,9 +100,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.PropertyPath.#ctor(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, ParamArray pathParameters As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyPath(System::String ^ path, ... cli::array &lt;System::Object ^&gt; ^ pathParameters);" />
+      <MemberSignature Language="F#" Value="new System.Windows.PropertyPath : string * obj[] -&gt; System.Windows.PropertyPath" Usage="new System.Windows.PropertyPath (path, pathParameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -135,11 +141,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.PropertyPath.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Windows.PropertyPath.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -182,9 +195,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.PropertyPath.PathParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathParameters As Collection(Of Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Object ^&gt; ^ PathParameters { System::Collections::ObjectModel::Collection&lt;System::Object ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PathParameters : System.Collections.ObjectModel.Collection&lt;obj&gt;" Usage="System.Windows.PropertyPath.PathParameters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

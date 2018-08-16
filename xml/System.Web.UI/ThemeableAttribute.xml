@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ThemeableAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThemeableAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ThemeableAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ThemeableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
@@ -45,11 +47,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (themeable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThemeableAttribute(bool themeable);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ThemeableAttribute : bool -&gt; System.Web.UI.ThemeableAttribute" Usage="new System.Web.UI.ThemeableAttribute themeable" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="themeable" Type="System.Boolean" />
       </Parameters>
@@ -81,9 +90,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ThemeableAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ThemeableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::ThemeableAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.ThemeableAttribute" Usage="System.Web.UI.ThemeableAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,9 +118,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="themeableAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,9 +145,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="themeableAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,9 +175,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="themeableAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,9 +199,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.IsObjectThemeable(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsObjectThemeable (instance As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsObjectThemeable(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="static member IsObjectThemeable : obj -&gt; bool" Usage="System.Web.UI.ThemeableAttribute.IsObjectThemeable instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,9 +227,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeThemeable(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.IsTypeThemeable(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsTypeThemeable(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member IsTypeThemeable : Type -&gt; bool" Usage="System.Web.UI.ThemeableAttribute.IsTypeThemeable type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,9 +263,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ThemeableAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As ThemeableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::ThemeableAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.Web.UI.ThemeableAttribute" Usage="System.Web.UI.ThemeableAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,11 +291,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ThemeableAttribute.Themeable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Themeable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Themeable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Themeable : bool" Usage="System.Web.UI.ThemeableAttribute.Themeable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -296,9 +326,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ThemeableAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As ThemeableAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::ThemeableAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.Web.UI.ThemeableAttribute" Usage="System.Web.UI.ThemeableAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

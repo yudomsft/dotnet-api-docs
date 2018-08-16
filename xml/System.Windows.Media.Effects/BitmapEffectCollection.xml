@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BitmapEffectCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BitmapEffectCollection&#xA;Inherits Animatable&#xA;Implements ICollection(Of BitmapEffect), IEnumerable(Of BitmapEffect), IList, IList(Of BitmapEffect)" />
   <TypeSignature Language="C++ CLI" Value="public ref class BitmapEffectCollection sealed : System::Windows::Media::Animation::Animatable, System::Collections::Generic::ICollection&lt;System::Windows::Media::Effects::BitmapEffect ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Effects::BitmapEffect ^&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::Effects::BitmapEffect ^&gt;, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type BitmapEffectCollection = class&#xA;    inherit Animatable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&lt;BitmapEffect&gt;&#xA;    interface ICollection&lt;BitmapEffect&gt;&#xA;    interface seq&lt;BitmapEffect&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -48,6 +50,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -62,9 +65,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.Effects.BitmapEffect})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of BitmapEffect))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapEffectCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Effects::BitmapEffect ^&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Effects.BitmapEffectCollection : seq&lt;System.Windows.Media.Effects.BitmapEffect&gt; -&gt; System.Windows.Media.Effects.BitmapEffectCollection" Usage="new System.Windows.Media.Effects.BitmapEffectCollection collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -82,9 +87,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapEffectCollection(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Effects.BitmapEffectCollection : int -&gt; System.Windows.Media.Effects.BitmapEffectCollection" Usage="new System.Windows.Media.Effects.BitmapEffectCollection capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -102,12 +109,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.Add(System.Windows.Media.Effects.BitmapEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As BitmapEffect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::Effects::BitmapEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Media.Effects.BitmapEffect -&gt; unit&#xA;override this.Add : System.Windows.Media.Effects.BitmapEffect -&gt; unit" Usage="bitmapEffectCollection.Add value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="bitmapEffectCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -135,6 +145,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,9 +163,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapEffectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectCollection ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BitmapEffectCollection" Usage="bitmapEffectCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,9 +195,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="bitmapEffectCollection.CloneCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,9 +220,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapEffectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectCollection ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BitmapEffectCollection" Usage="bitmapEffectCollection.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,9 +252,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="bitmapEffectCollection.CloneCurrentValueCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,12 +277,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.Contains(System.Windows.Media.Effects.BitmapEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As BitmapEffect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::Effects::BitmapEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.Media.Effects.BitmapEffect -&gt; bool&#xA;override this.Contains : System.Windows.Media.Effects.BitmapEffect -&gt; bool" Usage="bitmapEffectCollection.Contains value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,9 +316,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.CopyTo(System.Windows.Media.Effects.BitmapEffect[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As BitmapEffect(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::Effects::BitmapEffect ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.Media.Effects.BitmapEffect[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.Media.Effects.BitmapEffect[] * int -&gt; unit" Usage="bitmapEffectCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -320,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.Effects.BitmapEffectCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -327,6 +351,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,9 +369,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bitmapEffectCollection.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -365,9 +392,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="bitmapEffectCollection.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -389,9 +418,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="bitmapEffectCollection.GetAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,9 +443,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="bitmapEffectCollection.GetCurrentValueAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -435,9 +468,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As BitmapEffectCollection.Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffectCollection::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Windows.Media.Effects.BitmapEffectCollection.Enumerator" Usage="bitmapEffectCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -456,12 +491,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.IndexOf(System.Windows.Media.Effects.BitmapEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As BitmapEffect) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::Media::Effects::BitmapEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Windows.Media.Effects.BitmapEffect -&gt; int&#xA;override this.IndexOf : System.Windows.Media.Effects.BitmapEffect -&gt; int" Usage="bitmapEffectCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -483,12 +520,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.Insert(System.Int32,System.Windows.Media.Effects.BitmapEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As BitmapEffect)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::Media::Effects::BitmapEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.Media.Effects.BitmapEffect -&gt; unit&#xA;override this.Insert : int * System.Windows.Media.Effects.BitmapEffect -&gt; unit" Usage="bitmapEffectCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -511,12 +550,14 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As BitmapEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::BitmapEffect ^ default[int] { System::Windows::Media::Effects::BitmapEffect ^ get(int index); void set(int index, System::Windows::Media::Effects::BitmapEffect ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.Effects.BitmapEffect with get, set" Usage="System.Windows.Media.Effects.BitmapEffectCollection.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,12 +579,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.Remove(System.Windows.Media.Effects.BitmapEffect)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (value As BitmapEffect) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::Effects::BitmapEffect ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Media.Effects.BitmapEffect -&gt; bool&#xA;override this.Remove : System.Windows.Media.Effects.BitmapEffect -&gt; bool" Usage="bitmapEffectCollection.Remove value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -566,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffectCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="bitmapEffectCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -573,6 +617,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -592,13 +637,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Effects.BitmapEffect&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Effects#BitmapEffect&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of BitmapEffect).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Effects.BitmapEffect&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Windows::Media::Effects::BitmapEffect&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Windows.Media.Effects.BitmapEffect&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,6 +677,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -660,6 +708,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -688,13 +737,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -719,13 +770,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -756,6 +809,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -787,6 +841,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -821,6 +876,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -856,6 +912,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -890,6 +947,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -918,13 +976,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -949,13 +1009,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -980,15 +1042,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BitmapEffectCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1021,6 +1090,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

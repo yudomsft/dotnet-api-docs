@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageHandlerFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class PageHandlerFactory" />
   <TypeSignature Language="C++ CLI" Value="public ref class PageHandlerFactory" />
+  <TypeSignature Language="F#" Value="type PageHandlerFactory = class&#xA;    interface IHttpHandlerFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -38,6 +40,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -59,12 +62,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHandler (context As HttpContext, requestType As String, virtualPath As String, path As String) As IHttpHandler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::IHttpHandler ^ GetHandler(System::Web::HttpContext ^ context, System::String ^ requestType, System::String ^ virtualPath, System::String ^ path);" />
+      <MemberSignature Language="F#" Value="abstract member GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler&#xA;override this.GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler" Usage="pageHandlerFactory.GetHandler (context, requestType, virtualPath, path)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,12 +105,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReleaseHandler (handler As IHttpHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandler(System::Web::IHttpHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandler : System.Web.IHttpHandler -&gt; unit&#xA;override this.ReleaseHandler : System.Web.IHttpHandler -&gt; unit" Usage="pageHandlerFactory.ReleaseHandler handler" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

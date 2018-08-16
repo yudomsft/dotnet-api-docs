@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.DataTransferEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class DataTransferEventArgs&#xA;Inherits RoutedEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataTransferEventArgs : System::Windows::RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DataTransferEventArgs = class&#xA;    inherit RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,9 +38,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataTransferEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dataTransferEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,11 +65,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataTransferEventArgs.Property" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Property As DependencyProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty" Usage="System.Windows.Data.DataTransferEventArgs.Property" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
@@ -81,11 +92,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataTransferEventArgs.TargetObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetObject As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ TargetObject { System::Windows::DependencyObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.Windows.DependencyObject" Usage="System.Windows.Data.DataTransferEventArgs.TargetObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyObject</ReturnType>
       </ReturnValue>

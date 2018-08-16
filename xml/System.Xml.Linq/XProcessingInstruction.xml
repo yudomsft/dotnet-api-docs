@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XProcessingInstruction" />
   <TypeSignature Language="VB.NET" Value="Public Class XProcessingInstruction&#xA;Inherits XNode" />
   <TypeSignature Language="C++ CLI" Value="public ref class XProcessingInstruction : System::Xml::Linq::XNode" />
+  <TypeSignature Language="F#" Value="type XProcessingInstruction = class&#xA;    inherit XNode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XProcessingInstruction.#ctor(System.Xml.Linq.XProcessingInstruction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XProcessingInstruction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XProcessingInstruction(System::Xml::Linq::XProcessingInstruction ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XProcessingInstruction : System.Xml.Linq.XProcessingInstruction -&gt; System.Xml.Linq.XProcessingInstruction" Usage="new System.Xml.Linq.XProcessingInstruction other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -66,6 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XProcessingInstruction.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (target As String, data As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XProcessingInstruction(System::String ^ target, System::String ^ data);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XProcessingInstruction : string * string -&gt; System.Xml.Linq.XProcessingInstruction" Usage="new System.Xml.Linq.XProcessingInstruction (target, data)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -105,6 +110,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -153,6 +159,7 @@ Console.WriteLine(pi)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XProcessingInstruction.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : string with get, set" Usage="System.Xml.Linq.XProcessingInstruction.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -164,12 +171,18 @@ Console.WriteLine(pi)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -220,6 +233,7 @@ type='text/xsl' href='xform.xsl'
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XProcessingInstruction.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.Linq.XProcessingInstruction.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -231,6 +245,7 @@ type='text/xsl' href='xform.xsl'
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -282,6 +297,7 @@ ProcessingInstruction
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XProcessingInstruction.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Xml.Linq.XProcessingInstruction.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -293,12 +309,18 @@ ProcessingInstruction
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -341,6 +363,7 @@ xml-stylesheet
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XProcessingInstruction.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xProcessingInstruction.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -352,6 +375,7 @@ xml-stylesheet
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -382,6 +406,7 @@ xml-stylesheet
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XProcessingInstruction.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.WriteToAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xProcessingInstruction.WriteToAsync (writer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

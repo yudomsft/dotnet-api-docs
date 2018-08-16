@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewImageColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewImageColumn&#xA;Inherits DataGridViewColumn" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewImageColumn : System::Windows::Forms::DataGridViewColumn" />
+  <TypeSignature Language="F#" Value="type DataGridViewImageColumn = class&#xA;    inherit DataGridViewColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Windows.Forms.DataGridViewImageColumn), "DataGridViewImageColumn.bmp")</AttributeName>
     </Attribute>
   </Attributes>
@@ -71,8 +73,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewImageColumn" /> class, configuring it for use with cell values of type <see cref="T:System.Drawing.Image" />.</summary>
@@ -95,9 +103,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageColumn.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valuesAreIcons As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewImageColumn(bool valuesAreIcons);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewImageColumn : bool -&gt; System.Windows.Forms.DataGridViewImageColumn" Usage="new System.Windows.Forms.DataGridViewImageColumn valuesAreIcons" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -145,17 +155,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property CellTemplate As DataGridViewCell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CellTemplate : System.Windows.Forms.DataGridViewCell with get, set" Usage="System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,9 +213,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageColumn.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="dataGridViewImageColumn.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,13 +243,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultCellStyle As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ DefaultCellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); void set(System::Windows::Forms::DataGridViewCellStyle ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultCellStyle : System.Windows.Forms.DataGridViewCellStyle with get, set" Usage="System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -280,16 +299,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Windows.Forms.DataGridViewImageColumn.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>
@@ -333,17 +354,25 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.Icon" />
       <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Icon ^ Icon { System::Drawing::Icon ^ get(); void set(System::Drawing::Icon ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Drawing.Icon with get, set" Usage="System.Windows.Forms.DataGridViewImageColumn.Icon" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -377,14 +406,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.Image" />
       <MemberSignature Language="VB.NET" Value="Public Property Image As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Image with get, set" Usage="System.Windows.Forms.DataGridViewImageColumn.Image" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -426,13 +460,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.ImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Property ImageLayout As DataGridViewImageCellLayout" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewImageCellLayout ImageLayout { System::Windows::Forms::DataGridViewImageCellLayout get(); void set(System::Windows::Forms::DataGridViewImageCellLayout value); };" />
+      <MemberSignature Language="F#" Value="member this.ImageLayout : System.Windows.Forms.DataGridViewImageCellLayout with get, set" Usage="System.Windows.Forms.DataGridViewImageColumn.ImageLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -473,9 +509,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageColumn.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewImageColumn.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -495,17 +533,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons" />
       <MemberSignature Language="VB.NET" Value="Public Property ValuesAreIcons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValuesAreIcons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ValuesAreIcons : bool with get, set" Usage="System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

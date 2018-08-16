@@ -4,17 +4,22 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHost" />
   <TypeSignature Language="VB.NET" Value="Public Interface IProcessHost" />
   <TypeSignature Language="C++ CLI" Value="public interface class IProcessHost" />
+  <TypeSignature Language="F#" Value="type IProcessHost = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("0ccd465e-3114-4ca3-ad50-cea561307e93")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -36,16 +41,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.EnumerateAppDomains(System.Web.Hosting.IAppDomainInfoEnum@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnumerateAppDomains (ByRef appDomainInfoEnum As IAppDomainInfoEnum)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumerateAppDomains([Runtime::InteropServices::Out] System::Web::Hosting::IAppDomainInfoEnum ^ % appDomainInfoEnum);" />
+      <MemberSignature Language="F#" Value="abstract member EnumerateAppDomains :  -&gt; unit" Usage="iProcessHost.EnumerateAppDomains appDomainInfoEnum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum&amp;" RefType="out" />
+        <Parameter Name="appDomainInfoEnum" Type="System.Web.Hosting.IAppDomainInfoEnum" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appDomainInfoEnum">The <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</param>
@@ -60,9 +67,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="iProcessHost.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,9 +90,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.ShutdownApplication(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShutdownApplication (appId As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShutdownApplication(System::String ^ appId);" />
+      <MemberSignature Language="F#" Value="abstract member ShutdownApplication : string -&gt; unit" Usage="iProcessHost.ShutdownApplication appId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,9 +123,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHost.StartApplication(System.String,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartApplication (appId As String, appPath As String, ByRef runtimeInterface As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartApplication(System::String ^ appId, System::String ^ appPath, [Runtime::InteropServices::Out] System::Object ^ % runtimeInterface);" />
+      <MemberSignature Language="F#" Value="abstract member StartApplication : string * string *  -&gt; unit" Usage="iProcessHost.StartApplication (appId, appPath, runtimeInterface)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,7 +136,7 @@
       <Parameters>
         <Parameter Name="appId" Type="System.String" />
         <Parameter Name="appPath" Type="System.String" />
-        <Parameter Name="runtimeInterface" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="runtimeInterface" Type="System.Object" RefType="out" />
       </Parameters>
       <Docs>
         <param name="appId">The unique application ID.</param>

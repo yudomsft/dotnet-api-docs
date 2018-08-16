@@ -4,16 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RequestContext" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class RequestContext" />
+  <TypeSignature Language="F#" Value="type RequestContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Routing</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -51,6 +56,11 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
@@ -62,10 +72,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContextBase httpContext, class System.Web.Routing.RouteData routeData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RequestContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestContext(System::Web::HttpContextBase ^ httpContext, System::Web::Routing::RouteData ^ routeData);" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.RequestContext : System.Web.HttpContextBase * System.Web.Routing.RouteData -&gt; System.Web.Routing.RequestContext" Usage="new System.Web.Routing.RequestContext (httpContext, routeData)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
@@ -86,11 +101,24 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.HttpContext" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HttpContext As HttpContextBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::HttpContextBase ^ HttpContext { System::Web::HttpContextBase ^ get(); void set(System::Web::HttpContextBase ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HttpContext : System.Web.HttpContextBase with get, set" Usage="System.Web.Routing.RequestContext.HttpContext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.HttpContextBase</ReturnType>
       </ReturnValue>
@@ -113,11 +141,24 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.RouteData" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RouteData As RouteData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Routing::RouteData ^ RouteData { System::Web::Routing::RouteData ^ get(); void set(System::Web::Routing::RouteData ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteData : System.Web.Routing.RouteData with get, set" Usage="System.Web.Routing.RequestContext.RouteData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Routing.RouteData</ReturnType>
       </ReturnValue>

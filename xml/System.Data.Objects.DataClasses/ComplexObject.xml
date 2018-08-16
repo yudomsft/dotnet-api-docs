@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.ComplexObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComplexObject&#xA;Inherits StructuralObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComplexObject abstract : System::Data::Objects::DataClasses::StructuralObject" />
+  <TypeSignature Language="F#" Value="type ComplexObject = class&#xA;    inherit StructuralObject" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.Serialization.DataContract(IsReference=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -52,8 +54,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of <see cref="T:System.Data.Objects.DataClasses.ComplexObject" />.</summary>
@@ -66,9 +74,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.ComplexObject.ReportPropertyChanged(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanged (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanged(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="override this.ReportPropertyChanged : string -&gt; unit" Usage="complexObject.ReportPropertyChanged property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,9 +112,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.ComplexObject.ReportPropertyChanging(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub ReportPropertyChanging (property As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ReportPropertyChanging(System::String ^ property);" />
+      <MemberSignature Language="F#" Value="override this.ReportPropertyChanging : string -&gt; unit" Usage="complexObject.ReportPropertyChanging property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementProbeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementProbeAttribute&#xA;Inherits ManagementMemberAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementProbeAttribute sealed : System::Management::Instrumentation::ManagementMemberAttribute" />
+  <TypeSignature Language="F#" Value="type ManagementProbeAttribute = class&#xA;    inherit ManagementMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -66,11 +71,17 @@ public int ReadOnlyProperty
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementProbeAttribute" /> class. This is the default constructor for the class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.ManagementProbeAttribute" /> class. This is the default constructor for the class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,11 +91,21 @@ public int ReadOnlyProperty
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementProbeAttribute.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Property Schema As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Schema { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : Type with get, set" Usage="System.Management.Instrumentation.ManagementProbeAttribute.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>

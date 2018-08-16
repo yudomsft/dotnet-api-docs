@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractVerificationAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractVerificationAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContractVerificationAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ContractVerificationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,11 +24,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.Conditional("CONTRACTS_FULL")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-2.0">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -54,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractVerificationAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractVerificationAttribute(bool value);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Contracts.ContractVerificationAttribute : bool -&gt; System.Diagnostics.Contracts.ContractVerificationAttribute" Usage="new System.Diagnostics.Contracts.ContractVerificationAttribute value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -85,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractVerificationAttribute.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.Diagnostics.Contracts.ContractVerificationAttribute.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

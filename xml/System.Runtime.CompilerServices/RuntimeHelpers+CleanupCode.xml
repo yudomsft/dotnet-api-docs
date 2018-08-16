@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub RuntimeHelpers.CleanupCode(userData As Object, exceptionThrown As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public: delegate void RuntimeHelpers::CleanupCode(System::Object ^ userData, bool exceptionThrown);" />
+  <TypeSignature Language="F#" Value="type RuntimeHelpers.CleanupCode = delegate of obj * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -21,6 +23,11 @@
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-2.0">
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
   <Parameters>
     <Parameter Name="userData" Type="System.Object" />
     <Parameter Name="exceptionThrown" Type="System.Boolean" />

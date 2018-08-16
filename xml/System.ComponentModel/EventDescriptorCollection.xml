@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EventDescriptorCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class EventDescriptorCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventDescriptorCollection : System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type EventDescriptorCollection = class&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -28,7 +31,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.#ctor(System.ComponentModel.EventDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (events As EventDescriptor())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventDescriptorCollection(cli::array &lt;System::ComponentModel::EventDescriptor ^&gt; ^ events);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EventDescriptorCollection : System.ComponentModel.EventDescriptor[] -&gt; System.ComponentModel.EventDescriptorCollection" Usage="new System.ComponentModel.EventDescriptorCollection events" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -84,6 +88,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -126,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.#ctor(System.ComponentModel.EventDescriptor[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (events As EventDescriptor(), readOnly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventDescriptorCollection(cli::array &lt;System::ComponentModel::EventDescriptor ^&gt; ^ events, bool readOnly);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.EventDescriptorCollection : System.ComponentModel.EventDescriptor[] * bool -&gt; System.ComponentModel.EventDescriptorCollection" Usage="new System.ComponentModel.EventDescriptorCollection (events, readOnly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -135,6 +142,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -142,6 +150,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="events" Type="System.ComponentModel.EventDescriptor[]" />
         <Parameter Name="readOnly" Type="System.Boolean" />
@@ -181,6 +194,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Add(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As EventDescriptor) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::ComponentModel::EventDescriptor ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ComponentModel.EventDescriptor -&gt; int" Usage="eventDescriptorCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -190,6 +204,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -226,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="eventDescriptorCollection.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -238,6 +255,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -270,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Contains(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As EventDescriptor) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ComponentModel::EventDescriptor ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.ComponentModel.EventDescriptor -&gt; bool" Usage="eventDescriptorCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -279,6 +299,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -315,6 +337,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.ComponentModel.EventDescriptorCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -327,6 +350,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -334,6 +359,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -370,6 +400,7 @@
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EventDescriptorCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As EventDescriptorCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::EventDescriptorCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.ComponentModel.EventDescriptorCollection" Usage="System.ComponentModel.EventDescriptorCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -379,6 +410,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -400,6 +433,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Find(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Find (name As String, ignoreCase As Boolean) As EventDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptor ^ Find(System::String ^ name, bool ignoreCase);" />
+      <MemberSignature Language="F#" Value="abstract member Find : string * bool -&gt; System.ComponentModel.EventDescriptor&#xA;override this.Find : string * bool -&gt; System.ComponentModel.EventDescriptor" Usage="eventDescriptorCollection.Find (name, ignoreCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -409,6 +443,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -458,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="eventDescriptorCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -470,6 +507,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -514,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.IndexOf(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As EventDescriptor) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::ComponentModel::EventDescriptor ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.ComponentModel.EventDescriptor -&gt; int" Usage="eventDescriptorCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -523,6 +563,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -558,6 +600,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Insert(System.Int32,System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As EventDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::ComponentModel::EventDescriptor ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.ComponentModel.EventDescriptor -&gt; unit" Usage="eventDescriptorCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -567,6 +610,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -614,6 +659,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.InternalSort(System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InternalSort (sorter As IComparer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InternalSort(System::Collections::IComparer ^ sorter);" />
+      <MemberSignature Language="F#" Value="member this.InternalSort : System.Collections.IComparer -&gt; unit" Usage="eventDescriptorCollection.InternalSort sorter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -623,6 +669,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -659,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.InternalSort(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InternalSort (names As String())" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InternalSort(cli::array &lt;System::String ^&gt; ^ names);" />
+      <MemberSignature Language="F#" Value="member this.InternalSort : string[] -&gt; unit" Usage="eventDescriptorCollection.InternalSort names" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -668,6 +717,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -722,6 +773,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As EventDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::EventDescriptor ^ default[int] { System::ComponentModel::EventDescriptor ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.ComponentModel.EventDescriptor" Usage="System.ComponentModel.EventDescriptorCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -731,6 +783,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -777,6 +831,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As EventDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::EventDescriptor ^ default[System::String ^] { System::ComponentModel::EventDescriptor ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.ComponentModel.EventDescriptor" Usage="System.ComponentModel.EventDescriptorCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -786,6 +841,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -793,6 +850,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.EventDescriptor</ReturnType>
       </ReturnValue>
@@ -833,6 +895,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Remove(System.ComponentModel.EventDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As EventDescriptor)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ComponentModel::EventDescriptor ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.ComponentModel.EventDescriptor -&gt; unit" Usage="eventDescriptorCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -842,6 +905,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -877,6 +942,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="eventDescriptorCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -889,6 +955,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -934,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort () As EventDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ Sort();" />
+      <MemberSignature Language="F#" Value="abstract member Sort : unit -&gt; System.ComponentModel.EventDescriptorCollection&#xA;override this.Sort : unit -&gt; System.ComponentModel.EventDescriptorCollection" Usage="eventDescriptorCollection.Sort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -943,6 +1012,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -984,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Sort(System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort (comparer As IComparer) As EventDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ Sort(System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member Sort : System.Collections.IComparer -&gt; System.ComponentModel.EventDescriptorCollection&#xA;override this.Sort : System.Collections.IComparer -&gt; System.ComponentModel.EventDescriptorCollection" Usage="eventDescriptorCollection.Sort comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -993,6 +1065,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1039,6 +1113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Sort(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort (names As String()) As EventDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ Sort(cli::array &lt;System::String ^&gt; ^ names);" />
+      <MemberSignature Language="F#" Value="abstract member Sort : string[] -&gt; System.ComponentModel.EventDescriptorCollection&#xA;override this.Sort : string[] -&gt; System.ComponentModel.EventDescriptorCollection" Usage="eventDescriptorCollection.Sort names" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1048,6 +1123,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1094,6 +1171,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.EventDescriptorCollection.Sort(System.String[],System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Sort (names As String(), comparer As IComparer) As EventDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::EventDescriptorCollection ^ Sort(cli::array &lt;System::String ^&gt; ^ names, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member Sort : string[] * System.Collections.IComparer -&gt; System.ComponentModel.EventDescriptorCollection&#xA;override this.Sort : string[] * System.Collections.IComparer -&gt; System.ComponentModel.EventDescriptorCollection" Usage="eventDescriptorCollection.Sort (names, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -1103,6 +1181,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1162,6 +1242,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1197,13 +1279,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.System#Collections#ICollection#Count" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Collections::ICollection::Count { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1216,6 +1300,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1239,7 +1328,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1252,6 +1342,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1283,7 +1374,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1296,6 +1388,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1333,6 +1426,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1345,6 +1440,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -1382,6 +1482,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1424,6 +1526,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1436,6 +1540,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1473,6 +1582,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1521,6 +1632,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1568,6 +1681,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1604,7 +1719,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1617,6 +1733,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1648,7 +1765,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1661,6 +1779,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1692,7 +1811,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.EventDescriptorCollection.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1705,6 +1825,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1712,6 +1833,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1759,6 +1885,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1800,6 +1928,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1812,6 +1942,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

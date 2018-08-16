@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.VirtualPathExtension" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VirtualPathExtension&#xA;Implements IExtension(Of ServiceHostBase)" />
   <TypeSignature Language="C++ CLI" Value="public ref class VirtualPathExtension sealed : System::ServiceModel::IExtension&lt;System::ServiceModel::ServiceHostBase ^&gt;" />
+  <TypeSignature Language="F#" Value="type VirtualPathExtension = class&#xA;    interface IExtension&lt;ServiceHostBase&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -48,11 +50,17 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.VirtualPathExtension.ApplicationVirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationVirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationVirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationVirtualPath : string" Usage="System.ServiceModel.Activation.VirtualPathExtension.ApplicationVirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -68,12 +76,14 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.VirtualPathExtension.Attach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Attach (owner As ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Attach(System::ServiceModel::ServiceHostBase ^ owner);" />
+      <MemberSignature Language="F#" Value="abstract member Attach : System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.Attach : System.ServiceModel.ServiceHostBase -&gt; unit" Usage="virtualPathExtension.Attach owner" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Attach(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,12 +111,14 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.VirtualPathExtension.Detach(System.ServiceModel.ServiceHostBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Detach (owner As ServiceHostBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Detach(System::ServiceModel::ServiceHostBase ^ owner);" />
+      <MemberSignature Language="F#" Value="abstract member Detach : System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.Detach : System.ServiceModel.ServiceHostBase -&gt; unit" Usage="virtualPathExtension.Detach owner" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.IExtension`1.Detach(`0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,11 +146,17 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.VirtualPathExtension.SiteName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SiteName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SiteName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SiteName : string" Usage="System.ServiceModel.Activation.VirtualPathExtension.SiteName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -154,11 +172,18 @@ Console.WriteLine("The virtualPath of the hosted Service is  {0}", vpe.VirtualPa
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.VirtualPathExtension.VirtualPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string" Usage="System.ServiceModel.Activation.VirtualPathExtension.VirtualPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

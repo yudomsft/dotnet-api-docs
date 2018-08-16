@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class DisplayFormatAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DisplayFormatAttribute : Attribute" />
+  <TypeSignature Language="F#" Value="type DisplayFormatAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,8 +21,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -76,6 +81,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -90,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyFormatInEditMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyFormatInEditMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyFormatInEditMode : bool with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -99,8 +106,17 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -132,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull" />
       <MemberSignature Language="VB.NET" Value="Public Property ConvertEmptyStringToNull As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertEmptyStringToNull { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ConvertEmptyStringToNull : bool with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -141,8 +158,17 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -177,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
       <MemberSignature Language="VB.NET" Value="Public Property DataFormatString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFormatString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataFormatString : string with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -186,8 +213,17 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -231,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.GetNullDisplayText" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNullDisplayText () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetNullDisplayText();" />
+      <MemberSignature Language="F#" Value="member this.GetNullDisplayText : unit -&gt; string" Usage="displayFormatAttribute.GetNullDisplayText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -252,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.HtmlEncode" />
       <MemberSignature Language="VB.NET" Value="Public Property HtmlEncode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HtmlEncode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HtmlEncode : bool with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayFormatAttribute.HtmlEncode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -263,6 +301,14 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -279,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText" />
       <MemberSignature Language="VB.NET" Value="Public Property NullDisplayText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NullDisplayText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NullDisplayText : string with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -288,8 +335,17 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -325,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayTextResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Property NullDisplayTextResourceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ NullDisplayTextResourceType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NullDisplayTextResourceType : Type with get, set" Usage="System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayTextResourceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

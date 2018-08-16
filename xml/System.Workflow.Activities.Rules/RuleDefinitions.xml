@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleDefinitions" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleDefinitions&#xA;Implements IWorkflowChangeDiff" />
   <TypeSignature Language="C++ CLI" Value="public ref class RuleDefinitions sealed : System::Workflow::ComponentModel::IWorkflowChangeDiff" />
+  <TypeSignature Language="F#" Value="type RuleDefinitions = class&#xA;    interface IWorkflowChangeDiff" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,6 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -44,14 +47,19 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleDefinitions.Conditions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Conditions As RuleConditionCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleConditionCollection ^ Conditions { System::Workflow::Activities::Rules::RuleConditionCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Conditions : System.Workflow.Activities.Rules.RuleConditionCollection" Usage="System.Workflow.Activities.Rules.RuleDefinitions.Conditions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -69,12 +77,14 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleDefinitions.Diff(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Diff (originalDefinition As Object, changedDefinition As Object) As IList(Of WorkflowChangeAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::WorkflowChangeAction ^&gt; ^ Diff(System::Object ^ originalDefinition, System::Object ^ changedDefinition);" />
+      <MemberSignature Language="F#" Value="abstract member Diff : obj * obj -&gt; System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;&#xA;override this.Diff : obj * obj -&gt; System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;" Usage="ruleDefinitions.Diff (originalDefinition, changedDefinition)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Workflow.ComponentModel.IWorkflowChangeDiff.Diff(System.Object,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,13 +108,15 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleDefinitions.RuleDefinitionsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RuleDefinitionsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ RuleDefinitionsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RuleDefinitionsProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.Rules.RuleDefinitions.RuleDefinitionsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes")</AttributeName>
         </Attribute>
       </Attributes>
@@ -129,14 +141,19 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleDefinitions.RuleSets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RuleSets As RuleSetCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleSetCollection ^ RuleSets { System::Workflow::Activities::Rules::RuleSetCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RuleSets : System.Workflow.Activities.Rules.RuleSetCollection" Usage="System.Workflow.Activities.Rules.RuleDefinitions.RuleSets" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

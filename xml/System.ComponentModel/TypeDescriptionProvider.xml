@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeDescriptionProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TypeDescriptionProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptionProvider abstract" />
+  <TypeSignature Language="F#" Value="type TypeDescriptionProvider = class" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -78,6 +80,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -85,6 +88,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> class.</summary>
@@ -105,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.#ctor(System.ComponentModel.TypeDescriptionProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As TypeDescriptionProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TypeDescriptionProvider(System::ComponentModel::TypeDescriptionProvider ^ parent);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.TypeDescriptionProvider : System.ComponentModel.TypeDescriptionProvider -&gt; System.ComponentModel.TypeDescriptionProvider" Usage="new System.ComponentModel.TypeDescriptionProvider parent" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -114,6 +123,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -121,6 +131,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="parent" Type="System.ComponentModel.TypeDescriptionProvider" />
       </Parameters>
@@ -154,6 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateInstance (provider As IServiceProvider, objectType As Type, argTypes As Type(), args As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstance(IServiceProvider ^ provider, Type ^ objectType, cli::array &lt;Type ^&gt; ^ argTypes, cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : IServiceProvider * Type * Type[] * obj[] -&gt; obj&#xA;override this.CreateInstance : IServiceProvider * Type * Type[] * obj[] -&gt; obj" Usage="typeDescriptionProvider.CreateInstance (provider, objectType, argTypes, args)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -163,6 +179,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -208,6 +225,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetCache(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCache (instance As Object) As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionary ^ GetCache(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetCache : obj -&gt; System.Collections.IDictionary&#xA;override this.GetCache : obj -&gt; System.Collections.IDictionary" Usage="typeDescriptionProvider.GetCache instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -217,6 +235,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -254,6 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetExtendedTypeDescriptor (instance As Object) As ICustomTypeDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::ICustomTypeDescriptor ^ GetExtendedTypeDescriptor(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetExtendedTypeDescriptor : obj -&gt; System.ComponentModel.ICustomTypeDescriptor&#xA;override this.GetExtendedTypeDescriptor : obj -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="typeDescriptionProvider.GetExtendedTypeDescriptor instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -263,6 +283,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -300,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetExtenderProviders(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetExtenderProviders (instance As Object) As IExtenderProvider()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::ComponentModel::IExtenderProvider ^&gt; ^ GetExtenderProviders(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetExtenderProviders : obj -&gt; System.ComponentModel.IExtenderProvider[]&#xA;override this.GetExtenderProviders : obj -&gt; System.ComponentModel.IExtenderProvider[]" Usage="typeDescriptionProvider.GetExtenderProviders instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -337,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetFullComponentName(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFullComponentName (component As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetFullComponentName(System::Object ^ component);" />
+      <MemberSignature Language="F#" Value="abstract member GetFullComponentName : obj -&gt; string&#xA;override this.GetFullComponentName : obj -&gt; string" Usage="typeDescriptionProvider.GetFullComponentName component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -346,6 +369,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -384,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReflectionType (instance As Object) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetReflectionType(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="member this.GetReflectionType : obj -&gt; Type" Usage="typeDescriptionProvider.GetReflectionType instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -393,6 +418,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -431,6 +457,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReflectionType (objectType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetReflectionType(Type ^ objectType);" />
+      <MemberSignature Language="F#" Value="member this.GetReflectionType : Type -&gt; Type" Usage="typeDescriptionProvider.GetReflectionType objectType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -440,6 +467,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -447,6 +475,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -478,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetReflectionType(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetReflectionType (objectType As Type, instance As Object) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetReflectionType(Type ^ objectType, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetReflectionType : Type * obj -&gt; Type&#xA;override this.GetReflectionType : Type * obj -&gt; Type" Usage="typeDescriptionProvider.GetReflectionType (objectType, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -487,6 +521,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -526,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetRuntimeType(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRuntimeType (reflectionType As Type) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetRuntimeType(Type ^ reflectionType);" />
+      <MemberSignature Language="F#" Value="abstract member GetRuntimeType : Type -&gt; Type&#xA;override this.GetRuntimeType : Type -&gt; Type" Usage="typeDescriptionProvider.GetRuntimeType reflectionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -580,6 +616,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeDescriptor (instance As Object) As ICustomTypeDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="member this.GetTypeDescriptor : obj -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="typeDescriptionProvider.GetTypeDescriptor instance" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -589,6 +626,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -618,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeDescriptor (objectType As Type) As ICustomTypeDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(Type ^ objectType);" />
+      <MemberSignature Language="F#" Value="member this.GetTypeDescriptor : Type -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="typeDescriptionProvider.GetTypeDescriptor objectType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -627,6 +666,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -634,6 +674,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ICustomTypeDescriptor</ReturnType>
       </ReturnValue>
@@ -654,6 +699,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeDescriptor (objectType As Type, instance As Object) As ICustomTypeDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(Type ^ objectType, System::Object ^ instance);" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeDescriptor : Type * obj -&gt; System.ComponentModel.ICustomTypeDescriptor&#xA;override this.GetTypeDescriptor : Type * obj -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="typeDescriptionProvider.GetTypeDescriptor (objectType, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -663,6 +709,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -701,6 +748,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProvider.IsSupportedType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSupportedType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member IsSupportedType : Type -&gt; bool&#xA;override this.IsSupportedType : Type -&gt; bool" Usage="typeDescriptionProvider.IsSupportedType type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

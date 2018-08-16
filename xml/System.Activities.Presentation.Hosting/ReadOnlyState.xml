@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.ReadOnlyState" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReadOnlyState&#xA;Inherits ContextItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyState sealed : System::Activities::Presentation::ContextItem" />
+  <TypeSignature Language="F#" Value="type ReadOnlyState = class&#xA;    inherit ContextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Hosting.ReadOnlyState" /> class.</summary>
@@ -47,11 +53,20 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.ReadOnlyState.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="System.Activities.Presentation.Hosting.ReadOnlyState.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -68,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.ReadOnlyState.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ItemType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ItemType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Activities.Presentation.Hosting.ReadOnlyState.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

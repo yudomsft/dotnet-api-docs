@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TargetControlTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TargetControlTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TargetControlTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type TargetControlTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -28,9 +30,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TargetControlTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetControlType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetControlTypeAttribute(Type ^ targetControlType);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.TargetControlTypeAttribute : Type -&gt; System.Web.UI.TargetControlTypeAttribute" Usage="new System.Web.UI.TargetControlTypeAttribute targetControlType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -50,11 +54,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TargetControlTypeAttribute.TargetControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetControlType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetControlType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetControlType : Type" Usage="System.Web.UI.TargetControlTypeAttribute.TargetControlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -70,11 +81,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TargetControlTypeAttribute.TypeId" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.Web.UI.TargetControlTypeAttribute.TypeId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

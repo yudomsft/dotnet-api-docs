@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.FindCriteriaElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FindCriteriaElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FindCriteriaElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FindCriteriaElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +29,11 @@
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.FindCriteriaElement" /> class.</summary>
@@ -40,13 +46,14 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ContractTypeNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractTypeNames As ContractTypeNameElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::Configuration::ContractTypeNameElementCollection ^ ContractTypeNames { System::ServiceModel::Discovery::Configuration::ContractTypeNameElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContractTypeNames : System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ContractTypeNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("types")</AttributeName>
         </Attribute>
       </Attributes>
@@ -65,20 +72,24 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Duration : TimeSpan with get, set" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("duration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ServiceModel.Configuration.ServiceModelTimeSpanValidator(MinValueString="00:00:00.001")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Runtime.TimeSpanOrInfiniteConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -96,13 +107,14 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As XmlElementElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlElementElementCollection ^ Extensions { System::ServiceModel::Configuration::XmlElementElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.ServiceModel.Configuration.XmlElementElementCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("extensions")</AttributeName>
         </Attribute>
       </Attributes>
@@ -121,16 +133,17 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.MaxResults" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResults As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResults { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResults : int with get, set" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.MaxResults" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxResults", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MaxValue=2147483647, MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -156,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -176,13 +190,14 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ScopeMatchBy" />
       <MemberSignature Language="VB.NET" Value="Public Property ScopeMatchBy As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ScopeMatchBy { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScopeMatchBy : Uri with get, set" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.ScopeMatchBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("scopeMatchBy")</AttributeName>
         </Attribute>
       </Attributes>
@@ -201,13 +216,14 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Scopes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scopes As ScopeElementCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::Configuration::ScopeElementCollection ^ Scopes { System::ServiceModel::Discovery::Configuration::ScopeElementCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scopes : System.ServiceModel.Discovery.Configuration.ScopeElementCollection" Usage="System.ServiceModel.Discovery.Configuration.FindCriteriaElement.Scopes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("scopes")</AttributeName>
         </Attribute>
       </Attributes>

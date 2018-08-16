@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcCommandBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcCommandBuilder&#xA;Inherits DbCommandBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcCommandBuilder sealed : System::Data::Common::DbCommandBuilder" />
+  <TypeSignature Language="F#" Value="type OdbcCommandBuilder = class&#xA;    inherit DbCommandBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -14,6 +17,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DbCommandBuilder</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.ComponentModel.Component</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -65,6 +69,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -90,9 +96,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.#ctor(System.Data.Odbc.OdbcDataAdapter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (adapter As OdbcDataAdapter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcCommandBuilder(System::Data::Odbc::OdbcDataAdapter ^ adapter);" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcCommandBuilder : System.Data.Odbc.OdbcDataAdapter -&gt; System.Data.Odbc.OdbcCommandBuilder" Usage="new System.Data.Odbc.OdbcCommandBuilder adapter" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -122,9 +131,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ApplyParameterInfo(class System.Data.Common.DbParameter parameter, class System.Data.DataRow datarow, valuetype System.Data.StatementType statementType, bool whereClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.ApplyParameterInfo(System.Data.Common.DbParameter,System.Data.DataRow,System.Data.StatementType,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ApplyParameterInfo(System::Data::Common::DbParameter ^ parameter, System::Data::DataRow ^ datarow, System::Data::StatementType statementType, bool whereClause);" />
+      <MemberSignature Language="F#" Value="override this.ApplyParameterInfo : System.Data.Common.DbParameter * System.Data.DataRow * System.Data.StatementType * bool -&gt; unit" Usage="odbcCommandBuilder.ApplyParameterInfo (parameter, datarow, statementType, whereClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -155,9 +166,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommandBuilder.DataAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Property DataAdapter As OdbcDataAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcDataAdapter ^ DataAdapter { System::Data::Odbc::OdbcDataAdapter ^ get(); void set(System::Data::Odbc::OdbcDataAdapter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataAdapter : System.Data.Odbc.OdbcDataAdapter with get, set" Usage="System.Data.Odbc.OdbcCommandBuilder.DataAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -165,7 +179,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
       </Attributes>
@@ -193,9 +207,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.DeriveParameters(System.Data.Odbc.OdbcCommand)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub DeriveParameters (command As OdbcCommand)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeriveParameters(System::Data::Odbc::OdbcCommand ^ command);" />
+      <MemberSignature Language="F#" Value="static member DeriveParameters : System.Data.Odbc.OdbcCommand -&gt; unit" Usage="System.Data.Odbc.OdbcCommandBuilder.DeriveParameters command" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -226,6 +243,30 @@
         <exception cref="T:System.InvalidOperationException">The underlying ODBC driver does not support returning stored procedure parameter information, or the command text is not a valid stored procedure name, or the <see cref="T:System.Data.CommandType" /> specified was not <see langword="CommandType.StoredProcedure" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="odbcCommandBuilder.Dispose disposing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="GetDeleteCommand">
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -253,9 +294,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeleteCommand () As OdbcCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ GetDeleteCommand();" />
+      <MemberSignature Language="F#" Value="override this.GetDeleteCommand : unit -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcCommandBuilder.GetDeleteCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -289,9 +333,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeleteCommand (useColumnsForParameterNames As Boolean) As OdbcCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ GetDeleteCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="override this.GetDeleteCommand : bool -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcCommandBuilder.GetDeleteCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -357,9 +403,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInsertCommand () As OdbcCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ GetInsertCommand();" />
+      <MemberSignature Language="F#" Value="override this.GetInsertCommand : unit -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcCommandBuilder.GetInsertCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -393,9 +442,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInsertCommand (useColumnsForParameterNames As Boolean) As OdbcCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ GetInsertCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="override this.GetInsertCommand : bool -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcCommandBuilder.GetInsertCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -440,9 +491,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetParameterName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameterName (parameterOrdinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetParameterName(int parameterOrdinal);" />
+      <MemberSignature Language="F#" Value="override this.GetParameterName : int -&gt; string" Usage="odbcCommandBuilder.GetParameterName parameterOrdinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -468,9 +521,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetParameterName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameterName (parameterName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetParameterName(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="override this.GetParameterName : string -&gt; string" Usage="odbcCommandBuilder.GetParameterName parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -496,9 +551,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetParameterPlaceholder(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameterPlaceholder (parameterOrdinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetParameterPlaceholder(int parameterOrdinal);" />
+      <MemberSignature Language="F#" Value="override this.GetParameterPlaceholder : int -&gt; string" Usage="odbcCommandBuilder.GetParameterPlaceholder parameterOrdinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -545,9 +602,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpdateCommand () As OdbcCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ GetUpdateCommand();" />
+      <MemberSignature Language="F#" Value="override this.GetUpdateCommand : unit -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcCommandBuilder.GetUpdateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -581,9 +641,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpdateCommand (useColumnsForParameterNames As Boolean) As OdbcCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ GetUpdateCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="override this.GetUpdateCommand : bool -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcCommandBuilder.GetUpdateCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -637,9 +699,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.QuoteIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function QuoteIdentifier (unquotedIdentifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ QuoteIdentifier(System::String ^ unquotedIdentifier);" />
+      <MemberSignature Language="F#" Value="override this.QuoteIdentifier : string -&gt; string" Usage="odbcCommandBuilder.QuoteIdentifier unquotedIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -665,9 +729,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.QuoteIdentifier(System.String,System.Data.Odbc.OdbcConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Function QuoteIdentifier (unquotedIdentifier As String, connection As OdbcConnection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ QuoteIdentifier(System::String ^ unquotedIdentifier, System::Data::Odbc::OdbcConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="override this.QuoteIdentifier : string * System.Data.Odbc.OdbcConnection -&gt; string" Usage="odbcCommandBuilder.QuoteIdentifier (unquotedIdentifier, connection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -689,15 +755,96 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="QuotePrefix">
+      <MemberSignature Language="C#" Value="public string QuotePrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QuotePrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommandBuilder.QuotePrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuotePrefix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QuotePrefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QuotePrefix : string with get, set" Usage="System.Data.Odbc.OdbcCommandBuilder.QuotePrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteSuffix">
+      <MemberSignature Language="C#" Value="public string QuoteSuffix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QuoteSuffix" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommandBuilder.QuoteSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuoteSuffix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QuoteSuffix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QuoteSuffix : string with get, set" Usage="System.Data.Odbc.OdbcCommandBuilder.QuoteSuffix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSchema">
+      <MemberSignature Language="C#" Value="public void RefreshSchema ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RefreshSchema() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.RefreshSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshSchema ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshSchema();" />
+      <MemberSignature Language="F#" Value="member this.RefreshSchema : unit -&gt; unit" Usage="odbcCommandBuilder.RefreshSchema " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetRowUpdatingHandler">
       <MemberSignature Language="C#" Value="protected override void SetRowUpdatingHandler (System.Data.Common.DbDataAdapter adapter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetRowUpdatingHandler(class System.Data.Common.DbDataAdapter adapter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.SetRowUpdatingHandler(System.Data.Common.DbDataAdapter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetRowUpdatingHandler (adapter As DbDataAdapter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetRowUpdatingHandler(System::Data::Common::DbDataAdapter ^ adapter);" />
+      <MemberSignature Language="F#" Value="override this.SetRowUpdatingHandler : System.Data.Common.DbDataAdapter -&gt; unit" Usage="odbcCommandBuilder.SetRowUpdatingHandler adapter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -731,9 +878,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.UnquoteIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UnquoteIdentifier (quotedIdentifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ UnquoteIdentifier(System::String ^ quotedIdentifier);" />
+      <MemberSignature Language="F#" Value="override this.UnquoteIdentifier : string -&gt; string" Usage="odbcCommandBuilder.UnquoteIdentifier quotedIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -759,9 +908,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommandBuilder.UnquoteIdentifier(System.String,System.Data.Odbc.OdbcConnection)" />
       <MemberSignature Language="VB.NET" Value="Public Function UnquoteIdentifier (quotedIdentifier As String, connection As OdbcConnection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UnquoteIdentifier(System::String ^ quotedIdentifier, System::Data::Odbc::OdbcConnection ^ connection);" />
+      <MemberSignature Language="F#" Value="override this.UnquoteIdentifier : string * System.Data.Odbc.OdbcConnection -&gt; string" Usage="odbcCommandBuilder.UnquoteIdentifier (quotedIdentifier, connection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

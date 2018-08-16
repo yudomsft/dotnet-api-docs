@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.SpnEndpointIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class SpnEndpointIdentity&#xA;Inherits EndpointIdentity" />
   <TypeSignature Language="C++ CLI" Value="public ref class SpnEndpointIdentity : System::ServiceModel::EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type SpnEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -64,9 +66,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.SpnEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpnEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.SpnEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.SpnEndpointIdentity" Usage="new System.ServiceModel.SpnEndpointIdentity identity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -102,10 +106,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.SpnEndpointIdentity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (spnName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SpnEndpointIdentity(System::String ^ spnName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.SpnEndpointIdentity : string -&gt; System.ServiceModel.SpnEndpointIdentity" Usage="new System.ServiceModel.SpnEndpointIdentity spnName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -146,10 +152,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.SpnEndpointIdentity.SpnLookupTime" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property SpnLookupTime As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeSpan SpnLookupTime { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.SpnLookupTime : TimeSpan with get, set" Usage="System.ServiceModel.SpnEndpointIdentity.SpnLookupTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -158,6 +166,11 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>

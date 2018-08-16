@@ -4,22 +4,27 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ArrayExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class ArrayExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArrayExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type ArrayExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces></Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("PresentationFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Items")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Array))</AttributeName>
     </Attribute>
   </Attributes>
@@ -61,6 +66,10 @@
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ArrayExtension" /> class. This creates an empty array.</summary>
@@ -73,10 +82,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (elements As Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayExtension(Array ^ elements);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ArrayExtension : Array -&gt; System.Windows.Markup.ArrayExtension" Usage="new System.Windows.Markup.ArrayExtension elements" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="elements" Type="System.Array" />
@@ -102,10 +116,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (arrayType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayExtension(Type ^ arrayType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ArrayExtension : Type -&gt; System.Windows.Markup.ArrayExtension" Usage="new System.Windows.Markup.ArrayExtension arrayType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="arrayType" Type="System.Type" />
@@ -131,10 +150,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddChild (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddChild(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddChild : obj -&gt; unit" Usage="arrayExtension.AddChild value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -161,11 +185,21 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.AddText : string -&gt; unit" Usage="arrayExtension.AddText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -191,14 +225,25 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Items" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Items { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.IList" Usage="System.Windows.Markup.ArrayExtension.Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -227,10 +272,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="arrayExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -269,14 +319,25 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Windows.Markup.ArrayExtension.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Windows.Markup.ConstructorArgument("type")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

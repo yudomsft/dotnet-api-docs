@@ -4,13 +4,18 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IContextManager" />
   <TypeSignature Language="VB.NET" Value="Public Interface IContextManager" />
   <TypeSignature Language="C++ CLI" Value="public interface class IContextManager" />
+  <TypeSignature Language="F#" Value="type IContextManager = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -45,10 +50,15 @@ using (new OperationContextScope((IContextChannel)channel))
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IContextManager.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.ServiceModel.Channels.IContextManager.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -93,10 +103,15 @@ using (new OperationContextScope((IContextChannel)channel))
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IContextManager.GetContext" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContext () As IDictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetContext();" />
+      <MemberSignature Language="F#" Value="abstract member GetContext : unit -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="iContextManager.GetContext " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -129,10 +144,15 @@ if (cm != null)
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IContextManager.SetContext(System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetContext (context As IDictionary(Of String, String))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetContext(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member SetContext : System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; unit" Usage="iContextManager.SetContext context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.QueryOperationResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class QueryOperationResponse&#xA;Inherits OperationResponse&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class QueryOperationResponse : System::Data::Services::Client::OperationResponse, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type QueryOperationResponse = class&#xA;    inherit OperationResponse&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -38,10 +40,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetContinuation" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContinuation () As DataServiceQueryContinuation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQueryContinuation ^ GetContinuation();" />
+      <MemberSignature Language="F#" Value="member this.GetContinuation : unit -&gt; System.Data.Services.Client.DataServiceQueryContinuation" Usage="queryOperationResponse.GetContinuation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,10 +64,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetContinuation(System.Collections.IEnumerable)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContinuation (collection As IEnumerable) As DataServiceQueryContinuation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQueryContinuation ^ GetContinuation(System::Collections::IEnumerable ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.GetContinuation : System.Collections.IEnumerable -&gt; System.Data.Services.Client.DataServiceQueryContinuation" Usage="queryOperationResponse.GetContinuation collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,10 +100,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetContinuation``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetContinuation(Of T) (collection As IEnumerable(Of T)) As DataServiceQueryContinuation(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ GetContinuation(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="member this.GetContinuation : seq&lt;'T&gt; -&gt; System.Data.Services.Client.DataServiceQueryContinuation&lt;'T&gt;" Usage="queryOperationResponse.GetContinuation collection" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="queryOperationResponse.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -130,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,12 +158,19 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.QueryOperationResponse.Query" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Query As DataServiceRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::DataServiceRequest ^ Query { System::Data::Services::Client::DataServiceRequest ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Data.Services.Client.DataServiceRequest" Usage="System.Data.Services.Client.QueryOperationResponse.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.DataServiceRequest</ReturnType>
       </ReturnValue>
@@ -169,10 +186,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.QueryOperationResponse.TotalCount" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TotalCount As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long TotalCount { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalCount : int64" Usage="System.Data.Services.Client.QueryOperationResponse.TotalCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

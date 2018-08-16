@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ProfileProvider&#xA;Inherits SettingsProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileProvider abstract : System::Configuration::SettingsProvider" />
+  <TypeSignature Language="F#" Value="type ProfileProvider = class&#xA;    inherit SettingsProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -46,8 +48,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Profile.ProfileProvider" /> class.</summary>
@@ -67,9 +75,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.DeleteInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int DeleteInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime -&gt; int" Usage="profileProvider.DeleteInactiveProfiles (authenticationOption, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,9 +127,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.DeleteProfiles(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteProfiles (usernames As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int DeleteProfiles(cli::array &lt;System::String ^&gt; ^ usernames);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteProfiles : string[] -&gt; int" Usage="profileProvider.DeleteProfiles usernames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,9 +168,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.DeleteProfiles(System.Web.Profile.ProfileInfoCollection)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteProfiles (profiles As ProfileInfoCollection) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int DeleteProfiles(System::Web::Profile::ProfileInfoCollection ^ profiles);" />
+      <MemberSignature Language="F#" Value="abstract member DeleteProfiles : System.Web.Profile.ProfileInfoCollection -&gt; int" Usage="profileProvider.DeleteProfiles profiles" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -197,9 +211,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindInactiveProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String, userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Profile::ProfileInfoCollection ^ FindInactiveProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch, DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="abstract member FindInactiveProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string * DateTime * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="profileProvider.FindInactiveProfilesByUserName (authenticationOption, usernameToMatch, userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,7 +227,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -250,9 +266,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.FindProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Profile::ProfileInfoCollection ^ FindProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="abstract member FindProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="profileProvider.FindProfilesByUserName (authenticationOption, usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,7 +281,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -301,9 +319,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAllInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Profile::ProfileInfoCollection ^ GetAllInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="abstract member GetAllInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="profileProvider.GetAllInactiveProfiles (authenticationOption, userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,7 +334,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -350,9 +370,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.GetAllProfiles(System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAllProfiles (authenticationOption As ProfileAuthenticationOption, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Profile::ProfileInfoCollection ^ GetAllProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="abstract member GetAllProfiles : System.Web.Profile.ProfileAuthenticationOption * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="profileProvider.GetAllProfiles (authenticationOption, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,7 +384,7 @@
         <Parameter Name="authenticationOption" Type="System.Web.Profile.ProfileAuthenticationOption" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -397,9 +419,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProvider.GetNumberOfInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNumberOfInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetNumberOfInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="abstract member GetNumberOfInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime -&gt; int" Usage="profileProvider.GetNumberOfInactiveProfiles (authenticationOption, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

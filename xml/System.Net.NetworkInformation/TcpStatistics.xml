@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.TcpStatistics" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TcpStatistics" />
   <TypeSignature Language="C++ CLI" Value="public ref class TcpStatistics abstract" />
+  <TypeSignature Language="F#" Value="type TcpStatistics = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -60,6 +62,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -67,6 +70,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.TcpStatistics" /> class.</summary>
@@ -86,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ConnectionsAccepted" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ConnectionsAccepted As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ConnectionsAccepted { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionsAccepted : int64" Usage="System.Net.NetworkInformation.TcpStatistics.ConnectionsAccepted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -95,6 +104,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -133,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ConnectionsInitiated" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ConnectionsInitiated As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ConnectionsInitiated { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConnectionsInitiated : int64" Usage="System.Net.NetworkInformation.TcpStatistics.ConnectionsInitiated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -142,6 +153,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -180,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.CumulativeConnections" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CumulativeConnections As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long CumulativeConnections { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.CumulativeConnections : int64" Usage="System.Net.NetworkInformation.TcpStatistics.CumulativeConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -189,6 +202,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -222,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.CurrentConnections" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CurrentConnections As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long CurrentConnections { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentConnections : int64" Usage="System.Net.NetworkInformation.TcpStatistics.CurrentConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -231,6 +246,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -269,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ErrorsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ErrorsReceived As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ErrorsReceived { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorsReceived : int64" Usage="System.Net.NetworkInformation.TcpStatistics.ErrorsReceived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -278,6 +295,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -311,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.FailedConnectionAttempts" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FailedConnectionAttempts As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long FailedConnectionAttempts { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.FailedConnectionAttempts : int64" Usage="System.Net.NetworkInformation.TcpStatistics.FailedConnectionAttempts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -320,6 +339,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -358,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.MaximumConnections" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MaximumConnections As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MaximumConnections { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumConnections : int64" Usage="System.Net.NetworkInformation.TcpStatistics.MaximumConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -367,6 +388,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -405,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MaximumTransmissionTimeout As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MaximumTransmissionTimeout { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumTransmissionTimeout : int64" Usage="System.Net.NetworkInformation.TcpStatistics.MaximumTransmissionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -414,6 +437,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -452,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MinimumTransmissionTimeout As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MinimumTransmissionTimeout { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumTransmissionTimeout : int64" Usage="System.Net.NetworkInformation.TcpStatistics.MinimumTransmissionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -461,6 +486,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -499,6 +525,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ResetConnections" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ResetConnections As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ResetConnections { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResetConnections : int64" Usage="System.Net.NetworkInformation.TcpStatistics.ResetConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -508,6 +535,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -546,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.ResetsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ResetsSent As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ResetsSent { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResetsSent : int64" Usage="System.Net.NetworkInformation.TcpStatistics.ResetsSent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -555,6 +584,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -593,6 +623,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.SegmentsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SegmentsReceived As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long SegmentsReceived { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.SegmentsReceived : int64" Usage="System.Net.NetworkInformation.TcpStatistics.SegmentsReceived" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -602,6 +633,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -640,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.SegmentsResent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SegmentsResent As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long SegmentsResent { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.SegmentsResent : int64" Usage="System.Net.NetworkInformation.TcpStatistics.SegmentsResent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -649,6 +682,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -687,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.TcpStatistics.SegmentsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SegmentsSent As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long SegmentsSent { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.SegmentsSent : int64" Usage="System.Net.NetworkInformation.TcpStatistics.SegmentsSent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -696,6 +731,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

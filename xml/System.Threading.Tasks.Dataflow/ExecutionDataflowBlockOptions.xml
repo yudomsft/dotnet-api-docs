@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class ExecutionDataflowBlockOptions&#xA;Inherits DataflowBlockOptions" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExecutionDataflowBlockOptions : System::Threading::Tasks::Dataflow::DataflowBlockOptions" />
+  <TypeSignature Language="F#" Value="type ExecutionDataflowBlockOptions = class&#xA;    inherit DataflowBlockOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -15,6 +16,11 @@
     <BaseTypeName>System.Threading.Tasks.Dataflow.DataflowBlockOptions</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("TaskScheduler = {TaskScheduler}, MaxMessagesPerTask = {MaxMessagesPerTask}, BoundedCapacity = {BoundedCapacity}, MaxDegreeOfParallelism = {MaxDegreeOfParallelism}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides options used to configure the processing performed by dataflow blocks that process each message through the invocation of a user-provided delegate. These are dataflow blocks such as  <see cref="T:System.Threading.Tasks.Dataflow.ActionBlock`1" /> and  <see cref="T:System.Threading.Tasks.Dataflow.TransformBlock`2" />.</summary>
     <remarks>
@@ -68,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxDegreeOfParallelism As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDegreeOfParallelism { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDegreeOfParallelism : int with get, set" Usage="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -91,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.SingleProducerConstrained" />
       <MemberSignature Language="VB.NET" Value="Public Property SingleProducerConstrained As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SingleProducerConstrained { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SingleProducerConstrained : bool with get, set" Usage="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.SingleProducerConstrained" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

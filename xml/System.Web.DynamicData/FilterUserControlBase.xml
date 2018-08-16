@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FilterUserControlBase" />
   <TypeSignature Language="VB.NET" Value="Public Class FilterUserControlBase&#xA;Inherits UserControl&#xA;Implements IControlParameterTarget" />
   <TypeSignature Language="C++ CLI" Value="public ref class FilterUserControlBase : System::Web::UI::UserControl, System::Web::DynamicData::IControlParameterTarget" />
+  <TypeSignature Language="F#" Value="type FilterUserControlBase = class&#xA;    inherit UserControl&#xA;    interface IControlParameterTarget" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,8 +32,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.FilterUserControlBase" /> class.</summary>
@@ -44,9 +52,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As MetaColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Web.DynamicData.MetaColumn" Usage="System.Web.DynamicData.FilterUserControlBase.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,17 +74,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.ContextTypeName" />
       <MemberSignature Language="VB.NET" Value="Public Property ContextTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ContextTypeName : string with get, set" Usage="System.Web.DynamicData.FilterUserControlBase.ContextTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -92,17 +110,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.DataField" />
       <MemberSignature Language="VB.NET" Value="Public Property DataField As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataField : string with get, set" Usage="System.Web.DynamicData.FilterUserControlBase.DataField" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,9 +146,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.InitialValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitialValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InitialValue : string" Usage="System.Web.DynamicData.FilterUserControlBase.InitialValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -139,9 +167,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopulateListControl(class System.Web.UI.WebControls.ListControl listControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterUserControlBase.PopulateListControl(System.Web.UI.WebControls.ListControl)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PopulateListControl(System::Web::UI::WebControls::ListControl ^ listControl);" />
+      <MemberSignature Language="F#" Value="member this.PopulateListControl : System.Web.UI.WebControls.ListControl -&gt; unit" Usage="filterUserControlBase.PopulateListControl listControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -169,9 +199,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.SelectedDataKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedDataKey As DataKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedDataKey : System.Web.UI.WebControls.DataKey" Usage="System.Web.DynamicData.FilterUserControlBase.SelectedDataKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,9 +221,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.SelectedValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectedValue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedValue : string" Usage="System.Web.DynamicData.FilterUserControlBase.SelectedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,13 +249,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn System.Web.DynamicData.IControlParameterTarget.FilteredColumn" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.System#Web#DynamicData#IControlParameterTarget#FilteredColumn" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property FilteredColumn As MetaColumn Implements IControlParameterTarget.FilteredColumn" />
-      <MemberSignature Language="C++ CLI" Value="property System::Web::DynamicData::MetaColumn ^ System.Web.DynamicData.IControlParameterTarget.FilteredColumn { System::Web::DynamicData::MetaColumn ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::DynamicData::MetaColumn ^ System::Web::DynamicData::IControlParameterTarget::FilteredColumn { System::Web::DynamicData::MetaColumn ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.DynamicData.IControlParameterTarget.FilteredColumn" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IControlParameterTarget.FilteredColumn</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,6 +281,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,13 +302,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable System.Web.DynamicData.IControlParameterTarget.Table" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.System#Web#DynamicData#IControlParameterTarget#Table" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Table As MetaTable Implements IControlParameterTarget.Table" />
-      <MemberSignature Language="C++ CLI" Value="property System::Web::DynamicData::MetaTable ^ System.Web.DynamicData.IControlParameterTarget.Table { System::Web::DynamicData::MetaTable ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::DynamicData::MetaTable ^ System::Web::DynamicData::IControlParameterTarget::Table { System::Web::DynamicData::MetaTable ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.DynamicData.IControlParameterTarget.Table" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IControlParameterTarget.Table</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,17 +328,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.TableName" />
       <MemberSignature Language="VB.NET" Value="Public Property TableName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TableName : string with get, set" Usage="System.Web.DynamicData.FilterUserControlBase.TableName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

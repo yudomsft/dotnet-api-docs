@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BasicHttpSecurity" />
   <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpSecurity sealed" />
+  <TypeSignature Language="F#" Value="type BasicHttpSecurity = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -56,12 +58,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As BasicHttpMessageSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::BasicHttpMessageSecurity ^ Message { System::ServiceModel::BasicHttpMessageSecurity ^ get(); void set(System::ServiceModel::BasicHttpMessageSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.BasicHttpMessageSecurity with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpMessageSecurity</ReturnType>
       </ReturnValue>
@@ -90,10 +99,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As BasicHttpSecurityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::BasicHttpSecurityMode Mode { System::ServiceModel::BasicHttpSecurityMode get(); void set(System::ServiceModel::BasicHttpSecurityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.BasicHttpSecurityMode with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -102,6 +113,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.BasicHttpSecurityMode</ReturnType>
       </ReturnValue>
@@ -131,14 +147,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.ShouldSerializeMessage" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessage () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessage();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessage : unit -&gt; bool" Usage="basicHttpSecurity.ShouldSerializeMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -158,14 +175,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpSecurity.ShouldSerializeTransport" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransport () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransport();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransport : unit -&gt; bool" Usage="basicHttpSecurity.ShouldSerializeTransport " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -185,10 +203,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpSecurity.Transport" />
       <MemberSignature Language="VB.NET" Value="Public Property Transport As HttpTransportSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpTransportSecurity ^ Transport { System::ServiceModel::HttpTransportSecurity ^ get(); void set(System::ServiceModel::HttpTransportSecurity ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.HttpTransportSecurity with get, set" Usage="System.ServiceModel.BasicHttpSecurity.Transport" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -197,6 +217,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.HttpTransportSecurity</ReturnType>
       </ReturnValue>

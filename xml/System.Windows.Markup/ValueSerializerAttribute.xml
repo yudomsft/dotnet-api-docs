@@ -4,9 +4,18 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ValueSerializerAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValueSerializerAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValueSerializerAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ValueSerializerAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,11 +23,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Enum | System.AttributeTargets.Interface | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Struct, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Interface, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,12 +68,26 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializerAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueSerializerTypeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueSerializerAttribute(System::String ^ valueSerializerTypeName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ValueSerializerAttribute : string -&gt; System.Windows.Markup.ValueSerializerAttribute" Usage="new System.Windows.Markup.ValueSerializerAttribute valueSerializerTypeName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="valueSerializerTypeName" Type="System.String" />
       </Parameters>
@@ -84,12 +110,26 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializerAttribute.#ctor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueSerializerType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueSerializerAttribute(Type ^ valueSerializerType);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ValueSerializerAttribute : Type -&gt; System.Windows.Markup.ValueSerializerAttribute" Usage="new System.Windows.Markup.ValueSerializerAttribute valueSerializerType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="valueSerializerType" Type="System.Type" />
       </Parameters>
@@ -105,10 +145,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ValueSerializerAttribute.ValueSerializerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializerType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValueSerializerType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializerType : Type" Usage="System.Windows.Markup.ValueSerializerAttribute.ValueSerializerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,10 +175,19 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ValueSerializerAttribute.ValueSerializerTypeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializerTypeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueSerializerTypeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializerTypeName : string" Usage="System.Windows.Markup.ValueSerializerAttribute.ValueSerializerTypeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

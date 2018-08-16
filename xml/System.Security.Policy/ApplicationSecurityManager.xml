@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationSecurityManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationSecurityManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationSecurityManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type ApplicationSecurityManager = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -14,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -36,12 +38,19 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityManager.ApplicationTrustManager" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ApplicationTrustManager As IApplicationTrustManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Policy::IApplicationTrustManager ^ ApplicationTrustManager { System::Security::Policy::IApplicationTrustManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationTrustManager : System.Security.Policy.IApplicationTrustManager" Usage="System.Security.Policy.ApplicationSecurityManager.ApplicationTrustManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Policy.IApplicationTrustManager</ReturnType>
       </ReturnValue>
@@ -65,12 +74,19 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DetermineApplicationTrust(class System.ActivationContext activationContext, class System.Security.Policy.TrustManagerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationSecurityManager.DetermineApplicationTrust(System.ActivationContext,System.Security.Policy.TrustManagerContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DetermineApplicationTrust(ActivationContext ^ activationContext, System::Security::Policy::TrustManagerContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member DetermineApplicationTrust : ActivationContext * System.Security.Policy.TrustManagerContext -&gt; bool" Usage="System.Security.Policy.ApplicationSecurityManager.DetermineApplicationTrust (activationContext, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -102,12 +118,19 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityManager.UserApplicationTrusts" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UserApplicationTrusts As ApplicationTrustCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Policy::ApplicationTrustCollection ^ UserApplicationTrusts { System::Security::Policy::ApplicationTrustCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserApplicationTrusts : System.Security.Policy.ApplicationTrustCollection" Usage="System.Security.Policy.ApplicationSecurityManager.UserApplicationTrusts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Policy.ApplicationTrustCollection</ReturnType>
       </ReturnValue>

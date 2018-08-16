@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" />
   <TypeSignature Language="VB.NET" Value="Public Class DoubleAnimationUsingKeyFrames&#xA;Inherits DoubleAnimationBase&#xA;Implements IAddChild, IKeyFrameAnimation" />
   <TypeSignature Language="C++ CLI" Value="public ref class DoubleAnimationUsingKeyFrames : System::Windows::Media::Animation::DoubleAnimationBase, System::Windows::Markup::IAddChild, System::Windows::Media::Animation::IKeyFrameAnimation" />
+  <TypeSignature Language="F#" Value="type DoubleAnimationUsingKeyFrames = class&#xA;    inherit DoubleAnimationBase&#xA;    interface IKeyFrameAnimation&#xA;    interface IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("KeyFrames")</AttributeName>
     </Attribute>
   </Attributes>
@@ -49,6 +51,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -63,16 +66,21 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.AddChild(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddChild (child As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddChild(System::Object ^ child);" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="doubleAnimationUsingKeyFrames.AddChild child" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -102,16 +110,21 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.AddText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddText (childText As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddText(System::String ^ childText);" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="doubleAnimationUsingKeyFrames.AddText childText" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -141,9 +154,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As DoubleAnimationUsingKeyFrames" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::DoubleAnimationUsingKeyFrames ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" Usage="doubleAnimationUsingKeyFrames.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,9 +186,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="doubleAnimationUsingKeyFrames.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -203,9 +220,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DoubleAnimationUsingKeyFrames" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::DoubleAnimationUsingKeyFrames ^ CloneCurrentValue();" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames" Usage="doubleAnimationUsingKeyFrames.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,9 +252,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
+      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="doubleAnimationUsingKeyFrames.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,9 +287,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="doubleAnimationUsingKeyFrames.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,9 +311,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.FreezeCore(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="doubleAnimationUsingKeyFrames.FreezeCore isChecking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,9 +339,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="doubleAnimationUsingKeyFrames.GetAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -346,9 +373,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="doubleAnimationUsingKeyFrames.GetCurrentValueAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -377,9 +406,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 GetCurrentValueCore(float64 defaultOriginValue, float64 defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.GetCurrentValueCore(System.Double,System.Double,System.Windows.Media.Animation.AnimationClock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double GetCurrentValueCore(double defaultOriginValue, double defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueCore : double * double * System.Windows.Media.Animation.AnimationClock -&gt; double" Usage="doubleAnimationUsingKeyFrames.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -414,9 +445,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Duration GetNaturalDurationCore(class System.Windows.Media.Animation.Clock clock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Duration GetNaturalDurationCore(System::Windows::Media::Animation::Clock ^ clock);" />
+      <MemberSignature Language="F#" Value="override this.GetNaturalDurationCore : System.Windows.Media.Animation.Clock -&gt; System.Windows.Duration" Usage="doubleAnimationUsingKeyFrames.GetNaturalDurationCore clock" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -440,9 +473,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.IsAdditive" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsAdditive : bool with get, set" Usage="System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.IsAdditive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -461,9 +496,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.IsCumulative" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCumulative : bool with get, set" Usage="System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.IsCumulative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -490,9 +527,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.KeyFrames" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFrames As DoubleKeyFrameCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::DoubleKeyFrameCollection ^ KeyFrames { System::Windows::Media::Animation::DoubleKeyFrameCollection ^ get(); void set(System::Windows::Media::Animation::DoubleKeyFrameCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyFrames : System.Windows.Media.Animation.DoubleKeyFrameCollection with get, set" Usage="System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.KeyFrames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -511,9 +550,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.OnChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
+      <MemberSignature Language="F#" Value="abstract member OnChanged : unit -&gt; unit&#xA;override this.OnChanged : unit -&gt; unit" Usage="doubleAnimationUsingKeyFrames.OnChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,13 +573,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.ShouldSerializeKeyFrames" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeKeyFrames () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeKeyFrames();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeKeyFrames : unit -&gt; bool" Usage="doubleAnimationUsingKeyFrames.ShouldSerializeKeyFrames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -565,6 +611,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -591,6 +638,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -610,15 +658,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.System#Windows#Media#Animation#IKeyFrameAnimation#KeyFrames" />
       <MemberSignature Language="VB.NET" Value=" Property KeyFrames As IList Implements IKeyFrameAnimation.KeyFrames" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::IList ^ System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames { System::Collections::IList ^ get(); void set(System::Collections::IList ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::IList ^ System::Windows::Media::Animation::IKeyFrameAnimation::KeyFrames { System::Collections::IList ^ get(); void set(System::Collections::IList ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>

@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CheckBox" />
   <TypeSignature Language="VB.NET" Value="Public Class CheckBox&#xA;Inherits WebControl&#xA;Implements ICheckBoxControl, IPostBackDataHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class CheckBox : System::Web::UI::WebControls::WebControl, System::Web::UI::ICheckBoxControl, System::Web::UI::IPostBackDataHandler" />
+  <TypeSignature Language="F#" Value="type CheckBox = class&#xA;    inherit WebControl&#xA;    interface IPostBackDataHandler&#xA;    interface ICheckBoxControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,23 +23,35 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("CheckedChanged")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultProperty("Text")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CheckBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ControlValueProperty("Checked")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.TextDataBindingHandler, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CheckBoxDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.TextDataBindingHandler, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.CheckBoxDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.TextDataBindingHandler, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -135,6 +150,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -166,9 +183,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="checkBox.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,16 +215,19 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.AutoPostBack" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AutoPostBack As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoPostBack { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoPostBack : bool with get, set" Usage="System.Web.UI.WebControls.CheckBox.AutoPostBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -248,16 +270,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.CausesValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.CheckBox.CausesValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -292,23 +316,32 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Web.UI.WebControls.CheckBox.Checked" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.ICheckBoxControl.Checked</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Bindable(true, System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -347,12 +380,15 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.CheckBox.CheckedChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CheckedChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ CheckedChanged;" />
+      <MemberSignature Language="F#" Value="member this.CheckedChanged : EventHandler " Usage="member this.CheckedChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Web.UI.ICheckBoxControl.CheckedChanged</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -396,17 +432,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.InputAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputAttributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ InputAttributes { System::Web::UI::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputAttributes : System.Web.UI.AttributeCollection" Usage="System.Web.UI.WebControls.CheckBox.InputAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -431,17 +472,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.LabelAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LabelAttributes As AttributeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ LabelAttributes { System::Web::UI::AttributeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LabelAttributes : System.Web.UI.AttributeCollection" Usage="System.Web.UI.WebControls.CheckBox.LabelAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -466,12 +512,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="checkBox.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -505,9 +553,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="checkBox.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -538,9 +588,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.OnCheckedChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCheckedChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCheckedChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCheckedChanged : EventArgs -&gt; unit&#xA;override this.OnCheckedChanged : EventArgs -&gt; unit" Usage="checkBox.OnCheckedChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -594,9 +647,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="checkBox.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -628,12 +684,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.RaisePostDataChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostDataChangedEvent ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="checkBox.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -660,9 +718,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="checkBox.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -694,9 +755,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="checkBox.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -733,8 +796,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -770,8 +840,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -794,19 +871,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.CheckBox.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -848,14 +928,20 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.TextAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TextAlign As TextAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TextAlign TextAlign { System::Web::UI::WebControls::TextAlign get(); void set(System::Web::UI::WebControls::TextAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.TextAlign : System.Web.UI.WebControls.TextAlign with get, set" Usage="System.Web.UI.WebControls.CheckBox.TextAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -893,9 +979,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBox.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="checkBox.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -920,16 +1008,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBox.ValidationGroup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.WebControls.CheckBox.ValidationGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>

@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Expando.IExpando" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExpando&#xA;Implements IReflect" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExpando : System::Reflection::IReflect" />
+  <TypeSignature Language="F#" Value="type IExpando = interface&#xA;    interface IReflect" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -15,10 +18,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.Guid("AFBF15E6-C37C-11d2-B88E-00A0C9B471B8")</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,9 +36,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddField(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddField (name As String) As FieldInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ AddField(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member AddField : string -&gt; System.Reflection.FieldInfo" Usage="iExpando.AddField name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -59,9 +65,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddMethod(System.String,System.Delegate)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddMethod (name As String, method As Delegate) As MethodInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ AddMethod(System::String ^ name, Delegate ^ method);" />
+      <MemberSignature Language="F#" Value="abstract member AddMethod : string * Delegate -&gt; System.Reflection.MethodInfo" Usage="iExpando.AddMethod (name, method)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -87,9 +96,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddProperty(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddProperty (name As String) As PropertyInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ AddProperty(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member AddProperty : string -&gt; System.Reflection.PropertyInfo" Usage="iExpando.AddProperty name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -113,9 +125,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.RemoveMember(System.Reflection.MemberInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveMember (m As MemberInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveMember(System::Reflection::MemberInfo ^ m);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveMember : System.Reflection.MemberInfo -&gt; unit" Usage="iExpando.RemoveMember m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

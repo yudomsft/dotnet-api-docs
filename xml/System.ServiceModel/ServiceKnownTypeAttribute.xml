@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceKnownTypeAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceKnownTypeAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceKnownTypeAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ServiceKnownTypeAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -20,8 +22,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Method, AllowMultiple=true, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, AllowMultiple=true, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -74,10 +79,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(System::String ^ methodName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceKnownTypeAttribute : string -&gt; System.ServiceModel.ServiceKnownTypeAttribute" Usage="new System.ServiceModel.ServiceKnownTypeAttribute methodName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -86,6 +93,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="methodName" Type="System.String" />
       </Parameters>
@@ -109,10 +121,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceKnownTypeAttribute : Type -&gt; System.ServiceModel.ServiceKnownTypeAttribute" Usage="new System.ServiceModel.ServiceKnownTypeAttribute type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -121,6 +135,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
@@ -151,10 +170,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ServiceKnownTypeAttribute.#ctor(System.String,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String, declaringType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceKnownTypeAttribute(System::String ^ methodName, Type ^ declaringType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ServiceKnownTypeAttribute : string * Type -&gt; System.ServiceModel.ServiceKnownTypeAttribute" Usage="new System.ServiceModel.ServiceKnownTypeAttribute (methodName, declaringType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -163,6 +184,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="methodName" Type="System.String" />
         <Parameter Name="declaringType" Type="System.Type" />
@@ -192,10 +218,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.DeclaringType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.ServiceModel.ServiceKnownTypeAttribute.DeclaringType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -204,6 +232,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -219,10 +252,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.MethodName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.ServiceModel.ServiceKnownTypeAttribute.MethodName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -231,6 +266,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -253,10 +293,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceKnownTypeAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.ServiceModel.ServiceKnownTypeAttribute.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -265,6 +307,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ViewService" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewService" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewService abstract" />
+  <TypeSignature Language="F#" Value="type ViewService = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new <see cref="T:System.Activities.Presentation.Services.ViewService" />.</summary>
@@ -48,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetModel(System.Windows.DependencyObject)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetModel (view As DependencyObject) As ModelItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ GetModel(System::Windows::DependencyObject ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member GetModel : System.Windows.DependencyObject -&gt; System.Activities.Presentation.Model.ModelItem" Usage="viewService.GetModel view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -62,7 +69,7 @@
       <Docs>
         <param name="view">The view object that you want to find the model for.</param>
         <summary>Returns the model corresponding to the view, or <see langword="null" /> if there is no model that matches the view.</summary>
-        <returns>Returns the corresponding model as a <see cref="T:System.Activities.Design.Model.ModelItem" />, or <see langword="null" /> if there is no model for the given view object.</returns>
+        <returns>Returns the corresponding model as a <see cref="T:System.Activities.Presentation.Model.ModelItem" />, or <see langword="null" /> if there is no model for the given view object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="view" /> is <see langword="null" />.</exception>
@@ -74,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetView(System.Activities.Presentation.Model.ModelItem)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetView (model As ModelItem) As DependencyObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::DependencyObject ^ GetView(System::Activities::Presentation::Model::ModelItem ^ model);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : System.Activities.Presentation.Model.ModelItem -&gt; System.Windows.DependencyObject" Usage="viewService.GetView model" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

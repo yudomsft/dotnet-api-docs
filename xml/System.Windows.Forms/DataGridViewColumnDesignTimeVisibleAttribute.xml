@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridViewColumnDesignTimeVisibleAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewColumnDesignTimeVisibleAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnDesignTimeVisibleAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
     </Attribute>
   </Attributes>
@@ -53,8 +55,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" /> class using the default <see cref="P:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Visible" /> property value of <see langword="true" />.</summary>
@@ -69,11 +77,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (visible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewColumnDesignTimeVisibleAttribute(bool visible);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute : bool -&gt; System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" Usage="new System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute visible" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="visible" Type="System.Boolean" />
       </Parameters>
@@ -91,9 +106,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DataGridViewColumnDesignTimeVisibleAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::DataGridViewColumnDesignTimeVisibleAttribute ^ Default;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" Usage="System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,9 +136,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridViewColumnDesignTimeVisibleAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -146,9 +165,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridViewColumnDesignTimeVisibleAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,9 +189,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="dataGridViewColumnDesignTimeVisibleAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,9 +215,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.No" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As DataGridViewColumnDesignTimeVisibleAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::DataGridViewColumnDesignTimeVisibleAttribute ^ No;" />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" Usage="System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -220,11 +245,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Visible" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool" Usage="System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -243,9 +275,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Yes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As DataGridViewColumnDesignTimeVisibleAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::DataGridViewColumnDesignTimeVisibleAttribute ^ Yes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute" Usage="System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

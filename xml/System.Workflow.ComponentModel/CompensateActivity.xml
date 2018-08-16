@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.CompensateActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompensateActivity&#xA;Inherits Activity&#xA;Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public ref class CompensateActivity sealed : System::Workflow::ComponentModel::Activity, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;" />
+  <TypeSignature Language="F#" Value="type CompensateActivity = class&#xA;    inherit Activity&#xA;    interface IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +19,19 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.ComponentModel.CompensateDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.ComponentModel.Design.ActivityToolboxItem))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.ComponentModel.CompensateActivity), "Resources.Compensate.png")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.ComponentModel.CompensateValidator))</AttributeName>
     </Attribute>
   </Attributes>
@@ -67,6 +69,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -91,9 +94,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CompensateActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.CompensateActivity : string -&gt; System.Workflow.ComponentModel.CompensateActivity" Usage="new System.Workflow.ComponentModel.CompensateActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -111,9 +116,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="compensateActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,9 +142,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompensateActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="compensateActivity.Initialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,6 +173,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -186,19 +196,21 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.CompensateActivity.TargetActivityName" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetActivityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetActivityName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetActivityName : string with get, set" Usage="System.Workflow.ComponentModel.CompensateActivity.TargetActivityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.PropertyValueProviderTypeConverter))</AttributeName>
         </Attribute>
       </Attributes>
@@ -227,9 +239,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.CompensateActivity.TargetActivityNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetActivityNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ TargetActivityNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetActivityNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.CompensateActivity.TargetActivityNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.ProjectItemDefinitionInstance" />
   <TypeSignature Language="VB.NET" Value="Public Class ProjectItemDefinitionInstance" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProjectItemDefinitionInstance" />
+  <TypeSignature Language="F#" Value="type ProjectItemDefinitionInstance = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{itemType} #Metadata={MetadataCount}")</AttributeName>
     </Attribute>
   </Attributes>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.ProjectItemDefinitionInstance.GetMetadata(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMetadata (name As String) As ProjectMetadataInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Build::Execution::ProjectMetadataInstance ^ GetMetadata(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadata : string -&gt; Microsoft.Build.Execution.ProjectMetadataInstance&#xA;override this.GetMetadata : string -&gt; Microsoft.Build.Execution.ProjectMetadataInstance" Usage="projectItemDefinitionInstance.GetMetadata name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Build.Evaluation.IItemDefinition`1.GetMetadata(System.String)</InterfaceMember>
@@ -37,7 +39,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
       </Attributes>
@@ -60,17 +62,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.ItemType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.ItemType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -88,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As ICollection(Of ProjectMetadataInstance)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectMetadataInstance ^&gt; ^ Metadata { System::Collections::Generic::ICollection&lt;Microsoft::Build::Execution::ProjectMetadataInstance ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectMetadataInstance&gt;" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.Metadata" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -108,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MetadataCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataCount : int" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -128,14 +136,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataNames As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ MetadataNames { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataNames : seq&lt;string&gt;" Usage="Microsoft.Build.Execution.ProjectItemDefinitionInstance.MetadataNames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Build.Execution.ProjectItemDefinitionInstance/&lt;get_MetadataNames&gt;d__11))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Build.Execution.ProjectItemDefinitionInstance/&lt;get_MetadataNames&gt;d__1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.CultureInfoIetfLanguageTagConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class CultureInfoIetfLanguageTagConverter&#xA;Inherits TypeConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class CultureInfoIetfLanguageTagConverter : System::ComponentModel::TypeConverter" />
+  <TypeSignature Language="F#" Value="type CultureInfoIetfLanguageTagConverter = class&#xA;    inherit TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -37,8 +39,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.CultureInfoIetfLanguageTagConverter" /> class.</summary>
@@ -51,9 +59,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CultureInfoIetfLanguageTagConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (typeDescriptorContext As ITypeDescriptorContext, sourceType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, Type ^ sourceType);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="cultureInfoIetfLanguageTagConverter.CanConvertFrom (typeDescriptorContext, sourceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,9 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.CultureInfoIetfLanguageTagConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (typeDescriptorContext As ITypeDescriptorContext, destinationType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="cultureInfoIetfLanguageTagConverter.CanConvertTo (typeDescriptorContext, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,9 +116,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.CultureInfoIetfLanguageTagConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ source);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="cultureInfoIetfLanguageTagConverter.ConvertFrom (typeDescriptorContext, cultureInfo, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,13 +145,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object value, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.CultureInfoIetfLanguageTagConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ value, Type ^ destinationType);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj&#xA;override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="cultureInfoIetfLanguageTagConverter.ConvertTo (typeDescriptorContext, cultureInfo, value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Base64FormattingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum Base64FormattingOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class Base64FormattingOptions" />
+  <TypeSignature Language="F#" Value="type Base64FormattingOptions = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -22,7 +24,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Flags</AttributeName>
     </Attribute>
   </Attributes>
@@ -32,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType> and <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> methods convert the value of an array of 8-bit unsigned integers to an equivalent string representation that consists of base 64 digits. The string representation can contain one or more line breaks, where a line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). Because line breaks are considered whitespace characters in a base-64 encoding, they are ignored when converting a base-64 encoded string back to a byte array. The line breaks are simply convenient when displaying the encoded string to a control or a device such as a console window.  
+ The <xref:System.Convert.ToBase64CharArray%2A?displayProperty=nameWithType> and <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> methods convert the value of an array of 8-bit unsigned integers to an equivalent string representation that consists of base 64 digits. The string representation can contain one or more line breaks, where a line break is defined as a carriage return character (U+000D) followed by a line feed character (U+000A). Because line breaks are considered white-space characters in a base-64 encoding, they are ignored when converting a base-64 encoded string back to a byte array. The line breaks are simply convenient when displaying the encoded string to a control or a device such as a console window.  
   
  The None and InsertLineBreaks values are mutually exclusive. Therefore, although the <xref:System.Base64FormattingOptions.None?displayProperty=nameWithType> enumeration is marked with the <xref:System.FlagsAttribute> attribute, it makes no sense to perform a bitwise combination of these two values.  
   
@@ -56,9 +58,11 @@
       <MemberSignature Language="DocId" Value="F:System.Base64FormattingOptions.InsertLineBreaks" />
       <MemberSignature Language="VB.NET" Value="InsertLineBreaks" />
       <MemberSignature Language="C++ CLI" Value="InsertLineBreaks" />
+      <MemberSignature Language="F#" Value="InsertLineBreaks = 1" Usage="System.Base64FormattingOptions.InsertLineBreaks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -85,9 +89,11 @@
       <MemberSignature Language="DocId" Value="F:System.Base64FormattingOptions.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Base64FormattingOptions.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

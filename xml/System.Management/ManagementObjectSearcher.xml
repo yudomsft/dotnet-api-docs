@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementObjectSearcher" />
   <TypeSignature Language="VB.NET" Value="Public Class ManagementObjectSearcher&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class ManagementObjectSearcher : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type ManagementObjectSearcher = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,12 +16,12 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Retrieves a collection of management objects based on a specified query. This class is one of the more commonly used entry points to retrieving management information. For example, it can be used to enumerate all disk drives, network adapters, processes and many more management objects on a system, or to query for all network connections that are up, services that are paused, and so on.  When instantiated, an instance of this class takes as input a WMI query represented in an <see cref="T:System.Management.ObjectQuery" /> or its derivatives, and optionally a <see cref="T:System.Management.ManagementScope" /> representing the WMI namespace to execute the query in. It can also take additional advanced options in an <see cref="T:System.Management.EnumerationOptions" />. When the <see cref="M:System.Management.ManagementObjectSearcher.Get" /> method on this object                   is invoked, the <see cref="T:System.Management.ManagementObjectSearcher" /> executes the given query in the specified scope and returns a collection of management objects that match the query in a <see cref="T:System.Management.ManagementObjectCollection" />.</summary>
+    <summary>Retrieves a collection of management objects based on a specified query. This class is one of the more commonly used entry points to retrieving management information. For example, it can be used to enumerate all disk drives, network adapters, processes and many more management objects on a system, or to query for all network connections that are up, services that are paused, and so on.  When instantiated, an instance of this class takes as input a WMI query represented in an <see cref="T:System.Management.ObjectQuery" /> or its derivatives, and optionally a <see cref="T:System.Management.ManagementScope" /> representing the WMI namespace to execute the query in. It can also take additional advanced options in an <see cref="T:System.Management.EnumerationOptions" />. When the <see cref="M:System.Management.ManagementObjectSearcher.Get" /> method on this object is invoked, the <see cref="T:System.Management.ManagementObjectSearcher" /> executes the given query in the specified scope and returns a collection of management objects that match the query in a <see cref="T:System.Management.ManagementObjectCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,6 +43,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -63,9 +68,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ObjectQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (query As ObjectQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::Management::ObjectQuery ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : System.Management.ObjectQuery -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher query" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -100,9 +108,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (queryString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::String ^ queryString);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : string -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher queryString" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -137,9 +148,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As ObjectQuery)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::Management::ManagementScope ^ scope, System::Management::ObjectQuery ^ query);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : System.Management.ManagementScope * System.Management.ObjectQuery -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, query)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -177,9 +191,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, queryString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::String ^ scope, System::String ^ queryString);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : string * string -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, queryString)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -217,9 +234,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As ManagementScope, query As ObjectQuery, options As EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::Management::ManagementScope ^ scope, System::Management::ObjectQuery ^ query, System::Management::EnumerationOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : System.Management.ManagementScope * System.Management.ObjectQuery * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, query, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -258,9 +278,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String,System.Management.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, queryString As String, options As EnumerationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementObjectSearcher(System::String ^ scope, System::String ^ queryString, System::Management::EnumerationOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Management.ManagementObjectSearcher : string * string * System.Management.EnumerationOptions -&gt; System.Management.ManagementObjectSearcher" Usage="new System.Management.ManagementObjectSearcher (scope, queryString, options)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -308,9 +331,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.Get" />
       <MemberSignature Language="VB.NET" Value="Public Function Get () As ManagementObjectCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Management::ManagementObjectCollection ^ Get();" />
+      <MemberSignature Language="F#" Value="member this.Get : unit -&gt; System.Management.ManagementObjectCollection" Usage="managementObjectSearcher.Get " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -346,9 +372,12 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Get (watcher As ManagementOperationObserver)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Get(System::Management::ManagementOperationObserver ^ watcher);" />
+      <MemberSignature Language="F#" Value="member this.Get : System.Management.ManagementOperationObserver -&gt; unit" Usage="managementObjectSearcher.Get watcher" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,9 +407,12 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As EnumerationOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::EnumerationOptions ^ Options { System::Management::EnumerationOptions ^ get(); void set(System::Management::EnumerationOptions ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Management.EnumerationOptions with get, set" Usage="System.Management.ManagementObjectSearcher.Options" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -410,9 +442,12 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As ObjectQuery" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ObjectQuery ^ Query { System::Management::ObjectQuery ^ get(); void set(System::Management::ObjectQuery ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Management.ObjectQuery with get, set" Usage="System.Management.ManagementObjectSearcher.Query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,9 +478,12 @@
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementObjectSearcher.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As ManagementScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementScope ^ Scope { System::Management::ManagementScope ^ get(); void set(System::Management::ManagementScope ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Management.ManagementScope with get, set" Usage="System.Management.ManagementObjectSearcher.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

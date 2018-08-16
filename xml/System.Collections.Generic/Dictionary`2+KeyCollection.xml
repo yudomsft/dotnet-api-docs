@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Dictionary`2.KeyCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Dictionary(Of TKey, TValue).KeyCollection&#xA;Implements ICollection, ICollection(Of TKey), IEnumerable(Of TKey), IReadOnlyCollection(Of TKey)" />
   <TypeSignature Language="C++ CLI" Value="public: ref class Dictionary&lt;TKey, TValue&gt;::KeyCollection sealed : System::Collections::Generic::ICollection&lt;TKey&gt;, System::Collections::Generic::IEnumerable&lt;TKey&gt;, System::Collections::Generic::IReadOnlyCollection&lt;TKey&gt;, System::Collections::ICollection" />
+  <TypeSignature Language="F#" Value="type Dictionary&lt;'Key, 'Value&gt;.KeyCollection = class&#xA;    interface ICollection&lt;'Key&gt;&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;'Key&gt;&#xA;    interface seq&lt;'Key&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -42,10 +44,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.Mscorlib_DictionaryKeyCollectionDebugView`2))</AttributeName>
     </Attribute>
   </Attributes>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.KeyCollection.#ctor(System.Collections.Generic.Dictionary{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As Dictionary(Of TKey, TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyCollection(System::Collections::Generic::Dictionary&lt;TKey, TValue&gt; ^ dictionary);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.KeyCollection : System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt; -&gt; System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.KeyCollection" Usage="new System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.KeyCollection dictionary" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -82,6 +85,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.KeyCollection.CopyTo(`0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As TKey(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;TKey&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'Key[] * int -&gt; unit&#xA;override this.CopyTo : 'Key[] * int -&gt; unit" Usage="keyCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -125,6 +130,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -167,6 +173,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.KeyCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.KeyCollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -182,6 +189,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Dictionary`2.KeyCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As Dictionary(Of TKey, TValue).KeyCollection.Enumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::Dictionary&lt;TKey, TValue&gt;::KeyCollection::Enumerator GetEnumerator();" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.Dictionary&lt;'Key, 'Value&gt;.KeyCollection.Enumerator" Usage="keyCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -216,6 +225,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -238,13 +248,13 @@
   
  Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
   
- Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> returns the default value of type `TKey`. You must call <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A>.  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> is undefined. You must call <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A>.  
   
  <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> to the next element.  
   
- If <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> returns the default value of type `TKey`. You cannot set <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+ If <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> property, <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.MoveNext%2A> or <xref:System.Collections.Generic.Dictionary%602.KeyCollection.Enumerator.System%23Collections%23IEnumerator%23Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -277,6 +287,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -317,6 +328,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -361,6 +373,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -396,7 +409,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;TKey&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#Generic#ICollection&lt;TKey&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of TKey).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;TKey&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;TKey&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;TKey&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -410,6 +424,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -455,6 +470,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -504,6 +520,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -532,7 +549,7 @@
   
  If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.IEnumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   
@@ -563,6 +580,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -620,7 +638,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -634,6 +653,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -670,7 +690,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Dictionary`2.KeyCollection.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -684,6 +705,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -758,6 +780,7 @@ finally {
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -786,7 +809,7 @@ finally {
   
  If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
   
- An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between calling <xref:System.Collections.IEnumerator.MoveNext%2A> method and obtaining the value of the <xref:System.Collections.IEnumerator.Current%2A> property, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.  
   
  The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
   

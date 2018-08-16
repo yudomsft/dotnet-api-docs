@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeStream" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PipeStream&#xA;Inherits Stream" />
   <TypeSignature Language="C++ CLI" Value="public ref class PipeStream abstract : System::IO::Stream" />
+  <TypeSignature Language="F#" Value="type PipeStream = class&#xA;    inherit Stream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.#ctor(System.IO.Pipes.PipeDirection,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (direction As PipeDirection, bufferSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PipeStream(System::IO::Pipes::PipeDirection direction, int bufferSize);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.PipeStream : System.IO.Pipes.PipeDirection * int -&gt; System.IO.Pipes.PipeStream" Usage="new System.IO.Pipes.PipeStream (direction, bufferSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -64,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.#ctor(System.IO.Pipes.PipeDirection,System.IO.Pipes.PipeTransmissionMode,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (direction As PipeDirection, transmissionMode As PipeTransmissionMode, outBufferSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PipeStream(System::IO::Pipes::PipeDirection direction, System::IO::Pipes::PipeTransmissionMode transmissionMode, int outBufferSize);" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.PipeStream : System.IO.Pipes.PipeDirection * System.IO.Pipes.PipeTransmissionMode * int -&gt; System.IO.Pipes.PipeStream" Usage="new System.IO.Pipes.PipeStream (direction, transmissionMode, outBufferSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -110,6 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -145,10 +151,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="pipeStream.BeginRead (buffer, offset, count, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -160,6 +168,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -212,10 +225,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="pipeStream.BeginWrite (buffer, offset, count, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -227,6 +242,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -279,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.IO.Pipes.PipeStream.CanRead" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -289,12 +310,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -318,6 +345,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.CanSeek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.IO.Pipes.PipeStream.CanSeek" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -328,6 +356,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -357,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.IO.Pipes.PipeStream.CanWrite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -367,12 +397,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -396,10 +432,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.CheckPipePropertyOperations" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub CheckPipePropertyOperations ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void CheckPipePropertyOperations();" />
+      <MemberSignature Language="F#" Value="abstract member CheckPipePropertyOperations : unit -&gt; unit&#xA;override this.CheckPipePropertyOperations : unit -&gt; unit" Usage="pipeStream.CheckPipePropertyOperations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -411,6 +449,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -426,10 +469,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.CheckReadOperations" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub CheckReadOperations ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void CheckReadOperations();" />
+      <MemberSignature Language="F#" Value="member this.CheckReadOperations : unit -&gt; unit" Usage="pipeStream.CheckReadOperations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -441,6 +486,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -456,10 +506,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.CheckWriteOperations" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub CheckWriteOperations ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void CheckWriteOperations();" />
+      <MemberSignature Language="F#" Value="member this.CheckWriteOperations : unit -&gt; unit" Usage="pipeStream.CheckWriteOperations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -471,6 +523,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -486,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="pipeStream.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -496,12 +554,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -535,10 +599,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.EndRead(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="override this.EndRead : IAsyncResult -&gt; int" Usage="pipeStream.EndRead asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -550,6 +616,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -587,10 +658,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.EndWrite(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
+      <MemberSignature Language="F#" Value="override this.EndWrite : IAsyncResult -&gt; unit" Usage="pipeStream.EndWrite asyncResult" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -602,6 +675,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -636,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="pipeStream.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -646,12 +725,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -677,12 +762,19 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As PipeSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Pipes::PipeSecurity ^ GetAccessControl();" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.IO.Pipes.PipeSecurity" Usage="pipeStream.GetAccessControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeSecurity</ReturnType>
       </ReturnValue>
@@ -710,6 +802,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.InBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int InBufferSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.InBufferSize : int" Usage="System.IO.Pipes.PipeStream.InBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -720,12 +813,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -751,10 +850,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.InitializeHandle(Microsoft.Win32.SafeHandles.SafePipeHandle,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub InitializeHandle (handle As SafePipeHandle, isExposed As Boolean, isAsync As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeHandle(Microsoft::Win32::SafeHandles::SafePipeHandle ^ handle, bool isExposed, bool isAsync);" />
+      <MemberSignature Language="F#" Value="member this.InitializeHandle : Microsoft.Win32.SafeHandles.SafePipeHandle * bool * bool -&gt; unit" Usage="pipeStream.InitializeHandle (handle, isExposed, isAsync)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -766,6 +867,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -798,6 +904,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsAsync" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAsync As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsync { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAsync : bool" Usage="System.IO.Pipes.PipeStream.IsAsync" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -808,12 +915,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -837,6 +950,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsConnected" />
       <MemberSignature Language="VB.NET" Value="Public Property IsConnected As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:  property bool IsConnected {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsConnected : bool with get, set" Usage="System.IO.Pipes.PipeStream.IsConnected" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -847,6 +961,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -876,10 +991,12 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsHandleExposed" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsHandleExposed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsHandleExposed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsHandleExposed : bool" Usage="System.IO.Pipes.PipeStream.IsHandleExposed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -891,6 +1008,11 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -914,6 +1036,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsMessageComplete" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMessageComplete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMessageComplete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMessageComplete : bool" Usage="System.IO.Pipes.PipeStream.IsMessageComplete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -924,12 +1047,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -963,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.Length" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.Pipes.PipeStream.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -973,6 +1103,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1002,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.OutBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OutBufferSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OutBufferSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutBufferSize : int" Usage="System.IO.Pipes.PipeStream.OutBufferSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1012,12 +1144,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1043,6 +1181,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.Position" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.IO.Pipes.PipeStream.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1053,6 +1192,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1082,6 +1222,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="pipeStream.Read (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1092,12 +1233,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1152,6 +1299,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="pipeStream.ReadAsync (buffer, offset, count, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1184,6 +1332,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.ReadByte" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
+      <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="pipeStream.ReadByte " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1194,12 +1343,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1227,6 +1382,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.ReadMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadMode As PipeTransmissionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode ReadMode { System::IO::Pipes::PipeTransmissionMode get(); void set(System::IO::Pipes::PipeTransmissionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadMode : System.IO.Pipes.PipeTransmissionMode with get, set" Usage="System.IO.Pipes.PipeStream.ReadMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1237,12 +1393,21 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeTransmissionMode</ReturnType>
       </ReturnValue>
@@ -1273,6 +1438,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.SafePipeHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafePipeHandle As SafePipeHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafePipeHandle ^ SafePipeHandle { Microsoft::Win32::SafeHandles::SafePipeHandle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SafePipeHandle : Microsoft.Win32.SafeHandles.SafePipeHandle" Usage="System.IO.Pipes.PipeStream.SafePipeHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1283,12 +1449,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.SafeHandles.SafePipeHandle</ReturnType>
       </ReturnValue>
@@ -1306,6 +1478,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
+      <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="pipeStream.Seek (offset, origin)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1316,6 +1489,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1349,12 +1523,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.IO.Pipes.PipeSecurity pipeSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.SetAccessControl(System.IO.Pipes.PipeSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::IO::Pipes::PipeSecurity ^ pipeSecurity);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.IO.Pipes.PipeSecurity -&gt; unit" Usage="pipeStream.SetAccessControl pipeSecurity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1386,6 +1567,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
+      <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="pipeStream.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1396,6 +1578,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1427,6 +1610,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.TransmissionMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TransmissionMode As PipeTransmissionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode TransmissionMode { System::IO::Pipes::PipeTransmissionMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.TransmissionMode : System.IO.Pipes.PipeTransmissionMode" Usage="System.IO.Pipes.PipeStream.TransmissionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1437,12 +1621,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeTransmissionMode</ReturnType>
       </ReturnValue>
@@ -1472,6 +1662,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.WaitForPipeDrain" />
       <MemberSignature Language="VB.NET" Value="Public Sub WaitForPipeDrain ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForPipeDrain();" />
+      <MemberSignature Language="F#" Value="member this.WaitForPipeDrain : unit -&gt; unit" Usage="pipeStream.WaitForPipeDrain " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1482,12 +1673,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1513,6 +1710,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Write(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
+      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="pipeStream.Write (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1523,12 +1721,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1572,6 +1776,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="pipeStream.WriteAsync (buffer, offset, count, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1604,6 +1809,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.WriteByte(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
+      <MemberSignature Language="F#" Value="override this.WriteByte : byte -&gt; unit" Usage="pipeStream.WriteByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1614,12 +1820,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

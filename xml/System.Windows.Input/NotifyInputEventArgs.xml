@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.NotifyInputEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class NotifyInputEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class NotifyInputEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type NotifyInputEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -48,13 +50,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.NotifyInputEventArgs.InputManager" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputManager As InputManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputManager ^ InputManager { System::Windows::Input::InputManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InputManager : System.Windows.Input.InputManager" Usage="System.Windows.Input.NotifyInputEventArgs.InputManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -81,11 +85,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.NotifyInputEventArgs.StagingItem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StagingItem As StagingAreaInputItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StagingAreaInputItem ^ StagingItem { System::Windows::Input::StagingAreaInputItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StagingItem : System.Windows.Input.StagingAreaInputItem" Usage="System.Windows.Input.NotifyInputEventArgs.StagingItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Input.StagingAreaInputItem</ReturnType>
       </ReturnValue>

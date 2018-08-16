@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorWebPart&#xA;Inherits ProxyWebPart&#xA;Implements ITrackingPersonalizable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorWebPart : System::Web::UI::WebControls::WebParts::ProxyWebPart, System::Web::UI::WebControls::WebParts::ITrackingPersonalizable" />
+  <TypeSignature Language="F#" Value="type ErrorWebPart = class&#xA;    inherit ProxyWebPart&#xA;    interface ITrackingPersonalizable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -54,11 +56,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (originalID As String, originalTypeName As String, originalPath As String, genericWebPartID As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorWebPart(System::String ^ originalID, System::String ^ originalTypeName, System::String ^ originalPath, System::String ^ genericWebPartID);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ErrorWebPart : string * string * string * string -&gt; System.Web.UI.WebControls.WebParts.ErrorWebPart" Usage="new System.Web.UI.WebControls.WebParts.ErrorWebPart (originalID, originalTypeName, originalPath, genericWebPartID)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="originalID" Type="System.String" />
         <Parameter Name="originalTypeName" Type="System.String" />
@@ -90,9 +99,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="errorWebPart.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,9 +137,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.EndLoadPersonalization" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndLoadPersonalization ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndLoadPersonalization();" />
+      <MemberSignature Language="F#" Value="abstract member EndLoadPersonalization : unit -&gt; unit&#xA;override this.EndLoadPersonalization : unit -&gt; unit" Usage="errorWebPart.EndLoadPersonalization " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -159,11 +172,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ErrorWebPart.ErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ErrorWebPart.ErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -192,9 +212,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="errorWebPart.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,6 +251,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,6 +275,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,8 +299,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -298,6 +328,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -314,13 +345,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ErrorWebPart.System#Web#UI#WebControls#WebParts#ITrackingPersonalizable#TracksChanges" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property TracksChanges As Boolean Implements ITrackingPersonalizable.TracksChanges" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::WebControls::WebParts::ITrackingPersonalizable::TracksChanges { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

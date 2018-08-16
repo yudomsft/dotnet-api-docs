@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterSet" />
   <TypeSignature Language="VB.NET" Value="Public Class CounterSet&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class CounterSet : IDisposable" />
+  <TypeSignature Language="F#" Value="type CounterSet = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -39,14 +41,19 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.#ctor(System.Guid,System.Guid,System.Diagnostics.PerformanceData.CounterSetInstanceType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerGuid As Guid, counterSetGuid As Guid, instanceType As CounterSetInstanceType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CounterSet(Guid providerGuid, Guid counterSetGuid, System::Diagnostics::PerformanceData::CounterSetInstanceType instanceType);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceData.CounterSet : Guid * Guid * System.Diagnostics.PerformanceData.CounterSetInstanceType -&gt; System.Diagnostics.PerformanceData.CounterSet" Usage="new System.Diagnostics.PerformanceData.CounterSet (providerGuid, counterSetGuid, instanceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -92,9 +99,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCounter(int32 counterId, valuetype System.Diagnostics.PerformanceData.CounterType counterType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.AddCounter(System.Int32,System.Diagnostics.PerformanceData.CounterType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCounter(int counterId, System::Diagnostics::PerformanceData::CounterType counterType);" />
+      <MemberSignature Language="F#" Value="member this.AddCounter : int * System.Diagnostics.PerformanceData.CounterType -&gt; unit" Usage="counterSet.AddCounter (counterId, counterType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -125,9 +134,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCounter(int32 counterId, valuetype System.Diagnostics.PerformanceData.CounterType counterType, string counterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.AddCounter(System.Int32,System.Diagnostics.PerformanceData.CounterType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCounter(int counterId, System::Diagnostics::PerformanceData::CounterType counterType, System::String ^ counterName);" />
+      <MemberSignature Language="F#" Value="member this.AddCounter : int * System.Diagnostics.PerformanceData.CounterType * string -&gt; unit" Usage="counterSet.AddCounter (counterId, counterType, counterName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,14 +177,19 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.CreateCounterSetInstance(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCounterSetInstance (instanceName As String) As CounterSetInstance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::PerformanceData::CounterSetInstance ^ CreateCounterSetInstance(System::String ^ instanceName);" />
+      <MemberSignature Language="F#" Value="member this.CreateCounterSetInstance : string -&gt; System.Diagnostics.PerformanceData.CounterSetInstance" Usage="counterSet.CreateCounterSetInstance instanceName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -222,12 +238,14 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="counterSet.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -245,14 +263,22 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="counterSet.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -274,9 +300,11 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSet.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!CounterSet ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="counterSet.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

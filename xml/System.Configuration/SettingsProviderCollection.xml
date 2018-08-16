@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsProviderCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingsProviderCollection&#xA;Inherits ProviderCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class SettingsProviderCollection : System::Configuration::Provider::ProviderCollection" />
+  <TypeSignature Language="F#" Value="type SettingsProviderCollection = class&#xA;    inherit ProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -43,12 +45,18 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsProviderCollection" /> class.</summary>
@@ -70,9 +78,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="settingsProviderCollection.Add provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -121,9 +131,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProviderCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As SettingsProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SettingsProvider ^ default[System::String ^] { System::Configuration::SettingsProvider ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.SettingsProvider" Usage="System.Configuration.SettingsProviderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

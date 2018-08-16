@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Security.HostSecurityManager" />
   <TypeSignature Language="VB.NET" Value="Public Class HostSecurityManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class HostSecurityManager" />
+  <TypeSignature Language="F#" Value="type HostSecurityManager = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -18,8 +20,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,6 +61,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -80,9 +86,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.DetermineApplicationTrust(System.Security.Policy.Evidence,System.Security.Policy.Evidence,System.Security.Policy.TrustManagerContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DetermineApplicationTrust (applicationEvidence As Evidence, activatorEvidence As Evidence, context As TrustManagerContext) As ApplicationTrust" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::ApplicationTrust ^ DetermineApplicationTrust(System::Security::Policy::Evidence ^ applicationEvidence, System::Security::Policy::Evidence ^ activatorEvidence, System::Security::Policy::TrustManagerContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member DetermineApplicationTrust : System.Security.Policy.Evidence * System.Security.Policy.Evidence * System.Security.Policy.TrustManagerContext -&gt; System.Security.Policy.ApplicationTrust&#xA;override this.DetermineApplicationTrust : System.Security.Policy.Evidence * System.Security.Policy.Evidence * System.Security.Policy.TrustManagerContext -&gt; System.Security.Policy.ApplicationTrust" Usage="hostSecurityManager.DetermineApplicationTrust (applicationEvidence, activatorEvidence, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -90,6 +98,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Policy.ApplicationTrust</ReturnType>
       </ReturnValue>
@@ -138,9 +151,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.HostSecurityManager.DomainPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DomainPolicy As PolicyLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Policy::PolicyLevel ^ DomainPolicy { System::Security::Policy::PolicyLevel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomainPolicy : System.Security.Policy.PolicyLevel" Usage="System.Security.HostSecurityManager.DomainPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -148,6 +163,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Obsolete("AppDomain policy levels are obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyLevel</ReturnType>
       </ReturnValue>
@@ -182,9 +202,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.HostSecurityManager.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Flags As HostSecurityManagerOptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::HostSecurityManagerOptions Flags { System::Security::HostSecurityManagerOptions get(); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.HostSecurityManagerOptions" Usage="System.Security.HostSecurityManager.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -224,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GenerateAppDomainEvidence(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateAppDomainEvidence (evidenceType As Type) As EvidenceBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::EvidenceBase ^ GenerateAppDomainEvidence(Type ^ evidenceType);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateAppDomainEvidence : Type -&gt; System.Security.Policy.EvidenceBase&#xA;override this.GenerateAppDomainEvidence : Type -&gt; System.Security.Policy.EvidenceBase" Usage="hostSecurityManager.GenerateAppDomainEvidence evidenceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +299,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.EvidenceBase GenerateAssemblyEvidence(class System.Type evidenceType, class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GenerateAssemblyEvidence(System.Type,System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::EvidenceBase ^ GenerateAssemblyEvidence(Type ^ evidenceType, System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateAssemblyEvidence : Type * System.Reflection.Assembly -&gt; System.Security.Policy.EvidenceBase&#xA;override this.GenerateAssemblyEvidence : Type * System.Reflection.Assembly -&gt; System.Security.Policy.EvidenceBase" Usage="hostSecurityManager.GenerateAssemblyEvidence (evidenceType, assembly)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -323,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHostSuppliedAppDomainEvidenceTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetHostSuppliedAppDomainEvidenceTypes();" />
+      <MemberSignature Language="F#" Value="abstract member GetHostSuppliedAppDomainEvidenceTypes : unit -&gt; Type[]&#xA;override this.GetHostSuppliedAppDomainEvidenceTypes : unit -&gt; Type[]" Usage="hostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -356,6 +381,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetHostSuppliedAssemblyEvidenceTypes(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes(System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetHostSuppliedAssemblyEvidenceTypes(System::Reflection::Assembly ^ assembly);" />
+      <MemberSignature Language="F#" Value="abstract member GetHostSuppliedAssemblyEvidenceTypes : System.Reflection.Assembly -&gt; Type[]&#xA;override this.GetHostSuppliedAssemblyEvidenceTypes : System.Reflection.Assembly -&gt; Type[]" Usage="hostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -393,9 +419,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ProvideAppDomainEvidence(System.Security.Policy.Evidence)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ProvideAppDomainEvidence (inputEvidence As Evidence) As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::Evidence ^ ProvideAppDomainEvidence(System::Security::Policy::Evidence ^ inputEvidence);" />
+      <MemberSignature Language="F#" Value="abstract member ProvideAppDomainEvidence : System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence&#xA;override this.ProvideAppDomainEvidence : System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence" Usage="hostSecurityManager.ProvideAppDomainEvidence inputEvidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -434,9 +462,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ProvideAssemblyEvidence(System.Reflection.Assembly,System.Security.Policy.Evidence)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ProvideAssemblyEvidence (loadedAssembly As Assembly, inputEvidence As Evidence) As Evidence" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::Evidence ^ ProvideAssemblyEvidence(System::Reflection::Assembly ^ loadedAssembly, System::Security::Policy::Evidence ^ inputEvidence);" />
+      <MemberSignature Language="F#" Value="abstract member ProvideAssemblyEvidence : System.Reflection.Assembly * System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence&#xA;override this.ProvideAssemblyEvidence : System.Reflection.Assembly * System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence" Usage="hostSecurityManager.ProvideAssemblyEvidence (loadedAssembly, inputEvidence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -484,9 +514,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.PermissionSet ResolvePolicy(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ResolvePolicy(System.Security.Policy.Evidence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::PermissionSet ^ ResolvePolicy(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="F#" Value="abstract member ResolvePolicy : System.Security.Policy.Evidence -&gt; System.Security.PermissionSet&#xA;override this.ResolvePolicy : System.Security.Policy.Evidence -&gt; System.Security.PermissionSet" Usage="hostSecurityManager.ResolvePolicy evidence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -494,6 +526,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-2.0">
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.PermissionSet</ReturnType>
       </ReturnValue>

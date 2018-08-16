@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.KeyContainerPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KeyContainerPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class KeyContainerPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type KeyContainerPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -18,11 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -47,9 +52,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.KeyContainerPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyContainerPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.KeyContainerPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.KeyContainerPermissionAttribute" Usage="new System.Security.Permissions.KeyContainerPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -72,9 +79,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.KeyContainerPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="keyContainerPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -107,9 +116,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As KeyContainerPermissionFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::KeyContainerPermissionFlags Flags { System::Security::Permissions::KeyContainerPermissionFlags get(); void set(System::Security::Permissions::KeyContainerPermissionFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.KeyContainerPermissionFlags with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -143,9 +154,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.KeyContainerName" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyContainerName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainerName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyContainerName : string with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.KeyContainerName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -175,9 +188,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.KeySpec" />
       <MemberSignature Language="VB.NET" Value="Public Property KeySpec As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeySpec { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.KeySpec : int with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.KeySpec" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -207,9 +222,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.KeyStore" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyStore As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyStore { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.KeyStore : string with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.KeyStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -239,9 +256,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -271,9 +290,11 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.ProviderType" />
       <MemberSignature Language="VB.NET" Value="Public Property ProviderType As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProviderType { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderType : int with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.ProviderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

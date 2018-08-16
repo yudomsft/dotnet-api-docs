@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Size" />
   <TypeSignature Language="VB.NET" Value="Public Structure Size&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Size : IFormattable" />
+  <TypeSignature Language="F#" Value="type Size = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +19,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.SizeConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Converters.SizeValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -67,9 +69,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (width As Double, height As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Size(double width, double height);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Size : double * double -&gt; System.Windows.Size" Usage="new System.Windows.Size (width, height)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -96,11 +100,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Size.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Size Empty { System::Windows::Size get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Size" Usage="System.Windows.Size.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
@@ -132,9 +143,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="size.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,9 +177,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.Equals(System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Size) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Size value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Size -&gt; bool" Usage="size.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,9 +211,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.Equals(System.Windows.Size,System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (size1 As Size, size2 As Size) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Size size1, System::Windows::Size size2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Size * System.Windows.Size -&gt; bool" Usage="System.Windows.Size.Equals (size1, size2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,9 +247,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="size.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -251,11 +270,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Size.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double with get, set" Usage="System.Windows.Size.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -271,9 +297,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Size.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Size.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -299,9 +327,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Equality(System.Windows.Size,System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (size1 As Size, size2 As Size) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Size size1, System::Windows::Size size2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Size * System.Windows.Size -&gt; bool" Usage="size1 = size2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,9 +363,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Explicit(valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Explicit(System.Windows.Size)~System.Windows.Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Point(System::Windows::Size size);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Windows.Size -&gt; System.Windows.Point" Usage="System.Windows.Size.op_Explicit size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,9 +388,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Explicit(valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Explicit(System.Windows.Size)~System.Windows.Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Vector(System::Windows::Size size);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Windows.Size -&gt; System.Windows.Vector" Usage="System.Windows.Size.op_Explicit size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -380,9 +414,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Inequality(System.Windows.Size,System.Windows.Size)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (size1 As Size, size2 As Size) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Size size1, System::Windows::Size size2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Size * System.Windows.Size -&gt; bool" Usage="System.Windows.Size.op_Inequality (size1, size2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -407,9 +443,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Size Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Size" Usage="System.Windows.Size.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -437,8 +475,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -470,11 +514,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="size.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -498,11 +549,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="size.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -522,11 +580,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Size.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="System.Windows.Size.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>

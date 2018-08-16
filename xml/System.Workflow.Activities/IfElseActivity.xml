@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IfElseActivity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IfElseActivity&#xA;Inherits CompositeActivity&#xA;Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public ref class IfElseActivity sealed : System::Workflow::ComponentModel::CompositeActivity, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;" />
+  <TypeSignature Language="F#" Value="type IfElseActivity = class&#xA;    inherit CompositeActivity&#xA;    interface IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,19 +19,19 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.IfElseDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.Activities.IfElseToolboxItem))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.Activities.IfElseActivity), "Resources.Decision.png")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.IfElseValidator))</AttributeName>
     </Attribute>
   </Attributes>
@@ -79,6 +81,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -103,9 +106,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IfElseActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.IfElseActivity : string -&gt; System.Workflow.Activities.IfElseActivity" Usage="new System.Workflow.Activities.IfElseActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -132,9 +137,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseActivity.AddBranch(System.Collections.Generic.ICollection{System.Workflow.ComponentModel.Activity})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddBranch (activities As ICollection(Of Activity)) As IfElseBranchActivity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::IfElseBranchActivity ^ AddBranch(System::Collections::Generic::ICollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activities);" />
+      <MemberSignature Language="F#" Value="member this.AddBranch : System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; System.Workflow.Activities.IfElseBranchActivity" Usage="ifElseActivity.AddBranch activities" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,9 +163,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseActivity.AddBranch(System.Collections.Generic.ICollection{System.Workflow.ComponentModel.Activity},System.Workflow.ComponentModel.ActivityCondition)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddBranch (activities As ICollection(Of Activity), branchCondition As ActivityCondition) As IfElseBranchActivity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::IfElseBranchActivity ^ AddBranch(System::Collections::Generic::ICollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ activities, System::Workflow::ComponentModel::ActivityCondition ^ branchCondition);" />
+      <MemberSignature Language="F#" Value="member this.AddBranch : System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt; * System.Workflow.ComponentModel.ActivityCondition -&gt; System.Workflow.Activities.IfElseBranchActivity" Usage="ifElseActivity.AddBranch (activities, branchCondition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,9 +191,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseActivity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="ifElseActivity.Cancel executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,9 +217,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IfElseActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="ifElseActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,6 +249,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

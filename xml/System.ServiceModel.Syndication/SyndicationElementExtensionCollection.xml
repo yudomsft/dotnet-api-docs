@@ -4,12 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SyndicationElementExtensionCollection&#xA;Inherits Collection(Of SyndicationElementExtension)" />
   <TypeSignature Language="C++ CLI" Value="public ref class SyndicationElementExtensionCollection sealed : System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationElementExtension ^&gt;" />
+  <TypeSignature Language="F#" Value="type SyndicationElementExtensionCollection = class&#xA;    inherit Collection&lt;SyndicationElementExtension&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,6 +21,11 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtension" /> objects.</summary>
     <remarks>To be added.</remarks>
@@ -39,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (extension As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Object ^ extension);" />
+      <MemberSignature Language="F#" Value="override this.Add : obj -&gt; unit" Usage="syndicationElementExtensionCollection.Add extension" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +54,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -65,6 +74,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Xml.XmlReader xmlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Xml.XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Xml::XmlReader ^ xmlReader);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Xml.XmlReader -&gt; unit" Usage="syndicationElementExtensionCollection.Add xmlReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +82,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Object,System.Runtime.Serialization.DataContractSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (dataContractExtension As Object, serializer As DataContractSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Object ^ dataContractExtension, System::Runtime::Serialization::DataContractSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="override this.Add : obj * System.Runtime.Serialization.DataContractSerializer -&gt; unit" Usage="syndicationElementExtensionCollection.Add (dataContractExtension, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,8 +111,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -121,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.Object,System.Xml.Serialization.XmlSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (xmlSerializerExtension As Object, serializer As XmlSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Object ^ xmlSerializerExtension, System::Xml::Serialization::XmlSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="override this.Add : obj * System.Xml.Serialization.XmlSerializer -&gt; unit" Usage="syndicationElementExtensionCollection.Add (xmlSerializerExtension, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +147,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (outerName As String, outerNamespace As String, dataContractExtension As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ outerName, System::String ^ outerNamespace, System::Object ^ dataContractExtension);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * string * obj -&gt; unit" Usage="syndicationElementExtensionCollection.Add (outerName, outerNamespace, dataContractExtension)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,8 +178,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -181,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.Add(System.String,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (outerName As String, outerNamespace As String, dataContractExtension As Object, dataContractSerializer As XmlObjectSerializer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ outerName, System::String ^ outerNamespace, System::Object ^ dataContractExtension, System::Runtime::Serialization::XmlObjectSerializer ^ dataContractSerializer);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * string * obj * System.Runtime.Serialization.XmlObjectSerializer -&gt; unit" Usage="syndicationElementExtensionCollection.Add (outerName, outerNamespace, dataContractExtension, dataContractSerializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +216,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="syndicationElementExtensionCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -221,6 +251,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.GetReaderAtElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtElementExtensions () As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ GetReaderAtElementExtensions();" />
+      <MemberSignature Language="F#" Value="member this.GetReaderAtElementExtensions : unit -&gt; System.Xml.XmlReader" Usage="syndicationElementExtensionCollection.GetReaderAtElementExtensions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -245,6 +277,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.InsertItem(System.Int32,System.ServiceModel.Syndication.SyndicationElementExtension)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As SyndicationElementExtension)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ServiceModel::Syndication::SyndicationElementExtension ^ item);" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ServiceModel.Syndication.SyndicationElementExtension -&gt; unit" Usage="syndicationElementExtensionCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,6 +304,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions``1(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadElementExtensions(Of TExtension) (extensionName As String, extensionNamespace As String) As Collection(Of TExtension)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExtension&gt;&#xA; System::Collections::ObjectModel::Collection&lt;TExtension&gt; ^ ReadElementExtensions(System::String ^ extensionName, System::String ^ extensionNamespace);" />
+      <MemberSignature Language="F#" Value="member this.ReadElementExtensions : string * string -&gt; System.Collections.ObjectModel.Collection&lt;'Extension&gt;" Usage="syndicationElementExtensionCollection.ReadElementExtensions (extensionName, extensionNamespace)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -308,6 +344,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -337,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions``1(System.String,System.String,System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadElementExtensions(Of TExtension) (extensionName As String, extensionNamespace As String, serializer As XmlObjectSerializer) As Collection(Of TExtension)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExtension&gt;&#xA; System::Collections::ObjectModel::Collection&lt;TExtension&gt; ^ ReadElementExtensions(System::String ^ extensionName, System::String ^ extensionNamespace, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="member this.ReadElementExtensions : string * string * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.Collections.ObjectModel.Collection&lt;'Extension&gt;" Usage="syndicationElementExtensionCollection.ReadElementExtensions (extensionName, extensionNamespace, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -344,6 +382,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -375,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions``1(System.String,System.String,System.Xml.Serialization.XmlSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadElementExtensions(Of TExtension) (extensionName As String, extensionNamespace As String, serializer As XmlSerializer) As Collection(Of TExtension)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TExtension&gt;&#xA; System::Collections::ObjectModel::Collection&lt;TExtension&gt; ^ ReadElementExtensions(System::String ^ extensionName, System::String ^ extensionNamespace, System::Xml::Serialization::XmlSerializer ^ serializer);" />
+      <MemberSignature Language="F#" Value="member this.ReadElementExtensions : string * string * System.Xml.Serialization.XmlSerializer -&gt; System.Collections.ObjectModel.Collection&lt;'Extension&gt;" Usage="syndicationElementExtensionCollection.ReadElementExtensions (extensionName, extensionNamespace, serializer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -382,6 +422,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="syndicationElementExtensionCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -419,6 +461,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,6 +482,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.SetItem(System.Int32,System.ServiceModel.Syndication.SyndicationElementExtension)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As SyndicationElementExtension)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ServiceModel::Syndication::SyndicationElementExtension ^ item);" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ServiceModel.Syndication.SyndicationElementExtension -&gt; unit" Usage="syndicationElementExtensionCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -446,6 +490,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BinaryMessageEncodingElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BinaryMessageEncodingElement&#xA;Inherits BindingElementExtensionElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryMessageEncodingElement sealed : System::ServiceModel::Configuration::BindingElementExtensionElement" />
+  <TypeSignature Language="F#" Value="type BinaryMessageEncodingElement = class&#xA;    inherit BindingElementExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -40,8 +42,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BinaryMessageEncodingElement" /> class.</summary>
@@ -53,9 +61,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BinaryMessageEncodingElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="binaryMessageEncodingElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,9 +86,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BinaryMessageEncodingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.BinaryMessageEncodingElement.BindingElementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,13 +108,14 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BinaryMessageEncodingElement.CompressionFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property CompressionFormat As CompressionFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::CompressionFormat CompressionFormat { System::ServiceModel::Channels::CompressionFormat get(); void set(System::ServiceModel::Channels::CompressionFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.CompressionFormat : System.ServiceModel.Channels.CompressionFormat with get, set" Usage="System.ServiceModel.Configuration.BinaryMessageEncodingElement.CompressionFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("compressionFormat", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -121,9 +134,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BinaryMessageEncodingElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="binaryMessageEncodingElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,9 +159,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BinaryMessageEncodingElement.CreateBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBindingElement () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="binaryMessageEncodingElement.CreateBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,9 +181,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BinaryMessageEncodingElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="binaryMessageEncodingElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,16 +206,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BinaryMessageEncodingElement.MaxReadPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReadPoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxReadPoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxReadPoolSize : int with get, set" Usage="System.ServiceModel.Configuration.BinaryMessageEncodingElement.MaxReadPoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxReadPoolSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -222,16 +243,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BinaryMessageEncodingElement.MaxSessionSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxSessionSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSessionSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxSessionSize : int with get, set" Usage="System.ServiceModel.Configuration.BinaryMessageEncodingElement.MaxSessionSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxSessionSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -257,16 +280,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BinaryMessageEncodingElement.MaxWritePoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxWritePoolSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxWritePoolSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxWritePoolSize : int with get, set" Usage="System.ServiceModel.Configuration.BinaryMessageEncodingElement.MaxWritePoolSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxWritePoolSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -292,9 +317,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BinaryMessageEncodingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.BinaryMessageEncodingElement.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,13 +339,15 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BinaryMessageEncodingElement.ReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ ReaderQuotas { System::ServiceModel::Configuration::XmlDictionaryReaderQuotasElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement" Usage="System.ServiceModel.Configuration.BinaryMessageEncodingElement.ReaderQuotas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("readerQuotas")</AttributeName>
         </Attribute>
       </Attributes>

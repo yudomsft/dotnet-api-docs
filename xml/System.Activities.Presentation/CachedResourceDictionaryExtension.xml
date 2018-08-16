@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.CachedResourceDictionaryExtension" />
   <TypeSignature Language="VB.NET" Value="Public Class CachedResourceDictionaryExtension&#xA;Inherits MarkupExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class CachedResourceDictionaryExtension : System::Windows::Markup::MarkupExtension" />
+  <TypeSignature Language="F#" Value="type CachedResourceDictionaryExtension = class&#xA;    inherit MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Windows.ResourceDictionary))</AttributeName>
     </Attribute>
   </Attributes>
@@ -40,6 +41,11 @@
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.CachedResourceDictionaryExtension" /> class.</summary>
@@ -52,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.CachedResourceDictionaryExtension.ProvideValue(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="cachedResourceDictionaryExtension.ProvideValue serviceProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -83,11 +90,20 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.CachedResourceDictionaryExtension.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Activities.Presentation.CachedResourceDictionaryExtension.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>

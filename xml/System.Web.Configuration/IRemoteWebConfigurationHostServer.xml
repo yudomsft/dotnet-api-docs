@@ -4,16 +4,18 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.IRemoteWebConfigurationHostServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRemoteWebConfigurationHostServer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRemoteWebConfigurationHostServer" />
+  <TypeSignature Language="F#" Value="type IRemoteWebConfigurationHostServer = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("A99B591A-23C6-4238-8452-C7B0E895063D")</AttributeName>
     </Attribute>
   </Attributes>
@@ -36,9 +38,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.DoEncryptOrDecrypt(System.Boolean,System.String,System.String,System.String,System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function DoEncryptOrDecrypt (doEncrypt As Boolean, xmlString As String, protectionProviderName As String, protectionProviderType As String, parameterKeys As String(), parameterValues As String()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DoEncryptOrDecrypt(bool doEncrypt, System::String ^ xmlString, System::String ^ protectionProviderName, System::String ^ protectionProviderType, cli::array &lt;System::String ^&gt; ^ parameterKeys, cli::array &lt;System::String ^&gt; ^ parameterValues);" />
+      <MemberSignature Language="F#" Value="abstract member DoEncryptOrDecrypt : bool * string * string * string * string[] * string[] -&gt; string" Usage="iRemoteWebConfigurationHostServer.DoEncryptOrDecrypt (doEncrypt, xmlString, protectionProviderName, protectionProviderType, parameterKeys, parameterValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,9 +76,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (fileName As String, getReadTimeOnly As Boolean, ByRef readTime As Long) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetData(System::String ^ fileName, bool getReadTimeOnly, [Runtime::InteropServices::Out] long % readTime);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string * bool *  -&gt; byte[]" Usage="iRemoteWebConfigurationHostServer.GetData (fileName, getReadTimeOnly, readTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,7 +89,7 @@
       <Parameters>
         <Parameter Name="fileName" Type="System.String" />
         <Parameter Name="getReadTimeOnly" Type="System.Boolean" />
-        <Parameter Name="readTime" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="readTime" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="fileName">Path to the remote configuration file to be accessed.</param>
@@ -101,9 +107,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetFileDetails (name As String, ByRef exists As Boolean, ByRef size As Long, ByRef createDate As Long, ByRef lastWriteDate As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetFileDetails(System::String ^ name, [Runtime::InteropServices::Out] bool % exists, [Runtime::InteropServices::Out] long % size, [Runtime::InteropServices::Out] long % createDate, [Runtime::InteropServices::Out] long % lastWriteDate);" />
+      <MemberSignature Language="F#" Value="abstract member GetFileDetails : string *  *  *  *  -&gt; unit" Usage="iRemoteWebConfigurationHostServer.GetFileDetails (name, exists, size, createDate, lastWriteDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,10 +119,10 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="exists" Type="System.Boolean&amp;" RefType="out" />
-        <Parameter Name="size" Type="System.Int64&amp;" RefType="out" />
-        <Parameter Name="createDate" Type="System.Int64&amp;" RefType="out" />
-        <Parameter Name="lastWriteDate" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="exists" Type="System.Boolean" RefType="out" />
+        <Parameter Name="size" Type="System.Int64" RefType="out" />
+        <Parameter Name="createDate" Type="System.Int64" RefType="out" />
+        <Parameter Name="lastWriteDate" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the file.</param>
@@ -134,9 +142,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFilePaths(System.Int32,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFilePaths (webLevel As Integer, path As String, site As String, locationSubPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetFilePaths(int webLevel, System::String ^ path, System::String ^ site, System::String ^ locationSubPath);" />
+      <MemberSignature Language="F#" Value="abstract member GetFilePaths : int * string * string * string -&gt; string" Usage="iRemoteWebConfigurationHostServer.GetFilePaths (webLevel, path, site, locationSubPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,9 +175,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteData (fileName As String, templateFileName As String, data As Byte(), ByRef readTime As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteData(System::String ^ fileName, System::String ^ templateFileName, cli::array &lt;System::Byte&gt; ^ data, long % readTime);" />
+      <MemberSignature Language="F#" Value="abstract member WriteData : string * string * byte[] *  -&gt; unit" Usage="iRemoteWebConfigurationHostServer.WriteData (fileName, templateFileName, data, readTime)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,7 +189,7 @@
         <Parameter Name="fileName" Type="System.String" />
         <Parameter Name="templateFileName" Type="System.String" />
         <Parameter Name="data" Type="System.Byte[]" />
-        <Parameter Name="readTime" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="readTime" Type="System.Int64" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="fileName">Path to the remote configuration file to be accessed.</param>

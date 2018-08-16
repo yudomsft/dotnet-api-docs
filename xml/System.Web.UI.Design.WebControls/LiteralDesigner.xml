@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LiteralDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class LiteralDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class LiteralDesigner : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type LiteralDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.Design.SupportsPreviewControl(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -46,8 +48,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LiteralDesigner" /> class.</summary>
@@ -69,9 +77,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LiteralDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnComponentChanged (sender As Object, ce As ComponentChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnComponentChanged(System::Object ^ sender, System::ComponentModel::Design::ComponentChangedEventArgs ^ ce);" />
+      <MemberSignature Language="F#" Value="override this.OnComponentChanged : obj * System.ComponentModel.Design.ComponentChangedEventArgs -&gt; unit" Usage="literalDesigner.OnComponentChanged (sender, ce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

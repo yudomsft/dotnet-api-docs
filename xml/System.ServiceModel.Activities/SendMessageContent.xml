@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendMessageContent" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendMessageContent&#xA;Inherits SendContent" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendMessageContent sealed : System::ServiceModel::Activities::SendContent" />
+  <TypeSignature Language="F#" Value="type SendMessageContent = class&#xA;    inherit SendContent" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Message")</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,6 +57,11 @@
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageContent" /> class.</summary>
@@ -68,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageContent.#ctor(System.Activities.InArgument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As InArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageContent(System::Activities::InArgument ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.SendMessageContent : System.Activities.InArgument -&gt; System.ServiceModel.Activities.SendMessageContent" Usage="new System.ServiceModel.Activities.SendMessageContent message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -97,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageContent.#ctor(System.Activities.InArgument,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As InArgument, declaredMessageType As Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageContent(System::Activities::InArgument ^ message, Type ^ declaredMessageType);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.SendMessageContent : System.Activities.InArgument * Type -&gt; System.ServiceModel.Activities.SendMessageContent" Usage="new System.ServiceModel.Activities.SendMessageContent (message, declaredMessageType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -119,14 +127,21 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType" />
       <MemberSignature Language="VB.NET" Value="Public Property DeclaredMessageType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaredMessageType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DeclaredMessageType : Type with get, set" Usage="System.ServiceModel.Activities.SendMessageContent.DeclaredMessageType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,14 +166,21 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageContent.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As InArgument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument ^ Message { System::Activities::InArgument ^ get(); void set(System::Activities::InArgument ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Activities.InArgument with get, set" Usage="System.ServiceModel.Activities.SendMessageContent.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -176,14 +198,15 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageContent.ShouldSerializeDeclaredMessageType" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDeclaredMessageType () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDeclaredMessageType();" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeDeclaredMessageType : unit -&gt; bool" Usage="sendMessageContent.ShouldSerializeDeclaredMessageType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.IndexerReference`2" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IndexerReference(Of TOperand, TItem)&#xA;Inherits CodeActivity(Of Location(Of TItem))" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TOperand, typename TItem&gt;&#xA;public ref class IndexerReference sealed : System::Activities::CodeActivity&lt;System::Activities::Location&lt;TItem&gt; ^&gt;" />
+  <TypeSignature Language="F#" Value="type IndexerReference&lt;'Operand, 'Item&gt; = class&#xA;    inherit CodeActivity&lt;Location&lt;'Item&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ContentProperty("Indices")</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,7 +38,7 @@
 > [!NOTE]
 >  Instead of instantiating the <xref:System.Activities.Expressions.IndexerReference%602> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
   
-```  
+```csharp  
   
 // Define a class with a multi-dimensional indexer.  
 public class ObjectWithIndexer  
@@ -104,6 +105,11 @@ public static void IndexerReferenceSample()
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.IndexerReference`2" /> class.</summary>
@@ -116,6 +122,7 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.IndexerReference`2.CacheMetadata(System.Activities.CodeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="indexerReference.CacheMetadata metadata" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -139,6 +146,7 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.IndexerReference`2.Execute(System.Activities.CodeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As Location(Of TItem)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Location&lt;TItem&gt; ^ Execute(System::Activities::CodeActivityContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; System.Activities.Location&lt;'Item&gt;" Usage="indexerReference.Execute context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -163,16 +171,17 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.IndexerReference`2.Indices" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indices As Collection(Of InArgument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument ^&gt; ^ Indices { System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Indices : System.Collections.ObjectModel.Collection&lt;System.Activities.InArgument&gt;" Usage="System.Activities.Expressions.IndexerReference&lt;'Operand, 'Item&gt;.Indices" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Activities.RequiredArgument</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
       </Attributes>
@@ -198,17 +207,24 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.IndexerReference`2.Operand" />
       <MemberSignature Language="VB.NET" Value="Public Property Operand As InArgument(Of TOperand)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;TOperand&gt; ^ Operand { System::Activities::InArgument&lt;TOperand&gt; ^ get(); void set(System::Activities::InArgument&lt;TOperand&gt; ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Operand : System.Activities.InArgument&lt;'Operand&gt; with get, set" Usage="System.Activities.Expressions.IndexerReference&lt;'Operand, 'Item&gt;.Operand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Activities.RequiredArgument</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

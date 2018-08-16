@@ -4,17 +4,23 @@
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IRegistrationHelper" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRegistrationHelper" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRegistrationHelper" />
+  <TypeSignature Language="F#" Value="type IRegistrationHelper = interface" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("55e3ea25-55cb-4650-8887-18e8d30bb4bc")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -28,9 +34,12 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (assembly As String, ByRef application As String, ByRef tlb As String, installFlags As InstallationFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssembly(System::String ^ assembly, [Runtime::InteropServices::Out] System::String ^ % application, [Runtime::InteropServices::Out] System::String ^ % tlb, System::EnterpriseServices::InstallationFlags installFlags);" />
+      <MemberSignature Language="F#" Value="abstract member InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags -&gt; unit" Usage="iRegistrationHelper.InstallAssembly (assembly, application, tlb, installFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,8 +47,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="assembly" Type="System.String" />
-        <Parameter Name="application" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="tlb" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="application" Type="System.String" RefType="out" />
+        <Parameter Name="tlb" Type="System.String" RefType="out" />
         <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
       </Parameters>
       <Docs>
@@ -64,9 +73,12 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRegistrationHelper.UninstallAssembly(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UninstallAssembly (assembly As String, application As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UninstallAssembly(System::String ^ assembly, System::String ^ application);" />
+      <MemberSignature Language="F#" Value="abstract member UninstallAssembly : string * string -&gt; unit" Usage="iRegistrationHelper.UninstallAssembly (assembly, application)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamUpgradeBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamUpgradeBindingElement&#xA;Inherits BindingElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamUpgradeBindingElement abstract : System::ServiceModel::Channels::BindingElement" />
+  <TypeSignature Language="F#" Value="type StreamUpgradeBindingElement = class&#xA;    inherit BindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -48,8 +50,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamUpgradeBindingElement" /> class.</summary>
@@ -62,11 +70,18 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeBindingElement.#ctor(System.ServiceModel.Channels.StreamUpgradeBindingElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (elementToBeCloned As StreamUpgradeBindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamUpgradeBindingElement(System::ServiceModel::Channels::StreamUpgradeBindingElement ^ elementToBeCloned);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.StreamUpgradeBindingElement : System.ServiceModel.Channels.StreamUpgradeBindingElement -&gt; System.ServiceModel.Channels.StreamUpgradeBindingElement" Usage="new System.ServiceModel.Channels.StreamUpgradeBindingElement elementToBeCloned" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="elementToBeCloned" Type="System.ServiceModel.Channels.StreamUpgradeBindingElement" />
       </Parameters>
@@ -82,9 +97,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeBindingElement.BuildClientStreamUpgradeProvider(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BuildClientStreamUpgradeProvider (context As BindingContext) As StreamUpgradeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::StreamUpgradeProvider ^ BuildClientStreamUpgradeProvider(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member BuildClientStreamUpgradeProvider : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.StreamUpgradeProvider" Usage="streamUpgradeBindingElement.BuildClientStreamUpgradeProvider context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,9 +132,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeBindingElement.BuildServerStreamUpgradeProvider(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function BuildServerStreamUpgradeProvider (context As BindingContext) As StreamUpgradeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::StreamUpgradeProvider ^ BuildServerStreamUpgradeProvider(System::ServiceModel::Channels::BindingContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member BuildServerStreamUpgradeProvider : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.StreamUpgradeProvider" Usage="streamUpgradeBindingElement.BuildServerStreamUpgradeProvider context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

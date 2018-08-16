@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Vector" />
   <TypeSignature Language="VB.NET" Value="Public Structure Vector&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Vector : IFormattable" />
+  <TypeSignature Language="F#" Value="type Vector = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +19,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.VectorConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Converters.VectorValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -72,11 +74,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.#ctor(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector(double x, double y);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Vector : double * double -&gt; System.Windows.Vector" Usage="new System.Windows.Vector (x, y)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="x" Type="System.Double" />
         <Parameter Name="y" Type="System.Double" />
@@ -111,9 +120,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Point Add(valuetype System.Windows.Vector vector, valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Add(System.Windows.Vector,System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point Add(System::Windows::Vector vector, System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Windows.Vector * System.Windows.Point -&gt; System.Windows.Point" Usage="System.Windows.Vector.Add (vector, point)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,9 +158,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Add(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (vector1 As Vector, vector2 As Vector) As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Add(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Windows.Vector * System.Windows.Vector -&gt; System.Windows.Vector" Usage="System.Windows.Vector.Add (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -183,9 +196,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.AngleBetween(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AngleBetween (vector1 As Vector, vector2 As Vector) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double AngleBetween(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member AngleBetween : System.Windows.Vector * System.Windows.Vector -&gt; double" Usage="System.Windows.Vector.AngleBetween (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,9 +233,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.CrossProduct(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CrossProduct (vector1 As Vector, vector2 As Vector) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double CrossProduct(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member CrossProduct : System.Windows.Vector * System.Windows.Vector -&gt; double" Usage="System.Windows.Vector.CrossProduct (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -255,9 +272,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Determinant(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Determinant (vector1 As Vector, vector2 As Vector) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Determinant(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member Determinant : System.Windows.Vector * System.Windows.Vector -&gt; double" Usage="System.Windows.Vector.Determinant (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -289,9 +308,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Divide(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Divide(System.Windows.Vector,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Divide(System::Windows::Vector vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Windows.Vector * double -&gt; System.Windows.Vector" Usage="System.Windows.Vector.Divide (vector, scalar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,9 +363,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vector.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,9 +405,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Equals(System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Vector) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Vector value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Vector -&gt; bool" Usage="vector.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,9 +447,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Equals(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (vector1 As Vector, vector2 As Vector) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Vector * System.Windows.Vector -&gt; bool" Usage="System.Windows.Vector.Equals (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -464,9 +491,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vector.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -494,9 +523,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Vector.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Length { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : double" Usage="System.Windows.Vector.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -529,9 +560,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Vector.LengthSquared" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LengthSquared As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LengthSquared { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.LengthSquared : double" Usage="System.Windows.Vector.LengthSquared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -572,9 +605,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Multiply(float64 scalar, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Double,System.Windows.Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Multiply(double scalar, System::Windows::Vector vector);" />
+      <MemberSignature Language="F#" Value="static member Multiply : double * System.Windows.Vector -&gt; System.Windows.Vector" Usage="System.Windows.Vector.Multiply (scalar, vector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -607,9 +642,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Multiply(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Windows.Vector,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Multiply(System::Windows::Vector vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Vector * double -&gt; System.Windows.Vector" Usage="System.Windows.Vector.Multiply (vector, scalar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -642,9 +679,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Multiply(valuetype System.Windows.Vector vector, valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Windows.Vector,System.Windows.Media.Matrix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Multiply(System::Windows::Vector vector, System::Windows::Media::Matrix matrix);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Vector * System.Windows.Media.Matrix -&gt; System.Windows.Vector" Usage="System.Windows.Vector.Multiply (vector, matrix)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -678,9 +717,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (vector1 As Vector, vector2 As Vector) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Multiply(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Vector * System.Windows.Vector -&gt; double" Usage="System.Windows.Vector.Multiply (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -716,9 +757,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Negate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Negate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Negate();" />
+      <MemberSignature Language="F#" Value="member this.Negate : unit -&gt; unit" Usage="vector.Negate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -746,9 +789,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Normalize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Normalize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Normalize();" />
+      <MemberSignature Language="F#" Value="member this.Normalize : unit -&gt; unit" Usage="vector.Normalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -788,9 +833,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Addition(valuetype System.Windows.Vector vector, valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Addition(System.Windows.Vector,System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Point operator +(System::Windows::Vector vector, System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Windows.Vector * System.Windows.Point -&gt; System.Windows.Point" Usage="vector + point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -825,9 +872,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Addition(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (vector1 As Vector, vector2 As Vector) As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator +(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Windows.Vector * System.Windows.Vector -&gt; System.Windows.Vector" Usage="vector1 + vector2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -861,9 +910,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Division(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Division(System.Windows.Vector,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator /(System::Windows::Vector vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Windows.Vector * double -&gt; System.Windows.Vector" Usage="vector / scalar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -898,9 +949,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Equality(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (vector1 As Vector, vector2 As Vector) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Vector * System.Windows.Vector -&gt; bool" Usage="vector1 = vector2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -949,9 +1002,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Explicit(valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Explicit(System.Windows.Vector)~System.Windows.Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Point(System::Windows::Vector vector);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Windows.Vector -&gt; System.Windows.Point" Usage="System.Windows.Vector.op_Explicit vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -982,9 +1037,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Size op_Explicit(valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Explicit(System.Windows.Vector)~System.Windows.Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Size(System::Windows::Vector vector);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Windows.Vector -&gt; System.Windows.Size" Usage="System.Windows.Vector.op_Explicit vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1016,9 +1073,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Inequality(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (vector1 As Vector, vector2 As Vector) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Vector * System.Windows.Vector -&gt; bool" Usage="System.Windows.Vector.op_Inequality (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1066,9 +1125,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(float64 scalar, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Double,System.Windows.Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator *(double scalar, System::Windows::Vector vector);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : double * System.Windows.Vector -&gt; System.Windows.Vector" Usage="scalar * vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1102,9 +1163,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator *(System::Windows::Vector vector, double scalar);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Vector * double -&gt; System.Windows.Vector" Usage="vector * scalar" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1138,9 +1201,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(valuetype System.Windows.Vector vector, valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Windows.Media.Matrix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator *(System::Windows::Vector vector, System::Windows::Media::Matrix matrix);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Vector * System.Windows.Media.Matrix -&gt; System.Windows.Vector" Usage="vector * matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1175,9 +1240,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (vector1 As Vector, vector2 As Vector) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double operator *(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Vector * System.Windows.Vector -&gt; double" Usage="vector1 * vector2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1214,9 +1281,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Subtraction(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (vector1 As Vector, vector2 As Vector) As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator -(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Windows.Vector * System.Windows.Vector -&gt; System.Windows.Vector" Usage="vector1 - vector2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1250,9 +1319,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_UnaryNegation(valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_UnaryNegation(System.Windows.Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector operator -(System::Windows::Vector vector);" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Windows.Vector -&gt; System.Windows.Vector" Usage="- vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1285,9 +1356,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Vector" Usage="System.Windows.Vector.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1320,9 +1393,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Subtract(System.Windows.Vector,System.Windows.Vector)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (vector1 As Vector, vector2 As Vector) As Vector" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Vector Subtract(System::Windows::Vector vector1, System::Windows::Vector vector2);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Windows.Vector * System.Windows.Vector -&gt; System.Windows.Vector" Usage="System.Windows.Vector.Subtract (vector1, vector2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1363,8 +1438,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1403,11 +1484,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vector.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1435,11 +1523,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="vector.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1460,11 +1555,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Vector.X" />
       <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.X : double with get, set" Usage="System.Windows.Vector.X" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -1491,11 +1596,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Vector.Y" />
       <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Y : double with get, set" Usage="System.Windows.Vector.Y" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>

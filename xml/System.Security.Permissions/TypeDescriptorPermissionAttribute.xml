@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.TypeDescriptorPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeDescriptorPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptorPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type TypeDescriptorPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,7 +18,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptorPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.TypeDescriptorPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.TypeDescriptorPermissionAttribute" Usage="new System.Security.Permissions.TypeDescriptorPermissionAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +44,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
       </Parameters>
@@ -58,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
+      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="typeDescriptorPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.TypeDescriptorPermissionAttribute.Flags" />
       <MemberSignature Language="VB.NET" Value="Public Property Flags As TypeDescriptorPermissionFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::TypeDescriptorPermissionFlags Flags { System::Security::Permissions::TypeDescriptorPermissionFlags get(); void set(System::Security::Permissions::TypeDescriptorPermissionFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.TypeDescriptorPermissionFlags with get, set" Usage="System.Security.Permissions.TypeDescriptorPermissionAttribute.Flags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +103,11 @@
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.TypeDescriptorPermissionFlags</ReturnType>
       </ReturnValue>
@@ -110,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.TypeDescriptorPermissionAttribute.RestrictedRegistrationAccess" />
       <MemberSignature Language="VB.NET" Value="Public Property RestrictedRegistrationAccess As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestrictedRegistrationAccess { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RestrictedRegistrationAccess : bool with get, set" Usage="System.Security.Permissions.TypeDescriptorPermissionAttribute.RestrictedRegistrationAccess" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

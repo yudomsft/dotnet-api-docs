@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.SetterBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SetterBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class SetterBase abstract" />
+  <TypeSignature Language="F#" Value="type SetterBase = class" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Ignore)</AttributeName>
     </Attribute>
   </Attributes>
@@ -28,9 +30,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.SetterBase.CheckSealed" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckSealed ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckSealed();" />
+      <MemberSignature Language="F#" Value="member this.CheckSealed : unit -&gt; unit" Usage="setterBase.CheckSealed " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,11 +59,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.SetterBase.IsSealed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.SetterBase.IsSealed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

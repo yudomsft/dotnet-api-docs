@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderFragmentRoot&#xA;Implements IRawElementProviderFragment" />
   <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderFragmentRoot : System::Windows::Automation::Provider::IRawElementProviderFragment" />
+  <TypeSignature Language="F#" Value="type IRawElementProviderFragmentRoot = interface&#xA;    interface IRawElementProviderFragment&#xA;    interface IRawElementProviderSimple" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
@@ -14,14 +16,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("620ce2a5-ab8f-40a9-86cb-de3c75599b58")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot.ElementProviderFromPoint(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Function ElementProviderFromPoint (x As Double, y As Double) As IRawElementProviderFragment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderFragment ^ ElementProviderFromPoint(double x, double y);" />
+      <MemberSignature Language="F#" Value="abstract member ElementProviderFromPoint : double * double -&gt; System.Windows.Automation.Provider.IRawElementProviderFragment" Usage="iRawElementProviderFragmentRoot.ElementProviderFromPoint (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,9 +93,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot.GetFocus" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFocus () As IRawElementProviderFragment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderFragment ^ GetFocus();" />
+      <MemberSignature Language="F#" Value="abstract member GetFocus : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderFragment" Usage="iRawElementProviderFragmentRoot.GetFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

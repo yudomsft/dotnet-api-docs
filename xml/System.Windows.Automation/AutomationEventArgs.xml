@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class AutomationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutomationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type AutomationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,11 +27,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationEventArgs.#ctor(System.Windows.Automation.AutomationEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventId As AutomationEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationEventArgs(System::Windows::Automation::AutomationEvent ^ eventId);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.AutomationEventArgs : System.Windows.Automation.AutomationEvent -&gt; System.Windows.Automation.AutomationEventArgs" Usage="new System.Windows.Automation.AutomationEventArgs eventId" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="eventId" Type="System.Windows.Automation.AutomationEvent" />
       </Parameters>
@@ -55,11 +64,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationEventArgs.EventId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventId As AutomationEvent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationEvent ^ EventId { System::Windows::Automation::AutomationEvent ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventId : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.AutomationEventArgs.EventId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
       </ReturnValue>

@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DuplexClientBase`1" />
   <TypeSignature Language="VB.NET" Value="Public Class DuplexClientBase(Of TChannel)&#xA;Inherits ClientBase(Of TChannel)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TChannel&gt;&#xA; where TChannel : classpublic ref class DuplexClientBase : System::ServiceModel::ClientBase&lt;TChannel&gt;" />
+  <TypeSignature Language="F#" Value="type DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; = class&#xA;    inherit ClientBase&lt;'Channel (requires 'Channel : null)&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -76,10 +78,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : obj -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; callbackInstance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -105,10 +109,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; callbackInstance" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -117,6 +123,11 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
       </Parameters>
@@ -140,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As Object, endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : obj * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -164,10 +176,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As Object, endpointConfigurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : obj * string -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -195,12 +209,18 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpoint As ServiceEndpoint)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpoint)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
@@ -219,10 +239,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -231,6 +253,11 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
         <Parameter Name="endpointConfigurationName" Type="System.String" />
@@ -255,10 +282,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : obj * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -288,10 +317,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As Object, endpointConfigurationName As String, remoteAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : obj * string * string -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -320,10 +351,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, binding, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -332,6 +365,11 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
         <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
@@ -358,10 +396,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, remoteAddress As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * string -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -370,6 +410,11 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
         <Parameter Name="endpointConfigurationName" Type="System.String" />
@@ -392,31 +437,33 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As Object, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As Object, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, string bindingConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string bindingConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As Object, bindingConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::Object ^ callbackInstance, System::String ^ bindingConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : obj * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, bindingConfigurationName, remoteAddress)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.Object" Index="0" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="bindingConfigurationName" Type="System.String" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
-        <param name="endpointConfigurationName">To be added.</param>
-        <param name="bindingConfigurationName">To be added.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <param name="bindingConfigurationName">The name of the client endpoint information in the application configuration file.</param>
         <param name="remoteAddress">The address of the service endpoint to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
         <remarks>
@@ -431,19 +478,21 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress address);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress address) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-3.0;netframework-3.5;netframework-4.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, address As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DuplexClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ address);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt; (callbackInstance, endpointConfigurationName, address)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -452,17 +501,22 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" />
         <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0" />
         <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
         <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
-        <param name="remoteAddress">To be added.</param>
-        <param name="address">To be added.</param>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <param name="address">The address of the service endpoint to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -481,10 +535,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.CreateChannel" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateChannel () As TChannel" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TChannel CreateChannel();" />
+      <MemberSignature Language="F#" Value="override this.CreateChannel : unit -&gt; 'Channel" Usage="duplexClientBase.CreateChannel " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -492,8 +548,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a channel to the service associated with the callback object passed to the constructor.</summary>
+        <returns>A channel to the service of the type of the service contract interface.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,10 +559,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DuplexClientBase`1.InnerDuplexChannel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerDuplexChannel As IDuplexContextChannel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IDuplexContextChannel ^ InnerDuplexChannel { System::ServiceModel::IDuplexContextChannel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InnerDuplexChannel : System.ServiceModel.IDuplexContextChannel" Usage="System.ServiceModel.DuplexClientBase&lt;'Channel (requires 'Channel : null)&gt;.InnerDuplexChannel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

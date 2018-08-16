@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.CustomProviderDataAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomProviderDataAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class CustomProviderDataAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type CustomProviderDataAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
@@ -35,11 +37,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.CustomProviderDataAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (customProviderData As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomProviderDataAttribute(System::String ^ customProviderData);" />
+      <MemberSignature Language="F#" Value="new System.Web.Profile.CustomProviderDataAttribute : string -&gt; System.Web.Profile.CustomProviderDataAttribute" Usage="new System.Web.Profile.CustomProviderDataAttribute customProviderData" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="customProviderData" Type="System.String" />
       </Parameters>
@@ -64,11 +73,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomProviderData As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomProviderData { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomProviderData : string" Usage="System.Web.Profile.CustomProviderDataAttribute.CustomProviderData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -91,9 +107,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.CustomProviderDataAttribute.IsDefaultAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="customProviderDataAttribute.IsDefaultAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

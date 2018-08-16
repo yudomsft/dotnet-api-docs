@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.DataColumnCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataColumnCollection&#xA;Inherits InternalDataCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataColumnCollection sealed : System::Data::InternalDataCollectionBase" />
+  <TypeSignature Language="F#" Value="type DataColumnCollection = class&#xA;    inherit InternalDataCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,11 +26,23 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.ComponentModel.DefaultEvent("CollectionChanged")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ColumnsCollectionEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ColumnsCollectionEditor, Microsoft.VSDesigner, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ColumnsCollectionEditor, Microsoft.VSDesigner, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ColumnsCollectionEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.ColumnsCollectionEditor, Microsoft.VSDesigner, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=2.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -75,9 +90,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add" />
       <MemberSignature Language="VB.NET" Value="Public Function Add () As DataColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataColumn ^ Add();" />
+      <MemberSignature Language="F#" Value="member this.Add : unit -&gt; System.Data.DataColumn" Usage="dataColumnCollection.Add " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -126,9 +144,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (column As DataColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Data::DataColumn ^ column);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Data.DataColumn -&gt; unit" Usage="dataColumnCollection.Add column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -182,9 +203,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (columnName As String) As DataColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataColumn ^ Add(System::String ^ columnName);" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; System.Data.DataColumn" Usage="dataColumnCollection.Add columnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -240,9 +264,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn Add(string columnName, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.String,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataColumn ^ Add(System::String ^ columnName, Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * Type -&gt; System.Data.DataColumn" Usage="dataColumnCollection.Add (columnName, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -298,9 +325,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn Add(string columnName, class System.Type type, string expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Add(System.String,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataColumn ^ Add(System::String ^ columnName, Type ^ type, System::String ^ expression);" />
+      <MemberSignature Language="F#" Value="member this.Add : string * Type * string -&gt; System.Data.DataColumn" Usage="dataColumnCollection.Add (columnName, type, expression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -360,9 +390,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.AddRange(System.Data.DataColumn[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (columns As DataColumn())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::DataColumn ^&gt; ^ columns);" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Data.DataColumn[] -&gt; unit" Usage="dataColumnCollection.AddRange columns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -393,9 +426,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.CanRemove(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Function CanRemove (column As DataColumn) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanRemove(System::Data::DataColumn ^ column);" />
+      <MemberSignature Language="F#" Value="member this.CanRemove : System.Data.DataColumn -&gt; bool" Usage="dataColumnCollection.CanRemove column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -455,9 +491,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="dataColumnCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -500,9 +539,12 @@
       <MemberSignature Language="DocId" Value="E:System.Data.DataColumnCollection.CollectionChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -544,9 +586,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (name As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="dataColumnCollection.Contains name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -596,9 +641,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.CopyTo(System.Data.DataColumn[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataColumn(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::DataColumn ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.DataColumn[] * int -&gt; unit" Usage="dataColumnCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -641,9 +688,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.IndexOf(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (column As DataColumn) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::DataColumn ^ column);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Data.DataColumn -&gt; int" Usage="dataColumnCollection.IndexOf column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -690,9 +740,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (columnName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ columnName);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="dataColumnCollection.IndexOf columnName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -734,9 +787,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataColumn ^ default[int] { System::Data::DataColumn ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.DataColumn" Usage="System.Data.DataColumnCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -787,9 +843,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As DataColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataColumn ^ default[System::String ^] { System::Data::DataColumn ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Data.DataColumn" Usage="System.Data.DataColumnCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -839,9 +898,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.DataColumnCollection.List" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property List As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::ArrayList ^ List { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.ArrayList" Usage="System.Data.DataColumnCollection.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -863,6 +925,54 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnCollectionChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs ccevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs ccevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (ccevent As CollectionChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="dataColumnCollection.OnCollectionChanged ccevent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ccevent" Type="System.ComponentModel.CollectionChangeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="ccevent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCollectionChanging">
+      <MemberSignature Language="C#" Value="protected internal virtual void OnCollectionChanging (System.ComponentModel.CollectionChangeEventArgs ccevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnCollectionChanging(class System.ComponentModel.CollectionChangeEventArgs ccevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.OnCollectionChanging(System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnCollectionChanging (ccevent As CollectionChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnCollectionChanging(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanging : System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.OnCollectionChanging : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="dataColumnCollection.OnCollectionChanging ccevent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ccevent" Type="System.ComponentModel.CollectionChangeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="ccevent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="Remove">
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -879,9 +989,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Remove(System.Data.DataColumn)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (column As DataColumn)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::DataColumn ^ column);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Data.DataColumn -&gt; unit" Usage="dataColumnCollection.Remove column" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -940,9 +1053,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="dataColumnCollection.Remove name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -990,9 +1106,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.DataColumnCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="dataColumnCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

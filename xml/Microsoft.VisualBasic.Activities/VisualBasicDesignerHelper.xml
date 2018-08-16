@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class VisualBasicDesignerHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class VisualBasicDesignerHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type VisualBasicDesignerHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.CreatePrecompiledVisualBasicReference(System.Type,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Activities.LocationReferenceEnvironment,System.Type@,System.Activities.ExpressionParser.SourceExpressionException@,Microsoft.VisualBasic.Activities.VisualBasicSettings@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePrecompiledVisualBasicReference (targetType As Type, expressionText As String, namespaces As IEnumerable(Of String), referencedAssemblies As IEnumerable(Of String), environment As LocationReferenceEnvironment, ByRef returnType As Type, ByRef compileError As SourceExpressionException, ByRef vbSettings As VisualBasicSettings) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ CreatePrecompiledVisualBasicReference(Type ^ targetType, System::String ^ expressionText, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ namespaces, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ referencedAssemblies, System::Activities::LocationReferenceEnvironment ^ environment, [Runtime::InteropServices::Out] Type ^ % returnType, [Runtime::InteropServices::Out] System::Activities::ExpressionParser::SourceExpressionException ^ % compileError, [Runtime::InteropServices::Out] Microsoft::VisualBasic::Activities::VisualBasicSettings ^ % vbSettings);" />
+      <MemberSignature Language="F#" Value="static member CreatePrecompiledVisualBasicReference : Type * string * seq&lt;string&gt; * seq&lt;string&gt; * System.Activities.LocationReferenceEnvironment *  *  *  -&gt; System.Activities.Activity" Usage="Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.CreatePrecompiledVisualBasicReference (targetType, expressionText, namespaces, referencedAssemblies, environment, returnType, compileError, vbSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -38,9 +40,9 @@
         <Parameter Name="namespaces" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="referencedAssemblies" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="environment" Type="System.Activities.LocationReferenceEnvironment" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="targetType">The expected expression type.</param>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.CreatePrecompiledVisualBasicValue(System.Type,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Activities.LocationReferenceEnvironment,System.Type@,System.Activities.ExpressionParser.SourceExpressionException@,Microsoft.VisualBasic.Activities.VisualBasicSettings@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePrecompiledVisualBasicValue (targetType As Type, expressionText As String, namespaces As IEnumerable(Of String), referencedAssemblies As IEnumerable(Of String), environment As LocationReferenceEnvironment, ByRef returnType As Type, ByRef compileError As SourceExpressionException, ByRef vbSettings As VisualBasicSettings) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ CreatePrecompiledVisualBasicValue(Type ^ targetType, System::String ^ expressionText, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ namespaces, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ referencedAssemblies, System::Activities::LocationReferenceEnvironment ^ environment, [Runtime::InteropServices::Out] Type ^ % returnType, [Runtime::InteropServices::Out] System::Activities::ExpressionParser::SourceExpressionException ^ % compileError, [Runtime::InteropServices::Out] Microsoft::VisualBasic::Activities::VisualBasicSettings ^ % vbSettings);" />
+      <MemberSignature Language="F#" Value="static member CreatePrecompiledVisualBasicValue : Type * string * seq&lt;string&gt; * seq&lt;string&gt; * System.Activities.LocationReferenceEnvironment *  *  *  -&gt; System.Activities.Activity" Usage="Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.CreatePrecompiledVisualBasicValue (targetType, expressionText, namespaces, referencedAssemblies, environment, returnType, compileError, vbSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -77,9 +80,9 @@
         <Parameter Name="namespaces" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="referencedAssemblies" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
         <Parameter Name="environment" Type="System.Activities.LocationReferenceEnvironment" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="targetType">The expected expression type.</param>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.NameShadowingConstraint" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NameShadowingConstraint As Constraint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Activities::Validation::Constraint ^ NameShadowingConstraint { System::Activities::Validation::Constraint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameShadowingConstraint : System.Activities.Validation.Constraint" Usage="Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.NameShadowingConstraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.RecompileVisualBasicReference(System.Activities.ActivityWithResult,System.Type@,System.Activities.ExpressionParser.SourceExpressionException@,Microsoft.VisualBasic.Activities.VisualBasicSettings@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RecompileVisualBasicReference (visualBasicReference As ActivityWithResult, ByRef returnType As Type, ByRef compileError As SourceExpressionException, ByRef vbSettings As VisualBasicSettings) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ RecompileVisualBasicReference(System::Activities::ActivityWithResult ^ visualBasicReference, [Runtime::InteropServices::Out] Type ^ % returnType, [Runtime::InteropServices::Out] System::Activities::ExpressionParser::SourceExpressionException ^ % compileError, [Runtime::InteropServices::Out] Microsoft::VisualBasic::Activities::VisualBasicSettings ^ % vbSettings);" />
+      <MemberSignature Language="F#" Value="static member RecompileVisualBasicReference : System.Activities.ActivityWithResult *  *  *  -&gt; System.Activities.Activity" Usage="Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.RecompileVisualBasicReference (visualBasicReference, returnType, compileError, vbSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -133,9 +138,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="visualBasicReference" Type="System.Activities.ActivityWithResult" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="visualBasicReference">The expression to recompile.</param>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.RecompileVisualBasicValue(System.Activities.ActivityWithResult,System.Type@,System.Activities.ExpressionParser.SourceExpressionException@,Microsoft.VisualBasic.Activities.VisualBasicSettings@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function RecompileVisualBasicValue (visualBasicValue As ActivityWithResult, ByRef returnType As Type, ByRef compileError As SourceExpressionException, ByRef vbSettings As VisualBasicSettings) As Activity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity ^ RecompileVisualBasicValue(System::Activities::ActivityWithResult ^ visualBasicValue, [Runtime::InteropServices::Out] Type ^ % returnType, [Runtime::InteropServices::Out] System::Activities::ExpressionParser::SourceExpressionException ^ % compileError, [Runtime::InteropServices::Out] Microsoft::VisualBasic::Activities::VisualBasicSettings ^ % vbSettings);" />
+      <MemberSignature Language="F#" Value="static member RecompileVisualBasicValue : System.Activities.ActivityWithResult *  *  *  -&gt; System.Activities.Activity" Usage="Microsoft.VisualBasic.Activities.VisualBasicDesignerHelper.RecompileVisualBasicValue (visualBasicValue, returnType, compileError, vbSettings)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -164,9 +170,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="visualBasicValue" Type="System.Activities.ActivityWithResult" />
-        <Parameter Name="returnType" Type="System.Type&amp;" RefType="out" />
-        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException&amp;" RefType="out" />
-        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.Type" RefType="out" />
+        <Parameter Name="compileError" Type="System.Activities.ExpressionParser.SourceExpressionException" RefType="out" />
+        <Parameter Name="vbSettings" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" RefType="out" />
       </Parameters>
       <Docs>
         <param name="visualBasicValue">The expression to recompile.</param>

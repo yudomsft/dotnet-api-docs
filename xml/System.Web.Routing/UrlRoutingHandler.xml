@@ -4,9 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.UrlRoutingHandler" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UrlRoutingHandler&#xA;Implements IHttpHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class UrlRoutingHandler abstract : System::Web::IHttpHandler" />
+  <TypeSignature Language="F#" Value="type UrlRoutingHandler = class&#xA;    interface IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Routing</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -69,6 +74,15 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.UrlRoutingHandler" /> class.</summary>
@@ -81,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.UrlRoutingHandler.IsReusable" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsReusable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.Routing.UrlRoutingHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -88,6 +103,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -112,6 +131,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext httpContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.UrlRoutingHandler.ProcessRequest(System.Web.HttpContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="urlRoutingHandler.ProcessRequest httpContext" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
@@ -119,6 +139,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -140,10 +164,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.UrlRoutingHandler.ProcessRequest(System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ProcessRequest (httpContext As HttpContextBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessRequest(System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContextBase -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContextBase -&gt; unit" Usage="urlRoutingHandler.ProcessRequest httpContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -165,11 +194,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.UrlRoutingHandler.RouteCollection" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteCollection As RouteCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteCollection ^ RouteCollection { System::Web::Routing::RouteCollection ^ get(); void set(System::Web::Routing::RouteCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteCollection : System.Web.Routing.RouteCollection with get, set" Usage="System.Web.Routing.UrlRoutingHandler.RouteCollection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Routing.RouteCollection</ReturnType>
       </ReturnValue>
@@ -184,7 +223,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.IHttpHandler.IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.UrlRoutingHandler.System#Web#IHttpHandler#IsReusable" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::IHttpHandler::IsReusable { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
@@ -193,6 +233,15 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -223,6 +272,15 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -248,10 +306,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.UrlRoutingHandler.VerifyAndProcessRequest(System.Web.IHttpHandler,System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub VerifyAndProcessRequest (httpHandler As IHttpHandler, httpContext As HttpContextBase)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void VerifyAndProcessRequest(System::Web::IHttpHandler ^ httpHandler, System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member VerifyAndProcessRequest : System.Web.IHttpHandler * System.Web.HttpContextBase -&gt; unit" Usage="urlRoutingHandler.VerifyAndProcessRequest (httpHandler, httpContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

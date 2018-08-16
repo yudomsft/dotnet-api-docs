@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Matrix" />
   <TypeSignature Language="VB.NET" Value="Public Structure Matrix&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class Matrix : IFormattable" />
+  <TypeSignature Language="F#" Value="type Matrix = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,10 +19,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.MatrixConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Media.Converters.MatrixValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -99,9 +101,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (m11 As Double, m12 As Double, m21 As Double, m22 As Double, offsetX As Double, offsetY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Matrix(double m11, double m12, double m21, double m22, double offsetX, double offsetY);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Matrix : double * double * double * double * double * double -&gt; System.Windows.Media.Matrix" Usage="new System.Windows.Media.Matrix (m11, m12, m21, m22, offsetX, offsetY)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -128,9 +132,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Append(valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Append(System.Windows.Media.Matrix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Append(System::Windows::Media::Matrix matrix);" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Windows.Media.Matrix -&gt; unit" Usage="matrix.Append matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,9 +174,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.Determinant" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Determinant As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Determinant { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Determinant : double" Usage="System.Windows.Media.Matrix.Determinant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,9 +231,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="matrix.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,9 +275,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Equals(System.Windows.Media.Matrix)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Matrix) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::Matrix value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.Matrix -&gt; bool" Usage="matrix.Equals value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,9 +319,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Equals(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (matrix1 As Matrix, matrix2 As Matrix) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Matrix matrix1, System::Windows::Media::Matrix matrix2);" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Windows.Media.Matrix * System.Windows.Media.Matrix -&gt; bool" Usage="System.Windows.Media.Matrix.Equals (matrix1, matrix2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -344,9 +358,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="matrix.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -365,9 +381,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.HasInverse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasInverse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasInverse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasInverse : bool" Usage="System.Windows.Media.Matrix.HasInverse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,11 +413,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.Identity" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Matrix Identity { System::Windows::Media::Matrix get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Windows.Media.Matrix" Usage="System.Windows.Media.Matrix.Identity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Media.Matrix</ReturnType>
       </ReturnValue>
@@ -439,9 +464,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Invert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invert();" />
+      <MemberSignature Language="F#" Value="member this.Invert : unit -&gt; unit" Usage="matrix.Invert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -469,9 +496,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.IsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIdentity As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIdentity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIdentity : bool" Usage="System.Windows.Media.Matrix.IsIdentity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -507,9 +536,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.M11" />
       <MemberSignature Language="VB.NET" Value="Public Property M11 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M11 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M11 : double with get, set" Usage="System.Windows.Media.Matrix.M11" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -536,9 +567,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.M12" />
       <MemberSignature Language="VB.NET" Value="Public Property M12 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M12 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M12 : double with get, set" Usage="System.Windows.Media.Matrix.M12" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -576,9 +609,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.M21" />
       <MemberSignature Language="VB.NET" Value="Public Property M21 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M21 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M21 : double with get, set" Usage="System.Windows.Media.Matrix.M21" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -616,9 +651,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.M22" />
       <MemberSignature Language="VB.NET" Value="Public Property M22 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M22 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M22 : double with get, set" Usage="System.Windows.Media.Matrix.M22" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -656,9 +693,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (trans1 As Matrix, trans2 As Matrix) As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Matrix Multiply(System::Windows::Media::Matrix trans1, System::Windows::Media::Matrix trans2);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Windows.Media.Matrix * System.Windows.Media.Matrix -&gt; System.Windows.Media.Matrix" Usage="System.Windows.Media.Matrix.Multiply (trans1, trans2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -699,9 +738,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.OffsetX" />
       <MemberSignature Language="VB.NET" Value="Public Property OffsetX As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetX : double with get, set" Usage="System.Windows.Media.Matrix.OffsetX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -734,9 +775,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Matrix.OffsetY" />
       <MemberSignature Language="VB.NET" Value="Public Property OffsetY As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetY : double with get, set" Usage="System.Windows.Media.Matrix.OffsetY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -769,9 +812,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.op_Equality(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (matrix1 As Matrix, matrix2 As Matrix) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Matrix matrix1, System::Windows::Media::Matrix matrix2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.Matrix * System.Windows.Media.Matrix -&gt; bool" Usage="matrix1 = matrix2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -813,9 +858,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.op_Inequality(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (matrix1 As Matrix, matrix2 As Matrix) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Matrix matrix1, System::Windows::Media::Matrix matrix2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.Matrix * System.Windows.Media.Matrix -&gt; bool" Usage="System.Windows.Media.Matrix.op_Inequality (matrix1, matrix2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -856,9 +903,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.op_Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (trans1 As Matrix, trans2 As Matrix) As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Matrix operator *(System::Windows::Media::Matrix trans1, System::Windows::Media::Matrix trans2);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Windows.Media.Matrix * System.Windows.Media.Matrix -&gt; System.Windows.Media.Matrix" Usage="trans1 * trans2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -899,9 +948,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Matrix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Matrix Parse(System::String ^ source);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Media.Matrix" Usage="System.Windows.Media.Matrix.Parse source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -931,9 +982,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Prepend(valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Prepend(System.Windows.Media.Matrix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Prepend(System::Windows::Media::Matrix matrix);" />
+      <MemberSignature Language="F#" Value="member this.Prepend : System.Windows.Media.Matrix -&gt; unit" Usage="matrix.Prepend matrix" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -973,9 +1026,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Rotate(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Rotate (angle As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rotate(double angle);" />
+      <MemberSignature Language="F#" Value="member this.Rotate : double -&gt; unit" Usage="matrix.Rotate angle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1008,9 +1063,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.RotateAt(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RotateAt (angle As Double, centerX As Double, centerY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateAt(double angle, double centerX, double centerY);" />
+      <MemberSignature Language="F#" Value="member this.RotateAt : double * double * double -&gt; unit" Usage="matrix.RotateAt (angle, centerX, centerY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1044,9 +1101,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.RotateAtPrepend(System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RotateAtPrepend (angle As Double, centerX As Double, centerY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateAtPrepend(double angle, double centerX, double centerY);" />
+      <MemberSignature Language="F#" Value="member this.RotateAtPrepend : double * double * double -&gt; unit" Usage="matrix.RotateAtPrepend (angle, centerX, centerY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1085,9 +1144,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.RotatePrepend(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RotatePrepend (angle As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotatePrepend(double angle);" />
+      <MemberSignature Language="F#" Value="member this.RotatePrepend : double -&gt; unit" Usage="matrix.RotatePrepend angle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1125,9 +1186,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Scale(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Scale (scaleX As Double, scaleY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Scale(double scaleX, double scaleY);" />
+      <MemberSignature Language="F#" Value="member this.Scale : double * double -&gt; unit" Usage="matrix.Scale (scaleX, scaleY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1162,9 +1225,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.ScaleAt(System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleAt (scaleX As Double, scaleY As Double, centerX As Double, centerY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleAt(double scaleX, double scaleY, double centerX, double centerY);" />
+      <MemberSignature Language="F#" Value="member this.ScaleAt : double * double * double * double -&gt; unit" Usage="matrix.ScaleAt (scaleX, scaleY, centerX, centerY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1200,9 +1265,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.ScaleAtPrepend(System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScaleAtPrepend (scaleX As Double, scaleY As Double, centerX As Double, centerY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleAtPrepend(double scaleX, double scaleY, double centerX, double centerY);" />
+      <MemberSignature Language="F#" Value="member this.ScaleAtPrepend : double * double * double * double -&gt; unit" Usage="matrix.ScaleAtPrepend (scaleX, scaleY, centerX, centerY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1243,9 +1310,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.ScalePrepend(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScalePrepend (scaleX As Double, scaleY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScalePrepend(double scaleX, double scaleY);" />
+      <MemberSignature Language="F#" Value="member this.ScalePrepend : double * double -&gt; unit" Usage="matrix.ScalePrepend (scaleX, scaleY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1285,9 +1354,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.SetIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetIdentity ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIdentity();" />
+      <MemberSignature Language="F#" Value="member this.SetIdentity : unit -&gt; unit" Usage="matrix.SetIdentity " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1329,9 +1400,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Skew(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Skew (skewX As Double, skewY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Skew(double skewX, double skewY);" />
+      <MemberSignature Language="F#" Value="member this.Skew : double * double -&gt; unit" Usage="matrix.Skew (skewX, skewY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1364,9 +1437,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.SkewPrepend(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SkewPrepend (skewX As Double, skewY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkewPrepend(double skewX, double skewY);" />
+      <MemberSignature Language="F#" Value="member this.SkewPrepend : double * double -&gt; unit" Usage="matrix.SkewPrepend (skewX, skewY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1410,8 +1485,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1459,11 +1540,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="matrix.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1487,11 +1575,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="matrix.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1536,9 +1631,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point Transform(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Transform(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point Transform(System::Windows::Point point);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Point -&gt; System.Windows.Point" Usage="matrix.Transform point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1569,9 +1666,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Transform(System.Windows.Point[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (points As Point())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Point&gt; ^ points);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Point[] -&gt; unit" Usage="matrix.Transform points" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1600,9 +1699,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Vector Transform(valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Transform(System.Windows.Vector)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Vector Transform(System::Windows::Vector vector);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Vector -&gt; System.Windows.Vector" Usage="matrix.Transform vector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1633,9 +1734,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Transform(System.Windows.Vector[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Transform (vectors As Vector())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Transform(cli::array &lt;System::Windows::Vector&gt; ^ vectors);" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Vector[] -&gt; unit" Usage="matrix.Transform vectors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1665,9 +1768,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.Translate(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Translate (offsetX As Double, offsetY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Translate(double offsetX, double offsetY);" />
+      <MemberSignature Language="F#" Value="member this.Translate : double * double -&gt; unit" Usage="matrix.Translate (offsetX, offsetY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1700,9 +1805,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.TranslatePrepend(System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TranslatePrepend (offsetX As Double, offsetY As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TranslatePrepend(double offsetX, double offsetY);" />
+      <MemberSignature Language="F#" Value="member this.TranslatePrepend : double * double -&gt; unit" Usage="matrix.TranslatePrepend (offsetX, offsetY)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackagePart" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PackagePart" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackagePart abstract" />
+  <TypeSignature Language="F#" Value="type PackagePart = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -59,6 +61,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, class System.Uri partUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PackagePart(System::IO::Packaging::Package ^ package, Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="new System.IO.Packaging.PackagePart : System.IO.Packaging.Package * Uri -&gt; System.IO.Packaging.PackagePart" Usage="new System.IO.Packaging.PackagePart (package, partUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -67,8 +70,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="package" Type="System.IO.Packaging.Package" />
         <Parameter Name="partUri" Type="System.Uri" />
@@ -100,6 +109,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, class System.Uri partUri, string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PackagePart(System::IO::Packaging::Package ^ package, Uri ^ partUri, System::String ^ contentType);" />
+      <MemberSignature Language="F#" Value="new System.IO.Packaging.PackagePart : System.IO.Packaging.Package * Uri * string -&gt; System.IO.Packaging.PackagePart" Usage="new System.IO.Packaging.PackagePart (package, partUri, contentType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -108,8 +118,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="package" Type="System.IO.Packaging.Package" />
         <Parameter Name="partUri" Type="System.Uri" />
@@ -156,6 +172,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, class System.Uri partUri, string contentType, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String,System.IO.Packaging.CompressionOption)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; PackagePart(System::IO::Packaging::Package ^ package, Uri ^ partUri, System::String ^ contentType, System::IO::Packaging::CompressionOption compressionOption);" />
+      <MemberSignature Language="F#" Value="new System.IO.Packaging.PackagePart : System.IO.Packaging.Package * Uri * string * System.IO.Packaging.CompressionOption -&gt; System.IO.Packaging.PackagePart" Usage="new System.IO.Packaging.PackagePart (package, partUri, contentType, compressionOption)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -164,6 +181,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -214,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.CompressionOption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompressionOption As CompressionOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::CompressionOption CompressionOption { System::IO::Packaging::CompressionOption get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompressionOption : System.IO.Packaging.CompressionOption" Usage="System.IO.Packaging.PackagePart.CompressionOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -222,6 +241,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.IO.Packaging.PackagePart.ContentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -262,6 +283,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,6 +363,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationship CreateRelationship(class System.Uri targetUri, valuetype System.IO.Packaging.TargetMode targetMode, string relationshipType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ CreateRelationship(Uri ^ targetUri, System::IO::Packaging::TargetMode targetMode, System::String ^ relationshipType);" />
+      <MemberSignature Language="F#" Value="member this.CreateRelationship : Uri * System.IO.Packaging.TargetMode * string -&gt; System.IO.Packaging.PackageRelationship" Usage="packagePart.CreateRelationship (targetUri, targetMode, relationshipType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -349,8 +372,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.PackageRelationship</ReturnType>
       </ReturnValue>
@@ -430,6 +459,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.PackageRelationship CreateRelationship(class System.Uri targetUri, valuetype System.IO.Packaging.TargetMode targetMode, string relationshipType, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ CreateRelationship(Uri ^ targetUri, System::IO::Packaging::TargetMode targetMode, System::String ^ relationshipType, System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.CreateRelationship : Uri * System.IO.Packaging.TargetMode * string * string -&gt; System.IO.Packaging.PackageRelationship" Usage="packagePart.CreateRelationship (targetUri, targetMode, relationshipType, id)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -438,6 +468,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -530,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteRelationship (id As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteRelationship(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.DeleteRelationship : string -&gt; unit" Usage="packagePart.DeleteRelationship id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -538,6 +570,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -584,6 +617,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetContentTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetContentTypeCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetContentTypeCore();" />
+      <MemberSignature Language="F#" Value="abstract member GetContentTypeCore : unit -&gt; string&#xA;override this.GetContentTypeCore : unit -&gt; string" Usage="packagePart.GetContentTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -592,6 +626,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,6 +655,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetRelationship(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationship (id As String) As PackageRelationship" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationship ^ GetRelationship(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationship : string -&gt; System.IO.Packaging.PackageRelationship" Usage="packagePart.GetRelationship id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -628,6 +664,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -679,6 +716,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetRelationships" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationships () As PackageRelationshipCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationshipCollection ^ GetRelationships();" />
+      <MemberSignature Language="F#" Value="member this.GetRelationships : unit -&gt; System.IO.Packaging.PackageRelationshipCollection" Usage="packagePart.GetRelationships " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -687,8 +725,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Packaging.PackageRelationshipCollection</ReturnType>
       </ReturnValue>
@@ -722,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipsByType (relationshipType As String) As PackageRelationshipCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::PackageRelationshipCollection ^ GetRelationshipsByType(System::String ^ relationshipType);" />
+      <MemberSignature Language="F#" Value="member this.GetRelationshipsByType : string -&gt; System.IO.Packaging.PackageRelationshipCollection" Usage="packagePart.GetRelationshipsByType relationshipType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -730,6 +775,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -786,6 +832,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStream" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream();" />
+      <MemberSignature Language="F#" Value="member this.GetStream : unit -&gt; System.IO.Stream" Usage="packagePart.GetStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -794,6 +841,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -833,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode);" />
+      <MemberSignature Language="F#" Value="member this.GetStream : System.IO.FileMode -&gt; System.IO.Stream" Usage="packagePart.GetStream mode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -841,6 +890,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -886,6 +936,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStream (mode As FileMode, access As FileAccess) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream(System::IO::FileMode mode, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="member this.GetStream : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="packagePart.GetStream (mode, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -894,6 +945,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -943,6 +995,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetStreamCore (mode As FileMode, access As FileAccess) As Stream" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::IO::Stream ^ GetStreamCore(System::IO::FileMode mode, System::IO::FileAccess access);" />
+      <MemberSignature Language="F#" Value="abstract member GetStreamCore : System.IO.FileMode * System.IO.FileAccess -&gt; System.IO.Stream" Usage="packagePart.GetStreamCore (mode, access)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -951,6 +1004,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -989,6 +1043,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.Package" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Package As Package" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::Package ^ Package { System::IO::Packaging::Package ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Package : System.IO.Packaging.Package" Usage="System.IO.Packaging.PackagePart.Package" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -997,6 +1052,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1028,6 +1084,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackagePart.RelationshipExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RelationshipExists (id As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RelationshipExists(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.RelationshipExists : string -&gt; bool" Usage="packagePart.RelationshipExists id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1036,6 +1093,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1080,6 +1138,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackagePart.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.IO.Packaging.PackagePart.Uri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -1088,6 +1147,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

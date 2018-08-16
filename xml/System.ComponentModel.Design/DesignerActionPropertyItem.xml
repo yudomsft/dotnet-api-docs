@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionPropertyItem" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerActionPropertyItem&#xA;Inherits DesignerActionItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionPropertyItem sealed : System::ComponentModel::Design::DesignerActionItem" />
+  <TypeSignature Language="F#" Value="type DesignerActionPropertyItem = class&#xA;    inherit DesignerActionItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -63,11 +65,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String, displayName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionPropertyItem(System::String ^ memberName, System::String ^ displayName);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionPropertyItem : string * string -&gt; System.ComponentModel.Design.DesignerActionPropertyItem" Usage="new System.ComponentModel.Design.DesignerActionPropertyItem (memberName, displayName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="memberName" Type="System.String" />
         <Parameter Name="displayName" Type="System.String" />
@@ -95,11 +104,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String, displayName As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionPropertyItem(System::String ^ memberName, System::String ^ displayName, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionPropertyItem : string * string * string -&gt; System.ComponentModel.Design.DesignerActionPropertyItem" Usage="new System.ComponentModel.Design.DesignerActionPropertyItem (memberName, displayName, category)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="memberName" Type="System.String" />
         <Parameter Name="displayName" Type="System.String" />
@@ -132,11 +148,18 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String, displayName As String, category As String, description As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionPropertyItem(System::String ^ memberName, System::String ^ displayName, System::String ^ category, System::String ^ description);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionPropertyItem : string * string * string * string -&gt; System.ComponentModel.Design.DesignerActionPropertyItem" Usage="new System.ComponentModel.Design.DesignerActionPropertyItem (memberName, displayName, category, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="memberName" Type="System.String" />
         <Parameter Name="displayName" Type="System.String" />
@@ -177,11 +200,18 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string" Usage="System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -208,11 +238,21 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent" />
       <MemberSignature Language="VB.NET" Value="Public Property RelatedComponent As IComponent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ RelatedComponent { System::ComponentModel::IComponent ^ get(); void set(System::ComponentModel::IComponent ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedComponent : System.ComponentModel.IComponent with get, set" Usage="System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>

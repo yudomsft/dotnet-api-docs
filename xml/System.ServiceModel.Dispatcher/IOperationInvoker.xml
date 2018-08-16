@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IOperationInvoker" />
   <TypeSignature Language="VB.NET" Value="Public Interface IOperationInvoker" />
   <TypeSignature Language="C++ CLI" Value="public interface class IOperationInvoker" />
+  <TypeSignature Language="F#" Value="type IOperationInvoker = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -27,9 +29,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.AllocateInputs" />
       <MemberSignature Language="VB.NET" Value="Public Function AllocateInputs () As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ AllocateInputs();" />
+      <MemberSignature Language="F#" Value="abstract member AllocateInputs : unit -&gt; obj[]" Usage="iOperationInvoker.AllocateInputs " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,9 +60,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.Invoke(System.Object,System.Object[],System.Object[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Invoke (instance As Object, inputs As Object(), ByRef outputs As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Object ^ instance, cli::array &lt;System::Object ^&gt; ^ inputs, [Runtime::InteropServices::Out] cli::array &lt;System::Object ^&gt; ^ % outputs);" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * obj[] *  -&gt; obj" Usage="iOperationInvoker.Invoke (instance, inputs, outputs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,7 +73,7 @@
       <Parameters>
         <Parameter Name="instance" Type="System.Object" />
         <Parameter Name="inputs" Type="System.Object[]" />
-        <Parameter Name="outputs" Type="System.Object[]&amp;" RefType="out" />
+        <Parameter Name="outputs" Type="System.Object[]" RefType="out" />
       </Parameters>
       <Docs>
         <param name="instance">The object to be invoked.</param>
@@ -84,9 +90,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeBegin(System.Object,System.Object[],System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeBegin (instance As Object, inputs As Object(), callback As AsyncCallback, state As Object) As IAsyncResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ InvokeBegin(System::Object ^ instance, cli::array &lt;System::Object ^&gt; ^ inputs, AsyncCallback ^ callback, System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="abstract member InvokeBegin : obj * obj[] * AsyncCallback * obj -&gt; IAsyncResult" Usage="iOperationInvoker.InvokeBegin (instance, inputs, callback, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,9 +122,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeEnd(System.Object,System.Object[]@,System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeEnd (instance As Object, ByRef outputs As Object(), result As IAsyncResult) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeEnd(System::Object ^ instance, [Runtime::InteropServices::Out] cli::array &lt;System::Object ^&gt; ^ % outputs, IAsyncResult ^ result);" />
+      <MemberSignature Language="F#" Value="abstract member InvokeEnd : obj *  * IAsyncResult -&gt; obj" Usage="iOperationInvoker.InvokeEnd (instance, outputs, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,7 +134,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="instance" Type="System.Object" />
-        <Parameter Name="outputs" Type="System.Object[]&amp;" RefType="out" />
+        <Parameter Name="outputs" Type="System.Object[]" RefType="out" />
         <Parameter Name="result" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
@@ -142,9 +152,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.IOperationInvoker.IsSynchronous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronous As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronous { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronous : bool" Usage="System.ServiceModel.Dispatcher.IOperationInvoker.IsSynchronous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

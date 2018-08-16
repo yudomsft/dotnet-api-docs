@@ -4,17 +4,22 @@
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccPropServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAccPropServer" />
   <TypeSignature Language="C++ CLI" Value="public interface class IAccPropServer" />
+  <TypeSignature Language="F#" Value="type IAccPropServer = interface" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("76C0DBBB-15E0-4E7B-B61B-20EEEA2001E0")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,20 +40,22 @@
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccPropServer.GetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetPropValue (ByRef pIDString As Byte, dwIDStringLen As UInteger, idProp As Guid, ByRef pvarValue As Object, ByRef pfHasProp As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPropValue(System::Byte % pIDString, System::UInt32 dwIDStringLen, Guid idProp, [Runtime::InteropServices::Out] System::Object ^ % pvarValue, [Runtime::InteropServices::Out] int % pfHasProp);" />
+      <MemberSignature Language="F#" Value="abstract member GetPropValue :  * uint32 * Guid *  *  -&gt; unit" Usage="iAccPropServer.GetPropValue (pIDString, dwIDStringLen, idProp, pvarValue, pfHasProp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="pIDString" Type="System.Byte" RefType="ref" />
         <Parameter Name="dwIDStringLen" Type="System.UInt32" />
         <Parameter Name="idProp" Type="System.Guid" />
-        <Parameter Name="pvarValue" Type="System.Object&amp;" RefType="out" />
-        <Parameter Name="pfHasProp" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pvarValue" Type="System.Object" RefType="out" />
+        <Parameter Name="pfHasProp" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pIDString">Contains a string that identifies the property being requested.</param>

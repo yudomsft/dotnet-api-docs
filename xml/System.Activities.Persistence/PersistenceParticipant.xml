@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.Persistence.PersistenceParticipant" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersistenceParticipant" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersistenceParticipant abstract" />
+  <TypeSignature Language="F#" Value="type PersistenceParticipant = class" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +63,11 @@
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes an instance of the <see cref="T:System.Activities.Persistence.PersistenceParticipant" /> class.</summary>
@@ -83,9 +89,10 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceParticipant.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CollectValues (ByRef readWriteValues As IDictionary(Of XName, Object), ByRef writeOnlyValues As IDictionary(Of XName, Object))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CollectValues([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ % readWriteValues, [Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ % writeOnlyValues);" />
+      <MemberSignature Language="F#" Value="abstract member CollectValues :  *  -&gt; unit&#xA;override this.CollectValues :  *  -&gt; unit" Usage="persistenceParticipant.CollectValues (readWriteValues, writeOnlyValues)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@)</InterfaceMember>
+        <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,8 +102,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="readWriteValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;&amp;" RefType="out" />
-        <Parameter Name="writeOnlyValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;&amp;" RefType="out" />
+        <Parameter Name="readWriteValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" RefType="out" />
+        <Parameter Name="writeOnlyValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="readWriteValues">The read-write values to be persisted.</param>
@@ -128,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceParticipant.MapValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function MapValues (readWriteValues As IDictionary(Of XName, Object), writeOnlyValues As IDictionary(Of XName, Object)) As IDictionary(Of XName, Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ MapValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ writeOnlyValues);" />
+      <MemberSignature Language="F#" Value="abstract member MapValues : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt;&#xA;override this.MapValues : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt;" Usage="persistenceParticipant.MapValues (readWriteValues, writeOnlyValues)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.MapValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})</InterfaceMember>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceParticipant.PublishValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PublishValues (readWriteValues As IDictionary(Of XName, Object))" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PublishValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues);" />
+      <MemberSignature Language="F#" Value="abstract member PublishValues : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; unit&#xA;override this.PublishValues : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; unit" Usage="persistenceParticipant.PublishValues readWriteValues" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.IPersistencePipelineModule.PublishValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})</InterfaceMember>
@@ -187,7 +196,7 @@
       </Parameters>
       <Docs>
         <param name="readWriteValues">The read-write values that were loaded from the persistence store. This dictionary corresponds to the dictionary of read-write values persisted in the most recent persistence episode.</param>
-        <summary>The host invokes this method and passes all the loaded values in the <see cref="P:System.Activities.Persistence.SaveWorkflowCommand.InstanceData" /> collection (filled by the <see cref="T:System.Activities.Persistence.LoadWorkflowCommand" /> or <see cref="T:System.Activities.Persistence.LoadWorkflowByInstanceKeyCommand" />) as a dictionary parameter.</summary>
+        <summary>The host invokes this method and passes all the loaded values in the <see cref="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData" /> collection (filled by the <see cref="T:System.Activities.DurableInstancing.LoadWorkflowCommand" /> or <see cref="T:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand" />) as a dictionary parameter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

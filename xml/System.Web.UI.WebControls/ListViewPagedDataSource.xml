@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewPagedDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewPagedDataSource&#xA;Implements ICollection, ITypedList" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewPagedDataSource : System::Collections::ICollection, System::ComponentModel::ITypedList" />
+  <TypeSignature Language="F#" Value="type ListViewPagedDataSource = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface ITypedList" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -49,6 +51,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -77,11 +80,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.AllowServerPaging" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowServerPaging As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowServerPaging { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowServerPaging : bool with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.AllowServerPaging" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -104,12 +117,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="listViewPagedDataSource.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,12 +155,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,11 +199,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSource As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ DataSource { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSource : System.Collections.IEnumerable with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.DataSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
@@ -211,9 +238,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DataSourceCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSourceCount : int" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.DataSourceCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,12 +275,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listViewPagedDataSource.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,9 +315,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetItemProperties (listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="abstract member GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="listViewPagedDataSource.GetItemProperties listAccessors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,9 +352,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewPagedDataSource.GetListName(System.ComponentModel.PropertyDescriptor[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetListName (listAccessors As PropertyDescriptor()) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
+      <MemberSignature Language="F#" Value="abstract member GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string&#xA;override this.GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string" Usage="listViewPagedDataSource.GetListName listAccessors" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,9 +388,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,11 +411,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.IsServerPagingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsServerPagingEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsServerPagingEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsServerPagingEnabled : bool" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.IsServerPagingEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -396,12 +440,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -431,11 +477,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.MaximumRows" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumRows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumRows : int with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.MaximumRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -451,11 +507,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.StartRowIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property StartRowIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartRowIndex : int with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.StartRowIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -471,12 +537,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -506,11 +574,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewPagedDataSource.TotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Property TotalRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.TotalRowCount : int with get, set" Usage="System.Web.UI.WebControls.ListViewPagedDataSource.TotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

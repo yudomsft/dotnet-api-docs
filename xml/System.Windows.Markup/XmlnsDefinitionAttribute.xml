@@ -4,19 +4,24 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlnsDefinitionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlnsDefinitionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlnsDefinitionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type XmlnsDefinitionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,10 +49,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsDefinitionAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (xmlNamespace As String, clrNamespace As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlnsDefinitionAttribute(System::String ^ xmlNamespace, System::String ^ clrNamespace);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XmlnsDefinitionAttribute : string * string -&gt; System.Windows.Markup.XmlnsDefinitionAttribute" Usage="new System.Windows.Markup.XmlnsDefinitionAttribute (xmlNamespace, clrNamespace)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="xmlNamespace" Type="System.String" />
@@ -68,11 +78,24 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDefinitionAttribute.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Windows.Markup.XmlnsDefinitionAttribute.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -95,11 +118,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClrNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClrNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClrNamespace : string" Usage="System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -115,11 +148,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XmlNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespace : string" Usage="System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

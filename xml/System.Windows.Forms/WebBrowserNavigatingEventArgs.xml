@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserNavigatingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class WebBrowserNavigatingEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebBrowserNavigatingEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type WebBrowserNavigatingEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -43,11 +45,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserNavigatingEventArgs.#ctor(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As Uri, targetFrameName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserNavigatingEventArgs(Uri ^ url, System::String ^ targetFrameName);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.WebBrowserNavigatingEventArgs : Uri * string -&gt; System.Windows.Forms.WebBrowserNavigatingEventArgs" Usage="new System.Windows.Forms.WebBrowserNavigatingEventArgs (url, targetFrameName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="url" Type="System.Uri" />
         <Parameter Name="targetFrameName" Type="System.String" />
@@ -67,9 +76,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetFrameName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameName : string" Usage="System.Windows.Forms.WebBrowserNavigatingEventArgs.TargetFrameName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,9 +113,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WebBrowserNavigatingEventArgs.Url" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Windows.Forms.WebBrowserNavigatingEventArgs.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

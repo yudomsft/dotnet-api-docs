@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.GroupPrincipal" />
   <TypeSignature Language="VB.NET" Value="Public Class GroupPrincipal&#xA;Inherits Principal" />
   <TypeSignature Language="C++ CLI" Value="public ref class GroupPrincipal : System::DirectoryServices::AccountManagement::Principal" />
+  <TypeSignature Language="F#" Value="type GroupPrincipal = class&#xA;    inherit Principal" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -14,10 +16,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.DirectoryServices.AccountManagement.DirectoryRdnPrefix("CN")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
     </Attribute>
   </Attributes>
@@ -44,9 +46,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As PrincipalContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GroupPrincipal(System::DirectoryServices::AccountManagement::PrincipalContext ^ context);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.GroupPrincipal : System.DirectoryServices.AccountManagement.PrincipalContext -&gt; System.DirectoryServices.AccountManagement.GroupPrincipal" Usage="new System.DirectoryServices.AccountManagement.GroupPrincipal context" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -73,9 +77,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As PrincipalContext, samAccountName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GroupPrincipal(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::String ^ samAccountName);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.GroupPrincipal : System.DirectoryServices.AccountManagement.PrincipalContext * string -&gt; System.DirectoryServices.AccountManagement.GroupPrincipal" Usage="new System.DirectoryServices.AccountManagement.GroupPrincipal (context, samAccountName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -104,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="groupPrincipal.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -137,9 +145,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindByIdentity (context As PrincipalContext, identityValue As String) As GroupPrincipal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::GroupPrincipal ^ FindByIdentity(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::String ^ identityValue);" />
+      <MemberSignature Language="F#" Value="static member FindByIdentity : System.DirectoryServices.AccountManagement.PrincipalContext * string -&gt; System.DirectoryServices.AccountManagement.GroupPrincipal" Usage="System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity (context, identityValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -165,9 +175,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.GroupPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::AccountManagement::GroupPrincipal ^ FindByIdentity(System::DirectoryServices::AccountManagement::PrincipalContext ^ context, System::DirectoryServices::AccountManagement::IdentityType identityType, System::String ^ identityValue);" />
+      <MemberSignature Language="F#" Value="static member FindByIdentity : System.DirectoryServices.AccountManagement.PrincipalContext * System.DirectoryServices.AccountManagement.IdentityType * string -&gt; System.DirectoryServices.AccountManagement.GroupPrincipal" Usage="System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity (context, identityType, identityValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -183,7 +195,7 @@
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
         <param name="identityValue">The identity of the group principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
-        <summary>Returns a group principal object that matches the specified identity type, and value. This version of the <see cref="Overlaod:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
+        <summary>Returns a group principal object that matches the specified identity type, and value. This version of the <see cref="Overload:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> that matches the specified identity value and type, or null if no matches are found.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
@@ -208,19 +220,26 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.GetMembers" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMembers () As PrincipalSearchResult(Of Principal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ GetMembers();" />
+      <MemberSignature Language="F#" Value="member this.GetMembers : unit -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;" Usage="groupPrincipal.GetMembers " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>Returns a collection of the principal objects that is contained in the group.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -240,9 +259,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.GetMembers(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetMembers (recursive As Boolean) As PrincipalSearchResult(Of Principal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ GetMembers(bool recursive);" />
+      <MemberSignature Language="F#" Value="member this.GetMembers : bool -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;" Usage="groupPrincipal.GetMembers recursive" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -255,7 +276,7 @@
       <Docs>
         <param name="recursive">A Boolean value that specifies whether the group is searched recursively.</param>
         <summary>Returns a collection of the principal objects that is contained in the group. When the recursive flag is set to true, this method searches the current group recursively and returns all nested group members.</summary>
-        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -305,9 +326,11 @@ ctx.Dispose();
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.GroupPrincipal.GroupScope" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupScope As Nullable(Of GroupScope)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::DirectoryServices::AccountManagement::GroupScope&gt; GroupScope { Nullable&lt;System::DirectoryServices::AccountManagement::GroupScope&gt; get(); void set(Nullable&lt;System::DirectoryServices::AccountManagement::GroupScope&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.GroupScope : Nullable&lt;System.DirectoryServices.AccountManagement.GroupScope&gt; with get, set" Usage="System.DirectoryServices.AccountManagement.GroupPrincipal.GroupScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -328,9 +351,11 @@ ctx.Dispose();
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.GroupPrincipal.IsSecurityGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSecurityGroup As Nullable(Of Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsSecurityGroup { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityGroup : Nullable&lt;bool&gt; with get, set" Usage="System.DirectoryServices.AccountManagement.GroupPrincipal.IsSecurityGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -361,9 +386,11 @@ ctx.Dispose();
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.GroupPrincipal.Members" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Members As PrincipalCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::PrincipalCollection ^ Members { System::DirectoryServices::AccountManagement::PrincipalCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Members : System.DirectoryServices.AccountManagement.PrincipalCollection" Usage="System.DirectoryServices.AccountManagement.GroupPrincipal.Members" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
